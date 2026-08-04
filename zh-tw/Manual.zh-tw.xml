@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<help>
+
+  <topic name="Key" DisplayName="DisplayText">
+
+-->
+<help Lang="zh-tw" Encoding="utf-8">
+  <topic name="Quickstart" DisplayName="快速開始">這是你在開始遊戲時應該做的九件事。
+之後，請將本幫助文件的其餘部分作為參考手冊使用。
+
+{{W|1. 四處走動}}
+
+{{?KB|按方向鍵（~CmdMoveN、~CmdMoveE 等）或點擊地圖來移動。}}{{?Gamepad|使用 ~UI:Navigate 指示方向，然後按 ~Take A Step 移動，或按住 ~Take A Step 持續移動。}}{{?Gamepad|
+你也可以使用 ~CmdAutoExplore 自動探索地圖。}}
+
+{{W|2. 與事物互動}}
+
+走到 NPC 或其他物體旁邊，然後按 ~CmdUse。
+
+{{W|3. 查看事物}}
+
+{{?KB|按下 }}~CmdLook 進入查看模式，然後在地圖上移動游標。{{?KB|
+或者 {{hotkey|右鍵點擊}} 進行快速查看。}}
+
+{{W|4. 使用你的能力}}
+
+{{?KB|點擊螢幕底部能力列上的按鈕
+或按下其快捷鍵。}}{{?Gamepad|使用 ~UI:Navigate/左 和 ~UI:Navigate/右 在螢幕底部的快捷列中導航，
+然後按 ~Use Ability 來使用能力。}}
+
+{{W|5. 查看你的角色面板}}
+
+{{?KB|按下 ~CmdCharacter 查看你的核心角色資訊。
+按下 ~CmdEquipment 查看你的裝備。
+按下 ~CmdInventory 查看你的物品欄。
+按下 ~CmdJournal 查看你的日誌。
+按下 ~CmdQuests 查看你的任務。
+按下 ~CmdSkillsPowers 查看你的技能。
+按下 ~CmdFactions 查看你的派系關係。
+
+你可以使用 ~Page Left 和 ~Page Right 翻閱這些頁面。}}{{?Gamepad|按下 ~CmdCharacter 查看你的核心角色資訊。
+使用 ~Page Left 和 ~Page Right 在角色面板的其他頁面中導航。}}
+
+{{W|6. 列出興趣點清單}}
+
+按下 ~CmdMoveToPointOfInterest。
+
+{{W|7. 顯示地圖上物體的額外資訊}}
+
+按下 ~Highlight 以顯示包含額外資訊的疊加層，例如生物敵意
+（紅色 = 敵對、黃色 = 中立、綠色 = 友好）以及有趣物品的清晰視圖。
+
+{{W|8. 前往另一張地圖}}
+
+只需走出螢幕範圍，或使用 ~CmdMoveU 前往世界地圖。
+
+{{W|9. 攻擊敵人}}
+
+要進行基礎攻擊，只需走進敵對生物中即可。
+或者你可以使用攻擊能力。</topic>
+  <topic name="Attributes" DisplayName="屬性">[[{{C|力量}}]]
+你的力量值決定了你的近戰傷害（透過提升護甲穿透力）、抵抗強制位移的能力，以及你的負重能力。
+
+[[{{C|敏捷}}]]
+你的敏捷值決定了你在使用近戰與遠程武器時的命中率，以及你躲避攻擊的能力。
+
+[[{{C|韌性}}]]
+你的韌性值決定了你的生命值、生命值再生速率，以及你抵抗毒素與疾病的能力。
+
+[[{{C|智力}}]]
+你的智力值決定了你的技能點數，以及你鑑定神器（artifacts）的能力。
+
+[[{{C|意志}}]]
+你的意志值會修正主動能力的冷卻時間、決定你抵抗精神攻擊的能力，並修正你的生命值再生速率。
+
+[[{{C|自我}}]]
+你的自我值決定了你精神突變的強度、與商人討價還價的能力，以及支配其他生物意志的能力。
+
+[[{{C|護甲值與閃避值 (AV / DV)}}]]
+你的護甲值 (AV) 是衡量你抵禦擊中你的物理攻擊保護程度的指標。分數越高，對手攻擊造成嚴重傷害的可能性就越低。大多數角色初始的基礎 AV 分數為 0。
+
+你的閃避值 (DV) 是衡量你被物理攻擊擊中的可能性之指標。分數越高，對手攻擊擊中你的可能性就越低。你的 DV 會受到敏捷修正值的影響。大多數角色初始的基礎 DV 為 6。
+
+[[{{C|精神護甲 (MA)}}]]
+你的精神護甲 (MA) 是衡量你抵禦精神攻擊保護程度的指標，就像護甲值是衡量你抵禦物理攻擊的保護程度一樣。分數越高，對手精神攻擊對你造成嚴重影響的可能性就越低。你的 MA 會受到意志修正值的影響。大多數角色初始的基礎 MA 為 4。
+
+[[{{C|快速度 (QN)}}]]
+你的快速度分數是衡量你執行每一項動作的速度之指標。你的基礎快速度分數為 100。請注意，增強此分數的方法非常有限。
+
+[[{{C|移動速度 (MS)}}]]
+你的移動速度是衡量你行走或飛行的快慢之指標。你的基礎移動速度為 100。
+
+[[{{C|溫度 (T)}}]]
+你的溫度是衡量你有多熱或多冷之指標。如果你處於「寒冷」狀態，你的快速度分數會減半。如果你處於「冰凍」狀態，你將無法執行物理動作。如果你處於「火焰」狀態，你會在降低溫度前每回合受到熱傷害。
+
+[[{{C|酸性抗性}}]]
+你的酸性抗性是衡量你抵禦多少酸性傷害之指標。你的基礎酸性抗性分數為 0。達到 100 時，你將免疫酸性傷害。
+
+[[{{C|寒冷抗性}}]]
+你的寒冷抗性是衡量你抵禦多少寒冷傷害，以及你對降低溫度效果的隔絕程度之指標。你的基礎寒冷抗性分數為 0。達到 100 時，你將免疫寒冷傷害且你的溫度不會下降。
+
+[[{{C|電性抗性}}]]
+你的電性抗性是衡量你抵禦多少電性傷害，以及你對電流的抵抗程度之指標。你的基礎電性抗性分數為 0。達到 100 時，你將免疫電性傷害且不會導電。
+
+[[{{C|熱量抗性}}]]
+你的熱量抗性是衡量你抵禦多少熱傷害，以及你對提高溫度效果的隔絕程度之指標。你的基礎熱量抗性分數為 0。達到 100 時，你將免疫熱傷害且你的溫度不會上升。</topic>
+  <topic name="Skills" DisplayName="技能">妳的技能代表了妳在生命中所學到的能力。每個技能樹都有若干相關技能。妳會根據妳的種姓或職業起始擁有若干技能。妳可以透過消耗升級時獲得的技能點來購買其他技能（妳的智力分數越高，獲得的技能點就越多）。
+
+要購買新技能，妳必須先購買該技能樹中的入門技能。妳必須符合妳嘗試購買的技能所需的屬性或力量要求。如果妳的種姓或職業已賦予妳某些技能，即使沒有其入門技能，也有可能直接擁有這些技能。
+
+技能通常會賦予妳主動能力。一旦妳購買了技能，就可以從「管理能力」選單（'~CmdAbilities'）中存取妳的新主動能力。</topic>
+  <topic name="Mutations and Defects" DisplayName="突變與缺陷">突變是賦予卡德 denizens 的特殊生物力量 ——
+來自外部生態穹頂的真人類並不擁有突變。突變分為兩種類型：生理與精神。每種突變都有一個相關的突變分數。你的生理突變分數以及由生理突變提供的啟動能力冷卻時間是固定的。另一方面，你的精神突變分數會受到你的自我（Ego）修正值影響，而由精神突變提供的能力冷卻時間則會根據你高於或低於 16 點的意志力（Willpower）每點進行 5% 的調整。
+
+大多數角色初始的突變分數為 1。當你提升等級時會獲得一個突變點數，你可以用它來將其中一種突變的分數增加 1。任何突變的分數都不得超過 1 加上你的角色等級除以 2。此外，突變只能透過突變點數進行強化，最高分數為 10，但如果你的自我進一步強化了精神突變，使其超過 10 分，則精神突變可以突破此上限。
+
+或者，你可以花費 4 個突變點數，從三個隨機選出的突變中選擇一個新突變。你選擇的突變初始分數為 1。如果你是奇美拉（chimera），你會獲得生理突變的選擇；如果你是靈媒（esper），你會獲得精神突變的選擇；否則，你會獲得三個完全隨機的突變。突變通常會賦予你啟動能力。一旦你獲得突變，你可以從「管理能力」選單（'~CmdAbilities'）中查看你的新啟動能力。
+
+缺陷是主要具有負面效果的突變。某些突變者初始會帶有一個缺陷。缺陷沒有相關的分數。</topic>
+  <topic name="Artifacts" DisplayName="神器">神器是技術極其複雜的物品，以至於很少有 卡德的 denizens 能理解它們。未識別的神器對您而言會顯示為「奇異神器」。您可以檢查神器嘗試識別它。如果您成功了，您將縮小該神器的功能可能性（例如，原本是「棍棒」的東西，現在可能被識別為「步槍」）。最終您可能會完全識別該神器。然而，每次您嘗試識別卻失敗時，都有小機率會將其損壞。您成功識別神器的機率取決於您的智力值。</topic>
+  <topic name="Tonics" DisplayName="補劑">補劑是能以多種方式增強你的精神與身體屬性的化學混合物。它們屬於神器，因此你必須成功辨識它們才能了解其功效。在另一種補劑的效果作用下服用新的補劑是危險的；每當你服用一種新補劑時，補劑之間產生不良反應的可能性就會越來越大。你的韌性（Toughness）分數越高，你就越有可能在不產生不良影響的情況下服用多種補劑。
+
+補劑在 真人類 中產生的效果比在突變人類中更強大。此外，由於突變者的身體化學性質本質上是不穩定的，突變者服用補劑時有 5% 的機率會產生非預期的副作用。
+
+可以使用 修補匠 技能來調製補劑。除了零件之外，調製補劑通常還需要一種天然成分。</topic>
+  <topic name="Weapons and Armor" DisplayName="武器與護甲">[[{{C|武器}}]]
+每件武器都有一個穿透值和一個傷害值
+（例如，{{C|→}}4，{{R|♥}}1d4）。近戰武器的穿透值與你的力量屬性有關，但該值會根據武器材質而有所上限（「查看」武器以查看其穿透上限）。飛彈武器具有固定的穿透值，不會隨你的力量屬性改變。
+武器可能會修正其他統計數據；「查看」武器以完整了解其功能。
+
+[[{{C|護甲}}]]
+大多數護甲都有一個護甲值和一個閃避值
+（例如，{{b|♦}}4 {{K|○}}4），用以增強你自身的 {{b|♦}}AV 和 {{K|○}}DV（參見 {{g|屬性}}）。
+護甲可能會修正其他統計數據；「查看」護甲以完整了解其功能。</topic>
+  <topic name="Combat" DisplayName="戰鬥">[[{{C|近戰戰鬥}}]]
+近戰戰鬥是指使用標準近戰武器（如劍、匕首、斧頭和棍棒）進行的兩個相鄰對手之間的戰鬥。若要攻擊相鄰的敵對對手，只需朝該對手的方向移動即可。若要攻擊其他目標，例如非敵對對手或牆壁，請使用「~CmdAttackDirection」並選擇您想要攻擊的方向。
+
+當您對目標進行近戰攻擊時，會發生以下事件序列：
+
+[[{{c|1. 判定是否擊中目標。}}]]
+您的命中檢定為 1d20 加上您的敏捷修正值，以及任何來自武器或技能能力的加成。如果此擲骰結果超過對手的閃避值 (DV)，則表示您擊中了。目標上方出現空心圓圈圖示，表示您的攻擊未命中。
+
+[[{{c|2. 判定是否發生盾牌格擋。}}]]
+若目標裝備了 盾牌，他們有基礎 25% 的機率使用它進行格擋，此機率會隨技能提升。成功的格擋會將 盾牌的 armor value (AV) 加入該次攻擊目標的 AV 中。
+
+[[{{c|3. 判定您的攻擊穿透目標護甲的程度。}}]]
+每種武器都有一個穿透值（例如 {{C|→}}4）。此數值代表您的武器通常能輕易穿透的護甲值 (AV)。如果您的武器穿透值遠高於目標的 AV，您的武器可能會多次穿透。每當您的武器穿透目標的護甲時，目標就會受到等於您武器傷害值的傷害（例如 {{R|♥}}1d4）。目標上方出現實心圓圈圖示，表示您的攻擊擊中了但未能穿透目標的護甲。愛心圖示則表示您的攻擊擊中並穿透了目標的護甲。
+
+[[{{c|4. 判定是否進行多次攻擊。}}]]
+有 15% 的機率您會使用副手進行額外的攻擊。擁有複數肢體的角色可能會進行超出此範圍的額外攻擊。
+
+[[{{C|飛彈戰鬥}}]]
+飛彈戰鬥是指使用 飛彈 武器（如弓、 手槍 和步槍）進行的兩個對手之間的戰鬥。若要進行 飛彈 攻擊，請按「~CmdFire」來瞄準您的武器，然後再次按下「~CmdFire」進行射擊。
+
+當您進行 飛彈 攻擊時，會發生以下事件序列：
+
+[[{{c|1. 判定您的飛彈軌跡。}}]]
+飛彈偏離預定路徑的程度是由您的敏捷值和武器的精準度決定的。
+
+[[{{c|2. 擊中沿著 飛彈的}}
+{{c|軌跡}} 遇到的第一個中型或更大的物體。]]
+
+[[{{c|3. 判定飛彈穿透目標護甲的程度。}}]]
+其判定方式與近戰攻擊相同。
+
+[[{{c|4. 判定是否進行多次攻擊。}}]]
+某些能力允許您使用特定的 飛彈 武器發射多枚 飛彈。
+
+如果您正與不止一個敵對對手進行近戰戰鬥，則您每次進行的 飛彈 攻擊都有 50% 的機率失控（向左或向右偏轉 45 度）。</topic>
+  <topic name="Saving Throws" DisplayName="豁免檢定">某些效果或能力要求生物進行豁免檢定，否則將面臨後果。豁免檢定各自分別關聯著特定的屬性與難度。若要通過豁免檢定，需投擲基礎 1d20，然後加上你相關的屬性修正值。如果該數值達到或超過難度，則通過；否則失敗。某些針對生物能力的豁免檢定，還會將該生物的屬性修正值也加入到難度中。</topic>
+  <topic name="Action Costs" DisplayName="動作消耗">完成某件事所需的時間是以「動作消耗」來衡量的。大多數任務的動作消耗為 1000。你的敏捷度（Quickness）會提高恢復此消耗的速度，使你能比動作較慢的生物更頻繁地行動。
+
+某些技能、突變和裝備能讓你以降低或零動作消耗來執行特定動作。</topic>
+  <topic name="Credits" DisplayName="製作人員名單">
+                                 [[{{C|製作人員}}
+                      Brian Bucklew 與 Jason Grinblat
+                      
+
+              QA 與 額外設計 - Nick Decapua
+              額外程式開發 - Corey Frang
+                               音樂 - Craig Hamilton            
+                                  QA - Autumn McDonell
+              額外程式開發 - Bastia Rosen
+         額外編劇與設計 - Caelyn Sandel
+                    額外音樂 - Brandon Tanner        
+                            圖塊藝術 - Samuel Wilson
+                額外 UI 設計 - Polat Yarisci
+                        音效設計 - A Shell in the Pit
+            QA, 額外設計, 與
+              額外程式開發 - Thaumatic Systems        
+              額外程式開發 - Brian Reynolds
+                       法律顧問 - Thomas C. Allison, P.A.
+                      
+                      背景美術 - Cyril van der Haegen
+                            標誌藝術 - Laura &amp;&amp; Jeff Bucholtz
+                社群管理 - Ivy Melinda &amp;&amp; the mayor team
+
+
+                                {{C|發行商}}
+                                Kitfox Games
+
+                                Tina Liu
+                                Xin Ran Liu
+                                Alexandra Orlando
+                                Tanya X. Short
+                                
+
+                                {{C|特別感謝}}
+                                Ashenai
+                                Riley Vincent
+                                Gibbed
+                                Floorislava
+                                Dr Amazing
+                                Devonaut
+                                Vaos
+                                Tyskil
+                                Lakren
+                                Stelas
+                                Social Animal
+                                Contra Duck
+                                Saberwulf
+                                Megaflare
+                                Doctorfrog
+                                Palecur
+                                NovaPolice
+                                Mirdath
+                                The Glow
+                                Dyzzy
+                                Schister
+                                Lazybuttons
+                                Colonp
+                                Niff
+                                Matterhorn
+                                Clamiam
+                                Donraj
+                                Randy Marsh
+                                Rabbi
+                                Getter77
+                                Capuchin
+                                Wafflecopter
+                                Nomikos
+                                Magitek
+                                Andrew Smash
+                                Vastin
+                                Frumple
+                                Sappho
+                                Soulwynd
+                                Cpbpunch
+                                Tarran
+                                Brian Turcotte
+                                Oryx
+                                Jim Shepard, Dungeonmans
+                                MightyMerch
+                                Eva Problems, Carbide 廚師
+                                a nonsense bird
+                                Tarn &amp;&amp; Zach Adams
+                                
+
+                                {{C|贊助者}}
+                                Reed (突變人類) 與 Tiffany (rabbit)
+                                epsalon
+                                Tim Linscott
+                                Cody, The Rat
+                                iconmaster
+                                Coal
+                                Reuben Eadon
+                                Goldkin
+                                mdct
+                                Rusted Jake Matz
+                                Benjamin T. Steed
+                                Xerkie!
+                                Dij
+                                LongueVanne
+                                50RCERESS
+                                廚師 瑪瑙斷裂之星
+                                awful_falafel
+                                Jonny Robertson
+                                Ian Wall
+                                Orion Perruc-Reyes
+                                Ryan Orlando (Fat Thunder)
+                                FS Colley
+                                Asunaro
+                                Trevor Clack
+                                Gillian Eggleston
+                                Nerem
+                                Somsnosa
+                                Ivy Sly
+                                livelongcoffee
+                                SMB64 (Koshi)
+                                NO Press
+                                EveryZig314
+                                Floopygapples
+                                Eric Hulen
+                                Caine DeWitt
+                                Eric Anthony Rodriguez
+                                Nathaniel Krell
+                                Boo-cher
+                                Pax Frank
+                                Matteo De Cristofaro
+                                Meo
+                                Boyarde Roneen
+                                wastrel
+                                Drew Kerrigan
+                                Jordan Wood
+                                Kasey Patrick Morgan
+                                Callum Love
+                                Petrichor "petrak@7604"
+                                Devon Cupo
+                                Big Simple
+                                Kevin Orren
+                                Lennart Schefe
+                                Beemancer
+                                Lady Eithné, Queen of Brokilon
+                                Nic Gard
+                                NeroPrime
+                                InfiniteTidalWave
+                                Aveon Zero
+                                Joshua Southerland
+                                _tr
+                                James Earle
+                                Nick Correale
+                                MichaÅ‚ Byczko                                
+                                Reuben Eadon
+                                Shane Allcroft
+                                Aidan Page
+                                Earthly Delights Ogdo
+                                John Szevin
+                                Shane Allcroft
+                                Kelly Joyce
+                                Cleo Lamb
+                                Mike Sipior
+                                James Canter
+                                Joshua Buckley
+                                Qingyao Sun
+                                CHOWARD
+                                Luke J.
+                                Gobi Silverfrog, siver and gold goddess
+                                Ethan Rigby
+                                Ethan "Kobold" CB
+                                Maria Ross Colton Chamberlin
+                                {{w-W-Y-Y-Y-Y-Y-W-w sequence|Paingouin}} "Jordan B."
+                                James Lagervall
+                                Doug "Severian" Callahan
+                                Leo Durante
+                                Rarden
+                                Ray ({{r|books}})
+                                awful_falafel
+                                ambersand
+                                dmajorduckie
+                                Lukas Wagner (König Muskelmagen)
+                                Marek Pohlodek
+                                Kamille Rose
+                                Retes;Nome
+                                Sabboth Ochoa
+                                Almea
+                                Caleb Ulichney
+                                Visnex
+                                CreativeCorpse
+                                Kelly Vincent
+                                Teagan Erika Stephanie Strickland
+                                Mirthful Sloth
+                                beepy roboticvenusian (enchiridion)
+                                AvianAnarchy
+                                Gavin Conover
+
+  ]]</topic>
+  <topic name="Open Source Licenses" DisplayName="開源授權條款">[[{{c|Harmony 授權 (https://github.com/pardeike/Harmony)}}
+  {{W|MIT 授權}}
+
+  Copyright (c) 2017 Andreas Pardeike
+
+{{c|FuzzySharp 授權 (https://github.com/JakeBayer/FuzzySharp)}}
+  {{W|MIT 授權}}
+
+  Copyright (c) 2018 
+  
+{{c|UnityStandaloneFileBrowser 授權
+ (https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
+  {{W|MIT 授權}}
+
+  Copyright (c) 2017 Gökhan Gökçe
+
+{{c|ZString 授權 (https://github.com/Cysharp/ZString)}}
+  {{W|MIT 授權}}
+
+  Copyright (c) 2020 Yoshifumi Kawai / Cysharp, Inc.
+
+{{c|UniTask 授權 (https://github.com/Cysharp/UniTask)}}
+  {{W|MIT 授權}}
+
+  Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.
+
+
+{{W|MIT 授權}} {{c|- 全文}}
+  特此授權予任何取得本軟體及相關文件檔案（下稱「本軟體」）副本之人，得免費使用本軟體且不受限制，包括但不限於使用、複製、修改、合併、發佈、分發、再授權及/或販售本軟體的副本，並允許獲授本軟體之人依下列條件進行上述行為：
+
+  上述版權聲明與本許可聲明應包含在所有本軟體的副本或實質部分中。
+
+  本軟體係按「現狀」提供，不附帶任何形式的明示或暗示保證，包括但不限於對適銷性、特定用途適用性及非侵權性的保證。在任何情況下，作者或版權持有人均不對因本軟體、使用本軟體或其他與本軟體相關之行為所引起的任何索賠、損害或其他責任（無論是基於契約、侵權或其他方式）負責。]]</topic>
+</help>

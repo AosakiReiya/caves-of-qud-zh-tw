@@ -1,0 +1,54 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 從 tag 同步 manifest 版本
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          python3 - <<'EOF'
+          import json
+          path = "manifest.json"
+          data = json.load(open(path, encoding="utf-8"))
+          data["Version"] = "$VERSION"
+          json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
+          print(f"manifest 版本同步為 $VERSION")
+          EOF
+
+      - name: 打包 mod
+        run: |
+          python3 tools/package_mod.py --zip
+          ls -la release/
+
+      - name: 產生發布說明（從 CHANGELOG 抓取）
+        run: |
+          python3 - <<'EOF'
+          import re
+          version = "${GITHUB_REF_NAME#v}"
+          changelog = open("CHANGELOG.md", encoding="utf-8").read()
+          m = re.search(r"## v" + re.escape(version) + r"(.*?)(?=\n## |\Z)", changelog, re.S)
+          body = m.group(1).strip() if m else "請見 CHANGELOG.md。"
+          open("RELEASE_NOTES.md", "w", encoding="utf-8").write(body)
+          EOF
+
+      - name: 建立 GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md
+          files: |
+            release/qud-zh-tw.zip

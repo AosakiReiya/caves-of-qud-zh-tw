@@ -1,0 +1,1839 @@
+Agate Severance Star
+Agolgot
+Agyra
+Aloysius
+Angohind
+Aoyg-No-Longer
+Argyve
+Arrivarium
+Asphodel
+Banner-Knight Templar
+Barathrum
+Barathrum clock
+Barathrumites
+BaseFloat
+Bell of Rest
+Bep
+Bethesda Susa
+Bethsaida
+Bonus duration
+Brightsheol
+Chavvah, the Tree of Life
+Children of Mamon
+Cone angle
+Cone length
+Consortium of Phyta
+Crowsong
+Ctesiphus
+Cult of the Coiled Lamb
+Dadogom
+Dagasha
+Dagasha's crucifix
+Damage increment
+Damage to non-structural objects
+Damage to structural objects
+Dardi
+Daughters of Exile
+Death Gate
+Doyoba
+Duration
+Dyvvrach
+Earth Gate
+Erah
+Eschelstadt II
+Eskhind
+Esther
+Euclid
+Eyn Rogel
+Eyn Roj
+Farmers' Guild
+Fellowship of Wardens
+Fix-It spray foam
+Fjorn-Kosef
+Gate to Brightsheol
+Geeub
+Girsh
+Girsh godling
+Goek
+Golgotha
+Grandchildren of Mamon
+Grit Gate
+Gunner-Knight Templar
+Gyamyo
+Gyre wights
+HE Missile
+Haddas
+Haggabah
+Hamilcrab
+Herododicus
+Hindriarch Keh
+Hortensa
+Indrix
+Inside
+Irudad
+Isahind
+Iseppa
+Issachar rifle
+Issachari raider
+Issachari raider and Mechanimist convert
+Issachari rifler
+Issachari tribe
+Jacobo
+Joppa
+Joppa recoiler
+Jotun
+Jy egregore
+Kah
+Kah's conveyor
+Keh-hind
+Kesehind
+Knight Commander of the Holy Temple
+Knight Templar
+Knights Liminal
+Krka
+Kyakukya
+Lake Avalon
+Lake Hinnom
+Laser damage increment
+Laser penetration
+Lebah
+Life Gate
+Liihart
+Lulihart
+Mafeo
+Mak
+Many Eyes
+Mechanimist catechist
+Mechanimist houndmaster
+Mechanimist paladin
+Mechanimist pilgrim
+Mechanimist preacher
+Mechanimist priest
+Mechanimist rummager
+Mechanimist zealot
+Mechanimists
+Mehmet
+Merchants' Guild
+Meyehind
+Miryam
+Moon Stair
+Mutated Human
+Nacham
+Nacham's loom
+Naphtaali
+Naphtaali forager
+Naphtaali jeer
+Naphtaali nimrod
+Naphtaali sap
+Naphtaali tinker
+Naphtaali tribe
+Neek
+Neelahind
+Nima Ruda
+North Forum
+Northern Ark
+Nuntu
+Oboroqoru
+Omonporch
+Opal's Duskwaters
+Otho
+Palladium Reef
+Pax Klanq
+Phinae Hoshaiah
+Point of Tifaret
+Putus Templar
+Q Girl
+Qas
+Qon
+Qorish sorceress gown
+Qorish sorceress veil
+Qud
+Quetzal Council
+Rainbow Wood
+Rainwater
+Red Rock
+Rermadon
+River Opal
+River Svy
+River Yonth
+Rodanis Y
+Rokhas
+Round 1 damage
+Round 2 damage
+Round 3 damage
+Ruin of House Isner
+Saad Amus
+Santalalotze
+Seekers of the Sightless Way
+Shug'ruith
+Six Day Stilt
+Sixshrew
+Slog
+Sparafucile
+Spindle
+Spindle tether
+Star Orchid Temple
+Starfarer's Quay
+Sting cooldown
+Tam
+Tammuz
+Templar phylactery
+Templar squire
+Thah
+The North Sheva
+Thicksalt
+Thin World
+Tikva
+Tillifergaewicz
+To-hit bonus
+Triangulum Consulate
+Triangulum tree sculpture
+True Kin
+Tszappur
+Tzedech
+Tzimtzlum
+Uncertainty radius
+Une
+Urshiib Librarian
+Urshiib Merchant
+Va'am
+Va'am's blower
+Vision duration
+Vision radius
+Vivira
+Wraith-Knight Templar of the Binary Honorum
+Yd Freehold
+Yla Haj
+Yona
+Yrame
+Yurl
+Zothom
+achromous bite
+addling urchin
+adiyy
+agolfly
+agolmaggot
+agolzvuv
+air well
+alchemist
+alchemist's table
+algae
+aloe fugues
+aloe porta
+aloe pyra
+aloe volta
+amber-tipped staff
+amoeba
+amoeba farmer
+anomaly extinguisher
+antelope cherub
+antelope golem
+antelopes
+antlers
+ape cherub
+ape golem
+apes
+apothecary
+apple farmer
+apple farmer's daughter
+arachnids
+arc sconce
+arc winder
+arch dervish of the Sightless Way
+archway
+arconaut
+armchair
+armillary sphere
+armor
+armor rack
+armored claw
+armorer
+arrow
+arrowslit
+arsplice hyphae
+ash shovel
+ashes
+ashy stalagmite
+asphalt mines
+asphodelyte
+astral tabby
+atmospheric halo
+axe
+baboon
+baboon cherub
+baboon corpse
+baboon golem
+baboon hero
+baboons
+bacilli
+backpack
+baetyl cherub
+baetyl golem
+baetyls
+banana grove
+banana rancher
+banana tree
+bandage
+barbed foreleg
+barbed midleg
+bark
+bark armor
+barkbiter
+barkbiter corpse
+baroque ruins
+basalt
+base bear
+bat
+bat cherub
+bat corpse
+bat golem
+batfolk
+bay door
+bazaar of Samech
+beak
+bear
+bear cherub
+bear corpse
+bear golem
+bears
+becoming nook
+bed
+bed golem
+bedger
+bedroll
+beekeeper
+beetle farmer
+beetlebum
+bench
+bending gjaus
+bent metal sheet
+bent surgical stent
+bill
+bipedal robot golem
+bird cherub
+bird golem
+birds
+bite
+bizarre contraption
+black marble
+black marble walkway
+black robes
+black shale
+blast cannon tinker
+blast of shot
+bloated pearlfrog
+bloated pearlfrog corpse
+blood-gradient hand vacuum
+blue marble world
+blueshifted chrome
+blunt end
+blunt scalpel
+boar
+boar corpse
+boar jerky
+boar-skin gloves
+bone oven
+bone worm
+bone worm corpse
+book
+book table
+bookbinder
+booster gun
+boots
+bop sponge
+bottle
+boulder
+bounding boots
+bouquet of flowers
+bow
+bracelet
+brain sculpture
+brass foaminator
+brazier in suspense
+breathbeard
+brick
+brick walkway
+bridge
+brightshroom
+brinestalk
+brinestalk fence
+brinestalk gate
+brinestalk stakes
+brinestalk wall
+broadcast power station
+broken microcontroller array
+broken snail egg
+bronze brazier
+bubble level
+built-in bookshelf
+bulging waterskin
+bundle of noisegrass
+burnished azzurum
+burnt capacitor
+burrowing claws
+burrowing girshling
+bush golem
+cage
+camel bladder
+campfire
+campfire remains
+candelabra
+cannibal
+cannibal and Mechanimist convert
+cannibal cherub
+cannibals
+cannon
+canteen
+canvas
+canvas folding chair
+carapace
+caravan guard
+carbine
+carcass kneader
+carved diptych
+carved stone from the sultanate of Resheph
+casque
+cast net
+cat cherub
+cat golem
+cat herder
+catch basin
+cats
+cave spider
+cave spider corpse
+ceramic amphora
+ceremonial vibrokhopesh
+chain boots
+chain coif
+chain gauntlets
+chain mail
+chain pistol
+chaingun
+chaingun turret tinker
+chair
+chair golem
+chairbear
+chalkboard
+charred corpse
+charred goatfolk corpse
+charred wood
+chef
+cherubic bands
+cherubic bark
+cherubic bite
+cherubic claw
+cherubic fist
+cherubic foot
+cherubic handle
+cherubic kick
+cherubic nodule
+cherubic pistil
+cherubic pseudopod
+cherubic spade
+cherubic spines
+cherubic stranglehold
+cherubic talons
+chest
+chiming rock
+chitinous puma
+chitinous puma corpse
+chrome bust of K4K5
+chrome bust of Mehmet I
+chrome chibur
+chrome plaque
+chrome platform
+chrome revolver
+chrome sculpture
+chromeling signal relay
+chute crab
+circle of light
+circumcestral monument
+clam golem
+claw
+claws
+clay jug
+clay oven
+clay pitcher
+clay pot
+cloak
+clockwork beetle
+clockwork beetle and pariah to its people
+clone of Saad Amus
+cloth overalls
+cloth robe
+club
+cocci
+colossal hoof
+colossal orb
+combat shotgun
+communication ribbons
+communications panel
+compacted bone
+compass bracelet
+compound bow
+concrete wall
+confusion gas
+conjoined girshlings
+conservator
+control switch
+conveyor belt
+conveyor drive unit
+cookbook
+copilot console
+copilot seat
+coral path
+coral pit
+coral polyp
+coral rag
+corded tail
+corpse of Slog
+corroded circuit board
+corrosive gas
+crab cherub
+crab claw
+crab farmer
+crab golem
+crab-crushing beak
+crabs
+cracked decorative vessel
+cracked lens
+cracked robotics housing
+cragmensch
+cragmensch boulderer
+cragmensch brainer
+cragmensch golem
+cragmensch luminary
+craters
+credit lockbox
+crib
+croc
+crude toga
+crushing bands
+crusty loaf
+cryogenic mist
+crypt
+crypt ferret
+crypt sitter
+cryptic girshling
+crysfoil gills
+crystal fist
+crystal flowers
+crystal golem
+crystal oven
+crystal slynth
+crystalline branch
+crystalline point
+crystalline root
+crystalline taproot
+crystalline trunk
+crysteel bay plates
+crysteel braid
+crysteel plate shear wall
+curly horns
+curved horns
+cybernetics rack
+cyclopean arm
+cyclopean gibbon
+dandy cap
+dark matter mast
+dart gun
+data disk
+daughter of Exile
+dawnglider
+dawnglider corpse
+dawnglider golem
+dawning ape
+dazzle cheek
+decarbonizer
+decorative moss pod
+deep jungle
+deep shaft
+deep slumberling
+defanged girshling
+defanged girshling corpse
+defoliant
+denizens of the Yd Freehold
+dense crystal leaves
+depleted stem-generator
+dervish of the Sightless Way
+desalination pellet
+desert canyons
+desert kris
+desk
+destroyed cybernetics controller
+detuned antimatter microreactor
+detuned cortical regenerator
+diacalyptus tree
+diplomacy droid
+dirt path
+disciple of the Sightless Way
+dish horn
+display breadboard
+distortion field
+dog cherub
+dog corpse
+dog golem
+dogs
+dogthorn tree
+door
+door golem
+dreadroot
+dream wren
+dreambeard
+dreambeard corpse
+dreamcrungle
+dresser
+dromad
+dromad corpse
+dromad golem
+dromad merchants
+dromad trader
+drowsing urchin
+dynamic turret tinker
+dysfunctional AI master unit
+earthworm corpse
+ebon fulcrete
+eel grass
+ego sap
+eigenpistol
+eigenrifle
+eigenturret tinker
+elder breathbeard
+elder dreambeard
+elder dreambeard corpse
+elder flamebeard
+elder flamebeard corpse
+elder gallbeard
+elder gallbeard corpse
+elder lagroot
+elder mazebeard
+elder mazebeard corpse
+elder nullbeard
+elder nullbeard corpse
+elder sleetbeard
+elder sleetbeard corpse
+elder stillbeard
+elder stillbeard corpse
+elder tartbeard
+elder tartbeard corpse
+electric arc
+electric crematorium
+electric generator
+electric oven
+electric snail
+electric snail corpse
+electric snail shell
+electrodicus
+electrofired clay, metal plating, and tissue
+electrofuge
+electrofuge corpse
+elephantines
+elevator shaft
+empty space
+energy cell rack
+engine crabs
+enigma snail
+enigma snail corpse
+entropy cyst
+equimax
+equimax corpse
+equine cherub
+equine golem
+equines
+ergo chair
+etched cleaver
+ewer
+exit hatch
+exit portal
+extrasolar fungi
+eyeless crab
+eyeless crab corpse
+eyeless crab legs
+eyeless king crab
+eyeless king crab corpse
+eyeless king crab legs
+failed energy relay
+false
+fangs
+faulty cellular detelomerator
+faundren villager
+feral dog
+filthy toga
+finger coral
+finned tail
+fire ant
+fire ant queen
+fire snout
+fire snout corpse
+fish
+fish cherub
+fish golem
+fist
+flabby leaf
+flamebeard
+flamebeard corpse
+flamethrower
+flashbang grenade mk I
+flashbang grenade mk II
+flashbang grenade mk III
+flattened remains
+flayed goatfolk corpse
+flexivest
+floor cushion
+flower cherub
+flower fields
+flower golem
+flowers
+fluent lock
+fluted marble column
+flux gauge
+foamcrete
+foamcrete floor
+folding cot
+food cube
+food processor
+fool of the Gyre
+force barrier
+force bracelet
+force projector
+force rail
+forcecore
+forcefield
+forge
+fork-horned gnu
+fossilized remains
+four-poster bed
+foxen
+fractal cabinet
+fractal talon
+fractured crysbone
+fractured microchip
+fractus
+fractus cherub
+fractus golem
+freezing mist
+freight crate
+fresh corpse
+fried implant core
+fried processing core
+frill
+frog cherub
+frog golem
+frogs
+from shunter
+frond
+frosted pillar
+frosty web
+fulcrete
+fulcrete catapult
+fulcrete with square wave
+full-scale recompositer
+full-spectrum bright sconce
+fuming vents
+funerary urn
+fungal spores
+fungi
+fungicide
+fungus golem
+furs
+fused security door
+galgal
+gallbeard
+gallbeard corpse
+gamma moth
+ganglionic teleprojector
+gargantuan footprint
+gas burner
+gas mask
+gas tumbler
+gate
+gaze
+gelatinous antiprism
+gelatinous cupola
+gelatinous frustum
+gelatinous polyhedra
+gelatinous prism
+gelatinous wedge
+gemcutter
+gentling cone
+gentling mask
+geomagnetic disc
+geometric bulkhead
+ghost perch
+ghost perch corpse
+giant amoeba
+giant beetle
+giant beetle corpse
+giant beetle nest
+giant centipede
+giant centipede corpse
+giant centipede nest
+giant clam
+giant dragonfly
+giant dragonfly corpse
+gibbon corpse
+gigantic mannequin
+gilded marble from the sultanate of Resheph
+gimeleth
+girshling
+girshling cresh
+girshworm
+glass bottle
+glass dome
+glass door
+glass furnace
+glass hydraulic pipe
+glass printer
+glass wall
+glassy orb
+glitchwood tree
+glitter dust
+glittermensch
+glittermensch boulderer
+glittermensch brainer
+glittermensch luminary
+globe
+globe in suspense
+glover
+gloves
+glowcrow
+glowfish
+glowfish corpse
+glowing soft
+glowmoth
+glowmoth corpse
+glowpad
+gnashing beak
+gnawed watervine
+goat
+goat corpse
+goat golem
+goat herder
+goatfolk
+goatfolk bully
+goatfolk corpse
+goatfolk golem
+goatfolk hornblower
+goatfolk qlippoth
+goatfolk shaman
+goatfolk sower
+goatfolk thrall
+goatfolk yurtwarden
+goggles
+golden thurible
+golem
+golem oddity
+gorged growth
+gourd
+grand newfather
+grandfather horn
+granite
+graphene ribbon
+grapnel
+grappling gun
+grave goods
+grave moss
+graverobber
+grazing cherub
+grazing hedonists
+greased steel boots
+great saltback
+great saltback corpse
+great stomp
+greater voider
+greater voider corpse
+green tile
+grenade
+grenade launcher
+grenadier
+guard dog
+gun rack
+gunsmith
+gutsmonger
+gypsum
+gyre iron
+gyre wight
+gyre wight apotheote
+gyre wight of Agolgot
+gyre wight of Bethsaida
+gyre wight of Qas
+gyre wight of Qon
+gyre wight of Rermadon
+gyre wight of Shug'ruith
+gyrohumor
+haberdasher
+halophiles
+hammered dulcimer
+hammock
+hand axe
+harp
+hatter
+headlamp
+helmet
+helpful hand
+herding dog
+hermit cherub
+hermits
+hexagonal crystal
+hexapodal robot golem
+hide-sheathed hermit
+high dervish of the Sightless Way
+high medina
+high-powered magnet
+high-voltage power line
+highly entropic beings
+hills
+hindren afflicted
+hindren corpse
+hindren golem
+hindren of Bey Lah
+hindren pariah
+hindren scout
+hindren scout and pariah
+hindren trader
+hindren villager
+historic hologram
+hoary fist
+hologram
+hologram of Barathrum
+hologram of Eater
+hologram of Rebekah
+hologram of Resheph, the Above
+hologram of Shekhinah
+hologram of archon mainframe
+hologram of outworlder
+hologram projector
+holographic beth
+holographic sandstone
+holographic shale
+holographic star chart
+holographic thatched wall
+homoelectric wrist warmer
+honey skunk
+hoof
+hookah
+hookah in suspense
+hooks
+horn
+horned chameleon
+horned chameleon corpse
+horns
+hover golem
+hoversled
+hulking baboon
+human apothecary
+human corpse
+human golem
+human tinker
+humanoid robot golem
+humble pie
+humor
+hunter of the Sightless Way
+hurdy-gurdy
+hut
+hydraulic brass foaminator
+hydraulic press
+hyperbiotic bed
+hyperbiotic chair
+hyperconductive labyrinthite
+ice frog
+ichor merchant
+ickslug
+icosahedar
+imperial sarcophagus
+induction charging station
+industrial fan
+infection
+infested crysfoil gills
+infiltrator
+infrastructure golem
+insect cherub
+insect golem
+insects
+interdictor
+interior
+inventory hatch
+iron battle axe
+iron buckler
+iron dagger
+iron gate
+iron long sword
+iron mace
+iron maiden
+iron maiden golem
+iron vinereaper
+ironweave cloak
+irritable palm
+irritable tortoise
+item
+ixlthyxl
+jaundiced glow
+jaws
+jellies
+jelly golem
+jeweled cosmos
+jeweler
+jewelry
+juice sap
+juicing cannibal
+jumble of tongues
+jungle
+junk dollar
+k-Goninon
+kaleidoslug corpse
+kick
+kiln
+kindled flame
+kingdom of Qor
+kipper
+kline
+knife
+knob
+knollworm
+knollworm corpse
+knollworm skull
+lagroot
+lagroot tuber
+lahbloom
+large hexagonal crystal
+large mandibles
+laser turret tinker
+lathe
+launch assembly
+layer of resin extruded by Agolgot
+layer of resin extruded by Bethsaida
+layer of resin extruded by Qas and Qon
+layer of resin extruded by Rermadon
+layer of resin extruded by Shug'ruith
+layer of resin extruded by Shug'ruith spawn
+lead slug
+leather apron
+leather armor
+leather boots
+leather bracer
+leather cap
+leather cloak
+leather gloves
+leather moccasins
+leather scraps
+leatherworking hammer
+leatherworking tools
+leech corpse
+leech farmer
+lichen golem
+life loop
+life sap
+light rail
+light sculpture
+light stage
+lightlock
+limestone
+linear cannon
+liquid-cooled unicomputer
+lithofex
+livid creeper
+locker
+locking machine arm
+longreach grappling gun
+loudspeaker
+low aquamarine wall
+low medina
+low mensa
+low wall
+low-light laser turret tinker
+low-quality replacement head
+luminous hoarshroom
+lurking beth
+machine press
+machine wall
+madpole
+madpole corpse
+magnetic bottle
+magnetized boots
+mainframe control panel
+mainframe monitor
+mainframe status panel
+mandibles
+mangled corpse
+manipulator
+mannequin
+marble dais
+marble relief of the Edification
+marble relief of the Sacred Joining
+marble statue
+marble steps
+marble walkway
+marble wall
+marl
+mask
+mazebeard
+mazebeard corpse
+mecha power core
+mechanical antelope cherub
+mechanical ape cherub
+mechanical baboon cherub
+mechanical baetyl cherub
+mechanical bat cherub
+mechanical bear cherub
+mechanical bird cherub
+mechanical cannibal cherub
+mechanical cat cherub
+mechanical crab cherub
+mechanical dog cherub
+mechanical equine cherub
+mechanical fish cherub
+mechanical flower cherub
+mechanical fractus cherub
+mechanical frog cherub
+mechanical grazing cherub
+mechanical hermit cherub
+mechanical insect cherub
+mechanical mollusk cherub
+mechanical mushroom cherub
+mechanical ooze cherub
+mechanical pottery cherub
+mechanical reptile cherub
+mechanical robot cherub
+mechanical root cherub
+mechanical spider cherub
+mechanical stranger cherub
+mechanical swine cherub
+mechanical tortoise cherub
+mechanical tree cherub
+mechanical urchin cherub
+mechanical vine cherub
+mechanical wings
+mechanical worm cherub
+medical bay
+medical locker
+melted reliquary
+memory eater
+memory eater corpse
+memory torus
+mental aggregator
+metal fist
+metal table
+metal walkway
+metal wall
+metal workbench
+metamorphic core
+methanogens
+miasma
+mighty fist
+mildews
+millstone
+mimic
+mimic corpse
+mindrone
+miner
+miner Mk I
+miner Mk II
+miner Mk III
+miner's helmet
+mirror bug
+missile
+missile launcher
+moisture bong
+moldering corpse
+molds
+mollusk cherub
+mollusks
+molly netting
+molting basilisk husk
+monad
+moon-and-sun shade
+mopango
+mopango charioteer
+mopango charioteer golem
+mopango corpse
+mopango golem
+mopango pilgrim
+mopango tombdweller
+mopango watcher
+mortar shell
+moted forest
+moted lamp
+mound of scrap and clay
+mountain stream
+mountains
+mouth of crushed polyps
+mover
+mover ecliptic
+mover rail
+mover stop
+mud oven
+mummified corpse
+mural endcap
+mural median
+muscular foot
+mushroom case
+mushroom cherub
+mushroom flesh
+mushrooms
+musket
+mutating gaze
+mysterious gunslinger
+mysterious strangers
+n-ary tree
+n-dimensional starshell
+n-pointed asterisk
+nachash tree
+nacreous foot
+nails of Jy
+nanopneumatic jackhammer
+nanoweave vest
+naser cannon
+neck-ring
+nephal
+nephilim shrine
+nephilim wall
+nest golem
+newfather
+newly sentient beings
+night-vision goggles
+nimbus beam
+nodule
+noisegrass
+nondeterministic core
+norm core
+norm core mk I
+norm core mk II
+norm core mk III
+normality gas
+normality vent
+novice of the Sightless Way
+nullbeard
+nullbeard corpse
+nylon bodypack
+oak chair
+oaken table
+observation lune
+octagonal table
+odd trinket
+oddly-hued glowpad
+oilskin
+oolite
+ooze cherub
+ooze golem
+oozes
+open air
+ornamental pipe
+ornate bench
+ornate chair
+ornate table
+ornately carved marble
+ornately engraved marble door with plaque
+ornately filigreed marble
+osseous ash
+outworld vault
+overgrown foam pad
+packed dirt floor
+painted column
+painting
+palladium strut
+palladium strut with coral growth
+panhumor
+panther's cloak
+pariahs
+partial monomatter assembly
+passenger console
+passenger seat
+patch of fur
+patch of watervine
+peck
+peptic bed
+peptic chair
+pestle
+petal-strewn brinestalk wall
+phase cannon
+phase cannon tinker
+phase spider
+phase web
+phasic screw
+phial
+photon drive
+phylactery squire
+pig
+pig corpse
+pig farmer
+pig farmer and Mechanimist convert
+pigskin wall
+pilaster
+pilot baetyl
+pilot console
+pilot seat
+pistil
+pistol
+planished godhed
+plant in ornate pot
+plant matter
+plasma
+plasma jelly
+plasmatic girshling
+plastic tree
+plastronoid
+plated knollworm
+player statue
+plump mushroom
+pneumatic piston
+pocketed vest
+point-defense drone
+point-defense laser
+poison gas
+poison-tipped spear
+polarized girshling
+polished black marble
+pool
+portable wall
+pottery cherub
+powdered nanohulls
+power hedron
+power line
+powered armillary sphere
+powered telescope
+precinct navigator
+primal grass
+prism cresh
+prism girshling
+prism perch
+proboscis
+programmable recoiler
+projectile
+protector of the Stilt
+pseudopod
+psionic sarcophagus
+psyberneticist
+psychal rhythm rock
+psychodyne helmet
+pulsed field magnet
+pump shotgun
+putrescence
+quadrupedal robot golem
+quantum rippler
+quartz baboon
+quartz baboon corpse
+quartziferous mirror
+quartzite
+quatravolt glider
+quick sap
+quillipede
+quillipede corpse
+quills
+random-point recoiler
+rank girshling
+ray cat
+ray cat corpse
+recoming reliquary
+rectangular bells
+red etz trellis
+red hand
+red tile
+reef hermit
+regeneration tank
+reliquary
+reprogrammable recoiler
+reptile cherub
+reptile golem
+reshaping nook
+reshaping pad
+rhinox
+rhinox corpse
+rifle
+rifle turret tinker
+rimewyk
+ring mail
+ring of moss
+ripped leather bracer
+ritual chimes
+robot cherub
+robots
+rock salt
+rock tumbler
+rocket turret tinker
+rolling chair
+root cherub
+root golem
+roots
+rostrum
+rotating machine arm
+rough gemstone
+rubber curtains
+rubble
+ruined gate
+ruined mover stop
+ruined shrine
+ruins
+rust wells
+rustacean corpse
+rusted archway
+rusted metal wall
+rusts
+sacred truss
+sacred well
+salamander corpse
+salt dune
+salt dunes
+salt kraken
+salt kraken corpse
+salt marsh
+salt mill
+salthopper
+salthopper chip
+salthopper corpse
+saltstone path
+sandals
+sandals of the river-wives
+sandstone
+sarcophagus
+sated dreamcrungle
+scalding steam
+scalpel
+schematics drafter
+scintillating glass wall
+scorpiock
+scorpiock corpse
+scrap cape
+scrap-clad hermit
+scrapable deposit box
+scrapasan chair
+scrapped waydroid
+scratched copper nugget
+scratched vents
+scribe
+scrying horn
+scumgrass
+security door
+seed
+seed spitter
+seed vault
+seedsprout worm
+seedsprout worm corpse
+segmented mirthworm corpse
+semi-automatic pistol
+serpentinite
+severed tongue
+sewage eel
+sewing machine
+shale
+shattered magnifying glass
+shattered mirror
+shattered stratum
+shattered terrarium
+shave flaps
+shesh dacha
+sheva dacha
+sheyd
+shield
+shillelagh
+shimmering heat
+shimmering sphere
+shimscale mangrove tree
+shockrod
+shoemaker
+short bow
+shotgun shell
+shoulder-mounted light cannon
+shrewd baboon
+shrine
+shrine to Girsh Agolgot
+shrine to Girsh Bethsaida
+shrine to Girsh Qas
+shrine to Girsh Qon
+shrine to Girsh Rermadon
+shrine to Resheph
+shrine to Shug'ruith the Burrower
+shrine to the Great Machine
+shunting kick
+sign
+singing bell
+skittering sentry
+slate
+slate frock
+slate mantle
+sleep gas
+sleep hollow
+sleetbeard
+sleetbeard corpse
+sliding drawer cabinet
+slimes
+slimy shaft
+slip ring
+sludges
+slug
+slug golem
+slugsnout
+slugsnout slug
+slumberling
+slumping metal door
+slynth
+slynth cantor
+slynth cidermouth
+slynth exile
+slynth friend
+slynth golem
+slynth irrigator
+slynth piper
+slynth scout
+slynth villager
+slynth wrenchmonk
+small crack
+small sphere of negative weight
+smarts sap
+smoldered mushroom
+smooth gemstone
+smuts
+snail egg
+snail farmer
+snail golem
+snailfolk
+snailmother
+snailmother corpse
+snapjaw
+snapjaw brute
+snapjaw corpse
+snapjaw feeder
+snapjaw golem
+snapjaw howler
+snapjaw hunter
+snapjaw scavenger
+snapjaw shotgunner
+snapjaw spearfiend
+snapjaw trapper
+snapjaw warlord
+snapjaw warrior
+snapjaws
+sniper rifle
+sofa
+solar condenser
+solar ribbon
+solar still
+sooty smock
+soups
+southwise bridge
+sower's seed
+space inverter
+spacetime vortex
+spade
+sparking vents
+sparse crystal leaves
+spectacles
+spider cherub
+spider golem
+spine fruit
+spines
+spiral borer
+spiral horn
+spiral stairs down
+spiral stairs up
+spirilla
+spirochaetes
+spitting slug
+splayed crystal-things that glint
+splintered haft
+spotted claw
+spotted shagspook
+spray bottle
+sprouting orb
+square cap
+staff
+stairs
+stairs down
+stairs down to Many Eyes
+stairs down to columbarium
+stairs down to convalescence quarter
+stairs down to kitchen
+stairs down to library
+stairs down to living quarters
+stairs down to market
+stairs down to salon
+stairs down to workshop
+stairs up
+stairwell teleporter
+stalagmite
+star bronze scales
+star kraken
+star orchid lily
+star orchid lime
+star orchid marble wall
+star palm
+starapple
+starapple tree
+starmchair
+starprint hoof
+starship moor
+starship nozzle
+starship platform
+stasis casque
+stasis field
+stat sap
+station wall
+statue of Bel
+statue of Carthax
+statue of Dagon
+statue of Eater
+statue of Nisroch
+statue of Oboroqoru
+statue of Resheph
+statue of Shekhinah
+statue of a deer
+statue of implanted Eater
+status panel
+steam
+steaming vents
+still crystal chime
+stillbeard
+stillbeard corpse
+stillvine
+stinger
+stone
+stone ankh
+stone anvil
+stone columbary
+stone crack
+stone monolith
+stone obelisk
+stone oven
+stone statue
+stone stele
+stony bite
+stool
+storage tank
+strange floor
+strange furniture
+strange piece of meat
+strange plant
+strange tubes
+strangefluid core
+stranger cherub
+stranglehold
+stratum caryatid
+stream of gas
+strength sap
+strip fly
+stud
+studded leather armor
+stun gas
+stun gas grenade mk I
+stun gas grenade mk II
+stun gas grenade mk III
+succulent golem
+succulents
+sultan croc
+sunflower
+superstratum
+support beam
+surface stratum
+svardym
+svardym corpse
+svardym egg sac
+svardym eld
+svardym golem
+svardym hatchling
+svardym jut
+svardym scrounge
+swarmshade tree
+swine
+swine cherub
+swine golem
+switch
+swollen bulb
+sword
+table
+table golem
+talking bear
+tangled mudroot
+tarnished chrome
+tartbeard
+tartbeard corpse
+telescope
+telescopic monocle
+temple dedication plaque
+temple gate
+temple mecha mk II
+temple mecha mk Ia
+temple mecha mk Ib
+temple projector
+temple to the Great Machine
+tendril
+tent
+terrarium
+tethering arm
+tetraxenonoglass wall
+thatched wall
+thermoacidophiles
+thirst thistle
+thistle pitcher
+thorns
+throne
+throwing axe
+ticking vents
+tinker
+tinted glass door
+tinted glass wall
+tombstone
+tongue tyrant
+tool
+torch
+torch sconce
+tortoise cherub
+tortoise golem
+tortoises
+torture chair
+trash
+trash abbot
+trash monk
+tread guard
+tree cherub
+tree golem
+trees
+tricuspid teeth
+trining lamprey
+tripedal robot golem
+troll
+troll corpse
+troll foal
+troll golem
+troll king
+trolls
+true random sampler
+tube
+tungsten carbide axe-fist
+tungsten carbide hammer-fist
+tunnel sponge
+turret golem
+turret tinker
+tusks
+twinning lamprey
+twisted metamuscle
+two-handed iron long sword
+two-headed boar
+two-headed slugsnout
+ulnar stimulators
+ultraviolet farming shelf
+umber frock
+underhorn
+understratum
+unfinished sculpture
+unicomputer
+unimax
+unimax corpse
+universal charging station
+unplanished godhed
+unshelled reptiles
+urberry bush
+urchin belcher
+urchin belcher corpse
+urchin cherub
+urchin golem
+urchins
+urn duster
+urshiib corpse
+urshiib golem
+ursine locket
+used injector
+vacuum column tape drive
+vacuum edge glass
+vacuum flux processor
+vacuum of space
+vantabloom
+vantabud
+vase
+vents with hexagonal residue
+vents with mold particulate
+vents with moss particulate
+vertical launcher
+vessel
+vessel in suspense
+vessel of the First Sip
+vibrios
+vicious bite
+vigor sap
+village mill
+village stores
+villagers of Ezra
+villagers of Joppa
+villagers of Kyakukya
+vine cherub
+vine golem
+vines
+vinewafer
+vinewood sap mask
+vintner
+voider
+voider corpse
+wad of ort
+walking ibes
+walking stick
+wall golem
+warden of the Sanctum
+warm peeker
+water
+water barons
+waterbed
+waterskin
+watervine
+watervine farmer
+watervine farmer and Mechanimist convert
+watervine patch
+waveform worm
+wax block
+wax nodule
+weapon rack
+weathered wood
+weathered wood with hanging mask
+web
+webbed foot
+weird artifact
+wheel of Qv
+wheeled robot golem
+whipping antenna
+white esh
+white tile
+wide chair
+wide glass bottle
+wide-brimmed hat
+wild-eyed water merchant
+will sap
+winged mammals
+wings
+wire extruder
+witchwood tree
+wood-carved bed
+wood-carved bookshelf
+wood-carved chair
+wood-carved clothespress
+wood-carved table
+wooden arrow
+wooden bookshelf
+wooden buckler
+wooden fence
+wooden machinery
+woodfloor
+woodsprog
+woodsprog corpse
+workbench
+worker ant
+workshop
+worm cherub
+worm golem
+worm jerky
+worm of the earth
+worms
+worn burnoose
+worn leather bracer
+worn replacement valve
+woven basket
+woven tunic
+wrench
+wrist calc
+wrist fan
+wrought iron fence
+yanshufim
+yeasts
+yempuris phi
+yeshyrskin slippers
+young crystalline root
+yuckwheat
+yuckwheat chaff
+zealot of the Six Day Stilt
+ziv bough

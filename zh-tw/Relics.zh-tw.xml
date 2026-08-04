@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<relics>
+: Relic type mappings.  The relic names will be localized text in historyspice.jsonc.
+
+  <relictypemappings>
+
+    <relictypemapping Name="Key,DisplayText" Type="Key">
+    : Display Text mapping to a type
+    Name: This text should match the relic types generated from historyspice.jsonc
+    Type: This should match one of the available types in relictypes
+
+-->
+<relics Lang="zh-tw" Encoding="utf-8">
+  <relictypemappings>
+    <relictypemapping Name="斧頭" Type="Axe" />
+    <relictypemapping Name="匕首" Type="ShortBlade" />
+    <relictypemapping Name="短劍" Type="ShortBlade" />
+    <relictypemapping Name="劍" Type="LongBlade" />
+    <relictypemapping Name="錘子" Type="Cudgel" />
+    <relictypemapping Name="晨星錘" Type="Cudgel" />
+    <relictypemapping Name="錘子" Type="Cudgel" />
+    <relictypemapping Name="痛毆" Type="Cudgel" />
+    <relictypemapping Name="頭盔" Type="Head" />
+    <relictypemapping Name="頭盔" Type="Head" />
+    <relictypemapping Name="護甲" Type="Body" />
+    <relictypemapping Name="背心" Type="Body" />
+    <relictypemapping Name="胸甲" Type="Body" />
+    <relictypemapping Name="面具" Type="Face" />
+    <relictypemapping Name="手鍊" Type="Arm" />
+    <relictypemapping Name="一雙 靴子" Type="Feet" />
+    <relictypemapping Name="靴子" Type="Feet" />
+    <relictypemapping Name="靴子" Type="Feet" />
+    <relictypemapping Name="鐵手套" Type="Hands" />
+    <relictypemapping Name="一雙 手套" Type="Hands" />
+    <relictypemapping Name="手套" Type="Hands" />
+    <relictypemapping Name="手套" Type="Hands" />
+    <relictypemapping Name="護手" Type="Hands" />
+    <relictypemapping Name="護手" Type="Hands" />
+    <relictypemapping Name="漂浮球體" Type="Floating" />
+    <relictypemapping Name="神器" Type="Artifact" />
+    <relictypemapping Name="星辰工具" Type="Artifact" />
+    <relictypemapping Name="步槍" Type="Rifle" />
+    <relictypemapping Name="長臂" Type="Rifle" />
+    <relictypemapping Name="手槍" Type="Pistol" />
+    <relictypemapping Name="它" Type="Pistol" />
+    <relictypemapping Name="短臂" Type="Pistol" />
+    <relictypemapping Name="論文" Type="Book" />
+    <relictypemapping Name="年表" Type="Book" />
+    <relictypemapping Name="哲學" Type="Book" />
+    <relictypemapping Name="假設" Type="Book" />
+    <relictypemapping Name="帳戶" Type="Book" />
+    <relictypemapping Name="占星解讀" Type="Book" />
+    <relictypemapping Name="寓言" Type="Book" />
+    <relictypemapping Name="寒冬真相" Type="Book" />
+    <relictypemapping Name="餐點" Type="Food" />
+    <relictypemapping Name="盛宴" Type="Food" />
+    <relictypemapping Name="頭骨" Type="Curio" />
+    <relictypemapping Name="單面骰子" Type="Curio" />
+    <relictypemapping Name="雙面骰子" Type="Curio" />
+    <relictypemapping Name="三面骰" Type="Curio" />
+    <relictypemapping Name="四面骰" Type="Curio" />
+    <relictypemapping Name="五面骰" Type="Curio" />
+    <relictypemapping Name="六面骰子" Type="Curio" />
+    <relictypemapping Name="七面骰" Type="Curio" />
+    <relictypemapping Name="八面骰" Type="Curio" />
+    <relictypemapping Name="九面骰" Type="Curio" />
+    <relictypemapping Name="十面骰子" Type="Curio" />
+    <relictypemapping Name="十二面骰" Type="Curio" />
+    <relictypemapping Name="二十面骰" Type="Curio" />
+    <relictypemapping Name="硬幣" Type="Curio" />
+    <relictypemapping Name="盾牌" Type="Shield" />
+  </relictypemappings>
+</relics>

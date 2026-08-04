@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<templates Lang="zh-tw" Encoding="utf-8">
+  <template ID="Effect.AdrenalControl2Boosted.Details"><p>+<stat Name="QuicknessBonus" /> 敏捷</p>
+<p>+<stat Name="MutationBonus" Unit="等級" /> 物理突變等級</p></template>
+  <template ID="Effect.AnemoneEffect.Details">
+        <switch Name="DamageBonus">
+            <case Value="0" />
+            <default><p>Additional <stat Name="DamageBonus" /> bleeding damage per turn.</p></default>
+        </switch>
+        <saveline Name="BleedingSave" HideValue="0" />
+    </template>
+  <template ID="Effect.AshPoison.Details"><p>每回合造成 <stat Name="Damage" /> 點傷害。</p></template>
+  <template ID="Effect.Asleep.Details"><switch Name="UsesSleepMode">
+<case Value="true"><p>處於電力節約模式。</p></case>
+<default><p>昏迷中。</p></default>
+</switch>
+<p>-12 DV。</p>
+<p>攻擊者的穿透檢定獲得 +4 修正。</p>
+<switch Name="UsesSleepMode">
+<case Value="true"><p>若受到傷害，將以暈眩狀態恢復正常運作。</p></case>
+<default><p>若受到傷害，將以暈眩狀態醒來。</p></default>
+</switch></template>
+  <template ID="Effect.AxonsDeflated.Details"><p><stat Name="QuicknessPenalty" Filters="signed" /> 敏捷</p></template>
+  <template ID="Effect.AxonsInflated.Details"><p>{{X|敏捷加成}} <stat Name="QuicknessBonus" Filters="signed" /> 敏捷</p>
+<p>很快就會變得遲鈍。</p></template>
+  <template ID="Effect.BasiliskPoison.Details"><p>每回合 -1d6 移動速度，持續 14-18 回合。</p>
+<p>[總計：<stat Name="MovementDebuff" Filters="signed" /> 移動速度]</p></template>
+  <template ID="Effect.Beguiled.Details">
+        <p>被另一名生物魅惑，進而跟隨他們。</p>
+        <switch Name="HitpointBonus">
+            <case Value="0" />
+            <default><p><stat Name="HitpointBonus" Filters="signed" /> hit points.</p></default>
+        </switch>
+    </template>
+  <template ID="Effect.Berserk.Details"><p>使用斧頭時有 100% 的機率造成斷肢。</p></template>
+  <template ID="Effect.Blaze_Tonic.Details"><p>+100 抗熱</p>
+<p>不會被凍結。</p>
+<p>造成 +25% 熱傷害。</p>
+<p>-50 抗寒</p>
+<switch Name="IsTrueKin">
+    <case Value="true"><p>+20 敏捷</p></case>
+    <default><p>+10 敏捷</p></default>
+</switch>
+<p>溫度不會因外部熱源而升高。</p>
+<p>必須不斷移動以避免自燃並失去此補劑的效果。</p></template>
+  <template ID="Effect.Blind.Details"><p>看不見。</p></template>
+  <template ID="Effect.BlinkingTicSickness.Details"><p>在戰鬥中的每一輪都有小機率會隨機傳送到附近的某個位置。</p></template>
+  <template ID="Effect.BoostStatistic.Details"><p><stat Name="Bonus" Filters="signed" /> <gametext>=stat.title=</gametext></p></template>
+  <template ID="Effect.BoostedImmunity.Details"><saveline Name="DiseaseOnsetSave" Type="Disease Onset" /></template>
+  <template ID="Effect.Broken.Details"><p>無法裝備或使用。</p></template>
+  <template ID="Effect.Budding.Details"><p>很快就會生成一個複製體。</p></template>
+  <template ID="Effect.Burning.Details"><p>每回合造成 <stat Name="BurningDamage" /> 傷害。</p></template>
+  <template ID="Effect.Burrowed.Details"><p>正在地下旅行中。</p></template>
+  <template ID="Effect.Disguised.Details"><switch Name="Appearance">
+<case Value=""><p>具有其他生物的外觀。</p></case>
+<default><p>具有 <stat Name="Appearance" /> 的外觀。</p></default>
+</switch></template>
+  <template ID="Effect.FungalSporeInfection.Details"><p>皮膚脫屑且發癢。那裡是不是有什麼東西在生長？</p></template>
+  <template ID="Effect.Glotrot.Details"><switch Name="TongueRotting">
+    <case Value="true">
+        <p>舌頭正在腐爛。</p>
+        <p>進食或飲水時會開始出血。</p>
+    </case>
+    <default>
+        <p>舌頭已經腐爛殆盡。</p>
+        <p>無法說話。</p>
+    </default>
+</switch></template>
+  <template ID="Effect.GlotrotOnset.Details"><p>喉嚨痛，舌頭腫脹。</p></template>
+  <template ID="Effect.Inspired.Details"><p>下次你在選擇食材烹飪餐點時，你可以從三個動態生成的效果中選擇其一。你會為所選的效果製作一份食譜。</p></template>
+  <template ID="Effect.Ironshank.Details"><p>腿骨正在關節處融合。</p>
+<p><stat Name="MoveSpeedChange" Filters="signed" /> 移動速度</p>
+<p><stat Name="AVChange" Filters="signed" /> AV</p>
+<p>將持續降低移動速度並增加 AV，直到移動速度懲罰達到 -80。</p></template>
+  <template ID="Effect.IronshankOnset.Details"><p>關節處感到腿部痠痛。</p></template>
+  <template ID="Effect.Lovesick.Details"><p>-6 智力</p>
+<p>-6 意志力</p>
+<p>-5 移動速度</p></template>
+  <template ID="Effect.MemberOfPsychicBattle.Details"><p>正與敵人進行心靈戰鬥。（剩餘 <stat Name="Turns" Unit="回合" />）</p>
+<switch Name="BloodyNose"><case Value="true"><p>流鼻血。</p></case></switch></template>
+  <template ID="Effect.Metamorphed.Details"><p>正在模擬另一種生物的形態。</p></template>
+  <template ID="Effect.Monochrome.Details"><p>只能看見單一顏色的陰影。</p></template>
+  <template ID="Effect.MonochromeOnset.Details"><p>視線模糊。</p></template>
+  <template ID="Effect.Phased.Details"><p>除非目標也處於相位狀態，否則無法與生物及物體進行物理互動。</p>
+<p>可以穿過固體。</p></template>
+  <template ID="Effect.Rebuked.Details"><p>被另一種生物斥責而變得服從。</p></template>
+  <template ID="Effect.WakingDream.Details"><p>以此生物的等級覺醒，能獲得愉快的睡眠。</p><p>死亡或放棄角色，則會睡得不安穩。</p></template>
+</templates>

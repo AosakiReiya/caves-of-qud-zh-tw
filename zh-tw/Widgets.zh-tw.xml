@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<objects ExcludeFromCorpusGeneration="Key">
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <builder Name="Key">
+
+    <tag Name="Key" Value="DisplayText">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="zh-tw" Encoding="utf-8">
+  <object Name="LandmarkJoppaIrudadHut" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="小屋" Preposition="在" />
+  </object>
+  <object Name="LandmarkJoppaArgyveWorkshop" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="工作坊" Preposition="在" />
+  </object>
+  <object Name="LandmarkJoppaTamTent" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="帳篷" Preposition="在" />
+  </object>
+  <object Name="LandmarkJoppaWatervine" Load="Merge">
+    <part Name="ZoneLandmarkGroup" DisplayName="水藤叢" Preposition="由" />
+  </object>
+  <object Name="LandmarkJoppaMill" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="村莊磨坊" Preposition="由" />
+  </object>
+  <object Name="CoralPolypSpawner" Load="Merge">
+    <part Name="Render" DisplayName="珊瑚蟲" />
+  </object>
+  <object Name="CoralAndPalladiumSpawner" Load="Merge">
+    <part Name="Render" DisplayName="長有珊瑚的鈀支架" />
+  </object>
+  <object Name="PalladiumStrutSpawner" Load="Merge">
+    <part Name="Render" DisplayName="鈀支架" />
+  </object>
+  <object Name="ArspliceHyphaeSpawner" Load="Merge">
+    <part Name="Render" DisplayName="阿斯普萊斯菌絲" />
+  </object>
+  <object Name="PistonPressController" Load="Merge">
+    <part Name="Render" DisplayName="機械壓力機" />
+  </object>
+  <object Name="PistonPressElement" Load="Merge">
+    <part Name="Render" DisplayName="機械壓力機" />
+    <part Name="Description" Short="光芒在巨大管狀物的鍍鉻表面上閃爍，那是金屬將骨頭撞碎成格柵狀後的細微刮痕。" />
+  </object>
+  <object Name="DummyTinkerScreenObject" Load="Merge">
+    <part Name="Render" DisplayName="{{C|已知修改}}" />
+  </object>
+</objects>

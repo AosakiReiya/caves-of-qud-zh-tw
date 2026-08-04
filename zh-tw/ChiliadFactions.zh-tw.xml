@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<factions>
+
+  <faction Name="Key" DisplayName="DisplayText" FormatWithArticle="" Plural="">
+  FormatWithArticle: Boolean true/false - will include article when displaying the name
+  Plural: Boolean true/false
+
+    <waterritual recipetext="DisplayText">
+
+    <interests Blurb="DisplayText">
+
+      <interest Tags="Key" WillBuy="Key" WillSell="Key" MatchAny="Key" Inverse="Key" Description="DisplayText">
+
+    <ranks>
+
+      <rank Name="Key" DisplayName="DisplayText">
+
+-->
+<factions Lang="zh-tw" Encoding="utf-8">
+  <faction Name="Sludges" DisplayName="污泥怪" />
+  <faction Name="Soups" DisplayName="湯品">
+    <interests>
+      <interest Tags="soups" Description="湯品" />
+      <interest Tags="stews" Description="燉菜" />
+      <interest Tags="messes" Description="各種混亂" />
+    </interests>
+  </faction>
+  <faction Name="Gelatinous Polyhedra" DisplayName="膠質多面體">
+    <interests>
+      <interest Tags="shapes" WillBuy="true" WillSell="false" Description="理論形狀與體積" />
+    </interests>
+  </faction>
+  <faction Name="Jellies" DisplayName="水母">
+    <interests>
+      <interest Tags="gelatin" WillBuy="false" WillSell="true" Description="由明膠製成的餐點" />
+    </interests>
+  </faction>
+  <faction Name="Slimes" DisplayName="史萊姆" />
+  <faction Name="Amoeba" DisplayName="變形蟲">
+    <interests>
+      <interest Tags="adhesion" WillBuy="true" WillSell="false" Description="細胞黏附" />
+    </interests>
+  </faction>
+  <faction Name="Algae" DisplayName="藻類">
+    <interests>
+      <interest Tags="lakesrivers" Description="湖泊與河流的位置" />
+    </interests>
+  </faction>
+  <faction Name="Cocci" DisplayName="球菌">
+    <interests>
+      <interest Tags="moistproteinrich" Description="潮濕且富含蛋白質的環境位置" />
+      <interest Tags="skinnasal" Description="皮膚與鼻腔" />
+    </interests>
+  </faction>
+  <faction Name="Bacilli" DisplayName="桿菌">
+    <interests>
+      <interest Tags="moistproteinrich" Description="潮濕且富含蛋白質的環境位置" />
+      <interest Tags="sporedispersal" Description="孢子傳播" />
+    </interests>
+  </faction>
+  <faction Name="Spirilla" DisplayName="螺旋菌">
+    <interests>
+      <interest Tags="moistproteinrich" Description="潮濕且富含蛋白質的環境位置" />
+      <interest Tags="spirals" Description="螺旋狀物" />
+    </interests>
+  </faction>
+  <faction Name="Vibrios" DisplayName="弧菌">
+    <interests>
+      <interest Tags="moistproteinrich" Description="潮濕且富含蛋白質的環境位置" />
+      <interest Tags="coves" WillBuy="true" WillSell="false" Description="小灣與河口的位置" />
+    </interests>
+  </faction>
+  <faction Name="Spirochaetes" DisplayName="螺旋體">
+    <interests>
+      <interest Tags="moistproteinrich" Description="潮濕且富含蛋白質的環境位置" />
+      <interest Tags="spirals" Description="螺旋狀物" />
+    </interests>
+  </faction>
+  <faction Name="Methanogens" DisplayName="產甲烷菌">
+    <interests>
+      <interest Tags="methane" WillBuy="false" WillSell="true" Description="甲烷沼澤的位置" />
+    </interests>
+  </faction>
+  <faction Name="Thermoacidophiles" DisplayName="嗜熱嗜酸菌" />
+  <faction Name="Halophiles" DisplayName="嗜鹽菌" />
+  <faction Name="Molds" DisplayName="黴菌">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+      <interest Tags="network" Description="網路拓撲" />
+    </interests>
+  </faction>
+  <faction Name="Mushrooms" DisplayName="蕈類">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="製帽師的位置" />
+    </interests>
+  </faction>
+  <faction Name="Rusts" DisplayName="鏽蝕">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+    </interests>
+  </faction>
+  <faction Name="Smuts" DisplayName="煤煙">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+      <interest Tags="plantlairs" Description="植物巢穴的位置" />
+    </interests>
+  </faction>
+  <faction Name="Mildews" DisplayName="霉菌">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+      <interest Tags="moldelders" Description="霉菌導師的位置" />
+    </interests>
+  </faction>
+  <faction Name="Yeasts" DisplayName="酵母">
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="死物的位置" />
+      <interest Tags="beerbreadwine" WillBuy="false" WillSell="true" Description="啤酒、麵包與葡萄酒" />
+    </interests>
+  </faction>
+  <faction Name="Crystal" DisplayName="閃爍的裂開晶體">
+    <interests>
+      <interest Tags="thingsunknown" Description="他人絕不可能知曉的事物" />
+    </interests>
+  </faction>
+  <faction Name="Snailfolk" DisplayName="蝸牛族">
+    <interests>
+      <interest Tags="soups" Description="湯品" />
+      <interest Tags="stews" Description="燉菜" />
+      <interest Tags="teas" Description="茶" />
+    </interests>
+  </faction>
+  <faction Name="Walking Ibes" DisplayName="行走之艾比">
+    <interests>
+      <interest Tags="talltrees" WillBuy="true" WillSell="false" Description="高大樹木的位置" />
+      <interest Tags="music" WillBuy="false" WillSell="true" Description="音樂表演" />
+    </interests>
+  </faction>
+  <faction Name="Elephantines" DisplayName="象類生物" />
+  <faction Name="Yanshufim" DisplayName="揚舒菲姆" FormatWithArticle="true">
+    <interests>
+      <interest Tags="astral" WillBuy="true" WillSell="false" Description="星界弱點的位置" />
+    </interests>
+  </faction>
+  <faction Name="Foxen" DisplayName="狐獸">
+    <interests>
+      <interest Tags="games" Description="機率遊戲" />
+      <interest Tags="rivers" Description="河流的位置" />
+    </interests>
+  </faction>
+  <faction Name="Batfolk" DisplayName="蝙蝠族">
+    <interests>
+      <interest Tags="caves" Description="洞窟" />
+      <interest Tags="vaultedroofs" WillBuy="true" WillSell="false" Description="拱頂屋頂的位置" />
+    </interests>
+  </faction>
+  <faction Name="Nephilim">
+    <interests>
+      <interest Tags="becoming" Description="成為有感官與目標的生物" />
+      <interest Tags="managingCult" Description="信徒的管理" />
+    </interests>
+  </faction>
+  <faction Name="Knight Liminal" DisplayName="臨界騎士" FormatWithArticle="true">
+    <interests>
+      <interest Tags="limen" Description="臨界界" />
+    </interests>
+  </faction>
+  <faction Name="Quetzal Council" DisplayName="魁札爾議會" FormatWithArticle="true">
+    <interests>
+      <interest Tags="self-sovereignty" Description="自主權" />
+      <interest Tags="plaguemitigation" Description="瘟疫的緩解" />
+    </interests>
+  </faction>
+  <faction Name="Chiliad Mamon" DisplayName="瑪蒙之孫" FormatWithArticle="true">
+    <interests>
+      <interest Tags="generationaltrauma" Description="世代傷痕帶來的創傷" />
+    </interests>
+  </faction>
+</factions>

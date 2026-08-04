@@ -1,0 +1,24 @@
+// TemplateReplacers.cs.example
+// 這是一個「尚未完成」的 replacer 範本骨架，僅供參考。
+//
+// 重要：副檔名為 .example 時遊戲「不會」編譯它。要把程式真正加入 mod 時，
+// 請改檔名為 .cs，並以 ILSpy 對照遊戲實際 API 完成實作後，在遊戲內 Recompile 驗證。
+//
+// 參考：Localization:Overview 提到翻譯者提供「replacers」來處理 =name= 佔位符。
+// 具體 API 類別（如 VariableReplacer、LocalizationManager）需以 ILSpy 反編譯
+// Assembly-CSharp.dll 確認命名空間與方法簽名後再填寫。
+
+// using XRL.World;           // 範例用，實際以反編譯結果為準
+// using XRL.Localization;    // 範例用命名空間（待確認）
+
+// /// <summary>
+// /// 繁體中文自訂 replacer 註冊處。
+// /// 例：把英文複數/動詞變化替換成中文不需變化的邏輯。
+// /// </summary>
+// public class ZhTwReplacers
+// {
+//     public static void Register()
+//     {
+//         // TODO: 註冊自訂 replacer（API 待確認）
+//     }
+// }

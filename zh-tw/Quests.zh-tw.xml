@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<quests>
+
+  <quest ID="Key" Name="DisplayText" Accomplishment="DisplayText" Hagiograph="DisplayText" Gospel="DisplayText">
+  Accomplishment: The text used in your journal / death screen after completion.
+  Hagiograph: The text written about your journeys in the tomb
+  Gospel: The text written about your accomplishment on statues in the coda
+
+    <step ID="Key" Name="DisplayText">
+
+      <text>
+      : Extra descriptive text
+
+    <property Name="Key">
+
+-->
+<quests Lang="zh-tw" Encoding="utf-8">
+  <quest ID="What's Eating the Watervine?" Name="是什麼在吃水藤？" Accomplishment="你解開了被啃食的 水藤 之謎，並向 約帕村民 發出了關於 吉爾什 的警告。" Hagiograph="在 =year= 年的 =month= 月，=name= 走過鉻色的拱門，擊退了吉什林的人群，並治癒了枯萎的作物。" Gospel="在血腥的紅岩之戰中，=name= 與吉什林和狒狒的聯軍作戰，以解放約帕村民。為了紀念 =player.t's=，他們進行了 =spice:history.gospels.Celebration.LateSultanate.!random=。">
+    <step ID="Travel to Red Rock" Name="前往 紅岩">
+      <text>從 約帕(Joppa) 向北旅行兩個波桑前往 紅岩。</text>
+    </step>
+    <step ID="Find the Vermin" Name="尋找害蟲">
+      <text>找出正在吃 約帕的 水藤 的生物。</text>
+    </step>
+    <step ID="Get a Corpse" Name="獲取屍體">
+      <text>從其中一個生物身上收集屍體。</text>
+    </step>
+    <step ID="Return with the Corpse" Name="帶著屍體歸還">
+      <text>帶著 水藤 害蟲的屍體回到 約帕(Joppa)。</text>
+    </step>
+  </quest>
+  <quest ID="Raising Indrix" Name="培育 因德里克斯" Hagiograph="喔，天啊！=name= 從一個湧動的叢林中回收了一塊黑玻璃碎片，並將它歸還給了由其電路驅動的機械山羊。" Gospel="當在 恰庫恰(Kyakukya) 附近的 叢林 漫遊時，=name= 夢見 =player.subjective= 環繞著一顆幽暗之星，並在其巨大的吸積盤中堆疊出自我的組成基石。從那以後，=name= 便隨身攜帶一個無星的三角稜鏡。">
+    <step ID="Find Mamon Souldrinker" Name="尋找 Mamon Souldrinker">
+      <text>前往山羊族村莊並尋找 Mamon Souldrinker。</text>
+    </step>
+    <step ID="Recover the Amaranthine Prism" Name="回收「永恆稜鏡」">
+      <text>將紫紅稜鏡歸還給典獄長 因德里克斯。</text>
+    </step>
+  </quest>
+  <quest ID="Fetch Argyve a Knickknack" Name="去取回阿吉夫的小玩意" Accomplishment="你為一位老人取回了一件小飾品。" Hagiograph="在 內部 一座水與藤蔓的寺廟中，=name= 教導了一位老人鉻的價值。" Gospel="=spice:elements.entity@elements[random].weddingConditions.!random.capitalize= 與 =name= 因為與 阿吉夫 結婚，而鞏固了與 修補匠 公會的友誼。">
+    <step ID="Find a Knickknack" Name="尋找小玩意">
+      <text>搜尋 約帕(Joppa) 周邊區域以尋找神器。</text>
+    </step>
+    <step ID="Return to Argyve" Name="返回 阿吉夫">
+      <text>將神器帶給 阿吉夫。</text>
+    </step>
+  </quest>
+  <quest ID="Fetch Argyve Another Knickknack" Name="去取回 阿吉夫 的另一個小玩意" Accomplishment="你為一位老人取回了另一個小玩意。" Hagiograph="在高鹽之陽下的鋼鐵陰影中，=name= 教導了一位老人鉻金的價值。" Gospel="透過與阿吉夫進行第二次結婚，=name= 鞏固了與修補匠'公會的友誼。">
+    <step ID="Find Another Knickknack" Name="尋找另一個小玩意">
+      <text>搜尋 約帕(Joppa) 周邊地區以尋找另一個神器。</text>
+    </step>
+    <step ID="Return to Argyve" Name="返回 阿吉夫">
+      <text>帶著神器回到 阿吉夫。</text>
+    </step>
+  </quest>
+  <quest ID="Weirdwire Conduit... Eureka!" Name="怪異線導管……靈光一閃！" Accomplishment="在你的幫助下，阿吉夫 偵測到了一個奇怪的訊號。" Hagiograph="藉由沼澤的庇佑，=name= 發明了奇異線導管（Weirdwire Conduit）並偵測到了一個隱藏訊號。" Gospel="在靠近綠洲村落約帕的一個偏遠工作坊，=name= 與其學徒阿吉夫發明了一種能喚起重擊鼓聲與灼熱電線感的裝置。他們將其命名為「怪異電線導管」。">
+    <step ID="Find 200 Feet of Wire" Name="尋找 200 英尺的電線">
+      <text>在約帕以東的 鏽蝕之井 搜尋 200 英尺長的電線。</text>
+    </step>
+    <step ID="Return to Argyve" Name="返回 阿吉夫">
+      <text>將電線送到阿吉夫。</text>
+    </step>
+  </quest>
+  <quest ID="A Canticle for Barathrum" Name="巴拉楚姆之歌" Accomplishment="你與巴拉楚姆信徒在礫門的聚落進行了交談。" Hagiograph="=name= 為居住在地底下的和平羽熊吟唱了一首讚歌。" Gospel="在漫遊西方的叢林時，=name= 偶遇了一群正在進行秘密儀式的 urshiib。因為 =player.t's= 圓盤狀的眼睛，他們接納了 =name= 加入他們的行列，並將祕密傳授給 =player.objective=。">
+    <step ID="Travel to Grit Gate" Name="前往 礫門(Grit Gate)">
+      <text>前往約帕東北方毀壞的地底城門。</text>
+    </step>
+    <step ID="Locate the Barathrumite Enclave" Name="尋找 Barathrumite 聚落">
+      <text>在礫門內尋找巴拉斯魯姆派（Barathrumite）聚落</text>
+    </step>
+    <step ID="Speak with the Barathrumites" Name="與巴拉楚姆信徒交談">
+      <text>詢問巴拉楚姆信徒關於阿吉夫的奇特訊號。</text>
+    </step>
+  </quest>
+  <quest ID="A Signal in the Noise" Name="雜訊中的訊號" Accomplishment="你與巴拉楚姆信徒在礫門的聚落進行了交談。" Hagiograph="=name= 為居住在地底下的和平羽熊吟唱了一首讚歌。" Gospel="在漫遊西方的叢林時，=name= 偶遇了一群正在進行秘密儀式的 urshiib。因為 =player.t's= 圓盤狀的眼睛，他們接納了 =name= 加入他們的行列，並將祕密傳授給 =player.objective=。">
+    <step ID="Travel to Grit Gate" Name="前往 礫門(Grit Gate)">
+      <text>前往西部叢林中那座毀壞的地底門戶。</text>
+    </step>
+    <step ID="Locate the Barathrumite Enclave" Name="尋找 Barathrumite 聚落">
+      <text>在礫門內尋找巴拉斯魯姆派（Barathrumite）聚落</text>
+    </step>
+    <step ID="Speak with the Barathrumites" Name="與巴拉楚姆信徒交談">
+      <text>詢問巴拉楚姆信徒關於那種奇怪訊號的事。</text>
+    </step>
+  </quest>
+  <quest ID="More Than a Willing Spirit" Name="不只是意志堅定" Accomplishment="你勇闖高爾格塔，並向巴拉楚姆信徒展示了你的英姿。" Hagiograph="在 =year= 年的 =month= 月，=name= 從高爾格塔的垃圾槽中現身，凱旋而歸且全身沾滿黏液。" Gospel="在向西巡邏叢林時，=name= 偶然發現了一群正在進行秘密儀式的 urshiib 部落。因為 =player.t= 身上覆蓋著污穢的黏液，他們接納了 =name= 加入其中，並將他們的秘密傳授給了 =player.objective=。">
+    <step ID="Travel to Golgotha" Name="前往 高爾格塔(Golgotha)">
+      <text>前往 礫門(Grit Gate) 以北的巨大洞窟 高爾格塔(Golgotha)。</text>
+    </step>
+    <step ID="Find a Dysfunctional Waydroid" Name="尋找一個功能失常的 Waydroid">
+      <text>在 高爾格塔(Golgotha) 的 遺跡 中尋找一個功能失常的 Waydroid。</text>
+    </step>
+    <step ID="Repair the Waydroid" Name="修理 Waydroid">
+      <text>修復 waydroid。</text>
+    </step>
+    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+      <text>帶著waydroid回到礫門，並與巴拉楚姆信徒交談。</text>
+    </step>
+  </quest>
+  <quest ID="Decoding the Signal" Name="解碼訊號" Accomplishment="你在岩石神廟與貝提爾交談，並解碼了那神秘的訊號。" Hagiograph="勇氣！=name= 縱身躍入開放冰架的裂口中，並以神聖語言與貝提爾對話。" Gospel="在內部的一塊巨冰中，=name= 透過與閃爍的貝提爾（baetyl）交換耳語誓言，與機械主義者建立了 =player.possessive= 友誼。">
+    <step ID="Get Q Girl's Instructions onto the Data Disk" Name="將 Q 女孩的指令寫入數據磁碟">
+      <text>在 工作坊 與 Q 女孩 交談，並要求她將對 baetyl 的指令編碼到磁碟上。</text>
+    </step>
+    <step ID="Locate the Mechanimist Compound at Bethesda Susa" Name="在貝賽達蘇薩尋找機械主義者營地">
+      <text>向北旅行前往巨大的洞穴 貝賽達蘇薩(Bethesda Susa) 並尋找機械主義者（Mechanimist）的神廟。</text>
+    </step>
+    <step ID="Decode the Signal" Name="解碼訊號">
+      <text>潛入機械主義者（Mechanimist）營地，與貝提爾（baetyl）交戰，並解碼訊號。</text>
+    </step>
+    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+      <text>回到 礫門(Grit Gate) 並與 奧托 交談。</text>
+    </step>
+  </quest>
+  <quest ID="O Glorious Shekhinah!" Name="喔，榮耀的謝希納！" Accomplishment="根據一名皈依者的推薦，你造訪了六日高蹺的商人集市與大教堂。" Hagiograph="=name= 穿過鹽沼，向北與向西行進，抵達了 六日高蹺(Six Day Stilt) 的商人集市與大教堂。在那裡，高蹺族為了向蘇丹致敬而唱著讚美詩。" Gospel="在跋涉過荒蕪平原後，=name= 前往了六日高蹺的商人市集與大教堂。在那裡 =player.subjective= 與 機械主義者 結交，並將一件神器丟入了 神聖之井。">
+    <step ID="Make a Pilgrimage to the Six Day Stilt" Name="前往 六日高蹺(Six Day Stilt) 進行朝聖">
+      <text>穿越大鹽沙漠前往商人集市與機械主義者大教堂，在那裡有一位皈依者請求你獻上一件小玩意作為祭品。</text>
+    </step>
+  </quest>
+  <quest ID="The Earl of Omonporch" Name="歐蒙波奇伯爵" Accomplishment="你處理了 阿斯福德爾 並確保了 紡錘(Spindle) 底部的區域安全。" Hagiograph="在 =year= 年的 =month= 月，=name= 委任了阿斯福德爾為歐蒙波奇的可愛伯爵，以及紡錘 Gjaus 的保護者。" Gospel="在 =year= 年，=name= 任命了腐敗的行政官 阿斯福德爾 為 歐蒙波奇(Omonporch) 的伯爵與大臣。他們在 =player.t's= 之名下強制實施了 =spice:elements.entity@elements[random].practices.!random=。">
+    <step ID="Travel to Omonporch" Name="前往 歐蒙波奇(Omonporch)">
+      <text>向北旅行前往 歐蒙波奇(Omonporch) 的 紡錘(Spindle)。</text>
+    </step>
+    <step ID="Secure the Spindle" Name="確保紡錘安全">
+      <text>掌控紡錘下方的土地。</text>
+    </step>
+    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+      <text>回到 礫門(Grit Gate) 報告你的成功。</text>
+    </step>
+  </quest>
+  <quest ID="Grave Thoughts" Name="墳墓中的思緒">
+    <step ID="Investigate the Rumbling" Name="調查隆隆聲">
+      <text>存取主機並掃描飛地周圍的頁岩。</text>
+    </step>
+    <step ID="Speak to Otho" Name="與 奧托 交談">
+      <text>透過主機房對講機或親自與 奧托 交談。</text>
+    </step>
+  </quest>
+  <quest ID="A Call to Arms" Name="武裝號召" Accomplishment="你英勇地抵禦了 普圖斯聖騎士 對 礫門(Grit Gate) 的攻擊。" Hagiograph="=name= 撞碎了一整營的子嗣，穿過了一個巨大的主機，使周圍的神廟灑滿了玻璃與鎵。" Gospel="在 =year= 年的 =month= 月，=name= 在血腥的礫門之戰中擊敗了聯合聖騎士軍隊，取得了決定性的勝利。礫門因高溫鎵和破碎玻璃而遭到如此嚴重的破壞，以至於後來被重新命名為奧托的 Graveyard。">
+    <step ID="Prepare Defenses" Name="準備防禦">
+      <text>強化雷射陣地、強化 力場投影儀、超頻鉻靈，並啟動 羅達尼斯 Y 以準備迎接 普圖斯聖騎士 的攻擊。</text>
+    </step>
+    <step ID="Defend Grit Gate" Name="防禦 礫門(Grit Gate)">
+      <text>保衛 礫門(Grit Gate) 免受襲擊者的侵害。</text>
+    </step>
+  </quest>
+  <quest ID="The Assessment" Name="評估">
+    <step ID="Speak to Otho" Name="與 奧托 交談">
+      <text>與 奧托 對話，以評估在攻擊中所遭受的損失。</text>
+    </step>
+  </quest>
+  <quest ID="Pax Klanq, I Presume?" Name="我想是 派克斯克蘭克 吧？" Accomplishment="你走過了珊瑚徑，並說服了蘑菇奇才 派克斯克蘭克，為你製作了一組由 Q 女孩 設計的電池。" Hagiograph="在虛空之中，石匠 =name= 用星磚建造了一條珊瑚徑，並以神聖語言與蘑菇交談。" Gospel="在一座由珊瑚與真菌肉塊構成的異次元大教堂中，=name= 透過迎娶派克斯克蘭克，鞏固了與真菌的 =player.possessive= 關係。">
+    <step ID="Get Q Girl's Blueprints for the Climber" Name="獲得 Q 女孩的攀爬者藍圖">
+      <text>取得攀爬者的藍圖並交付給 派克斯克蘭克。</text>
+    </step>
+    <step ID="Seek the Heart of the Rainbow" Name="尋找彩虹之心">
+      <text>解開謎團的第一部分。</text>
+    </step>
+    <step ID="Eat the God's Flesh" Name="食用神之肉">
+      <text>解讀謎團的第二部分。</text>
+    </step>
+    <step ID="Follow the Coral Path" Name="沿著 珊瑚徑 前行">
+      <text>解開謎團的第三部分。</text>
+    </step>
+    <step ID="Convince Pax Klanq to Construct the Climber" Name="說服 派克斯克蘭克 建造攀爬者">
+      <text>讓 派克斯克蘭克 同意根據 Q 女孩 的設計製作攀爬器。</text>
+    </step>
+    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+      <text>回到 礫門(Grit Gate) 並與 巴拉楚姆(Barathrum) 交談。</text>
+    </step>
+  </quest>
+  <quest ID="Petals on the Wind" Name="風中花瓣" Accomplishment="應一位 希德倫賤民 的要求，你前往隱秘的村莊 貝拉(Bey Lah) 調查一樁謎團。" Hagiograph="仁慈的 =name= 在一名鹿族棄民的請求下，同意介入草地的事務。蘇丹以仁善之心統治著！" Gospel="在 =spice:time.partsOfDay.!random=，於 =spice:commonPhrases.strange.!random.article= 與草甸天空之下，貝拉的希德倫人看見地平線上出現了一個看起來像巨大透鏡的影像。那是 =name=，一旦 =player.subjective= 到達，後裔們便為 =player.objective= 建造了一座紀念碑，從此稱呼 =player.objective= 為「透鏡希德倫人」。">
+    <step ID="Investigate Bey Lah" Name="調查 貝拉(Bey Lah)">
+      <text>前往隱藏村落 貝拉(Bey Lah) 並調查當地的問題。</text>
+    </step>
+  </quest>
+  <quest ID="Find Eskhind" Name="尋找 艾斯金德" Accomplishment="你在 內部 一棵掏空的樹中找到了 希德倫賤民 艾斯金德 和她的姐妹們。" Hagiograph="記住！=name= 告誡了逃避命運的賤民 艾斯金德。從那以後，她被稱為「溫順的 艾斯金德」。" Gospel="在 =year= 年的 =month= 月，=name= 接受了被告 艾斯金德 的決鬥挑戰，爭奪後代傳家寶 Kindrish 的所在地。=name= 獲勝並告誡 艾斯金德 返回 貝拉(Bey Lah)。">
+    <step ID="Find Eskhind" Name="尋找 艾斯金德">
+      <text>找到 艾斯金德 並取回 Kindrish。</text>
+    </step>
+    <step ID="Speak to Warden Neelahind" Name="與典獄長妮拉欣德交談">
+      <text>與典獄長 妮拉欣德(Neelahind) 交談，她曾是 艾斯金德 的摯友。</text>
+    </step>
+    <step ID="Deliver News of Eskhind" Name="傳遞關於 艾斯金德 的消息">
+      <text>向 Keh 報告關於 艾斯金德 的消息。</text>
+    </step>
+  </quest>
+  <quest ID="Love and Fear" Name="愛與恐懼" Accomplishment="你發現並歸還了一首被遺棄的情詩。" Hagiograph=" =name= 的存在多麼令人振奮，她如此救贖了溫順的 艾斯金德，以至於她竟追求 貝拉(Bey Lah) 的最強戰士之手！" Gospel="在樹樁燒盡的核心中，=name= 透過迎娶 艾斯金德 與典獄官 妮拉欣德(Neelahind)，鞏固了與 貝拉的希德倫人 的 =player.possessive= 友誼。">
+    <step ID="Rescue an Imperiled Love" Name="拯救陷入險境的愛人">
+      <text>在戀人的命運塵埃落定前介入。</text>
+    </step>
+    <step ID="Return the Love Sonnet" Name="歸還情歌十四行詩">
+      <text>將這張皺巴巴的紙交給其作者或預定的收件人。</text>
+    </step>
+  </quest>
+  <quest ID="Kith and Kin" Name="親朋好友" Accomplishment="無論對 貝拉(Bey Lah) 的命運是好是壞，你都解開了 Kindrish 失蹤之謎，並協助 Warden 妮拉欣德(Neelahind) 執行正義。" Hagiograph="神聖的救世主！=name= 為 貝拉(Bey Lah) 草原 上那些飽受苦難的鹿人帶來了和平與繁榮。" Gospel="=name= 採取行動對抗盜賊以及賦予他們權力的當局，在貝拉村領導了一場調查。由於 =player.t's= =spice:elements.entity@elements[random].adjectives.!random= 的機智，典獄官妮拉欣德得以依法執行正義。">
+    <step ID="Brief Warden Neelahind" Name="簡短的典獄長 妮拉欣德(Neelahind)">
+      <text>告訴貝拉的 Warden 關於 Kindrish 盜竊案中存在爭議的事實。</text>
+    </step>
+    <step ID="Discover all the evidence" Name="發現所有證據">
+      <text>發現所有可能引導至小偷的證據。</text>
+    </step>
+    <step ID="Accuse the thief" Name="指控小偷">
+      <text>帶著事件證據與 Warden 妮拉欣德(Neelahind) 交談，並指控偷走 Kindrish 的小偷。</text>
+    </step>
+  </quest>
+  <quest ID="The Buried Watchers" Name="被埋葬的觀測者" Accomplishment="你造訪了一群居住在墳墓中的莫龐戈。" Hagiograph="在 歐蒙波奇(Omonporch) 的食者之墓深處，=name= 偶然發現了一群正在進行秘密儀式的 莫龐戈(Mopango)。他們接納了蘇丹進入他們的行列，並將他們的秘密傳授給了 =player.objective=。" Gospel="在歐蒙波奇的食者之墓深處，=name= 偶然發現了一群正在進行秘密儀式的莫龐戈。他們接受了 =sultanTerm= 加入其族群，並將祕密傳授給了 =player.objective=。">
+    <step ID="Visit the Mopango Settlement in the Tomb of the Eaters" Name="前往食者之墓的莫龐戈定居點">
+      <text>在西北方的地下墓穴尋找維薇拉，她是一座友善的砲塔，並告訴她你是受佐托姆所託。</text>
+    </step>
+  </quest>
+  <quest ID="Fraying Favorites" Name="磨損的珍愛之物">
+    <step ID="Talk to Lebah" Name="與 萊巴 交談">
+      <text>詢問 萊巴 關於他與那件令人厭惡裝置的遭遇。</text>
+    </step>
+    <step ID="Recover the Repulsive Device" Name="回收排斥裝置">
+      <text>在民俗地下墓穴（Folk Catacombs）找到 K-高尼農 並取回那件令人厭惡的裝置。</text>
+    </step>
+    <step ID="Speak with the Watchers" Name="與守望者交談">
+      <text>詢問 莫潘戈監視者 達多戈姆、多約帕(Joppa)、吉亞莫 與 約納 關於那個令人厭惡的裝置。</text>
+    </step>
+    <step ID="Use the Repulsive Device" Name="使用排斥裝置">
+      <text>選擇如何最佳地使用排斥裝置。</text>
+    </step>
+  </quest>
+  <quest ID="Tomb of the Eaters" Name="食者之墓" Accomplishment="你在成功解除紡錘的磁場後，從食者之墓歸來。">
+    <step ID="Recover the Mark of Death" Name="找回死亡印記">
+      <text>找回被「食者」用來標記死者的失落印記。</text>
+    </step>
+    <step ID="Inscribe the Mark" Name="刻下印記">
+      <text>將印記刺在你的身上。</text>
+    </step>
+    <step ID="Enter the Tomb of the Eaters" Name="進入食者之墓">
+      <text>進入封印的墳墓。</text>
+    </step>
+    <step ID="Ascend the Tomb and Cross into Brightsheol" Name="登上墳墓並跨越至 布萊特希歐">
+      <text>登上陵墓並找到雷謝夫（Resheph）的埋葬室。從那裡，尋找前往布萊特希歐的方法。</text>
+    </step>
+    <step ID="Disable the Spindle's Magnetic Field" Name="禁用 紡錘的 磁場">
+      <text>存取 紡錘的 控制單元並關閉力場。</text>
+    </step>
+    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+      <text>回到 礫門(Grit Gate) 並與 巴拉楚姆(Barathrum) 交談。</text>
+    </step>
+  </quest>
+  <quest ID="Landing Pads" Name="降落平台">
+    <step ID="Consult Settlements" Name="諮詢定居點">
+      <text>說服至少三個定居點的領袖為斯林斯提供庇護。</text>
+    </step>
+    <step ID="Sanctuary Candidates" Name="避難所候選人">
+      <text>這些派系已同意收留 斯林斯。</text>
+    </step>
+    <step ID="Bid the Slynth to Choose" Name="讓 斯林斯 做出選擇">
+      <text>告訴塔召集斯林斯並做出決定。</text>
+    </step>
+  </quest>
+  <quest ID="Return to the Hydropon" Name="返回水耕設施">
+    <step ID="Return to the Hydropon" Name="返回水耕設施">
+      <text>一旦 斯林斯 到達他們的新家，請前往水耕區與 塔 交談。</text>
+    </step>
+  </quest>
+  <quest ID="If, Then, Else" Name="如果、那麼、否則" Accomplishment="你協助了生命之樹，查法，完成了「非存在化」的儀式，並永遠切斷了它其中一個實體鐘聲。" Hagiograph="減法的藝術！修剪者 =name= 將生命之樹修剪成了更具美感的形態。" Gospel="遵循生命之樹的多重意志，=name= 將一塊運輸岩帶到了 夏瓦的 樹幹下方的 微光柔和 處。那裡 =player.subjective= 進行了一場秘密儀式，並帶著永恆的改變回到了地面。">
+    <step ID="Gather Tau's Chime" Name="收集 Tau 的鐘聲">
+      <text>從 keter 中的樹枝上取回 Tau 的風鈴。</text>
+    </step>
+    <step ID="Go to the Bottom of Taproot" Name="前往根鬚底層">
+      <text>沿著 夏瓦的 taproot 向下前往其終點，深達 40 層地層。</text>
+    </step>
+    <step ID="Reunite Tau with Her Chime" Name="讓 Tau 與她的鈴鐺重逢">
+      <text>將她的風鈴觸碰 Taproot，並完成 -elseing 的儀式。</text>
+    </step>
+    <step ID="Return to the Keter" Name="返回 Keter">
+      <text>回到 keter 並與 迪夫拉克 交談。</text>
+    </step>
+  </quest>
+  <quest ID="The Golem" Name="魔像" Accomplishment="">
+    <step ID="Soup" Name="取得鮮紅液體">
+      <text>帶 20 德蘭的原始湯去給派克斯克蘭克。</text>
+    </step>
+    <step ID="Body" Name="選擇一個身體">
+      <text>提供一名等級 30 或更高的追隨者。</text>
+    </step>
+    <step ID="Catalyst" Name="選擇催化劑">
+      <text>提供 3 德蘭的純淨液體。</text>
+    </step>
+    <step ID="Atzmus" Name="選擇一名 Atzmus">
+      <text>提供一個生物的肢體。</text>
+    </step>
+    <step ID="Armament" Name="選擇武裝">
+      <text>提供一件 齊塔色 (zetachrome) 武器。</text>
+    </step>
+    <step ID="Incantation" Name="選擇咒語">
+      <text>提供一條來自你編年史的紀錄。</text>
+    </step>
+    <step ID="Hamsa" Name="選擇一個漢薩">
+      <text>提供一個重量在 5 磅或以下的物品。</text>
+    </step>
+    <step ID="Power" Name="取得一個昇華能量源">
+      <text>請提供 3 德蘭的中子通量，或尋找其他能源。</text>
+    </step>
+  </quest>
+  <quest ID="We Are Starfreight" Name="我們是星貨運輸">
+    <step ID="Barathrum" Name="準備升騰">
+      <text>在魔像中取得巴拉楚姆。</text>
+    </step>
+    <step ID="Ascend" Name="升騰">
+      <text>啟動紡錘的升騰機制。</text>
+    </step>
+  </quest>
+  <quest ID="Reclamation" Name="復墾">
+    <property Name="MessageLeaving">離開戰場可能會讓聖騎士有時間重新集結，並導致更多巴拉楚姆信徒傷亡。確定要繼續嗎？</property>
+    <property Name="MessageArrival">{{m|ULLLLLLLLLLLLQ!}}
+
+
+      尼菲林（Nephilim）那令人隱隱作痛的世界哀鳴迴盪著，你的身體在帶電的空氣中悸動！
+
+      它已抵達，{{R|=direction=}}。</property>
+    <property Name="MessageArrivalSuper">{{m|QQQYQQQYQQQYQQQYQQQ!}}
+
+星爆噴發物如燃燒的絲帶般落下，你的身體幾乎被早期宇宙那無法言喻的哀鳴消融殆盡！
+
+=name= 降臨了，{{R|=direction=}}。</property>
+    <step ID="Warleader1" Name="擊敗 =name=">
+      <text>從 歐蒙波奇(Omonporch) 的周邊移除聖騎士戰爭領袖的威脅。</text>
+    </step>
+    <step ID="Warleader2" Name="擊敗 =name=">
+      <text>從 歐蒙波奇(Omonporch) 的周邊移除聖騎士戰爭領袖的威脅。</text>
+    </step>
+    <step ID="Warleader3" Name="擊敗 =name=">
+      <text>從 歐蒙波奇(Omonporch) 的周邊移除聖騎士戰爭領袖的威脅。</text>
+    </step>
+    <step ID="Warleader4" Name="擊敗 =name=">
+      <text>從 歐蒙波奇(Omonporch) 的周邊移除聖騎士戰爭領袖的威脅。</text>
+    </step>
+    <step ID="Nephal" Name="野獸蜷縮">
+      <text>消除 =name= 的威脅。</text>
+    </step>
+  </quest>
+</quests>

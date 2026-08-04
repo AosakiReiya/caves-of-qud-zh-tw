@@ -1,0 +1,31 @@
+# 遊戲本體（很大、易變動，不入 repo）
+/CoQ_Data/
+/CoQ.exe
+/UnityPlayer.dll
+/MonoBleedingEdge/
+/D3D12/
+/*.pdb
+/*.dll
+
+# 參考專案與範例
+/../caves-of-qud-chinese/
+/../example-language/
+
+# 字型（60MB 以上，不入 git；發布時手動放入 mod 資料夾）
+/fonts/*.ttf
+
+# Python
+__pycache__/
+*.pyc
+
+# 翻譯斷點與暫存（不入 git）
+tools/progress.json
+tools/progress.json.tmp
+tools/bad_quality.json
+
+# 打包產物
+/release/
+
+# 開發用
+*.log
+build_log.txt

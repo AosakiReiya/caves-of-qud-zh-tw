@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<embarkmodules>
+
+  <module Class="Key">
+
+-->
+<embarkmodules Lang="zh-tw" Encoding="utf-8">
+  <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
+    <window ID="Chargen/Modes">
+      <title>:選擇遊戲模式:</title>
+      <name>遊戲模式</name>
+    </window>
+    <modes>
+      <mode ID="Tutorial" Title="教學">
+        <description>
+          學習 卡德洞窟 的基礎知識。
+              </description>
+      </mode>
+      <mode ID="Classic" Title="經典">
+        <description> 
+          永久死亡：死亡時將失去你的角色。
+              </description>
+      </mode>
+      <mode ID="Roleplay" Title="角色扮演">
+        <description>
+          在定居點設置檢查點。
+              </description>
+      </mode>
+      <mode ID="Wander" Title="漫遊">
+        <description>          {{c|∙}} 大多數生物對你初始為中立。
+          {{c|∙}} 擊殺不會獲得經驗值。
+          {{c|∙}} 進行發現與執行 水之儀式 可獲得更多經驗值。
+          {{c|∙}} 在定居點存檔。</description>
+      </mode>
+      <mode ID="Daily" Title="每日">
+        <description>          {{c|∙}} 使用固定的角色與世界種子進行一次嘗試。
+          {{c|∙}} 目前為 {{W|=now.year=}} 年第 {{W|=now.dayOfYear=}} 天。</description>
+      </mode>
+    </modes>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
+    <window ID="Chargen/CharType">
+      <name>角色類型</name>
+      <title>:選擇角色類型：</title>
+    </window>
+    <types>
+      <type ID="Pregen" Title="預設值">
+        <description>
+          從數個預設角色中挑選。等你熟悉之後，就可以進行自定義。
+               </description>
+      </type>
+      <type ID="New" Title="新">
+        <description>          建立新角色。
+              </description>
+      </type>
+      <type ID="Random" Title="隨機">
+        <description>隨機生成角色。</description>
+      </type>
+      <type ID="Library" Title="圖書館">
+        <description>
+          從您的角色庫中選擇一個角色。</description>
+      </type>
+      <type ID="Last" Title="最後">
+        <description>
+          重新遊玩你最後使用的角色。
+              </description>
+      </type>
+    </types>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
+    <window ID="Chargen/BuildLibrary">
+      <name>建造圖書館</name>
+      <title>:建立圖書館:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
+    <window ID="Chargen/ChooseGenotypes">
+      <name>基因型</name>
+      <title>:選擇基因型:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+    <window ID="Chargen/Pregens">
+      <name>預設角色</name>
+      <title>:選擇預設值:</title>
+    </window>
+    <pregens>
+      <pregen ID="Praetorian Prime" Name="普雷托利安之首">
+        <description>{{c|∙}} 以電荷為基礎的近戰戰士
+{{c|∙}} 初始擁有夜視能力
+{{c|∙}} {{W|生存力最強}} 的初始配置</description>
+      </pregen>
+      <pregen ID="First Gardener" Name="首位園丁">
+        <description>{{c|∙}} 近戰與遠程混合戰士
+{{c|∙}} 初始技能包含烹飪與採集
+{{c|∙}} {{W|生存能力極高}} 的初始配置</description>
+      </pregen>
+      <pregen ID="First Child of the Hearth" Name="爐火之首子">
+        <description>{{c|∙}} 近戰戰士與極端鬥毆者
+{{c|∙}} 初始持有碳化物手骨
+{{c|∙}} {{W|高生存能力}} 的初始配置</description>
+      </pregen>
+      <pregen ID="Marsh Taur" Name="沼澤牛人">
+        <description>{{c|∙}} 以充能為基礎的近戰戰士
+{{c|∙}} 凍結敵人的能力
+{{c|∙}} 高機動性
+{{c|∙}} {{W|生存力最強}} 的初始配置</description>
+      </pregen>
+      <pregen ID="Dream Tortoise" Name="夢境龜">
+        <description>{{c|∙}} 近戰戰士
+{{c|∙}} 高護甲
+{{c|∙}} 發射 睡眠瓦斯 以使敵人失能
+{{c|∙}} {{W|高生存能力}} 的初始配置</description>
+      </pregen>
+      <pregen ID="Gunwing" Name="槍翼">
+        <description>{{c|∙}} 主要為遠程戰士
+{{c|∙}} 快速且靈活
+{{c|∙}} 飛行
+{{c|∙}} {{W|高生存力}} 的初始配置</description>
+      </pregen>
+      <pregen ID="Star-Eye Esper" Name="星眼靈能者">
+        <description>{{c|∙}} 以精神力為基礎的遠程戰士
+{{c|∙}} 有效的群體控制與地圖視野
+{{c|∙}} {{W|中等生存能力}} 的初始配置</description>
+      </pregen>
+      <pregen ID="Firefrond" Name="火鬚">
+        <description>{{c|∙}} 混合型近戰戰士與精神施法者
+{{c|∙}} 具備點燃敵人的能力
+{{c|∙}} 能使附近的收穫植物生長
+{{c|∙}} {{W|具有挑戰性}} 的初始配置</description>
+      </pregen>
+      <pregen ID="bzzzt" Name="滋滋滋">
+        <description>{{c|∙}} 混合近戰戰士與電擊攻擊者
+{{c|∙}} 掘地者與陷阱設置者
+{{c|∙}} 初始具備夜視能力
+{{c|∙}} {{W|具有挑戰性}} 的初始配置</description>
+      </pregen>
+    </pregens>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
+    <window ID="Chargen/ChooseSubtypes">
+      <name>子類型</name>
+      <title>:選擇子類型:</title>
+    </window>
+    <window ID="Chargen/ChooseSubtypesCategory">
+      <name>分類與亞型</name>
+      <title>:選擇子類型:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
+    <window ID="Chargen/Mutations">
+      <name>突變</name>
+      <title>:選擇突變:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
+    <window ID="Chargen/PickAttributes">
+      <title>:選擇屬性:</title>
+      <name>屬性</name>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
+    <window ID="Chargen/Cybernetic">
+      <name>控制論</name>
+      <title>:選擇植入式改造器：</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
+    <window ID="Chargen/BuildSummary">
+      <name>摘要</name>
+      <title>:建立摘要:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
+    <window ID="Chargen/Customize">
+      <name>自訂</name>
+      <title>:自訂角色:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
+    <window ID="Chargen/ChooseStartingLocation">
+      <name>起始地點</name>
+      <title>:選擇起始地點：</title>
+    </window>
+    <locations>
+      <location ID="Joppa" Name="{{Y|約帕(Joppa)}}">
+        <description>推薦給新手玩家。</description>
+      </location>
+      <location ID="SaltMarshVillage" Name="{{G|鹽沼}}&#xA;村莊">
+        <description>          {{c|∙}} 鹽沼中的隨機村莊。
+          {{c|∙}} 村莊教授收割術。
+          {{c|∙}} 與 昆蟲 和魚類的聲望 +50。
+          {{c|∙}} 初始擁有一對 {{g|crocc{{G|a}}sins}}。</description>
+      </location>
+      <location ID="SaltDuneVillage" Name="{{Y|鹽丘群}}&#xA;村莊">
+        <description>{{c|∙}} 位於鹽丘群中的隨機村落。
+{{c|∙}} 村落教授「禁食之道」。
+{{c|∙}} 與爬蟲類的好感度 +100。
+{{c|∙}} 初始持有 {{Y|Issach{{r|a}}ri}} 旗幟。</description>
+      </location>
+      <location ID="DesertCanyonsVillage" Name="{{W|沙漠峽谷}}&#xA;村莊">
+        <description>{{c|∙}} 位於 沙漠峽谷 的隨機村莊。
+          {{c|∙}} 村莊教授「Wayfaring」。
+          {{c|∙}} 與 馬類、龜類 及 藤蔓 的聲望 +50。</description>
+      </location>
+      <location ID="HillsVillage" Name="{{Y|丘陵}}&#xA;村莊">
+        <description>          {{c|∙}} 位於 丘陵 的隨機村莊。
+          {{c|∙}} 村莊教授屠宰術。
+          {{c|∙}} 與 隱士 的聲望 +100。
+          {{c|∙}} 初始持有一個 {{r|血跡斑斑的}} 頸環</description>
+      </location>
+      <location ID="JoppaTutorial" Name="沉沒的商隊驛站">
+        <description>你抵達了卡德的郊外。</description>
+      </location>
+    </locations>
+  </module>
+</embarkmodules>

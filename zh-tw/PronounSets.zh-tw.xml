@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<pronounsets>
+
+  <pronounset Name="Key" Subjective="DisplayText" Objective="DisplayText" PossessiveAdjective="DisplayText" SubstantivePossessive="DisplayText" Reflexive="DisplayText" PersonTerm="DisplayText" ImmaturePersonTerm="DisplayText" FormalAddressTerm="DisplayText" OffspringTerm="DisplayText" SiblingTerm="DisplayText" ParentTerm="DisplayText">
+
+-->
+<pronounsets Lang="zh-tw" Encoding="utf-8">
+  <pronounset Name="player" Subjective="你" Objective="你" PossessiveAdjective="你的" SubstantivePossessive="你的" Reflexive="你自己" />
+  <pronounset Name="plural/player" Subjective="你" Objective="你" PossessiveAdjective="你的" SubstantivePossessive="你的" Reflexive="你們自己" />
+  <pronounset Name="sie/hir/hir/hirs/hirself/human/child/friend/child/sib/progenitor" Subjective="妳" Objective="牠" PossessiveAdjective="牠" SubstantivePossessive="hirs" Reflexive="她自己" />
+  <pronounset Name="xe/xem/xyr/xyrs/xemself/human/child/friend/child/sib/progenitor" Subjective="xe" Objective="你" PossessiveAdjective="妳" SubstantivePossessive="xyrs" Reflexive="牠自己" />
+  <pronounset Name="ze/zir/zir/zirs/zirself/human/child/friend/child/sib/progenitor" Subjective="ze" Objective="牠" PossessiveAdjective="牠" SubstantivePossessive="zirs" Reflexive="它自己" />
+</pronounsets>

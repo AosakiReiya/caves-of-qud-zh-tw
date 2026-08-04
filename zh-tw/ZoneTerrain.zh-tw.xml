@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<objects ExcludeFromCorpusGeneration="Key">
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <builder Name="Key">
+
+    <tag Name="Key" Value="DisplayText">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="zh-tw" Encoding="utf-8">
+  <object Name="Plant" Load="Merge">
+    <stag Name="Plank" Value="浮游物" />
+    <stag Name="Fiber" Value="條狀物" />
+    <stag Name="FiberMaterial" Value="樹皮" />
+  </object>
+  <object Name="Shimscale Mangrove Tree_blue" Load="Merge">
+    <part Name="Render" DisplayName="閃鱗紅樹林" />
+    <part Name="Description" Short="光線穿透濕漉漉的葉片，散落成點點碎影，其根系看起來像是融化成迷宮後重新凝固的蠟製柱廊。" />
+  </object>
+  <object Name="Shimscale Mangrove Tree" Load="Merge">
+    <part Name="Render" DisplayName="閃鱗紅樹林" />
+    <part Name="Description" Short="光線穿透濕漉漉的葉片，散落成點點碎影，其根系看起來像是融化成迷宮後重新凝固的蠟製柱廊。" />
+  </object>
+  <object Name="Banana Tree" Load="Merge">
+    <part Name="Render" DisplayName="香蕉樹" />
+    <part Name="Description" Short="結實的手攀上了騙徒樹的莖幹。當光線照在裸露球莖的表面時，紡錘閃爍著光芒，將光反射回擴張後的林地。" />
+  </object>
+  <object Name="Dogthorn Tree" Load="Merge">
+    <part Name="Render" DisplayName="犬刺樹" />
+    <part Name="Description" Short="糾結的根系從土中溢出。樹皮裂成尖銳的棘刺。葉片油膩且發臭。" />
+  </object>
+  <object Name="Leafless Dogthorn Tree" Load="Merge">
+    <part Name="Render" DisplayName="犬刺樹" />
+    <part Name="Description" Short="糾結的 根系 穿透了大地。樹皮碎裂成尖銳的 棘刺。" />
+  </object>
+  <object Name="Fracti" Load="Merge">
+    <part Name="Render" DisplayName="法克圖斯" />
+    <part Name="Description" Short="一片特別棘手的 Peano 植被。" />
+    <stag Name="Plank" Value="條狀物" />
+    <stag Name="Fiber" Value="條狀物" />
+    <stag Name="FiberMaterial" Value="纖維" />
+  </object>
+  <object Name="Starapple Tree" Load="Merge">
+    <part Name="Render" DisplayName="星蘋果樹" />
+    <part Name="Description" Short="星蘋果懸掛在灰燼般的枝條上，在蒼白褪色的景象中閃爍著誘人的紅光點點。" />
+  </object>
+  <object Name="Starapple Tree Ripe" Load="Merge">
+    <part Name="Render" DisplayName="星蘋果樹" />
+    <part Name="Description" Short="星蘋果懸掛在灰燼般的枝條上，在蒼白褪色的景象中閃爍著誘人的紅光點點。" />
+  </object>
+  <object Name="Witchwood Tree" Load="Merge">
+    <part Name="Render" DisplayName="巫術木" />
+    <part Name="Description" Short="當沙漠之風濕潤時，金色的羽狀物便會展開。一些被編織成微小交錯環狀的樹皮碎片，已被食木生物啃食。" />
+  </object>
+  <object Name="Dreadroot" Load="Merge">
+    <part Name="Render" DisplayName="恐懼根" />
+    <part Name="Description" Short="塊莖腹部隨著低沉的嗡鳴聲而脫皮，嫩芽則以令人不安的斷奏節奏跳動著。" />
+    <stag Name="Plank" Value="質量" />
+  </object>
+  <object Name="Sunflower" Load="Merge">
+    <part Name="Render" DisplayName="向日葵" />
+    <part Name="Description" Short="明亮的細小花朵從中心深色螺旋狀花叢中綻放。它們合在一起就像一顆微小的太陽。" />
+  </object>
+  <object Name="Dicalyptus Tree" Load="Merge">
+    <part Name="Render" DisplayName="雙鈣木" />
+    <part Name="Description" Short="一間小屋由蟲咬過的樹皮圍成圓周，向上伸向空靈的天空，並散開成一片葉冠。" />
+  </object>
+  <object Name="Lahbloom" Load="Merge">
+    <part Name="Render" DisplayName="拉布花" />
+    <part Name="Description" Short="昆蟲圍繞著四片垂掛在粗壯莖部上的金褐色花瓣盤旋嗡鳴。當有東西觸碰它時，小花會在夢幻般的狂怒中猛然彈起。" />
+  </object>
+  <object Name="Yuckwheat" Load="Merge">
+    <part Name="Render" DisplayName="惡臭麥" />
+    <part Name="Description" Short="珊瑚花瓣從纖細的莖頂端長出。一個金屬或骨製的蹄子踩碎了它的同胞，將它們的酸性纖維散布在土壤上。" />
+    <stag Name="FiberMaterial" Value="茅草" />
+  </object>
+  <object Name="Watervine" Load="Merge">
+    <part Name="Render" DisplayName="水藤" />
+    <part Name="Description" Short="鹽分在溝壑中聚集。其葉片處被水分腫脹的薄片所取代，且糾結在一起。" />
+    <stag Name="Plank" Value="茅草" />
+    <stag Name="Fiber" Value="繩索" />
+    <stag Name="FiberMaterial" Value="藤蔓" />
+  </object>
+  <object Name="Gnawed Watervine" Load="Merge">
+    <part Name="Render" DisplayName="被啃食的水藤" />
+    <part Name="Description" Short="鹽分聚集在其溝壑中。它被水分腫脹的薄片取代了葉片，且看起來像是被吃了一半。" />
+  </object>
+  <object Name="Brinestalk" Load="Merge">
+    <part Name="Render" DisplayName="鹽莖" />
+    <part Name="Description" Short="纖維狀鹽腐堆積在這些鹽水池中。它們不屬於任何人。" />
+    <stag Name="Plank" Value="束" />
+    <stag Name="Fiber" Value="繩索" />
+    <stag Name="FiberMaterial" Value="纖維" />
+    <xtagGrammar massNoun="真實" />
+  </object>
+  <object Name="Swarmshade Tree_blue" Load="Merge">
+    <part Name="Render" DisplayName="群影樹" />
+    <part Name="Description" Short="一片由鏟狀葉片組成的星雲，隨著乾涸的小溪與甲蟲的咀嚼聲沙沙作響。" />
+  </object>
+  <object Name="Swarmshade Tree" Load="Merge">
+    <part Name="Render" DisplayName="群影樹" />
+    <part Name="Description" Short="一片由鏟狀葉片組成的星雲，隨著乾涸的小溪與甲蟲的咀嚼聲沙沙作響。" />
+  </object>
+  <object Name="Ziv Bough_blue" Load="Merge">
+    <part Name="Render" DisplayName="齊夫枝" />
+    <part Name="Description" Short="樹幹沿著光線的徑向路徑螺旋上升，並綻放出勝利月桂的花冠。" />
+  </object>
+  <object Name="Ziv Bough" Load="Merge">
+    <part Name="Render" DisplayName="齊夫枝" />
+    <part Name="Description" Short="樹幹沿著光線的徑向路徑螺旋上升，並綻放出勝利月桂的花冠。" />
+  </object>
+  <object Name="Star Palm" Load="Merge">
+    <part Name="Render" DisplayName="星棕櫚" />
+    <part Name="Description" Short="飽含陽光的葉片垂落在形狀如融化之星、佈滿蟲咬痕跡的樹幹上。" />
+  </object>
+  <object Name="Slime Grass" Load="Merge">
+    <part Name="Render" DisplayName="垢草" />
+    <part Name="Description" Short="絲線在泡沫薄膜下閃爍著光芒。" />
+    <xtagGrammar iArticle="一些" adjunctNoun="叢" />
+    <stag Name="Plank" Value="茅草" />
+    <stag Name="Fiber" Value="細繩" />
+    <stag Name="FiberMaterial" Value="茅草" />
+  </object>
+  <object Name="Grave Moss" Load="Merge">
+    <part Name="Render" DisplayName="墓地苔蘚" />
+    <part Name="Description" Short="它無色且脆弱；踩上去會嘎吱作響。它聚集成墊狀的方式必須符合其曾經綻放出的、充滿生命水分的軀體形狀，而未來也將再次伴隨著深紅色的血液如此呈現。" />
+    <xtagGrammar iArticle="一些" />
+  </object>
+  <object Name="Stillvine" Load="Merge">
+    <part Name="Render" DisplayName="靜藤" />
+    <part Name="Description" Short="幽靈杖被旋轉至如畫般的靜止狀態，水分在其芽苞上聚集。" />
+    <stag Name="Plank" Value="茅草" />
+    <stag Name="Fiber" Value="繩索" />
+    <stag Name="FiberMaterial" Value="藤蔓" />
+  </object>
+  <object Name="Nimbus Beam" Load="Merge">
+    <part Name="Render" DisplayName="光暈光束" />
+    <part Name="Description" Short="蓬鬆的酸液與香桃木綠葉光環環繞著一座向天而生的木製宣禮塔。其頂端穿透了林冠，贏得了汲取陽光的競賽。" />
+  </object>
+  <object Name="Nachash Tree" Load="Merge">
+    <part Name="Render" DisplayName="納卡什樹" />
+    <part Name="Description" Short="覆蓋著苔蘚的嫩芽像雌性美杜莎一樣，在傾斜的樹幹頂端捲曲。空氣使它們更加凌亂。" />
+  </object>
+  <object Name="Urberry Bush" Load="Merge">
+    <part Name="Render" DisplayName="烏莓灌木" />
+    <part Name="Description" Short="穿過拱形根系格柵的幽暗處，葉片以完美的角度指向，篩選著陽光，讓原始花蕾沐浴在柔和的金黃暖意中。" />
+  </object>
+  <object Name="n-Ary Tree" Load="Merge">
+    <part Name="Render" DisplayName="n-元樹" />
+    <part Name="Description" Short="明亮的亮片葉子在靛藍星群中閃爍，枝條穿梭於熵真菌之中。" />
+  </object>
+  <object Name="Glitchwood Tree" Load="Merge">
+    <part Name="Render" DisplayName="故障木樹" />
+    <part Name="Description" Short="彎曲的 根系 向著毛茸茸的樹冠向上延伸。眼睛試圖在單片葉子周圍畫出邊界，但它們的光線線條卻閃爍不定並失去了其導數。" />
+  </object>
+  <object Name="Icosahedar" Load="Merge">
+    <part Name="Render" DisplayName="二十面體" />
+    <part Name="Description" Short="蠟質的小枝因代數塊莖的重量而下垂。每一顆都完美且規整，其表面覆蓋著無光澤的柏拉圖式露水。" />
+  </object>
+  <object Name="Noisegrass" Load="Merge">
+    <part Name="Render" DisplayName="噪聲草" />
+    <part Name="Description" Short="真正的潛能隨著根莖在波濤洶湧的浪潮中衝浪，並量子化為木質的草刃。" />
+    <xtagGrammar iArticle="一些" />
+  </object>
+  <object Name="Yempuris" Load="Merge">
+    <part Name="Render" DisplayName="葉姆普里斯·斐" />
+    <part Name="Description" Short="綠色的苞片氣泡排列成加速晶格生長的環狀。這節奏充滿魔力；植物界那種誠摯且不斷前進的意志，在此被放大了一百萬倍地捕捉了下來。" />
+    <stag Name="Plank" Value="葉狀物" />
+  </object>
+  <object Name="Fungus" Load="Merge">
+    <stag Name="Plank" Value="質量" />
+  </object>
+  <object Name="Godshroom" Load="Merge">
+    <part Name="Render" DisplayName="{{o|艾爾卡特爾(Elcatl)}}" />
+    <part Name="Description" Short="這朵蘑菇散發著晶瑩珊瑚般的光澤，其獨特的外觀令你過目難忘。卡德從未見過這種色調，於是你問 =player.reflexive=: 是什麼樣的放射性降雨染紅了它的肉質？難道其中含有極微量的食者本身，被木乃伊化後留存在彩虹之林的土壤中？" />
+  </object>
+  <object Name="Brightshroom" Load="Merge">
+    <part Name="Render" DisplayName="亮菇" />
+    <part Name="Description" Short="閃爍的菌絲將柔和的光芒向上投射到地燈的圓形菌蓋中。" />
+    <stag Name="HardMaterial" Value="肉塊" />
+  </object>
+  <object Name="Spotted Shagspook" Load="Merge">
+    <part Name="Render" DisplayName="斑點毛怪" />
+    <part Name="Description" Short="它的菌柄粗如樹幹，粉末覆蓋在它巨大的菌蓋斑點上。其皮膚的色素來自附近滲出液的液體染料。" />
+  </object>
+  <object Name="Dandy Cap" Load="Merge">
+    <part Name="Render" DisplayName="花俏帽" />
+    <part Name="Description" Short="自然賦予了纖細彎曲的莖稈與底面皺褶的菌褶一個 花俏帽。其表皮的色素來自附近滲出液的液態染料。" />
+  </object>
+  <object Name="Arsplice Hyphae" Load="Merge">
+    <part Name="Render" DisplayName="阿斯普萊斯菌絲" />
+    <part Name="Description" Short="編織著草、珊瑚與真菌混合體的仙女環沿著其陰影網絡延伸，並分泌出複製品支架作為護套。" />
+  </object>
+  <object Name="Coral" Load="Merge">
+    <stag Name="Plank" Value="群落" />
+    <stag Name="Fiber" Value="息肉" />
+    <stag Name="FiberMaterial" Value="石灰岩" />
+  </object>
+  <object Name="PolypCache" Load="Merge">
+    <part Name="Render" DisplayName="腫脹球莖" />
+    <part Name="Description" Short="黏附在多肉菌簇的觸手與腐蝕支柱上的甲殼生物身上的是一團腫脹的薄膜。一種明亮的、碳熔鉑金膠狀物形成的濃湯在 內部 燃燒著。" />
+  </object>
+  <object Name="Coral Polyp" Load="Merge">
+    <part Name="Render" DisplayName="珊瑚蟲" />
+    <part Name="Description" Short="觸鬚在骨骼花瓶柱上呈圓環狀搖曳。其口側與其他珊瑚蟲相連，形成了一個化石化的生態建築。" />
+  </object>
+  <object Name="Coral and Palladium Strut" Load="Merge">
+    <part Name="Render" DisplayName="長有珊瑚的鈀支架" />
+    <part Name="Description" Short="弓狀息肉在晶格的圓柱形拓撲結構中殖民，並在生命網絡中勾勒出正交鄰域。" />
+  </object>
+  <object Name="Finger Coral" Load="Merge">
+    <part Name="Render" DisplayName="手指珊瑚" />
+    <part Name="Description" Short="軟體生物將其生態建築的鈣化牆壁分泌成攀爬空氣的尖塔。它們具有石材紋理，並在其空腔中孕育微小生命。" />
+    <stag Name="Plank" Value="手指" />
+    <stag Name="Fiber" Value="息肉" />
+    <stag Name="FiberMaterial" Value="石灰岩" />
+  </object>
+  <object Name="Palladium Strut" Load="Merge">
+    <part Name="Render" DisplayName="鈀支架" />
+    <part Name="Description" Short="哭泣般的包覆殼點綴在直角相接的圓柱體上。從較軟的金屬中透出的光芒，是銀白色的鈀，曾在一座巨大的生態建築晶格中進行水電傳導。" />
+  </object>
+  <object Name="Sponge" Load="Merge">
+    <stag Name="Plank" Value="星團" />
+    <stag Name="Fiber" Value="球" />
+    <stag Name="FiberMaterial" Value="海綿" />
+  </object>
+  <object Name="Tunnel Sponge" Load="Merge">
+    <part Name="Render" DisplayName="隧道海綿" />
+    <part Name="Description" Short="海綿狀生物的多孔骨骼如石塊般，向著倒置隧道台地的角度刺出。" />
+    <stag Name="Plank" Value="隧道" />
+    <stag Name="Fiber" Value="戒指" />
+    <stag Name="FiberMaterial" Value="海綿" />
+  </object>
+  <object Name="Bop Sponge" Load="Merge">
+    <part Name="Render" DisplayName="砰砰海綿" />
+    <part Name="Description" Short="它是層狀的果凍，模塑成帶有孔隙的球體以過濾並吞食藻類，而且還會晃動。" />
+    <stag Name="Plank" Value="條狀物" />
+    <stag Name="Fiber" Value="臉頰" />
+    <stag Name="FiberMaterial" Value="海綿" />
+  </object>
+  <object Name="Crystal" Load="Merge">
+    <stag Name="Plank" Value="棱鏡" />
+    <stag Name="Fiber" Value="碎片" />
+    <stag Name="FiberMaterial" Value="水晶" />
+  </object>
+  <object Name="Psychal Rhythm Rock" Load="Merge">
+    <part Name="Render" DisplayName="心靈節奏岩" />
+    <part Name="Description" Short="鐘乳石棱柱在靈能之海中，斷續地嗡鳴著數兆生靈被壓縮的思想物質。" />
+  </object>
+  <object Name="Chavvah Branch" Load="Merge">
+    <part Name="Render" DisplayName="結晶枝條" />
+    <part Name="Description" Short="白熾結晶微柱聚集成密集的簇狀，並以壯麗的分形結構分支穿透天空。它們在彼此之間來回投射著月光。" />
+  </object>
+  <object Name="Chavvah Dense Leaves" Load="Merge">
+    <part Name="Render" DisplayName="緻密水晶葉" />
+    <part Name="Description" Short="靜電露珠模糊了銳利的晶體邊緣。平坦的表面本身閃閃發光，在精神微風中沙沙作響。在整體狀態下，它們如同可翻轉的亮片一般，流動於心靈與肉體的界限之間。" />
+  </object>
+  <object Name="Chavvah Sparse Leaves" Load="Merge">
+    <part Name="Render" DisplayName="稀疏水晶葉" />
+    <part Name="Description" Short="靜電露珠模糊了銳利的晶體邊緣。平坦的表面本身閃閃發光，在精神微風中沙沙作響。在整體狀態下，它們如同可翻轉的亮片一般，流動於心靈與肉體的界限之間。" />
+  </object>
+  <object Name="Chavvah Chime Left" Load="Merge">
+    <part Name="Render" DisplayName="鳴響石" />
+    <part Name="Description" Short="它的角落已被靜電磨平，其晶體球莖燃燒著轉化的月光。它在近調與遠調的音鍵中鳴響。" />
+  </object>
+  <object Name="Chavvah Chime Right" Load="Merge">
+    <part Name="Render" DisplayName="鳴響石" />
+    <part Name="Description" Short="它的角落已被靜電磨平，其晶體球莖燃燒著轉化的月光。它在近調與遠調的音鍵中鳴響。" />
+  </object>
+  <object Name="Chavvah Taproot Floor" Load="Merge">
+    <part Name="Render" DisplayName="結晶主根" />
+    <part Name="Description" Short="微小的水晶嫩芽被純粹的自我重量壓碎，成為轉化瞬時思緒的粗壯、厚實且均勻的換能器。去相干的情感與記憶在它們沿著根部向上生長時結晶化。" />
+  </object>
+  <object Name="Crystalline Root" Load="Merge">
+    <part Name="Render" DisplayName="結晶根" />
+    <part Name="Description" Short="六角形的纖細水晶纖維穿梭於大地之中，將環境中的心靈光輝沿著韌皮部推向有智慧的鐘鳴體。" />
+  </object>
+  <object Name="Crystalline Radicle" Load="Merge">
+    <part Name="Render" DisplayName="幼年結晶根" />
+    <part Name="Description" Short="細緻且剛脫落的六角形晶體纖維穿透大地，並帶著前靈能的充盈感而震動。它們散發著微弱的光芒。" />
+  </object>
+  <object Name="TauSoft" Load="Merge">
+    <part Name="Render" DisplayName="微光柔和" />
+    <part Name="Description" Short="心根在水晶樹那張開的精神連結處糾結。它們燃燒著氣態感官物質的光芒，土壤與岩石中所有環境秩序的碎片都因更深層的維度扭曲而變得靈動。這是精神之海的一處岸邊。" />
+  </object>
+  <object Name="BaseStalagmite" Load="Merge">
+    <part Name="Render" DisplayName="石筍" />
+  </object>
+  <object Name="MiasmaticStalagmite" Load="Merge">
+    <part Name="Description" Short="一隊流石肢體緊抓著洞穴地面，一根帶紋的方解石樹幹刺入腐爛的空氣中。其旋轉的頂端被骨製蒸汽所包裹。" />
+    <part Name="Render" DisplayName="灰燼石筍" />
+  </object>
+  <object Name="DirtFloor" Load="Merge">
+    <part Name="Render" DisplayName="夯實土地板" />
+  </object>
+  <object Name="DirtPath" Load="Merge">
+    <part Name="Render" DisplayName="泥徑" />
+  </object>
+  <object Name="DirtRoad" Load="Merge">
+    <part Name="Render" DisplayName="泥徑" />
+  </object>
+  <object Name="SaltPath" Load="Merge">
+    <part Name="Render" DisplayName="鹽石路" />
+  </object>
+  <object Name="PaintedFlowers" Load="Merge">
+    <part Name="Render" DisplayName="鹽石路" />
+  </object>
+  <object Name="WhiteTile" Load="Merge">
+    <part Name="Render" DisplayName="白色瓷磚" />
+  </object>
+  <object Name="GreenTile" Load="Merge">
+    <part Name="Render" DisplayName="綠色瓷磚" />
+  </object>
+  <object Name="RedTile" Load="Merge">
+    <part Name="Render" DisplayName="紅磚" />
+  </object>
+  <object Name="FungalTrailBrick" Load="Merge">
+    <part Name="Render" DisplayName="珊瑚徑" />
+    <part Name="Description" Short="珊瑚磚鋪設著通往另一個地方的小徑。" />
+  </object>
+  <object Name="CryptTrail" Load="Merge">
+    <part Name="Render" DisplayName="黑大理石步道" />
+    <part Name="Description" Short="黑大理石 rectangles 鋪滿了路徑。" />
+  </object>
+  <object Name="StiltTile" Load="Merge">
+    <part Name="Render" DisplayName="白色瓷磚" />
+  </object>
+  <object Name="Bridge" Load="Merge">
+    <part Name="Render" DisplayName="橋" />
+    <part Name="Description" Short="磚塊矩形鋪滿了路徑。" />
+  </object>
+  <object Name="MetalWalkway" Load="Merge">
+    <part Name="Render" DisplayName="金屬走道" />
+    <part Name="Description" Short="金屬矩形鋪滿了路徑。" />
+  </object>
+  <object Name="BrickWalkway" Load="Merge">
+    <part Name="Render" DisplayName="磚路" />
+    <part Name="Description" Short="磚塊矩形鋪滿了路徑。" />
+  </object>
+  <object Name="MarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="大理石步道" />
+    <part Name="Description" Short="大理石長方形鋪滿了路徑。" />
+  </object>
+  <object Name="CyanMarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="大理石步道" />
+    <part Name="Description" Short="大理石長方形鋪滿了路徑。" />
+  </object>
+  <object Name="BlackMarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="黑大理石步道" />
+    <part Name="Description" Short="黑大理石 rectangles 鋪滿了路徑。" />
+  </object>
+  <object Name="GreyMarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="大理石步道" />
+    <part Name="Description" Short="灰色大理石長方形鋪滿了小徑。" />
+  </object>
+  <object Name="WoodFloor" Load="Merge">
+    <part Name="Render" DisplayName="木地板" />
+  </object>
+  <object Name="BrineBridge" Load="Merge">
+    <part Name="Render" DisplayName="橋" />
+    <part Name="Description" Short="一座由乾燥 鹽莖 製成的橋。" />
+  </object>
+  <object Name="SaltDune" Load="Merge">
+    <part Name="Render" DisplayName="鹽丘" />
+  </object>
+  <object Name="HighSaltDune" Load="Merge">
+    <part Name="Render" DisplayName="鹽丘" />
+  </object>
+  <object Name="Sunken Room Stairs" Load="Merge">
+    <part Name="Render" DisplayName="大理石階梯" />
+    <part Name="Description" Short="斑駁的大理石矩形是進出坑洞的踏腳石。" />
+  </object>
+  <object Name="Primal Grass" Load="Merge">
+    <part Name="Render" DisplayName="原始草" />
+    <stag Name="Plank" Value="茅草" />
+    <stag Name="Fiber" Value="刀刃" />
+    <stag Name="FiberMaterial" Value="草" />
+  </object>
+  <object Name="SmallHexFloor" Load="Merge">
+    <part Name="Render" DisplayName="奇異地板" />
+  </object>
+  <object Name="FoamcreteFloor" Load="Merge">
+    <part Name="Render" DisplayName="泡沫混凝土地板" />
+  </object>
+  <object Name="Web" Load="Merge">
+    <part Name="Render" DisplayName="網" />
+    <part Name="Description" Short="閃爍的絲線被紡成捕捉螺旋，並安裝在一系列 橋 絲線上。" />
+  </object>
+  <object Name="FrostWeb" Load="Merge">
+    <part Name="Render" DisplayName="冰霜網" />
+    <part Name="Description" Short="閃爍的絲線被紡成捕獲螺旋，並安裝在一系列 橋 絲線上。霜凍分形在二維平面之外為這些纖維增添了紋理。" />
+  </object>
+  <object Name="PhaseWeb" Load="Merge">
+    <part Name="Render" DisplayName="相位網" />
+    <part Name="Description" Short="閃爍的絲線被紡成捕獲螺旋，並安裝在一系列 橋 絲線上。這根細絲在流形中跨越維度震動。" />
+  </object>
+  <object Name="Stairs" Load="Merge">
+    <part Name="Render" DisplayName="樓梯" />
+    <xtagGrammar massNoun="真實" />
+  </object>
+  <object Name="StairsUp" Load="Merge">
+    <part Name="Render" DisplayName="上樓梯" />
+    <part Name="Description" Short="塵埃在上升的階梯上綻放。" />
+  </object>
+  <object Name="StairsDown" Load="Merge">
+    <part Name="Render" DisplayName="下樓梯" />
+    <part Name="Description" Short="光線從下行的樓梯處消散。" />
+  </object>
+  <object Name="SlimyShaft" Load="Merge">
+    <part Name="Render" DisplayName="黏液豎井" />
+    <part Name="StairsDown" PullMessage="你掉進了黏液豎井！" />
+    <part Name="Description" Short="機械的音調在黑暗深井黏濕的牆壁上顯得柔和。下方是一片虛無。" />
+  </object>
+  <object Name="OpenShaft" Load="Merge">
+    <part Name="Render" DisplayName="深井" />
+    <part Name="Description" Short="黑暗從真空空間中湧出。" />
+    <xtagGrammar massNoun="錯誤" />
+  </object>
+  <object Name="Air" Load="Merge">
+    <part Name="Render" DisplayName="露天" />
+    <part Name="StairsDown" PullMessage="你跌落了！" JumpPrompt="這看起來像是個極長的墜落。你確定要跳下去嗎？" />
+    <part Name="Description" Short="空間內沒有任何固體障礙物。" />
+    <tag Name="FallPreposition" Value="穿過" />
+    <xtagGrammar massNoun="真實" />
+  </object>
+  <object Name="Pit" Load="Merge">
+    <part Name="Render" DisplayName="露天" />
+    <part Name="StairsDown" PullMessage="你攀爬下一處崎嶇的岩 ledge。" JumpPrompt="這看起來像是個極長的墜落。你確定要跳下去嗎？" />
+    <part Name="Description" Short="空間內沒有任何固體障礙物。" />
+    <xtagGrammar massNoun="真實" />
+  </object>
+  <object Name="ElevatorShaft" Load="Merge">
+    <part Name="Render" DisplayName="電梯井" />
+    <part Name="Description" Short="一條無貨物的繫繩垂向黑暗而廣闊的通道。" />
+  </object>
+  <object Name="ReefOpenShaft" Load="Merge">
+    <part Name="Render" DisplayName="珊瑚坑" />
+    <part Name="StairsDown" PullMessage="" />
+    <part Name="Description" Short="黑暗湧入了布滿珊瑚蟲的開口坑洞邊緣。" />
+  </object>
+  <object Name="PondDown" Load="Merge">
+    <part Name="Render" DisplayName="小裂縫" />
+    <part Name="Description" Short="紅石中的裂縫向著地底噴出的水霧敞開。" />
+  </object>
+  <object Name="Yd StairsDown Kitchen" Load="Merge">
+    <part Name="Render" DisplayName="前往廚房的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Columbarium" Load="Merge">
+    <part Name="Render" DisplayName="前往骨灰安置所的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Library" Load="Merge">
+    <part Name="Render" DisplayName="前往圖書館的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Living Quarters" Load="Merge">
+    <part Name="Render" DisplayName="前往居住區的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Workshop" Load="Merge">
+    <part Name="Render" DisplayName="前往工作坊的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Infirmary" Load="Merge">
+    <part Name="Render" DisplayName="前往康復區的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Market" Load="Merge">
+    <part Name="Render" DisplayName="前往市場的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Many Eyes" Load="Merge">
+    <part Name="Render" DisplayName="前往萬眼之地的下樓梯" />
+  </object>
+  <object Name="Yd StairsDown Salon" Load="Merge">
+    <part Name="Render" DisplayName="前往沙龍的下樓梯" />
+  </object>
+  <object Name="Chavvah Spiral StairsUp" Load="Merge">
+    <part Name="Render" DisplayName="在螺旋樓梯上" />
+    <part Name="Description" Short="光滑且雲霧狀的圓台在靈能懸浮的螺旋中漂浮著。" />
+    <xtagGrammar iArticle="一些" />
+  </object>
+  <object Name="Chavvah Spiral StairsDown" Load="Merge">
+    <part Name="Render" DisplayName="螺旋樓梯下" />
+    <part Name="Description" Short="光滑且雲霧狀的圓台在靈能懸浮的螺旋中漂浮著。" />
+    <xtagGrammar iArticle="一些" />
+  </object>
+</objects>

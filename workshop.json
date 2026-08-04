@@ -1,0 +1,7 @@
+{
+  "Title": "卡德洞窟繁中化（Caves of Qud 正體中文）",
+  "Description": "[h1]卡德洞窟繁中化[/h1]\n\nCaves of Qud 臺灣正體中文在地化 mod。基於官方本地化系統（lang-experimental 分支），以純 mod 方式提供完整翻譯。\n\n[b]安裝方式：[/b]\n1. Steam 切換至 lang-experimental 分支\n2. 啟用本 mod\n3. 主選單語言選擇「正體中文」",
+  "Tags": "Translation",
+  "Visibility": "0",
+  "ImagePath": "Preview.png"
+}

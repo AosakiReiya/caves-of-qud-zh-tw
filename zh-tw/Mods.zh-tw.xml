@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<mods>
+
+  <mod Part="Key" TinkerCategory="DisplayText" TinkerDisplayName="DisplayText" Description="DisplayText">
+
+-->
+<mods Lang="zh-tw" Encoding="utf-8">
+  <mod Part="ModLacquered" TinkerCategory="效用" TinkerDisplayName="漆過的" Description="漆器：此物品不會生鏽。" />
+  <mod Part="ModSturdy" TinkerCategory="效用" TinkerDisplayName="堅固的" Description="堅固：此物品不會損壞。" />
+  <mod Part="ModSlender" TinkerCategory="效用" TinkerDisplayName="纖細的" Description="輕盈：此物品重量低於常態。" />
+  <mod Part="ModWillowy" TinkerCategory="效用" TinkerDisplayName="苗條的" Description="Willowy：此物品的重量比平常輕得多。" />
+  <mod Part="ModSuspensor" TinkerCategory="效用" TinkerDisplayName="配備了懸浮器" />
+  <mod Part="ModJewelEncrusted" TinkerCategory="效用" TinkerDisplayName="鑲嵌寶石的" Description="鑲嵌寶石：此物品比平常貴重得多，並賦予穿戴者對水霸 +100 的聲望。" />
+  <mod Part="ModDrumLoaded" TinkerCategory="步槍" TinkerDisplayName="鼓式裝填" Description="鼓式裝填：此武器可額外容納 20% 的彈藥。" />
+  <mod Part="ModScoped" TinkerCategory="步槍" TinkerDisplayName="瞄準鏡裝備的" Description="瞄準鏡：此武器具有更高的精確度。" />
+  <mod Part="ModLiquidCooled" TinkerCategory="步槍" TinkerDisplayName="液冷式" />
+  <mod Part="ModBeamsplitter" TinkerCategory="步槍" TinkerDisplayName="配備了分束器" />
+  <mod Part="ModNanon" TinkerCategory="步槍" TinkerDisplayName="納農" />
+  <mod Part="ModSharp" TinkerCategory="近戰武器" TinkerDisplayName="銳利" Description="銳利：穿透判定 +1" />
+  <mod Part="ModMasterwork" TinkerCategory="近戰武器" TinkerDisplayName="傑作" Description="大師作：此武器造成暴擊的機率提高兩倍。" />
+  <mod Part="ModDisplacer" TinkerCategory="近戰武器" TinkerDisplayName="置換者" />
+  <mod Part="ModMorphogenetic" TinkerCategory="近戰武器" TinkerDisplayName="形態發生" />
+  <mod Part="ModSerrated" TinkerCategory="近戰武器" TinkerDisplayName="鋸齒狀" Description="鋸齒狀：此武器有 3% 的機率使對手斷肢。" />
+  <mod Part="ModGigantic" TinkerCategory="效用" TinkerDisplayName="巨大的" />
+  <mod Part="ModElectrified" TinkerCategory="近戰武器" TinkerDisplayName="帶電的" />
+  <mod Part="ModFreezing" TinkerCategory="近戰武器" TinkerDisplayName="冰凍" />
+  <mod Part="ModFlaming" TinkerCategory="近戰武器" TinkerDisplayName="火焰般的" />
+  <mod Part="ModCounterweighted" TinkerCategory="近戰武器" TinkerDisplayName="配重平衡的" />
+  <mod Part="ModReinforced" TinkerCategory="護甲" TinkerDisplayName="強化" Description="強化：+1 AV" />
+  <mod Part="ModFlexiweaved" TinkerCategory="護甲" TinkerDisplayName="柔織物" />
+  <mod Part="ModRecycling" TinkerCategory="護甲" TinkerDisplayName="回收" Description="回收：此物品可收集、淨化並儲存多達 8 德蘭的穿戴者廢水。" />
+  <mod Part="ModDisguise" TinkerCategory="護甲" TinkerDisplayName="偽裝" />
+  <mod Part="ModVisored" TinkerCategory="護甲" TinkerDisplayName="戴著面罩的" Description="面罩：+1 DV" />
+  <mod Part="ModPadded" TinkerCategory="護甲" TinkerDisplayName="襯墊裝備的" />
+  <mod Part="ModLanterned" TinkerCategory="護甲" TinkerDisplayName="提燈的" Description="提燈：此物品提供光源。" />
+  <mod Part="ModFilters" TinkerCategory="護甲" TinkerDisplayName="配有過濾器" />
+  <mod Part="ModTwoFaced" TinkerCategory="護甲" TinkerDisplayName="兩面派" Description="兩面性：此物品提供額外的一個臉部欄位。" />
+  <mod Part="ModTerrifyingVisage" TinkerCategory="護甲" TinkerDisplayName="面容恐怖的" Description="恐怖的面容：此物品可將「斥責」、「威嚇」與「猙獰注視」的冷卻時間減少 10 回合。此外，它會同時佔用頭部與臉部欄位。" />
+  <mod Part="ModSereneVisage" TinkerCategory="護甲" TinkerDisplayName="面容寧靜的" Description="寧靜面容：+1 意志力，並減少「冥想」40 回合的冷卻時間。此外，此物品會同時佔用頭部與臉部欄位。" />
+  <mod Part="ModCoProcessor" TinkerCategory="護甲" TinkerDisplayName="協處理器" />
+  <mod Part="ModSpiked" TinkerCategory="護甲" TinkerDisplayName="帶刺的" />
+  <mod Part="ModRefractive" TinkerCategory="護甲" TinkerDisplayName="折射" />
+  <mod Part="ModSixFingered" TinkerCategory="護甲" TinkerDisplayName="六指的" Description="六指：+1 敏捷" />
+  <mod Part="ModGesticulating" TinkerCategory="護甲" TinkerDisplayName="做手勢" />
+  <mod Part="ModFeathered" TinkerCategory="護甲" TinkerDisplayName="羽毛狀的" Description="羽毛：此物品賦予穿戴者與 鳥 之間 +250 的聲望。" />
+  <mod Part="ModScaled" TinkerCategory="護甲" TinkerDisplayName="鱗片覆蓋的" Description="鱗片：此物品賦予穿戴者與 無殼爬蟲 +250 的聲望。" />
+  <mod Part="ModWooly" TinkerCategory="護甲" TinkerDisplayName="毛茸茸" Description="毛茸茸：此物品提供對熱與寒冷的抗性。" />
+  <mod Part="ModSnailEncrusted" TinkerCategory="護甲" TinkerDisplayName="蝸牛附著的" Description="蝸牛附著：此物品賦予穿戴者與 軟體動物 +250 的聲望。" />
+  <mod Part="ModSpringLoaded" TinkerCategory="護甲" TinkerDisplayName="彈簧加壓" Description="彈簧加持：移動速度 +5-10" />
+  <mod Part="ModCleated" TinkerCategory="護甲" TinkerDisplayName="裝有防滑釘" />
+  <mod Part="ModPolarized" TinkerCategory="護甲" TinkerDisplayName="偏振的" />
+  <mod Part="ModNav" TinkerCategory="護甲" TinkerDisplayName="納夫" />
+  <mod Part="ModNulling" TinkerCategory="效用" TinkerDisplayName="虛無化的" />
+  <mod Part="ModHighCapacity" TinkerCategory="彈藥與能量電池" TinkerDisplayName="高容量" />
+  <mod Part="ModMetered" TinkerCategory="彈藥與能量電池" TinkerDisplayName="計量的" />
+  <mod Part="ModRadioPowered" TinkerCategory="彈藥與能量電池" TinkerDisplayName="無線電驅動" />
+  <mod Part="ModIlluminated" TinkerCategory="效用" TinkerDisplayName="發光的" Description="已點亮：這本書裝飾有精美的邊欄註解與插圖。價值增加 30%。" />
+  <mod Part="ModExtradimensional" TinkerCategory="效用" TinkerDisplayName="異次元的" Description="異次元：此物品最近於此顯現，繼承了其原屬維度的部分特性。" />
+  <mod Part="ModAirfoil" TinkerCategory="手榴彈" TinkerDisplayName="翼型" />
+  <mod Part="ModPhaseConjugate" TinkerCategory="手榴彈" TinkerDisplayName="相位共軛" />
+  <mod Part="ModHardened" TinkerCategory="效用" TinkerDisplayName="電磁屏蔽的" />
+  <mod Part="ModJacked" TinkerCategory="效用" TinkerDisplayName="強壯的" />
+  <mod Part="ModOverloaded" TinkerCategory="效用" TinkerDisplayName="超載" />
+  <mod Part="ModPhaseHarmonic" TinkerCategory="效用" TinkerDisplayName="相位諧波" />
+  <mod Part="ModEngraved" TinkerCategory="效用" TinkerDisplayName="刻有圖案的" Description="刻印：此物品刻有歷史事件的描繪。" />
+  <mod Part="ModPainted" TinkerCategory="效用" TinkerDisplayName="彩繪的" Description="繪製：此物品繪有歷史事件的圖景。" />
+</mods>

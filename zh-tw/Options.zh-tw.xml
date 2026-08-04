@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+<options>
+
+  <option ID="Key" DisplayText="DisplayText" ConsoleDisplayText="DisplayText" SwitchDisplayText="DisplayText" Category="DisplayText" SearchKeywords="DisplayText" Values="DisplayText">
+  Values: SPECIAL NOTE! The values are a comma separated list of choices,
+  Values:You can specify an override for display using Value|Display
+  Values:
+  Values:For example if the original values are "Left,Right" you could use
+  Values:"Left|Sol,Right|Sağ"
+
+    <helptext>
+
+-->
+<options Lang="zh-tw" Encoding="utf-8">
+  <option ID="OptionMasterVolume" DisplayText="主音量" Category="聲音" />
+  <option ID="OptionSound" DisplayText="音效" Category="聲音" />
+  <option ID="OptionSoundVolume" DisplayText="音效音量" Category="聲音" />
+  <option ID="OptionMusic" DisplayText="音樂" Category="聲音" />
+  <option ID="OptionMusicVolume" DisplayText="音樂音量" Category="聲音" />
+  <option ID="OptionAmbient" DisplayText="環境音效" Category="聲音" />
+  <option ID="OptionAmbientVolume" DisplayText="環境音量" Category="聲音" />
+  <option ID="OptionUseInterfaceSounds" DisplayText="介面音效" Category="聲音" />
+  <option ID="OptionInterfaceVolume" DisplayText="介面音量" Category="聲音" />
+  <option ID="OptionUseCombatSounds" DisplayText="戰鬥音效" Category="聲音" />
+  <option ID="OptionCombatVolume" DisplayText="戰鬥音量" Category="聲音" />
+  <option ID="OptionPlayFireSounds" DisplayText="火焰劈啪聲" Category="聲音" />
+  <option ID="OptionDisplayBrightness" DisplayText="阿格爾戈特" Category="顯示" />
+  <option ID="OptionDisplayContrast" DisplayText="對比" Category="顯示" />
+  <option ID="OptionDisplayFullscreen" DisplayText="全螢幕" Category="顯示" />
+  <option ID="OptionDisplayResolution" DisplayText="全螢幕解析度" Category="顯示" />
+  <option ID="OptionDisplayFramerate" DisplayText="幀率" Category="顯示" Values="10|10,20|20,30|30,40|40,50|50,60|60,120|120,Unlimited|無限,VSync|垂直同步" />
+  <option ID="OptionUseTiles" DisplayText="啟用圖塊圖形" Category="顯示" />
+  <option ID="OptionDisplayVignette" DisplayText="顯示暈影效果" Category="顯示" />
+  <option ID="OptionDisplayScanlines" DisplayText="顯示掃描線" Category="顯示" />
+  <option ID="OptionUseOverlayCombatEffects" DisplayText="顯示戰鬥動畫" Category="顯示" />
+  <option ID="OptionUseOverlayDamageText" DisplayText="顯示浮動傷害數字" Category="顯示" />
+  <option ID="OptionUseParticleVFX" DisplayText="顯示現代視覺效果" Category="顯示" />
+  <option ID="OptionUseTextParticleVFX" DisplayText="顯示 ASCII 視覺效果" Category="顯示" />
+  <option ID="OptionDisableFloorTextures" DisplayText="停用地板貼圖" Category="顯示" />
+  <option ID="OptionDisableBloodsplatter" DisplayText="停用血跡噴濺" Category="顯示" />
+  <option ID="OptionDisableSmoke" DisplayText="停用煙霧效果" Category="顯示" />
+  <option ID="OptionDisableImposters" DisplayText="停用現代式、基於圖塊的圖形效果" Category="顯示" />
+  <option ID="OptionMainMenuBackground" DisplayText="主選單背景藝術" Category="顯示" Values="Modern|現代,Classic|經典" />
+  <option ID="OptionImposterChars" DisplayText="冒充文本圖塊" Category="顯示" />
+  <option ID="OptionsKeybindings" DisplayText="控制映射" Category="控制" SearchKeywords="控制綁定" />
+  <option ID="OptionKeyRepeatDelay" DisplayText="按鍵重複延遲" ConsoleDisplayText="按鈕重複延遲" Category="控制" />
+  <option ID="OptionKeyRepeatRate" DisplayText="按鍵重複率" ConsoleDisplayText="按鈕重複速率" Category="控制" />
+  <option ID="OptionMouseInput" DisplayText="允許滑鼠輸入" Category="控制" />
+  <option ID="OptionMouseMovement" DisplayText="允許滑鼠移動" Category="控制" />
+  <option ID="OptionMouseScrollWheel" DisplayText="允許使用滾輪縮放" Category="控制" />
+  <option ID="OptionCapInputBuffer" DisplayText="將輸入緩衝限制為兩個指令" Category="控制" />
+  <option ID="OptionDisableFullscreenColorEffects" DisplayText="停用全螢幕色彩效果（針對色盲玩家）" Category="輔助功能" />
+  <option ID="OptionAlphanumericBits" DisplayText="使用字母數字代替點號來顯示位元（針對色盲人士）" Category="輔助功能" />
+  <option ID="OptionDisableTextAnimationEffects" DisplayText="停用大多數基於圖塊的閃爍效果" Category="輔助功能" />
+  <option ID="OptionDisableAllIdleTileAnimations" DisplayText="停用所有閒置的圖塊動畫" Category="輔助功能" />
+  <option ID="OptionDisableTextWarpEffects" DisplayText="停用基於圖塊的畫面扭曲效果" Category="輔助功能" />
+  <option ID="OptionDisableFullscreenWarpEffects" DisplayText="禁用全螢幕畫面扭曲效果" Category="輔助功能" />
+  <option ID="OptionModernUI" DisplayText="啟用現代化 UI" Category="UI" />
+  <option ID="OptionPrereleaseStageScale" DisplayText="UI 縮放" Category="UI" Values="auto|自動,auto x1.25|自動 x1.25,auto x1.5|自動 x1.5,.5|.5,.75|.75,1.0|1.0,1.25|1.25,1.5|1.5,2|2" />
+  <option ID="OptionModernCharacterSheet" DisplayText="啟用現代化 UI 角色面板" Category="UI" />
+  <option ID="OptionCharacterSheetAdditionalScale" DisplayText="角色面板縮放百分比" Category="UI" />
+  <option ID="OptionPlayScale" DisplayText="遊戲區域縮放" Category="UI" SearchKeywords="完美貼合覆蓋像素" Values="Fit|適合,Cover|覆蓋,Pixel Perfect|像素完美">
+    <helptext>控制遊玩區域在 UI 未使用的區域中如何縮放。
+
+{{W|適合}}: 將整個遊玩區域放入螢幕中。可能需要黑邊。
+{{W|覆蓋}}: 確保遊玩區域覆蓋螢幕。將黑邊降至最低。
+{{W|像素完美}}: 將遊玩區域的大小調整為像素藝術整數倍的倍數。使清晰度最大化。</helptext>
+  </option>
+  <option ID="OptionTileScale" DisplayText="像素完美圖塊縮放" Category="UI" Values="1|1,2|2,3|3,4|4,5|5,6|6,7|7,8|8" />
+  <option ID="OptionAbilityBarMode" DisplayText="能力列模式" Category="UI" Values="Full|全開,Compact|緊湊" />
+  <option ID="OptionOverlayMinimap" DisplayText="顯示小地圖" Category="UI" />
+  <option ID="OptionOverlayNearbyObjects" DisplayText="顯示附近物品列表" Category="UI" />
+  <option ID="OptionOverlayNearbyObjectsLocal" DisplayText="附近物品列表：僅顯示當前格子的內容" Category="UI" />
+  <option ID="OptionOverlayNearbyObjectsPools" DisplayText="附近物品列表：顯示液體池" Category="UI" />
+  <option ID="OptionOverlayNearbyObjectsPlants" DisplayText="附近物品列表：顯示植物" Category="UI" />
+  <option ID="OptionOverlayNearbyObjectsTakeable" DisplayText="附近物品列表：僅顯示可拾取的物品" Category="UI" />
+  <option ID="OptionMessageLineLogScale" DisplayText="訊息日誌字體大小 (pt)" Category="UI" />
+  <option ID="OptionDockMovable" DisplayText="停靠訊息日誌 &amp;&amp;&amp; 迷你地圖" Category="UI" Values="Unset|未設定,Right|右,Left|左,Flip|翻轉" />
+  <option ID="OptionDockOpacity" DisplayText="停靠背景透明度" Category="UI" />
+  <option ID="OptionMouseCursor" DisplayText="滑鼠游標外觀" Category="UI" Values="System|系統,Default|預設,Alternate|交替" />
+  <option ID="OptionMouseAutoHideCursorEnabled" DisplayText="閒置時自動隱藏滑鼠游標" Category="UI" />
+  <option ID="OptionControllerFont" DisplayText="手把按鈕外觀" Category="UI" Values="Auto|自動,KBM|KBM,XBox|XBox,PS|PS,XBox Filled|XBox 已填滿,PS Filled|PS 已填滿,Switch|開關" />
+  <option ID="OptionFloatingKeyboard" DisplayText="在支援的裝置上顯示輸入用的覆蓋鍵盤" Category="UI" />
+  <option ID="OptionZoomSensitivity" DisplayText="縮放靈敏度" Category="UI" />
+  <option ID="OptionTooltipDelay" DisplayText="工具提示延遲 (ms)" Category="UI" />
+  <option ID="Option@HPColor" DisplayText="根據健康狀態更改角色的符號顏色" Category="UI" />
+  <option ID="Option@AlwaysHPColor" DisplayText="忽略所有會改變角色符號顏色的效果（健康狀態除外）" Category="UI" />
+  <option ID="Option@MutationColor" DisplayText="允許突變改變角色符號的顏色" Category="UI" />
+  <option ID="OptionDisplayMousableZoneTransitionBorder" DisplayText="顯示滑鼠可點擊的區域轉換箭頭" Category="UI" />
+  <option ID="OptionShiftHidesSidebar" DisplayText="按下 Shift 鍵可隱藏側邊欄" Category="UI" />
+  <option ID="OptionAllowFramelessZoomOut" DisplayText="當縮放到最大倍率時，移除主遊戲畫面上的 UI 框架" Category="UI" />
+  <option ID="OptionHighlightStairs" DisplayText="始終高亮 樓梯" Category="UI" />
+  <option ID="OptionLogTurnSeparator" DisplayText="在戰鬥期間，每回合結束時增加一行分隔線" Category="UI" />
+  <option ID="OptionIndentBodyParts" DisplayText="在裝備介面中，依據附著部位縮進身體部位" Category="UI" />
+  <option ID="OptionShowDetailedWeaponStats" DisplayText="在武器名稱中顯示詳細的武器穿透力與傷害" Category="UI" />
+  <option ID="OptionTakeallCorpses" DisplayText="使用「全部取得」指令時同時拾取屍體" Category="UI" />
+  <option ID="OptionDropAll" DisplayText="在你的物品欄物品上啟用「全部丟棄」互動" Category="UI" />
+  <option ID="OptionNavigateInventoryAndEquipmentWithPagination" DisplayText="使用左右分頁而非移動按鍵來瀏覽物品欄與裝備面板" Category="UI" />
+  <option ID="OptionPressingRightInInventoryEquips" DisplayText="在裝備畫面中，分別按右鍵或左鍵即可裝備／卸下選中的物品" Category="UI" />
+  <option ID="OptionExpandHighlightedInventoryAndEquipmentPane" DisplayText="當獲得焦點時展開裝備或物品欄面板" Category="UI" />
+  <option ID="OptionStatusScreenSize" DisplayText="角色面板大小" Category="UI" Values="Standard|標準,Full Height|全高,Full|全開" />
+  <option ID="OptionTutorialComplete" DisplayText="將教學模式移至遊戲模式列表的末尾" Category="UI" />
+  <option ID="OptionShowCollectionBadges" DisplayText="在主選單顯示收藏印章" Category="UI" />
+  <option ID="OptionShowSidebarAbilities" DisplayText="在側邊欄顯示能力圖示" Category="舊版介面" />
+  <option ID="OptionShowCurrentCellPopup" DisplayText="以彈出視窗顯示目前單元格的內容" Category="舊版介面" />
+  <option ID="OptionShowMonsterHPHearts" DisplayText="根據目標剩餘生命值改變受擊心形顏色" Category="舊版介面" />
+  <option ID="OptionShowNumberOfItems" DisplayText="顯示每個物品欄類別中的物品數量" Category="舊版介面" />
+  <option ID="OptionLocationIntseadOfName" DisplayText="在側邊欄顯示位置而非名稱" Category="舊版介面" />
+  <option ID="OptionMapDirectionsToKeypad" DisplayText="始終將方向鍵映射至數字鍵盤" Category="舊版介面" />
+  <option ID="OptionMapShiftDirectionToPage" DisplayText="地圖 Shift+方向鍵對應選單分頁綁定（不適用於數字鍵盤綁定）" Category="舊版介面" />
+  <option ID="OptionPushAZHotkeys" DisplayText="始終將 A-Z 熱鍵傳遞至舊版 UI" Category="舊版介面" />
+  <option ID="OptionAutoSip" DisplayText="口渴時自動飲用淡水" Category="自動化" />
+  <option ID="OptionAutoSipLevel" DisplayText="自動飲水的口渴閾值" Category="自動化" Values="Dehydrated|脫水的,Parched|乾渴,Thirsty|口渴,Quenched|解渴,Tumescent|腫脹的" />
+  <option ID="OptionAutoTorch" DisplayText="自動熄滅並點燃火把" Category="自動化" />
+  <option ID="OptionAutoDisassembleScrap" DisplayText="自動拆解廢料" Category="自動化" />
+  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略敵對生物的難度閾值" Category="自動化" Values="None|無,Easy|簡單,Average|平均,Tough|強韌,Very Tough|極其強韌,Impossible|不可能" />
+  <option ID="OptionAutoexploreIgnoreDistantEnemies" DisplayText="忽略敵對生物的距離閾值" Category="自動化" Values="None|無,1|1,2|2,3|3,5|5,7|7,10|10,15|15,20|20,30|30,40|40" />
+  <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" DisplayText="自動探索時會忽略移動至鄰近格的敵對目標" Category="自動化" />
+  <option ID="OptionInterruptHeldMovement" DisplayText="當敵對生物靠近時，中斷按住移動指令" Category="自動化" />
+  <option ID="OptionInterruptHeldMovementOnZoneTransition" DisplayText="進入未探索區域時中斷持續移動" Category="自動化" />
+  <option ID="OptionUseTextAutowalkThreatIndicator" DisplayText="使用文字自動動作中斷指示器，而非閃爍的紅框" Category="自動化" />
+  <option ID="OptionAutoexploreChests" DisplayText="在自動探索時搜尋容器" Category="自動化" />
+  <option ID="OptionDigOnMove" DisplayText="使用挖掘工具時，透過撞向牆壁來自動挖掘穿透。" Category="自動化" />
+  <option ID="OptionAutosaveInterval" DisplayText="切換區域時自動儲存" Category="自動化" Values="|無,1|1,2|2,3|3,5|5,7|7,10|10,15|15,20|20,30|30,40|40" />
+  <option ID="OptionAutoexploreRate" DisplayText="每秒最大自動移動細胞數與自動攻擊動作數" Category="自動化" SearchKeywords="自動行動、自動探索、幀率" Values="1|1,2|2,3|3,5|5,7|7,10|10,15|15,20|20,30|30,60|60,|∞" />
+  <option ID="OptionAutogetAmmo" DisplayText="自動獲取彈藥" Category="自動獲取" />
+  <option ID="OptionAutogetPrimitiveAmmo" DisplayText="自動獲取原始彈藥" Category="自動獲取" />
+  <option ID="OptionAutogetNuggets" DisplayText="自動獲取銅、銀與金塊" Category="自動獲取" />
+  <option ID="OptionAutogetTradeGoods" DisplayText="自動獲取貿易品" Category="自動獲取" />
+  <option ID="OptionAutogetFood" DisplayText="自動獲取食物" Category="自動獲取" />
+  <option ID="OptionAutogetFreshWater" DisplayText="自動獲取淡水" Category="自動獲取" />
+  <option ID="OptionAutogetDroppedLiquid" DisplayText="自動從你丟棄的容器中獲取液體" Category="自動獲取" />
+  <option ID="OptionAutogetSpecialItems" DisplayText="自動獲取特殊物品" Category="自動獲取" />
+  <option ID="OptionAutogetArtifacts" DisplayText="自動獲取神器" Category="自動獲取" />
+  <option ID="OptionAutogetScrap" DisplayText="自動獲取廢料" Category="自動獲取" />
+  <option ID="OptionAutogetBooks" DisplayText="自動獲取書籍" Category="自動獲取" />
+  <option ID="OptionAutogetZeroWeight" DisplayText="自動獲取無重量物品" Category="自動獲取" />
+  <option ID="OptionAutogetIfHostiles" DisplayText="若附近有敵對生物則自動獲取" Category="自動獲取" />
+  <option ID="OptionAutogetFromNearby" DisplayText="從相鄰格子自動獲取" Category="自動獲取" />
+  <option ID="OptionAutomationAdvancedOptions" DisplayText="在選單中顯示進階自動拾取選項" Category="自動獲取" SearchKeywords="自動動作與自動探索的幀率選項" />
+  <option ID="OptionAskForWorldmap" DisplayText="移動至世界地圖前進行提示" Category="提示詞" />
+  <option ID="OptionAskAutostair" DisplayText="自動行走至 樓梯 前的提示" Category="提示詞" />
+  <option ID="OptionConfirmSwimming" DisplayText="游泳前提示" Category="提示詞" />
+  <option ID="OptionConfirmDangerousLiquid" DisplayText="在飲用或進入某些危險液體前顯示提示" Category="提示詞" />
+  <option ID="OptionAskForOneItem" DisplayText="從地面拾取物品時顯示清單，即使只有一件物品。" Category="提示詞" />
+  <option ID="OptionPromptFavoriteRecipe" DisplayText="提示收藏新的烹飪食譜" Category="提示詞" />
+  <option ID="OptionDisplayHPWarning" DisplayText="低生命值警告閾值" Category="提示詞" Values="20%|20%,40%|40%,60%|60%,80%|80%,100%|100%,No Warning|無警告" />
+  <option ID="OptionDismemberAsPopup" DisplayText="當肢解或斬首某人時顯示彈出視窗" Category="提示詞" />
+  <option ID="OptionAbilityCooldownWarningAsMessage" DisplayText="將「技能冷卻中」的提示顯示為訊息日誌條目，而非彈出視窗" Category="提示詞" />
+  <option ID="OptionShowScavengeItemAsMessage" DisplayText="將拾取的物品以訊息日誌條目的形式顯示，而非彈出視窗" Category="提示詞" />
+  <option ID="OptionPopupJournalNote" DisplayText="在日誌中記錄資訊時顯示彈出視窗" Category="提示詞" />
+  <option ID="OptionDisplayLedLevelUp" DisplayText="顯示同伴的詳細升級訊息" Category="提示詞" />
+  <option ID="OptionDefaultDeathToViewFinalMessages" DisplayText="在角色扮演模式中，將死亡提示的預設選項從「重新載入檢查點」改為「查看最後訊息」。" Category="提示詞" />
+  <option ID="OptionEnableMods" DisplayText="啟用模組" Category="模組" />
+  <option ID="OptionAllowCSMods" DisplayText="允許腳本模組（腳本模組可能包含惡意代碼！）" Category="模組" />
+  <option ID="OptionOutputModAssembly" DisplayText="將編譯後的模組組件寫入磁碟" Category="模組" />
+  <option ID="OptionHarmonyDebug" DisplayText="啟用和諧調試輸出" Category="模組" />
+  <option ID="OptionTextBuilderDebug" DisplayText="啟用文本生成器洩漏分析" Category="模組">
+    <helptext>大多數形式的 Text Builder 都必須進行釋放（dispose），才能正確釋放其池化資源，通常需搭配 using 陳述式/宣告使用。
+若您忘記釋放 Text Builder，系統會印出錯誤訊息；若已啟用此選項，該錯誤將包含顯示遺漏釋放位置的堆疊追蹤（stack trace）。</helptext>
+  </option>
+  <option ID="OptionCheckMemory" DisplayText="檢查記憶體使用量，並在過高時顯示警告" Category="效能" />
+  <option ID="OptionCacheEarly" DisplayText="提早將區域刷新至快取（適用於低記憶體環境）" Category="效能" />
+  <option ID="OptionCollectEarly" DisplayText="在每次區域刷新後進行垃圾回收（適用於低記憶體環境）" Category="效能" />
+  <option ID="OptionDisableFloorTextureObjects" DisplayText="不要生成地板紋理物件" Category="效能" />
+  <option ID="OptionThrottleAnimation" DisplayText="限制動畫（適用於低 CPU 環境）" Category="效能" />
+  <option ID="OptionDrawStepImmediately" DisplayText="移動後立即渲染一幀（適用於低 CPU 環境）" Category="效能" />
+  <option ID="OptionShowAdvancedOptions" DisplayText="顯示進階選項" Category="應用程式設定" />
+  <option ID="OptionMusicBackground" DisplayText="讓 卡德洞窟 在背景保持運行" Category="應用程式設定" />
+  <option ID="OptionSessionBackups" DisplayText="滾動備用豁免檢定的次數" Category="應用程式設定" Values="None|無,1|1,2|2,3|3,5|5,7|7,10|10,15|15,20|20,30|30,40|40">
+    <helptext>從主選單載入存檔時，系統會在您的數據資料夾（&lt;...> /CavesOfQud/Local/Session）中保留已載入存檔的備份，數量上限為此數值。</helptext>
+  </option>
+  <option ID="OptionAnalytics" DisplayText="傳送匿名遊戲數據統計" Category="應用程式設定" />
+  <option ID="OptionDisableSteamInputWarning" DisplayText="停用輸入警告" Category="應用程式設定" />
+  <option ID="OptionDisablePermadeath" DisplayText="死亡時不要刪除經典模式的存檔" Category="除錯" />
+  <option ID="OptionAllowSaveLoad" DisplayText="啟用存檔與讀檔" Category="除錯" />
+  <option ID="OptionAllowReallydie" DisplayText="會提示確認死亡" Category="除錯" />
+  <option ID="OptionEnableSeed" DisplayText="啟用世界種子（實驗性）" Category="除錯" />
+  <option ID="OptionEnablePrereleaseContent" DisplayText="啟用未完成且不受支援的內容" Category="除錯" />
+  <option ID="OptionDisableDefectLimit" DisplayText="允許生物擁有複數缺陷" Category="除錯" />
+  <option ID="OptionEnableColorTextInput" DisplayText="為文字輸入啟用顏色選單" Category="除錯" />
+  <option ID="OptionDisableAchievements" DisplayText="禁用成就" Category="除錯" />
+  <option ID="OptionShowQuickstart" DisplayText="在角色創建期間顯示快速開始選項" Category="除錯" />
+  <option ID="OptionDisablePlayerbrain" DisplayText="停用玩家控制角色的腦部劫持功能" Category="除錯" />
+  <option ID="OptionDisableZoneCaching2" DisplayText="禁用區域快取" Category="除錯" />
+  <option ID="OptionDisableTryLimit" DisplayText="取消區域生成嘗試次數限制" Category="除錯" />
+  <option ID="OptionEnableWishRegionNames" DisplayText="預生成區域名稱以支援願望功能" Category="除錯" />
+  <option ID="OptionGivesRepShowsCurrentRep" DisplayText="查看生物時顯示其所屬派系的聲望" Category="除錯" />
+  <option ID="OptionDebugShowConversationNode" DisplayText="在對話期間顯示 XML 對話與節點名稱" Category="除錯" />
+  <option ID="OptionDebugShowFullZoneDuringBuild" DisplayText="在區域創建期間顯示完整的區域 ID" Category="除錯" />
+  <option ID="OptionDebugDamagePenetrations" DisplayText="顯示傷害穿透除錯文字" Category="除錯" />
+  <option ID="OptionDebugSavingThrows" DisplayText="顯示豁免檢定偵錯文字" Category="除錯" />
+  <option ID="OptionDebugGetLostChance" DisplayText="顯示失去機會的調試文本" Category="除錯" />
+  <option ID="OptionDebugStatShift" DisplayText="顯示屬性變動的除錯文字" Category="除錯" />
+  <option ID="OptionDebugEncounterChance" DisplayText="顯示遭遇機率除錯數值" Category="除錯" />
+  <option ID="OptionDebugTravelSpeed" DisplayText="顯示移動速度偵錯文字" Category="除錯" />
+  <option ID="OptionDebugInternals" DisplayText="在物件上顯示除錯資訊" Category="除錯" />
+  <option ID="OptionDebugAttitude" DisplayText="在物品上顯示態度資訊" Category="除錯" />
+  <option ID="OptionShowOverlandEncounters" DisplayText="在世界地圖上標示特殊遭遇" Category="除錯" />
+  <option ID="OptionShowOverlandRegions" DisplayText="在世界地圖上標示生物群落" Category="除錯" />
+  <option ID="OptionDrawPopulationHintMaps" DisplayText="建立區域時繪製人口配置提示圖" Category="除錯" />
+  <option ID="OptionDrawInfluenceMaps" DisplayText="建立區域時繪製人口配置區域" Category="除錯" />
+  <option ID="OptionDrawPathfinder" DisplayText="繪製生物路徑尋找" Category="除錯" />
+  <option ID="OptionDrawPathfinderHalt" DisplayText="繪製路徑搜尋時等待按鍵" Category="除錯" />
+  <option ID="OptionDrawNavigationWeightMaps" DisplayText="每走一步皆繪製導航權重地圖" Category="除錯" />
+  <option ID="OptionDrawCASystems" DisplayText="在地圖生成中使用時繪製細胞自動機" Category="除錯" />
+  <option ID="OptionShowReachable" DisplayText="在區域生成時繪製可達性地圖" Category="除錯" />
+  <option ID="OptionDrawZoneSemantics" DisplayText="建立區域時繪製語義標籤資訊" Category="除錯" />
+  <option ID="OptionDrawFloodVis" DisplayText="繪製可見度填充範圍" Category="除錯" />
+  <option ID="OptionDrawFloodAud" DisplayText="繪製聽力填充範圍" Category="除錯" />
+  <option ID="OptionDrawFloodOlf" DisplayText="繪製嗅覺擴散範圍" Category="除錯" />
+  <option ID="OptionDrawArcs" DisplayText="繪製最近幾輪的電弧歷史紀錄" Category="除錯" />
+  <option ID="OptionWriteSoundsToLog" DisplayText="將播放的音檔名稱寫入訊息日誌" Category="除錯" />
+  <option ID="OptionDisableSoundPreload" DisplayText="停用音效預載入" Category="除錯" />
+  <option ID="OptionInventoryConsistencyCheck" DisplayText="執行物品欄一致性檢查" Category="除錯" />
+  <option ID="OptionShowErrorPopups" DisplayText="顯示錯誤彈出視窗" Category="除錯" />
+  <option ID="OptionDisableBindConflictChecking" DisplayText="重新綁定控制項時禁用衝突檢查" Category="除錯" />
+  <option ID="OptionBugDeckKeyboardShift" DisplayText="啟用 Steam Deck Shift 鍵錯誤的解決方案" Category="除錯" />
+  <option ID="OptionDebugTranslations" DisplayText="顯示除錯（翻譯）選項" Category="除錯">
+    <helptext>一組用於字串與翻譯的除錯選項。</helptext>
+  </option>
+  <option ID="OptionStripUIColorText" DisplayText="移除 UI 文字的顏色格式" Category="除錯 (翻譯)">
+    <helptext>移除所有 UI 字串的顏色格式。</helptext>
+  </option>
+  <option ID="OptionDebugStringTable" DisplayText="渲染字串表 ID 而非翻譯文本" Category="除錯 (翻譯)">
+    <helptext>在翻譯字串上渲染額外的 S: T: 提示，而非直接翻譯。</helptext>
+  </option>
+  <option ID="OptionDebugStringTableMisses" DisplayText="將日誌字串表查找失敗紀錄為錯誤至 Player.log" Category="除錯 (翻譯)" />
+  <option ID="OptionDebugStringTableLoadingChecks" DisplayText="啟用額外的字串 XML 載入檢查" Category="除錯 (翻譯)">
+    <helptext>當載入 XML 字串時，若字串不存在於目前的 Strings-example.xml 中，則記錄警告。</helptext>
+  </option>
+  <option ID="OptionDebugExampleLanguage" DisplayText="啟用範例語言選擇" Category="除錯 (翻譯)">
+    <helptext>允許從語言選擇器中選擇「範例」語言檔案。</helptext>
+  </option>
+</options>
