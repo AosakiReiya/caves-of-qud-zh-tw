@@ -35,18 +35,18 @@
 ## 資料夾結構
 
 ```
-qud-zh-tw/
-├── manifest.json      mod 識別檔
-├── Languages.xml      語言宣告（zh-tw）
-├── workshop.json      Steam Workshop 設定
-├── zh-tw/             翻譯資料（40 個 XML，根元素帶 Lang="zh-tw"）
-├── tools/             翻譯、檢查、打包用的腳本
-└── .github/           GitHub Actions 自動發布
-
-qud-zh-tw-replacers/
-├── manifest.json      mod 識別檔
-├── Replacers.cs       代名詞/動詞 replacer 原始碼
-└── HarmonyPatches.cs  硬編碼戰鬥訊息 Harmony 補丁
+qud-zh-tw-repo/（本 repo = 父容器，含兩個 mod）
+├── .github/workflows/   GitHub Actions 自動發布（打 tag 即打包兩 mod）
+├── qud-zh-tw/           mod 一：靜態翻譯
+│   ├── manifest.json    mod 識別檔
+│   ├── Languages.xml    語言宣告（zh-tw）
+│   ├── workshop.json    Steam Workshop 設定
+│   ├── zh-tw/           翻譯資料（40 個 XML）
+│   └── tools/           翻譯、檢查、打包用的腳本
+└── qud-zh-tw-replacers/ mod 二：動態文字修補
+    ├── manifest.json    mod 識別檔
+    ├── Replacers.cs     代名詞/動詞 replacer 原始碼
+    └── HarmonyPatches.cs 硬編碼戰鬥訊息 Harmony 補丁
 ```
 
 ## 開發

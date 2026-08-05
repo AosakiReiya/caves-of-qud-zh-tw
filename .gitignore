@@ -19,12 +19,13 @@ __pycache__/
 *.pyc
 
 # 翻譯斷點與暫存（不入 git）
-tools/progress.json
-tools/progress.json.tmp
-tools/bad_quality.json
+qud-zh-tw/tools/progress.json
+qud-zh-tw/tools/progress.json.tmp
+qud-zh-tw/tools/bad_quality.json
 
 # 打包產物
 /release/
+qud-zh-tw/release/
 
 # 開發用
 *.log

@@ -18,22 +18,29 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 從 tag 同步 manifest 版本
+      - name: 從 tag 同步 manifest 版本（兩個 mod）
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           python3 - <<'EOF'
           import json
-          path = "manifest.json"
-          data = json.load(open(path, encoding="utf-8"))
-          data["Version"] = "$VERSION"
-          json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
-          print(f"manifest 版本同步為 $VERSION")
+          for path in ("qud-zh-tw/manifest.json", "qud-zh-tw-replacers/manifest.json"):
+              data = json.load(open(path, encoding="utf-8"))
+              data["Version"] = "$VERSION"
+              json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=4)
+          print(f"兩個 manifest 版本同步為 $VERSION")
           EOF
 
-      - name: 打包 mod
+      - name: 打包主 mod（qud-zh-tw）
         run: |
+          cd qud-zh-tw
           python3 tools/package_mod.py --zip
           ls -la release/
+
+      - name: 打包動態修補 mod（qud-zh-tw-replacers）
+        run: |
+          cd qud-zh-tw-replacers
+          zip -r ../qud-zh-tw-replacers.zip . -x "*.git*"
+          ls -la ../qud-zh-tw-replacers.zip
 
       - name: 產生發布說明（從 CHANGELOG 抓取）
         run: |
@@ -51,4 +58,5 @@ jobs:
         with:
           body_path: RELEASE_NOTES.md
           files: |
-            release/qud-zh-tw.zip
+            qud-zh-tw/release/qud-zh-tw.zip
+            qud-zh-tw-replacers.zip
