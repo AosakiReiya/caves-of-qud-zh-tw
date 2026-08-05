@@ -62,6 +62,10 @@ def main() -> None:
     (OUT / "zh-tw").mkdir()
     for f in sorted(glob.glob(str(SRC / "*.xml"))):
         shutil.copy(f, OUT / "zh-tw" / Path(f).name)
+    # 語言子目錄中的資料覆寫檔（如 historyspice.zh-tw.jsonc）一併打包
+    for f in sorted(glob.glob(str(SRC / "*.jsonc"))):
+        shutil.copy(f, OUT / "zh-tw" / Path(f).name)
+        print(f"  複製語言資料檔: {Path(f).name}")
     print(f"已打包至 {OUT}")
 
     if args.zip:

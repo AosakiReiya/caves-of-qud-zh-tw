@@ -4,1884 +4,1884 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <objects ExcludeFromCorpusGeneration="Key">
 
-  <object Name="Key" Load="">
+ <object Name="Key" Load="">
 
-    <part Name="Key">
+  <part Name="Key">
 
-    <builder Name="Key">
+  <builder Name="Key">
 
-    <tag Name="Key" Value="DisplayText">
+  <tag Name="Key" Value="DisplayText">
 
-    <stag Name="Key">
+  <stag Name="Key">
 
-    <property Name="Key">
+  <property Name="Key">
 
-    <xtagTextFragments>
+  <xtagTextFragments>
 
-    <xtagGrammar>
+  <xtagGrammar>
 
 -->
 <objects Lang="zh-tw" Encoding="utf-8">
-  <object Name="GritGateCommPanel" Load="Merge">
-    <part Name="Render" DisplayName="通訊面板" />
-    <part Name="Description" Short="金屬板片擴散了雙向揚聲器的音量。底角有一個小按鈕彈出。" />
-    <part Name="ChargeSink" NameForStatus="對講機" />
-  </object>
-  <object Name="GritGateMainframeRoomCommPanel" Load="Merge">
-    <part Name="Render" DisplayName="通訊面板" />
-    <part Name="Description" Short="金屬板片擴散了雙向揚聲器的音量。底角有一個小按鈕彈出。" />
-    <part Name="ChargeSink" NameForStatus="對講機" />
-  </object>
-  <object Name="Bell of Rest" Load="Merge">
-    <part Name="Render" DisplayName="安息之鐘" />
-  </object>
-  <object Name="Switch" Load="Merge">
-    <part Name="Render" DisplayName="開關" />
-  </object>
-  <object Name="DoorSwitch" Load="Merge">
-    <part Name="Render" DisplayName="控制開關" />
-    <part Name="Description" Short="按鈕成對垂直排列在一個寫滿塗鴉的金屬矩形上。" />
-  </object>
-  <object Name="ElevatorSwitch" Load="Merge">
-    <part Name="Render" DisplayName="控制開關" />
-    <part Name="Description" Short="按鈕成對垂直排列在一個寫滿塗鴉的金屬矩形上。" />
-  </object>
-  <object Name="TempleSwitch" Load="Merge">
-    <part Name="Render" DisplayName="控制開關" />
-    <part Name="Description" Short="一顆孤零零的鈕扣鑲嵌在寫滿塗鴉的金屬矩形中心。" />
-  </object>
-  <object Name="Platform" Load="Merge">
-    <part Name="Render" DisplayName="鍍鉻平台" />
-    <part Name="Description" Short="一個黑色且帶格柵的金屬平台鋪滿了時間的塵埃。上面交錯著微小生命留下的足跡。" />
-  </object>
-  <object Name="StiltWell" Load="Merge">
-    <part Name="Description" Short="後教化時代（post-Edification）那如斯芬克斯般的華麗場景，以金色的沉降浮雕形式排列在 黑大理石 噴泉的邊緣。其明亮脈絡的紋路刺痛了雙眼，但在深處卻退縮進無星的深淵。" />
-    <part Name="Render" DisplayName="神聖之井" />
-  </object>
-  <object Name="Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-    <part Name="Description" Short="光滑的蔚藍大理石看起來像是退火成固體岩石的全息光芒。其邊緣與角落鑲嵌著黃金。" />
-  </object>
-  <object Name="NW Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="N Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="NE Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="W Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="W1 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="W2 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="W3 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="E1 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="E2 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="E3 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="S1 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="S2 Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="E Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="SW Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="SE Marble Dais" Load="Merge">
-    <part Name="Render" DisplayName="大理石台座" />
-  </object>
-  <object Name="Archway" Load="Merge">
-    <part Name="Render" DisplayName="拱門" />
-    <part Name="Description" Short="這是一個由堆疊石塊組成的開放式傳送門。" />
-  </object>
-  <object Name="Door" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="石板上留下了多年的手印，鏽環從鉸鏈頂端剝落。然而門依然存在，固執地主張著「內」與「外」。" />
-    <tag Name="HeroNameTitleDescriptor" Value="微開,關閉,鎖定,曾敲過,開啟,敲過三次,敲過兩次,無法敲擊,未敲擊,已解鎖" />
-    <xtagTextFragments Skin="面板" PoeticFeatures="迷人的裝飾、抹了油的鉸鏈、誘人的門把" />
-    <tag Name="QuestableVerb" Value="開啟,關閉" />
-  </object>
-  <object Name="Windowed Door" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="在門扉過去的某個時刻，一位居民釋放了對好奇心的渴望，並在邊界上切開了一個視口以便觀察。" />
-  </object>
-  <object Name="Striped Door" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
-  </object>
-  <object Name="Wavy Door" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="經由餘弦鋸切割的金屬經過熔焊並安裝在鋼架上。鎖閂處有鍍鉻襯墊。" />
-  </object>
-  <object Name="Metal Door" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="一塊有溝槽的金屬板貼合在門框拱頂上，中心切開了一個滑動面板。" />
-  </object>
-  <object Name="Double Door" Load="Merge">
-    <part Name="Description" Short="兩塊石板上留下了多年來的手印，鏽環從所有鉸鏈的頂端剝落。儘管如此，門依然存在，頑固地主張著「內」與「外」。" />
-  </object>
-  <object Name="Double Windowed Door" Load="Merge">
-    <part Name="Description" Short="在雙開門的過去某個時刻，一名居民將其意志解開為好奇心，並在邊界上切開了一個視線孔徑。" />
-  </object>
-  <object Name="Double Striped Door N" Load="Merge">
-    <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
-  </object>
-  <object Name="Double Striped Door S" Load="Merge">
-    <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
-  </object>
-  <object Name="Double Striped Door E" Load="Merge">
-    <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
-  </object>
-  <object Name="Double Striped Door W" Load="Merge">
-    <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
-  </object>
-  <object Name="BaseDoubleWavyDoor" Load="Merge">
-    <part Name="Description" Short="經由餘弦鋸切割的金屬經過熔接，並安裝在雙寬鋼架上。鎖柱處覆有鉻合金襯墊。" />
-  </object>
-  <object Name="BaseDoubleMetalDoor" Load="Merge">
-    <part Name="Description" Short="一對起皺的金屬板貼合在雙開門的拱頂上，且中心處切開了一個滑動面板。" />
-  </object>
-  <object Name="Glass Door" Load="Merge">
-    <part Name="Render" DisplayName="玻璃門" />
-    <part Name="Description" Short="透明且拋光的玻璃板安裝在滑軌上。" />
-  </object>
-  <object Name="Tinted Glass Door W" Load="Merge">
-    <part Name="Render" DisplayName="彩色玻璃門" />
-    <part Name="Description" Short="一片透明玻璃。" />
-  </object>
-  <object Name="Tinted Glass Door E" Load="Merge">
-    <part Name="Render" DisplayName="彩色玻璃門" />
-    <part Name="Description" Short="拋光的玻璃板被凍結成深色，並安裝在滑軌上。" />
-  </object>
-  <object Name="Security Door" Load="Merge">
-    <part Name="Render" DisplayName="安全門" />
-    <part Name="Description" Short="一塊溝槽金屬板嵌於門框拱部，中央設有一個凹陷的滑動面板。面板上壓印著一張感應卡的模具。" />
-  </object>
-  <object Name="Fused Security Door" Load="Merge">
-    <part Name="Render" DisplayName="融合安全門" />
-    <part Name="Description" Short="一塊起伏的金屬板嵌在門框的拱頂上。它的鉸鏈與軌道已熔化並與牆框融合在一起。" />
-  </object>
-  <object Name="Troll Door" Load="Merge">
-    <part Name="Render" DisplayName="塌陷的金屬門" />
-  </object>
-  <object Name="Troll Door 1" Load="Merge">
-    <part Name="Description" Short="一塊如大象般厚重的塗銅金屬板從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
-  </object>
-  <object Name="Troll Door 2" Load="Merge">
-    <part Name="Description" Short="一塊如大象般厚重的塗銀金屬板從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
-  </object>
-  <object Name="Troll Door 3" Load="Merge">
-    <part Name="Description" Short="一塊如大象般厚重的金漆金屬從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
-  </object>
-  <object Name="Door_GritGateRank1" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-  </object>
-  <object Name="Door_GritGateRank2" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-  </object>
-  <object Name="Death Gate W" Load="Merge">
-    <part Name="Render" DisplayName="死亡之門" />
-    <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
-    <xtagGrammar iArticle="這" />
-  </object>
-  <object Name="Death Gate E" Load="Merge">
-    <part Name="Render" DisplayName="死亡之門" />
-    <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
-    <xtagGrammar iArticle="這" />
-  </object>
-  <object Name="Life Gate W" Load="Merge">
-    <part Name="Render" DisplayName="生命之門" />
-    <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
-    <xtagGrammar iArticle="這" />
-  </object>
-  <object Name="Life Gate E" Load="Merge">
-    <part Name="Render" DisplayName="生命之門" />
-    <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
-    <xtagGrammar iArticle="這" />
-  </object>
-  <object Name="Crypt Door" Load="Merge">
-    <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
-    <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
-  </object>
-  <object Name="Crypt Double Door N" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
-  </object>
-  <object Name="Crypt Double Door S" Load="Merge">
-    <part Name="Render" DisplayName="門" />
-    <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
-  </object>
-  <object Name="Brightsheol Gate W" Load="Merge">
-    <part Name="Render" DisplayName="通往亮希歐之門" />
-  </object>
-  <object Name="Brightsheol Gate E" Load="Merge">
-    <part Name="Render" DisplayName="通往亮希歐之門" />
-  </object>
-  <object Name="Recoming Nook Door" Load="Merge">
-    <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
-    <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
-  </object>
-  <object Name="Brinestalk Gate" Load="Merge">
-    <part Name="Render" DisplayName="鹽莖大門" />
-    <part Name="Description" Short="鹽莖被削成尖樁，橫放在鐵鎖軌道上。" />
-  </object>
-  <object Name="Iron Gate" Load="Merge">
-    <part Name="Render" DisplayName="鐵門" />
-    <part Name="Description" Short="鐵樁橫跨在鎖上的軌道上。" />
-  </object>
-  <object Name="PowerLine" Load="Merge">
-    <part Name="Render" DisplayName="電力線" />
-    <part Name="Description" Short="銅、鋁和玻璃纖維被加工成圓形的電導管。" />
-  </object>
-  <object Name="HeavyPowerLine" Load="Merge">
-    <part Name="Render" DisplayName="高壓電線" />
-    <part Name="Description" Short="銅、碳與玻璃纖維被加工成一根堅固的電纜導管。" />
-  </object>
-  <object Name="GlassHydraulicPipe" Load="Merge">
-    <part Name="Render" DisplayName="玻璃液壓管" />
-    <part Name="Description" Short="玻璃被吹入了一根機器動脈中。" />
-  </object>
-  <object Name="YdFreeholdGlassHydraulicPipe1" Load="Merge">
-    <part Name="Description" Short="玻璃被吹入機器動脈中，並利用鈾使其呈現螢光綠黃色的離子色彩。" />
-  </object>
-  <object Name="WoodenMechanicalTransmission" Load="Merge">
-    <part Name="Render" DisplayName="木製機械" />
-    <part Name="Description" Short="木材被削薄，切割成體積平滑的桿狀，並安裝 內部 齒輪箱以連續傳遞動力。" />
-    <xtagGrammar massNoun="真實" />
-  </object>
-  <object Name="HighTechInstallation" Load="Merge">
-    <xtagTextFragments Skin="機械裝置" PoeticFeatures="高聳的身姿、機械般的姿勢、律動的管樂聲" />
-  </object>
-  <object Name="Wooden Wind Turbine" Load="Merge">
-    <part Name="Render" DisplayName="{{w|木製}} 風力發電機" />
-    <part Name="Description" Short="帆布固定在浸鹽木製手臂上，這些手臂隨風聲旋轉並帶動中央軸。" />
-    <part Name="Circuitry" NameForStatus="Gearbox" />
-    <tag Name="HeroNameTitleDescriptor" Value="循環、慷慨、旋轉、葉狀" />
-    <tag Name="HeroNameTitleClientele" Value="磨坊主" />
-  </object>
-  <object Name="Millstone" Load="Merge">
-    <part Name="Render" DisplayName="磨石" />
-    <part Name="Description" Short="石灰岩圓圈呈多孔狀且帶有舊物的貝殼般的牡蠣灰色，被排列成垂直板塊並互相對磨，將纖維顆粒研磨成粉末。" />
-    <tag Name="HeroNameTitleDescriptor" Value="磨碎者、提供者、米勒" />
-    <tag Name="HeroNameTitleClientele" Value="廚師、烹飪者、穀物、飢餓者" />
-  </object>
-  <object Name="Wooden Water Wheel" Load="Merge">
-    <part Name="Render" DisplayName="{{w|木製}}水車" />
-    <part Name="Description" Short="因濕腐而變黑的木槳承接著潺潺小溪的力量，使水輪以跨越世紀的緩慢節奏轉動。" />
-    <part Name="Circuitry" NameForStatus="Gearbox" />
-    <tag Name="HeroNameTitleDescriptor" Value="循環者、慷慨者、水文者、揮霍者、浪費者、補充者、輪轉者" />
-    <tag Name="HeroNameTitleClientele" Value="發條工、工程師、磨坊主" />
-  </object>
-  <object Name="Powered Orrery" Load="Merge">
-    <part Name="Render" DisplayName="動力渾天儀" />
-    <part Name="ChargeSink" NameForStatus="伺服馬達" />
-  </object>
-  <object Name="Kiln" Load="Merge">
-    <part Name="Render" DisplayName="窯" />
-    <part Name="Description" Short="一件磨光的鋼甲緊貼著一個悶燒的火坑。各種材質的焦痕覆蓋在它的側面。" />
-    <part Name="ChargeSink" NameForStatus="加熱中" />
-  </object>
-  <object Name="Electric Generator" Load="Merge">
-    <part Name="Render" DisplayName="發電機" />
-    <part Name="Description" Short="外殼旋轉器透過手搖柄注入電荷，並輔以太陽熱能。其刮痕斑駁的金屬表面會以地面頻率振動。" />
-    <tag Name="HeroNameTitleDescriptor" Value="慷慨、奢華、微星、豐沛、強效、揮霍、補充者" />
-    <tag Name="HeroNameTitleClientele" Value="家電、能量電池、電力網、枯竭者、盜電者、渴求電力者、修補匠" />
-  </object>
-  <object Name="Induction Charging Station" Load="Merge">
-    <part Name="Render" DisplayName="感應充電站" />
-    <part Name="Description" Short="感應線圈紮根於軟木墊下方，電力液在此傳輸至電池單元。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="高斯, 感應, 強效, 補充, 修復" />
-    <tag Name="HeroNameTitleClientele" Value="能量電池、枯竭者、雷射腦、渴求電力者、修補匠" />
-  </object>
-  <object Name="Hydraulic Irrigator" Load="Merge">
-    <part Name="Render" DisplayName="{{B|水壓}} 灌溉器" />
-    <part Name="Description" Short="磁化鋼驅動隔膜向上移動，生命之水經由鉻管推進至乾渴的植物。" />
-    <part Name="RadiusEventSender" NameForStatus="灌溉系統" />
-    <part Name="ChargeSink" NameForStatus="伺服馬達" />
-    <tag Name="HeroNameTitleDescriptor" Value="水生、慷慨、奢華、滋養、豐沛、引水者" />
-    <tag Name="HeroNameTitleClientele" Value="農作物、農夫、植物、農場" />
-  </object>
-  <object Name="Clockthing_QGirl" Load="Merge">
-    <part Name="Render" DisplayName="巴拉楚姆時鐘 附帶 {{M|Q 女孩}} 的 {{Y|擺錘}}" />
-    <part Name="Description" Short="Q 女孩 將這座 巴拉楚姆時鐘 上的舊振盪器換成了擺錘。現在，時間每天從觀察者身上偷走的數小時已縮減至僅僅幾分鐘。" />
-    <part Name="ChargeSink" NameForStatus="伺服馬達" />
-  </object>
-  <object Name="Hydraulic Bubblething" Load="Merge">
-    <part Name="Render" DisplayName="液壓黃銅發泡機" />
-    <part Name="Description" Short="在發明事業的過程中，有時你會需要使用一種無形的灰色泡沫。或者，至少有一天你可能會需要它，因此一些 修補匠 審慎地預見了問題並發明了 黃銅發泡機。底座上刻著：『擁有所有的泡沫，免於那種或許有一天會需要泡沫卻沒有的悲哀』。" />
-    <part Name="ChargeSink" NameForStatus="FoamSystems" />
-  </object>
-  <object Name="Gas Burner" Load="Merge">
-    <part Name="Render" DisplayName="瓦斯爐" />
-    <part Name="Description" Short="氣體被推入軟管並點燃成火焰。露水賦予了軟管倒刺質感。" />
-    <part Name="ChargeSink" NameForStatus="引火焰" />
-  </object>
-  <object Name="Powered Telescope" Load="Merge">
-    <part Name="Render" DisplayName="動力望遠鏡" />
-    <part Name="ChargeSink" NameForStatus="伺服馬達" />
-  </object>
-  <object Name="Rock Tumbler" Load="Merge">
-    <part Name="Render" DisplayName="滾石機" />
-    <part Name="Description" Short="橡膠襯著電動桶的內部拓撲結構。一壺烏黑的碳化物砂粒置於下腔室，隨時準備進行磨損。" />
-    <part Name="ItemConvertor" NameForStatus="翻滾" />
-  </object>
-  <object Name="Lathe" Load="Merge">
-    <part Name="Render" DisplayName="車床" />
-    <part Name="Description" Short="手輪與 紡錘(Spindle) 旋轉成沙，化物質為虛無，並賦予世界螺旋與圓形之物。金屬粉塵在下方地面堆積。" />
-    <part Name="ChargeSink" NameForStatus="旋轉" />
-  </object>
-  <object Name="Solar Power Station" Load="Merge">
-    <part Name="Render" DisplayName="{{W|太陽能}} 發電站" />
-    <part Name="Description" Short="光伏板排列在兩個插槽式的月形片上。它們旋轉以達到最佳範圍，並將太陽能傳遞給真空外殼的飛輪。" />
-    <part Name="ChargeSink" NameForStatus="KineticLossManager" />
-    <tag Name="HeroNameTitleDescriptor" Value="沐浴者,趨光性,光伏,豐沛,補充者" />
-    <tag Name="HeroNameTitleClientele" Value="器具、電池、電網、枯竭者、強行接入者、修補匠" />
-  </object>
-  <object Name="Solar Pumping Station" Load="Merge">
-    <part Name="Render" DisplayName="{{W|太陽能}} {{c|抽水站}}" />
-    <part Name="Description" Short="陽光被鉻柱周圍地基上的光伏裝置捕捉，熱能則用於將水泵入管道以進行散佈。" />
-    <part Name="ChargeSink" NameForStatus="HydraulicLossManager" />
-    <tag Name="HeroNameTitleDescriptor" Value="淋巴的、流動的、補充者、沐浴者、趨光性的、光伏的、豐富的" />
-    <tag Name="HeroNameTitleClientele" Value="液壓、流動、流體、修補匠" />
-  </object>
-  <object Name="Food Processor" Load="Merge">
-    <part Name="Render" DisplayName="食物處理機" />
-    <part Name="Description" Short="佈滿電線的金屬方塊組成了一個櫃子，內含抽屜以及用於烘烤、醃漬和冷凍乾燥的加熱器。" />
-    <tag Name="HeroNameTitleDescriptor" Value="屠宰者、醃漬者、保存者" />
-    <tag Name="HeroNameTitleClientele" Value="廚師，飢餓者" />
-  </object>
-  <object Name="Universal Charging Station" Load="Merge">
-    <part Name="Render" DisplayName="通用充電站" />
-    <part Name="Description" Short="架子、墊片、石板與搖籃皆由金屬製成，宛如鉻色的蜂巢。電力被濃縮成電池液，注入其對接的儲能單元中。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="天主教徒，強大的，補充者，修復者" />
-    <tag Name="HeroNameTitleClientele" Value="能量電池、枯竭者、雷射腦、渴求電力者、修補匠" />
-  </object>
-  <object Name="Hydraulic Turbine" Load="Merge">
-    <part Name="Render" DisplayName="{{B|hydraulic}} 渦輪機" />
-    <part Name="Description" Short="切割完美的鉻合金轉子堆疊在發電機軸上，寬大的鰭片捕捉流體推力並旋轉出電力的絲線。" />
-    <tag Name="HeroNameTitleDescriptor" Value="水生, 奢華, 滋養, 豐富, 補充" />
-    <tag Name="HeroNameTitleClientele" Value="電力網、幫浦" />
-  </object>
-  <object Name="Hydraulic Press" Load="Merge">
-    <part Name="Render" DisplayName="液壓機" />
-    <part Name="Description" Short="在一道由板狀剪切金屬組成的橫樑下方，一個液壓活塞正向前推進。其平坦的底部被碎屑刮出了溝槽。" />
-    <tag Name="HeroNameTitleDescriptor" Value="壓縮機、粉碎機、壓平機、粉碎者、擠壓機" />
-    <tag Name="HeroNameTitleClientele" Value="修補匠、拾荒者、拆解者" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="Force Projector" Load="Merge">
-    <part Name="Render" DisplayName="力場投影儀" />
-    <part Name="Description" Short="內部 玻璃與鋼製底盤，一股力流之海在動盪中翻騰。隨後它被發電機粉碎成固態物質，並作為場域投射到空間中。" />
-  </object>
-  <object Name="Fluxthing" Load="Merge">
-    <part Name="Render" DisplayName="通量計" />
-    <part Name="Description" Short="四個凸緣聯軸器組成一個十字形，中心有一個波形圖讀數。隨著液體與氣體通過管道，霓虹色的字串會顯示出通量讀數。" />
-    <part Name="ChargeSink" NameForStatus="通量電容器" />
-  </object>
-  <object Name="Electrothing" Load="Merge">
-    <part Name="Render" DisplayName="電化石" />
-    <part Name="Description" Short="兩個銅製球莖形成了一個火花間隙，使電流沿著離子化氣體的路徑流動。這東西對著你發出啪嗒聲並濺起火花。" />
-    <part Name="ChargeSink" NameForStatus="弧光發電機" />
-  </object>
-  <object Name="Unicomputer" Load="Merge">
-    <part Name="Render" DisplayName="單一電腦" />
-    <part Name="Description" Short="內部是一個金屬底盤，琥珀色符文在陰極射線繪製的掃描線上游走。錐台按鍵排列成靜謐的行數。" />
-    <part Name="ChargeSink" NameForStatus="處理器" />
-  </object>
-  <object Name="Liquid-Cooled Unicomputer" Load="Merge">
-    <part Name="Render" DisplayName="液冷單機電腦" />
-  </object>
-  <object Name="Loudspeaker" Load="Merge">
-    <part Name="Render" DisplayName="擴音器" />
-    <part Name="Description" Short="磁化的內臟消化電訊號並噴出波形，而橫膈膜則將塵埃吹向黃銅格柵。" />
-    <part Name="ChargeSink" NameForStatus="揚聲器" />
-  </object>
-  <object Name="Glass Furnace" Load="Merge">
-    <part Name="Render" DisplayName="玻璃熔爐" />
-    <part Name="Description" Short="蘇打灰與石灰岩流經一系列熱坩堝和運河，流向批次毯，在那裡回收並精煉玻璃。" />
-    <part Name="ChargeSink" NameForStatus="熔煉" />
-  </object>
-  <object Name="Wire Extruder" Load="Merge">
-    <part Name="Render" DisplayName="線材擠出機" />
-    <part Name="Description" Short="一個閃爍著光芒的鋼製紡錘，上面刻有螺旋狀溝槽，可用於從原礦塊和鑄錠中剝離電線。" />
-    <part Name="ItemConvertor" NameForStatus="擠壓成型" />
-  </object>
-  <object Name="Broadcast Power Station" Load="Merge">
-    <part Name="Render" DisplayName="廣播發電站" />
-    <part Name="Description" Short="金屬被編織成電磁支架，調製器透過它 黴菌 基頻的黏土，並揭示出新訊號的形狀。" />
-    <tag Name="HeroNameTitleDescriptor" Value="全方位支持,慷慨,奢華,豐富,強效,揮霍,無線電頻率,補充者,傳輸式,無線" />
-    <tag Name="HeroNameTitleClientele" Value="器具、盤繞者、枯竭者、渴求力量者、接受者、修補匠" />
-  </object>
-  <object Name="Fusion Power Station" Load="Merge">
-    <part Name="Render" DisplayName="{{C|核融合}}發電站" />
-    <part Name="Description" Short="微小的物質碎片在鉻合金圓柱體的月牙形結構後方擠壓在一起，產生的熱能被用來向電網下傳送電力。" />
-    <tag Name="HeroNameTitleDescriptor" Value="全方位支持、烈焰之心、慷慨、奢侈、微星、豐沛、強效、揮霍、補充者" />
-    <tag Name="HeroNameTitleClientele" Value="家電、能量電池、電力網、枯竭者、盜電者、渴求電力者、修補匠" />
-  </object>
-  <object Name="Fusion Pumping Station" Load="Merge">
-    <part Name="Render" DisplayName="{{C|融合}}幫浦站" />
-    <part Name="Description" Short="微小的物質碎片在玻璃圓柱的月牙形後方被擠壓在一起，熱能被用來將水泵入管道以進行分配。" />
-    <tag Name="HeroNameTitleDescriptor" Value="淋巴、流動、補充者、微星、融合者" />
-    <tag Name="HeroNameTitleClientele" Value="液壓、流動、流體、修補匠" />
-  </object>
-  <object Name="Industrial Fan" Load="Merge">
-    <part Name="Render" DisplayName="工業風扇" />
-    <part Name="Description" Short="形狀如翼型的巨型刀刃被收納於 內部 一個刻滿歲月痕跡的金屬環中。在遙遠的過去，曾有人在大尺度上引導著氣流的方向。" />
-  </object>
-  <object Name="Glass Printer" Load="Merge">
-    <part Name="Render" DisplayName="玻璃印表機" />
-    <part Name="Description" Short="在青銅框架的玻璃窗後方，是可程式化的玻璃製造儀器：用於熱加工的爐灶與吹管，以及用於冷加工的抹油器與轉輪。" />
-    <part Name="ChargeSink" NameForStatus="玻璃製造" />
-  </object>
-  <object Name="Regen Tank" Load="Merge">
-    <part Name="Render" DisplayName="再生槽" />
-    <part Name="Description" Short="四氙玻璃牆與康復凝膠重現了羊膜的環境，在其中爬蟲、鳥類與哺乳動物的胚胎得以孕育成長。" />
-    <part Name="Enclosing" NameForStatus="流體循環" />
-    <part Name="RegenTank" NameForStatus="再生系統" />
-    <part Name="TemperatureAdjuster" NameForStatus="TemperatureControl" />
-    <tag Name="HeroNameTitleDescriptor" Value="療癒的、醫治者、修復者、奇蹟般的" />
-    <tag Name="HeroNameTitleClientele" Value="疲憊者、倦怠者、傷者" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="Psiamp Sarcophagus" Load="Merge">
-    <part Name="Render" DisplayName="靈能石棺" />
-    <part Name="Description" Short="它是用異世界的 石灰岩 雕琢而成。這些石頭開採自一個繞著幽暗恆星旋轉的漂流世界，那微弱的光芒並未將岩石珊瑚中的虛空物質漂白。現在，它能隔絕物質界的射線以保護沉睡者，並將其傳導至心靈乙太。" />
-    <part Name="Enclosing" NameForStatus="PsiAmp" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="Base Ring Gate" Load="Merge">
-    <part Name="Render" DisplayName="大門" />
-    <part Name="Description" Short="水帶以高浮雕的形式攀附在骨白的大理石柱上。它們爬過拱券，在螺旋環之間蜿蜒穿梭，最後在拱頂石處急轉向上。此處即彼處。" />
-    <xtagGrammar iArticle="這" />
-  </object>
-  <object Name="Ruined Ring Gate" Load="Merge">
-    <part Name="Render" DisplayName="毀壞的門" />
-    <part Name="Description" Short="高浮雕的水紋從破碎的大理石上剝落。曾經圍繞著旅人前行路徑的拱門碎片，如今散落在某處平滑的背部之上。" />
-  </object>
-  <object Name="CyberneticsTerminal2" Load="Merge">
-    <part Name="Render" DisplayName="蛻變角落" />
-    <part Name="Description" Short="一塊印有人類輪廓的 neutrofom 長方形懸掛在玻璃拱門之下。在與眼睛齊平的泡沫表面，符文在橢圓形螢幕上迴圈流轉。手術機械被刺眼的強光遮蔽，從封閉圓頂的底端向外爬行。" />
-  </object>
-  <object Name="ConveyorDrive" Load="Merge">
-    <part Name="Render" DisplayName="輸送帶驅動單元" />
-    <part Name="Description" Short="油脂從亮鉻引擎滴落，弄髒了惰輪。滑輪以奇特的角度排列，在空間中帶動扁平的橡膠皮帶旋轉。" />
-  </object>
-  <object Name="ConveyorPad" Load="Merge">
-    <part Name="Render" DisplayName="輸送帶" />
-    <part Name="Description" Short="腐爛的雜質黏附在扁平黑色雙橡膠的溝槽中。" />
-  </object>
-  <object Name="CrematoryConveyorPad" Load="Merge">
-    <part Name="Description" Short="骨灰色的灰燼黏附在平坦黑色雙橡膠的溝槽中。" />
-  </object>
-  <object Name="BeltCurtains" Load="Merge">
-    <part Name="Render" DisplayName="橡膠簾幕" />
-    <part Name="Description" Short="在一個失去光澤的金屬框架下，掛著一整片被切成柔軟簾條狀的黑色橡膠。" />
-    <xtagGrammar massNoun="真實" />
-  </object>
-  <object Name="Catchbasin" Load="Merge">
-    <part Name="Render" DisplayName="集水盆" />
-    <part Name="Description" Short="石器捕捉著乾燥空氣中所釋出的微量水分。" />
-  </object>
-  <object Name="Air Well" Load="Merge">
-    <part Name="Render" DisplayName="氣井" />
-    <part Name="Description" Short="一頂壓扁的帽簷遮住了 =pronouns.possessive= 眼睛，皮革槍套掛在 =pronouns.possessive= 肩膀上。=pronouns.Subjective= =verb:roll:afterpronoun= 一顆 鉛彈 掠過 =pronouns.possessive= 皮革般的指關節。" />
-    <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
-    <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
-  </object>
-  <object Name="Solar Still" Load="Merge">
-    <part Name="Render" DisplayName="太陽能蒸餾器" />
-    <part Name="Description" Short="來自鹽陽的熱量使鹹水蒸發。當水再次凝結時，它會分離成純淨與不純的元素：鹽聚集在靜止處，而淡水則匯集在盆地中。" />
-    <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
-    <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
-  </object>
-  <object Name="Solar Condenser" Load="Merge">
-    <part Name="Render" DisplayName="太陽能冷凝器" />
-    <part Name="Description" Short="鉻合金法蘭最大化了蒸發空氣重新凝結為蒸餾露水的表面積。" />
-    <part Name="TemperatureAdjuster" NameForStatus="CoolingSystem" />
-    <part Name="LiquidProducer" NameForStatus="收集系統" />
-    <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
-    <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
-  </object>
-  <object Name="GritGateChromeBeacon" Load="Merge">
-    <part Name="Render" DisplayName="鍍鉻小人信號轉發器" />
-    <part Name="Description" Short="在玻璃月亮上破碎的正弦波編碼了該飛地機械子嗣的行為原語。電子場將它們吸入天線，並送入以太之中。" />
-    <part Name="ZoneAdjust" NoAdjustSpecFailureDescription="NeedsSignalTemplate" NameForStatus="訊號產生器" />
-  </object>
-  <object Name="Reclamation Cist" Load="Merge">
-    <part Name="Render" DisplayName="{{r|回收石棺}}" />
-    <part Name="Description" Short="一個由鋼鐵、黃銅與陰極管製成的棺材，隱藏著一系列精密儀器，用於從死者身上吸取器官物質，並將其送回親族手中。" />
-    <tag Name="HeroNameTitleDescriptor" Value="生物循環、深紅、立體主義、生態、血色" />
-    <tag Name="HeroNameTitleClientele" Value="生態建築、蛋白質、回收器、永續性、飢餓者、真理者" />
-  </object>
-  <object Name="FactoryArm" Load="Merge">
-    <part Name="Render" DisplayName="旋轉機械臂" />
-    <part Name="Description" Short="眼鏡架在 =pronouns.possessive= 尖鼻子上。=pronouns.Possessive= 指甲上沾滿了石墨，大量的方格紙散落在 =pronouns.possessive= 的書桌上。" />
-  </object>
-  <object Name="GrabberArm" Load="Merge">
-    <part Name="Render" DisplayName="鎖定機械臂" />
-    <part Name="Description" Short="金屬泡沫被填充並鋪設成一個巨大的生物手臂擬像，其肱二頭肌與肱三頭肌的部位閃閃發光。黃銅鉗狀物會從目標身上攫取動能。" />
-  </object>
-  <object Name="Exit Teleporter" Load="Merge">
-    <part Name="Render" DisplayName="樓梯間傳送器" />
-    <part Name="Description" Short="黃銅邊緣環繞著泡沫分流墊，上方的格柵編織成曾經熟悉的出口符號。" />
-  </object>
-  <object Name="Quantum Rippler" Load="Merge">
-    <part Name="Render" DisplayName="量子漣漪者" />
-    <part Name="Description" Short="從一個鍍金盒中，萬花筒般的瓷磚與色調在多個維度上和諧共鳴。" />
-  </object>
-  <object Name="NormCore" Load="Merge">
-    <part Name="Render" DisplayName="常規核心" />
-    <part Name="Description" Short="鑽石流形將石英加壓至其 Ω 形態，沿著當地區域的靈脈使時空結晶化。常態性的液滴在煙囪上凝結，將光線折射進內在維度。" />
-    <part Name="DeploymentMaintainer" NameForStatus="FieldProjector" />
-  </object>
-  <object Name="NormCore1" Load="Merge">
-    <part Name="Render" DisplayName="常規核心 Mk I" />
-  </object>
-  <object Name="NormCore2" Load="Merge">
-    <part Name="Render" DisplayName="常規核心 Mk II" />
-  </object>
-  <object Name="NormCore3" Load="Merge">
-    <part Name="Render" DisplayName="常規核心 Mk III" />
-  </object>
-  <object Name="Full-Scale Recompositer" Load="Merge">
-    <part Name="Render" DisplayName="全規模重組器" />
-    <part Name="Description" Short="富勒石邊緣環繞著泡沫著陸墊，上方的格柵被編織成曾經熟悉的重組與歸還符號。" />
-  </object>
-  <object Name="Melted Pad" Load="Merge">
-    <part Name="Render" DisplayName="雜草叢生的泡沫墊" />
-    <part Name="Description" Short="富勒石邊緣上的花紋被熔化成亮白色，滴落在破碎的泡沫墊上。百合幼芽在裂縫中迅速生長並向前推進；生命向外蔓延。" />
-  </object>
-  <object Name="Reshaping Nook" Load="Merge">
-    <part Name="Render" DisplayName="重塑角落" />
-    <part Name="Description" Short="特徵性的玻璃拱門標誌著這個封閉空間是一個為了新用途而被掏空並拆除電線的蛻變角落。一隻利爪伸出進行焊接與塑形，而在底鼓中，一個輪盤正旋轉著濕潤的黏土，準備好進行日渣發酵。" />
-    <property Name="VehicleTerm" Value="魔像" />
-  </object>
-  <object Name="Reshaping Pad" Load="Merge">
-    <part Name="Render" DisplayName="重塑墊" />
-    <part Name="Description" Short="粗糙的石緣環繞著一個泡沫著陸墊，上方的格柵編織成新穎的重塑與歸還符號。" />
-  </object>
-  <object Name="BaseBookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-    <part Name="Description" Short="木板以正交角度釘合，灰塵沉睡在紙質外套上。" />
-    <part Name="Container" Preposition="on" />
-  </object>
-  <object Name="Joppa Bookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="NuntuBookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="NuntuBookshelf2" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="Village Bookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="UndergroundBookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="UndergroundMerchantBookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="HydroponBookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="Redrock Bookshelf" Load="Merge">
-    <part Name="Render" DisplayName="木製書架" />
-  </object>
-  <object Name="BaseBed" Load="Merge">
-    <tag Name="HeroNameTitleDescriptor" Value="安逸的、柔軟的、凹凸不平的、堅實的、奢華的、舒適的、床單未鋪好的、無彈簧的" />
-    <tag Name="HeroNameTitleClientele" Value="疲憊者與勞累者" />
-    <xtagTextFragments Skin="床單" PoeticFeatures="斜躺的身姿、柔軟的表面、誘人的平坦感" />
-    <tag Name="QuestableVerb" Value="睡在...裡面" />
-  </object>
-  <object Name="Bed" Load="Merge">
-    <part Name="Render" DisplayName="床" />
-    <part Name="Description" Short="織物裡塞滿了水藤碎屑，並按照丘民的風格鋪放在木條上。" />
-  </object>
-  <object Name="Bedroll" Load="Merge">
-    <part Name="Render" DisplayName="睡袋" />
-    <part Name="Description" Short="一張用帆布帶固定的山羊毛床。" />
-  </object>
-  <object Name="Crib" Load="Merge">
-    <part Name="Render" DisplayName="嬰兒床" />
-    <part Name="Description" Short="木條對孩子而言是巨石。羽毛枕頭則是寒冷的草地。這裡便是他們黃昏世界的邊界。" />
-    <tag Name="HeroNameTitleDescriptor" Value="滋養、安寧、舒適、守護者、溫馨" />
-  </object>
-  <object Name="Folding Cot" Load="Merge">
-    <part Name="Render" DisplayName="摺疊床" />
-    <part Name="Description" Short="水藤 帆布 被拉伸並摺疊在木腿上。" />
-    <tag Name="QuestableVerb" Value="睡在...上面" />
-  </object>
-  <object Name="Hammock" Load="Merge">
-    <part Name="Render" DisplayName="吊床" />
-    <part Name="Description" Short="鹽草被編織成繩索格狀鞍座，以便在兩棵老橡樹之間盪漾小睡。中間下垂部分的纖維因躺臥之軀的中心質量壓力而顯得格外磨損。" />
-  </object>
-  <object Name="Four-Poster Bed" Load="Merge">
-    <part Name="Render" DisplayName="四柱床" />
-    <part Name="Description" Short="木材被細心地雕琢成柱狀並進行裝飾性削刻。紈袴羽絨是從斯維河畔的裁縫師手中交易而來的，像蛋糕一樣層層堆疊，並用枕頭覆蓋如糖霜。在這裡，富有的人可以找到進入夢境山谷的偏好入口。" />
-    <tag Name="HeroNameTitleDescriptor" Value="安逸、柔軟、凹凸不平、堅實、奢華、壯麗、夢幻" />
-  </object>
-  <object Name="Medical Bed" Load="Merge">
-    <part Name="Render" DisplayName="消化床" />
-    <part Name="Description" Short="如鹽漂白般的白色塑膠經過設計，用於安穩睡眠、康復以及體液的重新調整。" />
-    <tag Name="HeroNameTitleDescriptor" Value="堅實、照護者、可調式、撒馬利亞人、消化性、治療性、修復者" />
-  </object>
-  <object Name="Waterbed" Load="Merge">
-    <part Name="Render" DisplayName="水床" />
-    <part Name="Description" Short="木條以丘陵民的風格呈直角排列。然而，取而代之的並非糠皮墊，而是充填著油膩水分的塑膠床墊，這是那些渴望湖泊波浪的筏漂者所青睞的替代品。" />
-    <tag Name="HeroNameTitleDescriptor" Value="液壓、潮濕、波浪狀、漲落不定" />
-    <tag Name="HeroNameTitleClientele" Value="疲憊者、勞累者、潮起潮落、水手" />
-  </object>
-  <object Name="Bedger" Load="Merge">
-    <part Name="Render" DisplayName="獾獸" />
-    <part Name="Description" Short="閒暇史學家將所有紀元分為以下三個時代：熊類生物進化或文明崛起以崇拜牠們之前的時段；熊類盛世與文明有能力製作其形狀的長榻之間的時段；以及從那時起直到文明衰落的時段。" />
-    <part Name="Bed" NameForStatus="骨科適應" />
-    <tag Name="HeroNameTitleDescriptor" Value="柔軟、舒適、毛茸茸、溫暖、可愛" />
-  </object>
-  <object Name="Hyperbiotic Bed" Load="Merge">
-    <part Name="Render" DisplayName="超生物床" />
-    <part Name="Description" Short="隱藏的微型反應爐將粒子撞擊在一起以產生熱能，並為使疲憊的沉睡者恢復生機的生物機器裝置提供動力。" />
-    <part Name="Bed" NameForStatus="HyperbioticSystems" />
-    <tag Name="HeroNameTitleDescriptor" Value="療癒的、醫治者、修復者、奇蹟般的" />
-    <tag Name="HeroNameTitleClientele" Value="倦怠者、疲憊者、傷者" />
-  </object>
-  <object Name="BaseChair" Load="Merge">
-    <tag Name="HeroNameTitleDescriptor" Value="舒適、短腿、直背、堅固、三腳" />
-    <tag Name="HeroNameTitleClientele" Value="背部, 腰部, 疲憊" />
-    <tag Name="QuestableVerb" Value="坐在" />
-  </object>
-  <object Name="Chair" Load="Merge">
-    <part Name="Render" DisplayName="椅子" />
-    <part Name="Description" Short="木板以沼澤居民的風格成直角釘在一起。" />
-  </object>
-  <object Name="Floor Cushion" Load="Merge">
-    <part Name="Render" DisplayName="地板墊" />
-    <part Name="Description" Short="這款扣式枕頭塞滿了水藤碎屑與發光烏鴉羽毛，讓人們可以盤腿休息。" />
-    <tag Name="HeroNameTitleDescriptor" Value="舒適、斜靠、放蕩、柔軟、豐滿、享樂主義" />
-  </object>
-  <object Name="Kline" Load="Merge">
-    <part Name="Render" DisplayName="克萊恩" />
-    <part Name="Description" Short="在陽光曝曬的 莫格拉伊(Moghra'yi) 與 紡錘(Spindle) 的陰影之間，那道邊界上的 Convivia 包含了對蘋果酒的沉思、全息投影，以及將 klinai 以直角排列。" />
-    <tag Name="QuestableVerb" Value="坐在、睡在" />
-  </object>
-  <object Name="Bench" Load="Merge">
-    <part Name="Render" DisplayName="長凳" />
-    <part Name="Description" Short="木板被簡單地釘在一起，形成這張簡樸的座椅。" />
-  </object>
-  <object Name="Stool" Load="Merge">
-    <part Name="Render" DisplayName="凳子" />
-    <part Name="Description" Short="沒有任何事物是靜止不變的，一切都在運動之中；而坐者必須為下一個時刻做好準備，屆時閒暇的記憶將被燒灼成神經質的塑像。凳子承載著這些真理。" />
-  </object>
-  <object Name="Canvas Folding Chair" Load="Merge">
-    <part Name="Render" DisplayName="帆布摺疊椅" />
-    <part Name="Description" Short="關節木與編織的 水藤 組成了一個供驢子使用的活動碼頭。" />
-  </object>
-  <object Name="Throne" Load="Merge">
-    <part Name="Render" DisplayName="王座" />
-    <part Name="Description" Short="蝕刻金屬與寶石的裝飾標示出了世界軸心（axis mundi）。" />
-    <tag Name="HeroNameTitleDescriptor" Value="皇室的、帝國的、壯麗的、寬宏的、自大的、莊嚴的、氣勢磅礴的、雄偉的、莊重的、宏大的、誇張的、燦爛的、高聳的" />
-  </object>
-  <object Name="Armchair" Load="Merge">
-    <part Name="Render" DisplayName="扶手椅" />
-    <part Name="Description" Short="由皮革匠在鹽之陽光下揉捏而成，並填充了發光烏鴉的羽毛，以供其主人安息。" />
-    <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
-  </object>
-  <object Name="Medical Chair" Load="Merge">
-    <part Name="Render" DisplayName="消化椅" />
-    <part Name="Description" Short="如鹽漂白般潔白的塑料經過塑形，以達到理想的消化與 幽默 的和諧。" />
-    <tag Name="HeroNameTitleDescriptor" Value="照護者、可調式、救命恩人、撒馬利亞人、矯形器、衛生、防腐、治療" />
-  </object>
-  <object Name="Massage Chair" Load="Merge">
-    <part Name="Render" DisplayName="屍骸揉捏者" />
-    <part Name="Description" Short="它配有一個曲軸，可轉動凹凸不平的橡膠片，並揉捏出坐者的後部皺褶。" />
-    <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、放蕩、柔軟、豐滿、享樂主義、揉捏" />
-  </object>
-  <object Name="Work Chair" Load="Merge">
-    <part Name="Render" DisplayName="滾輪椅" />
-    <part Name="Description" Short="緊密的黑色網格挺直了脊椎。輪子從腳輪上降下並開始移動。" />
-    <tag Name="HeroNameTitleDescriptor" Value="勤勉、人體工學、高效、滾動順暢、直背、舒適" />
-  </object>
-  <object Name="Ergomax Chair" Load="Merge">
-    <part Name="Render" DisplayName="人體工學椅" />
-    <part Name="Description" Short="如同鹽漂白般潔白的塑膠被塑造成適合理想沉思的姿勢。" />
-    <part Name="Chair" NameForStatus="ErgonomicSystems" />
-    <tag Name="HeroNameTitleDescriptor" Value="勤勉、人體工學、高產、滾動順暢、靠背挺直、舒適、柔軟、靈敏" />
-  </object>
-  <object Name="Chairbear" Load="Merge">
-    <part Name="Render" DisplayName="椅熊" />
-    <part Name="Description" Short="閒暇史學家將所有紀元分為以下三個時代：熊類生物進化或文明崛起以崇拜牠們之前的時段；熊類盛世與文明有能力製作其形狀的長榻之間的時段；以及從那時起直到文明衰落的時段。" />
-    <part Name="Chair" NameForStatus="ErgonomicAdaptations" />
-    <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
-  </object>
-  <object Name="Torture Chair" Load="Merge">
-    <part Name="Render" DisplayName="酷刑椅" />
-    <part Name="Description" Short="在新的情境下，這張 消化椅 顯得威脅重重。乾涸的血跡塗抹在塑膠座墊上，其導管像一團 蠕蟲 般磨損脫線。" />
-    <part Name="Chair" NameForStatus="強化審訊系統" />
-    <tag Name="HeroNameTitleDescriptor" Value="受難者、極其惡劣、放血者、屠夫、殘酷、毀滅者、失血者、刺穿者、貫穿者" />
-    <tag Name="HeroNameTitleClientele" Value="審判官、訊問官、施虐狂、殘酷者、悔罪者、酷刑者" />
-  </object>
-  <object Name="Hyperbiotic Chair" Load="Merge">
-    <part Name="Render" DisplayName="超生物椅" />
-    <part Name="Description" Short="隱藏的微型反應爐將粒子撞擊在一起，產生熱能，並驅動生物機器裝置，為受傷的躺椅恢復生命力。" />
-    <part Name="Chair" NameForStatus="HyperbioticSystems" />
-    <tag Name="HeroNameTitleDescriptor" Value="照護者、可調式、矯形、治療、醫治者、修復者" />
-  </object>
-  <object Name="Gravchair" Load="Merge">
-    <part Name="Render" DisplayName="{{K|重力}}椅" />
-    <part Name="Description" Short="在熱車床上磨平的塑膠被揉捏成一種設計，喚起了「食者」對於完美球體如何扭曲自身周圍時空的直覺。" />
-    <part Name="Chair" NameForStatus="ContragravSystems" />
-    <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、懶散、享樂、柔軟、豐腴、美食主義、動感" />
-  </object>
-  <object Name="Ornate Chair" Load="Merge">
-    <part Name="Render" DisplayName="華麗椅子" />
-    <part Name="Description" Short="坐著的思想者能感受到座墊的豐盈，尖銳的拱形靠背壓迫著愛玩的背部，而爪球足則暗示著這件家具本身隱藏著生命。這是一把充滿意義的椅子。" />
-    <tag Name="HeroNameTitleDescriptor" Value="舒適、頹廢、美食主義、懶散、奢華、斜靠、柔軟、享樂、豐腴" />
-  </object>
-  <object Name="Ornate Bench" Load="Merge">
-    <part Name="Render" DisplayName="華麗長凳" />
-    <part Name="Description" Short="在 高爾格塔(Golgotha) 的深處，=subject.name= 遇見了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。" />
-  </object>
-  <object Name="Scrapasan" Load="Merge">
-    <part Name="Render" DisplayName="斯卡帕桑椅" />
-    <part Name="Description" Short="這個由搜刮來的紡織品與墊料製成的碗狀籃子張開著口，承諾著一個謙卑、舒適的擁抱，隨之而來的是艱辛的脫身。" />
-    <tag Name="HeroNameTitleDescriptor" Value="舒適、隨和、謙遜、特立獨行、歪斜、凹凸不平、拼湊、豪華、怪異" />
-  </object>
-  <object Name="Starmchair" Load="Merge">
-    <part Name="Render" DisplayName="星椅" />
-    <part Name="Description" Short="三根鋼製槍管組成了一個帶有弧形邊緣、充滿光輝儀式感的三角形。它們安置在伺服關節底座上。上方有一對獨立關節的攝影機，其轉動的靈活性比一般人對自動化武器的預期還要高。" />
-    <part Name="Chair" NameForStatus="ErgonomicAdaptations" />
-    <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
-  </object>
-  <object Name="Sofa" Load="Merge">
-    <part Name="Render" DisplayName="沙發" />
-    <part Name="Description" Short="濃密的綠色簇狀物被編織成厚實柔軟的格柵，裡面塞滿了 水藤 碎屑與 發光烏鴉 羽毛，接著掛在傾斜的木架上。" />
-  </object>
-  <object Name="Sofa L" Load="Merge">
-    <part Name="Render" DisplayName="沙發" />
-  </object>
-  <object Name="Sofa C" Load="Merge">
-    <part Name="Render" DisplayName="沙發" />
-  </object>
-  <object Name="Sofa R" Load="Merge">
-    <part Name="Render" DisplayName="沙發" />
-  </object>
-  <object Name="Chest" Load="Merge">
-    <part Name="Render" DisplayName="箱子" />
-    <part Name="Description" Short="一個帶有鉸鏈蓋與插銷的木製儲物箱。表面刻下的痕跡暗示著語言完整的機率陣列，以及其缺失之處。" />
-  </object>
-  <object Name="ChestIsner" Load="Merge">
-    <part Name="Description" Short="一個帶有鉸鏈蓋和插銷的木製儲物箱。表面刻下的痕跡暗示了語言完整的機率陣列，以及其缺失的可能性。一個敞開的鎖上刻著一滴濺出的水滴。" />
-    <part Name="Render" DisplayName="箱子" />
-  </object>
-  <object Name="Metal Chest1" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest2" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest3" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest4" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest5" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest6" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest7" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="Metal Chest8" Load="Merge">
-    <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
-  </object>
-  <object Name="FossilizedRemains" Load="Merge">
-    <part Name="Render" DisplayName="化石殘骸" />
-    <part Name="Description" Short="牙齒、外殼與骨頭被泥土污垢黑化並進入停滯狀態。" />
-  </object>
-  <object Name="RustLocker" Load="Merge">
-    <part Name="Render" DisplayName="{{r|鏽蝕}}的置物櫃" />
-    <part Name="Description" Short="黃銅帶框住了一個被空氣和雨水侵蝕成紅色的舊鐵盒。" />
-  </object>
-  <object Name="MedLocker" Load="Merge">
-    <part Name="Render" DisplayName="醫療儲物櫃" />
-    <part Name="Description" Short="黯淡鋼材的表面留有指紋痕跡。蓋子上繪有一個紅色的十字，並已扣緊。" />
-  </object>
-  <object Name="Locker" Load="Merge">
-    <part Name="Render" DisplayName="置物櫃" />
-    <part Name="Description" Short="一個看起來因年代久遠而磨損的金屬置物櫃。" />
-  </object>
-  <object Name="Scrapable Deposit Box 6" Load="Merge">
-    <part Name="Render" DisplayName="可刮取的存款箱" />
-    <part Name="Description" Short="金屬板將鉻色紙箱分割成金色矩形。 內部, artifacts 等待著預定的磨損並回歸礦物形態。" />
-  </object>
-  <object Name="Weapon Rack" Load="Merge">
-    <part Name="Render" DisplayName="武器架" />
-    <part Name="Description" Short="木製與鉻製的桿子讓武器得以安穩地放置。" />
-    <part Name="Container" Preposition="on" />
-  </object>
-  <object Name="Gun Rack" Load="Merge">
-    <part Name="Render" DisplayName="槍架" />
-    <part Name="Description" Short="木製與鉻製的支柱讓槍械得以安穩地放置。" />
-  </object>
-  <object Name="Armor Rack" Load="Merge">
-    <part Name="Render" DisplayName="盔甲架" />
-    <part Name="Description" Short="木製與鉻製的支柱讓盔甲安穩地放置著。" />
-  </object>
-  <object Name="CyberneticsRack" Load="Merge">
-    <part Name="Render" DisplayName="控制架" />
-    <part Name="Description" Short="鉻合金插銷形成了一個晶格，仿生模組正在其中等待耦合。" />
-    <part Name="Container" Preposition="on" />
-  </object>
-  <object Name="CyberneticsStationRack" Load="Merge">
-    <part Name="Render" DisplayName="控制架" />
-    <part Name="Description" Short="鉻釘形成了一個格柵，模組正在其中等待耦合。" />
-    <part Name="Container" Preposition="on" />
-  </object>
-  <object Name="BaseWedgeChest" Load="Merge">
-    <part Name="Render" DisplayName="信用鎖箱" />
-    <part Name="Description" Short="一個由拋光且防腐金屬製成的鎖定箱上，刻有編號矩形凹槽。" />
-  </object>
-  <object Name="Reliquary" Load="Merge">
-    <part Name="Render" DisplayName="聖物箱" />
-    <part Name="Description" Short="在過去的一個塵封角落，無名的工匠們為條紋大理石上釉，並鑲嵌金箔，用以存放一位垂頭喪氣的食者（Eater）的傳家寶與隨葬品。" />
-  </object>
-  <object Name="SultanReliquaryW" Load="Merge">
-    <part Name="Render" DisplayName="聖物箱" />
-    <part Name="Description" Short="巨型大理石板圍繞著存放帝國珍寶的禁制棱鏡，其中包括生物與主權之「面」。在它們廣闊的表面上，金工勾勒出生命及其邊界的幾何序列；流水從世界女像柱的身軀流下，又捲回天穹。" />
-  </object>
-  <object Name="SultanReliquaryE" Load="Merge">
-    <part Name="Render" DisplayName="聖物箱" />
-    <part Name="Description" Short="巨型大理石板圍繞著存放帝國珍寶的禁制棱鏡，其中包括生物與主權之「面」。在它們廣闊的表面上，金工勾勒出生命及其邊界的幾何序列；流水從世界女像柱的身軀流下，又捲回天穹。" />
-  </object>
-  <object Name="Recoming Reliquary" Load="Merge">
-    <part Name="Render" DisplayName="重現聖物箱" />
-    <part Name="Description" Short="在過去的一個塵封角落，無名的工匠為條紋大理石上釉並鑲嵌紫水晶，用以安置歸來的「高階噬食者」的凡間齒輪。" />
-  </object>
-  <object Name="Melted Reliquary" Load="Merge">
-    <part Name="Render" DisplayName="熔融聖物箱" />
-    <part Name="Description" Short="大理石紋路抹入了熔化的粉紅色岩渣中；那永恆的箱子正敞開著。" />
-  </object>
-  <object Name="Woven Basket" Load="Merge">
-    <part Name="Render" DisplayName="編織籃" />
-    <part Name="Description" Short="沼澤蘆葦經由經緯交織手工編織成一個用於存放束狀物和其他乾貨的 容器。" />
-    <tag Name="QuestableVerb" Value="放入某物" />
-  </object>
-  <object Name="Multicabinet" Load="Merge">
-    <part Name="Render" DisplayName="滑動抽屜櫃" />
-    <part Name="Description" Short="鍍鋅金屬製成的抽屜以各種尺寸的矩形排列在櫃子裡。儲存空間呈現分形結構。" />
-  </object>
-  <object Name="Brazier" Load="Merge">
-    <part Name="Render" DisplayName="青銅火盆" />
-    <part Name="Description" Short="磨光的青銅被熱煤燒灼，用於點亮儀式之光。" />
-  </object>
-  <object Name="Tall Brazier" Load="Merge">
-    <part Name="Render" DisplayName="青銅火盆" />
-    <part Name="Description" Short="磨光的青銅被熱煤燒灼，用於點亮儀式之光。" />
-  </object>
-  <object Name="Sconce" Load="Merge">
-    <part Name="Render" DisplayName="火炬架" />
-    <part Name="Description" Short="一團明亮燃燒的手火懸掛在木頭與鐵器之間。" />
-  </object>
-  <object Name="Torchpost" Load="Merge">
-    <part Name="Render" DisplayName="火炬架" />
-    <part Name="Description" Short="一團明亮燃燒的手火懸掛在木頭與鐵器之間。" />
-  </object>
-  <object Name="Unlit Torchpost" Load="Merge">
-    <part Name="Render" DisplayName="火炬架" />
-    <part Name="Description" Short="一個木頭與鐵製成的燭台，不發光地懸掛著。" />
-  </object>
-  <object Name="Techlight1" Load="Merge">
-    <part Name="Render" DisplayName="弧光燭台" />
-    <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
-  </object>
-  <object Name="Techlight2" Load="Merge">
-    <part Name="Render" DisplayName="弧光燭台" />
-    <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
-  </object>
-  <object Name="Techlight3" Load="Merge">
-    <part Name="Render" DisplayName="弧光燭台" />
-    <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
-  </object>
-  <object Name="Full-Spectrum Techlight" Load="Merge">
-    <part Name="Render" DisplayName="全光譜亮壁燈" />
-    <part Name="Description" Short="鉻合金的尖銳點是這款實用照明裝置的頂點。全光譜的亮度從其邊緣迸發，照亮了世界。" />
-  </object>
-  <object Name="Half Candelabra" Load="Merge">
-    <part Name="Render" DisplayName="燭台" />
-    <part Name="Description" Short="蠟從頑固的蠟燭中流下，滴落在燭台上，在青銅層之間形成了一道蠟瀑。" />
-  </object>
-  <object Name="Candelabra" Load="Merge">
-    <part Name="Render" DisplayName="燭台" />
-    <part Name="Description" Short="蠟從頑固的蠟燭中流下，滴落在燭台上，在青銅層之間形成了一道蠟瀑。" />
-  </object>
-  <object Name="Tomb Techlight1" Load="Merge">
-    <part Name="Render" DisplayName="弧光燭台" />
-    <part Name="Description" Short="鋒利的鉻合金尖端構成了這件裝飾型燈具的頂點。光芒從其邊緣迸發，點燃了世界。" />
-  </object>
-  <object Name="Vessel" Load="Merge">
-    <tag Name="QuestableVerb" Value="從...飲用" />
-  </object>
-  <object Name="Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-    <part Name="Description" Short="一大片浸透的軟組織黏附在地面上。=pronouns.Subjective= 帶著灼熱的生命力 =verb:crumple:afterpronoun=。" />
-  </object>
-  <object Name="Vase Unhandled" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-  </object>
-  <object Name="Cider Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-  </object>
-  <object Name="Honey Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-  </object>
-  <object Name="Wine Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-  </object>
-  <object Name="Oil Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-  </object>
-  <object Name="Bottle" Load="Merge">
-    <part Name="Render" DisplayName="玻璃瓶" />
-    <part Name="Description" Short="一個由吹製玻璃製成的 容器，呈現月牙狀弧度。其風格暗示它起源於 莫格拉伊(Moghra'yi) 另一側的 煙霧之神海 沿岸，且很可能是由 駝獸 出口貿易的產物。" />
-  </object>
-  <object Name="Wide Bottle" Load="Merge">
-    <part Name="Render" DisplayName="寬口玻璃瓶" />
-    <part Name="Description" Short="玻璃被吹製成寬大的碗狀與細長的杯莖，遵循著林地覆蓋山脈上的拉吉諾斯（lagynos）傳統。這種風格的首批工匠是在穆薩木（musa wood）那濃厚且成熟的空氣中工作的嗎？紡錘(Spindle) 閃爍粉塵他們的研磨板與吹管嗎？" />
-  </object>
-  <object Name="Pitcher" Load="Merge">
-    <part Name="Render" DisplayName="陶製水罐" />
-    <part Name="Description" Short="一個帶有拖尾的容器最初是在清晨溫暖的陶輪上製作而成的。一位峽谷探險者格外小心地塑造了瓶緣，以保存珍貴的生命液體。" />
-  </object>
-  <object Name="Ewer" Load="Merge">
-    <part Name="Render" DisplayName="水壺" />
-    <part Name="Description" Short="青銅經過熔化、冷卻、塑形與蝕刻，用以承載生命之水。" />
-  </object>
-  <object Name="Jug" Load="Merge">
-    <part Name="Render" DisplayName="陶罐" />
-    <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
-  </object>
-  <object Name="Jug Eastern Style" Load="Merge">
-    <part Name="Render" DisplayName="陶罐" />
-    <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
-  </object>
-  <object Name="Jug Wide Eastern Style" Load="Merge">
-    <part Name="Render" DisplayName="陶罐" />
-    <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
-  </object>
-  <object Name="Long Jug" Load="Merge">
-    <part Name="Render" DisplayName="容器" />
-    <part Name="Description" Short="黏土在陶輪上旋轉並塑造成波浪形，經過燒製與上釉，成為傳統的 容器。" />
-  </object>
-  <object Name="Recoming Water Jug" Load="Merge">
-    <part Name="Render" DisplayName="初啜之器" />
-    <part Name="Description" Short="黏土在陶輪上旋轉，被塑造成波浪狀，經火燒製後，釉化成一個儀式用的容器。兩幅象形圖並排展示著：「生命」與「飲用」。" />
-  </object>
-  <object Name="Melted Jug" Load="Merge">
-    <part Name="Render" DisplayName="裂紋裝飾器皿" />
-    <part Name="Description" Short="上釉且過熱的黏土裂開了。兩幅象形文字已變得無法辨識。" />
-  </object>
-  <object Name="Cider Pitcher" Load="Merge">
-    <part Name="Render" DisplayName="陶製水罐" />
-  </object>
-  <object Name="Honey Pitcher" Load="Merge">
-    <part Name="Render" DisplayName="陶製水罐" />
-  </object>
-  <object Name="Wine Pitcher" Load="Merge">
-    <part Name="Render" DisplayName="陶製水罐" />
-  </object>
-  <object Name="Oil Pitcher" Load="Merge">
-    <part Name="Render" DisplayName="陶製水罐" />
-  </object>
-  <object Name="Grit Gate Honey Vase" Load="Merge">
-    <part Name="Render" DisplayName="花瓶" />
-    <part Name="Description" Short="彩繪的垛口環繞著這個金屬花瓶的赤道部位。" />
-  </object>
-  <object Name="Campfire" Load="Merge">
-    <part Name="Render" DisplayName="營火" />
-    <part Name="Description" Short="早期地球溫暖的磷光被木磚整齊地編織成格狀，現在的功能就像一顆微型恆星。" />
-  </object>
-  <object Name="Campfire Remains" Load="Merge">
-    <part Name="Render" DisplayName="營火殘骸" />
-    <part Name="Description" Short="燒焦的木芯被踩踏過的灰燼所包圍。" />
-  </object>
-  <object Name="Oven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <part Name="Description" Short="熱氣從厚實的 黏土烤爐 劈啪作響的火焰中散發出來，隨之而來的是美味食物的香氣。" />
-    <tag Name="QuestableVerb" Value="在...烹飪" />
-  </object>
-  <object Name="ChefOven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <part Name="Description" Short="熱氣從厚實的 黏土烤爐 劈啪作響的火焰中散發出來，隨之而來的是美味食物的香氣。" />
-  </object>
-  <object Name="JoppaOven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <tag Name="PresetMealMessage" Value="吃新鮮的蘋果 matz。" />
-    <part Name="Description" Short="溫暖從厚實的黏土烤爐那劈啪作響的火焰中散發出來，隨之而來的是熱騰騰的星蘋果果醬與烤餅的味道。" />
-  </object>
-  <object Name="KyakukyaOven" Load="Merge">
-    <part Name="Render" DisplayName="泥窯" />
-    <tag Name="PresetMealMessage" Value="喝下香料蘑菇蘋果酒。" />
-    <part Name="Description" Short="溫暖從圓形泥窯的劈啪火光中散發出來，隨之而來的是香料蘋果酒與鹽漬蕈類的氣味。" />
-  </object>
-  <object Name="EzraOven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <tag Name="PresetMealMessage" Value="在甜葉中吃羊。" />
-    <part Name="Description" Short="溫暖從劈啪作響的圓形 黏土烤爐 火堆中散發出來，隨之而來的是蒸羊肉與甜香蕉的味道。" />
-  </object>
-  <object Name="YdFreeholdOven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <tag Name="PresetMealMessage" Value="吃一些舌尖肉（Tongue and Cheek）。" />
-    <part Name="Description" Short="溫暖從圓形的 黏土烤爐 的劈啪火焰中散發出來，隨之而來的是發酵舌頭與凝固愛意的氣味。" />
-  </object>
-  <object Name="MopangoOven" Load="Merge">
-    <part Name="Render" DisplayName="骨製烤爐" />
-    <tag Name="PresetMealMessage" Value="吃骨頭巴巴卡。" />
-    <part Name="Description" Short="溫暖從圓形的骨製烤爐那劈啪作響的火焰中散發出來，隨之而來的是發酵糕點、甜香蕉和溫熱潛行者的氣味。" />
-  </object>
-  <object Name="StiltOven" Load="Merge">
-    <part Name="Render" DisplayName="石爐" />
-    <tag Name="PresetMealMessage" Value="吃一些熱辣且多刺的植物。" />
-    <part Name="Description" Short="熱氣從明亮的石爐火堆中散發出來，隨之而來的是熱騰騰的脊椎果果醬與烤尾巴的香味。" />
-  </object>
-  <object Name="BeyLahOven" Load="Merge">
-    <part Name="Render" DisplayName="黏土烤爐" />
-    <tag Name="PresetMealMessage" Value="吃我的啦湯。" />
-    <part Name="Description" Short="溫暖從厚實的黏土烤爐那劈啪作響的火焰中散發出來，隨之而來的是拉布肉湯與蒸matz的香氣。" />
-  </object>
-  <object Name="GritGateOven" Load="Merge">
-    <part Name="Render" DisplayName="電烤箱" />
-    <tag Name="PresetMealMessage" Value="吃這碗粥。" />
-    <part Name="Description" Short="溫暖從黑暗電烤箱的劈啪火光中散發出來，隨之而來的是苦澀惡臭麥與煮沸電漿的味道。" />
-  </object>
-  <object Name="ChavvahOven" Load="Merge">
-    <part Name="Render" DisplayName="水晶烤箱" />
-    <part Name="Description" Short="熱氣從圓形晶體烤爐的劈啪火焰中散發出來，隨之而來的是冷卻靜電的味道。奇怪的是，這裡沒有任何預製的食材。" />
-  </object>
-  <object Name="Table" Load="Merge">
-    <part Name="Render" DisplayName="桌子" />
-    <part Name="Description" Short="活樹的分支被重新吸收並重塑成樹幹結。幾百年後，峽谷木工的油鋸擾亂了樹木幾何結構，並將其壓平以供民用。那段歷史仍以二維的形式留存，佈滿塵埃並以鉛筆劃刻。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
-    <tag Name="HeroNameTitleClientele" Value="悠閒裝飾者" />
-    <xtagTextFragments Skin="釉面" PoeticFeatures="平坦的表面、藝術感、溫柔的寧靜" />
-    <tag Name="QuestableVerb" Value="放上某物" />
-  </object>
-  <object Name="Metal Table" Load="Merge">
-    <part Name="Render" DisplayName="金屬桌" />
-    <tag Name="HeroNameTitleDescriptor" Value="平坦, 水平, L型, 堅固, 三足, 搖晃" />
-    <part Name="Description" Short="鋼鐵塗抹了液態鉻，冷卻後被鍛打成平整且易於加工的表面。" />
-  </object>
-  <object Name="Workbench" Load="Merge">
-    <part Name="Render" DisplayName="工作檯" />
-    <part Name="Description" Short="含水量良好的結節木材以直角支撐著土壤的重量。焦痕與鹽分裝飾著溝槽。" />
-  </object>
-  <object Name="Metal Workbench" Load="Merge">
-    <part Name="Render" DisplayName="金屬工作檯" />
-  </object>
-  <object Name="Desk" Load="Merge">
-    <part Name="Render" DisplayName="書桌" />
-    <part Name="Description" Short="木材是從潮濕的樹林中回收、刨成板材，並透過 Shale 橋運送到自由領地的。在那裡，木材被那些已適應無水空氣的木匠接收，他們渴望將這些豐富的木材用於自己的計畫中。" />
-  </object>
-  <object Name="Sleek Table" Load="Merge">
-    <part Name="Render" DisplayName="桌子" />
-    <part Name="Description" Short="一個銳利的長方形似乎平衡在一個較小的長方形之上的金屬桿上，形成了一個穩固的工作平面。看不見任何焊接痕跡。" />
-  </object>
-  <object Name="Low Table" Load="Merge">
-    <part Name="Render" DisplayName="低曼薩" />
-    <part Name="Description" Short="頂部有刮痕，那是研杵（研杵）弄碎木頭留下的。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
-    <tag Name="QuestableVerb" Value="放上某物" />
-  </object>
-  <object Name="Octagonal Table" Load="Merge">
-    <part Name="Render" DisplayName="八角桌" />
-    <part Name="Description" Short="這張桌子裝飾著彩繪曼陀羅，並由幾何之手塑形，向對稱與數字學致敬。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="八重、扁平、多節、水平、L型、堅固、三腳、搖晃" />
-    <tag Name="HeroNameTitleClientele" Value="悠閒裝飾者" />
-    <tag Name="QuestableVerb" Value="放上某物" />
-  </object>
-  <object Name="Dresser" Load="Merge">
-    <part Name="Render" DisplayName="梳妝台" />
-    <part Name="Description" Short="木材被精確地切割成抽屜，並安置在黃銅軌道上以存放衣物。" />
-    <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
-    <tag Name="HeroNameTitleClientele" Value="衣物、花花公子、時尚人士" />
-    <tag Name="QuestableVerb" Value="放入某物" />
-  </object>
-  <object Name="Book Table" Load="Merge">
-    <part Name="Render" DisplayName="書桌" />
-    <part Name="Description" Short="地裂中的居民製作著拼圖盒風格的桌子。他們的抽屜裡存放著速記式的想像力。" />
-    <part Name="Container" Preposition="on" />
-    <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
-    <tag Name="HeroNameTitleClientele" Value="裝飾者、閱讀者、放鬆者" />
-    <tag Name="QuestableVerb" Value="放上某物" />
-  </object>
-  <object Name="Ornate Table" Load="Merge">
-    <part Name="Render" DisplayName="華麗桌子" />
-    <part Name="Description" Short="奢華桌腿上的鍍鉻刻紋逐漸收窄成爪球足，而在大理石表面上，幾何形狀的不完美處被磨掉並扔進了一個可能仍存在於某處的鐵桶中。食者們曾在此交談與計畫。" />
-  </object>
-  <object Name="Alchemist Table" Load="Merge">
-    <part Name="Render" DisplayName="煉金術士桌" />
-    <part Name="Description" Short="一張佈滿熱化學放射狀圖案的燒焦桌子上，放著一個小瓶架與蒸餾器。" />
-  </object>
-  <object Name="Grit Gate Table" Load="Merge">
-    <part Name="Render" DisplayName="工作檯" />
-  </object>
-  <object Name="Grit Gate Sleek Table" Load="Merge">
-    <part Name="Render" DisplayName="工作檯" />
-  </object>
-  <object Name="Grit Gate Metal Table" Load="Merge">
-    <part Name="Render" DisplayName="金屬工作檯" />
-  </object>
-  <object Name="Barathrum Table" Load="Merge">
-    <part Name="Render" DisplayName="工作檯" />
-  </object>
-  <object Name="Klanq Table" Load="Merge">
-    <part Name="Render" DisplayName="工作檯" />
-  </object>
-  <object Name="Globe" Load="Merge">
-    <part Name="Render" DisplayName="地球儀" />
-    <part Name="Description" Short="虛無化：當裝載於武器時，此物品在命中時會對目標造成星界負擔。當裝載於護甲或 盾牌 時，此物品會對穿戴者造成星界負擔。計算局部晶格上的能量可增加此效果的效力。" />
-  </object>
-  <object Name="Orrery" Load="Merge">
-    <part Name="Render" DisplayName="渾天儀" />
-    <part Name="Description" Short="黃銅齒輪、球體與圓環精準地模擬著世界與星辰的運轉。" />
-  </object>
-  <object Name="Clockthing" Load="Merge">
-    <part Name="Render" DisplayName="巴拉楚姆時鐘" />
-    <part Name="Description" Short="巴拉楚姆的發明紀錄了時間，透過冠輪來調節其進程，精確到每一瞬間。在得知其用途後，水霸委託製造了數十個類似裝置，以便在每天固定的時刻對其水庫進行精確測量。" />
-  </object>
-  <object Name="Bubblething" Load="Merge">
-    <part Name="Render" DisplayName="黃銅發泡機" />
-    <part Name="Description" Short="在發明事業的過程中，有時你會需要使用一種無形的灰色泡沫。或者，至少有一天你可能會需要它，因此一些 修補匠 審慎地預見了問題並發明了 黃銅發泡機。底座上刻著：『擁有所有的泡沫，免於那種或許有一天會需要泡沫卻沒有的悲哀』。" />
-    <part Name="ChargeSink" NameForStatus="FoamSystems" />
-  </object>
-  <object Name="Telescope" Load="Merge">
-    <part Name="Render" DisplayName="望遠鏡" />
-    <part Name="Description" Short="月牙形玻璃折射著光線，在虛擬的角度大小中繪製出影像。" />
-  </object>
-  <object Name="Bust of K4K5" Load="Merge">
-    <part Name="Render" DisplayName="K4K5 鍍鉻半身像" />
-    <part Name="Description" Short="鎢王那具有德爾斐風格的面容被凍結在鉻金屬中，鑄造得極其完美。" />
-  </object>
-  <object Name="Bust of Mehmet I" Load="Merge">
-    <part Name="Render" DisplayName="穆罕默德一世鍍鉻半身像" />
-    <part Name="Description" Short="硬鉻鑄造於柔軟臉頰與圓潤眉骨的模具中；學識的贊助國王被封聖了。" />
-  </object>
-  <object Name="Ornate Potted Plant 1" Load="Merge">
-    <part Name="Render" DisplayName="裝飾盆栽" />
-    <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
-  </object>
-  <object Name="Ornate Potted Plant 2" Load="Merge">
-    <part Name="Render" DisplayName="裝飾盆栽" />
-    <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
-  </object>
-  <object Name="Ornate Potted Plant 3" Load="Merge">
-    <part Name="Render" DisplayName="裝飾盆栽" />
-    <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
-  </object>
-  <object Name="Ornate Potted Plant 4" Load="Merge">
-    <part Name="Render" DisplayName="裝飾盆栽" />
-    <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
-  </object>
-  <object Name="Chalkboard" Load="Merge">
-    <part Name="Render" DisplayName="黑板" />
-    <part Name="Description" Short="切削過的板岩粉末混合了外化思想的雲狀殘餘，並由怪物高舉著。" />
-    <tag Name="HeroNameTitleDescriptor" Value="睿智、詭辯、可抹除、塵封" />
-    <tag Name="HeroNameTitleClientele" Value="詭辯家、修補匠、學者、學生" />
-  </object>
-  <object Name="Display Breadboard" Load="Merge">
-    <part Name="Render" DisplayName="展示麵包板" />
-    <part Name="Description" Short="塑料外殼鑲嵌在顆粒狀木材中，並佈滿了網格狀的接觸點。電容器與電感器被固定在彈簧夾內，並透過一束電線相互連接。" />
-  </object>
-  <object Name="Sewing Machine" Load="Merge">
-    <part Name="Render" DisplayName="縫紉機" />
-    <part Name="Description" Short="在刮痕斑駁的金屬 C 內部，一根針與一個梭準備將一對絲線穿入鎖邊縫中。底座四周刻滿了首字母。" />
-  </object>
-  <object Name="Mannequin" Load="Merge">
-    <part Name="Render" DisplayName="人體模型" />
-    <part Name="Description" Short="雙足形態從木材與玻璃纖維構成的繭中顯現。" />
-    <tag Name="HeroNameTitleDescriptor" Value="輪廓分明、美麗、端莊、靜止、怪誕、栩栩如生" />
-    <tag Name="HeroNameTitleClientele" Value="雕塑家、帽商、裁縫師、盔甲匠" />
-  </object>
-  <object Name="HamilcrabMannequin" Load="Merge">
-    <part Name="Render" DisplayName="巨大模特兒" />
-    <part Name="Description" Short="雙足形態從一個巨大的木材與玻璃纖維繭中顯現。" />
-  </object>
-  <object Name="Light Sculpture" Load="Merge">
-    <part Name="Render" DisplayName="光影雕塑" />
-    <part Name="Description" Short="藍色雷射光從基準光束中迸發，重新構建出由光學車床雕刻出的波前。空氣增添了一層顆粒感。" />
-  </object>
-  <object Name="Brain Sculpture" Load="Merge">
-    <part Name="Render" DisplayName="腦部雕塑" />
-    <part Name="Description" Short="泡沫填充物被排列成腦回與腦溝的形狀，以模擬大腦迷宮。" />
-  </object>
-  <object Name="Unfinished Sculpture" Load="Merge">
-    <part Name="Render" DisplayName="未完成雕塑" />
-    <part Name="Description" Short="大地的濕潤顏料——黏土、礦渣、鉻和染料——帶著物質重量呈現出半成形的狀態。轉化因猶豫不決或疏忽而停滯。" />
-  </object>
-  <object Name="Painted Column L" Load="Merge">
-    <part Name="Render" DisplayName="彩繪柱" />
-    <part Name="Description" Short="大理石在頂部如螺旋卷曲般綻放。柱子上濺滿了油漆。" />
-  </object>
-  <object Name="Painting" Load="Merge">
-    <part Name="Render" DisplayName="繪畫" />
-    <part Name="Description" Short="珍珠母油弄濕了米色的亞麻布，並滴落在畫架上。從 帆布 的平面上，一個影像被壓印出來。" />
-  </object>
-  <object Name="Mushroom Case" Load="Merge">
-    <part Name="Render" DisplayName="蘑菇殼" />
-    <part Name="Description" Short="半月形的玻璃屋頂覆蓋著地下室，保護著在內部繁衍興旺的食屍者。這是一座由鰓構成的生態建築。" />
-  </object>
-  <object Name="Harp" Load="Merge">
-    <part Name="Render" DisplayName="豎琴" />
-    <part Name="Description" Short="牛腸弦橫跨音板，玫瑰金包覆著豐富的木質琴頸與琴頭。&#xA;琴身形似半顆心；這是食者們最愛的殘留物。" />
-  </object>
-  <object Name="Rectangular Bells" Load="Merge">
-    <part Name="Render" DisplayName="矩形鐘" />
-    <part Name="Description" Short="矩形按鍵沿著傾斜的梯子排列，音高逐級上升。框架上掛著一個音符槌。" />
-  </object>
-  <object Name="Hammered Dulcimer" Load="Merge">
-    <part Name="Render" DisplayName="擊弦琴" />
-    <part Name="Description" Short="牛腸弦被拉緊在梯形琴上。音符匙懸掛在木製鞘中。" />
-  </object>
-  <object Name="Iron Maiden" Load="Merge">
-    <part Name="Render" DisplayName="鐵處女" />
-    <part Name="Description" Short="鏽跡斑斑的 棘刺 排列在鐵製 石棺 的 內部。其設計者對凡間的懲罰程度感到不滿，試圖連永恆的安眠也要加以墮落。" />
-    <tag Name="HeroNameTitleDescriptor" Value="受難者、放血者、屠夫、殘酷、失血者、刺穿者、貫穿者、折磨者" />
-    <tag Name="HeroNameTitleClientele" Value="審判官、施虐者、殘暴者、悔罪者、酷刑者" />
-    <xtagTextFragments Skin="尖刺" PoeticFeatures="高聳的身軀、威脅性的尖刺、令人窒息的封閉空間" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="Hookah" Load="Merge">
-    <part Name="Render" DisplayName="水煙壺" />
-    <part Name="Description" Short="冒煙的莖從水晶水菸壺中綻放。" />
-    <tag Name="QuestableVerb" Value="來自" />
-  </object>
-  <object Name="Cage" Load="Merge">
-    <part Name="Render" DisplayName="籠子" />
-    <part Name="Description" Short="這個箱子是由嚼過的電線與凹陷的鐵塊打造而成。" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="Forge" Load="Merge">
-    <part Name="Render" DisplayName="鍛爐" />
-    <part Name="Description" Short="鹽莖在古老石製管道壁爐的內部碎裂並冒出煙霧。" />
-  </object>
-  <object Name="Anvil" Load="Merge">
-    <part Name="Render" DisplayName="石砧" />
-    <part Name="Description" Short="一塊粗糙的 花崗岩 頂部已被磨平以便進行金屬加工，側面則磨圓成一個塑形角。" />
-  </object>
-  <object Name="Random Statue" Load="Merge">
-    <part Name="Description" Short="這座由 *material* 精雕細琢而成的雕像描繪了一隻 *creature.a**creature*：&#xA;" />
-  </object>
-  <object Name="Random Stone Statue" Load="Merge">
-    <part Name="Render" DisplayName="石像" />
-  </object>
-  <object Name="Random Marble Statue" Load="Merge">
-    <part Name="Render" DisplayName="大理石雕像" />
-  </object>
-  <object Name="ImplantedEaterStatue" Load="Merge">
-    <part Name="Render" DisplayName="植入式噬者雕像" />
-    <part Name="Description" Short="侵蝕將其特徵磨平成了抽象的形狀，但它曾是機器與人民結合的紀念碑。" />
-  </object>
-  <object Name="EaterStatue" Load="Merge">
-    <part Name="Render" DisplayName="噬者雕像" />
-    <part Name="Description" Short="五官從一塊石製 帆布 中噴湧而出，並破碎成一個來自遠古的身影。頭髮、皮膚、眉骨、大腿：這些細節孵化出了一種全新的 內部 你，一種陌生而熟悉的感覺。當你在這尊石化的肖像旁走動時，你驚訝於這位食者竟能將自己刻入你的時空編織之中。" />
-  </object>
-  <object Name="Oboroqoru Statue" Load="Merge">
-    <part Name="Render" DisplayName="歐博羅庫雕像" />
-    <part Name="Description" Short="這尊 奧博羅科魯 的石像高達二十跨度。其無名的雕刻家選擇描繪這位猿神盤腿而坐，他的三對巨大手臂各自交握著彼此。石像被 藤蔓 包圍，其看守者向自然妥協，除非植被威脅到遮蔽 奧博羅科魯的 溫柔面容。&#xA;森林孕育了各種色調的 花朵 —— 天藍、嫩綠、靛藍、珊瑚紅 —— 散落在 神龕 的基座上，對於這尊看似冷酷的神靈而言，這些不過是微不足道的祭品。" />
-    <tag Name="WorshippedAs" Value="奧博羅科魯" />
-  </object>
-  <object Name="Keresh Statue" Load="Merge">
-    <part Name="Render" DisplayName="鹿雕像" />
-    <part Name="Description" Short="會說話的生物似乎對這個「意志」的概念非常著迷，但很少有人能達成共識。當你觀察其他思考生物時，你的心智瞬間就會受到他們的影響，不是嗎？你透過模仿來「學習」，你的價值觀與信仰是從觀察中採納的。沒錯吧？&#xA;&#xA;我選擇將我的意識奉獻給一個新的範式，但這個選擇似乎與你對「意志」的概念有所不同。我們各說各話。" />
-    <tag Name="WorshippedAs" Value="Keresh" />
-  </object>
-  <object Name="statue of mason" Load="Merge">
-    <part Name="Render" DisplayName="尼斯洛克雕像" />
-    <part Name="Description" Short="星辰石匠 Nisroch 在此被描繪成以強壯的雙腿跨越大地。他穿著最喜愛的腰帶，其褶皺由精緻的金飾工藝打造。" />
-    <tag Name="WorshippedAs" Value="尼斯洛克" />
-  </object>
-  <object Name="statue of knight" Load="Merge">
-    <part Name="Render" DisplayName="貝爾雕像" />
-    <part Name="Description" Short="這尊 貝爾雕像 以磨光的理石承載著其巨大的重量。他揮舞著劃時代的護盾，因在星光黎明時阻擋了旋轉的氣雲而聞名遐邇。" />
-    <tag Name="WorshippedAs" Value="貝爾" />
-  </object>
-  <object Name="statue of Shekhinah" Load="Merge">
-    <part Name="Render" DisplayName="謝基納雕像" />
-    <part Name="Description" Short="在這裡，謝基納（Shekhinah）被用壯麗的蔚藍大理石雕刻成了永恆。他的身體被鑿刻得完美無瑕。他的金色冠冕使他成為眾父之父。" />
-    <tag Name="WorshippedAs" Value="Shekhinah" />
-  </object>
-  <object Name="statue of wizard" Load="Merge">
-    <part Name="Render" DisplayName="達貢雕像" />
-    <part Name="Description" Short="演說家達貢以其狂妄的姿態主宰著西側後殿。他的金色冠冕在火光中熠熠生輝。" />
-    <tag Name="WorshippedAs" Value="達貢" />
-  </object>
-  <object Name="statue of athlete" Load="Merge">
-    <part Name="Render" DisplayName="卡薩克斯雕像" />
-    <part Name="Description" Short="運動員卡薩克斯（Carthax）在此被描繪成正邁步前進的模樣。他閃爍著銀光的頭髮按照星界傳統束在腦後，當他在穹蒼中躍升時，髮絲隨之飄動。" />
-    <tag Name="WorshippedAs" Value="卡薩克斯" />
-  </object>
-  <object Name="statue of scholar" Load="Merge">
-    <part Name="Render" DisplayName="雷謝夫雕像" />
-    <part Name="Description" Short="被稱為「至高者」的 Resheph 舉起一根神祕的手指，療癒病患的傷口。" />
-    <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
-  </object>
-  <object Name="SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-    <part Name="Description" Short="" />
-    <tag Name="QuestableVerb" Value="祈禱於，褻瀆" />
-  </object>
-  <object Name="JoppaSultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period1SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period2SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period3SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period4SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period5SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="Period6SultanShrine" Load="Merge">
-    <part Name="Render" DisplayName="神龕" />
-  </object>
-  <object Name="NephilimShrine" Load="Merge">
-    <part Name="Render" DisplayName="尼非林神龕" />
-    <tag Name="QuestableVerb" Value="祈禱於，褻瀆" />
-  </object>
-  <object Name="AgolgotShrine" Load="Merge">
-    <part Name="Render" DisplayName="吉爾什·阿戈洛特神龕" />
-    <part Name="Description" Short="一個巨大的頭顱頹然倒在舊石中，從中央脊椎生出的刻蝕囊腫，喚起其半神源頭所傳播疾病的意象。幾代人的苔蘚環繞著這頭怪獸長滿疣狀的腿部。" />
-    <tag Name="WorshippedAs" Value="阿格爾戈特" />
-  </object>
-  <object Name="BethsaidaShrine" Load="Merge">
-    <part Name="Render" DisplayName="吉爾什·貝特賽達神龕" />
-    <part Name="Description" Short="垂下的雙肩勾勒出龜裂石背般的山谷，兩對交纏的手臂在石雕師描繪半神覺醒的造像中，於那百節關節處匯合。世代積累的苔蘚環繞著巨獸靜脈曲張的雙腿。" />
-    <tag Name="WorshippedAs" Value="貝賽達" />
-  </object>
-  <object Name="RermadonShrine" Load="Merge">
-    <part Name="Render" DisplayName="吉什·雷瑪東神龕" />
-    <part Name="Description" Short="一條帶刺的怪魚棲息在石刻水池中。下方是詩人們所描繪的 鰭尾，正從 Maqqom 的管道中噴出泡沫狀的鹽水，形成了 Hinnom 湖。世代相傳的苔蘚環繞著它的底鰭。" />
-    <tag Name="WorshippedAs" Value="雷馬東" />
-  </object>
-  <object Name="ShugruithShrine" Load="Merge">
-    <part Name="Render" DisplayName="掘地者舒格魯斯神龕" />
-    <part Name="Description" Short="鑿出的 棘刺 環繞著蜿蜒的世界吞噬者，牠挖掘了那些曾居住著晚期穴居人的地底洞窟。傳說中的一百零九隻眼睛跨越時空凝視著，而世代相傳的苔蘚環繞著這頭巨獸帶狀的腹部。" />
-    <tag Name="WorshippedAs" Value="舒古瑞斯" />
-  </object>
-  <object Name="QasShrine" Load="Merge">
-    <part Name="Render" DisplayName="吉爾什·卡斯神龕" />
-    <part Name="Description" Short="石頭被雕刻成粗糙的圓頂，並開有間距均勻的正方形窗戶以利空氣流通。圓頂 內部 的微小溫差導致空氣中的露水凝結，並在下方的 集水盆 累積。" />
-    <tag Name="WorshippedAs" Value="卡斯" />
-  </object>
-  <object Name="QonShrine" Load="Merge">
-    <part Name="Render" DisplayName="吉什·昆神龕" />
-    <part Name="Description" Short="一隻神天鵝以石刻般的優雅姿態坐著，它巨大的風箏狀尾羽收攏成令人眩暈的環流。她表情空洞且難以捉摸，以此喚起雕刻家心中那種將她視為「不確定性夢魘」的感覺。幾代人的苔蘚簇擁在獸類的絨毛邊緣。" />
-    <tag Name="WorshippedAs" Value="昆" />
-  </object>
-  <object Name="RuinedNephilimShrime" Load="Merge">
-    <part Name="Render" DisplayName="毀壞的神龕" />
-  </object>
-  <object Name="JoppaReshephShrine" Load="Merge">
-    <part Name="Render" DisplayName="雷謝夫神龕" />
-    <part Name="Epithets" Primary=", 最後的蘇丹" />
-    <part Name="ZoneLandmarkObject" Preposition="由" />
-    <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
-  </object>
-  <object Name="Eater Hologram" Load="Merge">
-    <part Name="Render" DisplayName="噬者全息圖" />
-    <part Name="Description" Short="焦灼的光芒在鉻金屬板上爆裂，碎裂成一個來自遠古的身影。頭髮、皮膚、額頭、大腿：這些特徵孵化出一種新的 內部 情緒，一種似曾相識的陌生感。隨著你的移動，該身影產生了視差位移；你驚訝於這位食者是如何成功地將自己刻入你的時空編織之中。" />
-  </object>
-  <object Name="hologram of Shekhinah" Load="Merge">
-    <part Name="Render" DisplayName="謝基納的全息圖" />
-    <part Name="Description" Short="榮耀的 Shekhinah、白銀阿多尼斯與初生之父，在光輝的裝飾中擺出姿勢。祂擁有永恆星辰般的身姿，穩定且恆久，祂審視著為祂建立的神廟，並欣慰地微微側頭。為了紀念祂與 Kasaphescence 的結合，祂將自己的化身披上蔚藍色調，捨棄了低等植物與黏土大地那種翠綠與赭紅。" />
-    <part Name="Chat" Says="[Shekhinah 向你轉身，張開雙臂。]" />
-    <tag Name="WorshippedAs" Value="Shekhinah" />
-  </object>
-  <object Name="Village Monument" Load="Merge">
-    <part Name="Description" Short="" />
-  </object>
-  <object Name="Village Monument Obelisk" Load="Merge">
-    <part Name="Render" DisplayName="石方尖碑" />
-    <part Name="Description" Short="石頭透過朝向蒼穹來彰顯其重要性，而最古老的智慧正從那裡蠢蠢欲動。" />
-  </object>
-  <object Name="Village Monument Amphora" Load="Merge">
-    <part Name="Render" DisplayName="陶瓷雙耳瓶" />
-    <part Name="Description" Short="容器的腹部是神聖的，因為它們既承載著生命之水，又將流動的過去投射到凸出的現在。" />
-  </object>
-  <object Name="Village Monument Birdhouse" Load="Merge">
-    <part Name="Render" DisplayName="石製石室" />
-    <part Name="Description" Short="這座為小型有翼生物建造的蜜酒大廳中，刻著牠們無法理解的故事。" />
-  </object>
-  <object Name="Village Monument Diptych" Load="Merge">
-    <part Name="Render" DisplayName="雕刻雙聯畫" />
-    <part Name="Description" Short="一段敘事被侷限於這塊石頭的刻痕邊界，以及其形式那簡約的二元性之中。" />
-  </object>
-  <object Name="Village Monument Stele" Load="Merge">
-    <part Name="Render" DisplayName="石碑" />
-    <part Name="Description" Short="刻在古老岩石上的符文折射到了現世。" />
-  </object>
-  <object Name="Village Monument Monolith" Load="Merge">
-    <part Name="Render" DisplayName="石碑" />
-    <part Name="Description" Short="苔蘚物質嵌入了由雕刻岩石所喚起的敘事世界中。" />
-  </object>
-  <object Name="Village Monument Sculpture" Load="Merge">
-    <part Name="Render" DisplayName="鍍鉻雕塑" />
-    <part Name="Description" Short="從金屬工人的手中，金屬棒與條帶噴湧而出，並冷卻成型。" />
-  </object>
-  <object Name="Village Monument Orb" Load="Merge">
-    <part Name="Render" DisplayName="巨型球體" />
-    <part Name="Description" Short="人們對這顆球體表示敬意，它被磨平至理想狀態，並架設在黃銅支腳上。" />
-  </object>
-  <object Name="Village Hologram 1" Load="Merge">
-    <part Name="Render" DisplayName="歷史全息圖" />
-    <part Name="Description" Short="閃爍的干涉光圖案形成了一幅莫列波紋瀑布般的景象。" />
-  </object>
-  <object Name="Village Hologram 2" Load="Merge">
-    <part Name="Render" DisplayName="歷史全息圖" />
-    <part Name="Description" Short="閃爍的干涉光圖案形成了一幅莫列波紋瀑布般的景象。" />
-  </object>
-  <object Name="Kyakukya Monument 1" Load="Merge">
-    <part Name="RulesDescription" Text="這件物品是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在甲蟲之月下，人們在此定居，為猿猴薩德 奧博羅科魯 收集過路貨物，於是 恰庫恰(Kyakukya) 便由此建立。" />
-  </object>
-  <object Name="Kyakukya Monument 2" Load="Merge">
-    <part Name="RulesDescription" Text="此物件是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在 979 年，傳奇的白化猿恩圖厭倦了用鈍器將生物打死，於是前往斯維河一處被根鬚纏繞之地。他在那裡遇見了恰庫恰及其居民。恰庫恰村民請求恩圖運用他的統治才能來領導村莊。&#xA;" />
-  </object>
-  <object Name="Yd Village Monument 1" Load="Merge">
-    <part Name="RulesDescription" Text="這件物品是 {{M|伊德自由領}} 歷史中某個場景的紀念碑。&#xA;&#xA;在環流鼎盛時期數百年後，斯瓦迪姆 戈克、麥克與吉烏布在礁石海綿內部徘徊時，遇見了加爾加爾 萬眼。他們共同建立了伊德自由領，以此度過餘生。&#xA;" />
-  </object>
-  <object Name="Yd Village Monument 2" Load="Merge">
-    <part Name="RulesDescription" Text="這件物品是紀念 {{M|伊德自由領}} 歷史中一段場景的紀念碑。&#xA;&#xA;在 901 年，伊德自由領的村民及其創始人廢除了定居點內所有形式的階級制度。因此，自由領公民生活的兩大支柱變成了無政府狀態與真實性。" />
-  </object>
-  <object Name="Sign" Load="Merge">
-    <part Name="Description" Short="一塊陶板被塗上了赭石與磨碎的鐵粉。" />
-    <part Name="Chat" Says="[模糊不清的塗鴉。]" />
-  </object>
-  <object Name="AppleSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="星蘋果與蘋果酒" />
-  </object>
-  <object Name="AppleSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="香料蘋果酒" />
-  </object>
-  <object Name="AppleSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="蘋果。真好吃。" />
-  </object>
-  <object Name="BookSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="書籍" />
-  </object>
-  <object Name="BookSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="智慧與知識" />
-  </object>
-  <object Name="BookSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="墨跡" />
-  </object>
-  <object Name="BottleSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="甜蜂蜜" />
-  </object>
-  <object Name="BottleSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="蜜汁" />
-  </object>
-  <object Name="BottleSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="黏稠蜂蜜" />
-  </object>
-  <object Name="BootSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="靴子 在這裡！" />
-  </object>
-  <object Name="BootSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="Boot and Shoe" />
-  </object>
-  <object Name="BootSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="鞋匠" />
-  </object>
-  <object Name="HatSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="Hats and Caps" />
-  </object>
-  <object Name="HatSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="遮蔽你脆弱的頭部" />
-  </object>
-  <object Name="HatSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="時尚帽子" />
-  </object>
-  <object Name="GloveSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="手套與 Mittens" />
-  </object>
-  <object Name="GloveSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="手指套" />
-  </object>
-  <object Name="GloveSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="現在穿上手套" />
-  </object>
-  <object Name="CloakSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="斗篷與披風" />
-  </object>
-  <object Name="CloakSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="披肩、斗篷及更多" />
-  </object>
-  <object Name="CloakSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="時尚斗篷" />
-  </object>
-  <object Name="ArmorSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="背心與鎖子甲" />
-  </object>
-  <object Name="ArmorSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="各式護甲" />
-  </object>
-  <object Name="ArmorSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="胸甲" />
-  </object>
-  <object Name="GunSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="Guns and Ammo" />
-  </object>
-  <object Name="GunSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="手槍、步槍及更多" />
-  </object>
-  <object Name="GunSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="槍枝！" />
-  </object>
-  <object Name="DiscSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="數據磁碟" />
-  </object>
-  <object Name="DiscSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="設計圖" />
-  </object>
-  <object Name="DiscSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="打造你自己的神器" />
-  </object>
-  <object Name="LiquidSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="異域液體" />
-  </object>
-  <object Name="LiquidSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="異域液體" />
-  </object>
-  <object Name="LiquidSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="異域液體" />
-  </object>
-  <object Name="JewelSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="珠寶與 Jewels" />
-  </object>
-  <object Name="JewelSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="鑲寶貨品" />
-  </object>
-  <object Name="JewelSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="寶石與珠寶" />
-  </object>
-  <object Name="HookahSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="薄荷煙與酒" />
-  </object>
-  <object Name="HookahSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="水管與 Rest" />
-  </object>
-  <object Name="HookahSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="吸菸室" />
-  </object>
-  <object Name="GrenadeSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="爆炸物" />
-  </object>
-  <object Name="GrenadeSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="轟鳴球" />
-  </object>
-  <object Name="GrenadeSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="手榴彈與更多" />
-  </object>
-  <object Name="PepperSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="藥劑師" />
-  </object>
-  <object Name="PepperSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="草藥與補劑" />
-  </object>
-  <object Name="PepperSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="簡單" />
-  </object>
-  <object Name="FoodSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="食物" />
-  </object>
-  <object Name="FoodSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="甜味與鹹味" />
-  </object>
-  <object Name="FoodSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="辛辣食物" />
-  </object>
-  <object Name="PreserveSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="保存食品" />
-  </object>
-  <object Name="PreserveSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="食物與香料" />
-  </object>
-  <object Name="PreserveSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="烹飪準備" />
-  </object>
-  <object Name="PigSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="[模糊不清的塗鴉。]" />
-  </object>
-  <object Name="WineSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="葡萄酒" />
-  </object>
-  <object Name="WineSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="葡萄女巫釀" />
-  </object>
-  <object Name="WineSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="釀酒師" />
-  </object>
-  <object Name="ImplantSign1" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="控制論" />
-  </object>
-  <object Name="ImplantSign2" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="鉻腸" />
-  </object>
-  <object Name="ImplantSign3" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="機器與族群之器官" />
-  </object>
-  <object Name="ArgyveSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="走開" />
-  </object>
-  <object Name="JoppaNorthSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="前往墓地與 神龕" />
-  </object>
-  <object Name="EzraSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="← 回到 以斯拉(Ezra)" />
-  </object>
-  <object Name="TamSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="Salt Sundries" />
-  </object>
-  <object Name="YurlSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="來自植物聯盟的精美器物" />
-  </object>
-  <object Name="YlaSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="歐蒙波奇(Omonporch) Gadget Repair" />
-  </object>
-  <object Name="SixshrewSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="財團貿易站" />
-  </object>
-  <object Name="JoppaMillSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="普通磨坊" />
-  </object>
-  <object Name="YdColumbariumSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="骨灰安置所" />
-  </object>
-  <object Name="YdLivingQuartersSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="居住區" />
-  </object>
-  <object Name="YdMedicalSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="康復" />
-  </object>
-  <object Name="YdKitchenSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="廚房" />
-  </object>
-  <object Name="YdLibrarySign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="圖書館" />
-  </object>
-  <object Name="YdMarketSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="市場" />
-  </object>
-  <object Name="YdWorkshopSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="工作坊" />
-  </object>
-  <object Name="YdManyEyesSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="萬眼" />
-  </object>
-  <object Name="YdSalonSign" Load="Merge">
-    <part Name="Render" DisplayName="告示牌" />
-    <part Name="Chat" Says="沙龍" />
-  </object>
-  <object Name="CryptPlaqueTutor" Load="Merge">
-    <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
-    <part Name="Description" Short="" />
-  </object>
-  <object Name="Tombstone" Load="Merge">
-    <part Name="Render" DisplayName="墓碑" />
-    <part Name="Description" Short="" />
-  </object>
-  <object Name="ReshephsCrypt" Load="Merge">
-    <part Name="Render" DisplayName="地窖" />
-  </object>
-  <object Name="Empty Urn" Load="Merge">
-    <part Name="Render" DisplayName="葬禮骨灰罈" />
-    <part Name="Description" Short="意義的幾何形狀在火葬場容器周圍的環形列中交織：星形、三葉形、九邊形與月牙形。" />
-  </object>
-  <object Name="Urn" Load="Merge">
-    <part Name="Render" DisplayName="葬禮骨灰罈" />
-    <part Name="Description" Short="" />
-  </object>
-  <object Name="Sarcophagus" Load="Merge">
-    <part Name="Render" DisplayName="石棺" />
-    <part Name="Description" Short="黑大理石 是從廣袤無垠的地底深處開採出來，並被雕琢成覆蓋亡者的石毯。" />
-    <tag Name="QuestableVerb" Value="進入" />
-  </object>
-  <object Name="SultanSarcophagusW" Load="Merge">
-    <part Name="Render" DisplayName="帝國石棺" />
-    <part Name="Description" Short="霓虹色的卷雲在 內部 一個玻璃月亮中攪動，並透過蘇丹預先塑造的形像射出光芒。一個模糊的身影就這樣仰臥在無星且巨大的黑色岩石長榻上方。藝術家可能意圖以此喚起黑暗平原上的雷暴，或是河流漆黑水面上的百合：用來代表那在沉寂軀體上漫遊的、明亮而氣態的心智。" />
-  </object>
-  <object Name="SultanSarcophagusE" Load="Merge">
-    <part Name="Render" DisplayName="帝國石棺" />
-    <part Name="Description" Short="霓虹色的卷雲在 內部 一個玻璃月亮中攪動，並透過蘇丹預先塑造的形像射出光芒。一個模糊的身影就這樣仰臥在無星且巨大的黑色岩石長榻上方。藝術家可能意圖以此喚起黑暗平原上的雷暴，或是河流漆黑水面上的百合：用來代表那在沉寂軀體上漫遊的、明亮而氣態的心智。" />
-  </object>
-  <object Name="SultanSarcophagusWPeriod1" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:1= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusWPeriod2" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:2= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusWPeriod3" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:3= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusWPeriod4" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:4= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusWPeriod5" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:5= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusEPeriod1" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:1= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusEPeriod2" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:2= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusEPeriod3" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:3= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusEPeriod4" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:4= 的帝國石棺" />
-  </object>
-  <object Name="SultanSarcophagusEPeriod5" Load="Merge">
-    <part Name="Render" DisplayName="=sultan:5= 的帝國石棺" />
-  </object>
-  <object Name="Golem Mound" Load="Merge">
-    <part Name="Render" DisplayName="廢料與黏土堆" />
-    <part Name="Description" Short="濕黏的泥土附著在轉輪與焊接板上。上面佈滿了二極體、電路、葉片泵和磁鐵。" />
-  </object>
-  <object Name="VehicleGolemSupportColumn" Load="Merge">
-    <part Name="Render" DisplayName="支撐樑" />
-    <part Name="Description" Short="黏土在鋼鐵周圍燒製，並搭建在肋骨架中以提供結構支撐。" />
-  </object>
-  <object Name="VehicleGolemExit" Load="Merge">
-    <part Name="Render" DisplayName="出口艙門" />
-    <part Name="Description" Short="一對可伸縮的鉻合金面板安裝在塗油的軌道上。" />
-    <xtagGrammar iArticle="" />
-  </object>
-  <object Name="VehicleGolemSeat" Load="Merge">
-    <part Name="Render" DisplayName="駕駛座椅" />
-    <part Name="Description" Short="青色泡沫墊著 內部 的背部與深陷的座墊，旋鈕裝飾在彎曲的扶手上。整張椅子在噴射馬達上旋轉。" />
-  </object>
-  <object Name="VehicleGolemPassengerSeat" Load="Merge">
-    <part Name="Render" DisplayName="乘客座椅" />
-    <part Name="Description" Short="青綠色的泡沫墊著內部背面與深陷的座墊，右側扶手裝飾著一個單獨的旋鈕。整張椅子在一個彈射馬達上旋轉。" />
-  </object>
-  <object Name="VehicleConsole N" Load="Merge">
-    <part Name="Render" DisplayName="駕駛控制台" />
-    <part Name="Description" Short="內部有一個被湯汁露水打濕的金屬框架，一個玻璃月牙上繪有導航與雙體對齊的數據符文。大型與小型生物的 3D 模型在垂直軸上旋轉，而心理電掃描則顯示了融合狀態。" />
-  </object>
-  <object Name="VehicleConsole S" Load="Merge">
-    <part Name="Render" DisplayName="駕駛控制台" />
-  </object>
-  <object Name="MechExitHatch" Load="Merge">
-    <part Name="Render" DisplayName="出口艙門" />
-  </object>
-  <object Name="MechPilotSeat" Load="Merge">
-    <part Name="Description" Short="青色泡沫墊著 內部 的背部與深陷的座墊，旋鈕裝飾在彎曲的扶手上。整張椅子在噴射馬達上旋轉。" />
-  </object>
+ <object Name="GritGateCommPanel" Load="Merge">
+  <part Name="Render" DisplayName="通訊面板" />
+  <part Name="Description" Short="金屬板片擴散了雙向揚聲器的音量。底角有一個小按鈕彈出。" />
+  <part Name="ChargeSink" NameForStatus="對講機" />
+ </object>
+ <object Name="GritGateMainframeRoomCommPanel" Load="Merge">
+  <part Name="Render" DisplayName="通訊面板" />
+  <part Name="Description" Short="金屬板片擴散了雙向揚聲器的音量。底角有一個小按鈕彈出。" />
+  <part Name="ChargeSink" NameForStatus="對講機" />
+ </object>
+ <object Name="Bell of Rest" Load="Merge">
+  <part Name="Render" DisplayName="安息之鐘" />
+ </object>
+ <object Name="Switch" Load="Merge">
+  <part Name="Render" DisplayName="開關" />
+ </object>
+ <object Name="DoorSwitch" Load="Merge">
+  <part Name="Render" DisplayName="控制開關" />
+  <part Name="Description" Short="按鈕成對垂直排列在一個寫滿塗鴉的金屬矩形上。" />
+ </object>
+ <object Name="ElevatorSwitch" Load="Merge">
+  <part Name="Render" DisplayName="控制開關" />
+  <part Name="Description" Short="按鈕成對垂直排列在一個寫滿塗鴉的金屬矩形上。" />
+ </object>
+ <object Name="TempleSwitch" Load="Merge">
+  <part Name="Render" DisplayName="控制開關" />
+  <part Name="Description" Short="一顆孤零零的鈕扣鑲嵌在寫滿塗鴉的金屬矩形中心。" />
+ </object>
+ <object Name="Platform" Load="Merge">
+  <part Name="Render" DisplayName="鍍鉻平台" />
+  <part Name="Description" Short="一個黑色且帶格柵的金屬平台鋪滿了時間的塵埃。上面交錯著微小生命留下的足跡。" />
+ </object>
+ <object Name="StiltWell" Load="Merge">
+  <part Name="Description" Short="後教化時代（post-Edification）那如斯芬克斯般的華麗場景，以金色的沉降浮雕形式排列在 黑大理石 噴泉的邊緣。其明亮脈絡的紋路刺痛了雙眼，但在深處卻退縮進無星的深淵。" />
+  <part Name="Render" DisplayName="神聖之井" />
+ </object>
+ <object Name="Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+  <part Name="Description" Short="光滑的蔚藍大理石看起來像是退火成固體岩石的全息光芒。其邊緣與角落鑲嵌著黃金。" />
+ </object>
+ <object Name="NW Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="N Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="NE Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="W Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="W1 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="W2 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="W3 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="E1 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="E2 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="E3 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="S1 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="S2 Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="E Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="SW Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="SE Marble Dais" Load="Merge">
+  <part Name="Render" DisplayName="大理石台座" />
+ </object>
+ <object Name="Archway" Load="Merge">
+  <part Name="Render" DisplayName="拱門" />
+  <part Name="Description" Short="這是一個由堆疊石塊組成的開放式傳送門。" />
+ </object>
+ <object Name="Door" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="石板上留下了多年的手印，鏽環從鉸鏈頂端剝落。然而門依然存在，固執地主張著「內」與「外」。" />
+  <tag Name="HeroNameTitleDescriptor" Value="微開,關閉,鎖定,曾敲過,開啟,敲過三次,敲過兩次,無法敲擊,未敲擊,已解鎖" />
+  <xtagTextFragments Skin="面板" PoeticFeatures="迷人的裝飾、抹了油的鉸鏈、誘人的門把" />
+  <tag Name="QuestableVerb" Value="開啟,關閉" />
+ </object>
+ <object Name="Windowed Door" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="在門扉過去的某個時刻，一位居民釋放了對好奇心的渴望，並在邊界上切開了一個視口以便觀察。" />
+ </object>
+ <object Name="Striped Door" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
+ </object>
+ <object Name="Wavy Door" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="經由餘弦鋸切割的金屬經過熔焊並安裝在鋼架上。鎖閂處有鍍鉻襯墊。" />
+ </object>
+ <object Name="Metal Door" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="一塊有溝槽的金屬板貼合在門框拱頂上，中心切開了一個滑動面板。" />
+ </object>
+ <object Name="Double Door" Load="Merge">
+  <part Name="Description" Short="兩塊石板上留下了多年來的手印，鏽環從所有鉸鏈的頂端剝落。儘管如此，門依然存在，頑固地主張著「內」與「外」。" />
+ </object>
+ <object Name="Double Windowed Door" Load="Merge">
+  <part Name="Description" Short="在雙開門的過去某個時刻，一名居民將其意志解開為好奇心，並在邊界上切開了一個視線孔徑。" />
+ </object>
+ <object Name="Double Striped Door N" Load="Merge">
+  <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
+ </object>
+ <object Name="Double Striped Door S" Load="Merge">
+  <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
+ </object>
+ <object Name="Double Striped Door E" Load="Merge">
+  <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
+ </object>
+ <object Name="Double Striped Door W" Load="Merge">
+  <part Name="Description" Short="軌道對軌道的面板由橫桿加固，以強化內外邊緣。" />
+ </object>
+ <object Name="BaseDoubleWavyDoor" Load="Merge">
+  <part Name="Description" Short="經由餘弦鋸切割的金屬經過熔接，並安裝在雙寬鋼架上。鎖柱處覆有鉻合金襯墊。" />
+ </object>
+ <object Name="BaseDoubleMetalDoor" Load="Merge">
+  <part Name="Description" Short="一對起皺的金屬板貼合在雙開門的拱頂上，且中心處切開了一個滑動面板。" />
+ </object>
+ <object Name="Glass Door" Load="Merge">
+  <part Name="Render" DisplayName="玻璃門" />
+  <part Name="Description" Short="透明且拋光的玻璃板安裝在滑軌上。" />
+ </object>
+ <object Name="Tinted Glass Door W" Load="Merge">
+  <part Name="Render" DisplayName="彩色玻璃門" />
+  <part Name="Description" Short="一片透明玻璃。" />
+ </object>
+ <object Name="Tinted Glass Door E" Load="Merge">
+  <part Name="Render" DisplayName="彩色玻璃門" />
+  <part Name="Description" Short="拋光的玻璃板被凍結成深色，並安裝在滑軌上。" />
+ </object>
+ <object Name="Security Door" Load="Merge">
+  <part Name="Render" DisplayName="安全門" />
+  <part Name="Description" Short="一塊溝槽金屬板嵌於門框拱部，中央設有一個凹陷的滑動面板。面板上壓印著一張感應卡的模具。" />
+ </object>
+ <object Name="Fused Security Door" Load="Merge">
+  <part Name="Render" DisplayName="融合安全門" />
+  <part Name="Description" Short="一塊起伏的金屬板嵌在門框的拱頂上。它的鉸鏈與軌道已熔化並與牆框融合在一起。" />
+ </object>
+ <object Name="Troll Door" Load="Merge">
+  <part Name="Render" DisplayName="塌陷的金屬門" />
+ </object>
+ <object Name="Troll Door 1" Load="Merge">
+  <part Name="Description" Short="一塊如大象般厚重的塗銅金屬板從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
+ </object>
+ <object Name="Troll Door 2" Load="Merge">
+  <part Name="Description" Short="一塊如大象般厚重的塗銀金屬板從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
+ </object>
+ <object Name="Troll Door 3" Load="Merge">
+  <part Name="Description" Short="一塊如大象般厚重的金漆金屬從古老的門框中傾斜而出。把手被一個華麗的機械鎖固定著。" />
+ </object>
+ <object Name="Door_GritGateRank1" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+ </object>
+ <object Name="Door_GritGateRank2" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+ </object>
+ <object Name="Death Gate W" Load="Merge">
+  <part Name="Render" DisplayName="死亡之門" />
+  <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
+  <xtagGrammar iArticle="這" />
+ </object>
+ <object Name="Death Gate E" Load="Merge">
+  <part Name="Render" DisplayName="死亡之門" />
+  <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
+  <xtagGrammar iArticle="這" />
+ </object>
+ <object Name="Life Gate W" Load="Merge">
+  <part Name="Render" DisplayName="生命之門" />
+  <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
+  <xtagGrammar iArticle="這" />
+ </object>
+ <object Name="Life Gate E" Load="Merge">
+  <part Name="Render" DisplayName="生命之門" />
+  <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
+  <xtagGrammar iArticle="這" />
+ </object>
+ <object Name="Crypt Door" Load="Merge">
+  <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
+  <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
+ </object>
+ <object Name="Crypt Double Door N" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
+ </object>
+ <object Name="Crypt Double Door S" Load="Merge">
+  <part Name="Render" DisplayName="門" />
+  <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
+ </object>
+ <object Name="Brightsheol Gate W" Load="Merge">
+  <part Name="Render" DisplayName="通往亮希歐之門" />
+ </object>
+ <object Name="Brightsheol Gate E" Load="Merge">
+  <part Name="Render" DisplayName="通往亮希歐之門" />
+ </object>
+ <object Name="Recoming Nook Door" Load="Merge">
+  <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
+  <part Name="Description" Short="明亮的紋路在門面那黑大理石的虛空中勾勒出一生的意義。紀念牌上刻著一個家族姓氏。" />
+ </object>
+ <object Name="Brinestalk Gate" Load="Merge">
+  <part Name="Render" DisplayName="鹽莖大門" />
+  <part Name="Description" Short="鹽莖被削成尖樁，橫放在鐵鎖軌道上。" />
+ </object>
+ <object Name="Iron Gate" Load="Merge">
+  <part Name="Render" DisplayName="鐵門" />
+  <part Name="Description" Short="鐵樁橫跨在鎖上的軌道上。" />
+ </object>
+ <object Name="PowerLine" Load="Merge">
+  <part Name="Render" DisplayName="電力線" />
+  <part Name="Description" Short="銅、鋁和玻璃纖維被加工成圓形的電導管。" />
+ </object>
+ <object Name="HeavyPowerLine" Load="Merge">
+  <part Name="Render" DisplayName="高壓電線" />
+  <part Name="Description" Short="銅、碳與玻璃纖維被加工成一根堅固的電纜導管。" />
+ </object>
+ <object Name="GlassHydraulicPipe" Load="Merge">
+  <part Name="Render" DisplayName="玻璃液壓管" />
+  <part Name="Description" Short="玻璃被吹入了一根機器動脈中。" />
+ </object>
+ <object Name="YdFreeholdGlassHydraulicPipe1" Load="Merge">
+  <part Name="Description" Short="玻璃被吹入機器動脈中，並利用鈾使其呈現螢光綠黃色的離子色彩。" />
+ </object>
+ <object Name="WoodenMechanicalTransmission" Load="Merge">
+  <part Name="Render" DisplayName="木製機械" />
+  <part Name="Description" Short="木材被削薄，切割成體積平滑的桿狀，並安裝 內部 齒輪箱以連續傳遞動力。" />
+  <xtagGrammar massNoun="真實" />
+ </object>
+ <object Name="HighTechInstallation" Load="Merge">
+  <xtagTextFragments Skin="機械裝置" PoeticFeatures="高聳的身姿、機械般的姿勢、律動的管樂聲" />
+ </object>
+ <object Name="Wooden Wind Turbine" Load="Merge">
+  <part Name="Render" DisplayName="{{w|木製}} 風力發電機" />
+  <part Name="Description" Short="帆布固定在浸鹽木製手臂上，這些手臂隨風聲旋轉並帶動中央軸。" />
+  <part Name="Circuitry" NameForStatus="Gearbox" />
+  <tag Name="HeroNameTitleDescriptor" Value="循環、慷慨、旋轉、葉狀" />
+  <tag Name="HeroNameTitleClientele" Value="磨坊主" />
+ </object>
+ <object Name="Millstone" Load="Merge">
+  <part Name="Render" DisplayName="磨石" />
+  <part Name="Description" Short="石灰岩圓圈呈多孔狀且帶有舊物的貝殼般的牡蠣灰色，被排列成垂直板塊並互相對磨，將纖維顆粒研磨成粉末。" />
+  <tag Name="HeroNameTitleDescriptor" Value="磨碎者、提供者、米勒" />
+  <tag Name="HeroNameTitleClientele" Value="廚師、烹飪者、穀物、飢餓者" />
+ </object>
+ <object Name="Wooden Water Wheel" Load="Merge">
+  <part Name="Render" DisplayName="{{w|木製}}水車" />
+  <part Name="Description" Short="因濕腐而變黑的木槳承接著潺潺小溪的力量，使水輪以跨越世紀的緩慢節奏轉動。" />
+  <part Name="Circuitry" NameForStatus="Gearbox" />
+  <tag Name="HeroNameTitleDescriptor" Value="循環者、慷慨者、水文者、揮霍者、浪費者、補充者、輪轉者" />
+  <tag Name="HeroNameTitleClientele" Value="發條工、工程師、磨坊主" />
+ </object>
+ <object Name="Powered Orrery" Load="Merge">
+  <part Name="Render" DisplayName="動力渾天儀" />
+  <part Name="ChargeSink" NameForStatus="伺服馬達" />
+ </object>
+ <object Name="Kiln" Load="Merge">
+  <part Name="Render" DisplayName="窯" />
+  <part Name="Description" Short="一件磨光的鋼甲緊貼著一個悶燒的火坑。各種材質的焦痕覆蓋在它的側面。" />
+  <part Name="ChargeSink" NameForStatus="加熱中" />
+ </object>
+ <object Name="Electric Generator" Load="Merge">
+  <part Name="Render" DisplayName="發電機" />
+  <part Name="Description" Short="外殼旋轉器透過手搖柄注入電荷，並輔以太陽熱能。其刮痕斑駁的金屬表面會以地面頻率振動。" />
+  <tag Name="HeroNameTitleDescriptor" Value="慷慨、奢華、微星、豐沛、強效、揮霍、補充者" />
+  <tag Name="HeroNameTitleClientele" Value="家電、能量電池、電力網、枯竭者、盜電者、渴求電力者、修補匠" />
+ </object>
+ <object Name="Induction Charging Station" Load="Merge">
+  <part Name="Render" DisplayName="感應充電站" />
+  <part Name="Description" Short="感應線圈紮根於軟木墊下方，電力液在此傳輸至電池單元。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="高斯, 感應, 強效, 補充, 修復" />
+  <tag Name="HeroNameTitleClientele" Value="能量電池、枯竭者、雷射腦、渴求電力者、修補匠" />
+ </object>
+ <object Name="Hydraulic Irrigator" Load="Merge">
+  <part Name="Render" DisplayName="{{B|水壓}} 灌溉器" />
+  <part Name="Description" Short="磁化鋼驅動隔膜向上移動，生命之水經由鉻管推進至乾渴的植物。" />
+  <part Name="RadiusEventSender" NameForStatus="灌溉系統" />
+  <part Name="ChargeSink" NameForStatus="伺服馬達" />
+  <tag Name="HeroNameTitleDescriptor" Value="水生、慷慨、奢華、滋養、豐沛、引水者" />
+  <tag Name="HeroNameTitleClientele" Value="農作物、農夫、植物、農場" />
+ </object>
+ <object Name="Clockthing_QGirl" Load="Merge">
+  <part Name="Render" DisplayName="巴拉楚姆時鐘 附帶 {{M|Q 女孩}} 的 {{Y|擺錘}}" />
+  <part Name="Description" Short="Q 女孩 將這座 巴拉楚姆時鐘 上的舊振盪器換成了擺錘。現在，時間每天從觀察者身上偷走的數小時已縮減至僅僅幾分鐘。" />
+  <part Name="ChargeSink" NameForStatus="伺服馬達" />
+ </object>
+ <object Name="Hydraulic Bubblething" Load="Merge">
+  <part Name="Render" DisplayName="液壓黃銅發泡機" />
+  <part Name="Description" Short="在發明事業的過程中，有時你會需要使用一種無形的灰色泡沫。或者，至少有一天你可能會需要它，因此一些 修補匠 審慎地預見了問題並發明了 黃銅發泡機。底座上刻著：『擁有所有的泡沫，免於那種或許有一天會需要泡沫卻沒有的悲哀』。" />
+  <part Name="ChargeSink" NameForStatus="FoamSystems" />
+ </object>
+ <object Name="Gas Burner" Load="Merge">
+  <part Name="Render" DisplayName="瓦斯爐" />
+  <part Name="Description" Short="氣體被推入軟管並點燃成火焰。露水賦予了軟管倒刺質感。" />
+  <part Name="ChargeSink" NameForStatus="引火焰" />
+ </object>
+ <object Name="Powered Telescope" Load="Merge">
+  <part Name="Render" DisplayName="動力望遠鏡" />
+  <part Name="ChargeSink" NameForStatus="伺服馬達" />
+ </object>
+ <object Name="Rock Tumbler" Load="Merge">
+  <part Name="Render" DisplayName="滾石機" />
+  <part Name="Description" Short="橡膠襯著電動桶的內部拓撲結構。一壺烏黑的碳化物砂粒置於下腔室，隨時準備進行磨損。" />
+  <part Name="ItemConvertor" NameForStatus="翻滾" />
+ </object>
+ <object Name="Lathe" Load="Merge">
+  <part Name="Render" DisplayName="車床" />
+  <part Name="Description" Short="手輪與 紡錘(Spindle) 旋轉成沙，化物質為虛無，並賦予世界螺旋與圓形之物。金屬粉塵在下方地面堆積。" />
+  <part Name="ChargeSink" NameForStatus="旋轉" />
+ </object>
+ <object Name="Solar Power Station" Load="Merge">
+  <part Name="Render" DisplayName="{{W|太陽能}} 發電站" />
+  <part Name="Description" Short="光伏板排列在兩個插槽式的月形片上。它們旋轉以達到最佳範圍，並將太陽能傳遞給真空外殼的飛輪。" />
+  <part Name="ChargeSink" NameForStatus="KineticLossManager" />
+  <tag Name="HeroNameTitleDescriptor" Value="沐浴者,趨光性,光伏,豐沛,補充者" />
+  <tag Name="HeroNameTitleClientele" Value="器具、電池、電網、枯竭者、強行接入者、修補匠" />
+ </object>
+ <object Name="Solar Pumping Station" Load="Merge">
+  <part Name="Render" DisplayName="{{W|太陽能}} {{c|抽水站}}" />
+  <part Name="Description" Short="陽光被鉻柱周圍地基上的光伏裝置捕捉，熱能則用於將水泵入管道以進行散佈。" />
+  <part Name="ChargeSink" NameForStatus="HydraulicLossManager" />
+  <tag Name="HeroNameTitleDescriptor" Value="淋巴的、流動的、補充者、沐浴者、趨光性的、光伏的、豐富的" />
+  <tag Name="HeroNameTitleClientele" Value="液壓、流動、流體、修補匠" />
+ </object>
+ <object Name="Food Processor" Load="Merge">
+  <part Name="Render" DisplayName="食物處理機" />
+  <part Name="Description" Short="佈滿電線的金屬方塊組成了一個櫃子，內含抽屜以及用於烘烤、醃漬和冷凍乾燥的加熱器。" />
+  <tag Name="HeroNameTitleDescriptor" Value="屠宰者、醃漬者、保存者" />
+  <tag Name="HeroNameTitleClientele" Value="廚師，飢餓者" />
+ </object>
+ <object Name="Universal Charging Station" Load="Merge">
+  <part Name="Render" DisplayName="通用充電站" />
+  <part Name="Description" Short="架子、墊片、石板與搖籃皆由金屬製成，宛如鉻色的蜂巢。電力被濃縮成電池液，注入其對接的儲能單元中。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="天主教徒，強大的，補充者，修復者" />
+  <tag Name="HeroNameTitleClientele" Value="能量電池、枯竭者、雷射腦、渴求電力者、修補匠" />
+ </object>
+ <object Name="Hydraulic Turbine" Load="Merge">
+  <part Name="Render" DisplayName="{{B|hydraulic}} 渦輪機" />
+  <part Name="Description" Short="切割完美的鉻合金轉子堆疊在發電機軸上，寬大的鰭片捕捉流體推力並旋轉出電力的絲線。" />
+  <tag Name="HeroNameTitleDescriptor" Value="水生, 奢華, 滋養, 豐富, 補充" />
+  <tag Name="HeroNameTitleClientele" Value="電力網、幫浦" />
+ </object>
+ <object Name="Hydraulic Press" Load="Merge">
+  <part Name="Render" DisplayName="液壓機" />
+  <part Name="Description" Short="在一道由板狀剪切金屬組成的橫樑下方，一個液壓活塞正向前推進。其平坦的底部被碎屑刮出了溝槽。" />
+  <tag Name="HeroNameTitleDescriptor" Value="壓縮機、粉碎機、壓平機、粉碎者、擠壓機" />
+  <tag Name="HeroNameTitleClientele" Value="修補匠、拾荒者、拆解者" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="Force Projector" Load="Merge">
+  <part Name="Render" DisplayName="力場投影儀" />
+  <part Name="Description" Short="內部 玻璃與鋼製底盤，一股力流之海在動盪中翻騰。隨後它被發電機粉碎成固態物質，並作為場域投射到空間中。" />
+ </object>
+ <object Name="Fluxthing" Load="Merge">
+  <part Name="Render" DisplayName="通量計" />
+  <part Name="Description" Short="四個凸緣聯軸器組成一個十字形，中心有一個波形圖讀數。隨著液體與氣體通過管道，霓虹色的字串會顯示出通量讀數。" />
+  <part Name="ChargeSink" NameForStatus="通量電容器" />
+ </object>
+ <object Name="Electrothing" Load="Merge">
+  <part Name="Render" DisplayName="電化石" />
+  <part Name="Description" Short="兩個銅製球莖形成了一個火花間隙，使電流沿著離子化氣體的路徑流動。這東西對著你發出啪嗒聲並濺起火花。" />
+  <part Name="ChargeSink" NameForStatus="弧光發電機" />
+ </object>
+ <object Name="Unicomputer" Load="Merge">
+  <part Name="Render" DisplayName="單一電腦" />
+  <part Name="Description" Short="內部是一個金屬底盤，琥珀色符文在陰極射線繪製的掃描線上游走。錐台按鍵排列成靜謐的行數。" />
+  <part Name="ChargeSink" NameForStatus="處理器" />
+ </object>
+ <object Name="Liquid-Cooled Unicomputer" Load="Merge">
+  <part Name="Render" DisplayName="液冷單機電腦" />
+ </object>
+ <object Name="Loudspeaker" Load="Merge">
+  <part Name="Render" DisplayName="擴音器" />
+  <part Name="Description" Short="磁化的內臟消化電訊號並噴出波形，而橫膈膜則將塵埃吹向黃銅格柵。" />
+  <part Name="ChargeSink" NameForStatus="揚聲器" />
+ </object>
+ <object Name="Glass Furnace" Load="Merge">
+  <part Name="Render" DisplayName="玻璃熔爐" />
+  <part Name="Description" Short="蘇打灰與石灰岩流經一系列熱坩堝和運河，流向批次毯，在那裡回收並精煉玻璃。" />
+  <part Name="ChargeSink" NameForStatus="熔煉" />
+ </object>
+ <object Name="Wire Extruder" Load="Merge">
+  <part Name="Render" DisplayName="線材擠出機" />
+  <part Name="Description" Short="一個閃爍著光芒的鋼製紡錘，上面刻有螺旋狀溝槽，可用於從原礦塊和鑄錠中剝離電線。" />
+  <part Name="ItemConvertor" NameForStatus="擠壓成型" />
+ </object>
+ <object Name="Broadcast Power Station" Load="Merge">
+  <part Name="Render" DisplayName="廣播發電站" />
+  <part Name="Description" Short="金屬被編織成電磁支架，調製器透過它 黴菌 基頻的黏土，並揭示出新訊號的形狀。" />
+  <tag Name="HeroNameTitleDescriptor" Value="全方位支持,慷慨,奢華,豐富,強效,揮霍,無線電頻率,補充者,傳輸式,無線" />
+  <tag Name="HeroNameTitleClientele" Value="器具、盤繞者、枯竭者、渴求力量者、接受者、修補匠" />
+ </object>
+ <object Name="Fusion Power Station" Load="Merge">
+  <part Name="Render" DisplayName="{{C|核融合}}發電站" />
+  <part Name="Description" Short="微小的物質碎片在鉻合金圓柱體的月牙形結構後方擠壓在一起，產生的熱能被用來向電網下傳送電力。" />
+  <tag Name="HeroNameTitleDescriptor" Value="全方位支持、烈焰之心、慷慨、奢侈、微星、豐沛、強效、揮霍、補充者" />
+  <tag Name="HeroNameTitleClientele" Value="家電、能量電池、電力網、枯竭者、盜電者、渴求電力者、修補匠" />
+ </object>
+ <object Name="Fusion Pumping Station" Load="Merge">
+  <part Name="Render" DisplayName="{{C|融合}}幫浦站" />
+  <part Name="Description" Short="微小的物質碎片在玻璃圓柱的月牙形後方被擠壓在一起，熱能被用來將水泵入管道以進行分配。" />
+  <tag Name="HeroNameTitleDescriptor" Value="淋巴、流動、補充者、微星、融合者" />
+  <tag Name="HeroNameTitleClientele" Value="液壓、流動、流體、修補匠" />
+ </object>
+ <object Name="Industrial Fan" Load="Merge">
+  <part Name="Render" DisplayName="工業風扇" />
+  <part Name="Description" Short="形狀如翼型的巨型刀刃被收納於 內部 一個刻滿歲月痕跡的金屬環中。在遙遠的過去，曾有人在大尺度上引導著氣流的方向。" />
+ </object>
+ <object Name="Glass Printer" Load="Merge">
+  <part Name="Render" DisplayName="玻璃印表機" />
+  <part Name="Description" Short="在青銅框架的玻璃窗後方，是可程式化的玻璃製造儀器：用於熱加工的爐灶與吹管，以及用於冷加工的抹油器與轉輪。" />
+  <part Name="ChargeSink" NameForStatus="玻璃製造" />
+ </object>
+ <object Name="Regen Tank" Load="Merge">
+  <part Name="Render" DisplayName="再生槽" />
+  <part Name="Description" Short="四氙玻璃牆與康復凝膠重現了羊膜的環境，在其中爬蟲、鳥類與哺乳動物的胚胎得以孕育成長。" />
+  <part Name="Enclosing" NameForStatus="流體循環" />
+  <part Name="RegenTank" NameForStatus="再生系統" />
+  <part Name="TemperatureAdjuster" NameForStatus="TemperatureControl" />
+  <tag Name="HeroNameTitleDescriptor" Value="療癒的、醫治者、修復者、奇蹟般的" />
+  <tag Name="HeroNameTitleClientele" Value="疲憊者、倦怠者、傷者" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="Psiamp Sarcophagus" Load="Merge">
+  <part Name="Render" DisplayName="靈能石棺" />
+  <part Name="Description" Short="它是用異世界的 石灰岩 雕琢而成。這些石頭開採自一個繞著幽暗恆星旋轉的漂流世界，那微弱的光芒並未將岩石珊瑚中的虛空物質漂白。現在，它能隔絕物質界的射線以保護沉睡者，並將其傳導至心靈乙太。" />
+  <part Name="Enclosing" NameForStatus="PsiAmp" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="Base Ring Gate" Load="Merge">
+  <part Name="Render" DisplayName="大門" />
+  <part Name="Description" Short="水帶以高浮雕的形式攀附在骨白的大理石柱上。它們爬過拱券，在螺旋環之間蜿蜒穿梭，最後在拱頂石處急轉向上。此處即彼處。" />
+  <xtagGrammar iArticle="這" />
+ </object>
+ <object Name="Ruined Ring Gate" Load="Merge">
+  <part Name="Render" DisplayName="毀壞的門" />
+  <part Name="Description" Short="高浮雕的水紋從破碎的大理石上剝落。曾經圍繞著旅人前行路徑的拱門碎片，如今散落在某處平滑的背部之上。" />
+ </object>
+ <object Name="CyberneticsTerminal2" Load="Merge">
+  <part Name="Render" DisplayName="蛻變角落" />
+  <part Name="Description" Short="一塊印有人類輪廓的 neutrofom 長方形懸掛在玻璃拱門之下。在與眼睛齊平的泡沫表面，符文在橢圓形螢幕上迴圈流轉。手術機械被刺眼的強光遮蔽，從封閉圓頂的底端向外爬行。" />
+ </object>
+ <object Name="ConveyorDrive" Load="Merge">
+  <part Name="Render" DisplayName="輸送帶驅動單元" />
+  <part Name="Description" Short="油脂從亮鉻引擎滴落，弄髒了惰輪。滑輪以奇特的角度排列，在空間中帶動扁平的橡膠皮帶旋轉。" />
+ </object>
+ <object Name="ConveyorPad" Load="Merge">
+  <part Name="Render" DisplayName="輸送帶" />
+  <part Name="Description" Short="腐爛的雜質黏附在扁平黑色雙橡膠的溝槽中。" />
+ </object>
+ <object Name="CrematoryConveyorPad" Load="Merge">
+  <part Name="Description" Short="骨灰色的灰燼黏附在平坦黑色雙橡膠的溝槽中。" />
+ </object>
+ <object Name="BeltCurtains" Load="Merge">
+  <part Name="Render" DisplayName="橡膠簾幕" />
+  <part Name="Description" Short="在一個失去光澤的金屬框架下，掛著一整片被切成柔軟簾條狀的黑色橡膠。" />
+  <xtagGrammar massNoun="真實" />
+ </object>
+ <object Name="Catchbasin" Load="Merge">
+  <part Name="Render" DisplayName="集水盆" />
+  <part Name="Description" Short="石器捕捉著乾燥空氣中所釋出的微量水分。" />
+ </object>
+ <object Name="Air Well" Load="Merge">
+  <part Name="Render" DisplayName="氣井" />
+  <part Name="Description" Short="一頂壓扁的帽簷遮住了 =pronouns.possessive= 眼睛，皮革槍套掛在 =pronouns.possessive= 肩膀上。=pronouns.Subjective= 滾動 一顆 鉛彈 掠過 =pronouns.possessive= 皮革般的指關節。" />
+  <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
+  <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
+ </object>
+ <object Name="Solar Still" Load="Merge">
+  <part Name="Render" DisplayName="太陽能蒸餾器" />
+  <part Name="Description" Short="來自鹽陽的熱量使鹹水蒸發。當水再次凝結時，它會分離成純淨與不純的元素：鹽聚集在靜止處，而淡水則匯集在盆地中。" />
+  <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
+  <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
+ </object>
+ <object Name="Solar Condenser" Load="Merge">
+  <part Name="Render" DisplayName="太陽能冷凝器" />
+  <part Name="Description" Short="鉻合金法蘭最大化了蒸發空氣重新凝結為蒸餾露水的表面積。" />
+  <part Name="TemperatureAdjuster" NameForStatus="CoolingSystem" />
+  <part Name="LiquidProducer" NameForStatus="收集系統" />
+  <tag Name="HeroNameTitleDescriptor" Value="水性的、冷凝的、露水的、補水劑、灌溉器、潮濕的" />
+  <tag Name="HeroNameTitleClientele" Value="枯竭者、乾燥者、鹹澀者、渴求者" />
+ </object>
+ <object Name="GritGateChromeBeacon" Load="Merge">
+  <part Name="Render" DisplayName="鍍鉻小人信號轉發器" />
+  <part Name="Description" Short="在玻璃月亮上破碎的正弦波編碼了該飛地機械子嗣的行為原語。電子場將它們吸入天線，並送入以太之中。" />
+  <part Name="ZoneAdjust" NoAdjustSpecFailureDescription="NeedsSignalTemplate" NameForStatus="訊號產生器" />
+ </object>
+ <object Name="Reclamation Cist" Load="Merge">
+  <part Name="Render" DisplayName="{{r|回收石棺}}" />
+  <part Name="Description" Short="一個由鋼鐵、黃銅與陰極管製成的棺材，隱藏著一系列精密儀器，用於從死者身上吸取器官物質，並將其送回親族手中。" />
+  <tag Name="HeroNameTitleDescriptor" Value="生物循環、深紅、立體主義、生態、血色" />
+  <tag Name="HeroNameTitleClientele" Value="生態建築、蛋白質、回收器、永續性、飢餓者、真理者" />
+ </object>
+ <object Name="FactoryArm" Load="Merge">
+  <part Name="Render" DisplayName="旋轉機械臂" />
+  <part Name="Description" Short="眼鏡架在 =pronouns.possessive= 尖鼻子上。=pronouns.Possessive= 指甲上沾滿了石墨，大量的方格紙散落在 =pronouns.possessive= 的書桌上。" />
+ </object>
+ <object Name="GrabberArm" Load="Merge">
+  <part Name="Render" DisplayName="鎖定機械臂" />
+  <part Name="Description" Short="金屬泡沫被填充並鋪設成一個巨大的生物手臂擬像，其肱二頭肌與肱三頭肌的部位閃閃發光。黃銅鉗狀物會從目標身上攫取動能。" />
+ </object>
+ <object Name="Exit Teleporter" Load="Merge">
+  <part Name="Render" DisplayName="樓梯間傳送器" />
+  <part Name="Description" Short="黃銅邊緣環繞著泡沫分流墊，上方的格柵編織成曾經熟悉的出口符號。" />
+ </object>
+ <object Name="Quantum Rippler" Load="Merge">
+  <part Name="Render" DisplayName="量子漣漪者" />
+  <part Name="Description" Short="從一個鍍金盒中，萬花筒般的瓷磚與色調在多個維度上和諧共鳴。" />
+ </object>
+ <object Name="NormCore" Load="Merge">
+  <part Name="Render" DisplayName="常規核心" />
+  <part Name="Description" Short="鑽石流形將石英加壓至其 Ω 形態，沿著當地區域的靈脈使時空結晶化。常態性的液滴在煙囪上凝結，將光線折射進內在維度。" />
+  <part Name="DeploymentMaintainer" NameForStatus="FieldProjector" />
+ </object>
+ <object Name="NormCore1" Load="Merge">
+  <part Name="Render" DisplayName="常規核心 Mk I" />
+ </object>
+ <object Name="NormCore2" Load="Merge">
+  <part Name="Render" DisplayName="常規核心 Mk II" />
+ </object>
+ <object Name="NormCore3" Load="Merge">
+  <part Name="Render" DisplayName="常規核心 Mk III" />
+ </object>
+ <object Name="Full-Scale Recompositer" Load="Merge">
+  <part Name="Render" DisplayName="全規模重組器" />
+  <part Name="Description" Short="富勒石邊緣環繞著泡沫著陸墊，上方的格柵被編織成曾經熟悉的重組與歸還符號。" />
+ </object>
+ <object Name="Melted Pad" Load="Merge">
+  <part Name="Render" DisplayName="雜草叢生的泡沫墊" />
+  <part Name="Description" Short="富勒石邊緣上的花紋被熔化成亮白色，滴落在破碎的泡沫墊上。百合幼芽在裂縫中迅速生長並向前推進；生命向外蔓延。" />
+ </object>
+ <object Name="Reshaping Nook" Load="Merge">
+  <part Name="Render" DisplayName="重塑角落" />
+  <part Name="Description" Short="特徵性的玻璃拱門標誌著這個封閉空間是一個為了新用途而被掏空並拆除電線的蛻變角落。一隻利爪伸出進行焊接與塑形，而在底鼓中，一個輪盤正旋轉著濕潤的黏土，準備好進行日渣發酵。" />
+  <property Name="VehicleTerm" Value="魔像" />
+ </object>
+ <object Name="Reshaping Pad" Load="Merge">
+  <part Name="Render" DisplayName="重塑墊" />
+  <part Name="Description" Short="粗糙的石緣環繞著一個泡沫著陸墊，上方的格柵編織成新穎的重塑與歸還符號。" />
+ </object>
+ <object Name="BaseBookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+  <part Name="Description" Short="木板以正交角度釘合，灰塵沉睡在紙質外套上。" />
+  <part Name="Container" Preposition="on" />
+ </object>
+ <object Name="Joppa Bookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="NuntuBookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="NuntuBookshelf2" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="Village Bookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="UndergroundBookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="UndergroundMerchantBookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="HydroponBookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="Redrock Bookshelf" Load="Merge">
+  <part Name="Render" DisplayName="木製書架" />
+ </object>
+ <object Name="BaseBed" Load="Merge">
+  <tag Name="HeroNameTitleDescriptor" Value="安逸的、柔軟的、凹凸不平的、堅實的、奢華的、舒適的、床單未鋪好的、無彈簧的" />
+  <tag Name="HeroNameTitleClientele" Value="疲憊者與勞累者" />
+  <xtagTextFragments Skin="床單" PoeticFeatures="斜躺的身姿、柔軟的表面、誘人的平坦感" />
+  <tag Name="QuestableVerb" Value="睡在...裡面" />
+ </object>
+ <object Name="Bed" Load="Merge">
+  <part Name="Render" DisplayName="床" />
+  <part Name="Description" Short="織物裡塞滿了水藤碎屑，並按照丘民的風格鋪放在木條上。" />
+ </object>
+ <object Name="Bedroll" Load="Merge">
+  <part Name="Render" DisplayName="睡袋" />
+  <part Name="Description" Short="一張用帆布帶固定的山羊毛床。" />
+ </object>
+ <object Name="Crib" Load="Merge">
+  <part Name="Render" DisplayName="嬰兒床" />
+  <part Name="Description" Short="木條對孩子而言是巨石。羽毛枕頭則是寒冷的草地。這裡便是他們黃昏世界的邊界。" />
+  <tag Name="HeroNameTitleDescriptor" Value="滋養、安寧、舒適、守護者、溫馨" />
+ </object>
+ <object Name="Folding Cot" Load="Merge">
+  <part Name="Render" DisplayName="摺疊床" />
+  <part Name="Description" Short="水藤 帆布 被拉伸並摺疊在木腿上。" />
+  <tag Name="QuestableVerb" Value="睡在...上面" />
+ </object>
+ <object Name="Hammock" Load="Merge">
+  <part Name="Render" DisplayName="吊床" />
+  <part Name="Description" Short="鹽草被編織成繩索格狀鞍座，以便在兩棵老橡樹之間盪漾小睡。中間下垂部分的纖維因躺臥之軀的中心質量壓力而顯得格外磨損。" />
+ </object>
+ <object Name="Four-Poster Bed" Load="Merge">
+  <part Name="Render" DisplayName="四柱床" />
+  <part Name="Description" Short="木材被細心地雕琢成柱狀並進行裝飾性削刻。紈袴羽絨是從斯維河畔的裁縫師手中交易而來的，像蛋糕一樣層層堆疊，並用枕頭覆蓋如糖霜。在這裡，富有的人可以找到進入夢境山谷的偏好入口。" />
+  <tag Name="HeroNameTitleDescriptor" Value="安逸、柔軟、凹凸不平、堅實、奢華、壯麗、夢幻" />
+ </object>
+ <object Name="Medical Bed" Load="Merge">
+  <part Name="Render" DisplayName="消化床" />
+  <part Name="Description" Short="如鹽漂白般的白色塑膠經過設計，用於安穩睡眠、康復以及體液的重新調整。" />
+  <tag Name="HeroNameTitleDescriptor" Value="堅實、照護者、可調式、撒馬利亞人、消化性、治療性、修復者" />
+ </object>
+ <object Name="Waterbed" Load="Merge">
+  <part Name="Render" DisplayName="水床" />
+  <part Name="Description" Short="木條以丘陵民的風格呈直角排列。然而，取而代之的並非糠皮墊，而是充填著油膩水分的塑膠床墊，這是那些渴望湖泊波浪的筏漂者所青睞的替代品。" />
+  <tag Name="HeroNameTitleDescriptor" Value="液壓、潮濕、波浪狀、漲落不定" />
+  <tag Name="HeroNameTitleClientele" Value="疲憊者、勞累者、潮起潮落、水手" />
+ </object>
+ <object Name="Bedger" Load="Merge">
+  <part Name="Render" DisplayName="獾獸" />
+  <part Name="Description" Short="閒暇史學家將所有紀元分為以下三個時代：熊類生物進化或文明崛起以崇拜牠們之前的時段；熊類盛世與文明有能力製作其形狀的長榻之間的時段；以及從那時起直到文明衰落的時段。" />
+  <part Name="Bed" NameForStatus="骨科適應" />
+  <tag Name="HeroNameTitleDescriptor" Value="柔軟、舒適、毛茸茸、溫暖、可愛" />
+ </object>
+ <object Name="Hyperbiotic Bed" Load="Merge">
+  <part Name="Render" DisplayName="超生物床" />
+  <part Name="Description" Short="隱藏的微型反應爐將粒子撞擊在一起以產生熱能，並為使疲憊的沉睡者恢復生機的生物機器裝置提供動力。" />
+  <part Name="Bed" NameForStatus="HyperbioticSystems" />
+  <tag Name="HeroNameTitleDescriptor" Value="療癒的、醫治者、修復者、奇蹟般的" />
+  <tag Name="HeroNameTitleClientele" Value="倦怠者、疲憊者、傷者" />
+ </object>
+ <object Name="BaseChair" Load="Merge">
+  <tag Name="HeroNameTitleDescriptor" Value="舒適、短腿、直背、堅固、三腳" />
+  <tag Name="HeroNameTitleClientele" Value="背部, 腰部, 疲憊" />
+  <tag Name="QuestableVerb" Value="坐在" />
+ </object>
+ <object Name="Chair" Load="Merge">
+  <part Name="Render" DisplayName="椅子" />
+  <part Name="Description" Short="木板以沼澤居民的風格成直角釘在一起。" />
+ </object>
+ <object Name="Floor Cushion" Load="Merge">
+  <part Name="Render" DisplayName="地板墊" />
+  <part Name="Description" Short="這款扣式枕頭塞滿了水藤碎屑與發光烏鴉羽毛，讓人們可以盤腿休息。" />
+  <tag Name="HeroNameTitleDescriptor" Value="舒適、斜靠、放蕩、柔軟、豐滿、享樂主義" />
+ </object>
+ <object Name="Kline" Load="Merge">
+  <part Name="Render" DisplayName="克萊恩" />
+  <part Name="Description" Short="在陽光曝曬的 莫格拉伊(Moghra'yi) 與 紡錘(Spindle) 的陰影之間，那道邊界上的 Convivia 包含了對蘋果酒的沉思、全息投影，以及將 klinai 以直角排列。" />
+  <tag Name="QuestableVerb" Value="坐在、睡在" />
+ </object>
+ <object Name="Bench" Load="Merge">
+  <part Name="Render" DisplayName="長凳" />
+  <part Name="Description" Short="木板被簡單地釘在一起，形成這張簡樸的座椅。" />
+ </object>
+ <object Name="Stool" Load="Merge">
+  <part Name="Render" DisplayName="凳子" />
+  <part Name="Description" Short="沒有任何事物是靜止不變的，一切都在運動之中；而坐者必須為下一個時刻做好準備，屆時閒暇的記憶將被燒灼成神經質的塑像。凳子承載著這些真理。" />
+ </object>
+ <object Name="Canvas Folding Chair" Load="Merge">
+  <part Name="Render" DisplayName="帆布摺疊椅" />
+  <part Name="Description" Short="關節木與編織的 水藤 組成了一個供驢子使用的活動碼頭。" />
+ </object>
+ <object Name="Throne" Load="Merge">
+  <part Name="Render" DisplayName="王座" />
+  <part Name="Description" Short="蝕刻金屬與寶石的裝飾標示出了世界軸心（axis mundi）。" />
+  <tag Name="HeroNameTitleDescriptor" Value="皇室的、帝國的、壯麗的、寬宏的、自大的、莊嚴的、氣勢磅礴的、雄偉的、莊重的、宏大的、誇張的、燦爛的、高聳的" />
+ </object>
+ <object Name="Armchair" Load="Merge">
+  <part Name="Render" DisplayName="扶手椅" />
+  <part Name="Description" Short="由皮革匠在鹽之陽光下揉捏而成，並填充了發光烏鴉的羽毛，以供其主人安息。" />
+  <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
+ </object>
+ <object Name="Medical Chair" Load="Merge">
+  <part Name="Render" DisplayName="消化椅" />
+  <part Name="Description" Short="如鹽漂白般潔白的塑料經過塑形，以達到理想的消化與 幽默 的和諧。" />
+  <tag Name="HeroNameTitleDescriptor" Value="照護者、可調式、救命恩人、撒馬利亞人、矯形器、衛生、防腐、治療" />
+ </object>
+ <object Name="Massage Chair" Load="Merge">
+  <part Name="Render" DisplayName="屍骸揉捏者" />
+  <part Name="Description" Short="它配有一個曲軸，可轉動凹凸不平的橡膠片，並揉捏出坐者的後部皺褶。" />
+  <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、放蕩、柔軟、豐滿、享樂主義、揉捏" />
+ </object>
+ <object Name="Work Chair" Load="Merge">
+  <part Name="Render" DisplayName="滾輪椅" />
+  <part Name="Description" Short="緊密的黑色網格挺直了脊椎。輪子從腳輪上降下並開始移動。" />
+  <tag Name="HeroNameTitleDescriptor" Value="勤勉、人體工學、高效、滾動順暢、直背、舒適" />
+ </object>
+ <object Name="Ergomax Chair" Load="Merge">
+  <part Name="Render" DisplayName="人體工學椅" />
+  <part Name="Description" Short="如同鹽漂白般潔白的塑膠被塑造成適合理想沉思的姿勢。" />
+  <part Name="Chair" NameForStatus="ErgonomicSystems" />
+  <tag Name="HeroNameTitleDescriptor" Value="勤勉、人體工學、高產、滾動順暢、靠背挺直、舒適、柔軟、靈敏" />
+ </object>
+ <object Name="Chairbear" Load="Merge">
+  <part Name="Render" DisplayName="椅熊" />
+  <part Name="Description" Short="閒暇史學家將所有紀元分為以下三個時代：熊類生物進化或文明崛起以崇拜牠們之前的時段；熊類盛世與文明有能力製作其形狀的長榻之間的時段；以及從那時起直到文明衰落的時段。" />
+  <part Name="Chair" NameForStatus="ErgonomicAdaptations" />
+  <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
+ </object>
+ <object Name="Torture Chair" Load="Merge">
+  <part Name="Render" DisplayName="酷刑椅" />
+  <part Name="Description" Short="在新的情境下，這張 消化椅 顯得威脅重重。乾涸的血跡塗抹在塑膠座墊上，其導管像一團 蠕蟲 般磨損脫線。" />
+  <part Name="Chair" NameForStatus="強化審訊系統" />
+  <tag Name="HeroNameTitleDescriptor" Value="受難者、極其惡劣、放血者、屠夫、殘酷、毀滅者、失血者、刺穿者、貫穿者" />
+  <tag Name="HeroNameTitleClientele" Value="審判官、訊問官、施虐狂、殘酷者、悔罪者、酷刑者" />
+ </object>
+ <object Name="Hyperbiotic Chair" Load="Merge">
+  <part Name="Render" DisplayName="超生物椅" />
+  <part Name="Description" Short="隱藏的微型反應爐將粒子撞擊在一起，產生熱能，並驅動生物機器裝置，為受傷的躺椅恢復生命力。" />
+  <part Name="Chair" NameForStatus="HyperbioticSystems" />
+  <tag Name="HeroNameTitleDescriptor" Value="照護者、可調式、矯形、治療、醫治者、修復者" />
+ </object>
+ <object Name="Gravchair" Load="Merge">
+  <part Name="Render" DisplayName="{{K|重力}}椅" />
+  <part Name="Description" Short="在熱車床上磨平的塑膠被揉捏成一種設計，喚起了「食者」對於完美球體如何扭曲自身周圍時空的直覺。" />
+  <part Name="Chair" NameForStatus="ContragravSystems" />
+  <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、懶散、享樂、柔軟、豐腴、美食主義、動感" />
+ </object>
+ <object Name="Ornate Chair" Load="Merge">
+  <part Name="Render" DisplayName="華麗椅子" />
+  <part Name="Description" Short="坐著的思想者能感受到座墊的豐盈，尖銳的拱形靠背壓迫著愛玩的背部，而爪球足則暗示著這件家具本身隱藏著生命。這是一把充滿意義的椅子。" />
+  <tag Name="HeroNameTitleDescriptor" Value="舒適、頹廢、美食主義、懶散、奢華、斜靠、柔軟、享樂、豐腴" />
+ </object>
+ <object Name="Ornate Bench" Load="Merge">
+  <part Name="Render" DisplayName="華麗長凳" />
+  <part Name="Description" Short="在 高爾格塔(Golgotha) 的深處，=subject.name= 遇見了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。" />
+ </object>
+ <object Name="Scrapasan" Load="Merge">
+  <part Name="Render" DisplayName="斯卡帕桑椅" />
+  <part Name="Description" Short="這個由搜刮來的紡織品與墊料製成的碗狀籃子張開著口，承諾著一個謙卑、舒適的擁抱，隨之而來的是艱辛的脫身。" />
+  <tag Name="HeroNameTitleDescriptor" Value="舒適、隨和、謙遜、特立獨行、歪斜、凹凸不平、拼湊、豪華、怪異" />
+ </object>
+ <object Name="Starmchair" Load="Merge">
+  <part Name="Render" DisplayName="星椅" />
+  <part Name="Description" Short="三根鋼製槍管組成了一個帶有弧形邊緣、充滿光輝儀式感的三角形。它們安置在伺服關節底座上。上方有一對獨立關節的攝影機，其轉動的靈活性比一般人對自動化武器的預期還要高。" />
+  <part Name="Chair" NameForStatus="ErgonomicAdaptations" />
+  <tag Name="HeroNameTitleDescriptor" Value="奢華、頹廢、舒適、斜靠、懶散、享樂、柔軟、豐腴、美食主義" />
+ </object>
+ <object Name="Sofa" Load="Merge">
+  <part Name="Render" DisplayName="沙發" />
+  <part Name="Description" Short="濃密的綠色簇狀物被編織成厚實柔軟的格柵，裡面塞滿了 水藤 碎屑與 發光烏鴉 羽毛，接著掛在傾斜的木架上。" />
+ </object>
+ <object Name="Sofa L" Load="Merge">
+  <part Name="Render" DisplayName="沙發" />
+ </object>
+ <object Name="Sofa C" Load="Merge">
+  <part Name="Render" DisplayName="沙發" />
+ </object>
+ <object Name="Sofa R" Load="Merge">
+  <part Name="Render" DisplayName="沙發" />
+ </object>
+ <object Name="Chest" Load="Merge">
+  <part Name="Render" DisplayName="箱子" />
+  <part Name="Description" Short="一個帶有鉸鏈蓋與插銷的木製儲物箱。表面刻下的痕跡暗示著語言完整的機率陣列，以及其缺失之處。" />
+ </object>
+ <object Name="ChestIsner" Load="Merge">
+  <part Name="Description" Short="一個帶有鉸鏈蓋和插銷的木製儲物箱。表面刻下的痕跡暗示了語言完整的機率陣列，以及其缺失的可能性。一個敞開的鎖上刻著一滴濺出的水滴。" />
+  <part Name="Render" DisplayName="箱子" />
+ </object>
+ <object Name="Metal Chest1" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest2" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest3" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest4" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest5" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest6" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest7" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="Metal Chest8" Load="Merge">
+  <part Name="Description" Short="黯淡鋼材的表面被黃銅包圍，並沾上了指紋留下的歲月痕跡。蓋子已扣緊。" />
+ </object>
+ <object Name="FossilizedRemains" Load="Merge">
+  <part Name="Render" DisplayName="化石殘骸" />
+  <part Name="Description" Short="牙齒、外殼與骨頭被泥土污垢黑化並進入停滯狀態。" />
+ </object>
+ <object Name="RustLocker" Load="Merge">
+  <part Name="Render" DisplayName="{{r|鏽蝕}}的置物櫃" />
+  <part Name="Description" Short="黃銅帶框住了一個被空氣和雨水侵蝕成紅色的舊鐵盒。" />
+ </object>
+ <object Name="MedLocker" Load="Merge">
+  <part Name="Render" DisplayName="醫療儲物櫃" />
+  <part Name="Description" Short="黯淡鋼材的表面留有指紋痕跡。蓋子上繪有一個紅色的十字，並已扣緊。" />
+ </object>
+ <object Name="Locker" Load="Merge">
+  <part Name="Render" DisplayName="置物櫃" />
+  <part Name="Description" Short="一個看起來因年代久遠而磨損的金屬置物櫃。" />
+ </object>
+ <object Name="Scrapable Deposit Box 6" Load="Merge">
+  <part Name="Render" DisplayName="可刮取的存款箱" />
+  <part Name="Description" Short="金屬板將鉻色紙箱分割成金色矩形。 內部, artifacts 等待著預定的磨損並回歸礦物形態。" />
+ </object>
+ <object Name="Weapon Rack" Load="Merge">
+  <part Name="Render" DisplayName="武器架" />
+  <part Name="Description" Short="木製與鉻製的桿子讓武器得以安穩地放置。" />
+  <part Name="Container" Preposition="on" />
+ </object>
+ <object Name="Gun Rack" Load="Merge">
+  <part Name="Render" DisplayName="槍架" />
+  <part Name="Description" Short="木製與鉻製的支柱讓槍械得以安穩地放置。" />
+ </object>
+ <object Name="Armor Rack" Load="Merge">
+  <part Name="Render" DisplayName="盔甲架" />
+  <part Name="Description" Short="木製與鉻製的支柱讓盔甲安穩地放置著。" />
+ </object>
+ <object Name="CyberneticsRack" Load="Merge">
+  <part Name="Render" DisplayName="控制架" />
+  <part Name="Description" Short="鉻合金插銷形成了一個晶格，仿生模組正在其中等待耦合。" />
+  <part Name="Container" Preposition="on" />
+ </object>
+ <object Name="CyberneticsStationRack" Load="Merge">
+  <part Name="Render" DisplayName="控制架" />
+  <part Name="Description" Short="鉻釘形成了一個格柵，模組正在其中等待耦合。" />
+  <part Name="Container" Preposition="on" />
+ </object>
+ <object Name="BaseWedgeChest" Load="Merge">
+  <part Name="Render" DisplayName="信用鎖箱" />
+  <part Name="Description" Short="一個由拋光且防腐金屬製成的鎖定箱上，刻有編號矩形凹槽。" />
+ </object>
+ <object Name="Reliquary" Load="Merge">
+  <part Name="Render" DisplayName="聖物箱" />
+  <part Name="Description" Short="在過去的一個塵封角落，無名的工匠們為條紋大理石上釉，並鑲嵌金箔，用以存放一位垂頭喪氣的食者（Eater）的傳家寶與隨葬品。" />
+ </object>
+ <object Name="SultanReliquaryW" Load="Merge">
+  <part Name="Render" DisplayName="聖物箱" />
+  <part Name="Description" Short="巨型大理石板圍繞著存放帝國珍寶的禁制棱鏡，其中包括生物與主權之「面」。在它們廣闊的表面上，金工勾勒出生命及其邊界的幾何序列；流水從世界女像柱的身軀流下，又捲回天穹。" />
+ </object>
+ <object Name="SultanReliquaryE" Load="Merge">
+  <part Name="Render" DisplayName="聖物箱" />
+  <part Name="Description" Short="巨型大理石板圍繞著存放帝國珍寶的禁制棱鏡，其中包括生物與主權之「面」。在它們廣闊的表面上，金工勾勒出生命及其邊界的幾何序列；流水從世界女像柱的身軀流下，又捲回天穹。" />
+ </object>
+ <object Name="Recoming Reliquary" Load="Merge">
+  <part Name="Render" DisplayName="重現聖物箱" />
+  <part Name="Description" Short="在過去的一個塵封角落，無名的工匠為條紋大理石上釉並鑲嵌紫水晶，用以安置歸來的「高階噬食者」的凡間齒輪。" />
+ </object>
+ <object Name="Melted Reliquary" Load="Merge">
+  <part Name="Render" DisplayName="熔融聖物箱" />
+  <part Name="Description" Short="大理石紋路抹入了熔化的粉紅色岩渣中；那永恆的箱子正敞開著。" />
+ </object>
+ <object Name="Woven Basket" Load="Merge">
+  <part Name="Render" DisplayName="編織籃" />
+  <part Name="Description" Short="沼澤蘆葦經由經緯交織手工編織成一個用於存放束狀物和其他乾貨的 容器。" />
+  <tag Name="QuestableVerb" Value="放入某物" />
+ </object>
+ <object Name="Multicabinet" Load="Merge">
+  <part Name="Render" DisplayName="滑動抽屜櫃" />
+  <part Name="Description" Short="鍍鋅金屬製成的抽屜以各種尺寸的矩形排列在櫃子裡。儲存空間呈現分形結構。" />
+ </object>
+ <object Name="Brazier" Load="Merge">
+  <part Name="Render" DisplayName="青銅火盆" />
+  <part Name="Description" Short="磨光的青銅被熱煤燒灼，用於點亮儀式之光。" />
+ </object>
+ <object Name="Tall Brazier" Load="Merge">
+  <part Name="Render" DisplayName="青銅火盆" />
+  <part Name="Description" Short="磨光的青銅被熱煤燒灼，用於點亮儀式之光。" />
+ </object>
+ <object Name="Sconce" Load="Merge">
+  <part Name="Render" DisplayName="火炬架" />
+  <part Name="Description" Short="一團明亮燃燒的手火懸掛在木頭與鐵器之間。" />
+ </object>
+ <object Name="Torchpost" Load="Merge">
+  <part Name="Render" DisplayName="火炬架" />
+  <part Name="Description" Short="一團明亮燃燒的手火懸掛在木頭與鐵器之間。" />
+ </object>
+ <object Name="Unlit Torchpost" Load="Merge">
+  <part Name="Render" DisplayName="火炬架" />
+  <part Name="Description" Short="一個木頭與鐵製成的燭台，不發光地懸掛著。" />
+ </object>
+ <object Name="Techlight1" Load="Merge">
+  <part Name="Render" DisplayName="弧光燭台" />
+  <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
+ </object>
+ <object Name="Techlight2" Load="Merge">
+  <part Name="Render" DisplayName="弧光燭台" />
+  <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
+ </object>
+ <object Name="Techlight3" Load="Merge">
+  <part Name="Render" DisplayName="弧光燭台" />
+  <part Name="Description" Short="鋒利的鉻合金尖端構成了這件實用型燈具的頂點。光芒從其邊緣迸發，照亮了世界。" />
+ </object>
+ <object Name="Full-Spectrum Techlight" Load="Merge">
+  <part Name="Render" DisplayName="全光譜亮壁燈" />
+  <part Name="Description" Short="鉻合金的尖銳點是這款實用照明裝置的頂點。全光譜的亮度從其邊緣迸發，照亮了世界。" />
+ </object>
+ <object Name="Half Candelabra" Load="Merge">
+  <part Name="Render" DisplayName="燭台" />
+  <part Name="Description" Short="蠟從頑固的蠟燭中流下，滴落在燭台上，在青銅層之間形成了一道蠟瀑。" />
+ </object>
+ <object Name="Candelabra" Load="Merge">
+  <part Name="Render" DisplayName="燭台" />
+  <part Name="Description" Short="蠟從頑固的蠟燭中流下，滴落在燭台上，在青銅層之間形成了一道蠟瀑。" />
+ </object>
+ <object Name="Tomb Techlight1" Load="Merge">
+  <part Name="Render" DisplayName="弧光燭台" />
+  <part Name="Description" Short="鋒利的鉻合金尖端構成了這件裝飾型燈具的頂點。光芒從其邊緣迸發，點燃了世界。" />
+ </object>
+ <object Name="Vessel" Load="Merge">
+  <tag Name="QuestableVerb" Value="從...飲用" />
+ </object>
+ <object Name="Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+  <part Name="Description" Short="一大片浸透的軟組織黏附在地面上。=pronouns.Subjective= 帶著灼熱的生命力 蜷縮。" />
+ </object>
+ <object Name="Vase Unhandled" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+ </object>
+ <object Name="Cider Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+ </object>
+ <object Name="Honey Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+ </object>
+ <object Name="Wine Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+ </object>
+ <object Name="Oil Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+ </object>
+ <object Name="Bottle" Load="Merge">
+  <part Name="Render" DisplayName="玻璃瓶" />
+  <part Name="Description" Short="一個由吹製玻璃製成的 容器，呈現月牙狀弧度。其風格暗示它起源於 莫格拉伊(Moghra'yi) 另一側的 煙霧之神海 沿岸，且很可能是由 駝獸 出口貿易的產物。" />
+ </object>
+ <object Name="Wide Bottle" Load="Merge">
+  <part Name="Render" DisplayName="寬口玻璃瓶" />
+  <part Name="Description" Short="玻璃被吹製成寬大的碗狀與細長的杯莖，遵循著林地覆蓋山脈上的拉吉諾斯（lagynos）傳統。這種風格的首批工匠是在穆薩木（musa wood）那濃厚且成熟的空氣中工作的嗎？紡錘(Spindle) 閃爍粉塵他們的研磨板與吹管嗎？" />
+ </object>
+ <object Name="Pitcher" Load="Merge">
+  <part Name="Render" DisplayName="陶製水罐" />
+  <part Name="Description" Short="一個帶有拖尾的容器最初是在清晨溫暖的陶輪上製作而成的。一位峽谷探險者格外小心地塑造了瓶緣，以保存珍貴的生命液體。" />
+ </object>
+ <object Name="Ewer" Load="Merge">
+  <part Name="Render" DisplayName="水壺" />
+  <part Name="Description" Short="青銅經過熔化、冷卻、塑形與蝕刻，用以承載生命之水。" />
+ </object>
+ <object Name="Jug" Load="Merge">
+  <part Name="Render" DisplayName="陶罐" />
+  <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
+ </object>
+ <object Name="Jug Eastern Style" Load="Merge">
+  <part Name="Render" DisplayName="陶罐" />
+  <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
+ </object>
+ <object Name="Jug Wide Eastern Style" Load="Merge">
+  <part Name="Render" DisplayName="陶罐" />
+  <part Name="Description" Short="陶器圓潤且經過窯燒，用於儲存油脂與葡萄酒。" />
+ </object>
+ <object Name="Long Jug" Load="Merge">
+  <part Name="Render" DisplayName="容器" />
+  <part Name="Description" Short="黏土在陶輪上旋轉並塑造成波浪形，經過燒製與上釉，成為傳統的 容器。" />
+ </object>
+ <object Name="Recoming Water Jug" Load="Merge">
+  <part Name="Render" DisplayName="初啜之器" />
+  <part Name="Description" Short="黏土在陶輪上旋轉，被塑造成波浪狀，經火燒製後，釉化成一個儀式用的容器。兩幅象形圖並排展示著：「生命」與「飲用」。" />
+ </object>
+ <object Name="Melted Jug" Load="Merge">
+  <part Name="Render" DisplayName="裂紋裝飾器皿" />
+  <part Name="Description" Short="上釉且過熱的黏土裂開了。兩幅象形文字已變得無法辨識。" />
+ </object>
+ <object Name="Cider Pitcher" Load="Merge">
+  <part Name="Render" DisplayName="陶製水罐" />
+ </object>
+ <object Name="Honey Pitcher" Load="Merge">
+  <part Name="Render" DisplayName="陶製水罐" />
+ </object>
+ <object Name="Wine Pitcher" Load="Merge">
+  <part Name="Render" DisplayName="陶製水罐" />
+ </object>
+ <object Name="Oil Pitcher" Load="Merge">
+  <part Name="Render" DisplayName="陶製水罐" />
+ </object>
+ <object Name="Grit Gate Honey Vase" Load="Merge">
+  <part Name="Render" DisplayName="花瓶" />
+  <part Name="Description" Short="彩繪的垛口環繞著這個金屬花瓶的赤道部位。" />
+ </object>
+ <object Name="Campfire" Load="Merge">
+  <part Name="Render" DisplayName="營火" />
+  <part Name="Description" Short="早期地球溫暖的磷光被木磚整齊地編織成格狀，現在的功能就像一顆微型恆星。" />
+ </object>
+ <object Name="Campfire Remains" Load="Merge">
+  <part Name="Render" DisplayName="營火殘骸" />
+  <part Name="Description" Short="燒焦的木芯被踩踏過的灰燼所包圍。" />
+ </object>
+ <object Name="Oven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <part Name="Description" Short="熱氣從厚實的 黏土烤爐 劈啪作響的火焰中散發出來，隨之而來的是美味食物的香氣。" />
+  <tag Name="QuestableVerb" Value="在...烹飪" />
+ </object>
+ <object Name="ChefOven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <part Name="Description" Short="熱氣從厚實的 黏土烤爐 劈啪作響的火焰中散發出來，隨之而來的是美味食物的香氣。" />
+ </object>
+ <object Name="JoppaOven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <tag Name="PresetMealMessage" Value="吃新鮮的蘋果 matz。" />
+  <part Name="Description" Short="溫暖從厚實的黏土烤爐那劈啪作響的火焰中散發出來，隨之而來的是熱騰騰的星蘋果果醬與烤餅的味道。" />
+ </object>
+ <object Name="KyakukyaOven" Load="Merge">
+  <part Name="Render" DisplayName="泥窯" />
+  <tag Name="PresetMealMessage" Value="喝下香料蘑菇蘋果酒。" />
+  <part Name="Description" Short="溫暖從圓形泥窯的劈啪火光中散發出來，隨之而來的是香料蘋果酒與鹽漬蕈類的氣味。" />
+ </object>
+ <object Name="EzraOven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <tag Name="PresetMealMessage" Value="在甜葉中吃羊。" />
+  <part Name="Description" Short="溫暖從劈啪作響的圓形 黏土烤爐 火堆中散發出來，隨之而來的是蒸羊肉與甜香蕉的味道。" />
+ </object>
+ <object Name="YdFreeholdOven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <tag Name="PresetMealMessage" Value="吃一些舌尖肉（Tongue and Cheek）。" />
+  <part Name="Description" Short="溫暖從圓形的 黏土烤爐 的劈啪火焰中散發出來，隨之而來的是發酵舌頭與凝固愛意的氣味。" />
+ </object>
+ <object Name="MopangoOven" Load="Merge">
+  <part Name="Render" DisplayName="骨製烤爐" />
+  <tag Name="PresetMealMessage" Value="吃骨頭巴巴卡。" />
+  <part Name="Description" Short="溫暖從圓形的骨製烤爐那劈啪作響的火焰中散發出來，隨之而來的是發酵糕點、甜香蕉和溫熱潛行者的氣味。" />
+ </object>
+ <object Name="StiltOven" Load="Merge">
+  <part Name="Render" DisplayName="石爐" />
+  <tag Name="PresetMealMessage" Value="吃一些熱辣且多刺的植物。" />
+  <part Name="Description" Short="熱氣從明亮的石爐火堆中散發出來，隨之而來的是熱騰騰的脊椎果果醬與烤尾巴的香味。" />
+ </object>
+ <object Name="BeyLahOven" Load="Merge">
+  <part Name="Render" DisplayName="黏土烤爐" />
+  <tag Name="PresetMealMessage" Value="吃我的啦湯。" />
+  <part Name="Description" Short="溫暖從厚實的黏土烤爐那劈啪作響的火焰中散發出來，隨之而來的是拉布肉湯與蒸matz的香氣。" />
+ </object>
+ <object Name="GritGateOven" Load="Merge">
+  <part Name="Render" DisplayName="電烤箱" />
+  <tag Name="PresetMealMessage" Value="吃這碗粥。" />
+  <part Name="Description" Short="溫暖從黑暗電烤箱的劈啪火光中散發出來，隨之而來的是苦澀惡臭麥與煮沸電漿的味道。" />
+ </object>
+ <object Name="ChavvahOven" Load="Merge">
+  <part Name="Render" DisplayName="水晶烤箱" />
+  <part Name="Description" Short="熱氣從圓形晶體烤爐的劈啪火焰中散發出來，隨之而來的是冷卻靜電的味道。奇怪的是，這裡沒有任何預製的食材。" />
+ </object>
+ <object Name="Table" Load="Merge">
+  <part Name="Render" DisplayName="桌子" />
+  <part Name="Description" Short="活樹的分支被重新吸收並重塑成樹幹結。幾百年後，峽谷木工的油鋸擾亂了樹木幾何結構，並將其壓平以供民用。那段歷史仍以二維的形式留存，佈滿塵埃並以鉛筆劃刻。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
+  <tag Name="HeroNameTitleClientele" Value="悠閒裝飾者" />
+  <xtagTextFragments Skin="釉面" PoeticFeatures="平坦的表面、藝術感、溫柔的寧靜" />
+  <tag Name="QuestableVerb" Value="放上某物" />
+ </object>
+ <object Name="Metal Table" Load="Merge">
+  <part Name="Render" DisplayName="金屬桌" />
+  <tag Name="HeroNameTitleDescriptor" Value="平坦, 水平, L型, 堅固, 三足, 搖晃" />
+  <part Name="Description" Short="鋼鐵塗抹了液態鉻，冷卻後被鍛打成平整且易於加工的表面。" />
+ </object>
+ <object Name="Workbench" Load="Merge">
+  <part Name="Render" DisplayName="工作檯" />
+  <part Name="Description" Short="含水量良好的結節木材以直角支撐著土壤的重量。焦痕與鹽分裝飾著溝槽。" />
+ </object>
+ <object Name="Metal Workbench" Load="Merge">
+  <part Name="Render" DisplayName="金屬工作檯" />
+ </object>
+ <object Name="Desk" Load="Merge">
+  <part Name="Render" DisplayName="書桌" />
+  <part Name="Description" Short="木材是從潮濕的樹林中回收、刨成板材，並透過 Shale 橋運送到自由領地的。在那裡，木材被那些已適應無水空氣的木匠接收，他們渴望將這些豐富的木材用於自己的計畫中。" />
+ </object>
+ <object Name="Sleek Table" Load="Merge">
+  <part Name="Render" DisplayName="桌子" />
+  <part Name="Description" Short="一個銳利的長方形似乎平衡在一個較小的長方形之上的金屬桿上，形成了一個穩固的工作平面。看不見任何焊接痕跡。" />
+ </object>
+ <object Name="Low Table" Load="Merge">
+  <part Name="Render" DisplayName="低曼薩" />
+  <part Name="Description" Short="頂部有刮痕，那是研杵（研杵）弄碎木頭留下的。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
+  <tag Name="QuestableVerb" Value="放上某物" />
+ </object>
+ <object Name="Octagonal Table" Load="Merge">
+  <part Name="Render" DisplayName="八角桌" />
+  <part Name="Description" Short="這張桌子裝飾著彩繪曼陀羅，並由幾何之手塑形，向對稱與數字學致敬。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="八重、扁平、多節、水平、L型、堅固、三腳、搖晃" />
+  <tag Name="HeroNameTitleClientele" Value="悠閒裝飾者" />
+  <tag Name="QuestableVerb" Value="放上某物" />
+ </object>
+ <object Name="Dresser" Load="Merge">
+  <part Name="Render" DisplayName="梳妝台" />
+  <part Name="Description" Short="木材被精確地切割成抽屜，並安置在黃銅軌道上以存放衣物。" />
+  <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
+  <tag Name="HeroNameTitleClientele" Value="衣物、花花公子、時尚人士" />
+  <tag Name="QuestableVerb" Value="放入某物" />
+ </object>
+ <object Name="Book Table" Load="Merge">
+  <part Name="Render" DisplayName="書桌" />
+  <part Name="Description" Short="地裂中的居民製作著拼圖盒風格的桌子。他們的抽屜裡存放著速記式的想像力。" />
+  <part Name="Container" Preposition="on" />
+  <tag Name="HeroNameTitleDescriptor" Value="扁平,有節,平整,L型,堅固,三足,搖晃" />
+  <tag Name="HeroNameTitleClientele" Value="裝飾者、閱讀者、放鬆者" />
+  <tag Name="QuestableVerb" Value="放上某物" />
+ </object>
+ <object Name="Ornate Table" Load="Merge">
+  <part Name="Render" DisplayName="華麗桌子" />
+  <part Name="Description" Short="奢華桌腿上的鍍鉻刻紋逐漸收窄成爪球足，而在大理石表面上，幾何形狀的不完美處被磨掉並扔進了一個可能仍存在於某處的鐵桶中。食者們曾在此交談與計畫。" />
+ </object>
+ <object Name="Alchemist Table" Load="Merge">
+  <part Name="Render" DisplayName="煉金術士桌" />
+  <part Name="Description" Short="一張佈滿熱化學放射狀圖案的燒焦桌子上，放著一個小瓶架與蒸餾器。" />
+ </object>
+ <object Name="Grit Gate Table" Load="Merge">
+  <part Name="Render" DisplayName="工作檯" />
+ </object>
+ <object Name="Grit Gate Sleek Table" Load="Merge">
+  <part Name="Render" DisplayName="工作檯" />
+ </object>
+ <object Name="Grit Gate Metal Table" Load="Merge">
+  <part Name="Render" DisplayName="金屬工作檯" />
+ </object>
+ <object Name="Barathrum Table" Load="Merge">
+  <part Name="Render" DisplayName="工作檯" />
+ </object>
+ <object Name="Klanq Table" Load="Merge">
+  <part Name="Render" DisplayName="工作檯" />
+ </object>
+ <object Name="Globe" Load="Merge">
+  <part Name="Render" DisplayName="地球儀" />
+  <part Name="Description" Short="虛無化：當裝載於武器時，此物品在命中時會對目標造成星界負擔。當裝載於護甲或 盾牌 時，此物品會對穿戴者造成星界負擔。計算局部晶格上的能量可增加此效果的效力。" />
+ </object>
+ <object Name="Orrery" Load="Merge">
+  <part Name="Render" DisplayName="渾天儀" />
+  <part Name="Description" Short="黃銅齒輪、球體與圓環精準地模擬著世界與星辰的運轉。" />
+ </object>
+ <object Name="Clockthing" Load="Merge">
+  <part Name="Render" DisplayName="巴拉楚姆時鐘" />
+  <part Name="Description" Short="巴拉楚姆的發明紀錄了時間，透過冠輪來調節其進程，精確到每一瞬間。在得知其用途後，水霸委託製造了數十個類似裝置，以便在每天固定的時刻對其水庫進行精確測量。" />
+ </object>
+ <object Name="Bubblething" Load="Merge">
+  <part Name="Render" DisplayName="黃銅發泡機" />
+  <part Name="Description" Short="在發明事業的過程中，有時你會需要使用一種無形的灰色泡沫。或者，至少有一天你可能會需要它，因此一些 修補匠 審慎地預見了問題並發明了 黃銅發泡機。底座上刻著：『擁有所有的泡沫，免於那種或許有一天會需要泡沫卻沒有的悲哀』。" />
+  <part Name="ChargeSink" NameForStatus="FoamSystems" />
+ </object>
+ <object Name="Telescope" Load="Merge">
+  <part Name="Render" DisplayName="望遠鏡" />
+  <part Name="Description" Short="月牙形玻璃折射著光線，在虛擬的角度大小中繪製出影像。" />
+ </object>
+ <object Name="Bust of K4K5" Load="Merge">
+  <part Name="Render" DisplayName="K4K5 鍍鉻半身像" />
+  <part Name="Description" Short="鎢王那具有德爾斐風格的面容被凍結在鉻金屬中，鑄造得極其完美。" />
+ </object>
+ <object Name="Bust of Mehmet I" Load="Merge">
+  <part Name="Render" DisplayName="穆罕默德一世鍍鉻半身像" />
+  <part Name="Description" Short="硬鉻鑄造於柔軟臉頰與圓潤眉骨的模具中；學識的贊助國王被封聖了。" />
+ </object>
+ <object Name="Ornate Potted Plant 1" Load="Merge">
+  <part Name="Render" DisplayName="裝飾盆栽" />
+  <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
+ </object>
+ <object Name="Ornate Potted Plant 2" Load="Merge">
+  <part Name="Render" DisplayName="裝飾盆栽" />
+  <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
+ </object>
+ <object Name="Ornate Potted Plant 3" Load="Merge">
+  <part Name="Render" DisplayName="裝飾盆栽" />
+  <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
+ </object>
+ <object Name="Ornate Potted Plant 4" Load="Merge">
+  <part Name="Render" DisplayName="裝飾盆栽" />
+  <part Name="Description" Short="鮮綠色的植物葉瓣帶著鉻合金般的切口，從古老的坩堝中向外展開。它們像那些紮根於壤土的親戚一樣生存與呼吸，但它們的生物數據與永恆種子進行了拼接。即便周圍的食者正在腐爛，它們也不會死亡。" />
+ </object>
+ <object Name="Chalkboard" Load="Merge">
+  <part Name="Render" DisplayName="黑板" />
+  <part Name="Description" Short="切削過的板岩粉末混合了外化思想的雲狀殘餘，並由怪物高舉著。" />
+  <tag Name="HeroNameTitleDescriptor" Value="睿智、詭辯、可抹除、塵封" />
+  <tag Name="HeroNameTitleClientele" Value="詭辯家、修補匠、學者、學生" />
+ </object>
+ <object Name="Display Breadboard" Load="Merge">
+  <part Name="Render" DisplayName="展示麵包板" />
+  <part Name="Description" Short="塑料外殼鑲嵌在顆粒狀木材中，並佈滿了網格狀的接觸點。電容器與電感器被固定在彈簧夾內，並透過一束電線相互連接。" />
+ </object>
+ <object Name="Sewing Machine" Load="Merge">
+  <part Name="Render" DisplayName="縫紉機" />
+  <part Name="Description" Short="在刮痕斑駁的金屬 C 內部，一根針與一個梭準備將一對絲線穿入鎖邊縫中。底座四周刻滿了首字母。" />
+ </object>
+ <object Name="Mannequin" Load="Merge">
+  <part Name="Render" DisplayName="人體模型" />
+  <part Name="Description" Short="雙足形態從木材與玻璃纖維構成的繭中顯現。" />
+  <tag Name="HeroNameTitleDescriptor" Value="輪廓分明、美麗、端莊、靜止、怪誕、栩栩如生" />
+  <tag Name="HeroNameTitleClientele" Value="雕塑家、帽商、裁縫師、盔甲匠" />
+ </object>
+ <object Name="HamilcrabMannequin" Load="Merge">
+  <part Name="Render" DisplayName="巨大模特兒" />
+  <part Name="Description" Short="雙足形態從一個巨大的木材與玻璃纖維繭中顯現。" />
+ </object>
+ <object Name="Light Sculpture" Load="Merge">
+  <part Name="Render" DisplayName="光影雕塑" />
+  <part Name="Description" Short="藍色雷射光從基準光束中迸發，重新構建出由光學車床雕刻出的波前。空氣增添了一層顆粒感。" />
+ </object>
+ <object Name="Brain Sculpture" Load="Merge">
+  <part Name="Render" DisplayName="腦部雕塑" />
+  <part Name="Description" Short="泡沫填充物被排列成腦回與腦溝的形狀，以模擬大腦迷宮。" />
+ </object>
+ <object Name="Unfinished Sculpture" Load="Merge">
+  <part Name="Render" DisplayName="未完成雕塑" />
+  <part Name="Description" Short="大地的濕潤顏料——黏土、礦渣、鉻和染料——帶著物質重量呈現出半成形的狀態。轉化因猶豫不決或疏忽而停滯。" />
+ </object>
+ <object Name="Painted Column L" Load="Merge">
+  <part Name="Render" DisplayName="彩繪柱" />
+  <part Name="Description" Short="大理石在頂部如螺旋卷曲般綻放。柱子上濺滿了油漆。" />
+ </object>
+ <object Name="Painting" Load="Merge">
+  <part Name="Render" DisplayName="繪畫" />
+  <part Name="Description" Short="珍珠母油弄濕了米色的亞麻布，並滴落在畫架上。從 帆布 的平面上，一個影像被壓印出來。" />
+ </object>
+ <object Name="Mushroom Case" Load="Merge">
+  <part Name="Render" DisplayName="蘑菇殼" />
+  <part Name="Description" Short="半月形的玻璃屋頂覆蓋著地下室，保護著在內部繁衍興旺的食屍者。這是一座由鰓構成的生態建築。" />
+ </object>
+ <object Name="Harp" Load="Merge">
+  <part Name="Render" DisplayName="豎琴" />
+  <part Name="Description" Short="牛腸弦橫跨音板，玫瑰金包覆著豐富的木質琴頸與琴頭。&#xA;琴身形似半顆心；這是食者們最愛的殘留物。" />
+ </object>
+ <object Name="Rectangular Bells" Load="Merge">
+  <part Name="Render" DisplayName="矩形鐘" />
+  <part Name="Description" Short="矩形按鍵沿著傾斜的梯子排列，音高逐級上升。框架上掛著一個音符槌。" />
+ </object>
+ <object Name="Hammered Dulcimer" Load="Merge">
+  <part Name="Render" DisplayName="擊弦琴" />
+  <part Name="Description" Short="牛腸弦被拉緊在梯形琴上。音符匙懸掛在木製鞘中。" />
+ </object>
+ <object Name="Iron Maiden" Load="Merge">
+  <part Name="Render" DisplayName="鐵處女" />
+  <part Name="Description" Short="鏽跡斑斑的 棘刺 排列在鐵製 石棺 的 內部。其設計者對凡間的懲罰程度感到不滿，試圖連永恆的安眠也要加以墮落。" />
+  <tag Name="HeroNameTitleDescriptor" Value="受難者、放血者、屠夫、殘酷、失血者、刺穿者、貫穿者、折磨者" />
+  <tag Name="HeroNameTitleClientele" Value="審判官、施虐者、殘暴者、悔罪者、酷刑者" />
+  <xtagTextFragments Skin="尖刺" PoeticFeatures="高聳的身軀、威脅性的尖刺、令人窒息的封閉空間" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="Hookah" Load="Merge">
+  <part Name="Render" DisplayName="水煙壺" />
+  <part Name="Description" Short="冒煙的莖從水晶水菸壺中綻放。" />
+  <tag Name="QuestableVerb" Value="來自" />
+ </object>
+ <object Name="Cage" Load="Merge">
+  <part Name="Render" DisplayName="籠子" />
+  <part Name="Description" Short="這個箱子是由嚼過的電線與凹陷的鐵塊打造而成。" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="Forge" Load="Merge">
+  <part Name="Render" DisplayName="鍛爐" />
+  <part Name="Description" Short="鹽莖在古老石製管道壁爐的內部碎裂並冒出煙霧。" />
+ </object>
+ <object Name="Anvil" Load="Merge">
+  <part Name="Render" DisplayName="石砧" />
+  <part Name="Description" Short="一塊粗糙的 花崗岩 頂部已被磨平以便進行金屬加工，側面則磨圓成一個塑形角。" />
+ </object>
+ <object Name="Random Statue" Load="Merge">
+  <part Name="Description" Short="這座由 *material* 精雕細琢而成的雕像描繪了一隻 *creature.a**creature*：&#xA;" />
+ </object>
+ <object Name="Random Stone Statue" Load="Merge">
+  <part Name="Render" DisplayName="石像" />
+ </object>
+ <object Name="Random Marble Statue" Load="Merge">
+  <part Name="Render" DisplayName="大理石雕像" />
+ </object>
+ <object Name="ImplantedEaterStatue" Load="Merge">
+  <part Name="Render" DisplayName="植入式噬者雕像" />
+  <part Name="Description" Short="侵蝕將其特徵磨平成了抽象的形狀，但它曾是機器與人民結合的紀念碑。" />
+ </object>
+ <object Name="EaterStatue" Load="Merge">
+  <part Name="Render" DisplayName="噬者雕像" />
+  <part Name="Description" Short="五官從一塊石製 帆布 中噴湧而出，並破碎成一個來自遠古的身影。頭髮、皮膚、眉骨、大腿：這些細節孵化出了一種全新的 內部 你，一種陌生而熟悉的感覺。當你在這尊石化的肖像旁走動時，你驚訝於這位食者竟能將自己刻入你的時空編織之中。" />
+ </object>
+ <object Name="Oboroqoru Statue" Load="Merge">
+  <part Name="Render" DisplayName="歐博羅庫雕像" />
+  <part Name="Description" Short="這尊 奧博羅科魯 的石像高達二十跨度。其無名的雕刻家選擇描繪這位猿神盤腿而坐，他的三對巨大手臂各自交握著彼此。石像被 藤蔓 包圍，其看守者向自然妥協，除非植被威脅到遮蔽 奧博羅科魯的 溫柔面容。&#xA;森林孕育了各種色調的 花朵 —— 天藍、嫩綠、靛藍、珊瑚紅 —— 散落在 神龕 的基座上，對於這尊看似冷酷的神靈而言，這些不過是微不足道的祭品。" />
+  <tag Name="WorshippedAs" Value="奧博羅科魯" />
+ </object>
+ <object Name="Keresh Statue" Load="Merge">
+  <part Name="Render" DisplayName="鹿雕像" />
+  <part Name="Description" Short="會說話的生物似乎對這個「意志」的概念非常著迷，但很少有人能達成共識。當你觀察其他思考生物時，你的心智瞬間就會受到他們的影響，不是嗎？你透過模仿來「學習」，你的價值觀與信仰是從觀察中採納的。沒錯吧？&#xA;&#xA;我選擇將我的意識奉獻給一個新的範式，但這個選擇似乎與你對「意志」的概念有所不同。我們各說各話。" />
+  <tag Name="WorshippedAs" Value="Keresh" />
+ </object>
+ <object Name="statue of mason" Load="Merge">
+  <part Name="Render" DisplayName="尼斯洛克雕像" />
+  <part Name="Description" Short="星辰石匠 Nisroch 在此被描繪成以強壯的雙腿跨越大地。他穿著最喜愛的腰帶，其褶皺由精緻的金飾工藝打造。" />
+  <tag Name="WorshippedAs" Value="尼斯洛克" />
+ </object>
+ <object Name="statue of knight" Load="Merge">
+  <part Name="Render" DisplayName="貝爾雕像" />
+  <part Name="Description" Short="這尊 貝爾雕像 以磨光的理石承載著其巨大的重量。他揮舞著劃時代的護盾，因在星光黎明時阻擋了旋轉的氣雲而聞名遐邇。" />
+  <tag Name="WorshippedAs" Value="貝爾" />
+ </object>
+ <object Name="statue of Shekhinah" Load="Merge">
+  <part Name="Render" DisplayName="謝基納雕像" />
+  <part Name="Description" Short="在這裡，謝基納（Shekhinah）被用壯麗的蔚藍大理石雕刻成了永恆。他的身體被鑿刻得完美無瑕。他的金色冠冕使他成為眾父之父。" />
+  <tag Name="WorshippedAs" Value="Shekhinah" />
+ </object>
+ <object Name="statue of wizard" Load="Merge">
+  <part Name="Render" DisplayName="達貢雕像" />
+  <part Name="Description" Short="演說家達貢以其狂妄的姿態主宰著西側後殿。他的金色冠冕在火光中熠熠生輝。" />
+  <tag Name="WorshippedAs" Value="達貢" />
+ </object>
+ <object Name="statue of athlete" Load="Merge">
+  <part Name="Render" DisplayName="卡薩克斯雕像" />
+  <part Name="Description" Short="運動員卡薩克斯（Carthax）在此被描繪成正邁步前進的模樣。他閃爍著銀光的頭髮按照星界傳統束在腦後，當他在穹蒼中躍升時，髮絲隨之飄動。" />
+  <tag Name="WorshippedAs" Value="卡薩克斯" />
+ </object>
+ <object Name="statue of scholar" Load="Merge">
+  <part Name="Render" DisplayName="雷謝夫雕像" />
+  <part Name="Description" Short="被稱為「至高者」的 Resheph 舉起一根神祕的手指，療癒病患的傷口。" />
+  <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
+ </object>
+ <object Name="SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+  <part Name="Description" Short="" />
+  <tag Name="QuestableVerb" Value="祈禱於，褻瀆" />
+ </object>
+ <object Name="JoppaSultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period1SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period2SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period3SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period4SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period5SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="Period6SultanShrine" Load="Merge">
+  <part Name="Render" DisplayName="神龕" />
+ </object>
+ <object Name="NephilimShrine" Load="Merge">
+  <part Name="Render" DisplayName="尼非林神龕" />
+  <tag Name="QuestableVerb" Value="祈禱於，褻瀆" />
+ </object>
+ <object Name="AgolgotShrine" Load="Merge">
+  <part Name="Render" DisplayName="吉爾什·阿戈洛特神龕" />
+  <part Name="Description" Short="一個巨大的頭顱頹然倒在舊石中，從中央脊椎生出的刻蝕囊腫，喚起其半神源頭所傳播疾病的意象。幾代人的苔蘚環繞著這頭怪獸長滿疣狀的腿部。" />
+  <tag Name="WorshippedAs" Value="阿格爾戈特" />
+ </object>
+ <object Name="BethsaidaShrine" Load="Merge">
+  <part Name="Render" DisplayName="吉爾什·貝特賽達神龕" />
+  <part Name="Description" Short="垂下的雙肩勾勒出龜裂石背般的山谷，兩對交纏的手臂在石雕師描繪半神覺醒的造像中，於那百節關節處匯合。世代積累的苔蘚環繞著巨獸靜脈曲張的雙腿。" />
+  <tag Name="WorshippedAs" Value="貝賽達" />
+ </object>
+ <object Name="RermadonShrine" Load="Merge">
+  <part Name="Render" DisplayName="吉什·雷瑪東神龕" />
+  <part Name="Description" Short="一條帶刺的怪魚棲息在石刻水池中。下方是詩人們所描繪的 鰭尾，正從 Maqqom 的管道中噴出泡沫狀的鹽水，形成了 Hinnom 湖。世代相傳的苔蘚環繞著它的底鰭。" />
+  <tag Name="WorshippedAs" Value="雷馬東" />
+ </object>
+ <object Name="ShugruithShrine" Load="Merge">
+  <part Name="Render" DisplayName="掘地者舒格魯斯神龕" />
+  <part Name="Description" Short="鑿出的 棘刺 環繞著蜿蜒的世界吞噬者，牠挖掘了那些曾居住著晚期穴居人的地底洞窟。傳說中的一百零九隻眼睛跨越時空凝視著，而世代相傳的苔蘚環繞著這頭巨獸帶狀的腹部。" />
+  <tag Name="WorshippedAs" Value="舒古瑞斯" />
+ </object>
+ <object Name="QasShrine" Load="Merge">
+  <part Name="Render" DisplayName="吉爾什·卡斯神龕" />
+  <part Name="Description" Short="石頭被雕刻成粗糙的圓頂，並開有間距均勻的正方形窗戶以利空氣流通。圓頂 內部 的微小溫差導致空氣中的露水凝結，並在下方的 集水盆 累積。" />
+  <tag Name="WorshippedAs" Value="卡斯" />
+ </object>
+ <object Name="QonShrine" Load="Merge">
+  <part Name="Render" DisplayName="吉什·昆神龕" />
+  <part Name="Description" Short="一隻神天鵝以石刻般的優雅姿態坐著，它巨大的風箏狀尾羽收攏成令人眩暈的環流。她表情空洞且難以捉摸，以此喚起雕刻家心中那種將她視為「不確定性夢魘」的感覺。幾代人的苔蘚簇擁在獸類的絨毛邊緣。" />
+  <tag Name="WorshippedAs" Value="昆" />
+ </object>
+ <object Name="RuinedNephilimShrime" Load="Merge">
+  <part Name="Render" DisplayName="毀壞的神龕" />
+ </object>
+ <object Name="JoppaReshephShrine" Load="Merge">
+  <part Name="Render" DisplayName="雷謝夫神龕" />
+  <part Name="Epithets" Primary=", 最後的蘇丹" />
+  <part Name="ZoneLandmarkObject" Preposition="由" />
+  <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
+ </object>
+ <object Name="Eater Hologram" Load="Merge">
+  <part Name="Render" DisplayName="噬者全息圖" />
+  <part Name="Description" Short="焦灼的光芒在鉻金屬板上爆裂，碎裂成一個來自遠古的身影。頭髮、皮膚、額頭、大腿：這些特徵孵化出一種新的 內部 情緒，一種似曾相識的陌生感。隨著你的移動，該身影產生了視差位移；你驚訝於這位食者是如何成功地將自己刻入你的時空編織之中。" />
+ </object>
+ <object Name="hologram of Shekhinah" Load="Merge">
+  <part Name="Render" DisplayName="謝基納的全息圖" />
+  <part Name="Description" Short="榮耀的 Shekhinah、白銀阿多尼斯與初生之父，在光輝的裝飾中擺出姿勢。祂擁有永恆星辰般的身姿，穩定且恆久，祂審視著為祂建立的神廟，並欣慰地微微側頭。為了紀念祂與 Kasaphescence 的結合，祂將自己的化身披上蔚藍色調，捨棄了低等植物與黏土大地那種翠綠與赭紅。" />
+  <part Name="Chat" Says="[Shekhinah 向你轉身，張開雙臂。]" />
+  <tag Name="WorshippedAs" Value="Shekhinah" />
+ </object>
+ <object Name="Village Monument" Load="Merge">
+  <part Name="Description" Short="" />
+ </object>
+ <object Name="Village Monument Obelisk" Load="Merge">
+  <part Name="Render" DisplayName="石方尖碑" />
+  <part Name="Description" Short="石頭透過朝向蒼穹來彰顯其重要性，而最古老的智慧正從那裡蠢蠢欲動。" />
+ </object>
+ <object Name="Village Monument Amphora" Load="Merge">
+  <part Name="Render" DisplayName="陶瓷雙耳瓶" />
+  <part Name="Description" Short="容器的腹部是神聖的，因為它們既承載著生命之水，又將流動的過去投射到凸出的現在。" />
+ </object>
+ <object Name="Village Monument Birdhouse" Load="Merge">
+  <part Name="Render" DisplayName="石製石室" />
+  <part Name="Description" Short="這座為小型有翼生物建造的蜜酒大廳中，刻著牠們無法理解的故事。" />
+ </object>
+ <object Name="Village Monument Diptych" Load="Merge">
+  <part Name="Render" DisplayName="雕刻雙聯畫" />
+  <part Name="Description" Short="一段敘事被侷限於這塊石頭的刻痕邊界，以及其形式那簡約的二元性之中。" />
+ </object>
+ <object Name="Village Monument Stele" Load="Merge">
+  <part Name="Render" DisplayName="石碑" />
+  <part Name="Description" Short="刻在古老岩石上的符文折射到了現世。" />
+ </object>
+ <object Name="Village Monument Monolith" Load="Merge">
+  <part Name="Render" DisplayName="石碑" />
+  <part Name="Description" Short="苔蘚物質嵌入了由雕刻岩石所喚起的敘事世界中。" />
+ </object>
+ <object Name="Village Monument Sculpture" Load="Merge">
+  <part Name="Render" DisplayName="鍍鉻雕塑" />
+  <part Name="Description" Short="從金屬工人的手中，金屬棒與條帶噴湧而出，並冷卻成型。" />
+ </object>
+ <object Name="Village Monument Orb" Load="Merge">
+  <part Name="Render" DisplayName="巨型球體" />
+  <part Name="Description" Short="人們對這顆球體表示敬意，它被磨平至理想狀態，並架設在黃銅支腳上。" />
+ </object>
+ <object Name="Village Hologram 1" Load="Merge">
+  <part Name="Render" DisplayName="歷史全息圖" />
+  <part Name="Description" Short="閃爍的干涉光圖案形成了一幅莫列波紋瀑布般的景象。" />
+ </object>
+ <object Name="Village Hologram 2" Load="Merge">
+  <part Name="Render" DisplayName="歷史全息圖" />
+  <part Name="Description" Short="閃爍的干涉光圖案形成了一幅莫列波紋瀑布般的景象。" />
+ </object>
+ <object Name="Kyakukya Monument 1" Load="Merge">
+  <part Name="RulesDescription" Text="這件物品是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在甲蟲之月下，人們在此定居，為猿猴薩德 奧博羅科魯 收集過路貨物，於是 恰庫恰(Kyakukya) 便由此建立。" />
+ </object>
+ <object Name="Kyakukya Monument 2" Load="Merge">
+  <part Name="RulesDescription" Text="此物件是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在 979 年，傳奇的白化猿恩圖厭倦了用鈍器將生物打死，於是前往斯維河一處被根鬚纏繞之地。他在那裡遇見了恰庫恰及其居民。恰庫恰村民請求恩圖運用他的統治才能來領導村莊。&#xA;" />
+ </object>
+ <object Name="Yd Village Monument 1" Load="Merge">
+  <part Name="RulesDescription" Text="這件物品是 {{M|伊德自由領}} 歷史中某個場景的紀念碑。&#xA;&#xA;在環流鼎盛時期數百年後，斯瓦迪姆 戈克、麥克與吉烏布在礁石海綿內部徘徊時，遇見了加爾加爾 萬眼。他們共同建立了伊德自由領，以此度過餘生。&#xA;" />
+ </object>
+ <object Name="Yd Village Monument 2" Load="Merge">
+  <part Name="RulesDescription" Text="這件物品是紀念 {{M|伊德自由領}} 歷史中一段場景的紀念碑。&#xA;&#xA;在 901 年，伊德自由領的村民及其創始人廢除了定居點內所有形式的階級制度。因此，自由領公民生活的兩大支柱變成了無政府狀態與真實性。" />
+ </object>
+ <object Name="Sign" Load="Merge">
+  <part Name="Description" Short="一塊陶板被塗上了赭石與磨碎的鐵粉。" />
+  <part Name="Chat" Says="[模糊不清的塗鴉。]" />
+ </object>
+ <object Name="AppleSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="星蘋果與蘋果酒" />
+ </object>
+ <object Name="AppleSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="香料蘋果酒" />
+ </object>
+ <object Name="AppleSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="蘋果。真好吃。" />
+ </object>
+ <object Name="BookSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="書籍" />
+ </object>
+ <object Name="BookSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="智慧與知識" />
+ </object>
+ <object Name="BookSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="墨跡" />
+ </object>
+ <object Name="BottleSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="甜蜂蜜" />
+ </object>
+ <object Name="BottleSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="蜜汁" />
+ </object>
+ <object Name="BottleSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="黏稠蜂蜜" />
+ </object>
+ <object Name="BootSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="靴子 在這裡！" />
+ </object>
+ <object Name="BootSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="Boot and Shoe" />
+ </object>
+ <object Name="BootSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="鞋匠" />
+ </object>
+ <object Name="HatSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="Hats and Caps" />
+ </object>
+ <object Name="HatSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="遮蔽你脆弱的頭部" />
+ </object>
+ <object Name="HatSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="時尚帽子" />
+ </object>
+ <object Name="GloveSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="手套與 Mittens" />
+ </object>
+ <object Name="GloveSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="手指套" />
+ </object>
+ <object Name="GloveSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="現在穿上手套" />
+ </object>
+ <object Name="CloakSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="斗篷與披風" />
+ </object>
+ <object Name="CloakSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="披肩、斗篷及更多" />
+ </object>
+ <object Name="CloakSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="時尚斗篷" />
+ </object>
+ <object Name="ArmorSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="背心與鎖子甲" />
+ </object>
+ <object Name="ArmorSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="各式護甲" />
+ </object>
+ <object Name="ArmorSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="胸甲" />
+ </object>
+ <object Name="GunSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="Guns and Ammo" />
+ </object>
+ <object Name="GunSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="手槍、步槍及更多" />
+ </object>
+ <object Name="GunSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="槍枝！" />
+ </object>
+ <object Name="DiscSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="數據磁碟" />
+ </object>
+ <object Name="DiscSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="設計圖" />
+ </object>
+ <object Name="DiscSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="打造你自己的神器" />
+ </object>
+ <object Name="LiquidSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="異域液體" />
+ </object>
+ <object Name="LiquidSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="異域液體" />
+ </object>
+ <object Name="LiquidSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="異域液體" />
+ </object>
+ <object Name="JewelSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="珠寶與 Jewels" />
+ </object>
+ <object Name="JewelSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="鑲寶貨品" />
+ </object>
+ <object Name="JewelSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="寶石與珠寶" />
+ </object>
+ <object Name="HookahSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="薄荷煙與酒" />
+ </object>
+ <object Name="HookahSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="水管與 Rest" />
+ </object>
+ <object Name="HookahSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="吸菸室" />
+ </object>
+ <object Name="GrenadeSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="爆炸物" />
+ </object>
+ <object Name="GrenadeSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="轟鳴球" />
+ </object>
+ <object Name="GrenadeSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="手榴彈與更多" />
+ </object>
+ <object Name="PepperSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="藥劑師" />
+ </object>
+ <object Name="PepperSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="草藥與補劑" />
+ </object>
+ <object Name="PepperSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="簡單" />
+ </object>
+ <object Name="FoodSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="食物" />
+ </object>
+ <object Name="FoodSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="甜味與鹹味" />
+ </object>
+ <object Name="FoodSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="辛辣食物" />
+ </object>
+ <object Name="PreserveSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="保存食品" />
+ </object>
+ <object Name="PreserveSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="食物與香料" />
+ </object>
+ <object Name="PreserveSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="烹飪準備" />
+ </object>
+ <object Name="PigSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="[模糊不清的塗鴉。]" />
+ </object>
+ <object Name="WineSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="葡萄酒" />
+ </object>
+ <object Name="WineSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="葡萄女巫釀" />
+ </object>
+ <object Name="WineSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="釀酒師" />
+ </object>
+ <object Name="ImplantSign1" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="控制論" />
+ </object>
+ <object Name="ImplantSign2" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="鉻腸" />
+ </object>
+ <object Name="ImplantSign3" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="機器與族群之器官" />
+ </object>
+ <object Name="ArgyveSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="走開" />
+ </object>
+ <object Name="JoppaNorthSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="前往墓地與 神龕" />
+ </object>
+ <object Name="EzraSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="← 回到 以斯拉(Ezra)" />
+ </object>
+ <object Name="TamSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="Salt Sundries" />
+ </object>
+ <object Name="YurlSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="來自植物聯盟的精美器物" />
+ </object>
+ <object Name="YlaSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="歐蒙波奇(Omonporch) Gadget Repair" />
+ </object>
+ <object Name="SixshrewSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="財團貿易站" />
+ </object>
+ <object Name="JoppaMillSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="普通磨坊" />
+ </object>
+ <object Name="YdColumbariumSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="骨灰安置所" />
+ </object>
+ <object Name="YdLivingQuartersSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="居住區" />
+ </object>
+ <object Name="YdMedicalSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="康復" />
+ </object>
+ <object Name="YdKitchenSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="廚房" />
+ </object>
+ <object Name="YdLibrarySign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="圖書館" />
+ </object>
+ <object Name="YdMarketSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="市場" />
+ </object>
+ <object Name="YdWorkshopSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="工作坊" />
+ </object>
+ <object Name="YdManyEyesSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="萬眼" />
+ </object>
+ <object Name="YdSalonSign" Load="Merge">
+  <part Name="Render" DisplayName="告示牌" />
+  <part Name="Chat" Says="沙龍" />
+ </object>
+ <object Name="CryptPlaqueTutor" Load="Merge">
+  <part Name="Render" DisplayName="帶銘牌的精雕銘刻大理石門" />
+  <part Name="Description" Short="" />
+ </object>
+ <object Name="Tombstone" Load="Merge">
+  <part Name="Render" DisplayName="墓碑" />
+  <part Name="Description" Short="" />
+ </object>
+ <object Name="ReshephsCrypt" Load="Merge">
+  <part Name="Render" DisplayName="地窖" />
+ </object>
+ <object Name="Empty Urn" Load="Merge">
+  <part Name="Render" DisplayName="葬禮骨灰罈" />
+  <part Name="Description" Short="意義的幾何形狀在火葬場容器周圍的環形列中交織：星形、三葉形、九邊形與月牙形。" />
+ </object>
+ <object Name="Urn" Load="Merge">
+  <part Name="Render" DisplayName="葬禮骨灰罈" />
+  <part Name="Description" Short="" />
+ </object>
+ <object Name="Sarcophagus" Load="Merge">
+  <part Name="Render" DisplayName="石棺" />
+  <part Name="Description" Short="黑大理石 是從廣袤無垠的地底深處開採出來，並被雕琢成覆蓋亡者的石毯。" />
+  <tag Name="QuestableVerb" Value="進入" />
+ </object>
+ <object Name="SultanSarcophagusW" Load="Merge">
+  <part Name="Render" DisplayName="帝國石棺" />
+  <part Name="Description" Short="霓虹色的卷雲在 內部 一個玻璃月亮中攪動，並透過蘇丹預先塑造的形像射出光芒。一個模糊的身影就這樣仰臥在無星且巨大的黑色岩石長榻上方。藝術家可能意圖以此喚起黑暗平原上的雷暴，或是河流漆黑水面上的百合：用來代表那在沉寂軀體上漫遊的、明亮而氣態的心智。" />
+ </object>
+ <object Name="SultanSarcophagusE" Load="Merge">
+  <part Name="Render" DisplayName="帝國石棺" />
+  <part Name="Description" Short="霓虹色的卷雲在 內部 一個玻璃月亮中攪動，並透過蘇丹預先塑造的形像射出光芒。一個模糊的身影就這樣仰臥在無星且巨大的黑色岩石長榻上方。藝術家可能意圖以此喚起黑暗平原上的雷暴，或是河流漆黑水面上的百合：用來代表那在沉寂軀體上漫遊的、明亮而氣態的心智。" />
+ </object>
+ <object Name="SultanSarcophagusWPeriod1" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:1= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusWPeriod2" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:2= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusWPeriod3" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:3= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusWPeriod4" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:4= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusWPeriod5" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:5= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusEPeriod1" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:1= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusEPeriod2" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:2= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusEPeriod3" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:3= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusEPeriod4" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:4= 的帝國石棺" />
+ </object>
+ <object Name="SultanSarcophagusEPeriod5" Load="Merge">
+  <part Name="Render" DisplayName="=sultan:5= 的帝國石棺" />
+ </object>
+ <object Name="Golem Mound" Load="Merge">
+  <part Name="Render" DisplayName="廢料與黏土堆" />
+  <part Name="Description" Short="濕黏的泥土附著在轉輪與焊接板上。上面佈滿了二極體、電路、葉片泵和磁鐵。" />
+ </object>
+ <object Name="VehicleGolemSupportColumn" Load="Merge">
+  <part Name="Render" DisplayName="支撐樑" />
+  <part Name="Description" Short="黏土在鋼鐵周圍燒製，並搭建在肋骨架中以提供結構支撐。" />
+ </object>
+ <object Name="VehicleGolemExit" Load="Merge">
+  <part Name="Render" DisplayName="出口艙門" />
+  <part Name="Description" Short="一對可伸縮的鉻合金面板安裝在塗油的軌道上。" />
+  <xtagGrammar iArticle="" />
+ </object>
+ <object Name="VehicleGolemSeat" Load="Merge">
+  <part Name="Render" DisplayName="駕駛座椅" />
+  <part Name="Description" Short="青色泡沫墊著 內部 的背部與深陷的座墊，旋鈕裝飾在彎曲的扶手上。整張椅子在噴射馬達上旋轉。" />
+ </object>
+ <object Name="VehicleGolemPassengerSeat" Load="Merge">
+  <part Name="Render" DisplayName="乘客座椅" />
+  <part Name="Description" Short="青綠色的泡沫墊著內部背面與深陷的座墊，右側扶手裝飾著一個單獨的旋鈕。整張椅子在一個彈射馬達上旋轉。" />
+ </object>
+ <object Name="VehicleConsole N" Load="Merge">
+  <part Name="Render" DisplayName="駕駛控制台" />
+  <part Name="Description" Short="內部有一個被湯汁露水打濕的金屬框架，一個玻璃月牙上繪有導航與雙體對齊的數據符文。大型與小型生物的 3D 模型在垂直軸上旋轉，而心理電掃描則顯示了融合狀態。" />
+ </object>
+ <object Name="VehicleConsole S" Load="Merge">
+  <part Name="Render" DisplayName="駕駛控制台" />
+ </object>
+ <object Name="MechExitHatch" Load="Merge">
+  <part Name="Render" DisplayName="出口艙門" />
+ </object>
+ <object Name="MechPilotSeat" Load="Merge">
+  <part Name="Description" Short="青色泡沫墊著 內部 的背部與深陷的座墊，旋鈕裝飾在彎曲的扶手上。整張椅子在噴射馬達上旋轉。" />
+ </object>
 </objects>
