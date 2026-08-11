@@ -1099,12 +1099,12 @@ alone if no match found.
  <string Context="NameStyle Naming.xml Format" ID="=name|nameStyle#format=">=name|nameStyle#format=</string>
  <string Context="Naming.xml Loading Status Bar" ID="Loading Naming.xml">正在載入 Naming.xml</string>
  <string Context="OngoingAction/autoActDescription (verb gerund)" ID="acting">行動</string>
- <string Context="direction.expanded (N)" ID="north">北</string>
- <string Context="direction.expanded (S)" ID="south">南</string>
- <string Context="direction.expanded (E)" ID="east">東</string>
- <string Context="direction.expanded (W)" ID="west">西</string>
- <string Context="direction.expanded (NW)" ID="northwest">西北</string>
- <string Context="direction.expanded (NE)" ID="northeast">東北</string>
+ <string Context="direction.expanded (N)" ID="north">北方</string>
+ <string Context="direction.expanded (S)" ID="south">南方</string>
+ <string Context="direction.expanded (E)" ID="east">東方</string>
+ <string Context="direction.expanded (W)" ID="west">西方</string>
+ <string Context="direction.expanded (NW)" ID="northwest">西北方</string>
+ <string Context="direction.expanded (NE)" ID="northeast">東北方</string>
  <string Context="direction.expanded (SW)" ID="southwest">西南方</string>
  <string Context="direction.expanded (SE)" ID="southeast">東南方</string>
  <string Context="direction.expanded (U)" ID="up">向上</string>
@@ -1173,7 +1173,7 @@ alone if no match found.
  <string Context="Rules Strings WoundLevel nonorganic" ID="{{G|Fine}}">{{G|良好}}</string>
  <string Context="Rules Strings WoundLevel nonorganic" ID="{{Y|Perfect}}">{{Y|完美}}</string>
  <string Context="Rules Strings WoundLevel no hp stat" ID="Undamaged">無損</string>
- <string Context="ChavvahSystem - Map Note Title" ID="The roaming keter of 夏瓦(Chavvah), Tree of Life">夏瓦的流浪凱特，生命之樹</string>
+ <string Context="ChavvahSystem - Map Note Title" ID="The roaming keter of Chavvah, Tree of Life">夏瓦的流浪凱特，生命之樹</string>
  <string Context="ChavvahSystem - Reveal Popup - attuned" ID="You touch the chiming rock. White noise carries on a distant wind.">你觸碰了 鳴響石。白噪音隨著遠方的風飄散。</string>
  <string Context="ChavvahSystem - Reveal Popup" ID="You discover =note.text|initLowerIfArticle=!">你發現了 =note.text|initLowerIfArticle=!</string>
  <string Context="ChavvahSystem - Hide Popup" ID="夏瓦(Chavvah) roams out of feeling range. You are no longer attuned.">夏瓦(Chavvah) 走出了感應範圍。你不再與其同步。</string>
@@ -3561,7 +3561,7 @@ alone if no match found.
  <string Context="Liquid Volume - Stain with two liquids" ID="=volume.liquid.stain.name#primary=-and-=volume.liquid.stain.name#secondary=-stained">=volume.liquid.stain.name#primary=-and-=volume.liquid.stain.name#secondary=-沾染</string>
  <string Context="Liquid Volume - Stain with liquid" ID="=volume.liquid.stain.name#primary=-stained">=volume.liquid.stain.name#primary=-沾染</string>
  <string ID="=subject.Does:swim= through =object.a.name=.">=subject.Does:swim= 穿過 =object.a.name=。</string>
- <string ID="=subject.Does:wade= through =object.a.name=.">=subject.Does:wade= 涉過 =object.a.name=。</string>
+ <string ID="=subject.Does:wade= through =object.a.name=.">=subject.Does:wade= 穿過 =object.a.name=。</string>
  <string Context="Liquid Volume - Water container sorting placeholder" ID="Water Containers">盛水容器</string>
  <string Context="Liquid Volume - Pool swimming depth adjective" ID="deep" OrderAdjust="0">深處</string>
  <string Context="Liquid Volume - Base name replace, less than wading depth" ID="puddle">水窪</string>
@@ -5011,13 +5011,13 @@ alone if no match found.
  <string Context="DelegatesJournal Ingredients Separator" ID=", " Value="，" />
  <string Context="DelegatesJournal Ingredients Prefix" ID="{{K|Ingredients:}} " Value="{{K|材料：}}" />
  <string Context="Liquid Volume - Get compound name" ID="=adjectives.join: |spaceAfter==primaryNoun=">=adjectives.join: |spaceAfter==primaryNoun=</string>
- <string Context="Base Liquid - drams of liquid template with color" ID="=amount|color#amountColor= =amount.pluralize:dram= of =liquid.name=">=amount|color#amountColor= =amount.pluralize:dram= 的 =liquid.name=</string>
- <string Context="Base Liquid - drams of liquid template no color" ID="=amount= =amount.pluralize:dram= of =liquid.name=">=amount= =amount.pluralize:dram= 的 =liquid.name=</string>
- <string Context="Base Liquid - cardinal drams of liquid template with color" ID="=amount.cardinal|color#amountColor= =amount.pluralize:dram= of =liquid.name=">{{W|=amount.cardinal|color#amountColor= =amount.pluralize:dram= 的 =liquid.name=}}</string>
- <string Context="Base Liquid - cardinal drams of liquid template no color" ID="=amount.cardinal= =amount.pluralize:dram= of =liquid.name=">=amount.cardinal= =amount.pluralize:dram= 的 =liquid.name=</string>
- <string Context="Liquid Volume - drams of liquid template (for sorting)" ID="=amount:D6= =amount.pluralize:dram= of =container.liquid.name=">=amount:D6= =amount.pluralize:dram= 的 =container.liquid.name=</string>
- <string Context="Liquid Volume - drams of liquid template" ID="=amount|rules= =amount.pluralize:dram= of =container.liquid.name=">=amount|rules= =amount.pluralize:dram= 的 =container.liquid.name=</string>
- <string Context="Liquid Volume - drams of liquid template (no rules)" ID="=amount= =amount.pluralize:dram= of =container.liquid.name=">=amount= =amount.pluralize:dram= 的 =container.liquid.name=</string>
+ <string Context="Base Liquid - drams of liquid template with color" ID="=amount|color#amountColor= =amount.pluralize:dram= of =liquid.name=">=amount|color#amountColor= 德蘭的 =liquid.name=</string>
+ <string Context="Base Liquid - drams of liquid template no color" ID="=amount= =amount.pluralize:dram= of =liquid.name=">=amount= 德蘭的 =liquid.name=</string>
+ <string Context="Base Liquid - cardinal drams of liquid template with color" ID="=amount.cardinal|color#amountColor= =amount.pluralize:dram= of =liquid.name=">{{W|=amount.cardinal|color#amountColor= 德蘭的 =liquid.name=}}</string>
+ <string Context="Base Liquid - cardinal drams of liquid template no color" ID="=amount.cardinal= =amount.pluralize:dram= of =liquid.name=">=amount.cardinal= 德蘭的 =liquid.name=</string>
+ <string Context="Liquid Volume - drams of liquid template (for sorting)" ID="=amount:D6= =amount.pluralize:dram= of =container.liquid.name=">=amount:D6= 德蘭的 =container.liquid.name=</string>
+ <string Context="Liquid Volume - drams of liquid template" ID="=amount|rules= =amount.pluralize:dram= of =container.liquid.name=">=amount|rules= 德蘭的 =container.liquid.name=</string>
+ <string Context="Liquid Volume - drams of liquid template (no rules)" ID="=amount= =amount.pluralize:dram= of =container.liquid.name=">=amount= 德蘭的 =container.liquid.name=</string>
  <string Context="Text Replacer listDirectionsTo separate givers (last, and previous had direction)" ID=", or " Value="，或" />
  <string Context="Text Replacer listDirectionsTo separate giver (last, and previous had no direction)" ID=" or " Value=" 或 " />
  <string Context="Text Replacer listDirectionsTo separate giver (not last)" ID=", " Value="，" />

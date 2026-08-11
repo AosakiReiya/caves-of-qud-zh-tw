@@ -1,0 +1,339 @@
+{
+ "stats": {
+  "direction": 51,
+  "of": 424,
+  "adjective": 33,
+  "from": 60,
+  "pluralize": 103,
+  "Does:verb": 293
+ },
+ "flagged": [
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=spice:instancesOf.inYear.!random|capitalize= %=year=%, =spice:instancesOf.afterTumultuousYears.!random=, the sultan of Qud =spice:instancesOf.abdicated.!random=. Because =spice:instancesOf.ascensionReasons_VAR.!random=, =spice.entity:subjectPronoun= was chosen as the successor.",
+   "zh_value": "=spice:instancesOf.inYear.!random|capitalize= %=year=%, =spice:instancesOf.afterTumultuousYears.!random=, 卡德(Qud) 的蘇丹 =spice:instancesOf.abdicated.!random=。因為 =spice:instancesOf.ascensionReasons_VAR.!random=，=spice.entity:subjectPronoun= 被選為繼承人。",
+   "residual_english": [
+    "Qud"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=spice:commonPhrases.celebrate.!random|capitalize= the =spice:commonPhrases.sacred.!random= =yearName=, when =spice.entity:name= was dowered with the =maskName= and named sultan of Qud! =spice.entity:possessivePronoun|capitalize= ancestors the Fossilized Saads looked on in approval, since -- just like them -- =spice.entity:subjectPronoun= was known by =spice.entity:possessivePronoun= =sultanKnownFor=.",
+   "zh_value": "=spice:commonPhrases.celebrate.!random|capitalize= =yearName= 那個 =spice:commonPhrases.sacred.!random= 的年份，當時 =spice.entity:name= 被賜予了 =maskName= 並被封為卡德的蘇丹！=spice.entity:possessivePronoun|capitalize= 祖先們——化石化的薩德家族（Fossilized Saads）——都欣慰地注視著，因為——就像他們一樣——=spice.entity:subjectPronoun= 也以 =spice.entity:possessivePronoun= =sultanKnownFor= 而聞名。",
+   "residual_english": [
+    "Fossilized",
+    "Saads"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "from",
+    "of"
+   ],
+   "id": "In =spice.entity:region=, =spice.entity:name= averred =spice.entity:possessivePronoun= descendancy from the Fossilized Saads, who were known for =oldTradition=. By =spice:commonPhrases.sacred.!random= right, =spice.entity:subjectPronoun= ousted the pretender sultan, who had prohibited =oldTradition= in favor of =spice:history.gospels.$era.worshipObject.!random= worship, and crowned =spice.entity:reflexivePronoun= sultan of Qud. =spice.entity:subjectPronoun|capitalize= was =age.cardinal= years old.",
+   "zh_value": "=spice.entity:region= 中，=spice.entity:name= 聲稱 =spice.entity:possessivePronoun= 血統源自化石化薩德人（Fossilized Saads），該族以 =oldTradition= 聞名。憑藉 =spice:commonPhrases.sacred.!random= 的權利，=spice.entity:subjectPronoun= 推翻了偽裝的蘇丹——該蘇丹曾禁止 =oldTradition= 並轉而崇拜 =spice:history.gospels.$era.worshipObject.!random=，隨後加冕為 =spice.entity:reflexivePronoun= 卡德之蘇丹。=spice.entity:subjectPronoun|capitalize= 當時為 =age.cardinal= 歲。",
+   "residual_english": [
+    "Fossilized",
+    "Saads"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "from",
+    "of"
+   ],
+   "id": "In the =yearName=, an aspirant claimed descendancy from the Fossilized Saads and challenged =spice.entity:name= over the tradition of =oldTradition=. =spice:instancesOf.ofCourse.!random|capitalize=, =spice.entity:name= won and had the =spice:commonPhrases.pretender.!random= =spice:commonPhrases.killed.!random=.",
+   "zh_value": "在 =yearName= 年，一名追求者聲稱自己是化石薩德（Fossilized Saads）的後裔，並就 =oldTradition= 的傳統向 =spice.entity:name= 發起挑戰。=spice:instancesOf.ofCourse.!random|capitalize=，=spice.entity:name= 贏得了勝利，並且成了 =spice:commonPhrases.pretender.!random= 的 =spice:commonPhrases.killed.!random=。",
+   "residual_english": [
+    "Fossilized",
+    "Saads"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=spice:instancesOf.bless.!random|capitalize= the =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural= of =region=, who came to =spice.entity:name|'s= rescue when =drivenReasonInscriptionWithPronoun=.",
+   "zh_value": "=spice:instancesOf.bless.!random|capitalize= 了來自 =region= 的 =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural=，當 =drivenReasonInscriptionWithPronoun= 時，他們前來營救了 =spice.entity:name|。",
+   "residual_english": [
+    "spice",
+    "entity",
+    "name"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=actingOn|spaceAfter==spice.entity:name= led an army to the gates of =location=. =spice.entity:subjectPronoun|capitalize= =spice:commonPhrases.liberated.!random= its citizens, and they =spice:commonPhrases.crowned.!random= =spice.entity:objectPronoun= sultan of Qud, dowering =spice.entity:objectPronoun= with the =maskName=. In =spice.entity:possessivePronoun= honor they changed the name of =location= to =newLocation=.",
+   "zh_value": "=actingOn|spaceAfter==spice.entity:name= 率領大軍抵達了 =location= 的城門。=spice.entity:subjectPronoun|capitalize= =spice:commonPhrases.liberated.!random= 其公民，而他們 =spice:commonPhrases.crowned.!random= =spice.entity:objectPronoun= Qud 的蘇丹，賜予 =spice.entity:objectPronoun= {{gold|黃金}}。為了 =spice.entity:possessivePronoun= 榮耀，他們將 =location= 的名字改成了 =newLocation=。 =maskName=",
+   "residual_english": [
+    "Qud"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=spice:commonPhrases.love.!random|capitalize= =spice.entity:name=, =friendTo= and =spice:commonPhrases.savior.!random= of =location=, who led an army to its gates and =spice:instancesOf.unseated.!random= its =spice:commonPhrases.corrupt.!random= =spice:commonPhrases.despots.!random=. The people of the city =spice:history.gospels.Celebration.$era.!random= in =spice:commonPhrases.celebration.!random=, dowered =spice.entity:name= with the =maskName=, and =spice:commonPhrases.crowned.!random= =spice.entity:objectPronoun= sultan of Qud. In =spice.entity:possessivePronoun= honor they renamed =location= to =newLocation=.",
+   "zh_value": "=location= 的 =spice:commonPhrases.love.!random|capitalize=、=spice.entity:name=、=friendTo= 與 =spice:commonPhrases.savior.!random=，曾率領大軍攻至城門前並 =spice:instancesOf.unseated.!random= 其 =spice:commonPhrases.corrupt.!random= =spice:commonPhrases.despots.!random=。位於 =spice:commonPhrases.celebration.!random= 的 =spice:history.gospels.Celebration.$era.!random= 之民，贈予了 =spice.entity:name= 以 =maskName=，並 =spice:commonPhrases.crowned.!random= 了 Qud 的 =spice.entity:objectPronoun= 蘇丹。為了紀念，他們在 =spice.entity:possessivePronoun= 將 =location= 改名為 =newLocation=。",
+   "residual_english": [
+    "Qud"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "Does:verb"
+   ],
+   "id": "=trader.Does:don't|strip= have the skill to identify artifacts.",
+   "zh_value": "=trader.Does:don't|strip= 沒有鑑定神器（artifacts）的技能。",
+   "residual_english": [
+    "artifacts"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Locate =targetLocation.text=, located within =max= parasangs of =landmarkLocation.text|initLowerIfArticle=.",
+   "zh_value": "尋找位於 =landmarkLocation.text|initLowerIfArticle=. 以內 =max= 帕桑格（parasangs）處的 =targetLocation.text=。",
+   "residual_english": [
+    "parasangs"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "direction",
+    "of"
+   ],
+   "id": "Locate =targetLocation.text=, located =min=-=max= parasangs =direction.expandedDirection= of =landmarkLocation.text|initLowerIfArticle=.",
+   "zh_value": "尋找位於 =min=-=max= parasangs =direction.expandedDirection= 處的 =landmarkLocation.text|initLowerIfArticle=，即 =targetLocation.text=。",
+   "residual_english": [
+    "parasangs"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Some time in =year=, =name= came upon the bandits who had captured =player.objective= and let =player.objective= languish in captivity until =player.subjective= contracted ironshank. =name= murdered their leader =spice:elements.$domain.murdermethods.!random= and cured =player.reflexive of the disease.",
+   "zh_value": "在 =year= 年間的某個時刻，=name= 遇見了劫持了 =player.objective= 的強盜，並讓 =player.objective= 在囚禁中虛弱度日，直到 =player.subjective= 染上了鐵腳症。=name= 殺死了他們的領袖 =spice:elements.$domain.murdermethods.!random= 並治癒了 =player.reflexive 的疾病。",
+   "residual_english": [
+    "player",
+    "reflexive"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=spice:commonPhrases.blessed.!random|capitalize= =name= dreamed of a thousand years of peace, and the people of Qud =spice:history.gospels.Celebration.LateSultanate.!random= in =spice:commonPhrases.celebration.!random=.",
+   "zh_value": "=spice:commonPhrases.blessed.!random|capitalize= =name= 夢想著千年的和平，而「卡德(Qud)」的人民在 =spice:history.gospels.Celebration.LateSultanate.!random= 時進行了 =spice:commonPhrases.celebration.!random=。",
+   "residual_english": [
+    "Qud"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "from"
+   ],
+   "id": "=subject.Does#fabricateVerb= =number.a.or.cardinal.names#sample= from =source=.",
+   "zh_value": "=subject.Does#fabricateVerb= 從 =source= {{g|製作}} 了 =number.a.or.cardinal.names#個樣本%。",
+   "residual_english": [
+    "number",
+    "cardinal",
+    "names"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "adjective",
+    "of"
+   ],
+   "id": "In the month of =month= of =year=, =subject.name= was challenged by =spice:commonPhrases.pretender.!random|article= to a duel over the rights of =mostLiked.factionName=. =name= won and murdered the pretender before tragically realizing =spice:pronouns.subject.!random= was =subject.possessiveAdjective= water-sib.",
+   "zh_value": "在 =year= 年的 =month= 月，=subject.name= 因 =mostLiked.factionName= 的權利而接受了 =spice:commonPhrases.pretender.!random|article= 的決鬥挑戰。=name= 贏得了勝利並殺死了那名僭越者，隨後卻悲劇性地發現 =spice:pronouns.subject.!random= 竟是 =subject.possessiveAdjective= 的水親屬（water-sib）。",
+   "residual_english": [
+    "water",
+    "sib"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Swarm Alpha: As long as =subject.thisCreature= =subject.verb:are= adjacent to =subject.its= target, =subject.it.does:grant= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.",
+   "zh_value": "集群 Alpha：只要 =subject.thisCreature= 與鄰近於 =subject.its= 目標的 =subject.verb:are= 相鄰，=subject.it.does:grant= 就會將 =bonus= 提供給與鄰近於 =subject.its= 目標之各個集群成員的集群加成。",
+   "residual_english": [
+    "Alpha"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "When powered, causes =min.range: to #max=% increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.",
+   "zh_value": "啟動時，會使 =min.range: 的 =abilities.andList|strip= 的 =count.isplural:冷卻時間= 增加 #max=%。",
+   "residual_english": [
+    "abilities",
+    "andList",
+    "strip",
+    "count",
+    "isplural"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "When powered, causes =min.range: to #max=% increase in the cooldowns of activated abilities other than =abilities.andList|strip=.",
+   "zh_value": "通電時，會使除 =abilities.andList|strip= 以外的已啟動技能冷卻時間增加 #max=% =min.range:。",
+   "residual_english": [
+    "max",
+    "min",
+    "range"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Confers =min.range#max=% reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.",
+   "zh_value": "賦予除了 =abilities.andList|strip= 以外的啟動技能冷卻時間減少/增加 =min.range#max%。",
+   "residual_english": [
+    "min",
+    "range",
+    "max"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Confers =min.range#max=% reduction/increase in the action costs of =included.andList= actions.",
+   "zh_value": "使 =included.andList= 動作的消耗降低/增加 =min.range#max%。",
+   "residual_english": [
+    "min",
+    "range",
+    "max"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "=subject.Does#verb= =liquid.drams.of.liquid#volume=.",
+   "zh_value": "=subject.Does#verb= =liquid.drams.of.liquid#體積。",
+   "residual_english": [
+    "liquid",
+    "drams",
+    "liquid"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "Does:verb"
+   ],
+   "id": "=subject.Does:latch= onto =object.the.name=!",
+   "zh_value": "=subject.Does:latch= onto =object.the.name=！",
+   "residual_english": [
+    "onto"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Supply =host.the.name= with how many drams of your =liquid.name|strip=? (max=equals==amount=)",
+   "zh_value": "提供 =host.the.name= 多少 drame 的你的 =liquid.name|strip=? (最大值為 =equals==amount=)",
+   "residual_english": [
+    "drame"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "You strain to part the veil of time in order to use psychometry on =object.the.name:single=, but your psyche is too exhausted.",
+   "zh_value": "你竭力試圖撥開時間的面紗，想對 =object.the.name:single= 使用靈媒感應（psychometry），但你的精神力已過於疲憊。",
+   "residual_english": [
+    "psychometry"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "Does:verb"
+   ],
+   "id": "=subject.Does:sunder= =object.the.name's:withTitles= mind=pens.pens= for %d damage!",
+   "zh_value": "=subject.Does:sunder= =object.the.name's:withTitles= mind=pens.pens= 造成 %d 點傷害！",
+   "residual_english": [
+    "mind"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands. Select it.&#xA;&#xA;Press =commandKey:CmdAbility2=",
+   "zh_value": "每個角色都有「衝刺」(Sprint)，但大部分的能力是由突變等特質決定的。您擁有「冰凍射線」(Freezing Ray)，因此可以從手中射出寒霜。請選擇它。&#xA;&#xA;按下 =commandKey:CmdAbility2=",
+   "residual_english": [
+    "Sprint",
+    "Freezing",
+    "Ray"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "from",
+    "of"
+   ],
+   "id": "You read one of the few legible excerpts from =title|color:Y=:&#xA;&#xA;&quot;=sentence=&quot;",
+   "zh_value": "你讀到了 =title|color:Y= 少數幾段可辨識的摘錄之一：&#xA;&#xA;&quot;=sentence=&quot;",
+   "residual_english": [
+    "quot",
+    "quot"
+   ],
+   "missing_in_zh": false
+  },
+  {
+   "patterns": [
+    "of"
+   ],
+   "id": "You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename|strip=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;",
+   "zh_value": "你在 {{K|Annals of 卡德(Qud)}} 中加入了以下條目。&#xA;&#xA;&quot;在 =date.month= 的 =date.day=，{{Y|=subject.basename|strip=}} 因為 =faction.formattedName= 而於 =reason= 變成了 =positive.if:admired:despised=。&quot;",
+   "residual_english": [
+    "quot",
+    "quot"
+   ],
+   "missing_in_zh": false
+  }
+ ]
+}

@@ -105,5 +105,5 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Resheph" DisplayName="捲曲羔羊教派" FormatWithArticle="true" Plural="false" />
   <faction Name="Daughters" DisplayName="流亡之女" FormatWithArticle="true" Plural="true" />
   <faction Name="YdFreehold" DisplayName="伊德自由領居民" FormatWithArticle="true" />
-  <faction Name="夏瓦(Chavvah)" DisplayName="生命之樹，查法" FormatWithArticle="false" Plural="false" />
+  <faction Name="夏瓦(Chavvah)" DisplayName="夏瓦(Chavvah)，生命之樹" FormatWithArticle="false" Plural="false" />
 </factions>
