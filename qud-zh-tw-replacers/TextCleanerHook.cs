@@ -130,7 +130,7 @@ public static class ZhTwTextCleaner
             { "up", "向上" }, { "water", "水" }, { "with", "與" }, { "within", "之內" },
             { "without", "之外" },
             // 2026-08-09 補：戰鬥/狀態訊息常見詞（安全詞，避免中英混雜殘留）
-            { "his", "他的" }, { "her", "她的" }, { "toggle", "切換" }, { "knocked", "擊倒" },
+            { "his", "他的" }, { "toggle", "切換" }, { "knocked", "擊倒" },
             { "stops", "停下" }, { "moving", "移動中" }, { "looks", "查看" }, { "out", "出" },
             { "it", "它" }, { "this", "這" }, { "that", "那" },
             // 方向/距離（LoreGenerator 硬編碼 parasangs）
@@ -331,7 +331,25 @@ public static class ZhTwTextCleaner
     // 有界快取：原文 -> 處理後，避免重複正則
     private static readonly Dictionary<string, string> Cache =
         new Dictionary<string, string>(StringComparer.Ordinal);
-    private const int CacheMax = 4000;
+    private const int CacheMax = 30000;
+
+    // ===== postfix 層級結果快取（input -> 最終 result）=====
+    // 翻譯具確定性（同 input 必同 output），快取安全且高命中率：
+    // 物件名稱 / 常見訊息 / conversation path ID 在遊戲中反覆出現，
+    // 首次處理後即可 O(1) 命中，跳過全部昂貴管線（載入 43s / 卡頓元凶）。
+    private static readonly Dictionary<string, string> PostfixCache =
+        new Dictionary<string, string>(StringComparer.Ordinal);
+    private const int PostfixCacheMax = 20000;
+
+    private static string PostfixCached(string input, Func<string, string> fn)
+    {
+        string cached;
+        if (PostfixCache.TryGetValue(input, out cached)) return cached;
+        string result = fn(input);
+        if (PostfixCache.Count >= PostfixCacheMax) PostfixCache.Clear();
+        PostfixCache[input] = result;
+        return result;
+    }
 
     private static readonly Dictionary<string, string> ProperNounZh =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
@@ -381,6 +399,12 @@ public static class ZhTwTextCleaner
     // 只在「中英混雜」文本中、且該大寫專名前不是「(」（即非「中文(English)」括號註解）時才音譯
     // 排除富文本色碼（#HEX）與維度標籤後的 token
     private static readonly Regex NameToken = new Regex(@"(?<![\u4e00-\u9fff(#\uFF08])\b([A-Z][A-Za-z'-]{2,})\b(?![-0-9])", RegexOptions.Compiled);
+
+    // 便宜預過濾：整句 frame 觸發關鍵詞。TranslateStatusFragments 有 37 個 ^ 錨定正則，
+    // 若字串不含任何 frame 動詞（純英文 path ID / 一般文字），直接跳過，省下大量載入開銷。
+    private static readonly Regex FrameTrigger = new Regex(
+        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|piloting|knock|stop|move|look|turn|fall|rise)\b",
+        RegexOptions.Compiled);
 
     private static string TransliterateName(string word)
     {
@@ -483,21 +507,13 @@ public static class ZhTwTextCleaner
     }
 
     // ===== 防漏層：關鍵詞/短語（dram/data disks/of 等）在 Clean 被繞過時仍生效 =====
-    // 與 Clean 的 Words/PhraseRegex 相同來源，但無「中英混雜才處理」的 early-return，
-    // 且掛在已證實有效的整句/動態模板路徑之後，確保任何 Build 路徑的字串都會套用。
-    private static bool ContainsAscii(string s)
-    {
-        for (int i = 0; i < s.Length; i++)
-        {
-            char c = s[i];
-            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) return true;
-        }
-        return false;
-    }
-
     private static string TranslateKeyLeaks(string text)
     {
-        if (string.IsNullOrEmpty(text) || !ContainsAscii(text)) return text;
+        if (string.IsNullOrEmpty(text)) return text;
+        // 只處理「中英混雜」：純英文（internal ID/path）不該被 Words 中文污染，且省 200 alternation
+        bool hasEng, hasCjk;
+        ScanLang(text, out hasEng, out hasCjk);
+        if (!hasEng || !hasCjk) return text;
         text = PhraseRegex.Replace(text, new MatchEvaluator(PhraseMatch));
         text = WordsRegex.Replace(text, new MatchEvaluator(WordsMatch));
         return text;
@@ -521,21 +537,51 @@ public static class ZhTwTextCleaner
         }
     }
 
+    // 單趟掃描：hasEng=含英文，hasCjk=含中文。用於快速路徑守衛，
+    // 避免對「純中文/純英文」字串跑貴重正則（Conversations 載入 43s 的元凶）。
+    private static void ScanLang(string text, out bool hasEng, out bool hasCjk)
+    {
+        hasEng = false; hasCjk = false;
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = text[i];
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) hasEng = true;
+            else if (c >= '\u4e00' && c <= '\u9fff') hasCjk = true;
+            if (hasEng && hasCjk) return;
+        }
+    }
+
     public static void ToStringPostfix(ref string __result)
     {
         if (string.IsNullOrEmpty(__result)) return;
         try
         {
-            __result = TryStage(__result, TranslateStatusFragments, "StatusFragments");
-            __result = TryStage(__result, TranslateDirection, "Direction");
-            __result = TryStage(__result, Clean, "Clean");
-            __result = TryStage(__result, TranslateKeyLeaks, "KeyLeaks");
+            __result = PostfixCached(__result, ToStringProcess);
             LogLeaks("MSG", __result);
         }
         catch (Exception e)
         {
             ZhTwReplacers.LogAlways("ToStringPostfix EX: " + e.GetType().Name + " " + e.Message);
         }
+    }
+
+    // 快速路徑：純中文 → 已翻譯，直接回傳（最大宗，零成本）
+    //            純英文 → 只跑英文訊息 frame + 方向句，跳過混雜才會用到的 Clean/KeyLeaks
+    private static string ToStringProcess(string text)
+    {
+        bool hasEng, hasCjk;
+        ScanLang(text, out hasEng, out hasCjk);
+        if (!hasEng) return text;
+        if (!hasCjk)
+        {
+            text = TryStage(text, TranslateStatusFragments, "StatusFragments");
+            text = TryStage(text, TranslateDirection, "Direction");
+            return text;
+        }
+        text = TryStage(text, TranslateStatusFragments, "StatusFragments");
+        text = TryStage(text, TranslateDirection, "Direction");
+        text = TryStage(text, Clean, "Clean");
+        return text;
     }
 
     // 診斷：報告已知漏網詞仍殘留的訊息/名稱（寫 replacer_log.txt）
@@ -714,16 +760,26 @@ public static class ZhTwTextCleaner
         try
         {
             if (string.IsNullOrEmpty(__result)) return;
-            // 熱路徑（GetFor）：每階段各自 try/catch，任一失敗不中斷其他階段
-            __result = TryStage(__result, TranslateDisplayNameFragments, "NameFragments");
-            __result = TryStage(__result, TranslateKeyLeaks, "KeyLeaks");
-            __result = TryStage(__result, Clean, "Clean");
+            // 熱路徑（GetFor）：postfix 快取 → 重複名稱 O(1) 命中；純中文名稱（資料 mod 已翻）直接回傳
+            __result = PostfixCached(__result, DisplayNameProcess);
             LogLeaks("NAME", __result);
         }
         catch (Exception e)
         {
             ZhTwReplacers.LogAlways("DisplayNamePostfix EX: " + e.GetType().Name + " " + e.Message);
         }
+    }
+
+    private static string DisplayNameProcess(string text)
+    {
+        bool hasEng, hasCjk;
+        ScanLang(text, out hasEng, out hasCjk);
+        if (!hasEng) return text;
+        // 每階段各自 try/catch，任一失敗不中斷其他階段
+        text = TryStage(text, TranslateDisplayNameFragments, "NameFragments");
+        text = TryStage(text, TranslateKeyLeaks, "KeyLeaks");
+        text = TryStage(text, Clean, "Clean");
+        return text;
     }
 
     // 狀態標籤模板（DisplayName / GetDescription 用，熱路徑輕量）
@@ -754,6 +810,9 @@ public static class ZhTwTextCleaner
     private static string TranslateStatusFragments(string text)
     {
         if (string.IsNullOrEmpty(text)) return text;
+        // 便宜預過濾：無 {{ 模板且無任何 frame 動詞 → 37 個正則不會命中，直接跳過
+        if (text.IndexOf("{{", StringComparison.Ordinal) < 0 && !FrameTrigger.IsMatch(text))
+            return text;
         text = TranslateDisplayNameFragments(text);
         // ===== 戰鬥/動作整句（在 Clean 逐詞破壞前翻譯，避免詞序壞掉）=====
         text = System.Text.RegularExpressions.Regex.Replace(
