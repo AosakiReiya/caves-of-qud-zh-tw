@@ -97,6 +97,25 @@ public static class ZhTwTextCleaner
             // 介詞/單位（dram 採臺灣口語常見「德蘭」）
             { "drams", "德蘭" }, { "dram", "德蘭" },
             { "of", "的" }, { "ml", "毫升" }, { "tons", "噸" }, { "pounds", "磅" }, { "feet", "英尺" },
+            // be 動詞（=ifPlural:are:is= 模板 token 會輸出英文 be 動詞，逐詞兜底）
+            { "is", "是" }, { "are", "是" }, { "was", "曾是" }, { "were", "曾是" }, { "life", "生命" },
+            // =ifPlural= 其他洩漏動詞/名詞（Faction Feeling 等模板輸出）
+            { "despise", "鄙視" }, { "despises", "鄙視" }, { "dislike", "厭惡" }, { "dislikes", "厭惡" },
+            { "favor", "偏愛" }, { "favors", "偏愛" }, { "consider", "認為" }, { "considers", "認為" },
+            { "revere", "崇敬" }, { "reveres", "崇敬" }, { "members", "成員" },
+            // 高頻顯示文字漏詞（run_tests.py LEAK_WORDS 驗證覆蓋）
+            { "action", "行動" }, { "causes", "導致" }, { "costs", "花費" },
+            { "increase", "增加" }, { "item", "物品" }, { "nearby", "附近的" },
+            { "powered", "供能的" }, { "provides", "提供" }, { "reduction", "減少" },
+            // 高頻對話/敘述常用詞（export_leak_words.py 導出；多義詞 like/well 保留待人工）
+            { "time", "時間" }, { "know", "知道" }, { "now", "現在" }, { "cannot", "不能" },
+            { "want", "想要" }, { "need", "需要" }, { "world", "世界" }, { "people", "人們" },
+            { "something", "某事" }, { "tell", "告訴" }, { "see", "看到" }, { "come", "來" },
+            { "let", "讓" }, { "welcome", "歡迎" }, { "thank", "感謝" }, { "speak", "說" },
+            { "nothing", "沒什麼" }, { "feel", "感覺" }, { "place", "地方" }, { "new", "新的" },
+            { "think", "認為" }, { "yes", "是" }, { "going", "正在" }, { "always", "總是" },
+            { "never", "從不" }, { "here", "這裡" }, { "there", "那裡" }, { "still", "仍然" },
+            { "just", "只是" },
             // 動詞原形（配合 "to X" 與獨立出現）
             { "glow", "發光" }, { "hover", "懸浮" }, { "float", "漂浮" }, { "fall", "墜落" },
             { "rise", "升起" }, { "turn", "轉向" }, { "move", "移動" }, { "walk", "行走" },
@@ -217,7 +236,11 @@ public static class ZhTwTextCleaner
             { "rife with bad omens", "充斥著不祥之兆" },
             { "rife with electric arcs", "滿是電弧" },
             { "data corruption", "資料損壞" },
+            { "data disks", "資料磁碟" },
             { "The Museum Autarchy of Tarchewan", "塔徹萬博物館專制政體" },
+            // 專名片語（與資料 mod Factions.zh-tw.xml / historyspice 一致；字典為 OrdinalIgnoreCase，大小寫變體其一即可）
+            { "Tree of Life", "生命之樹" },
+            { "Chavvah, the Tree of Life", "夏瓦(Chavvah)，生命之樹" },
             // scholarship 元素漏網性質詞（spice 陣列兜底，防 MergeModJson 未取代時殘留）
             { "philosophical", "哲學性的" }, { "shrewd", "精明的" }, { "inquisitive", "好奇的" },
             { "fraying reality-edges", "崩解的現實邊緣" },
@@ -402,8 +425,10 @@ public static class ZhTwTextCleaner
 
     // 便宜預過濾：整句 frame 觸發關鍵詞。TranslateStatusFragments 有 37 個 ^ 錨定正則，
     // 若字串不含任何 frame 動詞（純英文 path ID / 一般文字），直接跳過，省下大量載入開銷。
+    // 用語幹 + \w*（非 \b 結尾）：避免漏掉屈折形（engulfed/dragged/sucking/sitting 等），
+    // \b 開頭防止誤配子詞（transit 不付 \bsit）。
     private static readonly Regex FrameTrigger = new Regex(
-        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|piloting|knock|stop|move|look|turn|fall|rise)\b",
+        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*",
         RegexOptions.Compiled);
 
     private static string TransliterateName(string word)

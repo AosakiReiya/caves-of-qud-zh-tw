@@ -130,8 +130,8 @@ def test_prone():
     check("C# 有 EffectZh 表", "EffectZh" in src and '"wading"' in src)
     check("C# 有 TranslateStatusFragments", "TranslateStatusFragments" in src)
     check("C# 無 {1} 字面迴溯", "躺在 {1}" not in src)
-    # DisplayNamePostfix 有跑 Clean()（GetFor 熱路徑漏翻根因）
-    check("DisplayNamePostfix 有 Clean()", "DisplayNamePostfix" in src and "Clean(__result)" in src)
+    # DisplayNamePostfix 有跑 Clean()（GetFor 熱路徑漏翻根因）；重構後 Clean 在 DisplayNameProcess 以 method group 傳遞
+    check("DisplayNamePostfix 有 Clean()", "DisplayNamePostfix" in src and "DisplayNameProcess" in src and "Clean" in src)
     dn_idx = src.index("public static void DisplayNamePostfix")
     dn_block = src[dn_idx:dn_idx + 600]
     check("DisplayNamePostfix 無 Length>120", "Length > 120" not in dn_block)
