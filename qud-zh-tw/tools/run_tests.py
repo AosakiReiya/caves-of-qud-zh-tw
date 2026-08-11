@@ -281,18 +281,54 @@ def test_data():
     check("ifPlural 值側無英文 token 洩漏", total == 0, f"{total} 個")
 
 
+# ============ 5. word_order（模板層語序修復 + 區段標題）============
+def test_word_order():
+    print("== word_order：模板語序修復與區段標題 ==")
+    strings = ZH / "Strings.zh-tw.xml"
+    factions = ZH / "Factions.zh-tw.xml"
+    if strings.exists():
+        s = strings.read_text(encoding="utf-8-sig")
+        # drams 模板已重排為「德蘭的」（值側不再用 pluralize:dram= 的）
+        check("drams 模板值側用「德蘭的」", "德蘭的 =liquid.name=" in s and "德蘭的 =container.liquid.name=" in s)
+        check("drams 模板值側無『pluralize:dram= 的』", "pluralize:dram= 的 =liquid.name=<" not in s)
+        # 方向值加「方」
+        check("direction E → 東方", 'Context="direction.expanded (E)" ID="east">東方<' in s)
+        check("direction N → 北方", 'Context="direction.expanded (N)" ID="north">北方<' in s)
+        # wade 動詞不重複（涉過→穿過）
+        check("wade 模板用『穿過』", "=subject.Does:wade= 穿過 =object.a.name=。" in s)
+        # Chavvah Map Note ID 回歸 base（不含夏瓦）
+        check("Chavvah Map Note ID 回歸英文", 'ID="The roaming keter of Chavvah, Tree of Life"' in s)
+    else:
+        check("Strings.zh-tw.xml 存在", False)
+    if factions.exists():
+        f = factions.read_text(encoding="utf-8-sig")
+        check("Chavvah DisplayName 正確", 'DisplayName="夏瓦(Chavvah)，生命之樹"' in f)
+    else:
+        check("Factions.zh-tw.xml 存在", False)
+    # 區段標題（UiStringsHook SectionHeaders）
+    ui = REPL / "UiStringsHook.cs"
+    if ui.exists():
+        u = ui.read_text(encoding="utf-8")
+        check("SectionHeaders 有 RESISTANCES", '"RESISTANCES"' in u and "抗性" in u)
+        check("SectionHeaders 有 SECONDARY ATTRIBUTES", '"SECONDARY ATTRIBUTES"' in u and "次要屬性" in u)
+    else:
+        check("UiStringsHook.cs 存在", False)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
     ap.add_argument("--dict", action="store_true")
     ap.add_argument("--pipeline", action="store_true")
     ap.add_argument("--data", action="store_true")
+    ap.add_argument("--wordorder", action="store_true")
     a = ap.parse_args()
-    run_all = not (a.static or a.dict or a.pipeline or a.data)
+    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder)
     if run_all or a.static: test_static_cs()
     if run_all or a.dict: test_dictionary()
     if run_all or a.pipeline: test_pipeline()
     if run_all or a.data: test_data()
+    if run_all or a.wordorder: test_word_order()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 

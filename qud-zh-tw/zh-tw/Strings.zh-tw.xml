@@ -4905,7 +4905,7 @@ alone if no match found.
  <string Context="Golem Quest Atzmus" ID="atzmus">阿茨姆斯</string>
  <string Context="Golem Quest Body" ID="body">身體</string>
  <string Context="Golem Quest Catalyst" ID="catalyst">催化劑</string>
- <string Context="Golem Quest Catalyst Liquid" ID="=volume|rules= =volume.pluralize:dram= of =liquid.name=">=volume|rules= =volume.pluralize:dram= 的 =liquid.name=</string>
+ <string Context="Golem Quest Catalyst Liquid" ID="=volume|rules= =volume.pluralize:dram= of =liquid.name=">=volume|rules= 德蘭的 =liquid.name=</string>
  <string Context="Golem Quest Hamsa" ID="hamsa">漢薩</string>
  <string Context="Golem Quest Incantation" ID="incantation">咒語</string>
  <string Context="Golem Incantation Unit Body Parts" ID="3 random body parts">3 個隨機身體部位</string>
@@ -4916,7 +4916,7 @@ alone if no match found.
  <string Context="Golem Quest Material Selection Pagination Previous" ID="Previous Page">上一頁</string>
  <string Context="Golem Quest Material Selection Pagination Next" ID="Next Page">下一頁</string>
  <string Context="Golem Quest Power Source" ID="ascension power source">飛升能量源</string>
- <string Context="Golem Quest Power Liquid" ID="=volume|rules= =volume.pluralize:dram= of =liquid.name=">=volume|rules= =volume.pluralize:dram= 的 =liquid.name=</string>
+ <string Context="Golem Quest Power Liquid" ID="=volume|rules= =volume.pluralize:dram= of =liquid.name=">=volume|rules= 德蘭的 =liquid.name=</string>
  <string Context="Golem Quest Power 夏瓦(Chavvah)" ID="夏瓦(Chavvah)">夏瓦(Chavvah)</string>
  <string Context="Golem Quest Shaping Complete" ID="{{C|Your golem is ready for use.}}">{{C|你的 魔像 已準備就緒。}}</string>
  <string Context="Golem Quest Shaping Prefix" ID="The creature is being shaped.">生物正在被塑形中。</string>

@@ -751,6 +751,20 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
             { "Electrical Resist", "電力抗性" }, { "Heat Resist", "熱力抗性" },
         };
 
+    // 角色狀態畫面區段大標題（CharacterStatusScreen；非 Strings._S、執行期渲染，
+    // 只能在此 console 繪製路徑攔截。精確匹配整串。）
+    private static readonly Dictionary<string, string> SectionHeaders =
+        new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "RESISTANCES", "抗性" },
+            { "SECONDARY ATTRIBUTES", "次要屬性" },
+            { "MAIN ATTRIBUTES", "主要屬性" },
+            { "ATTRIBUTES", "屬性" },
+            { "STATISTICS", "統計" },
+            { "SKILLS", "技能" },
+            { "INFOS", "資訊" },
+        };
+
     public static void SidebarLabelPrefix(ref string s)
     {
         try
@@ -799,6 +813,12 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
         if (JournalCategories.TryGetValue(inner, out journalZh))
         {
             return (wrapOpen != null ? wrapOpen : "") + journalZh + (wrapClose != null ? wrapClose : "");
+        }
+        // 角色狀態畫面區段大標題（RESISTANCES / SECONDARY ATTRIBUTES 等）精確匹配
+        string headerZh;
+        if (SectionHeaders.TryGetValue(inner.Trim(), out headerZh))
+        {
+            return (wrapOpen != null ? wrapOpen : "") + headerZh + (wrapClose != null ? wrapClose : "");
         }
         // 動態蘇丹 tab：「{sultanName} Histories」（GetSultansDisplayName 組裝）
         var shm = SultanHistories.Match(inner);
