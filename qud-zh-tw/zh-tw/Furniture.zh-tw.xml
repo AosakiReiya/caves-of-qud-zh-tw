@@ -32,8 +32,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="金屬板片擴散了雙向揚聲器的音量。底角有一個小按鈕彈出。" />
   <part Name="ChargeSink" NameForStatus="對講機" />
  </object>
- <object Name="Bell of Rest" Load="Merge">
-  <part Name="Render" DisplayName="安息之鐘" />
+ <object Name="安息之鐘(Bell of Rest)" Load="Merge">
+  <part Name="Render" DisplayName="安息之鐘(Bell of Rest)" />
  </object>
  <object Name="Switch" Load="Merge">
   <part Name="Render" DisplayName="開關" />
@@ -196,23 +196,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Door_GritGateRank2" Load="Merge">
   <part Name="Render" DisplayName="門" />
  </object>
- <object Name="Death Gate W" Load="Merge">
-  <part Name="Render" DisplayName="死亡之門" />
+ <object Name="死亡之門(Death Gate) W" Load="Merge">
+  <part Name="Render" DisplayName="死亡之門(Death Gate)" />
   <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
   <xtagGrammar iArticle="這" />
  </object>
- <object Name="Death Gate E" Load="Merge">
-  <part Name="Render" DisplayName="死亡之門" />
+ <object Name="死亡之門(Death Gate) E" Load="Merge">
+  <part Name="Render" DisplayName="死亡之門(Death Gate)" />
   <part Name="Description" Short="銅鏽已將巨石般的青銅門轉化為由海沫與珊瑚構成的巨大書架。面板上以高浮雕描繪著抒情的死亡：鎖鏈拉動倒置的金字塔穿過鈣化的村莊、氣態火焰與鹽水穹頂。骸骨豎琴手在飾帶上漫步，山羊則在簷口啃食著銅製的骨頭。" />
   <xtagGrammar iArticle="這" />
  </object>
- <object Name="Life Gate W" Load="Merge">
-  <part Name="Render" DisplayName="生命之門" />
+ <object Name="生命之門(Life Gate) W" Load="Merge">
+  <part Name="Render" DisplayName="生命之門(Life Gate)" />
   <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
   <xtagGrammar iArticle="這" />
  </object>
- <object Name="Life Gate E" Load="Merge">
-  <part Name="Render" DisplayName="生命之門" />
+ <object Name="生命之門(Life Gate) E" Load="Merge">
+  <part Name="Render" DisplayName="生命之門(Life Gate)" />
   <part Name="Description" Short="Patinae 已將那些巨型青銅門轉化為巨大的海泡與珊瑚架。生命的劇場以高浮雕的形式描繪在面板上：棕櫚葉將金字塔托舉向星帶交織的天空，流水從酒罐的邊緣傾瀉而下。戀人們橫跨裝飾帶相擁，山羊在簷口咀嚼著銅製的草料。" />
   <xtagGrammar iArticle="這" />
  </object>
@@ -584,7 +584,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="木板以正交角度釘合，灰塵沉睡在紙質外套上。" />
   <part Name="Container" Preposition="on" />
  </object>
- <object Name="Joppa Bookshelf" Load="Merge">
+ <object Name="約帕(Joppa) Bookshelf" Load="Merge">
   <part Name="Render" DisplayName="木製書架" />
  </object>
  <object Name="NuntuBookshelf" Load="Merge">
@@ -759,7 +759,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Ornate Bench" Load="Merge">
   <part Name="Render" DisplayName="華麗長凳" />
-  <part Name="Description" Short="在 高爾格塔(Golgotha) 的深處，=subject.name= 遇見了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。" />
+  <part Name="Description" Short="在 髑髏地(Golgotha) 的深處，=subject.name= 遇見了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。" />
  </object>
  <object Name="Scrapasan" Load="Merge">
   <part Name="Render" DisplayName="斯卡帕桑椅" />
@@ -1015,7 +1015,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Oil Pitcher" Load="Merge">
   <part Name="Render" DisplayName="陶製水罐" />
  </object>
- <object Name="Grit Gate Honey Vase" Load="Merge">
+ <object Name="礫門(Grit Gate) Honey Vase" Load="Merge">
   <part Name="Render" DisplayName="花瓶" />
   <part Name="Description" Short="彩繪的垛口環繞著這個金屬花瓶的赤道部位。" />
  </object>
@@ -1147,19 +1147,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="煉金術士桌" />
   <part Name="Description" Short="一張佈滿熱化學放射狀圖案的燒焦桌子上，放著一個小瓶架與蒸餾器。" />
  </object>
- <object Name="Grit Gate Table" Load="Merge">
+ <object Name="礫門(Grit Gate) Table" Load="Merge">
   <part Name="Render" DisplayName="工作檯" />
  </object>
- <object Name="Grit Gate Sleek Table" Load="Merge">
+ <object Name="礫門(Grit Gate) Sleek Table" Load="Merge">
   <part Name="Render" DisplayName="工作檯" />
  </object>
- <object Name="Grit Gate Metal Table" Load="Merge">
+ <object Name="礫門(Grit Gate) Metal Table" Load="Merge">
   <part Name="Render" DisplayName="金屬工作檯" />
  </object>
- <object Name="Barathrum Table" Load="Merge">
+ <object Name="巴拉楚姆(Barathrum) Table" Load="Merge">
   <part Name="Render" DisplayName="工作檯" />
  </object>
- <object Name="Klanq Table" Load="Merge">
+ <object Name="克蘭克(Klanq) Table" Load="Merge">
   <part Name="Render" DisplayName="工作檯" />
  </object>
  <object Name="Globe" Load="Merge">
@@ -1346,9 +1346,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <tag Name="WorshippedAs" Value="卡薩克斯" />
  </object>
  <object Name="statue of scholar" Load="Merge">
-  <part Name="Render" DisplayName="雷謝夫雕像" />
+  <part Name="Render" DisplayName="雷舍夫雕像" />
   <part Name="Description" Short="被稱為「至高者」的 Resheph 舉起一根神祕的手指，療癒病患的傷口。" />
-  <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
+  <tag Name="WorshippedAs" Value="雷舍夫 (Resheph)" />
  </object>
  <object Name="SultanShrine" Load="Merge">
   <part Name="Render" DisplayName="神龕" />
@@ -1414,10 +1414,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="毀壞的神龕" />
  </object>
  <object Name="JoppaReshephShrine" Load="Merge">
-  <part Name="Render" DisplayName="雷謝夫神龕" />
+  <part Name="Render" DisplayName="雷舍夫神龕" />
   <part Name="Epithets" Primary=", 最後的蘇丹" />
   <part Name="ZoneLandmarkObject" Preposition="由" />
-  <tag Name="WorshippedAs" Value="瑞謝夫 (Resheph)" />
+  <tag Name="WorshippedAs" Value="雷舍夫 (Resheph)" />
  </object>
  <object Name="Eater Hologram" Load="Merge">
   <part Name="Render" DisplayName="噬者全息圖" />
@@ -1472,10 +1472,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="歷史全息圖" />
   <part Name="Description" Short="閃爍的干涉光圖案形成了一幅莫列波紋瀑布般的景象。" />
  </object>
- <object Name="Kyakukya Monument 1" Load="Merge">
+ <object Name="恰庫恰(Kyakukya) Monument 1" Load="Merge">
   <part Name="RulesDescription" Text="這件物品是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在甲蟲之月下，人們在此定居，為猿猴薩德 奧博羅科魯 收集過路貨物，於是 恰庫恰(Kyakukya) 便由此建立。" />
  </object>
- <object Name="Kyakukya Monument 2" Load="Merge">
+ <object Name="恰庫恰(Kyakukya) Monument 2" Load="Merge">
   <part Name="RulesDescription" Text="此物件是 {{M|恰庫恰(Kyakukya)}} 歷史中某個場景的紀念碑。&#xA;&#xA;在 979 年，傳奇的白化猿恩圖厭倦了用鈍器將生物打死，於是前往斯維河一處被根鬚纏繞之地。他在那裡遇見了恰庫恰及其居民。恰庫恰村民請求恩圖運用他的統治才能來領導村莊。&#xA;" />
  </object>
  <object Name="Yd Village Monument 1" Load="Merge">

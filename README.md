@@ -18,6 +18,14 @@
 - 動詞 `stand/equip/miss/take` 等 1600+ 個 → 站著/裝備/落空/受到
 - 硬編碼戰鬥訊息（`You hit X for N damage`、`The X dies`、`道路受阻` 等）→ 中文
 - 身體部位名（hand/arm/head）→ 手/手臂/頭
+- 硬編碼 UI 字串（暫停選單 `Save and Quit`、`Are you sure you want to save and quit?` 等）→ 中文
+  - 攔截官方本地化查詢 `Strings._S`（語料外的 `(Context,ID)` 補充字典）
+  - 攔截 `Popup` 顯示層（原始英文字面值字典 `UiPhrases`）
+
+> **診斷**：replacer 的診斷 log **預設關閉**（零開銷）。需要時啟動遊戲前設環境變數
+> `ZH_TW_REPLACER_LOG=1`，log 寫到 `.../LocalLow/Freehold Games/CavesOfQud/replacer_log.txt`。
+> 其中 `STRING_MISS: [...] ...` 記錄「官方 _S 查不到、回退英文」的 UI 鍵，
+> 可據此把漏掉的 UI 補進 `UiStringsHook.cs` 的字典。
 
 遊戲本身已內建正體中文字型（SourceHanMono TC），裝好就能直接顯示，不用另外處理字型。
 
@@ -66,8 +74,26 @@ python3 tools/check_quality.py
 # 用本地 LLM 批量翻譯（需要本機跑 LLM API）
 python3 tools/translate_batch.py
 
-# 統一專名譯名
+# 統一專名譯名（併用策展表 + proposed 已確認名）
 python3 tools/fix_consistency.py
+
+# 掃描缺漏翻譯（▶ 殘留 / 英文專名漏譯 / ID 覆蓋），輸出 untranslated_report.json
+python3 tools/find_untranslated.py --print
+
+# 為掃出的英文專名生成「中文(原文)」音譯建議 → 審核後 --merge 進策展表
+python3 tools/expand_glossary.py --dry-run   # 先看
+python3 tools/expand_glossary.py --merge     # 審核後合併
+
+# 掃描動態替換側「未替換」的英文訊息（需先啟動遊戲遊玩收集 replacer_log.txt）
+python3 tools/scan_replacer_log.py --print
+
+# 整合缺漏報告：一次掃描全部維度（▶殘留/專名/ID/資料檔/句子/Naming 模板）
+python3 tools/report_gaps.py --print
+
+# 掃描 DLL 硬編碼 UI 字串（語料外 _S + Popup 字面值），需 dotnet+ilspycmd
+python3 tools/extract_hardcoded_ui.py --print
+# 把硬編碼 UI 餵本機 LLM 生成中文建議（審核後填 UiStringsHook.cs）
+python3 tools/extract_hardcoded_ui.py --translate --limit 50
 
 # 打包成可安裝的 mod 資料夾
 python3 tools/package_mod.py --zip

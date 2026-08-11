@@ -159,7 +159,7 @@
       <leveltext><p>你可以透過沐浴陽光而非進食來獲得特殊的代謝效果，持續 <stat Name="DurationDay" Unit="天" />：自然療傷速率 +<stat Name="BonusRegen" /> 以及敏捷 (Quickness) +<stat Name="BonusQuickness" /></p>
 <p>在陽光照射下，你會累積澱粉與木質素，可用於烹飪食物（每種最多 <stat Name="StarchServings" Unit="服務中的" /> 份）。</p>
 <p>當位於植被相同的格位時，DV +<stat Name="BonusCamoflage" /></p>
-<p>與 {{w|根系}}, {{w|樹木}}, {{w|藤蔓}} 以及 {{w|the 植物聯盟}} 的聲望 +200</p></leveltext>
+<p>與 {{w|根系}}, {{w|樹木}}, {{w|藤蔓}} 以及 {{w|the 植物聯盟(Consortium of Phyta)}} 的聲望 +200</p></leveltext>
     </mutation>
     <mutation Name="Quills" DisplayName="刺" BearerDescription="刺蝟族">
       <description><p>數以百計的針狀刺覆蓋著你的身體。</p></description>
@@ -394,7 +394,7 @@
                         <case Value="true" />
                         <default><p>{{rules|召喚出更強大的植物}}</p></default>
                     </switch>
-                    <p>+200 reputation with {{w|the 植物聯盟}}</p>
+                    <p>+200 reputation with {{w|the 植物聯盟(Consortium of Phyta)}}</p>
                 </leveltext>
     </mutation>
     <mutation Name="Clairvoyance" DisplayName="千里眼" BearerDescription="千里眼" BiomeEpithet="全景監獄">
@@ -436,14 +436,14 @@
     <mutation Name="Domination" DisplayName="支配" BearerDescription="那些支配他人意志的人" BiomeEpithet="意志劇場">
       <description><p>你勒住鄰近生物的精神並控制其行動，而你自己的身體則處於休眠狀態。</p></description>
       <leveltext><p>對具有心智的生物進行精神攻擊</p>
-<p>成功判定：{{rules|mutation rank}} 或 自我 (Ego) 修正值（取較高者）+ 角色等級 + 1d8 對抗 防禦者的 MA + 角色等級</p>
+<p>成功判定：{{rules|mutation rank}} 或 心智 (Ego) 修正值（取較高者）+ 角色等級 + 1d8 對抗 防禦者的 MA + 角色等級</p>
 <p>射程：1</p>
 <statline Name="持續時間" DisplayName="持續時間" />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></leveltext>
     </mutation>
     <mutation Name="Ego Projection" DisplayName="自我投射" BearerDescription="那些將自我投射至物質領域的人" BiomeAdjective="具備心靈折射性">
       <description>憑藉純粹的意志力，你完成了不可思議的肢體動作。</description>
-      <leveltext><p>提升一項身體屬性，增加量等於你自我（Ego）加成的兩倍</p>
+      <leveltext><p>提升一項身體屬性，增加量等於你心智（Ego）加成的兩倍</p>
 <statline Name="持續時間" DisplayName="持續時間" />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></leveltext>
     </mutation>

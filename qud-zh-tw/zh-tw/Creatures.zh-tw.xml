@@ -219,7 +219,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="BaseMopango" Load="Merge">
   <xtagTextFragments YounglingNoise="*吱吱聲*" Activity="發現 奇異神器" VillageActivity="與物品交流" SacredThing="卡薩菲森斯 (Kasaphescence)" />
  </object>
- <object Name="Mopango Corpse" Load="Merge">
+ <object Name="莫龐戈(Mopango) Corpse" Load="Merge">
   <part Name="Render" DisplayName="莫潘戈屍體" />
   <part Name="Description" Short="刮痕累累的鱗片堆成了一團捲曲的堆積物。" />
   <part Name="Food" Message="肉味帶點野味。" />
@@ -1141,7 +1141,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Girshworm_Crush" Load="Merge">
   <part Name="Render" DisplayName="{{Y|粉碎帶}}" />
  </object>
- <object Name="Gyre Wight of Agolgot" Load="Merge">
+ <object Name="環流(Gyre) Wight of Agolgot" Load="Merge">
   <part Name="Render" DisplayName="阿格爾戈特之旋渦亡靈" />
   <part Name="Description" Short="一個身影身著星蘭長袍，作為環流的奉獻者與變形神力的狂歡者。沾滿污垢、漆黑的指甲從 =pronouns.possessive= 袖口中閃現，以一種手勢詩宣告瘟疫僅是轉化，死亡是通往生命的階梯，而孩童的存在證明了原始生長的至高無上。一股刺鼻且低劣的氣味附著在 =pronouns.objective= 上。" />
  </object>
@@ -1409,11 +1409,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Gooey Pseudopod" Load="Merge">
   <part Name="Render" DisplayName="{{G|黏糊的偽足}}" />
  </object>
- <object Name="Gyre Wight of Bethsaida" Load="Merge">
+ <object Name="環流(Gyre) Wight of Bethsaida" Load="Merge">
   <part Name="Render" DisplayName="貝賽達之旋渦亡靈" />
   <part Name="Description" Short="一個身影身著星蘭長袍，標誌著其為環流的信徒，並沉醉於蛻變的神性之中。沾滿污垢的黑指甲從 =pronouns.possessive= 袖口中閃現，以手勢詩的形式宣告：瘟疫僅是轉化，死亡是通往生命的階梯，而孩童的存在證明了原始生長的至高地位。涼爽且明亮的濕氣附著在 =pronouns.objective= 上。" />
  </object>
- <object Name="Gyre Wight of Shug'ruith" Load="Merge">
+ <object Name="環流(Gyre) Wight of Shug'ruith" Load="Merge">
   <part Name="Render" DisplayName="舒古魯斯之旋渦亡靈" />
   <part Name="Description" Short="一名身著星蘭長袍的人物被標記為環流的信徒，沉醉於變形的神性之中。污黑如垢的指甲從 =pronouns.possessive= 袖口中閃現，以一種手勢詩宣告瘟疫僅是轉化，死亡是通往生命的階梯，而孩子的存在證明了原始生長的優先地位。=pronouns.Subjective= 佈滿了頁岩粉塵。" />
  </object>
@@ -1925,15 +1925,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="二元榮譽之幽靈騎士聖騎士" />
   <part Name="Description" Short="塗了油且刷過的鎖子甲掛在 =pronouns.possessive= 歪斜的脊椎與突出的下顎上。由於 =pronouns.possessive= 錯綜複雜的血統，=pronouns.possessive= 的虹膜色彩也變得黯淡；而 =pronouns.possessive= 濕潤紅潤的雙唇捕捉著光線，並將其反射在銳利的冷笑上。=pronouns.Subjective=正 挺起胸膛，模仿著 =pronouns.possessive= 的貴族地位與 =pronouns.possessive= 的劍之象徵。" />
  </object>
- <object Name="Gyre Wight of Rermadon" Load="Merge">
+ <object Name="環流(Gyre) Wight of Rermadon" Load="Merge">
   <part Name="Render" DisplayName="雷瑪頓之旋渦亡靈" />
   <part Name="Description" Short="一名身著星蘭長袍的人物被標記為環流的信徒，沉醉於變形的神性之中。污黑如垢的指甲從 =pronouns.possessive= 袖口中閃現，以一種手勢詩宣告瘟疫僅是轉化，死亡是通往生命的階梯，而孩子的存在證明了原始生長的優先地位。=pronouns.Subjective= 聞到 燒焦的魚內臟味。" />
  </object>
- <object Name="Gyre Wight of Qas" Load="Merge">
+ <object Name="環流(Gyre) Wight of Qas" Load="Merge">
   <part Name="Render" DisplayName="卡斯之旋渦亡靈" />
   <part Name="Description" Short="一個身影身著星蘭花長袍，標誌著其作為 環流(Gyre) 的信徒以及蛻變神性的狂歡者。沾滿污垢的黑指甲從 =pronouns.possessive= 袖口中閃現，以一種手勢詩宣告：瘟疫僅是轉化，死亡是通往生命的階梯，而孩童的存在證明了原始生長的至高地位。=pronouns.Subjective= 有 皮膚上有六角形的墨紋。" />
  </object>
- <object Name="Gyre Wight of Qon" Load="Merge">
+ <object Name="環流(Gyre) Wight of Qon" Load="Merge">
   <part Name="Render" DisplayName="昆之旋渦亡靈" />
   <part Name="Description" Short="一個身影身著星蘭長袍，作為環流的信徒，沉醉於變態性的神性之中。指甲漆黑如污垢，從 =pronouns.possessive= 袖口中揮動，以手勢詩表達瘟疫僅是轉化，死亡是通往生命的階梯，而孩童的存在證明了原始生長的優越性。=pronouns.possessive= 步伐的節奏並無規律。" />
  </object>
@@ -2479,7 +2479,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="大祖父" />
   <part Name="Description" Short="=pronouns.possessive= 那張帶著兜帽且下顎過大的臉上，掛著因失望而不對稱的巨大白唇。=pronouns.Possessive= 的眉頭緊鎖，擠壓著 =pronouns.possessive= 那雙褪色的老舊眼睛。=pronouns.Subjective= 以一種既銳利又憐愛、卻又帶著厭惡的複雜情感注視著 =pronouns.possessive= 的偉大新生兒。對 =pronouns.objective= 而言，他們只是小傀儡；他們的肢體必須以充滿愛的精確度蜷曲在關節處，否則他們會因自身的意志而攤開，變得既無用又破碎。" />
  </object>
- <object Name="Gyre Wight Apotheote" Load="Merge">
+ <object Name="環流(Gyre) Wight Apotheote" Load="Merge">
   <part Name="Render" DisplayName="旋渦亡靈化身" />
   <part Name="Description" Short="由於凝結的血淋巴，=pronouns.Possessive= 胃部感到油膩且脹大，而 =pronouns.possessive= 四肢則萎縮蜷縮。=pronouns.Subjective= 現在是變態神靈的 容器；=pronouns.possessive= 被打亂的基因組留下的疤痕，如同鮮明的結痂一般支撐著 =pronouns.possessive= 癱軟的身軀。" />
  </object>
@@ -2614,7 +2614,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="" />
  </object>
  <object Name="Daughter of Exile" Load="Merge">
-  <part Name="Render" DisplayName="流亡者之女" />
+  <part Name="Render" DisplayName="流亡者之女(Daughters of Exile)" />
   <part Name="Description" Short="油漬與電弧灼痕條紋遍布在從 =pronouns.possessive= 修道服錐形領口下露出的肌膚上，而繫在 =pronouns.possessive= 腰間的工具讓 =pronouns.possessive= 的長褲顯得有些下垂。=pronouns.Subjective= 正 受 =pronouns.possessive= 秩序流散徽章（鑲嵌著磁針）的縫線指引，指向牆外荒野花園的方向，正對著 =pronouns.objective=。" />
  </object>
  <object Name="Giant Clam" Load="Merge">
@@ -3283,7 +3283,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Qon" Load="Merge">
   <part Name="Render" DisplayName="昆" />
-  <part Name="Description" Short="一個巨大的生物攀上了上方的視線。=pronouns.Possessive= 喉嚨像擁抱樹木的 Svy 一樣緊繃，從單子般的喙中鳴響出數字之冠冕（Coronach of Numbers）。=pronouns.possessive= 巨大風箏般的羽毛在 紡錘(Spindle) 的閃爍中呈現虹彩，凝聚成一幅令人不安的宇宙錯誤圖景。最後，在 =pronouns.possessive= tx-glass 皮膚下翻騰的虹雙色光被過濾成耀眼の色調，並以 lituus 螺旋狀從身體中輻射而出。" />
+  <part Name="Description" Short="一個巨大的生物攀上了上方的視線。=pronouns.Possessive= 喉嚨像擁抱樹木的 Svy 一樣緊繃，從單子般的喙中鳴響出數字之冠冕（Coronach of Numbers）。=pronouns.possessive= 巨大風箏般的羽毛在 紡錘(Spindle) 的閃爍中呈現虹彩，凝聚成一幅令人不安的宇宙錯誤圖景。最後，在 =pronouns.possessive= tx-glass 皮膚下翻騰的虹雙色光被過濾成耀眼的色調，並以 lituus 螺旋狀從身體中輻射而出。" />
  </object>
  <object Name="Nephal_Flap" Load="Merge">
   <part Name="Render" DisplayName="剃鬚片" />
@@ -3418,10 +3418,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Lichen Golem" Load="Merge">
   <part Name="Render" DisplayName="地衣魔像" />
  </object>
- <object Name="Mopango Golem" Load="Merge">
+ <object Name="莫龐戈(Mopango) Golem" Load="Merge">
   <part Name="Render" DisplayName="莫潘戈魔像" />
  </object>
- <object Name="Mopango Charioteer Golem" Load="Merge">
+ <object Name="莫龐戈(Mopango) Charioteer Golem" Load="Merge">
   <part Name="Render" DisplayName="莫潘戈戰車手魔像" />
  </object>
  <object Name="Nest Golem" Load="Merge">
@@ -3791,7 +3791,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="=pronouns.Possessive= 鬍鬚毛髮組成的蘑菇雲沾滿了垃圾海的所有磨損物：白色石灰、紅色鐵質、金色絲線以及塑膠混合物的乳白碎片。鉻合金關節與碎晶片被掛在 =pronouns.possessive= 軀幹內側的口袋上，而 =pronouns.possessive= 濃密的眉毛之一始終挑起，儘管這究竟是永無止境的好奇心症狀還是額頭變異仍不得而知。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Ctesiphus" Load="Merge">
+ <object Name="泰西封(Ctesiphus)" Load="Merge">
   <part Name="Render" DisplayName="泰西封(Ctesiphus)" />
   <part Name="Description" Short="在一個星帶點綴的夜晚，一隻 光線貓 穿過沼澤泥土，漫步進了 約帕(Joppa)。水藤農夫 被一個小女孩快樂的哭喊聲喚醒，聚集在一起慶祝這個吉兆，並讚美甲蟲之月的慷慨。從那以後，泰西封(Ctesiphus) 已 在 鹽莖 小屋的陰影下蜷縮度過了 =pronouns.possessive= 天，並在 泥徑 上漫步。只要 =pronouns.subjective=正 謹慎靠近，=pronouns.subjective= 歡迎 朋友與陌生人的雙手。\n\n{{m|磷光}}" />
   <xtagGrammar Proper="真實" />
@@ -3828,7 +3828,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="伊萊姆" />
   <part Name="Honorifics" Primary="典獄長" />
   <part Name="Description" Short="巨大的伊萊姆在後腿與前腿之間轉移了 =pronouns.possessive= 重量。=pronouns.Subjective= 從 =pronouns.possessive= 巨大角 的分叉間抖落了一陣鏽蝕皮屑風暴，且 =pronouns.subjective= 從 =pronouns.possessive= 霜脈之手 吹出了一圈冰冷的氣流。" />
-  <tag Name="staticFaction1" Value="Joppa,friend,守衛他們的村莊" />
+  <tag Name="staticFaction1" Value="約帕(Joppa),friend,守衛他們的村莊" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="OasisGlowpad" Load="Merge">
@@ -3866,7 +3866,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="粗織醫師布料的褶皺掛在 =pronouns.possessive= 纖細身軀上，猶如槍手的披肩，而舊帽那皺巴巴的帽簷遮蔽了陽光與星光。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Shem -1" Load="Merge">
+ <object Name="謝姆-1(Shem -1)" Load="Merge">
   <part Name="Render" DisplayName="{{c|謝姆-1(Shem -1)}}" />
   <part Name="Description" Short="Shem 透過焊接上一件不對稱且皺褶的廢金屬外套，將 =pronouns.possessive= 身體強化到了超越鉻族基本形態的程度。這對 =pronouns.possessive= 嬌小身軀來說太過龐大且宏偉，但 Shem 卻自信地挪動著，彷彿 =pronouns.subjective= 預期自己會長得足以撐起它。" />
   <part Name="Memorial" Eulogies="Barathrumites::你在每一次迭代中都表現完美。" />
@@ -3889,7 +3889,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <tag Name="PronounSet" Value="她" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Barathrum" Load="Merge">
+ <object Name="巴拉楚姆(Barathrum)" Load="Merge">
   <part Name="Render" DisplayName="巴拉楚姆(Barathrum)" />
   <part Name="Epithets" Primary="古老的" />
   <part Name="Description" Short="歲月留下的荒誕細節導致原本每一處羽狀根生長出額外的 刺，因此最年長的拱背熊現在全身佈滿了各個方向與長度的白色針狀物。=pronouns.Subjective= 是 一個世界縮影；一根被千載歲月壓垮的脊椎仍保持著存在感與知覺。埋藏在皺褶皮膚的斷崖下，=pronouns.possessive= 雙眼像垂死的太陽一樣向地平線燃燒。" />
@@ -3988,7 +3988,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="真實" />
   <part Name="Description" Short="從 =pronouns.possessive= 手中散發出冰冷的蒸氣，沿著 =pronouns.possessive= 外國製長袍向上蔓延，並在 =pronouns.possessive= 深色及肩髮絲間形成薄霧。然而，在 =pronouns.possessive= 希德倫親族（hindren kin）之中，最能讓大家分辨出 =pronouns.objective= 的，是 =pronouns.subjective= 對每個人展現出的溫暖微笑，甚至是對闖入森林的入侵者也是如此。" />
  </object>
- <object Name="Neelahind" Load="Merge">
+ <object Name="妮拉欣德(Neelahind)" Load="Merge">
   <part Name="Render" DisplayName="妮拉欣德(Neelahind)" />
   <part Name="Honorifics" Primary="典獄長" />
   <xtagGrammar Proper="真實" />
@@ -4025,7 +4025,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Honorifics" Primary="典獄長" />
   <part Name="Titles" Primary="山羊族 賤民" />
   <tag Name="staticFaction2" Value="Goatfolk,hate,由於某些原因，=pronouns.subjective= 不願分享" />
-  <tag Name="staticFaction1" Value="Kyakukya,friend,守衛他們的村莊" />
+  <tag Name="staticFaction1" Value="恰庫恰(Kyakukya),friend,守衛他們的村莊" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Crowsong" Load="Merge">
@@ -4123,7 +4123,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Honorifics" Primary="典獄長" />
   <part Name="Titles" Ordinary="重新編程的保存者" />
   <part Name="Description" Short="附著在 =pronouns.possessive= 鏡面鉻亮片外殼上的有兩種截然不同的生態：內部墳墓中乾脆的死生植物，以及林地生命那翠綠的蛻皮。隨著歲月流逝，當這尊巨像適應了陽光普照的外界時，後者便會吞噬前者。" />
-  <tag Name="staticFaction1" Value="Ezra,friend,守衛他們的村莊" />
+  <tag Name="staticFaction1" Value="以斯拉(Ezra),friend,守衛他們的村莊" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Sixshrew" Load="Merge">
@@ -4146,7 +4146,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="BasePaxKlanq" Load="Merge">
   <part Name="Render" DisplayName="派克斯克蘭克" />
-  <part Name="Description" Short="那團如器官般糾結、噴湧的 派克斯克蘭克 聚落，其形狀呈現模糊的人類形態，這究竟是巧合，還是這種奇異真菌正以溫暖的姿態歡迎 =pronouns.possessive= 的異次元類人訪客？無論如何，=pronouns.possessive= 那燦爛的橘色菌蓋看起來像頂華麗的帽子。然而，相似之處僅止於此；在臉孔的位置，只有三條蠕動的觸手。\n\n在你的視野邊緣，更多的觸手在工具、書籍、電路板、青蛙屍體和鹽水珍珠上扭動著。你意識到 Klanq 同時處理了多少事情，並對大自然將頂尖有機智慧賦予真菌的決定感到驚訝。" />
+  <part Name="Description" Short="那團如器官般糾結、噴湧的 派克斯克蘭克 聚落，其形狀呈現模糊的人類形態，這究竟是巧合，還是這種奇異真菌正以溫暖的姿態歡迎 =pronouns.possessive= 的異次元類人訪客？無論如何，=pronouns.possessive= 那燦爛的橘色菌蓋看起來像頂華麗的帽子。然而，相似之處僅止於此；在臉孔的位置，只有三條蠕動的觸手。\n\n在你的視野邊緣，更多的觸手在工具、書籍、電路板、青蛙屍體和鹽水珍珠上扭動著。你意識到 克蘭克(Klanq) 同時處理了多少事情，並對大自然將頂尖有機智慧賦予真菌的決定感到驚訝。" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Hamilcrab" Load="Merge">
@@ -4250,7 +4250,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="巨蛙高聳的身軀靜止在和平之中，裝飾得如同皮膚神廟一般。=pronouns.Possessive= 肩膀上垂掛著價值各異的柔軟布料與飾品；=pronouns.subjective= 完全不在意是否將它們排列整齊或分開。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Bep" Load="Merge">
+ <object Name="貝普(Bep)" Load="Merge">
   <part Name="Render" DisplayName="貝普(Bep)" />
   <part Name="Description" Short="瘦削、有斑點的手臂與腿部以展開的姿勢拍動著。=pronouns.Possessive= 眼睛比其他斯瓦迪姆更加凸出，而在他圓球狀頭部的中心，有一道疣狀脊椎隆起。=pronouns.possessive= 瞳孔因興奮的興趣而收縮。" />
   <xtagGrammar Proper="真實" />
@@ -4347,13 +4347,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="維度旅行改變了這位盲眼 meyvn 的流浪者身分，使其轉化為全新的存在。當細瘦如鈴的骨骼刺穿其低等親族的皮膚時，一種奇異的金屬脂肪卻附著在 =pronouns.possessive= 星灼肉體上。取代了新手或弟子頭皮上斑駁的禿髮，一種來自外域的奇異真菌長成了新型態的毛髮，從 =pronouns.possessive= 兜帽的黑暗中探出頭來。=pronouns.Possessive= 眼罩依然存在，但它向側面延伸成絲帶狀，並帶著超自然的重量垂掛著。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="0lam" Load="Merge">
-  <part Name="Render" DisplayName="0lam" />
+ <object Name="歐蘭姆(0lam)" Load="Merge">
+  <part Name="Render" DisplayName="歐蘭姆(0lam)" />
   <part Name="Description" Short="碰撞、疤痕和脊狀物交錯在怪異的波形殼上，那是維度的邊界與間隙空間磨擦所致。一個柔軟的器官狀物體位於 內部，被閃爍在全色珍珠母上的古光（Old Light）所照亮。橫跨殼層外套的溝槽隨著 ontoxanthellae（跨維度共生體）的塵埃而起伏。排列在它們旁邊的是來自其他地方的物品，是由熵代理商儲備的泛維度清單。" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="AgateSeveranceStar" Load="Merge">
-  <part Name="Render" DisplayName="瑪瑙斷裂之星" />
+  <part Name="Render" DisplayName="瑪瑙斷裂之星(Agate Severance Star)" />
   <xtagGrammar Proper="真實" />
   <part Name="Description" Short="一名嚴肅的後裔 =pronouns.personTerm= 穿著 一件潔白無瑕、長尾設計以垂掛在 =pronouns.possessive= 微長的背部上的罩衫。斑駁的側腹掛著裝滿深奧裝置的鞍袋，臉上生長著一層青白色的皮殼，使 =pronouns.possessive= 銳利的目光顯得更加引人注目。" />
  </object>

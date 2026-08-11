@@ -24,11 +24,17 @@ using XRL.World.Text.Delegates;
 [HasModSensitiveStaticCache]
 public static class ZhTwReplacers
 {
-    // ============ 診斷記錄 ============
+    // ============ 診斷記錄（預設關閉，設環境變數 ZH_TW_REPLACER_LOG=1 才開啟）============
 
     private static readonly object LogLock = new object();
     private static int LogCount;
     private const int LogMax = 600;
+    private const int LogFlushEvery = 50;
+    private static readonly System.Text.StringBuilder LogBuffer = new System.Text.StringBuilder(4096);
+
+    // 預設關閉：生產環境零開銷（不建字串、不寫檔、不呼叫 Debug.Log）
+    private static readonly bool LoggingEnabled = !string.IsNullOrEmpty(
+        Environment.GetEnvironmentVariable("ZH_TW_REPLACER_LOG"));
 
     private static string LogPath
     {
@@ -39,29 +45,76 @@ public static class ZhTwReplacers
         }
     }
 
+    private static void FlushLog()
+    {
+        if (LogBuffer.Length == 0) return;
+        try
+        {
+            File.AppendAllText(LogPath, LogBuffer.ToString());
+            LogBuffer.Clear();
+        }
+        catch
+        {
+        }
+    }
+
     public static void Log(string msg)
     {
-        string line = DateTime.Now.ToString("HH:mm:ss.fff") + " " + msg;
-        try
+        if (!LoggingEnabled) return;   // 預設關閉：直接早退，零開銷
+        lock (LogLock)
         {
-            lock (LogLock)
+            if (LogCount >= LogMax) return;   // 超過上限：不再處理
+            LogCount++;
+            string line = DateTime.Now.ToString("HH:mm:ss.fff") + " " + msg + Environment.NewLine;
+            LogBuffer.Append(line);
+            if (LogCount % LogFlushEvery == 0 || LogCount >= LogMax) FlushLog();
+            try
             {
-                if (LogCount < LogMax)
-                {
-                    LogCount++;
-                    try { File.AppendAllText(LogPath, line + Environment.NewLine); } catch { }
-                }
+                UnityEngine.Debug.Log("[ZhTw] " + line.TrimEnd());
+            }
+            catch
+            {
             }
         }
-        catch
+    }
+
+    // 供外部（如遊戲回呼）在結束時呼叫，確保緩衝區寫出
+    public static void FlushDiagnostics()
+    {
+        if (!LoggingEnabled) return;
+        lock (LogLock)
         {
+            FlushLog();
         }
-        try
+    }
+
+    // ============ 無條件診斷（生命週期/例外用，不依賴 ZH_TW_REPLACER_LOG）============
+    // 用於 Init、Harmony patch 結果、例外堆疊——這些必須隨時可見，
+    // 否則 catch{} 吞例外會讓「修A壞B」完全看不到原因。
+    private static readonly object AlwaysLock = new object();
+    private static int AlwaysCount;
+    private const int AlwaysMax = 400;
+
+    public static void LogAlways(string msg)
+    {
+        lock (AlwaysLock)
         {
-            UnityEngine.Debug.Log("[ZhTw] " + line);
-        }
-        catch
-        {
+            if (AlwaysCount >= AlwaysMax) return;
+            AlwaysCount++;
+            string line = DateTime.Now.ToString("HH:mm:ss.fff") + " [ZH] " + msg;
+            try
+            {
+                UnityEngine.Debug.Log("[ZhTw] " + line);
+            }
+            catch { }
+            try
+            {
+                File.AppendAllText(Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "LocalLow", "Freehold Games", "CavesOfQud", "replacer_log.txt"),
+                    line + Environment.NewLine);
+            }
+            catch { }
         }
     }
 
@@ -69,8 +122,12 @@ public static class ZhTwReplacers
     {
         try
         {
-            try { File.Delete(LogPath); } catch { }
-            Log("=== ZhTwReplacers static ctor OK ===");
+            LogAlways("=== ZhTwReplacers static ctor ===");
+            if (LoggingEnabled)
+            {
+                try { File.Delete(LogPath); } catch { }
+                Log("=== ZhTwReplacers static ctor OK ===");
+            }
         }
         catch
         {
@@ -82,7 +139,7 @@ public static class ZhTwReplacers
     [ModSensitiveCacheInit]
     public static void Init()
     {
-        Log("=== Init called ===");
+        LogAlways("=== Init called ===");
         try
         {
             // 1. 列出所有 AddReplacer 多載（下一輪手動註冊用）
@@ -102,26 +159,27 @@ public static class ZhTwReplacers
         }
         catch (Exception e)
         {
-            Log("introspection error: " + e.GetType().Name + " " + e.Message);
+            LogAlways("introspection error: " + e.GetType().Name + " " + e.Message);
         }
         try
         {
             // 3. 強制重掃 replacer（模組載入後）
             VariableReplacers.Reset();
-            Log("VariableReplacers.Reset() OK");
+            LogAlways("VariableReplacers.Reset() OK");
         }
         catch (Exception e)
         {
-            Log("Reset error: " + e.GetType().Name + " " + e.Message);
+            LogAlways("Reset error: " + e.GetType().Name + " " + e.Message);
         }
         try
         {
             // 4. Harmony 補丁（硬編碼戰鬥訊息）
             ZhTwHarmonyPatches.Init();
+            LogAlways("ZhTwHarmonyPatches.Init() done");
         }
         catch (Exception e)
         {
-            Log("Harmony patch error: " + e.GetType().Name + " " + e.Message);
+            LogAlways("Harmony patch error: " + e.GetType().Name + " " + e.Message + "\n" + e.StackTrace);
         }
     }
 

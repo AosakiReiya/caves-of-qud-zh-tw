@@ -6,7 +6,7 @@
   <template ID="Effect.AnemoneEffect.Details">
         <switch Name="DamageBonus">
             <case Value="0" />
-            <default><p>Additional <stat Name="DamageBonus" /> bleeding damage per turn.</p></default>
+            <default><p>每回合額外造成 <stat Name="DamageBonus" /> 點流血傷害。</p></default>
         </switch>
         <saveline Name="BleedingSave" HideValue="0" />
     </template>

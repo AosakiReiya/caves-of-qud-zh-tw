@@ -113,7 +113,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 
 技能通常會賦予妳主動能力。一旦妳購買了技能，就可以從「管理能力」選單（'~CmdAbilities'）中存取妳的新主動能力。</topic>
   <topic name="Mutations and Defects" DisplayName="突變與缺陷">突變是賦予卡德 denizens 的特殊生物力量 ——
-來自外部生態穹頂的真人類並不擁有突變。突變分為兩種類型：生理與精神。每種突變都有一個相關的突變分數。你的生理突變分數以及由生理突變提供的啟動能力冷卻時間是固定的。另一方面，你的精神突變分數會受到你的自我（Ego）修正值影響，而由精神突變提供的能力冷卻時間則會根據你高於或低於 16 點的意志力（Willpower）每點進行 5% 的調整。
+來自外部生態穹頂的真人類並不擁有突變。突變分為兩種類型：生理與精神。每種突變都有一個相關的突變分數。你的生理突變分數以及由生理突變提供的啟動能力冷卻時間是固定的。另一方面，你的精神突變分數會受到你的心智（Ego）修正值影響，而由精神突變提供的能力冷卻時間則會根據你高於或低於 16 點的意志力（Willpower）每點進行 5% 的調整。
 
 大多數角色初始的突變分數為 1。當你提升等級時會獲得一個突變點數，你可以用它來將其中一種突變的分數增加 1。任何突變的分數都不得超過 1 加上你的角色等級除以 2。此外，突變只能透過突變點數進行強化，最高分數為 10，但如果你的自我進一步強化了精神突變，使其超過 10 分，則精神突變可以突破此上限。
 
@@ -186,7 +186,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
               額外程式開發 - Bastia Rosen
          額外編劇與設計 - Caelyn Sandel
                     額外音樂 - Brandon Tanner        
-                            圖塊藝術 - Samuel Wilson
+                            圖塊藝術 - Samuel 威爾森(Wilson)
                 額外 UI 設計 - Polat Yarisci
                         音效設計 - A Shell in the Pit
             QA, 額外設計, 與
@@ -275,7 +275,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
                                 Dij
                                 LongueVanne
                                 50RCERESS
-                                廚師 瑪瑙斷裂之星
+                                廚師 瑪瑙斷裂之星(Agate Severance Star)
                                 awful_falafel
                                 Jonny Robertson
                                 Ian Wall

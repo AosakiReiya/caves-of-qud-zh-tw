@@ -1,0 +1,308 @@
+{
+  "No blueprint by ID '{1}' found.": {
+    "zh": "找不到 ID 為「{1}」的藍圖。",
+    "method": "ShowFail",
+    "caps": [
+      "Value"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Quests.GolemQuest/GolemBodySelection.cs"
+  },
+  "You have received a new quest, {1}!": {
+    "zh": "你收到了一個新任務：{1}！",
+    "method": "Show",
+    "caps": [
+      "DisplayName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/Quest.cs"
+  },
+  "You have failed the quest {1}!": {
+    "zh": "你失敗了任務：{1}！",
+    "method": "Show",
+    "caps": [
+      "DisplayName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/Quest.cs"
+  },
+  "You have completed the quest {1}!": {
+    "zh": "你已完成任務 {1}！",
+    "method": "Show",
+    "caps": [
+      "DisplayName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/Quest.cs"
+  },
+  "No blueprint named \\\"{1}\\\" found.": {
+    "zh": "找不到名為「{1}」的藍圖。",
+    "method": "Show",
+    "caps": [
+      "bpname"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObjectFactory.cs"
+  },
+  "You gain {{C|{1}}} skill points!": {
+    "zh": "你獲得了 {{C|{1}}} 點技能點數！",
+    "method": "Show",
+    "caps": [
+      "amount"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "Your Ego is increased by {{G|{1}}}!": {
+    "zh": "你的心智增加了 {{G|{1}}}！",
+    "method": "Show",
+    "caps": [
+      "amount"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "Your Ego is decreased by {{R|{1}}}!": {
+    "zh": "你的心智降低了 {{R|{1}}}！",
+    "method": "Show",
+    "caps": [
+      "amount"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "Your Intelligence is increased by {{G|{1}}}!": {
+    "zh": "你的智力增加了 {{G|{1}}}！",
+    "method": "Show",
+    "caps": [
+      "amount"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "Your Willpower is increased by {{G|{1}}}!": {
+    "zh": "你的意志力增加了 {{G|{1}}}！",
+    "method": "Show",
+    "caps": [
+      "amount"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "You start calling {1} by the name '{2}'.": {
+    "zh": "你開始稱呼 {1} 為「{2}」。",
+    "method": "Show",
+    "caps": [
+      "text",
+      "text2"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/GameObject.cs"
+  },
+  "You are already {1} ": {
+    "zh": "你已經是 {1} 了",
+    "method": "ShowFail",
+    "caps": [
+      "Preposition"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World/PointOfInterest.cs"
+  },
+  "No members found for '{1}'.": {
+    "zh": "找不到「{1}」的成員。",
+    "method": "Show",
+    "caps": [
+      "value"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.ZoneBuilders/FactionEncounters.cs"
+  },
+  "You gain {{C|{1}}} XP.": {
+    "zh": "你獲得了 {{C|{1}}} 經驗值。",
+    "method": "Show",
+    "caps": [
+      "num2"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Conversations.Parts/LibrarianGiveBook.cs"
+  },
+  "You share your {1} with ": {
+    "zh": "你與 {1} 分享了",
+    "method": "Show",
+    "caps": [
+      "LiquidName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Conversations.Parts/WaterRitual.cs"
+  },
+  "You gained {{C|{1}}} skill points!": {
+    "zh": "你獲得了 {{C|{1}}} 點技能點數！",
+    "method": "Show",
+    "caps": [
+      "Points"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Conversations.Parts/WaterRitualSkillPoint.cs"
+  },
+  "No biome by name '{1}' found.": {
+    "zh": "找不到名為「{1}」的生物群系。",
+    "method": "Show",
+    "caps": [
+      "Value"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Biomes/BiomeManager.cs"
+  },
+  "The dance ended in failure! [{1}]": {
+    "zh": "舞蹈以失敗告終！[{1}]",
+    "method": "Show",
+    "caps": [
+      "Reason"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/PlayerDanceRitual.cs"
+  },
+  "The dance ended in success! [{1}]": {
+    "zh": "舞蹈圓滿結束！[{1}]",
+    "method": "Show",
+    "caps": [
+      "Reason"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/PlayerDanceRitual.cs"
+  },
+  "Your {1} is increased by {{G|1}}!": {
+    "zh": "你的 {1} 增加了 {{G|1}}！",
+    "method": "Show",
+    "caps": [
+      "Attribute"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/TrainingBook.cs"
+  },
+  "You try to {1} ": {
+    "zh": "你試著要 {1}",
+    "method": "Show",
+    "caps": [
+      "_ActionVerb"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/Windup.cs"
+  },
+  "You {1} ": {
+    "zh": "你 {1}",
+    "method": "Show",
+    "caps": [
+      "_ActionVerb"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/Windup.cs"
+  },
+  "A sewage eel wraps itself{1}!": {
+    "zh": "一條污水鰻纏繞住了你{1}！",
+    "method": "Show",
+    "caps": [
+      "text"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/EelSpawn.cs"
+  },
+  "You don't have any {1} to clean ": {
+    "zh": "你沒有任何需要清理的 {1}",
+    "method": "ShowFail",
+    "caps": [
+      "cleaningLiquidGeneralization"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/Physics.cs"
+  },
+  "The council will be convened! Come back in {1} ": {
+    "zh": "議會即將召開！請在 {1} 後回來",
+    "method": "Show",
+    "caps": [
+      "num6"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/SpindleNegotiation.cs"
+  },
+  "A sphere of light in the chord of {1} radiates away.\\n\\nYou feel it absorbed elsewhere.": {
+    "zh": "一團位於 {1} 和弦中的光球向外擴散。\\n\\n你感覺到它在其他地方被吸收了。",
+    "method": "Show",
+    "caps": [
+      "baseDisplayNameStripped"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/NephalProperties.cs"
+  },
+  "You discover {1}!": {
+    "zh": "你發現了 {1}！",
+    "method": "Show",
+    "caps": [
+      "text"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/LocationFinder.cs"
+  },
+  "You traveled to {1}!": {
+    "zh": "你前往了 {1}！",
+    "method": "Show",
+    "caps": [
+      "text"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Parts/LocationFinder.cs"
+  },
+  "You stop calling this location '{1}' and start calling it '{2}'.": {
+    "zh": "你不再稱呼此處為「{1}」，而是開始稱之為「{2}」。",
+    "method": "Show",
+    "caps": [
+      "baseDisplayName",
+      "text2"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.UI/JournalScreen.cs"
+  },
+  "You start calling this location '{1}'.": {
+    "zh": "你開始稱呼這個地點為「{1}」。",
+    "method": "Show",
+    "caps": [
+      "text2"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.UI/JournalScreen.cs"
+  },
+  "no string property '{1}' found": {
+    "zh": "找不到字串屬性「{1}」",
+    "method": "Show",
+    "caps": [
+      "text2"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Capabilities/Wishing.cs"
+  },
+  "no int property '{1}' found": {
+    "zh": "找不到整數屬性「{1}」",
+    "method": "Show",
+    "caps": [
+      "text3"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Capabilities/Wishing.cs"
+  },
+  "Could not generate turret from blueprint \\\"{1}\\\"\\n\\n": {
+    "zh": "無法從藍圖「{1}」生成砲塔。",
+    "method": "ShowFail",
+    "caps": [
+      "value"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Capabilities/IntegratedWeaponHosts.cs"
+  },
+  "The infected crust of skin on your {1} loosens and breaks away.": {
+    "zh": "你{1}上受感染的皮膚結痂鬆脫並脫落了。",
+    "method": "Show",
+    "caps": [
+      "ordinalName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.QuestManagers/SpreadPax.cs"
+  },
+  "You are {1}!": {
+    "zh": "你就是 {1}！",
+    "method": "Show",
+    "caps": [
+      "Adjective"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Effects/Stuck.cs"
+  },
+  "You are {{|{1}}}!": {
+    "zh": "你是 {{|{1}}}！",
+    "method": "ShowFail",
+    "caps": [
+      "Text"
+    ],
+    "file": "/tmp/opencode/decompY/XRL.World.Effects/Immobilized.cs"
+  },
+  "Error generating population:{1}\\n\\n, please report this error to support@freeholdgames.com": {
+    "zh": "生成人口時發生錯誤：{1}\\n\\n，請將此錯誤回報至 support@freeholdgames.com",
+    "method": "Show",
+    "caps": [
+      "PopulationName"
+    ],
+    "file": "/tmp/opencode/decompY/XRL/PopulationManager.cs"
+  },
+  "No table by the name '{1}' could be resolved.": {
+    "zh": "無法解析名為「{1}」的資料表。",
+    "method": "Show",
+    "caps": [
+      "text"
+    ],
+    "file": "/tmp/opencode/decompY/XRL/PopulationManager.cs"
+  }
+}

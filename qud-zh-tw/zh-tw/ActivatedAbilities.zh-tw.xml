@@ -222,7 +222,7 @@
 <p>每回合消耗能量：溫度變化 x<gametext>=chargeuse:0.??=</gametext></p></description>
   </ability>
   <ability Command="ActivatePaxInfection">
-    <description><p>你噴出孢子並散播 Klanq。</p>
+    <description><p>你噴出孢子並散播 克蘭克(Klanq)。</p>
 <br />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
@@ -483,7 +483,7 @@
   <ability Command="CommandWillForceStrength">
     <description><p>憑藉純粹的意志力，你展現出超凡的身手。</p>
 <br />
-<p>將你的力量屬性提升，數值等於你自我加成（Ego bonus）的兩倍。</p>
+<p>將你的力量屬性提升，數值等於你心智加成（Ego bonus）的兩倍。</p>
 <br />
 <statline Name="Bonus" DisplayName="力量加成" />
 <statline Name="持續時間" DisplayName="持續時間" />
@@ -492,7 +492,7 @@
   <ability Command="CommandWillForceAgility">
     <description><p>憑藉純粹的意志力，你展現出超凡的身手。</p>
 <br />
-<p>提升你的敏捷 (Agility) 屬性，增加量等於自我 (Ego) 加成的兩倍。</p>
+<p>提升你的敏捷 (Agility) 屬性，增加量等於心智 (Ego) 加成的兩倍。</p>
 <br />
 <statline Name="Bonus" DisplayName="敏捷加成" />
 <statline Name="持續時間" DisplayName="持續時間" />
@@ -501,7 +501,7 @@
   <ability Command="CommandWillForceToughness">
     <description><p>憑藉純粹的意志力，你展現出超凡的身手。</p>
 <br />
-<p>將你的韌性屬性提升，數值等於你自我加成（Ego bonus）的兩倍。</p>
+<p>將你的韌性屬性提升，數值等於你心智加成（Ego bonus）的兩倍。</p>
 <br />
 <statline Name="Bonus" DisplayName="韌性加成" />
 <statline Name="持續時間" DisplayName="持續時間" />
@@ -1049,7 +1049,7 @@
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandPersuasionBerate">
-    <description><p>你羞辱附近的生物，使其 DV、命中率、自我（Ego）與意志力（Willpower）降低 4 點，且敏捷（Quickness）降低 10%。</p>
+    <description><p>你羞辱附近的生物，使其 DV、命中率、心智（Ego）與意志力（Willpower）降低 4 點，且敏捷（Quickness）降低 10%。</p>
 <br />
 <statline Name="持續時間" DisplayName="持續時間" />
 <statline Name="Range" DisplayName="射程" />
@@ -1073,13 +1073,13 @@
   <ability Command="CommandProselytize">
     <description><p>你說服一個智慧生物加入你的行列。</p>
 <br />
-<p>自我 (Ego) + 角色等級 對抗 MA + 角色等級</p>
+<p>心智 (Ego) + 角色等級 對抗 MA + 角色等級</p>
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandRebukeRobot">
     <description><p>你斥責機器人，使其徘徊離去或加入你。</p>
 <br />
-<p>針對機器人的自我（Ego）型攻擊。</p>
+<p>針對機器人的心智（Ego）型攻擊。</p>
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandToggleAkimbo">

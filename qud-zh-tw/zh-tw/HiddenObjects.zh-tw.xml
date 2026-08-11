@@ -22,7 +22,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 
 -->
 <objects Lang="zh-tw" Encoding="utf-8" ExcludeFromCorpusGeneration="true">
- <object Name="Ehalcodon" Load="Merge">
+ <object Name="埃哈爾科登(Ehalcodon)" Load="Merge">
   <part Name="Render" DisplayName="{{M|埃哈爾科登(Ehalcodon)}}" />
   <part Name="Description" Short="一個巨大的生物攀上了上方的視線邊緣，散發著神光。其臀部覆蓋著閃爍的 紡錘(Spindle) 粉末，支撐著由此平面之有意識背景輻射所勾勒出的生物形體，寬闊且帶條紋的 翅膀 邊緣銳利，足以在恆星風中翱翔。最後，在 =pronouns.possessive= tx-glass 皮膚下翻騰的雙色光芒被折射成不可能的超光譜，並以角狀螺旋從身體中溢出。" />
   <part Name="Honorifics" Ordinary="{{M|星形}}" />
@@ -40,7 +40,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="稜鏡克雷什" />
  </object>
  <object Name="LightCircleEhalcodon" Load="Merge">
-  <part Name="Render" DisplayName="光環在 {{ehalcodon|Ehalcodon}} 的和弦中" />
+  <part Name="Render" DisplayName="光環在 {{ehalcodon|埃哈爾科登(Ehalcodon)}} 的和弦中" />
   <part Name="Description" Short="原宇宙噴發出的星爆噴出物尖塔繞著零點旋轉，在非決定論之神的虹彩中模糊不清。" />
  </object>
  <object Name="BaseEaterGreatMachineShrine" Load="Merge">
@@ -55,24 +55,24 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="繫留臂" />
   <part Name="Description" Short="法蘭式鋼鐵錨點將 Gjaus 的錐形絲帶固定在其低地連接點上。" />
  </object>
- <object Name="Spindle Ribbon" Load="Merge">
+ <object Name="紡錘(Spindle) Ribbon" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
   <part Name="Description" Short="一條由碳微粒組成的氣泡狀緞帶，沿著其錨定機制被車削至紙梳般的厚度，並向天空消失於一個漸尖的虛無之中。" />
  </object>
- <object Name="Left Spindle Ribbon" Load="Merge">
+ <object Name="Left 紡錘(Spindle) Ribbon" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
  </object>
- <object Name="Right Spindle Ribbon" Load="Merge">
+ <object Name="Right 紡錘(Spindle) Ribbon" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
  </object>
- <object Name="Spindle Ribbon Top" Load="Merge">
+ <object Name="紡錘(Spindle) Ribbon Top" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
   <part Name="Description" Short="一條由碳微粒組成的氣泡狀緞帶，沿著其錨定機制被車削至紙梳般的厚度，並向天空消失於一個漸尖的虛無之中。" />
  </object>
- <object Name="Left Spindle Ribbon Top" Load="Merge">
+ <object Name="Left 紡錘(Spindle) Ribbon Top" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
  </object>
- <object Name="Right Spindle Ribbon Top" Load="Merge">
+ <object Name="Right 紡錘(Spindle) Ribbon Top" Load="Merge">
   <part Name="Render" DisplayName="石墨帶" />
  </object>
  <object Name="TerrainNorthSheva" Load="Merge">
@@ -149,14 +149,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <tag Name="DefiniteArticle" Value="這" />
  </object>
  <object Name="TerrainEarthGate" Load="Merge">
-  <part Name="Render" DisplayName="大地之門" />
+  <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   <part Name="Description" Short="肩拱與門戶將從大地樹木、沙土到星辰棲息地的流動具象化，反之亦然。在通道果園中，就在門戶腳下，巨大的祖先頁岩環繞著儀式用的 容器。" />
   <xtagGrammar Proper="真實" />
   <tag Name="IndefiniteArticle" Value="這" />
   <tag Name="DefiniteArticle" Value="這" />
  </object>
  <object Name="TerrainEarthGateFlank" Load="Merge">
-  <part Name="Render" DisplayName="大地之門" />
+  <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   <xtagGrammar Proper="真實" />
   <part Name="Description" Short="肩拱與門戶將從大地樹木、沙土到星辰棲息地的流動具象化，反之亦然。在通道果園中，就在門戶腳下，巨大的祖先頁岩環繞著儀式用的 容器。" />
   <tag Name="IndefiniteArticle" Value="這" />
@@ -431,13 +431,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="日月陰影" />
   <part Name="Description" Short="一頂由明亮且滴水的星葉組成的王冠，在其根系上投射出迷人的陰影。" />
  </object>
- <object Name="Earth Gate W" Load="Merge">
-  <part Name="Render" DisplayName="大地之門" />
+ <object Name="大地之門(Earth Gate) W" Load="Merge">
+  <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   <part Name="Description" Short="=pronouns.Possessive= 庫菲亞已被剪裁並重新縫製成兜帽，而 =pronouns.subjective= 已 縫製了一個蘋果袋，以模仿色彩族人的板岩服飾。一根包覆著銅線的牧羊杖掛在 =pronouns.possessive= 髖部，而 =pronouns.subjective= 摩擦 一個沾滿鹽粒的大拇指，摩擦著一枚裂開電路板製成的護身符。" />
   <xtagGrammar iArticle="這" />
  </object>
- <object Name="Earth Gate E" Load="Merge">
-  <part Name="Render" DisplayName="大地之門" />
+ <object Name="大地之門(Earth Gate) E" Load="Merge">
+  <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   <part Name="Description" Short="=pronouns.Possessive= 庫菲亞已被剪裁並重新縫製成兜帽，而 =pronouns.subjective= 已 縫製了一個蘋果袋，以模仿色彩族人的板岩服飾。一根包覆著銅線的牧羊杖掛在 =pronouns.possessive= 髖部，而 =pronouns.subjective= 摩擦 一個沾滿鹽粒的大拇指，摩擦著一枚裂開電路板製成的護身符。" />
   <xtagGrammar iArticle="這" />
  </object>
@@ -545,11 +545,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="StarshipBed W" Load="Merge">
   <part Name="Render" DisplayName="睡眠空洞" />
-  <part Name="Description" Short="幾何艙壁中一個木雕出的凹槽被毯子圍繞，並以圖案織物作為帷幕。在恆星間漫長的虛空中，隨著 헤드론引擎的震顫輕輕搖晃，船民們進入了地表人所不知的層次深沉的安眠。" />
+  <part Name="Description" Short="幾何艙壁中一個木雕出的凹槽被毯子圍繞，並以圖案織物作為帷幕。在恆星間漫長的虛空中，隨著 能量晶體引擎的震顫輕輕搖晃，船民們進入了地表人所不知的層次深沉的安眠。" />
  </object>
  <object Name="StarshipBed E" Load="Merge">
   <part Name="Render" DisplayName="睡眠空洞" />
-  <part Name="Description" Short="幾何艙壁中一個木雕出的凹槽被毯子圍繞，並以圖案織物作為帷幕。在恆星間漫長的虛空中，隨著 헤드론引擎的震顫輕輕搖晃，船民們進入了地表人所不知的層次深沉的安眠。" />
+  <part Name="Description" Short="幾何艙壁中一個木雕出的凹槽被毯子圍繞，並以圖案織物作為帷幕。在恆星間漫長的虛空中，隨著 能量晶體引擎的震顫輕輕搖晃，船民們進入了地表人所不知的層次深沉的安眠。" />
  </object>
  <object Name="StarshipBookshelf W" Load="Merge">
   <part Name="Render" DisplayName="內置書架" />
@@ -610,7 +610,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="滑綠色的植物葉片帶著鉻色的切口從古老的釜中展開。它們像那些扎根於壤土的親戚一樣生存與呼吸，但它們的生物數據與長生不死的種子進行了拼接。" />
  </object>
  <object Name="Starship1 Power Core" Load="Merge">
-  <part Name="Render" DisplayName="能量 헤德隆" />
+  <part Name="Render" DisplayName="能量晶體" />
   <part Name="Description" Short="磁性火炬在 內部 幾何體中因高能融合的廢氣而悶燒著，整個密室因潛能而震動。" />
  </object>
  <object Name="Starship1 Status Panel" Load="Merge">
@@ -758,7 +758,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="全息投影儀" />
   <part Name="Description" Short="一個 開關 使遠處圓圈上的粒子散射對齊，並發出切割光芒。" />
  </object>
- <object Name="BaseHologramProjector Barathrum" Load="Merge">
+ <object Name="BaseHologramProjector 巴拉楚姆(Barathrum)" Load="Merge">
   <part Name="Render" DisplayName="全息投影儀" />
  </object>
  <object Name="HologramCircle" Load="Merge">
@@ -768,7 +768,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="BaseTriumHologram" Load="Merge">
   <part Name="Render" DisplayName="全息圖" />
  </object>
- <object Name="Barathrum Hologram" Load="Merge">
+ <object Name="巴拉楚姆(Barathrum) Hologram" Load="Merge">
   <part Name="Render" DisplayName="巴拉屈的全息圖" />
   <part Name="Description" Short="年輕 urshiib 那明亮的容貌與短刺鬃毛，甚至能切開破碎光芒構成的 帆布。他的肩膀因新的目標而挺起，雙眼如雷射般精準地注視著前方。" />
  </object>
@@ -846,7 +846,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="寺廟奉獻牌" />
   <part Name="Description" Short="" />
  </object>
- <object Name="Star Orchid Temple Projector" Load="Merge">
+ <object Name="星蘭神廟(Star Orchid Temple) Projector" Load="Merge">
   <part Name="Render" DisplayName="神廟投影儀" />
   <part Name="Description" Short="高維度的污垢在投影盤上閃爍著光芒，那是它曾浸泡在星際時空肥皂薄膜中的痕跡。現在這片圓盤已歸於沉寂，脫離了其超驗的糾纏，其底座為苔蘚提供了繁茂生長的陰影牆。" />
  </object>
@@ -917,23 +917,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Interactable" Action="進入" Message="=object.Does:are= 太過陳舊生鏽，無法進入。" />
   <part Name="ChargeSink" NameForStatus="PrimeMover" />
  </object>
- <object Name="Chiliad Slynth Joppa" Load="Merge">
+ <object Name="Chiliad Slynth 約帕(Joppa)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯灌溉者" />
   <part Name="Description" Short="=pronouns.Possessive= 的邊緣葉片像被敲打過的帽子一樣垂下，遮蔽了 =pronouns.possessive= 在高鹽分烈日下的發光雙眼。=pronouns.Subjective= 熟練且謹慎地使用藤蔓收割者（vinereaper），在 =pronouns.possessive= 柔軟且易於收割的根系 周圍作業。" />
  </object>
- <object Name="Chiliad Slynth Grit Gate" Load="Merge">
+ <object Name="Chiliad Slynth 礫門(Grit Gate)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯扳手僧" />
   <part Name="Description" Short="=pronouns.Possessive= 指狀莖已長到足以進行修補的長度，=pronouns.subjective= 拉緊 =pronouns.possessive= 根系' 對地底的抓握，以增強 =pronouns.possessive= 扳手 的轉矩。" />
  </object>
- <object Name="Chiliad Slynth Bey Lah" Load="Merge">
+ <object Name="Chiliad Slynth 貝拉(Bey Lah)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯偵察兵" />
   <part Name="Description" Short="=pronouns.Subjective= 聞了聞 空氣，並在乾燥的土壤中 踩踏 =pronouns.possessive= 後根。" />
  </object>
- <object Name="Chiliad Slynth Kyakukya" Load="Merge">
+ <object Name="Chiliad Slynth 恰庫恰(Kyakukya)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯蘋果酒口" />
   <part Name="Description" Short="一群蕈類已在 =pronouns.possessive= 花冠中建立了共生根系。=pronouns.Possessive= 莖部被燒焦並撒上了香料，而 =pronouns.subjective= 用木勺進行著辛辣的攪拌。" />
  </object>
- <object Name="Chiliad Slynth Ezra" Load="Merge">
+ <object Name="Chiliad Slynth 以斯拉(Ezra)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯流亡者" />
   <part Name="Description" Short="穿過窒息的 樹木陰影，飛舞著百座 拱門與葬禮紀念碑的扶壁。它們俯瞰著覆蓋在食土者地下墓穴上的大理石拱廊。" />
  </object>
@@ -945,11 +945,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="斯林斯吟唱者" />
   <part Name="Description" Short="花靈披上了色彩教會的二極體兜帽，以讚美詩般的節奏讓乾枯的花瓣相互摩擦發出劈啪聲。一枚拋光的鉻色胸針在 =pronouns.possessive= 頸部的葉片上輕輕夾住。" />
  </object>
- <object Name="Chiliad Slynth Mopango" Load="Merge">
+ <object Name="Chiliad Slynth 莫龐戈(Mopango)" Load="Merge">
   <part Name="Render" DisplayName="斯林斯友人" />
   <part Name="Description" Short="柔和且發光的亮光從 =pronouns.possessive= 翠綠核心放射出來，所有 =pronouns.possessive= 葉狀部分都像微型太陽般向其彎曲。上方，=pronouns.possessive= 明亮的雙眼閃爍著不切實際的目標感。" />
  </object>
- <object Name="Chiliad Slynth Chavvah" Load="Merge">
+ <object Name="Chiliad Slynth 夏瓦(Chavvah)" Load="Merge">
   <part Name="Render" DisplayName="水晶斯林斯" />
   <part Name="Description" Short="一顆熾熱的晶體碎片坐落在 =pronouns.possessive= 花冠的核心，並以奪目的光芒取代了雙眼。在 =pronouns.possessive= 翠綠身軀的四周，空氣因沙啞的嗡鳴聲而震動。" />
  </object>
@@ -993,7 +993,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="吉爾什小神" />
   <part Name="Description" Short="一個擁有翅膀、蹄與脊椎的生物在歲月的重量下蜷縮著，舌頭發出豐富而惆悵的回聲，面容在情感的明亮光譜中閃耀。一對虹彩雙瞳在 =pronouns.possessive= 馬賽克般的皮膚（由 =pronouns.possessive= 多線血脈所分形化）下翻滾，並射出散逸成七維條狀的光芒。這東西在未經邀請的情況下等待著。" />
  </object>
- <object Name="Fool of the Gyre" Load="Merge">
+ <object Name="Fool of the 環流(Gyre)" Load="Merge">
   <part Name="Render" DisplayName="旋渦之愚者" />
   <part Name="Description" Short="一個穿著千年雜色服飾的苗條身影在跳躍，掛在 =pronouns.possessive= 拱門 頂端的鈴鐺叮噹作響。等待著所有人或無人，被遺落在 =pronouns.possessive= 荒廢秩序之外，=pronouns.subjective= 以愚者的特權在更豐富現實的潛台詞中 發聲。" />
  </object>
@@ -1058,7 +1058,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="=creatureRegionAdjective= 貓" />
   <part Name="Description" Short="=pronouns.possessive= 的喉嚨發出持續不斷、有節奏的咕嚕聲。" />
  </object>
- <object Name="Chiliad Creature Chavvah" Load="Merge">
+ <object Name="Chiliad Creature 夏瓦(Chavvah)" Load="Merge">
   <part Name="Render" DisplayName="=creatureRegionAdjective= 鐘聲" />
   <part Name="Description" Short="一顆躁動不安的水晶隨著 =pronouns.possessive= 的轉動與扭曲，折射著周圍的光線。" />
   <xtagTextFragments PoeticFeatures="折射皮膚、稜鏡手指、透亮光芒" />
@@ -1128,7 +1128,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="=creatureRegionAdjective= 山羊般的" />
   <part Name="Description" Short="一團被蟲害覆蓋、毛皮雜亂的臀部，正以和平且像山羊般的節奏搖晃著。" />
  </object>
- <object Name="Chiliad Creature Gyre Wights" Load="Merge">
+ <object Name="Chiliad Creature 環流(Gyre) Wights" Load="Merge">
   <part Name="Render" DisplayName="=creatureRegionNoun= 環流之" />
   <part Name="Description" Short="當生死侍從隨著星辰與家園的輓歌跳躍時，後背長度的頭巾在變形的隨性中飄動。" />
  </object>
@@ -1164,7 +1164,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="=creatureRegionAdjective= 蛤蜊" />
   <part Name="Description" Short="一塊肥厚的組織從被機器刮過的雙殼類外殼中溢出。" />
  </object>
- <object Name="Chiliad Creature Mopango" Load="Merge">
+ <object Name="Chiliad Creature 莫龐戈(Mopango)" Load="Merge">
   <part Name="Render" DisplayName="莫龐戈(Mopango) =creatureRegionNoun=" />
   <part Name="Description" Short="柔和的內光從 =pronouns.possessive= 銜接的鱗片上散發出來，並環繞著 =pronouns.possessive= 頸部褶皺的披肩。" />
  </object>

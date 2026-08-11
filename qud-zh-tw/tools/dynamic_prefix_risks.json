@@ -1,0 +1,25 @@
+{
+  "total": 145,
+  "generic_flagged": 19,
+  "generic_patterns": [
+    "Choose\\ a",
+    "Debug\\ step",
+    "Debug:",
+    "DisplayName:",
+    "Generated",
+    "Talking\\ to",
+    "You\\ bothered",
+    "You\\ discover",
+    "You\\ eat",
+    "You\\ eject",
+    "You\\ extricate",
+    "You\\ gain",
+    "You\\ imbue",
+    "You\\ name",
+    "You\\ realize",
+    "You\\ receive",
+    "You\\ repair",
+    "You\\ slot",
+    "Your\\ companion,"
+  ]
+}

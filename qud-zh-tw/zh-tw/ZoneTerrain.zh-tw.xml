@@ -261,27 +261,27 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="心靈節奏岩" />
     <part Name="Description" Short="鐘乳石棱柱在靈能之海中，斷續地嗡鳴著數兆生靈被壓縮的思想物質。" />
   </object>
-  <object Name="Chavvah Branch" Load="Merge">
+  <object Name="夏瓦(Chavvah) Branch" Load="Merge">
     <part Name="Render" DisplayName="結晶枝條" />
     <part Name="Description" Short="白熾結晶微柱聚集成密集的簇狀，並以壯麗的分形結構分支穿透天空。它們在彼此之間來回投射著月光。" />
   </object>
-  <object Name="Chavvah Dense Leaves" Load="Merge">
+  <object Name="夏瓦(Chavvah) Dense Leaves" Load="Merge">
     <part Name="Render" DisplayName="緻密水晶葉" />
     <part Name="Description" Short="靜電露珠模糊了銳利的晶體邊緣。平坦的表面本身閃閃發光，在精神微風中沙沙作響。在整體狀態下，它們如同可翻轉的亮片一般，流動於心靈與肉體的界限之間。" />
   </object>
-  <object Name="Chavvah Sparse Leaves" Load="Merge">
+  <object Name="夏瓦(Chavvah) Sparse Leaves" Load="Merge">
     <part Name="Render" DisplayName="稀疏水晶葉" />
     <part Name="Description" Short="靜電露珠模糊了銳利的晶體邊緣。平坦的表面本身閃閃發光，在精神微風中沙沙作響。在整體狀態下，它們如同可翻轉的亮片一般，流動於心靈與肉體的界限之間。" />
   </object>
-  <object Name="Chavvah Chime Left" Load="Merge">
+  <object Name="夏瓦(Chavvah) Chime Left" Load="Merge">
     <part Name="Render" DisplayName="鳴響石" />
     <part Name="Description" Short="它的角落已被靜電磨平，其晶體球莖燃燒著轉化的月光。它在近調與遠調的音鍵中鳴響。" />
   </object>
-  <object Name="Chavvah Chime Right" Load="Merge">
+  <object Name="夏瓦(Chavvah) Chime Right" Load="Merge">
     <part Name="Render" DisplayName="鳴響石" />
     <part Name="Description" Short="它的角落已被靜電磨平，其晶體球莖燃燒著轉化的月光。它在近調與遠調的音鍵中鳴響。" />
   </object>
-  <object Name="Chavvah Taproot Floor" Load="Merge">
+  <object Name="夏瓦(Chavvah) Taproot Floor" Load="Merge">
     <part Name="Render" DisplayName="結晶主根" />
     <part Name="Description" Short="微小的水晶嫩芽被純粹的自我重量壓碎，成為轉化瞬時思緒的粗壯、厚實且均勻的換能器。去相干的情感與記憶在它們沿著根部向上生長時結晶化。" />
   </object>
@@ -483,12 +483,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <object Name="Yd StairsDown Salon" Load="Merge">
     <part Name="Render" DisplayName="前往沙龍的下樓梯" />
   </object>
-  <object Name="Chavvah Spiral StairsUp" Load="Merge">
+  <object Name="夏瓦(Chavvah) Spiral StairsUp" Load="Merge">
     <part Name="Render" DisplayName="在螺旋樓梯上" />
     <part Name="Description" Short="光滑且雲霧狀的圓台在靈能懸浮的螺旋中漂浮著。" />
     <xtagGrammar iArticle="一些" />
   </object>
-  <object Name="Chavvah Spiral StairsDown" Load="Merge">
+  <object Name="夏瓦(Chavvah) Spiral StairsDown" Load="Merge">
     <part Name="Render" DisplayName="螺旋樓梯下" />
     <part Name="Description" Short="光滑且雲霧狀的圓台在靈能懸浮的螺旋中漂浮著。" />
     <xtagGrammar iArticle="一些" />

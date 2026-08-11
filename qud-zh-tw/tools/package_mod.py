@@ -66,6 +66,10 @@ def main() -> None:
     for f in sorted(glob.glob(str(SRC / "*.jsonc"))):
         shutil.copy(f, OUT / "zh-tw" / Path(f).name)
         print(f"  複製語言資料檔: {Path(f).name}")
+    # mod 根目錄的 spice 語言覆寫檔（historyspice.*.json）→ 放 mod 根
+    for f in sorted(glob.glob(str(PROJECT / "historyspice.*.json"))):
+        shutil.copy(f, OUT / Path(f).name)
+        print(f"  複製 spice 覆寫檔: {Path(f).name}")
     print(f"已打包至 {OUT}")
 
     if args.zip:

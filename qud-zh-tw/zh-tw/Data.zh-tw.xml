@@ -433,7 +433,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <object Name="Data_Asterisk_SpiceVillage" Load="Merge">
     <tag Name="Postfix" Value="上面刻有獻給 =spice.entity:sacredThing:the act of procreating= 的圖騰。" />
   </object>
-  <object Name="Data_Asterisk_Joppa" Load="Merge">
+  <object Name="Data_Asterisk_約帕(Joppa)" Load="Merge">
     <tag Name="DisplayName" Value="約帕(Joppa)" />
     <tag Name="Postfix" Value="上面刻著浮雕，每處都有 水藤 沿著蔓延。" />
   </object>
@@ -445,11 +445,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <tag Name="DisplayName" Value="貝拉(Bey Lah)" />
     <tag Name="Postfix" Value="上面刻著從輻條延伸至中心的鹿蹄印。" />
   </object>
-  <object Name="Data_Asterisk_Kyakukya" Load="Merge">
+  <object Name="Data_Asterisk_恰庫恰(Kyakukya)" Load="Merge">
     <tag Name="DisplayName" Value="恰庫恰(Kyakukya)" />
     <tag Name="Postfix" Value="上面刻滿了微小的蕈類。" />
   </object>
-  <object Name="Data_Asterisk_Ezra" Load="Merge">
+  <object Name="Data_Asterisk_以斯拉(Ezra)" Load="Merge">
     <tag Name="DisplayName" Value="以斯拉(Ezra)" />
     <tag Name="Postfix" Value="上面以各種形式的 musa 雕刻成浮雕。" />
   </object>
@@ -461,7 +461,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <tag Name="DisplayName" Value="六日高蹺(Six Day Stilt)" />
     <tag Name="Postfix" Value="每個輻條上都刻著一位伸出手的傳教士。" />
   </object>
-  <object Name="Data_Asterisk_Mopango" Load="Merge">
+  <object Name="Data_Asterisk_莫龐戈(Mopango)" Load="Merge">
     <tag Name="DisplayName" Value="莫龐戈(Mopango)" />
     <tag Name="Postfix" Value="沿著每根輪輻壓印著星爆圖案，輪轂周圍則有一個圓形的環狀裝飾。" />
   </object>
@@ -469,7 +469,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <tag Name="DisplayName" Value="賤民" />
     <tag Name="Postfix" Value="上面刻著蜿蜒的小徑，以及一個在小徑上行走的孤單身影。" />
   </object>
-  <object Name="Data_Asterisk_Chavvah" Load="Merge">
+  <object Name="Data_Asterisk_夏瓦(Chavvah)" Load="Merge">
     <tag Name="DisplayName" Value="夏瓦(Chavvah)" />
     <tag Name="Postfix" Value="上面刻著 entwining each spoke 的 結晶根。" />
   </object>

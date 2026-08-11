@@ -33,7 +33,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <subtype Name="Horticulturist" DisplayName="園藝家" />
       <subtype Name="Priest of All Suns" DisplayName="萬日祭司" />
       <subtype Name="Priest of All Moons" DisplayName="萬月祭司" />
-      <subtype Name="Syzygyrior" DisplayName="Syzygyrior" />
+      <subtype Name="希茲吉里奧(Syzygyrior)" DisplayName="希茲吉里奧(Syzygyrior)" />
     </category>
     <category Name="Ibul" DisplayName="{{C|伊布爾冰封生態館}}">
       <subtype Name="Artifex" DisplayName="阿提費克斯" />
@@ -41,7 +41,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <subtype Name="Praetorian" DisplayName="禁衛軍" />
       <subtype Name="Eunuch" DisplayName="宦官" />
     </category>
-    <category Name="Yawningmoon" DisplayName="{{R|雅溫蒙的地殼迫擊砲}}">
+    <category Name="雅溫蒙(Yawningmoon)" DisplayName="{{R|雅溫蒙的地殼迫擊砲}}">
       <subtype Name="Child of the Hearth" DisplayName="爐火之子" />
       <subtype Name="Child of the Wheel" DisplayName="輪轉之子" />
       <subtype Name="Child of the Deep" DisplayName="深淵之子" />

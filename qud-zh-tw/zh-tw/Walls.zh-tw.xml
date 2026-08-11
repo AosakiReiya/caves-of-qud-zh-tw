@@ -498,8 +498,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Description" Short="巨大的古老岩石被堆疊、打磨，並依照 =sultan:5= 時期的流行風格雕刻成長弧形。從那時起，這項工程便匯集了眾多合作者，他們的簽名隨處可見：這裡有惡作劇者的塗改痕跡；那裡有時間之筆留下的柔和筆觸。" />
   </object>
   <object Name="SultanWall_Period6" Load="Merge">
-    <part Name="Render" DisplayName="雷謝夫蘇丹國的雕刻石塊" />
-    <part Name="Description" Short="巨大的古老石塊被堆疊、打磨，並依照雷謝夫（Resheph）時代的風格雕刻成長弧形。從那時起，這項計畫匯集了許多合作者，他們的簽名隨處可見：這裡有破壞者留下的空白編輯；那裡有時間之筆留下的柔和筆觸。" />
+    <part Name="Render" DisplayName="雷舍夫蘇丹國的雕刻石塊" />
+    <part Name="Description" Short="巨大的古老石塊被堆疊、打磨，並依照雷舍夫（Resheph）時代的風格雕刻成長弧形。從那時起，這項計畫匯集了許多合作者，他們的簽名隨處可見：這裡有破壞者留下的空白編輯；那裡有時間之筆留下的柔和筆觸。" />
   </object>
   <object Name="SultanWall_Ornate_Period5" Load="Merge">
     <part Name="Render" DisplayName="來自 =sultan:5= 蘇丹國的雕刻石材" />
@@ -526,7 +526,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Description" Short="事情沒那麼簡單，=name=。我們這些漂泊者沒有等級制度。我可以隨意低語，但如果你的名聲無法掀起風浪，就沒有任何風會吹向 斯林斯。先讓 賤民 知道你的存在，再來問我吧。" />
   </object>
   <object Name="InnerSultanWall_Period6" Load="Merge">
-    <part Name="Render" DisplayName="雷謝夫蘇丹國的金箔大理石" />
+    <part Name="Render" DisplayName="雷舍夫蘇丹國的金箔大理石" />
     <part Name="Description" Short="大理石雕刻出的垂墜流蘇環繞著高浮雕圓盤。帝國的金飾牆面風格華麗，但仍比早期蘇丹時期的鍍金裝飾顯得樸素。" />
   </object>
   <object Name="BaseMuralWall" Load="Merge">
@@ -626,7 +626,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Description" Short="徑向棲息地的石英物質覆蓋在軟石層之上，而在其下方，則是一層滴著靜電樹脂、並吟唱著心靈預兆的死結晶層。" />
     <xtagGrammar massNoun="真實" />
   </object>
-  <object Name="Chavvah Taproot" Load="Merge">
+  <object Name="夏瓦(Chavvah) Taproot" Load="Merge">
     <part Name="Render" DisplayName="結晶主根" />
     <part Name="Description" Short="微小的水晶嫩芽被純粹的自我重量壓碎，成為轉化瞬時思緒的粗壯、厚實且均勻的換能器。去相干的情感與記憶在它們沿著根部向上生長時結晶化。" />
   </object>

@@ -117,6 +117,11 @@ qud-zh-tw/
 | `check_completion.py` | 掃描未翻譯／殘留 `▶` 的條目，輸出完成度報告 |
 | `diff_versions.py` | 對比 example-language tag，列出新增／刪除／變更的翻譯鍵 |
 | `glossary.py` | 術語表與翻譯字串的一致性檢查 |
+| `find_untranslated.py` | 掃描缺漏：L1 `▶` 殘留、L2 英文專名漏譯、L3 ID 覆蓋缺漏 → `untranslated_report.json` |
+| `expand_glossary.py` | 依 L2 報表為英文專名生成「中文(原文)」音譯建議，審核後 `--merge` 進策展表 |
+| `fix_consistency.py` | 統一專名譯名、殘留英文代換、全數出現處補 `(原文)` |
+| `scan_replacer_log.py` | 解析 `replacer_log.txt`，搜尋動態替換側「未替換」的英文訊息 |
+| `report_gaps.py` | 整合缺漏報告：L1▶殘留／L2 專名／L3 ID／L4 資料檔／L5 句子／L6 Naming |
 
 ---
 

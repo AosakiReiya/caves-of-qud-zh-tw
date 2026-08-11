@@ -225,8 +225,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <xtagGrammar iArticle="這" />
   </object>
   <object Name="TerrainGolgotha" Load="Merge">
-    <part Name="Render" DisplayName="高爾格塔(Golgotha)" />
-    <part Name="Description" Short="在腐爛的叢林中，隱藏著高爾格塔鏽蝕洞穴的入口，那是鉻金屬的墳場。" />
+    <part Name="Render" DisplayName="髑髏地(Golgotha)" />
+    <part Name="Description" Short="在腐爛的叢林中，隱藏著髑髏地鏽蝕洞穴的入口，那是鉻金屬的墳場。" />
     <xtagGrammar Proper="真實" massNoun="錯誤" />
   </object>
   <object Name="TerrainBethesdaSusa" Load="Merge">

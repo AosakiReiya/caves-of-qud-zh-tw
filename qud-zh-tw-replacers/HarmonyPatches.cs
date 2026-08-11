@@ -54,6 +54,25 @@ public static class ZhTwHarmonyPatches
         Tuple.Create(new Regex(@"^(.+?) is in (your|the|my|its) way[.!]?$", RegexOptions.IgnoreCase), "$1 擋在你面前"),
         Tuple.Create(new Regex(@"^You can't move there[.!]?$", RegexOptions.IgnoreCase), "你無法移動到那裡"),
         Tuple.Create(new Regex(@"^You cannot move there[.!]?$", RegexOptions.IgnoreCase), "你無法移動到那裡"),
+        // ==== 日誌筆記（硬編碼：You note this piece of information in the {{W|類別}} section of your journal.）====
+        Tuple.Create(new Regex(@"^You note this piece of information in the \{\{W\|(.+?)\}\} section of your journal\.?$", RegexOptions.IgnoreCase), "你在日誌的 {{W|$1}} 區段中記下這項資訊。"),
+        // ==== 站起/起身（Prone.cs / Sitting.cs 的 DidX）====
+        Tuple.Create(new Regex(@"^You stand up\.?$", RegexOptions.IgnoreCase), "你站起來了。"),
+        Tuple.Create(new Regex(@"^You stand up from (.+?)[.!]?$", RegexOptions.IgnoreCase), "你從 $1 站起來。"),
+        Tuple.Create(new Regex(@"^You rise from (.+?)[.!]?$", RegexOptions.IgnoreCase), "你從 $1 起身。"),
+        // ==== XDidYToZ frame（Chair.cs 等組裝句，AddMsgPrefix 多層攔截）====
+        Tuple.Create(new Regex(@"^You sit down on (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你坐到 $1 上。"),
+        Tuple.Create(new Regex(@"^You sit down in (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你坐到 $1 裡。"),
+        Tuple.Create(new Regex(@"^You climb onto (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你爬上 $1。"),
+        Tuple.Create(new Regex(@"^You jump onto (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你跳到 $1 上。"),
+        Tuple.Create(new Regex(@"^You wade through (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你涉水穿過 $1。"),
+        Tuple.Create(new Regex(@"^You swim through (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你游泳穿過 $1。"),
+        Tuple.Create(new Regex(@"^You emerge from (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你從 $1 現身。"),
+        Tuple.Create(new Regex(@"^You bump into (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你撞到 $1。"),
+        Tuple.Create(new Regex(@"^You are engulfed by (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你被 $1 吞噬。"),
+        Tuple.Create(new Regex(@"^You are dragged toward (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你被拖向 $1。"),
+        Tuple.Create(new Regex(@"^You are sucked into (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你被吸入 $1。"),
+        Tuple.Create(new Regex(@"^You are impaled by (?:the |a |an )?(.+?)[.!]?$", RegexOptions.IgnoreCase), "你被 $1 刺穿。"),
     };
 
     private static readonly Regex Possessive = new Regex(@"\b(his|her|its|their|your)\b", RegexOptions.IgnoreCase);
@@ -75,11 +94,63 @@ public static class ZhTwHarmonyPatches
                     patched++;
                 }
             }
-            ZhTwReplacers.Log("Harmony patched AddPlayerMessage/Add x" + patched);
+            ZhTwReplacers.LogAlways("Harmony MessageQueue patched=" + patched);
+            // ===== 硬編碼 UI：官方 Strings._S 攔截（3 個多載）=====
+            foreach (var mi in AccessTools.GetDeclaredMethods(typeof(XRL.Language.Strings)))
+            {
+                if (mi.Name != "_S") continue;
+                var ps = mi.GetParameters();
+                HarmonyMethod prefix = null, postfix = null;
+                if (ps.Length == 1 && ps[0].ParameterType == typeof(string))
+                    prefix = new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings._SHook1));
+                else if (ps.Length == 2 && ps[0].ParameterType == typeof(string) && ps[1].ParameterType == typeof(string))
+                {
+                    prefix = new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings._SHook2));
+                    postfix = new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings._SMissPostfix));
+                }
+                else if (ps.Length == 4)
+                    prefix = new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings._SHook3));
+                if (prefix != null)
+                {
+                    harmony.Patch(mi, prefix: prefix, postfix: postfix);
+                    patched++;
+                }
+            }
+            // ===== 硬編碼 UI：Popup 顯示層（原始字面值）=====
+            foreach (var mi in AccessTools.GetDeclaredMethods(typeof(XRL.UI.Popup)))
+            {
+                if (mi.Name == "ShowYesNoCancel" && mi.GetParameters().Length >= 1 && mi.GetParameters()[0].Name == "Message")
+                    harmony.Patch(mi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.PopupYesNoPrefix)));
+                else if (mi.Name == "PickOption" && mi.ReturnType == typeof(int))
+                    harmony.Patch(mi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.PopupPickPrefix)));
+                else if (mi.Name == "ShowOptionList" && mi.ReturnType == typeof(int))
+                    harmony.Patch(mi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.PopupOptionListPrefix)));
+                else if (mi.Name == "Show" && mi.GetParameters().Length >= 1 && mi.GetParameters()[0].ParameterType == typeof(string))
+                    harmony.Patch(mi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.PopupShowPrefix)));
+            }
+            // ===== 側欄/狀態畫面屬性標籤（console 渲染）=====
+            // 需用 prefix：Write(string) 在方法體內就把字元畫進 buffer，postfix 改 s 無效
+            var sbw = AccessTools.Method(typeof(ConsoleLib.Console.ScreenBuffer), "Write",
+                new Type[] { typeof(string), typeof(bool), typeof(bool), typeof(bool), typeof(List<string>), typeof(int) });
+            if (sbw != null)
+                harmony.Patch(sbw, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SidebarLabelPrefix)));
+            // StringBuilder 版（側欄 ST/AG 實際走這條）
+            var sbwsb = AccessTools.Method(typeof(ConsoleLib.Console.ScreenBuffer), "Write",
+                new Type[] { typeof(System.Text.StringBuilder), typeof(int) });
+            if (sbwsb != null)
+                harmony.Patch(sbwsb, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SidebarLabelSBufPrefix)));
+            // ===== BookUI（Active Effects / No active effects. 等）=====
+            var book = AccessTools.Method(typeof(XRL.UI.BookUI), "ShowBook",
+                new Type[] { typeof(string), typeof(string), typeof(string), typeof(Action<int>), typeof(Action<int>) });
+            if (book != null)
+                harmony.Patch(book, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.BookShowPrefix)));
+            ZhTwReplacers.LogAlways("Harmony all patches done, total=" + patched);
+            // ===== 全域文本後處理（TextMeshProUGUI.text）=====
+            ZhTwTextCleaner.Init();
         }
         catch (Exception e)
         {
-            ZhTwReplacers.Log("Harmony Init error: " + e.GetType().Name + " " + e.Message);
+            ZhTwReplacers.LogAlways("Harmony Init error: " + e.GetType().Name + " " + e.Message + "\n" + e.StackTrace);
         }
     }
 
@@ -94,9 +165,15 @@ public static class ZhTwHarmonyPatches
                 ZhTwReplacers.Log("TRANSLATED: '" + __0 + "' -> '" + t + "'");
                 __0 = t;
             }
+            else
+            {
+                // 未命中任何模式、原樣通過 → 未替換的英文訊息（供 scan_replacer_log.py 搜尋）
+                ZhTwReplacers.Log("UNTRANSLATED: '" + __0 + "'");
+            }
         }
-        catch
+        catch (Exception e)
         {
+            ZhTwReplacers.LogAlways("AddMsgPrefix EX: " + e.GetType().Name + " " + e.Message);
         }
     }
 

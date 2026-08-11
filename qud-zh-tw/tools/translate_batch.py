@@ -40,39 +40,82 @@ MODEL = "gemma-4-26b-a4b-it"
 ATTR_RE = re.compile(r'(\w+)\s*=\s*"([^"]*)"')
 TEXT_RE = re.compile(r">([^<]*▶[^<]*)<")
 
-BATCH_SYSTEM = (
+def _load_term_bank() -> str:
+    """從策展術語表建構 prompt 的術語庫文字（名詞一致性基準）。"""
+    try:
+        data = json.loads(CURATED_GLOSSARY.read_text(encoding="utf-8"))
+    except Exception:
+        return ""
+    lines = [f"  {k} → {v}" for k, v in data.items() if not k.startswith("_")]
+    return "\n".join(lines)
+
+
+TERM_BANK = _load_term_bank()
+
+
+def _term_bank_section() -> str:
+    if not TERM_BANK:
+        return ""
+    return (
+        "Established glossary (reuse these translations verbatim; never invent a "
+        "variant for a term listed here):\n" + TERM_BANK + "\n"
+    )
+
+
+# 共同規則：保留語法 + 專名類型判定 + 一致性
+_SYSTEM_COMMON = (
     "You are a professional translator for the video game Caves of Qud, "
     "translating English into Traditional Chinese for Taiwan (zh-TW). "
-    "You will receive numbered lines of game text (1., 2., 3., ...). Translate EVERY line "
-    "and return ONLY a JSON OBJECT keyed by the input numbers, e.g. "
-    '{"1": "translation of line 1", "2": "translation of line 2"}. '
-    "Each key must appear exactly once, mapped to that line's translation. "
     "Rules: "
-    "1. Preserve placeholders exactly: =name=, =name=, ~CmdUse, @they, and counts like =name=. "
+    "1. Preserve placeholders exactly, e.g. =name=, ~CmdUse, @they, and counts like =num=; "
+    "keep every placeholder present and in place. "
     "2. Preserve color shader syntax {{X|text}}: keep {{, the marker letter, |, and }} exactly; translate only the visible words. "
     "3. Preserve HTML markup tags exactly: <p>, </p>, <br />, <stat Name=\"CrashChance\" />, <em>, <h1>; translate only the visible English text around them. "
     "4. Keep escapes and newlines (\\n) as literal sequences. "
     "5. Use Taiwan Traditional Chinese characters and full-width punctuation. "
-    "6. Transliterate proper nouns you are unsure about. "
-    "7. If a line already contains Traditional Chinese text, it is a fixed translated "
+    "6. Proper-noun rule — decide which type the text is, then apply the matching format: "
+    "   (a) FIXED proper noun (person, place, faction, artifact name, or coined term): "
+    "       transliterate it phonetically into zh-TW AND append the English in parentheses, "
+    "       e.g. \"Barathrum\" → \"巴拉楚姆(Barathrum)\", \"Automata Sophia\" → "
+    "       \"奧托瑪塔·索菲亞(Automata Sophia)\". Keep the (English) every time it appears. "
+    "   (b) DYNAMIC naming template (a template that combines placeholders like =name=, "
+    "       =adjective=, =creatureTypeCap=, =rings=, =position= into a generated name): "
+    "       translate only the structural/fixed words into plain Chinese and do NOT append "
+    "       English, e.g. \"the =rings= Baboon =position=\" → \"戴著=rings=指環的狒狒，位於=position=\"。 "
+    "   (c) COMMON noun, verb, or adjective: plain Chinese, no English, e.g. \"snapjaw\" → \"咬顎獸\". "
+    "7. Consistency: consult the established glossary below and reuse its translations "
+    "verbatim; never produce a variant spelling for a term already listed. "
+    "8. If the line already contains Traditional Chinese text, it is a fixed translated "
     "proper noun — keep it exactly, never re-translate or alter it. "
-    "8. Output nothing but the JSON object — no markdown fences, no commentary."
+    "9. Use the glossary below as the source of truth for settled names. "
+    "10. POLYSEMY: a word may be a verb or a noun depending on context. Translate by sense, "
+    "e.g. \"pets\" as a verb (to pet, in 'X pets Y') → 撫摸, but as a noun ('kept as pets') → 寵物. "
+    "When unsure, choose the sense that fits the surrounding words. "
+    "11. TEMPLATE KEYS: if the ID itself is a variable reference like =journalNote.the.location.of=, "
+    "the VALUE must be a Chinese template that embeds the same =...= reference(s), e.g. "
+    "\"=journalNote.the.location.of=\" → \"你記錄了 =journalNote.the.location.of= 的位置。\". "
+    "Do not leave the value as the bare reference."
 )
 
-SINGLE_SYSTEM = (
-    "You are a professional translator for the video game Caves of Qud, "
-    "translating English into Traditional Chinese for Taiwan (zh-TW). "
-    "Rules: "
-    "1. Preserve placeholders exactly: =name=, =name=, ~CmdUse, @they, and counts like =name=. "
-    "2. Preserve color shader syntax {{X|text}}: keep {{, the marker letter, |, and }} exactly; translate only the visible words. "
-    "3. Preserve HTML markup tags exactly: <p>, </p>, <br />, <stat Name=\"CrashChance\" />, <em>, <h1>; translate only the visible English text around them. "
-    "4. Keep escapes and newlines as literal sequences. "
-    "5. Use Taiwan Traditional Chinese characters and full-width punctuation. "
-    "6. Transliterate proper nouns you are unsure about. "
-    "7. If the line already contains Traditional Chinese text, it is a fixed translated "
-    "proper noun — keep it exactly, never re-translate or alter it. "
-    "8. Output ONLY the translation, nothing else."
-)
+
+def BATCH_SYSTEM() -> str:
+    return (
+        _SYSTEM_COMMON
+        + _term_bank_section()
+        + "You will receive numbered lines of game text (1., 2., 3., ...). Translate EVERY "
+        "line and return ONLY a JSON OBJECT keyed by the input numbers, e.g. "
+        '{"1": "translation of line 1", "2": "translation of line 2"}. Each key must appear '
+        "exactly once, mapped to that line's translation. Output nothing but the JSON object — "
+        "no markdown fences, no commentary."
+    )
+
+
+def SINGLE_SYSTEM() -> str:
+    return (
+        _SYSTEM_COMMON
+        + _term_bank_section()
+        + "Output ONLY the translation, nothing else."
+    )
 
 
 def _text_region_units(text: str, pos: int) -> list[tuple[int, int, str, str]]:
@@ -429,7 +472,7 @@ def translate_batch(
     last_err = None
     for attempt in range(retries + 1):
         try:
-            raw = call_api(url, model, BATCH_SYSTEM, numbered, temperature, timeout)
+            raw = call_api(url, model, BATCH_SYSTEM(), numbered, temperature, timeout)
             parsed = parse_batch_output(raw, n)
             if parsed is None:
                 raise ValueError("回應不是 JSON 物件/陣列")
@@ -525,7 +568,7 @@ def translate_single(text: str, url: str, model: str, temperature: float, timeou
     last_err = None
     for attempt in range(retries + 1):
         try:
-            raw = call_api(url, model, SINGLE_SYSTEM, masked, temperature, timeout)
+            raw = call_api(url, model, SINGLE_SYSTEM(), masked, temperature, timeout)
             raw = raw.strip()
             raw = re.sub(r"^```(?:json)?\s*", "", raw)
             raw = re.sub(r"\s*```$", "", raw)

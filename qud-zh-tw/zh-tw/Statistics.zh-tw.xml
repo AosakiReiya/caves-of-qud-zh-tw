@@ -32,7 +32,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>耐力</shortName>
     <shortTitle>耐力</shortTitle>
     <narrationName>韌性</narrationName>
-    <helpText>你的 {{W|Toughness}} 決定了你的生命值、生命值再生率，以及你抵抗毒素與疾病的能力。</helpText>
+    <helpText>你的 {{W|韌性}} 決定了你的生命值、生命值再生率，以及你抵抗毒素與疾病的能力。</helpText>
   </statistic>
   <statistic Name="Intelligence">
     <displayName>智力</displayName>
@@ -42,7 +42,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>智力</shortName>
     <shortTitle>智力</shortTitle>
     <narrationName>智力</narrationName>
-    <helpText>你的 {{W|Intelligence}} 決定了你的技能點數量以及檢查神器（artifacts）的能力。</helpText>
+    <helpText>你的 {{W|智力}} 決定了你的技能點數量以及檢查神器（artifacts）的能力。</helpText>
   </statistic>
   <statistic Name="Willpower">
     <displayName>意志力</displayName>
@@ -55,14 +55,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <helpText>你的 {{W|意志力}} 會影響主動技能的冷卻時間，決定你抵抗精神攻擊的能力，並修正你的生命值再生速率。</helpText>
   </statistic>
   <statistic Name="Ego">
-    <displayName>自我</displayName>
-    <displayNameSingular>自我</displayNameSingular>
-    <displayTitle>自我</displayTitle>
-    <displayTitleSingular>自我</displayTitleSingular>
-    <shortName>自我</shortName>
-    <shortTitle>自我</shortTitle>
-    <narrationName>自我</narrationName>
-    <helpText>你的 {{W|Ego}} 決定了你精神突變的強度、與商人討價還價的能力，以及支配其他生物意志的能力。</helpText>
+    <displayName>心智</displayName>
+    <displayNameSingular>心智</displayNameSingular>
+    <displayTitle>心智</displayTitle>
+    <displayTitleSingular>心智</displayTitleSingular>
+    <shortName>心智</shortName>
+    <shortTitle>心智</shortTitle>
+    <narrationName>心智</narrationName>
+    <helpText>你的 {{W|心智}} 決定了你精神突變的強度、與商人討價還價的能力，以及支配其他生物意志的能力。</helpText>
   </statistic>
   <statistic Name="AV">
     <displayName>AV</displayName>
@@ -82,7 +82,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>DV</shortName>
     <shortTitle>DV</shortTitle>
     <narrationName>DV</narrationName>
-    <helpText>你的 {{W|Dodge Value (DV)}} 衡量你被物理攻擊擊中的機率。分數越高，對手的攻擊就越不容易擊中你。你的 DV 會受到敏捷修正值的影響。</helpText>
+    <helpText>你的 {{W|閃避值 (DV)}} 衡量你被物理攻擊擊中的機率。分數越高，對手的攻擊就越不容易擊中你。你的 DV 會受到敏捷修正值的影響。</helpText>
   </statistic>
   <statistic Name="MA">
     <displayName>MA</displayName>
@@ -95,14 +95,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <helpText>你的 {{W|精神護甲 (MA)}} 衡量你抵禦精神攻擊的能力。分數越高，對手的精神攻擊就越不容易穿透你的防禦並傷害你。你的 MA 會受到意志力修正值的影響。</helpText>
   </statistic>
   <statistic Name="Speed">
-    <displayName>敏捷</displayName>
-    <displayNameSingular>敏捷</displayNameSingular>
-    <displayTitle>敏捷</displayTitle>
-    <displayTitleSingular>敏捷</displayTitleSingular>
-    <shortName>QN</shortName>
-    <shortTitle>QN</shortTitle>
-    <narrationName>敏捷</narrationName>
-    <helpText>你的 {{W|敏捷}} 衡量你執行每一項動作的速度。</helpText>
+    <displayName>速度</displayName>
+    <displayNameSingular>速度</displayNameSingular>
+    <displayTitle>速度</displayTitle>
+    <displayTitleSingular>速度</displayTitleSingular>
+    <shortName>SPD</shortName>
+    <shortTitle>SPD</shortTitle>
+    <narrationName>速度</narrationName>
+    <helpText>你的 {{W|速度}} 衡量你執行每一項動作的速度。</helpText>
   </statistic>
   <statistic Name="MoveSpeed">
     <displayName>移動速度</displayName>
@@ -122,7 +122,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>T</shortName>
     <shortTitle>T</shortTitle>
     <narrationName>溫度</narrationName>
-    <helpText>你的 {{W|Temperature}} 衡量你的冷熱程度。過於寒冷會降低你的快速度（Quickness）並阻止你進行物理動作。過於炎熱則可能讓你著火，並在每一輪造成傷害。</helpText>
+    <helpText>你的 {{W|溫度}} 衡量你的冷熱程度。過於寒冷會降低你的快速度（Quickness）並阻止你進行物理動作。過於炎熱則可能讓你著火，並在每一輪造成傷害。</helpText>
   </statistic>
   <statistic Name="AcidResistance">
     <displayName>抗酸</displayName>
@@ -152,7 +152,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>ER</shortName>
     <shortTitle>ER</shortTitle>
     <narrationName>電力抗性</narrationName>
-    <helpText>你的 {{W|Electrical Resist}} 決定了你會承受多少電擊傷害，以及你對電流的抵抗力。達到 100 時，你將免疫電擊傷害且不會導電。</helpText>
+    <helpText>你的 {{W|電力抗性}} 決定了你會承受多少電擊傷害，以及你對電流的抵抗力。達到 100 時，你將免疫電擊傷害且不會導電。</helpText>
   </statistic>
   <statistic Name="HeatResistance">
     <displayName>熱力抗性</displayName>

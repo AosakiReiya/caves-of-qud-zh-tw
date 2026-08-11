@@ -64,8 +64,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <text>將電線送到阿吉夫。</text>
     </step>
   </quest>
-  <quest ID="A Canticle for Barathrum" Name="巴拉楚姆之歌" Accomplishment="你與巴拉楚姆信徒在礫門的聚落進行了交談。" Hagiograph="=name= 為居住在地底下的和平羽熊吟唱了一首讚歌。" Gospel="在漫遊西方的叢林時，=name= 偶遇了一群正在進行秘密儀式的 urshiib。因為 =player.t's= 圓盤狀的眼睛，他們接納了 =name= 加入他們的行列，並將祕密傳授給 =player.objective=。">
-    <step ID="Travel to Grit Gate" Name="前往 礫門(Grit Gate)">
+  <quest ID="A Canticle for 巴拉楚姆(Barathrum)" Name="巴拉楚姆之歌" Accomplishment="你與巴拉楚姆信徒在礫門的聚落進行了交談。" Hagiograph="=name= 為居住在地底下的和平羽熊吟唱了一首讚歌。" Gospel="在漫遊西方的叢林時，=name= 偶遇了一群正在進行秘密儀式的 urshiib。因為 =player.t's= 圓盤狀的眼睛，他們接納了 =name= 加入他們的行列，並將祕密傳授給 =player.objective=。">
+    <step ID="Travel to 礫門(Grit Gate)" Name="前往 礫門(Grit Gate)">
       <text>前往約帕東北方毀壞的地底城門。</text>
     </step>
     <step ID="Locate the Barathrumite Enclave" Name="尋找 Barathrumite 聚落">
@@ -76,7 +76,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </step>
   </quest>
   <quest ID="A Signal in the Noise" Name="雜訊中的訊號" Accomplishment="你與巴拉楚姆信徒在礫門的聚落進行了交談。" Hagiograph="=name= 為居住在地底下的和平羽熊吟唱了一首讚歌。" Gospel="在漫遊西方的叢林時，=name= 偶遇了一群正在進行秘密儀式的 urshiib。因為 =player.t's= 圓盤狀的眼睛，他們接納了 =name= 加入他們的行列，並將祕密傳授給 =player.objective=。">
-    <step ID="Travel to Grit Gate" Name="前往 礫門(Grit Gate)">
+    <step ID="Travel to 礫門(Grit Gate)" Name="前往 礫門(Grit Gate)">
       <text>前往西部叢林中那座毀壞的地底門戶。</text>
     </step>
     <step ID="Locate the Barathrumite Enclave" Name="尋找 Barathrumite 聚落">
@@ -86,17 +86,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <text>詢問巴拉楚姆信徒關於那種奇怪訊號的事。</text>
     </step>
   </quest>
-  <quest ID="More Than a Willing Spirit" Name="不只是意志堅定" Accomplishment="你勇闖高爾格塔，並向巴拉楚姆信徒展示了你的英姿。" Hagiograph="在 =year= 年的 =month= 月，=name= 從高爾格塔的垃圾槽中現身，凱旋而歸且全身沾滿黏液。" Gospel="在向西巡邏叢林時，=name= 偶然發現了一群正在進行秘密儀式的 urshiib 部落。因為 =player.t= 身上覆蓋著污穢的黏液，他們接納了 =name= 加入其中，並將他們的秘密傳授給了 =player.objective=。">
-    <step ID="Travel to Golgotha" Name="前往 高爾格塔(Golgotha)">
-      <text>前往 礫門(Grit Gate) 以北的巨大洞窟 高爾格塔(Golgotha)。</text>
+  <quest ID="More Than a Willing Spirit" Name="不只是意志堅定" Accomplishment="你勇闖髑髏地，並向巴拉楚姆信徒展示了你的英姿。" Hagiograph="在 =year= 年的 =month= 月，=name= 從髑髏地的垃圾槽中現身，凱旋而歸且全身沾滿黏液。" Gospel="在向西巡邏叢林時，=name= 偶然發現了一群正在進行秘密儀式的 urshiib 部落。因為 =player.t= 身上覆蓋著污穢的黏液，他們接納了 =name= 加入其中，並將他們的秘密傳授給了 =player.objective=。">
+    <step ID="Travel to 髑髏地(Golgotha)" Name="前往 髑髏地(Golgotha)">
+      <text>前往 礫門(Grit Gate) 以北的巨大洞窟 髑髏地(Golgotha)。</text>
     </step>
     <step ID="Find a Dysfunctional Waydroid" Name="尋找一個功能失常的 Waydroid">
-      <text>在 高爾格塔(Golgotha) 的 遺跡 中尋找一個功能失常的 Waydroid。</text>
+      <text>在 髑髏地(Golgotha) 的 遺跡 中尋找一個功能失常的 Waydroid。</text>
     </step>
     <step ID="Repair the Waydroid" Name="修理 Waydroid">
       <text>修復 waydroid。</text>
     </step>
-    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+    <step ID="Return to 礫門(Grit Gate)" Name="返回 礫門(Grit Gate)">
       <text>帶著waydroid回到礫門，並與巴拉楚姆信徒交談。</text>
     </step>
   </quest>
@@ -104,29 +104,29 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <step ID="Get Q Girl's Instructions onto the Data Disk" Name="將 Q 女孩的指令寫入數據磁碟">
       <text>在 工作坊 與 Q 女孩 交談，並要求她將對 baetyl 的指令編碼到磁碟上。</text>
     </step>
-    <step ID="Locate the Mechanimist Compound at Bethesda Susa" Name="在貝賽達蘇薩尋找機械主義者營地">
+    <step ID="Locate the Mechanimist Compound at 貝賽達蘇薩(Bethesda Susa)" Name="在貝賽達蘇薩尋找機械主義者營地">
       <text>向北旅行前往巨大的洞穴 貝賽達蘇薩(Bethesda Susa) 並尋找機械主義者（Mechanimist）的神廟。</text>
     </step>
     <step ID="Decode the Signal" Name="解碼訊號">
       <text>潛入機械主義者（Mechanimist）營地，與貝提爾（baetyl）交戰，並解碼訊號。</text>
     </step>
-    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+    <step ID="Return to 礫門(Grit Gate)" Name="返回 礫門(Grit Gate)">
       <text>回到 礫門(Grit Gate) 並與 奧托 交談。</text>
     </step>
   </quest>
   <quest ID="O Glorious Shekhinah!" Name="喔，榮耀的謝希納！" Accomplishment="根據一名皈依者的推薦，你造訪了六日高蹺的商人集市與大教堂。" Hagiograph="=name= 穿過鹽沼，向北與向西行進，抵達了 六日高蹺(Six Day Stilt) 的商人集市與大教堂。在那裡，高蹺族為了向蘇丹致敬而唱著讚美詩。" Gospel="在跋涉過荒蕪平原後，=name= 前往了六日高蹺的商人市集與大教堂。在那裡 =player.subjective= 與 機械主義者 結交，並將一件神器丟入了 神聖之井。">
-    <step ID="Make a Pilgrimage to the Six Day Stilt" Name="前往 六日高蹺(Six Day Stilt) 進行朝聖">
+    <step ID="Make a Pilgrimage to the 六日高蹺(Six Day Stilt)" Name="前往 六日高蹺(Six Day Stilt) 進行朝聖">
       <text>穿越大鹽沙漠前往商人集市與機械主義者大教堂，在那裡有一位皈依者請求你獻上一件小玩意作為祭品。</text>
     </step>
   </quest>
-  <quest ID="The Earl of Omonporch" Name="歐蒙波奇伯爵" Accomplishment="你處理了 阿斯福德爾 並確保了 紡錘(Spindle) 底部的區域安全。" Hagiograph="在 =year= 年的 =month= 月，=name= 委任了阿斯福德爾為歐蒙波奇的可愛伯爵，以及紡錘 Gjaus 的保護者。" Gospel="在 =year= 年，=name= 任命了腐敗的行政官 阿斯福德爾 為 歐蒙波奇(Omonporch) 的伯爵與大臣。他們在 =player.t's= 之名下強制實施了 =spice:elements.entity@elements[random].practices.!random=。">
-    <step ID="Travel to Omonporch" Name="前往 歐蒙波奇(Omonporch)">
+  <quest ID="The Earl of 歐蒙波奇(Omonporch)" Name="歐蒙波奇伯爵" Accomplishment="你處理了 阿斯福德爾 並確保了 紡錘(Spindle) 底部的區域安全。" Hagiograph="在 =year= 年的 =month= 月，=name= 委任了阿斯福德爾為歐蒙波奇的可愛伯爵，以及紡錘 Gjaus 的保護者。" Gospel="在 =year= 年，=name= 任命了腐敗的行政官 阿斯福德爾 為 歐蒙波奇(Omonporch) 的伯爵與大臣。他們在 =player.t's= 之名下強制實施了 =spice:elements.entity@elements[random].practices.!random=。">
+    <step ID="Travel to 歐蒙波奇(Omonporch)" Name="前往 歐蒙波奇(Omonporch)">
       <text>向北旅行前往 歐蒙波奇(Omonporch) 的 紡錘(Spindle)。</text>
     </step>
-    <step ID="Secure the Spindle" Name="確保紡錘安全">
+    <step ID="Secure the 紡錘(Spindle)" Name="確保紡錘安全">
       <text>掌控紡錘下方的土地。</text>
     </step>
-    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+    <step ID="Return to 礫門(Grit Gate)" Name="返回 礫門(Grit Gate)">
       <text>回到 礫門(Grit Gate) 報告你的成功。</text>
     </step>
   </quest>
@@ -142,7 +142,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <step ID="Prepare Defenses" Name="準備防禦">
       <text>強化雷射陣地、強化 力場投影儀、超頻鉻靈，並啟動 羅達尼斯 Y 以準備迎接 普圖斯聖騎士 的攻擊。</text>
     </step>
-    <step ID="Defend Grit Gate" Name="防禦 礫門(Grit Gate)">
+    <step ID="Defend 礫門(Grit Gate)" Name="防禦 礫門(Grit Gate)">
       <text>保衛 礫門(Grit Gate) 免受襲擊者的侵害。</text>
     </step>
   </quest>
@@ -151,7 +151,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <text>與 奧托 對話，以評估在攻擊中所遭受的損失。</text>
     </step>
   </quest>
-  <quest ID="Pax Klanq, I Presume?" Name="我想是 派克斯克蘭克 吧？" Accomplishment="你走過了珊瑚徑，並說服了蘑菇奇才 派克斯克蘭克，為你製作了一組由 Q 女孩 設計的電池。" Hagiograph="在虛空之中，石匠 =name= 用星磚建造了一條珊瑚徑，並以神聖語言與蘑菇交談。" Gospel="在一座由珊瑚與真菌肉塊構成的異次元大教堂中，=name= 透過迎娶派克斯克蘭克，鞏固了與真菌的 =player.possessive= 關係。">
+  <quest ID="Pax 克蘭克(Klanq), I Presume?" Name="我想是 派克斯克蘭克 吧？" Accomplishment="你走過了珊瑚徑，並說服了蘑菇奇才 派克斯克蘭克，為你製作了一組由 Q 女孩 設計的電池。" Hagiograph="在虛空之中，石匠 =name= 用星磚建造了一條珊瑚徑，並以神聖語言與蘑菇交談。" Gospel="在一座由珊瑚與真菌肉塊構成的異次元大教堂中，=name= 透過迎娶派克斯克蘭克，鞏固了與真菌的 =player.possessive= 關係。">
     <step ID="Get Q Girl's Blueprints for the Climber" Name="獲得 Q 女孩的攀爬者藍圖">
       <text>取得攀爬者的藍圖並交付給 派克斯克蘭克。</text>
     </step>
@@ -164,15 +164,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <step ID="Follow the Coral Path" Name="沿著 珊瑚徑 前行">
       <text>解開謎團的第三部分。</text>
     </step>
-    <step ID="Convince Pax Klanq to Construct the Climber" Name="說服 派克斯克蘭克 建造攀爬者">
+    <step ID="Convince Pax 克蘭克(Klanq) to Construct the Climber" Name="說服 派克斯克蘭克 建造攀爬者">
       <text>讓 派克斯克蘭克 同意根據 Q 女孩 的設計製作攀爬器。</text>
     </step>
-    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+    <step ID="Return to 礫門(Grit Gate)" Name="返回 礫門(Grit Gate)">
       <text>回到 礫門(Grit Gate) 並與 巴拉楚姆(Barathrum) 交談。</text>
     </step>
   </quest>
   <quest ID="Petals on the Wind" Name="風中花瓣" Accomplishment="應一位 希德倫賤民 的要求，你前往隱秘的村莊 貝拉(Bey Lah) 調查一樁謎團。" Hagiograph="仁慈的 =name= 在一名鹿族棄民的請求下，同意介入草地的事務。蘇丹以仁善之心統治著！" Gospel="在 =spice:time.partsOfDay.!random=，於 =spice:commonPhrases.strange.!random.article= 與草甸天空之下，貝拉的希德倫人看見地平線上出現了一個看起來像巨大透鏡的影像。那是 =name=，一旦 =player.subjective= 到達，後裔們便為 =player.objective= 建造了一座紀念碑，從此稱呼 =player.objective= 為「透鏡希德倫人」。">
-    <step ID="Investigate Bey Lah" Name="調查 貝拉(Bey Lah)">
+    <step ID="Investigate 貝拉(Bey Lah)" Name="調查 貝拉(Bey Lah)">
       <text>前往隱藏村落 貝拉(Bey Lah) 並調查當地的問題。</text>
     </step>
   </quest>
@@ -180,7 +180,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <step ID="Find Eskhind" Name="尋找 艾斯金德">
       <text>找到 艾斯金德 並取回 Kindrish。</text>
     </step>
-    <step ID="Speak to Warden Neelahind" Name="與典獄長妮拉欣德交談">
+    <step ID="Speak to Warden 妮拉欣德(Neelahind)" Name="與典獄長妮拉欣德交談">
       <text>與典獄長 妮拉欣德(Neelahind) 交談，她曾是 艾斯金德 的摯友。</text>
     </step>
     <step ID="Deliver News of Eskhind" Name="傳遞關於 艾斯金德 的消息">
@@ -196,7 +196,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </step>
   </quest>
   <quest ID="Kith and Kin" Name="親朋好友" Accomplishment="無論對 貝拉(Bey Lah) 的命運是好是壞，你都解開了 Kindrish 失蹤之謎，並協助 Warden 妮拉欣德(Neelahind) 執行正義。" Hagiograph="神聖的救世主！=name= 為 貝拉(Bey Lah) 草原 上那些飽受苦難的鹿人帶來了和平與繁榮。" Gospel="=name= 採取行動對抗盜賊以及賦予他們權力的當局，在貝拉村領導了一場調查。由於 =player.t's= =spice:elements.entity@elements[random].adjectives.!random= 的機智，典獄官妮拉欣德得以依法執行正義。">
-    <step ID="Brief Warden Neelahind" Name="簡短的典獄長 妮拉欣德(Neelahind)">
+    <step ID="Brief Warden 妮拉欣德(Neelahind)" Name="簡短的典獄長 妮拉欣德(Neelahind)">
       <text>告訴貝拉的 Warden 關於 Kindrish 盜竊案中存在爭議的事實。</text>
     </step>
     <step ID="Discover all the evidence" Name="發現所有證據">
@@ -207,7 +207,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </step>
   </quest>
   <quest ID="The Buried Watchers" Name="被埋葬的觀測者" Accomplishment="你造訪了一群居住在墳墓中的莫龐戈。" Hagiograph="在 歐蒙波奇(Omonporch) 的食者之墓深處，=name= 偶然發現了一群正在進行秘密儀式的 莫龐戈(Mopango)。他們接納了蘇丹進入他們的行列，並將他們的秘密傳授給了 =player.objective=。" Gospel="在歐蒙波奇的食者之墓深處，=name= 偶然發現了一群正在進行秘密儀式的莫龐戈。他們接受了 =sultanTerm= 加入其族群，並將祕密傳授給了 =player.objective=。">
-    <step ID="Visit the Mopango Settlement in the Tomb of the Eaters" Name="前往食者之墓的莫龐戈定居點">
+    <step ID="Visit the 莫龐戈(Mopango) Settlement in the Tomb of the Eaters" Name="前往食者之墓的莫龐戈定居點">
       <text>在西北方的地下墓穴尋找維薇拉，她是一座友善的砲塔，並告訴她你是受佐托姆所託。</text>
     </step>
   </quest>
@@ -236,12 +236,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <text>進入封印的墳墓。</text>
     </step>
     <step ID="Ascend the Tomb and Cross into Brightsheol" Name="登上墳墓並跨越至 布萊特希歐">
-      <text>登上陵墓並找到雷謝夫（Resheph）的埋葬室。從那裡，尋找前往布萊特希歐的方法。</text>
+      <text>登上陵墓並找到雷舍夫（Resheph）的埋葬室。從那裡，尋找前往布萊特希歐的方法。</text>
     </step>
-    <step ID="Disable the Spindle's Magnetic Field" Name="禁用 紡錘的 磁場">
+    <step ID="Disable the 紡錘(Spindle)'s Magnetic Field" Name="禁用 紡錘的 磁場">
       <text>存取 紡錘的 控制單元並關閉力場。</text>
     </step>
-    <step ID="Return to Grit Gate" Name="返回 礫門(Grit Gate)">
+    <step ID="Return to 礫門(Grit Gate)" Name="返回 礫門(Grit Gate)">
       <text>回到 礫門(Grit Gate) 並與 巴拉楚姆(Barathrum) 交談。</text>
     </step>
   </quest>
@@ -302,7 +302,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </step>
   </quest>
   <quest ID="We Are Starfreight" Name="我們是星貨運輸">
-    <step ID="Barathrum" Name="準備升騰">
+    <step ID="巴拉楚姆(Barathrum)" Name="準備升騰">
       <text>在魔像中取得巴拉楚姆。</text>
     </step>
     <step ID="Ascend" Name="升騰">

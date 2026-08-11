@@ -420,26 +420,26 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一把長而霧面的離子塑化劑刀刃放置在指托柄上。充能時，它會在寬幅運動中變得模糊，並將其物質障礙撞開。" />
   <part Name="RulesDescription" Text="充能時，此武器的穿透值等於防禦者的護甲值。" />
  </object>
- <object Name="Shayna" Load="Merge">
+ <object Name="莎娜(Shayna)" Load="Merge">
   <part Name="Render" DisplayName="{{w-w-Y-w-w-w sequence|莎娜(Shayna)}}" />
   <part Name="Description" Short="曾經僅僅是一把碳化物斧頭的東西，現在已成為一件華麗的藝術品。捲曲的金屬線如玫瑰植株的蔓藤般纏繞在武器的柄部；模組與電池外殼被安裝在刀刃平整處，彷彿花朵可以棲息於此。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Ari" Load="Merge">
+ <object Name="艾瑞(Ari)" Load="Merge">
   <part Name="Render" DisplayName="{{R-W-Y sequence|艾瑞(Ari)}}" />
   <part Name="Description" Short="空氣在斧頭的三角形刃口周圍游動，就像高鹽太陽散發出的熱氣。這種戰爭武器對於像 hindren 這樣的農耕民族來說似乎顯得很不協調，但它說明了被逼入絕境的獵物在漫長的時空尺度下會如何反應。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Yal" Load="Merge">
+ <object Name="亞爾(Yal)" Load="Merge">
   <part Name="Render" DisplayName="{{B-C-Y 序列|亞爾(Yal)}}" />
-  <part Name="Description" Short="一半是戰斧，一半是藤蔓收割者，這件名為 Yal 的祖傳工具喚起了希德倫耕種者與嚴酷寒冬殘酷性之間的鬥爭。一股刺骨的寒意從彎曲的刀刃上散發出來。" />
+  <part Name="Description" Short="一半是戰斧，一半是藤蔓收割者，這件名為 亞爾(Yal) 的祖傳工具喚起了希德倫耕種者與嚴酷寒冬殘酷性之間的鬥爭。一股刺骨的寒意從彎曲的刀刃上散發出來。" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Caslainard" Load="Merge">
+ <object Name="卡斯萊納德(Caslainard)" Load="Merge">
   <part Name="Render" DisplayName="{{B-B-b-w-W-Y-W-w-b-B sequence|卡斯萊納德(Caslainard)}}" />
   <xtagGrammar Proper="真實" />
  </object>
- <object Name="Polluxus" Load="Merge">
+ <object Name="波魯克蘇斯(Polluxus)" Load="Merge">
   <part Name="Render" DisplayName="{{w-W-Y-W-w-b-B-B sequence|波魯克蘇斯(Polluxus)}}" />
   <xtagGrammar Proper="真實" />
  </object>
@@ -453,7 +453,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{r|拳頭}}之{{Y|猿神}}" />
   <part Name="Description" Short="如莧菜色般在月光下乾涸的生命血液，塗抹在死去的森林 Saad 那緊握的巨拳上。這一景象展開了時間向右吹拂的絲帶之一：這是在所有或幾乎所有未來中的一件遺物，而持有者或許是 =pronouns.possessive= 的化石伴侶與秘密分享者。" />
  </object>
- <object Name="La Jeunesse" Load="Merge">
+ <object Name="青春(La Jeunesse)" Load="Merge">
   <part Name="Render" DisplayName="{{r|La}} {{r-R-R-W-W-w-w sequence|Jeunesse}}" />
   <part Name="Description" Short="劍柄曾被折斷並重新打造，由鐵、寶石與皮革拼湊而成，跨越了過去的稜鏡散射，並永遠成為全新的事物。劍刃 熊 著無數次被迫塑造成殺戮形狀的技巧留下的傷痕。" />
   <xtagGrammar Proper="真實" />
@@ -879,7 +879,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Ruin of House Isner" Load="Merge">
   <part Name="Render" DisplayName="伊斯納家族廢墟" />
   <part Name="Description" Short="這把由黃銅與鉻製成的手槍工藝精湛得令人屏息：金絲楠木握把緊貼掌心，擊錘依循拇指輪廓進行了微米級的塑形，準星則像滑動的絲綢般引導視線沿著槍管向下。&#xA;整個槍身刻滿了枯萎的常春藤，槍口沾染著血跡。" />
-  <part Name="RulesDescription" Text="+1 自我 (Ego)¶xA;使用此武器造成的暴擊將獲得額外的 +4 穿透檢定加成。&#xA;當此武器發射最後一顆彈藥時，該射擊將具備完美瞄準，並保證造成暴擊。" />
+  <part Name="RulesDescription" Text="+1 心智 (Ego)¶xA;使用此武器造成的暴擊將獲得額外的 +4 穿透檢定加成。&#xA;當此武器發射最後一顆彈藥時，該射擊將具備完美瞄準，並保證造成暴擊。" />
   <part Name="TakenAccomplishment" Text="你回收了傑作手槍與傳奇的復仇頌歌：=this.refname=。" Hagiograph="槍手蘇丹 =name= 用一把傑作左輪手槍殺死了伊斯納家族的七位領主，並在他們堆積如山的屍體上進餐。" Gospel="在靠近 =landmark.nearest= 的荒野深處，=name= 偶然發現了一群正在進行秘密儀式的 水霸。因為他們那雙陰險的眼睛，=name= 用一把精良的左輪手槍殺死了七位領主，並在他們的屍堆上進餐。" />
   <xtagGrammar Proper="真實" />
   <tag Name="IndefiniteArticle" Value="這" />
@@ -2156,7 +2156,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Stopsvaalinn" Load="Merge">
   <part Name="Render" DisplayName="{{R-r-K-y-Y sequence|斯托普斯瓦林(Stopsvalinn)}}" />
   <part Name="Description" Short="層層堆疊的古老鏽跡賦予了那古老且平臉阿斯塔貢（astagon）立體感。它的正面繪有古老家族的紋章——深紅底色上的白色符文文字。" />
-  <part Name="RulesDescription" Text="+1 自我&#xA;你可以啟動此物品在面前召喚一個力場。當力場啟動時，機器人 通常無法向你靠近。" />
+  <part Name="RulesDescription" Text="+1 心智&#xA;你可以啟動此物品在面前召喚一個力場。當力場啟動時，機器人 通常無法向你靠近。" />
   <part Name="TakenAccomplishment" Text="你找回了伊希家族失落的護盾，=this.refname=。" Hagiograph="回想一下 =name= 是如何從低賤的 咬顎獸 爪中奪走傳奇護盾 =this.refname=，並聲稱自己是 Yish 之 Saads 的後裔！" Gospel="在 =landmark.nearest|title= 之戰中，=name= 為了征服 咬顎獸 而戰過。=player.Subjective= 使用圓盾時展現了極其 =spice:commonPhrases.finesse.!random= 的技巧，以至於它被永遠稱為 =this.refname=。" />
   <xtagGrammar Proper="真實" />
  </object>
@@ -2758,7 +2758,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="CherubicVisage" Load="Merge">
   <part Name="Description" Short="肉體的指令支配著臉部骨骼結構與豐滿組織質量的重塑，使其呈現出柔軟且天使般的容貌。透過這種奇術，居住在崩塌冰架懷抱中的古老伊布爾（Ibul）人民，在燈火通明的街道上漫步，帶著紅潤雙頰的漠然。" />
   <part Name="Render" DisplayName="{{Y|天使般的容貌}}" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+1 自我" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+1 心智" />
  </object>
  <object Name="ElectromagneticSensor" Load="Merge">
   <part Name="Description" Short="此感測器可觀測到由機器族群引起的電磁場微小扭曲。" />
@@ -2930,7 +2930,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="BeautifulVisage" Load="Merge">
   <part Name="Description" Short="指令要求將面部重新塑造成一種能激起旁觀者潛在慾望的面容。" />
   <part Name="Render" DisplayName="{{Y|美麗容貌}}" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+2 自我" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+2 心智" />
  </object>
  <object Name="DopamineSynth" Load="Merge">
   <part Name="Description" Short="微型彈藥盒以極快的速度合成多巴胺，並以激勵的狂喜淹沒神經通路。" />
@@ -3136,22 +3136,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="CathedraSapphire" Load="Merge">
   <part Name="Render" DisplayName="{{Y|帶有藍寶石花紋的座艙}}" />
   <part Name="Description" Short="=pronouns.Possessive= 的手指莖在木笛上跳動滑行，而 =pronouns.subjective= 踏著步 在褶皺的 根系 上進行橫向吉格舞。=pronouns.possessive= 冠冕花的花瓣同時變換著色彩，顯得十分愉悅。" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 自我(Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在周圍區域引發一股衝擊力，將敵人擊退並使其昏迷。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法移除。" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智(Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在周圍區域引發一股衝擊力，將敵人擊退並使其昏迷。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法移除。" />
  </object>
  <object Name="CathedraRuby" Load="Merge">
   <part Name="Render" DisplayName="{{Y|紅寶石花紋座殿}}" />
   <part Name="Description" Short="熔渣形成的波浪狀脊線中斷了這座巨大座椅的平面幾何結構，這些傷痕見證了當 Mystai 將雕刻它的紅寶石 巨石 從豬猡般的土地中翻弄出來的那一刻。濺痕與爪印被灼燒且凌亂不堪；轉化的儀式永無止盡。" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 自我 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍產生了一個熱力感應場。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍產生了一個熱力感應場。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
  </object>
  <object Name="CathedraWhiteOpal" Load="Merge">
   <part Name="Render" DisplayName="{{Y|帶有白歐泊鑲嵌的座殿}}" />
   <part Name="Description" Short="無數閃爍的光彩附著在金座浮雕上的赤裸族群身上。他們是那座鍍金山丘的人民，其身體以幾何學允許的所有方式相互交織，從頂峰溢出，沿著捲軸狀的手臂向下延伸，那些手臂曾支撐著大祭司渴求慾望的顫抖肢體。" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 自我 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍釋放出爆發性的 閃爍粉塵。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍釋放出爆發性的 閃爍粉塵。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
  </object>
  <object Name="CathedraBlackOpal" Load="Merge">
   <part Name="Render" DisplayName="{{Y|帶有黑歐泊鑲嵌的座殿}}" />
   <part Name="Description" Short="在它寬大的濺痕與平面扶手之上，髮絲般的紋路將椅子及其鮮豔的寶石劃分為一個個星系集群。它們微觀尺度的分形圖案超越了現已化石化的木匠之技藝；這一定是地脈留下的傷痕。" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+4 自我 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你撕裂了時空，傳送到卡德的一個隨機位置。&#xA;&#xA;你的背部無法裝備物品。&#xA;此植入物無法移除。" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+4 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你撕裂了時空，傳送到卡德的一個隨機位置。&#xA;&#xA;你的背部無法裝備物品。&#xA;此植入物無法移除。" />
  </object>
  <object Name="BaseCyberneticsCreditWedge" Load="Merge">
   <part Name="Render" DisplayName="{{C|控制論信用楔}}" />
@@ -3530,25 +3530,25 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{Y|回彈器}}" />
   <part Name="Description" Short="磁帶被刻上了六角形溝槽，並浸泡在適量的磁電荷中，以捲繞時空繫繩（並產生其特有的熱膠味）。頂部有一個凹陷按鈕，按下後會釋放潛能並啟動回彈。" />
  </object>
- <object Name="Joppa Recoiler" Load="Merge">
+ <object Name="約帕(Joppa) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="約帕(Joppa)後座力器" />
  </object>
- <object Name="Grit Gate Recoiler" Load="Merge">
+ <object Name="礫門(Grit Gate) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="{{c|礫門(Grit Gate)}} 緩衝器" />
  </object>
- <object Name="Golgotha Recoiler" Load="Merge">
-  <part Name="Render" DisplayName="{{g|高爾格塔(Golgotha)}} 回彈器" />
+ <object Name="髑髏地(Golgotha) Recoiler" Load="Merge">
+  <part Name="Render" DisplayName="{{g|髑髏地(Golgotha)}} 回彈器" />
  </object>
- <object Name="Kyakukya Recoiler" Load="Merge">
+ <object Name="恰庫恰(Kyakukya) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="{{R|恰庫恰(Kyakukya)}} 回彈器" />
  </object>
- <object Name="Six Day Stilt Recoiler" Load="Merge">
+ <object Name="六日高蹺(Six Day Stilt) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="{{Y|六日高蹺(Six Day Stilt)}} 迴彈者" />
  </object>
- <object Name="Bethesda Susa Recoiler" Load="Merge">
+ <object Name="貝賽達蘇薩(Bethesda Susa) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="{{C|貝賽達蘇薩(Bethesda Susa)}} 迴彈者" />
  </object>
- <object Name="Ezra Recoiler" Load="Merge">
+ <object Name="以斯拉(Ezra) Recoiler" Load="Merge">
   <part Name="Render" DisplayName="{{W|以斯拉(Ezra)}} recoiler" />
  </object>
  <object Name="Yd Freehold Recoiler" Load="Merge">
@@ -3940,7 +3940,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{c|休眠的空降機}}" />
   <part Name="Description" Short="這裡躺著一個在無知中沉睡的 Waydroid。是否有一位心甘情願的 修補匠 能讓它重獲生命？" />
  </object>
- <object Name="Grit Gate Dormant Waydroid" Load="Merge">
+ <object Name="礫門(Grit Gate) Dormant Waydroid" Load="Merge">
   <part Name="Render" DisplayName="{{c|休眠的空降機}}" />
  </object>
  <object Name="Clue_BloodyPatchOfFur" Load="Merge">
