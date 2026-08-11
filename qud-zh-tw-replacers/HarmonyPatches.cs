@@ -171,6 +171,28 @@ public static class ZhTwHarmonyPatches
                 new Type[] { typeof(string), typeof(string), typeof(string), typeof(Action<int>), typeof(Action<int>) });
             if (book != null)
                 harmony.Patch(book, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.BookShowPrefix)));
+            // ===== Unity UI（TMP）區段標題：RESISTANCES/SECONDARY ATTRIBUTES 等 =====
+            // 角色狀態畫面是 Unity UI（TMP），不走 console ScreenBuffer，故另掛 TMP_Text.set_text。
+            // 用執行期型別查找，避免編譯期對 TMPro 的硬依賴。
+            try
+            {
+                var tmpType = AccessTools.TypeByName("TMPro.TMP_Text");
+                if (tmpType != null)
+                {
+                    var tmpSetText = AccessTools.Method(tmpType, "set_text");
+                    if (tmpSetText != null)
+                    {
+                        harmony.Patch(tmpSetText, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.TmpHeaderPrefix)));
+                        ZhTwReplacers.LogAlways("TMP_Text.set_text patched (section headers)");
+                    }
+                    else ZhTwReplacers.LogAlways("TMP set_text NOT FOUND");
+                }
+                else ZhTwReplacers.LogAlways("TMPro.TMP_Text type NOT FOUND");
+            }
+            catch (Exception tmpEx)
+            {
+                ZhTwReplacers.LogAlways("TMP patch skip: " + tmpEx.Message);
+            }
             ZhTwReplacers.LogAlways("Harmony all patches done, total=" + patched);
             // ===== 全域文本後處理（TextMeshProUGUI.text）=====
             ZhTwTextCleaner.Init();

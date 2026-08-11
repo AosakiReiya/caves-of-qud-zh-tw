@@ -795,6 +795,21 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
         catch { }
     }
 
+    // Unity UI（TMP）區段標題：角色狀態畫面走 TextMeshPro，不走 console。
+    // 掛在 TMP_Text.set_text；只精確匹配 SectionHeaders，短字串守衛，低開銷。
+    public static void TmpHeaderPrefix(ref string value)
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(value) || value.Length > 40) return;
+            string zh;
+            if (SectionHeaders.TryGetValue(value, out zh)) { value = zh; return; }
+            string t = value.Trim();
+            if (t.Length > 0 && t != value && SectionHeaders.TryGetValue(t, out zh)) value = zh;
+        }
+        catch { }
+    }
+
     public static void SidebarLabelPrefix(ref string s)
     {
         try

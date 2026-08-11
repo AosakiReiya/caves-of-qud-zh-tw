@@ -1880,7 +1880,7 @@ alone if no match found.
  <string Context="AutoAct interrupt 'because' (clause)" ID="you cannot keep =openable.the.name= open">你無法保持 =openable.the.name= 開啟狀態</string>
  <string Context="AutoAct interrupt 'because' (clause)" ID="you cannot open =openable.the.name=">你無法打開 =openable.the.name=</string>
  <string Context="AutoAct interrupt 'because' clause" ID="you cannot seem to make any progress">你似乎無法取得任何進展</string>
- <string Context="AutoAct interrupt 'because' (clause)" ID="=blocker.does:are= in the way">=blocker.does:are= 擋在路中間</string>
+ <string Context="AutoAct interrupt 'because' (clause)" ID="=blocker.does:are= in the way">=blocker.the.name= 擋在路中間</string>
  <string Context="AutoAct interrupt 'because' clause" ID="you tried to move but stayed in the same place">你試圖移動，但仍停留在原地</string>
  <string Context="Cloning - Renaming a proper name" ID="clone of =subject.refname:withIndefiniteArticle=">=subject.refname:withIndefiniteArticle= 的複製體</string>
  <string Context="Cloning detach message log" ID="=subject.A.name= =subject.verb:detach= from =object.the.name=!">=subject.A.name= 從 =object.the.name=! =subject.verb:detach=</string>
