@@ -765,6 +765,36 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
             { "INFOS", "資訊" },
         };
 
+    // 通用：對「所有」ScreenBuffer.Write 多載做區段標題精確翻譯（角色狀態畫面 RESISTANCES 等，
+    // 不限側欄那 2 個多載）。只精確匹配 SectionHeaders，短字串，低開銷。
+    // 註：參數名 s 須與 ScreenBuffer.Write 的第一個參數同名（Harmony 依名匹配）。
+    public static void SectionHeaderWritePrefix(ref string s)
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(s) || s.Length > 40) return;
+            string zh;
+            if (SectionHeaders.TryGetValue(s, out zh)) { s = zh; return; }
+            string t = s.Trim();
+            if (t.Length > 0 && t != s && SectionHeaders.TryGetValue(t, out zh)) s = zh;
+        }
+        catch { }
+    }
+
+    public static void SectionHeaderSBufWritePrefix(System.Text.StringBuilder s)
+    {
+        try
+        {
+            if (s == null || s.Length == 0 || s.Length > 40) return;
+            string str = s.ToString();
+            string zh;
+            if (SectionHeaders.TryGetValue(str, out zh)) { s.Clear().Append(zh); return; }
+            string t = str.Trim();
+            if (t.Length > 0 && t != str && SectionHeaders.TryGetValue(t, out zh)) { s.Clear().Append(zh); }
+        }
+        catch { }
+    }
+
     public static void SidebarLabelPrefix(ref string s)
     {
         try
@@ -819,8 +849,7 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
         if (SectionHeaders.TryGetValue(inner.Trim(), out headerZh))
         {
             return (wrapOpen != null ? wrapOpen : "") + headerZh + (wrapClose != null ? wrapClose : "");
-        }
-        // 動態蘇丹 tab：「{sultanName} Histories」（GetSultansDisplayName 組裝）
+        }        // 動態蘇丹 tab：「{sultanName} Histories」（GetSultansDisplayName 組裝）
         var shm = SultanHistories.Match(inner);
         if (shm.Success)
         {

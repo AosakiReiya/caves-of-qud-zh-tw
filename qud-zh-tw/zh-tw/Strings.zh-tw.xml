@@ -1872,7 +1872,7 @@ alone if no match found.
  <string Context="autoActDescription (verb gerund)" ID="resting">休息中</string>
  <string Context="autoActDescription (verb gerund)" ID="attacking">攻擊中</string>
  <string Context="autoActDescription (verb gerund)" ID="moving">移動中</string>
- <string Context="AutoAct Interrupt Message" ID="You stop =autoActDescription= because =because=.">你停止了 =autoActDescription=，因為 =because=。</string>
+ <string Context="AutoAct Interrupt Message" ID="You stop =autoActDescription= because =because=.">由於 =because=，你停止了 =autoActDescription=。</string>
  <string Context="AutoAct Interrupt 'because' (clause)" ID="your spacetime context is incoherent">你的時空脈絡不連貫</string>
  <string Context="AutoAct Interrupt 'because' (clause)" ID="you can go no further">你無法再前進了</string>
  <string Context="AutoAct Interrupt 'because' (clause)" ID="something is wrong with the spacetime connectivity of your environment">你周遭環境的時空連結似乎出了問題</string>

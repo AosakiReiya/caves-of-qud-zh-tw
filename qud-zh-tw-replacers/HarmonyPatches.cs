@@ -139,6 +139,33 @@ public static class ZhTwHarmonyPatches
                 new Type[] { typeof(System.Text.StringBuilder), typeof(int) });
             if (sbwsb != null)
                 harmony.Patch(sbwsb, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SidebarLabelSBufPrefix)));
+            // ===== 區段標題（RESISTANCES/SECONDARY ATTRIBUTES）：對所有 Write 多載掛精確翻譯 =====
+            // 角色狀態畫面用的多載不確定，故全掛；只精確匹配 SectionHeaders，安全低開銷
+            int writePatched = 0;
+            foreach (var wmi in AccessTools.GetDeclaredMethods(typeof(ConsoleLib.Console.ScreenBuffer)))
+            {
+                if (wmi.Name != "Write") continue;
+                var wps = wmi.GetParameters();
+                if (wps.Length == 0) continue;
+                try
+                {
+                    if (wps[0].ParameterType == typeof(string))
+                    {
+                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderWritePrefix)));
+                        writePatched++;
+                    }
+                    else if (wps[0].ParameterType == typeof(System.Text.StringBuilder))
+                    {
+                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderSBufWritePrefix)));
+                        writePatched++;
+                    }
+                }
+                catch (Exception wex)
+                {
+                    ZhTwReplacers.LogAlways("Write overload patch skip: " + wmi + " " + wex.Message);
+                }
+            }
+            ZhTwReplacers.LogAlways("SectionHeader Write overloads patched=" + writePatched);
             // ===== BookUI（Active Effects / No active effects. 等）=====
             var book = AccessTools.Method(typeof(XRL.UI.BookUI), "ShowBook",
                 new Type[] { typeof(string), typeof(string), typeof(string), typeof(Action<int>), typeof(Action<int>) });
