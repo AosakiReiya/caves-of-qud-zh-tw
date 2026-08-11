@@ -1420,20 +1420,44 @@ public static class ZhTwReplacers
     }
 
     // ============ Does（=subject.Does:X= 產生變位動詞，用於戰鬥/動作訊息） ============
+    // 重要：遊戲原生 does: 輸出「主詞顯示名 + 動詞」（如 "The boulder is"）。
+    // 此覆寫必須保留主詞名，否則 "=blocker.does:are= in the way" 會只剩「是 擋在路中間」
+    // （主詞消失）。玩家主詞由模板其他部分處理，此處不重複加名。
 
-    [VariableReplacer(new string[] { "does", "did", "Does", "subject.does", "object.does", "player.does", "subject.Does", "object.Does" }, Default = "do", Override = true)]
-    public static string Does(VariableContext context, GameObject subject)
+    private static bool IsPlayerObject(GameObject obj)
     {
-        string verb = ReadVerb(context);
+        try
+        {
+            if (obj == null) return false;
+            return obj.IsPlayer();
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private static string DoesZh(string verb, GameObject subject)
+    {
         string zh = null;
         if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
-        Log("CALL does verb='" + verb + "' -> '" + zh + "'");
+        string name = (!IsPlayerObject(subject)) ? ZhName(subject) : "";
+        if (!string.IsNullOrEmpty(name)) return name + " " + zh;
         return zh;
     }
 
-    [VariableReplacer(new string[] { "does", "did", "Does", "subject.does", "object.does", "player.does", "subject.Does", "object.Does" }, Default = "do", Override = true)]
+    [VariableReplacer(new string[] { "does", "did", "Does", "subject.does", "object.does", "player.does", "blocker.does", "subject.Does", "object.Does", "blocker.Does" }, Default = "do", Override = true)]
+    public static string Does(VariableContext context, GameObject subject)
+    {
+        string verb = ReadVerb(context);
+        string r = DoesZh(verb, subject);
+        Log("CALL does verb='" + verb + "' -> '" + r + "'");
+        return r;
+    }
+
+    [VariableReplacer(new string[] { "does", "did", "Does", "subject.does", "object.does", "player.does", "blocker.does", "subject.Does", "object.Does", "blocker.Does" }, Default = "do", Override = true)]
     public static string DoesNoun(VariableContext context, GenderedNoun noun)
     {
         string verb = ReadVerb(context);

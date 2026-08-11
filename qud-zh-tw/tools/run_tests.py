@@ -315,6 +315,25 @@ def test_word_order():
         check("UiStringsHook.cs 存在", False)
 
 
+# ============ 6. does 主詞（防「因為 是 擋在路中間」主詞消失回歸）============
+def test_does_subject():
+    print("== does_subject：Does replacer 須保留主詞顯示名 ==")
+    rep = REPL / "Replacers.cs"
+    if not rep.exists():
+        check("Replacers.cs 存在", False)
+        return
+    r = rep.read_text(encoding="utf-8")
+    # Does 方法必須輸出主詞名（呼叫 ZhName），不能只回傳動詞
+    m = re.search(r'public static string Does\(VariableContext context, GameObject subject\)(.*?)\n    \}', r, re.S)
+    check("Does(GameObject) 方法存在", m is not None)
+    if m:
+        body = m.group(1)
+        check("Does 輸出含主詞名（ZhName/DoesZh）", ("ZhName" in body or "DoesZh" in body),
+              "只回傳動詞會丟主詞" if not ("ZhName" in body or "DoesZh" in body) else "")
+    # does 的 key 列表須含 blocker.does（擋路訊息用）
+    check("Does key 含 blocker.does", '"blocker.does"' in r)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -322,13 +341,15 @@ def main():
     ap.add_argument("--pipeline", action="store_true")
     ap.add_argument("--data", action="store_true")
     ap.add_argument("--wordorder", action="store_true")
+    ap.add_argument("--doessubject", action="store_true")
     a = ap.parse_args()
-    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder)
+    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder or a.doessubject)
     if run_all or a.static: test_static_cs()
     if run_all or a.dict: test_dictionary()
     if run_all or a.pipeline: test_pipeline()
     if run_all or a.data: test_data()
     if run_all or a.wordorder: test_word_order()
+    if run_all or a.doessubject: test_does_subject()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
