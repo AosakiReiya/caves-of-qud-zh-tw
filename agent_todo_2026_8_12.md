@@ -67,8 +67,11 @@
       舊檔不攔截。記錄已知 30 生成村名音譯表於 `village_zh.json`（已存 /tmp/opencode）。
 
 ## 新任務（2026-08-12 下午，使用者確認）
-- [ ] 建立「所有 part DisplayName 完整提取」腳本（Render/HiddenRender 等），防漏譯
-- [ ] 修 crack：ZoneTerrain PondDown 的 `HiddenRender` DisplayName="stone crack" → 石縫
-- [ ] 補完 does:are 贅詞 9 條（immune/cured/angry/latched）
-- [ ] 村名：只優化新存檔（Naming Replace 已做），舊存檔不攔截（使用者確認）
-- [ ] 組合句子（執行期拼接句）提取：評估能否自動化
+- [x] 建立「所有 part DisplayName 完整提取」腳本（extract_part_displaynames.py，Render/HiddenRender 等）
+  - 掃描 base 3261 條 → 修正檔名比對 bug 後 205 條漏譯（106 條方括號內部模板名 + 99 條需翻）
+- [x] 修 crack：ZoneTerrain PondDown HiddenRender DisplayName="stone crack" → 石頭裂縫
+- [x] 93 個物件補 Render/HiddenRender 中文名（LLM 音譯 + 人工校準 markup/括號）
+- [x] does:are 贅詞：DoesZh/DoesNoun/ItDoes 對 be 動詞回空/回主詞名（60+ 模板一次解決）
+  + be_verb_drop 防回歸測試（59 PASS）
+- [x] 村名：只優化新存檔（Naming Replace 已做），舊存檔不攔截（使用者確認）
+- [ ] 組合句子（執行期拼接句）提取：待評估（Shupparxfaundren 等複合名已記錄追加優化）
