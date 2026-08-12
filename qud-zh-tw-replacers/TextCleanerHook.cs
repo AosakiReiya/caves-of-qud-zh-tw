@@ -381,6 +381,12 @@ public static class ZhTwTextCleaner
             { "Maazoppir", "馬佐皮爾(Maazoppir)" }, { "Reshep", "雷舍夫(Reshep)" },
             { "Resheph", "雷舍夫(Resheph)" }, { "Mamon", "馬蒙(Mamon)" },
             { "Sheba", "示巴(Sheba)" },
+            // 執行期程序生成專名（蘇丹名等），跑 translate_propernouns（本地 LLM）音譯
+            { "Uppar", "厄帕(Uppar)" }, { "Naalil", "納利爾(Naalil)" },
+            { "Cherubim", "切魯比姆(Cherubim)" }, { "Girsh", "吉爾什(Girsh)" },
+            { "Mechanimists", "梅卡尼主義者(Mechanimists)" },
+            { "cragmensch", "克拉格曼(Cragmensch)" }, { "Baetyls", "貝提爾(Baetyls)" },
+            { "dromad merchants", "德羅馬德商人(dromad merchants)" },
         };
 
     // 常見英文詞（避免把正常英文誤當專名音譯）
