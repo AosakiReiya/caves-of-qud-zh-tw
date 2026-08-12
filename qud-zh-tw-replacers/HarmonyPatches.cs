@@ -88,7 +88,10 @@ public static class ZhTwHarmonyPatches
             int patched = 0;
             foreach (var mi in AccessTools.GetDeclaredMethods(typeof(MessageQueue)))
             {
-                if (mi.Name == "AddPlayerMessage" || (mi.Name == "Add" && mi.GetParameters().Length == 1 && mi.GetParameters()[0].ParameterType == typeof(string)))
+                // 攔截所有 Add/AddPlayerMessage 多載（combat 訊息可能走 Add(string, Color) 等）
+                // 第一個參數是 string 的才攔（訊息文本），避免誤 patch 其他型別
+                if ((mi.Name == "Add" || mi.Name == "AddPlayerMessage") && mi.GetParameters().Length >= 1 &&
+                    mi.GetParameters()[0].ParameterType == typeof(string))
                 {
                     harmony.Patch(mi, prefix: new HarmonyMethod(typeof(ZhTwHarmonyPatches), nameof(AddMsgPrefix)));
                     patched++;
@@ -270,6 +273,18 @@ public static class ZhTwHarmonyPatches
         // 未命中模式：保留原始 markup（顏色），只做冠詞剝除 + 中段「there is X in your way」
         string cleaned = LeadingArticle.Replace(msg, "").Replace("  ", " ");
         cleaned = InYourWay.Replace(cleaned, "$1 擋在你面前");
+        // fallback：交給 TextCleaner 的完整鏈（combat 整句 pattern + Clean 逐詞），
+        // 確保不走 MessageQueue 多載的 combat 句也能翻譯（如「You hit (x3) for N damage with Y」）
+        if (cleaned == msg)
+        {
+            try
+            {
+                cleaned = ZhTwTextCleaner.ToStringProcess(cleaned);
+            }
+            catch
+            {
+            }
+        }
         return cleaned != msg ? cleaned : msg;
     }
 

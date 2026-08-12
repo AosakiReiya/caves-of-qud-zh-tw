@@ -640,7 +640,7 @@ public static class ZhTwTextCleaner
 
     // 快速路徑：純中文 → 已翻譯，直接回傳（最大宗，零成本）
     //            純英文 → 只跑英文訊息 frame + 方向句，跳過混雜才會用到的 Clean/KeyLeaks
-    private static string ToStringProcess(string text)
+    internal static string ToStringProcess(string text)
     {
         bool hasEng, hasCjk;
         ScanLang(text, out hasEng, out hasCjk);
