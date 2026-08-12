@@ -3806,7 +3806,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="PuffInfection" Load="Merge">
   <part Name="Render" DisplayName="{{G|反覆無常的鰓}}" />
-  <part Name="Description" Short="微小的孢子塵埃從那在條紋皮膚上抽動的肉質鰓片中飄落。內部 內部 仍有另外一千個孢子正等待被擠出。" />
+  <part Name="Description" Short="微小的孢子塵埃從那在條紋皮膚上抽動的肉質鰓片中飄落。內部仍有另外一千個孢子正等待被擠出。" />
  </object>
  <object Name="MumblesInfection" Load="Merge">
   <part Name="Render" DisplayName="{{R|喃}} {{M|喃}} {{R|喃}} 語" />

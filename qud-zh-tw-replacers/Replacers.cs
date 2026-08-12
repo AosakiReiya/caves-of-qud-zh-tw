@@ -464,8 +464,7 @@ public static class ZhTwReplacers
     public static string ItDoes(VariableContext context, GameObject obj)
     {
         string verb = ReadVerb(context);
-        string zh = null;
-        if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
+        string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "";
         Log("CALL it.does verb='" + verb + "' -> '" + zh + "'");
@@ -1395,12 +1394,30 @@ public static class ZhTwReplacers
         }
     }
 
+    // 動詞查表公用：先直接查，查不到剝英文屈折尾（第三人稱 s/es/ies）再查。
+    // 避免執行期 =verb:harvests= ->「收割s」這類殘留（VerbZh 只有 harvest）。
+    private static string LookupVerbZh(string verb)
+    {
+        if (string.IsNullOrEmpty(verb)) return null;
+        string zh;
+        if (VerbZh.TryGetValue(verb, out zh)) return zh;
+        // 剝 -ies -> -y、-es -> -、-s -> -（僅在 base 存在時）
+        string cand = null;
+        if (verb.EndsWith("ies") && verb.Length > 4)
+            cand = verb.Substring(0, verb.Length - 3) + "y";
+        else if (verb.EndsWith("es") && verb.Length > 3)
+            cand = verb.Substring(0, verb.Length - 2);
+        else if (verb.EndsWith("s") && verb.Length > 3)
+            cand = verb.Substring(0, verb.Length - 1);
+        if (cand != null && VerbZh.TryGetValue(cand, out zh)) return zh;
+        return null;
+    }
+
     [VariableReplacer(new string[] { "verb", "Verb", "subject.verb", "object.verb", "player.verb" }, Default = "do", Override = true)]
     public static string Verb(VariableContext context, GameObject subject)
     {
         string verb = ReadVerb(context);
-        string zh = null;
-        if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
+        string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
         Log("CALL verb verb='" + verb + "' -> '" + zh + "'");
@@ -1411,8 +1428,7 @@ public static class ZhTwReplacers
     public static string VerbNoun(VariableContext context, GenderedNoun noun)
     {
         string verb = ReadVerb(context);
-        string zh = null;
-        if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
+        string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
         Log("CALL verb(GenderedNoun) verb='" + verb + "' -> '" + zh + "'");
@@ -1439,8 +1455,7 @@ public static class ZhTwReplacers
 
     private static string DoesZh(string verb, GameObject subject)
     {
-        string zh = null;
-        if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
+        string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
         string name = (!IsPlayerObject(subject)) ? ZhName(subject) : "";
@@ -1461,8 +1476,7 @@ public static class ZhTwReplacers
     public static string DoesNoun(VariableContext context, GenderedNoun noun)
     {
         string verb = ReadVerb(context);
-        string zh = null;
-        if (!string.IsNullOrEmpty(verb)) VerbZh.TryGetValue(verb, out zh);
+        string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
         Log("CALL does(GenderedNoun) verb='" + verb + "' -> '" + zh + "'");

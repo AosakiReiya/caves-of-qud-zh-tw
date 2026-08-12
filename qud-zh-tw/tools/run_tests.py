@@ -334,6 +334,27 @@ def test_does_subject():
     check("Does key 含 blocker.does", '"blocker.does"' in r)
 
 
+def test_verb_inflection():
+    print("== verb_inflection：動詞剝屈折尾（harvests→收割）==")
+    rep = REPL / "Replacers.cs"
+    if not rep.exists():
+        check("Replacers.cs 存在", False)
+        return
+    r = rep.read_text(encoding="utf-8")
+    # LookupVerbZh 須存在且處理 -ies/-es/-s
+    m = re.search(r'private static string LookupVerbZh\(string verb\)(.*?)\n    \}', r, re.S)
+    check("LookupVerbZh 方法存在", m is not None)
+    if m:
+        body = m.group(1)
+        check("LookupVerbZh 剝 -s 尾", 'EndsWith("s")' in body)
+        check("LookupVerbZh 剝 -es 尾", 'EndsWith("es")' in body)
+        check("LookupVerbZh 剝 -ies 尾", 'EndsWith("ies")' in body)
+    # Verb/Does/ItDoes 都透過 LookupVerbZh 查表
+    uses = [x for x in ["public static string Verb(", "public static string Does(", "public static string ItDoes("] if x in r]
+    check("Verb/Does/ItDoes 存在", len(uses) == 3)
+    check("DoesZh 使用 LookupVerbZh", "string zh = LookupVerbZh(verb);" in r)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -342,14 +363,16 @@ def main():
     ap.add_argument("--data", action="store_true")
     ap.add_argument("--wordorder", action="store_true")
     ap.add_argument("--doessubject", action="store_true")
+    ap.add_argument("--verbinflection", action="store_true")
     a = ap.parse_args()
-    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder or a.doessubject)
+    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder or a.doessubject or a.verbinflection)
     if run_all or a.static: test_static_cs()
     if run_all or a.dict: test_dictionary()
     if run_all or a.pipeline: test_pipeline()
     if run_all or a.data: test_data()
     if run_all or a.wordorder: test_word_order()
     if run_all or a.doessubject: test_does_subject()
+    if run_all or a.verbinflection: test_verb_inflection()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 

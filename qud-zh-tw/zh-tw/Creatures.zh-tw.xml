@@ -421,7 +421,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Chromeling" Load="Merge">
   <part Name="Render" DisplayName="{{c|鉻蟲}}" />
-  <part Name="Description" Short="由廢金屬焊接而成，=pronouns.subjective= 搖晃著。當藝術家與製作者將金屬敲打成這種形狀時，他們在想什麼？=pronouns.Subjective= 處於 處於多個軸線上兩極之間的一個點：介於黑猩猩與人類之間，介於孩童與成人之間。=pronouns.Subjective= 很渺小，且在 =pronouns.possessive= 的鉻色臉頰下留有陰影。" />
+  <part Name="Description" Short="由廢金屬焊接而成，=pronouns.subjective= 搖晃著。當藝術家與製作者將金屬敲打成這種形狀時，他們在想什麼？=pronouns.Subjective= 處於多個軸線上兩極之間的一個點：介於黑猩猩與人類之間，介於孩童與成人之間。=pronouns.Subjective= 很渺小，且在 =pronouns.possessive= 的鉻色臉頰下留有陰影。" />
  </object>
  <object Name="Electrofuge" Load="Merge">
   <part Name="Render" DisplayName="電逃逸者" />
@@ -546,7 +546,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="燒焦的金屬與鏽蝕鉚釘交織在一起，在隱士的身軀上形成了一層新肉般的漸變色。=pronouns.Possessive= 髮絲結成亂糟糟的鼠窩狀，由一根破碎玻璃製成的髮夾高高固定著。=pronouns.Subjective= 用 =pronouns.possessive= 自創的語言 尖叫。" />
  </object>
  <object Name="Seed-Spitting Vine" Load="Merge">
-  <part Name="Description" Short="翠綠色的觸手向內捲曲，緊緊環繞著 =pronouns.possessive= 中心。=pronouns.Possessive= 的葉片在 =pronouns.subjective= 壓縮 壓縮種子物質以備吐出時，發出低沉的碎裂聲。" />
+  <part Name="Description" Short="翠綠色的觸手向內捲曲，緊緊環繞著 =pronouns.possessive= 中心。=pronouns.Possessive= 的葉片在 =pronouns.subjective= 壓縮種子物質以備吐出時，發出低沉的碎裂聲。" />
   <part Name="Render" DisplayName="{{g|吐種藤蔓}}" />
  </object>
  <object Name="Seed Slingshot" Load="Merge">
@@ -559,7 +559,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="BaseWatervineFarmer" Load="Merge">
   <part Name="Render" DisplayName="水藤農夫" />
-  <part Name="Description" Short="掛在農夫頸上的汗漬 庫菲亞 碎片在風中劇烈擺動。=pronouns.possessive= 粗糙棕色的手中握著一把彎曲的鐵製藤收割鐮，=pronouns.subjective= 用它從名為 水藤 的翠綠植物中 採集 採集水分飽滿的薄片。" />
+  <part Name="Description" Short="掛在農夫頸上的汗漬 庫菲亞 碎片在風中劇烈擺動。=pronouns.possessive= 粗糙棕色的手中握著一把彎曲的鐵製藤收割鐮，=pronouns.subjective= 用它從名為 水藤 的翠綠植物中採集水分飽滿的薄片。" />
  </object>
  <object Name="Young Ivory" Load="Merge">
   <part Name="Render" DisplayName="{{Y|幼年象牙}}" />
@@ -1164,7 +1164,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Plated Chromeling" Load="Merge">
   <part Name="Render" DisplayName="{{C|裝甲鉻金屬人}}" />
-  <part Name="Description" Short="由廢金屬焊接而成，=pronouns.subjective= 搖晃。當藝術家與製作者將金屬敲打成這種形狀時，他們在想什麼？=pronouns.Subjective= 處於 處於多個軸線上兩極之間的一個點：介於黑猩猩與人類之間，介於孩童與成人之間。=pronouns.Subjective= 很渺小，且在 =pronouns.possessive= 的鉻色臉頰下留有陰影。" />
+  <part Name="Description" Short="由廢金屬焊接而成，=pronouns.subjective= 搖晃。當藝術家與製作者將金屬敲打成這種形狀時，他們在想什麼？=pronouns.Subjective= 處於多個軸線上兩極之間的一個點：介於黑猩猩與人類之間，介於孩童與成人之間。=pronouns.Subjective= 很渺小，且在 =pronouns.possessive= 的鉻色臉頰下留有陰影。" />
  </object>
  <object Name="Prism Perch" Load="Merge">
   <part Name="Render" DisplayName="稜鏡棲息者" />
@@ -2385,7 +2385,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Svardym Scrounge" Load="Merge">
   <part Name="Render" DisplayName="斯瓦迪姆拾荒者" />
-  <part Name="Description" Short="雖然尚且年幼，但 =pronouns.subjective= 已展現出超越雛鳥的機智，現在也 收集 收集亮晶晶的小玩意來囤積。透過在 =pronouns.possessive= 口中碾碎珊瑚息肉並用黏稠的唾液揉搓，=pronouns.subjective= 製作 出一片片銳利的碎片，用以投向那些威脅 =pronouns.objective= 的人。" />
+  <part Name="Description" Short="雖然尚且年幼，但 =pronouns.subjective= 已展現出超越雛鳥的機智，現在也會收集亮晶晶的小玩意來囤積。透過在 =pronouns.possessive= 口中碾碎珊瑚息肉並用黏稠的唾液揉搓，=pronouns.subjective= 製作 出一片片銳利的碎片，用以投向那些威脅 =pronouns.objective= 的人。" />
  </object>
  <object Name="Svardym_Spit" Load="Merge">
   <part Name="Render" DisplayName="粉碎珊瑚蟲之口" />
@@ -3981,7 +3981,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Liihart" Load="Merge">
   <part Name="Render" DisplayName="利哈特" />
   <xtagGrammar Proper="真實" />
-  <part Name="Description" Short="=pronouns.Subjective=看起來 看起來如此嬌小，彷彿是 faundren，但仔細觀察她緊繃的肩膀與精明的眼神，便能發現她其實是一個完全成長的 runt。=pronouns.Subjective= 將 將 =pronouns.possessive= 髮絲紮成一對如同 =pronouns.possessive= 神經般緊繃的髮髻。=pronouns.Possessive= 小手蜷縮且顯得焦慮，上面佈滿了業餘 修補匠 特有的灼傷與割傷。" />
+  <part Name="Description" Short="=pronouns.Subjective= 看起來如此嬌小，彷彿是 faundren，但仔細觀察她緊繃的肩膀與精明的眼神，便能發現她其實是一個完全成長的 runt。=pronouns.Subjective= 將 =pronouns.possessive= 髮絲紮成一對如同 =pronouns.possessive= 神經般緊繃的髮髻。=pronouns.Possessive= 小手蜷縮且顯得焦慮，上面佈滿了業餘 修補匠 特有的灼傷與割傷。" />
  </object>
  <object Name="Isahind" Load="Merge">
   <part Name="Render" DisplayName="伊薩欣德" />
@@ -4034,7 +4034,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Yurl" Load="Merge">
-  <part Name="Description" Short="尤爾，一株有意識的小黃瓜藤，將 =pronouns.possessive= 根系 放在 =pronouns.possessive.hut= 小屋地板上的一個矮陶罐裡。房間內的橡木架上擺放著無數商品，尤爾 會利用 =pronouns.possessive.tentacles= 觸手沿著鐵製格柵爬行，向感興趣的顧客 展示它們。你注意到 尤爾 在你想到產品之前，幾乎就已經會向產品 前進 前進了；天賦的感應能力讓這株活潑的藤蔓在擔任燭匠時擁有了明顯的優勢。" />
+  <part Name="Description" Short="尤爾，一株有意識的小黃瓜藤，將 =pronouns.possessive= 根系 放在 =pronouns.possessive.hut= 小屋地板上的一個矮陶罐裡。房間內的橡木架上擺放著無數商品，尤爾 會利用 =pronouns.possessive.tentacles= 觸手沿著鐵製格柵爬行，向感興趣的顧客 展示它們。你注意到 尤爾 在你想到產品之前，幾乎就 已經會向產品前進；天賦的感應能力讓這株活潑的藤蔓在擔任燭匠時擁有了明顯的優勢。" />
   <part Name="Render" DisplayName="尤爾" />
   <xtagGrammar Proper="真實" />
  </object>
@@ -4162,7 +4162,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Biographer" Load="Merge">
   <part Name="Render" DisplayName="赫羅多迪庫斯" />
-  <part Name="Description" Short="鉻合金在金屬長袍上形成如布料般的褶皺，覆蓋在 =pronouns.possessive= 瘦長、焦慮且羽翼般的肢體上。一個巨大的金屬桶——即 =pronouns.possessive= 頭部——坐落在 =pronouns.possessive= 過於脆弱的底座上，一顆閃亮的玻璃眼球以幾種色調的光芒注視著你。=pronouns.Subjective= 似乎 似乎正處於道歉的邊緣。" />
+  <part Name="Description" Short="鉻合金在金屬長袍上形成如布料般的褶皺，覆蓋在 =pronouns.possessive= 瘦長、焦慮且羽翼般的肢體上。一個巨大的金屬桶——即 =pronouns.possessive= 頭部——坐落在 =pronouns.possessive= 過於脆弱的底座上，一顆閃亮的玻璃眼球以幾種色調的光芒注視著你。=pronouns.Subjective= 似乎正處於道歉的邊緣。" />
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Writhing Spike" Load="Merge">
