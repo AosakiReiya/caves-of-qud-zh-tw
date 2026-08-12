@@ -49,7 +49,7 @@ def check(name, ok, detail=""):
 
 # ============ 從 C# 原始碼解析字典 ============
 def parse_dict_blocks(src):
-    """回傳 list of (field_name, {key: value})。"""
+    """回傳 list of (field_name, {key: value})。重複 key 記錄到 global DICT_DUP_KEYS。"""
     out = []
     for m in re.finditer(r'Dictionary<([^>]+)>\s+(\w+)\s*=\s*new Dictionary<[^>]+>\([^)]*\)\s*\{', src, re.S):
         field = m.group(2)
@@ -61,10 +61,20 @@ def parse_dict_blocks(src):
             i += 1
         block = src[start:i - 1]
         d = {}
+        seen = set()
         for kv in re.finditer(r'\{\s*"((?:[^"\\]|\\.)*)"\s*,\s*"((?:[^"\\]|\\.)*)"', block):
-            d[kv.group(1)] = kv.group(2)
+            k = kv.group(1)
+            low = k.lower()
+            if low in seen:
+                # 原始碼層的重複 key（C# 字典初始化時會拋 ArgumentException——必須攔下）
+                DICT_DUP_KEYS.append((field, k))
+            seen.add(low)
+            d[k] = kv.group(2)
         out.append((field, d))
     return out
+
+
+DICT_DUP_KEYS = []
 
 
 def load_dicts():
@@ -99,6 +109,10 @@ def test_static_cs():
             refs = [int(x) for x in re.findall(r'\$(\d+)', r)]
             if refs and max(refs) > ng:
                 check(f"{name} group 越界", False, f"ref {max(refs)}>{ng}: {r[:40]}")
+        # C# 原始碼層重複 key（parse 後的 dict 無法察覺，此處直接捕獲）
+        dup_report = [x for x in DICT_DUP_KEYS]
+        check(f"{name} 字典原始碼層無重複 key", not dup_report, str(dup_report[:5]) if dup_report else "")
+        DICT_DUP_KEYS.clear()
         # 平衡
         clean = strip_strings_and_comments(src)
         check(f"{name} 括號平衡", clean.count('{') == clean.count('}') and clean.count('(') == clean.count(')'),

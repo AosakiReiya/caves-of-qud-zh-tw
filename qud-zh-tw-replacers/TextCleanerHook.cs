@@ -253,18 +253,23 @@ public static class ZhTwTextCleaner
             { "you", "你" }, { "your", "你的" }, { "my", "我的" }, { "him", "他" },
             { "her", "她" }, { "them", "他們" },
             // combat weapon 段補詞（=subject.its.item#weapon= 未翻時逐詞兜底）
-            { "bite", "咬" }, { "bites", "咬" }, { "claw", "爪" }, { "claws", "爪" },
+            { "bite", "咬" }, { "bites", "咬" }, { "claws", "爪" },
             { "paw", "爪掌" }, { "paws", "爪掌" }, { "hoof", "蹄" }, { "hooves", "蹄" },
-            { "tusk", "獠牙" }, { "tusks", "獠牙" }, { "fang", "獠牙" }, { "fangs", "獠牙" },
-            { "beak", "喙" }, { "stinger", "尾刺" }, { "horn", "角" }, { "horns", "角" },
+            { "tusk", "獠牙" }, { "tusks", "獠牙" }, { "fangs", "獠牙" },
+            { "beak", "喙" }, { "stinger", "尾刺" }, { "horns", "角" },
             { "fist", "拳頭" }, { "fists", "拳頭" }, { "scratch", "抓傷" }, { "scratches", "抓傷" },
-            { "bronze", "青銅" }, { "iron", "鐵" }, { "steel", "鋼" }, { "dagger", "匕首" },
+            { "bronze", "青銅" }, { "steel", "鋼" }, { "dagger", "匕首" },
         };
 
     // spice/歷史生成整句漏翻 → 執行期整句替換（優先於逐詞）
     private static readonly Dictionary<string, string> PhraseLeaks =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
+            // History Worships/Despises faction 名 fragment（=faction.FormattedName= 槽位）
+            { "%Worships.LegendaryCreature.SacredThing", "崇拜傳說生物的聖物" },
+            { "%Worships.LegendaryCreature", "傳說生物的崇拜者" },
+            { "%Despises.LegendaryCreature.ProfaneThing", "鄙視傳說生物的褻瀆物" },
+            { "%Despises.LegendaryCreature", "傳說生物的鄙視者" },
             { "rife with burnt books and corroded data disks", "充斥著燒毀的書籍與腐蝕的數據磁碟" },
             { "rife with stray portals to other places and times", "充斥著通往其他時空的散亂傳送門" },
             { "rife with smashed rubble", "佈滿了碎裂的瓦礫" },
@@ -610,7 +615,7 @@ public static class ZhTwTextCleaner
             // 屬性
             { "Strength", "力量" }, { "Agility", "敏捷" }, { "Toughness", "韌性" },
             { "Willpower", "意志" }, { "Intelligence", "智力" }, { "Ego", "心智" },
-            { "Speed", "速度" }, { "MoveSpeed", "移動速度" }, { "Level", "等級" },
+            { "Speed", "速度" }, { "MoveSpeed", "移動速度" }, { "Level", "等級" }, { "Third", "第三" },
             // 技能/能力（高頻白名單）
             { "Swift Reflexes", "迅捷反射" }, { "Spry", "靈活" }, { "Jump", "跳躍" },
             { "Tumble", "翻滾" }, { "Axe Proficiency", "斧頭精通" }, { "Cleave", "劈砍" },
@@ -633,7 +638,7 @@ public static class ZhTwTextCleaner
             { "Proselytize", "傳教" }, { "Intimidate", "恐嚇" }, { "Berate", "斥責" },
             { "Snake Oiler", "油嘴滑舌" }, { "Inspiring Presence", "鼓舞人心" },
             { "Menacing Stare", "威嚇凝視" }, { "Steady Hands", "穩手" },
-            { "Suppressive Fire", "壓制射擊" }, { "Scavenger", "拾荒者" },
+            { "Suppressive Fire", "壓制射擊" },
             { "Make Camp", "紮營" }, { "Mind's Compass", "心靈羅盤" },
             { "Tomorrowful", "面向未來" },
         };
