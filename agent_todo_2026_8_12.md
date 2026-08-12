@@ -49,10 +49,12 @@
 - [x] 測試 + 部署 + commit
 
 ## Phase 4：聲望對話模板
-- [ ] 修 `=faction.ifPlural:是:是= 有興趣…`（6 條）移除「是」
-- [ ] 修 `=both.andList=.` / `=sell.andList=.` 英文句號
-- [ ] 配合 Phase 1 確認 `=faction.FormattedName|rules=` 村名輸出
-- [ ] 測試 + 部署 + commit
+- [x] 修 14 條 `=faction.ifPlural:是:是=` 廢字（聲望 + 肢解訊息）
+- [x] 修 `=both.andList=.` / `=sell.andList=.` 英文句號（聲望模板 12 條）
+- [x] 模擬驗證：聲望句流暢（「米拉普爾 的村民 有興趣交易『科技』的秘密」）
+- [x] 測試(53/74) + 部署 + commit
+- [ ] 追加優化：其他 `=X.andList=.` 殘留（收到/經過/拆解 等 20+ 處）Value 側英文句號，
+      非聲望核心，列入追加優化
 
 ## 驗證
 - 每階段：`run_tests.py`(47)、`test_regex_fixes.py`(74)、XML parse、部署、commit
