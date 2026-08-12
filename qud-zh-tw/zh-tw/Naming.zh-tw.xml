@@ -127,7 +127,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <postfix Name="沃爾" />
       </postfixes>
     </namestyle>
-    <namestyle Name="Qudish Site" Format="TitleCase" Load="Merge">
+    <namestyle Name="Qudish Site" Format="TitleCase" Load="Replace">
       <prefixes Load="Replace" Amount="1">
         <prefix Name="阿" />
         <prefix Name="阿拉" />
@@ -157,7 +157,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <infix Name="阿拉" />
         <infix Name="阿佐" />
         <infix Name="巴" />
-        <infix Name="由" />
+        <infix Name="拜" />
         <infix Name="加" />
         <infix Name="加" />
         <infix Name="伊利" />
@@ -205,87 +205,87 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <postfix Name="佐爾" />
       </postfixes>
     </namestyle>
-    <namestyle Name="Qudish Banana Grove Site" Load="Merge">
+    <namestyle Name="Qudish Banana Grove Site" Load="Replace">
       <templates Load="Replace">
         <template Name="香蕉林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Baroque Ruins Site" Load="Merge">
+    <namestyle Name="Qudish Baroque Ruins Site" Load="Replace">
       <templates Load="Replace">
         <template Name="巴洛克遺跡 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Deep Jungle Site" Load="Merge">
+    <namestyle Name="Qudish Deep Jungle Site" Load="Replace">
       <templates Load="Replace">
         <template Name="深林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Desert Canyon Site" Load="Merge">
+    <namestyle Name="Qudish Desert Canyon Site" Load="Replace">
       <templates Load="Replace">
         <template Name="沙漠峽谷 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Flower Fields Site" Load="Merge">
+    <namestyle Name="Qudish Flower Fields Site" Load="Replace">
       <templates Load="Replace">
         <template Name="花田 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Fungal Site" Load="Merge">
+    <namestyle Name="Qudish Fungal Site" Load="Replace">
       <templates Load="Replace">
         <template Name="真菌 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Hills Site" Load="Merge">
+    <namestyle Name="Qudish Hills Site" Load="Replace">
       <templates Load="Replace">
         <template Name="丘陵 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Jungle Site" Load="Merge">
+    <namestyle Name="Qudish Jungle Site" Load="Replace">
       <templates Load="Replace">
         <template Name="叢林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Lake Hinnom Site" Load="Merge">
+    <namestyle Name="Qudish Lake Hinnom Site" Load="Replace">
       <templates Load="Replace">
         <template Name="水域 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Moon Stair Site" Load="Merge">
+    <namestyle Name="Qudish Moon Stair Site" Load="Replace">
       <templates Load="Replace">
         <template Name="月之階梯 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Mountains Site" Load="Merge">
+    <namestyle Name="Qudish Mountains Site" Load="Replace">
       <templates Load="Replace">
         <template Name="山脈 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Palladium Reef Site" Load="Merge">
+    <namestyle Name="Qudish Palladium Reef Site" Load="Replace">
       <templates Load="Replace">
         <template Name="鈀金礁 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Ruins Site" Load="Merge">
+    <namestyle Name="Qudish Ruins Site" Load="Replace">
       <templates Load="Replace">
         <template Name="遺跡 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Salt Dunes Site" Load="Merge">
+    <namestyle Name="Qudish Salt Dunes Site" Load="Replace">
       <templates Load="Replace">
         <template Name="鹽丘群 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Salt Marsh Site" Load="Merge">
+    <namestyle Name="Qudish Salt Marsh Site" Load="Replace">
       <templates Load="Replace">
         <template Name="鹽沼 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Spindle Site" Load="Merge">
+    <namestyle Name="Qudish Spindle Site" Load="Replace">
       <templates Load="Replace">
         <template Name="紡錘(Spindle) =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Water Site" Load="Merge">
+    <namestyle Name="Qudish Water Site" Load="Replace">
       <templates Load="Replace">
         <template Name="水域 =name=" />
       </templates>
@@ -2998,7 +2998,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <prefix Name="剝皮" />
       </prefixes>
       <infixes Load="Replace" Amount="1">
-        <infix Name="由" />
+        <infix Name="拜" />
         <infix Name="在" />
         <infix Name="尼爾" />
         <infix Name="昂" />
@@ -4402,7 +4402,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <infix Name="阿拉" />
         <infix Name="阿佐" />
         <infix Name="巴" />
-        <infix Name="由" />
+        <infix Name="拜" />
         <infix Name="加" />
         <infix Name="加" />
         <infix Name="伊利" />

@@ -38,3 +38,5 @@ qud-zh-tw/release/
 # 開發用
 *.log
 build_log.txt
+
+tmp
