@@ -34,15 +34,19 @@
   無法窮舉 → **記錄為最後追加優化 todo**
 
 ## Phase 2：be 動詞廢字（=verb:are=/=verb:is= →「是」）
-- [ ] 掃描全部含 `=verb:are=`/`=verb:is=` 的 Value 模板
-- [ ] 逐條改 Value（中文不需要「是」的移除）
-- [ ] 評估 Verb replacer 對 are/is/was/were 的架空處理
-- [ ] 測試 + 部署 + commit
+- [x] 掃描全部含 `=verb:are=` 的 Value 模板（11 條）
+- [x] 逐條改 Value（移除「是」+ 調整語序）：crack 句、脫水×2、點燃、寒冷減速、充滿電、
+      原生於、有價值、重、Slam、Swarm Alpha
+- [x] 保留 Mutations 的「=角.verb:are= 是」（繫動詞語意必需）
+- [x] 測試 + 部署 + commit
 
 ## Phase 3：動詞詞尾 s 殘留
-- [ ] 掃描 zh-tw 所有 `=verb:`/`=does:` 動詞參數
-- [ ] Verb/Does replacer：ReadVerb 後剝英文屈折尾（s/es/ies/ing/ed）再查 VerbZh
-- [ ] 測試 + 部署 + commit
+- [x] 掃描 zh-tw 所有 `=verb:`/`=does:` 動詞參數（74 個全覆蓋）
+- [x] 修 9 處 zh 重複動詞筆誤（採集 採集、壓縮 壓縮、處於 處於、似乎 似乎、看起來 看起來、
+      前進 前進、收集 收集、將 將、內部 內部）
+- [x] Verb/Does/ItDoes/DoesZh 改用 LookupVerbZh（剝 s/es/ies 再查表，harvests→收割）
+- [x] 新增 test_verb_inflection 防回歸（53 PASS）
+- [x] 測試 + 部署 + commit
 
 ## Phase 4：聲望對話模板
 - [ ] 修 `=faction.ifPlural:是:是= 有興趣…`（6 條）移除「是」
