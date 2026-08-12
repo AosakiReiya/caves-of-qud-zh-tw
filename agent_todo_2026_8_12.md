@@ -120,3 +120,15 @@
   - 新增 audit_description_parens.py（LLM 判定（English）括號誤譯，95 條掃描）
 - [ ] 待驗證（使用者重啟）：No variable replacer 歸零、combat 句「你 用 青銅匕首 擊中 哥布林(x4)，造成 8 傷害」
 - [ ] 追加（非緊急）：LLM 標出 23 條大小寫慣例微調（Torah/Waydroid/neutrafoam 等）
+
+## 新任務批次 3（2026-08-13，使用者驗證後續）
+- [x] P1 村莊名：Naming.zh-tw Site namestyle Load="Replace" + 補 scopes（21 個）
+  + 衍生 Site 補 Base="Qudish Site"（17 個）→ 新存檔純中文村名
+  - 待驗證：新存檔村名純中文、無 Name Generation Failure、無卡世界生成
+- [x] P2 combat 訊息攔截：
+  - AddMsgPrefix 擴充 patch 到所有 Add/AddPlayerMessage 多載（第一參數 string）
+  - 未命中 pattern 時 fallback 到 ZhTwTextCleaner.ToStringProcess（internal）
+  - 預期：combat 句「你用 青銅匕首 擊中(x3)，造成 4 傷害」
+- [x] P3 take 重複 key 修正：VerbZh take→拿走 移除（保留 受到），takes/took→拿走 保留
+- [ ] P4 詞性感知（bite 名詞=咬傷/動詞=咬 等）：評估後列為追加優化（影響面小，Context 複雜）
+- [ ] 追加：LLM 標出 23 條大小寫慣例微調（Torah/Waydroid 等）非緊急
