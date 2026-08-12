@@ -66,6 +66,35 @@
       後續方向：調查 spice 的生成模板（形容詞+村名+村民），若村名已中文則新檔自動修好；
       舊檔不攔截。記錄已知 30 生成村名音譯表於 `village_zh.json`（已存 /tmp/opencode）。
 
+## 調查記錄（2026-08-12 晚，村民名/複合名完整解密）
+- 村民名句子 = DLL 硬編碼模板：
+  `The villagers of =spice.entity:name= are known throughout the =terrain.displayNameOnlyDirect|strip=
+   for their =spice:adjectivesJudgement.!random= use of =ingredientName= in meal preparation.`
+- 4 零件翻譯狀態全部驗證 ✅：
+  1. 村名 `=spice.entity:name=`（Naming Qudish Site，Load=Replace 已改）
+  2. 地形 `=terrain.displayNameOnlyDirect`（存檔已中文：沙漠峽谷/山脈/鹽沼）
+  3. 品質形容詞 `=spice:adjectivesJudgement.!random=`（commonPhrases.strange=/despicable=/artful= 全有，
+     elements 11/11 adjectives 全有，106 個 commonPhrases 引用零件 0 缺）
+  4. 食材 `=ingredientName=`（spice cooking/terrain/*/someEdible=/someInedible= 已翻譯）
+- 結論：村民名新存檔自動全中文；存檔英文殘留為舊版生成
+- 殘留疑點（待查）：`salve`（凝固的 salve）英文、`tonicName` 執行期名
+- Shupparxfaundren = 村名 Shuppar + xfaundren 拼接（CountableName 產物）；TonguetShumrod = Tongue+Shumrod
+
+## 🚨 嚴重問題（2026-08-12 晚）
+- 使用者回報：開新存檔卡在「正在創建世界」UI 界面
+- **根因確認**：historyspice.zh-tw.json 的 `@types=` meta key 值被翻譯成中文
+  （如 organizingPrinciple.@types = 功能/財富/職業/宗教），但這些是**內部引用鍵**——
+  遊戲執行期 `entity@organizingPrinciple` 取「財富」當 key 查 `wealth` 子節點 → 找不到 → 
+  `spice reference ... wasn't a node` 錯誤 → 世界生成（歷史區域生成）卡死
+- **修復**：6 處 `@types=` 值還原為 base 英文（government/topology/organizingPrinciple/
+  function/wealth/religion），全面驗證 0 個 @types 值缺子節點 ✅
+- **同時**：Naming.zh-tw Qudish Site Load="Replace" 改動回滾為 Merge
+  （Replace 會丟 scopes → Name Generation Failure，雖非卡死主因但保守回滾）
+- 已部署：Naming(回滾) + historyspice(@types 修復)
+- [ ] **待使用者重啟驗證**：新存檔能否進入世界創建
+- [ ] 後續：Name Generation Failure (Culture:Qudish) 是既有錯誤（34 次，角色名生成），
+      另案處理（Qudish namestyle 中文片段問題）
+
 ## 新任務（2026-08-12 下午，使用者確認）
 - [x] 建立「所有 part DisplayName 完整提取」腳本（extract_part_displaynames.py，Render/HiddenRender 等）
   - 掃描 base 3261 條 → 修正檔名比對 bug 後 205 條漏譯（106 條方括號內部模板名 + 99 條需翻）
