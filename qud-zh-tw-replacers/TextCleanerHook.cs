@@ -386,6 +386,11 @@ public static class ZhTwTextCleaner
             { "Mechanimists", "梅卡尼主義者(Mechanimists)" },
             { "cragmensch", "克拉格曼(Cragmensch)" }, { "Baetyls", "貝提爾(Baetyls)" },
             { "dromad merchants", "德羅馬德商人(dromad merchants)" },
+            // 固定地點（DLL/藍圖硬編碼，非生成）
+            { "Agolgot", "阿戈爾戈特(Agolgot)" },
+            { "Shug'ruith", "舒格魯斯(Shug'ruith)" },
+            { "Rermadon", "雷爾馬登(Rermadon)" },
+            { "Brightsheol", "布萊特希歐(Brightsheol)" },
             // 註：執行期程序生成村名不再在此攔截——新存檔由 Naming.zh-tw Qudish Site
             // Load=Replace 直接生成中文名（通用方案，不綁定存檔）。
         };

@@ -25,6 +25,14 @@
 - [x] ProperNounZh 移除執行期村名攔截（通用方案取代）
 - [ ] **待使用者重啟驗證**：新存檔村名為純中文、無中英混雜
 
+## 固定 vs 生成（調查完成 2026-08-12）
+- 固定地點名（DLL/藍圖硬編碼）：Joppa/Kyakukya/Ezra/Mopango/Bey Lah/Grit Gate/Omonporch/
+  Six Day Stilt/Bethesda Susa/Golgotha/Chavvah 已定名；**Agolgot/Rermadon/Shug'ruith/Brightsheol 未定名**
+  → 加入 ProperNounZh（格式 中文(English)）
+- 生成村名：Qudish Site 組合（30 個驗證在組合內），方案 = Naming.zh-tw Load=Replace 純中文
+- 生成派系複合名（Shupparxfaundren/TonguetShumrod 等）：歷史事件動態拼接，執行期組合，
+  無法窮舉 → **記錄為最後追加優化 todo**
+
 ## Phase 2：be 動詞廢字（=verb:are=/=verb:is= →「是」）
 - [ ] 掃描全部含 `=verb:are=`/`=verb:is=` 的 Value 模板
 - [ ] 逐條改 Value（中文不需要「是」的移除）
@@ -45,3 +53,9 @@
 ## 驗證
 - 每階段：`run_tests.py`(47)、`test_regex_fixes.py`(74)、XML parse、部署、commit
 - 最後請使用者重啟遊戲驗證
+
+## 追加優化（最後處理）
+- [ ] 生成派系複合名（Shupparxfaundren/TonguetShumrod 等）：歷史事件動態拼接的完整名詞短語
+      （「Fermented TonguetShumrod 的村民」），執行期組合無法窮舉。
+      後續方向：調查 spice 的生成模板（形容詞+村名+村民），若村名已中文則新檔自動修好；
+      舊檔不攔截。記錄已知 30 生成村名音譯表於 `village_zh.json`（已存 /tmp/opencode）。
