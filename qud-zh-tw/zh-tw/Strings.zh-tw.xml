@@ -1310,7 +1310,7 @@ alone if no match found.
  <string Context="XRLUITradeUI Recharge Cost" ID="You may recharge =object.isplural:one of :==object.indicativeDistal= for {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water.">你可以消耗 {{C|=cost.cardinal=}} =cost.pluralize:dram= 的清水來為 =object.isplural:one of :==object.indicativeDistal= 重新充電。</string>
  <string Context="XRLUITradeUI Cant Be Charged" ID="That item has no cell or rechargeable capacitor in it.">該物品內沒有電池或可充電電容器。</string>
  <string Context="XRLUITradeUI Wrong Recharge" ID="That item cannot be recharged this way.">該物品無法以此方式重新充電。</string>
- <string Context="XRLUITradeUI Fully Charged" ID="=object.T= =object.verb:are= fully charged!">=object.T= =object.verb:are= 已充滿電！</string>
+ <string Context="XRLUITradeUI Fully Charged" ID="=object.T= =object.verb:are= fully charged!">=object.T= 已完全充滿電！</string>
  <string Context="Search Input - Placeholder text" ID="{{K|&lt;search&gt;}}">{{K|&lt;搜尋>}}</string>
  <string Context="Search Input - Popup Title" ID="Enter search text">輸入搜尋文字</string>
  <string Context="PickItem SelectItemToStore" ID="{{W|Select an item to store}}">{{W|選擇要存放的物品}}</string>
@@ -2143,7 +2143,7 @@ alone if no match found.
  <string Context="CookingDomainCold_ColdResist_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= fortified against the cold.">=subject.does:become= 變得足以抵禦寒冷。</string>
  <string Context="CookingDomainCold_LargeColdResist_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:gain= 125-175 Cold Resist for 6 hours.">=subject.it.does:gain= 125-175 點寒冷抗性，持續 6 小時。</string>
  <string Context="CookingDomainCold_LargeColdResist_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= impervious to cold.">=subject.does:become= 對寒冷免疫。</string>
- <string Context="CookingDomainCold_OnSlowedByCold Description" ID="whenever =subject.thisCreature= =subject.verb:are= slowed by cold,">每當 =subject.thisCreature= =subject.verb:are= 被寒冷減速時，</string>
+ <string Context="CookingDomainCold_OnSlowedByCold Description" ID="whenever =subject.thisCreature= =subject.verb:are= slowed by cold,">每當 =subject.thisCreature= 被寒冷減速時，</string>
  <string Context="CookingDomainCold_OnDealingColdDamage Description" ID="whenever =subject.thisCreature= =subject.verb:deal= cold damage, there's a 25% chance">每當 =subject.thisCreature= =subject.verb:deal= 寒冷傷害時，有 25% 的機率</string>
  <string Context="CookingDomainCold_UnitResist Description - Values known" ID="=bonus.signed= Cold Resistance">=bonus.signed= 寒冷抗性</string>
  <string Context="CookingDomainCold_UnitResist Description" ID="+10-15 Cold Resistance">+10-15 寒冷抗性</string>
@@ -2192,7 +2192,7 @@ alone if no match found.
  <string Context="CookingDomainHeat_HeatResist_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= fortified against the heat.">=subject.does:become= 變得足以抵禦酷熱。</string>
  <string Context="CookingDomainHeat_LargeHeatResist_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:gain= 125-175 Heat Resist for 50 turns.">=subject.it.does:gain= 125-175 點耐熱值，持續 50 回合。</string>
  <string Context="CookingDomainHeat_LargeHeatResist_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= impervious to the heat.">=subject.does:become= 對熱能免疫。</string>
- <string Context="CookingDomainHeat_OnEnflamed Description" ID="whenever =subject.thisCreature= =subject.verb:are= set on fire,">每當 =subject.thisCreature= =subject.verb:are= 被點燃時，</string>
+ <string Context="CookingDomainHeat_OnEnflamed Description" ID="whenever =subject.thisCreature= =subject.verb:are= set on fire,">每當 =subject.thisCreature= 被點燃時，</string>
  <string Context="CookingDomainHeat_OnDealingHeatDamage Description" ID="whenever =subject.thisCreature= =subject.verb:deal= fire damage, there's a 10% chance">每當 =subject.thisCreature= =subject.verb:deal= 火焰傷害時，有 10% 的機率</string>
  <string Context="CookingDomainHeat_UnitResist Description" ID="=bonus.signed= Heat Resistance">=bonus.signed= 熱能抗性</string>
  <string Context="CookingDomainHeat_UnitResist Description - Unknown roll" ID="+10-15 Heat Resistance">+10-15 熱抗性</string>
@@ -2805,9 +2805,9 @@ alone if no match found.
  <string Context="Stomach DrinkingTooMuch Question" ID="Drinking that much will probably make you sick, do you want to continue?">喝這麼多可能會讓你生病，你還要繼續嗎？</string>
  <string Context="Stomach DrankWayTooMuch" ID="You drank way too much!">你喝太多了！</string>
  <string Context="Stomach UghFeelSick" ID="Ugh, you feel sick.">呃，你感到很不舒服。</string>
- <string Context="Stomach Dehydration Message Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to douse =subject.itself= with.}}">{{R|=subject.The.name= =subject.verb:are= 脫水，在找到 =subject.they= =subject.verb:get= 水來澆灌 =subject.itself= 之前，將無法自然恢復生命值。}}</string>
- <string Context="Stomach Dehydration Message Not Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to drink.}}">{{R|=subject.The.name= =subject.verb:are= 脫水，在喝到 =subject.they= =subject.verb:get= 水之前無法自然恢復生命值。}}</string>
- <string Context="Swarmer Alpha Desc" ID="Swarm Alpha: As long as =subject.thisCreature= =subject.verb:are= adjacent to =subject.its= target, =subject.it.does:grant= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.">集群 Alpha：只要 =subject.thisCreature= 與鄰近於 =subject.its= 目標的 =subject.verb:are= 相鄰，=subject.it.does:grant= 就會將 =bonus= 提供給與鄰近於 =subject.its= 目標之各個集群成員的集群加成。</string>
+ <string Context="Stomach Dehydration Message Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to douse =subject.itself= with.}}">{{R|=subject.The.name= 脫水了，在 =subject.they= =subject.verb:get= 到水澆灌 =subject.itself= 之前，無法自然恢復生命值。}}</string>
+ <string Context="Stomach Dehydration Message Not Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to drink.}}">{{R|=subject.The.name= 脫水了，在喝到 =subject.they= =subject.verb:get= 水之前無法自然恢復生命值。}}</string>
+ <string Context="Swarmer Alpha Desc" ID="Swarm Alpha: As long as =subject.thisCreature= =subject.verb:are= adjacent to =subject.its= target, =subject.it.does:grant= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.">集群 Alpha：只要 =subject.thisCreature= 與 =subject.its= 目標相鄰，=subject.it.does:grant= 就會將 =bonus= 提供給所有與 =subject.its= 目標相鄰之集群成員的集群加成。</string>
  <string Context="Swarmer Desc" ID="Swarmer: =subject.ThisCreature= =subject.verb:receive= +1 to hit in melee and +1 to penetration rolls for each other hostile swarmer beyond the first who is in another square adjacent to =subject.its= target. (currently =bonus.signed=)">集群者：=subject.ThisCreature= =subject.verb:receive= 近戰 +1 命中，且對 =subject.its= 目標，每多一名相鄰且位於另一格的其他敵對集群者，便獲得 +1 穿透加成。(目前 =bonus.signed=)</string>
  <string Context="Cybernetics Cursed" ID="You can't remove =object.the.name:notAsPossessed=.">你無法移除 =object.the.name:notAsPossessed=。</string>
  <string Context="Cybernetics Compute Power Rules Text" ID="Compute power on the local lattice increases this item's effectiveness.">本地晶格上的運算能力會提升此物品的效果。</string>
@@ -2935,7 +2935,7 @@ alone if no match found.
  <string Context="SunderGrenade Detonate Message Log" ID="=subject.Does:detonate=!">=subject.Does:detonate=！</string>
  <string Context="ThermalGrenade Detonate Message Log" ID="=subject.Does:explode=!">=subject.Does:explode=!</string>
  <string Context="TimeDilationGrenade Detonate Message Log" ID="=subject.Does:discorporate=!">=subject.Does:discorporate=! </string>
- <string Context="HiddenRender RevealedSomewhere" ID="=subject.A.name= =subject.verb:are= revealed =subject.to.the.direction=!">=subject.A.name= =subject.verb:are= 顯露在 =subject.to.the.direction=！</string>
+ <string Context="HiddenRender RevealedSomewhere" ID="=subject.A.name= =subject.verb:are= revealed =subject.to.the.direction=!">=subject.A.name= 顯露在 =subject.to.the.direction=！</string>
  <string Context="Kith and Kin, Imporant NPC died popup" ID="The death of =subject.the.name= means that the investigation can go no further.">=subject.the.name= 的死亡意味著調查無法再繼續進行了。</string>
  <string Context="ActivePartStatus" ID="Operational">運作中</string>
  <string Context="ActivePartStatus" ID="NeedsSubject">需要主體</string>
@@ -4467,7 +4467,7 @@ alone if no match found.
  <string Context="EnergyCellSocket Can't Remove" ID="You can't remove the old cell!">你無法移除舊的細胞！</string>
  <string Context="Windup default verb" ID="wind">風</string>
  <string Context="ExistenceSupport - Unsupported message log" ID="=subject.The.name= =subject.directionIfAny= =subject.verb:disappear=.">=subject.The.name= =subject.directionIfAny= =subject.verb:disappear=。</string>
- <string Context="Extradimensional Creature Short Description" ID="=subject.ThisCreature= =subject.verb:are= native to the dimension known as =dimensionName=.">=subject.ThisCreature= =subject.verb:are= 原生於被稱為 =dimensionName= 的維度。</string>
+ <string Context="Extradimensional Creature Short Description" ID="=subject.ThisCreature= =subject.verb:are= native to the dimension known as =dimensionName=.">=subject.ThisCreature= 原生於被稱為 =dimensionName= 的維度。</string>
  <string Context="Robot Mutation Term" ID="module">模組</string>
  <string Context="Temporary - Disappearing combat log message" ID="=subject.The.name= =subject.directionIfAny= =subject.verb:disappear=.">=subject.The.name= =subject.directionIfAny= =subject.verb:disappear=。</string>
  <string Context="Temporary - Death Reason" ID="Faded from existence.">從存在中消逝。</string>
@@ -4973,11 +4973,11 @@ alone if no match found.
  <string Context="ModGigantic Description Replacer - Cell Capacity" ID="=optionalIt==subject.verb:have= twice the energy capacity">=optionalIt==subject.verb:have= 兩倍的能量容量</string>
  <string Context="ModGigantic Description Replacer - Effect Radius" ID="=optionalIt==subject.verb:have= twice as large a radius of effect">=optionalIt==subject.verb:have= 兩倍大的影響範圍</string>
  <string Context="ModGigantic Description Replacer - Tonic" ID="=optionalIt==subject.verb:contain= double the tonic dosage">=optionalIt==subject.verb:contain= 雙倍劑量</string>
- <string Context="ModGigantic Description Replacer - Value" ID="=optionalIt==subject.verb:are= much more valuable">=optionalIt==subject.verb:are= 有價值得多</string>
+ <string Context="ModGigantic Description Replacer - Value" ID="=optionalIt==subject.verb:are= much more valuable">=optionalIt= 有價值得多</string>
  <string Context="ModGigantic Description Replacer - Weight (immediately following Value only)" ID="much heavier than usual">比平常重得多</string>
- <string Context="ModGigantic Description Replacer - Weight" ID="=optionalIt==subject.verb:are= much heavier than usual">=optionalIt==subject.verb:are= 比平常重得多</string>
+ <string Context="ModGigantic Description Replacer - Weight" ID="=optionalIt==subject.verb:are= much heavier than usual">=optionalIt= 比平常重得多</string>
  <string Context="ModGigantic Description Replacer - Damage" ID="=optionalIt==subject.verb:have= +3 damage">=optionalIt==subject.verb:have= +3 傷害</string>
- <string Context="ModGigantic Description Replacer - Cudgel" ID="=optionalIt==subject.verb:are= twice as effective when you Slam with =subject.them=">=optionalIt==subject.verb:are= 當你使用 =subject.them= 進行重擊時，效果會加倍</string>
+ <string Context="ModGigantic Description Replacer - Cudgel" ID="=optionalIt==subject.verb:are= twice as effective when you Slam with =subject.them=">=optionalIt= 當你使用 =subject.them= 進行重擊時，效果會加倍</string>
  <string Context="ModGigantic Description Replacer - Axe" ID="=optionalIt==subject.verb:cleave= for -3 AV">=optionalIt==subject.verb:cleave= 造成 -3 AV</string>
  <string Context="ModGigantic Description Replacer - Wielding By Others" ID="=subject.they= must be wielded =twoSlots.if:four:two=-handed by non-gigantic creatures">=subject.they= 必須由非巨型生物以 =twoSlots.if:four:two=-手持方式使用。</string>
  <string Context="ModGigantic Description Replacer - Cant Be Wielded By Others" ID="=optionalIt=can only be equipped by gigantic creatures">=optionalIt= 只能由巨型生物裝備</string>
