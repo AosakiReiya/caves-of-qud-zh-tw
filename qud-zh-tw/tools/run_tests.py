@@ -355,6 +355,20 @@ def test_verb_inflection():
     check("DoesZh 使用 LookupVerbZh", "string zh = LookupVerbZh(verb);" in r)
 
 
+def test_be_verb_drop():
+    print("== be_verb_drop：Does 系 be 動詞回空（=X.Does:are=→無『是』）==")
+    rep = REPL / "Replacers.cs"
+    if not rep.exists():
+        check("Replacers.cs 存在", False)
+        return
+    r = rep.read_text(encoding="utf-8")
+    check("IsBeVerb 存在", "IsBeVerb(string verb)" in r)
+    check("BeVerbs 含 are/is/was/were", '"are", true' in r and '"is", true' in r and '"was", true' in r)
+    check("DoesZh be 動詞回主詞名", "IsBeVerb(verb)" in r and "return name;" in r)
+    check("DoesNoun be 動詞回空", "IsBeVerb(verb)) return \"\";" in r)
+    check("ItDoes be 動詞回空", "IsBeVerb(verb)) return \"\";" in r)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -373,6 +387,7 @@ def main():
     if run_all or a.wordorder: test_word_order()
     if run_all or a.doessubject: test_does_subject()
     if run_all or a.verbinflection: test_verb_inflection()
+    if run_all or a.verbinflection: test_be_verb_drop()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 

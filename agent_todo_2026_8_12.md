@@ -65,3 +65,10 @@
       （「Fermented TonguetShumrod 的村民」），執行期組合無法窮舉。
       後續方向：調查 spice 的生成模板（形容詞+村名+村民），若村名已中文則新檔自動修好；
       舊檔不攔截。記錄已知 30 生成村名音譯表於 `village_zh.json`（已存 /tmp/opencode）。
+
+## 新任務（2026-08-12 下午，使用者確認）
+- [ ] 建立「所有 part DisplayName 完整提取」腳本（Render/HiddenRender 等），防漏譯
+- [ ] 修 crack：ZoneTerrain PondDown 的 `HiddenRender` DisplayName="stone crack" → 石縫
+- [ ] 補完 does:are 贅詞 9 條（immune/cured/angry/latched）
+- [ ] 村名：只優化新存檔（Naming Replace 已做），舊存檔不攔截（使用者確認）
+- [ ] 組合句子（執行期拼接句）提取：評估能否自動化

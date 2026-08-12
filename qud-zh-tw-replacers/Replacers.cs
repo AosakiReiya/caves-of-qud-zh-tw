@@ -464,6 +464,7 @@ public static class ZhTwReplacers
     public static string ItDoes(VariableContext context, GameObject obj)
     {
         string verb = ReadVerb(context);
+        if (IsBeVerb(verb)) return ""; // be 動詞：中文語境多餘（=it.does:are= immune → 免疫）
         string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "";
@@ -1396,6 +1397,20 @@ public static class ZhTwReplacers
 
     // 動詞查表公用：先直接查，查不到剝英文屈折尾（第三人稱 s/es/ies）再查。
     // 避免執行期 =verb:harvests= ->「收割s」這類殘留（VerbZh 只有 harvest）。
+    private static readonly Dictionary<string, bool> BeVerbs =
+        new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "are", true }, { "is", true }, { "am", true },
+            { "was", true }, { "were", true }, { "'re", true }, { "'s", true },
+        };
+
+    private static bool IsBeVerb(string verb)
+    {
+        if (string.IsNullOrEmpty(verb)) return false;
+        bool v;
+        return BeVerbs.TryGetValue(verb, out v) && v;
+    }
+
     private static string LookupVerbZh(string verb)
     {
         if (string.IsNullOrEmpty(verb)) return null;
@@ -1455,11 +1470,17 @@ public static class ZhTwReplacers
 
     private static string DoesZh(string verb, GameObject subject)
     {
+        // be 動詞：中文語境「=X.Does:are= 已封印」的「是」多餘 → 只回主詞名（或不回）
+        if (!string.IsNullOrEmpty(verb) && IsBeVerb(verb))
+        {
+            string name = (!IsPlayerObject(subject)) ? ZhName(subject) : "";
+            return name; // 主詞名 + 空動詞（「石頭 已封印」），玩家主詞為空
+        }
         string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
-        string name = (!IsPlayerObject(subject)) ? ZhName(subject) : "";
-        if (!string.IsNullOrEmpty(name)) return name + " " + zh;
+        string name2 = (!IsPlayerObject(subject)) ? ZhName(subject) : "";
+        if (!string.IsNullOrEmpty(name2)) return name2 + " " + zh;
         return zh;
     }
 
@@ -1476,6 +1497,7 @@ public static class ZhTwReplacers
     public static string DoesNoun(VariableContext context, GenderedNoun noun)
     {
         string verb = ReadVerb(context);
+        if (IsBeVerb(verb)) return ""; // be 動詞：中文語境多餘
         string zh = LookupVerbZh(verb);
         if (string.IsNullOrEmpty(zh)) zh = verb;
         if (zh == null) zh = "do";
