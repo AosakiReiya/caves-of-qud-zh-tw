@@ -633,7 +633,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <object Name="CryochamberPlaque" Load="Merge">
     <part Name="Render" DisplayName="鍍鉻銘牌" />
     <part Name="Chat" Says="房間無人：等待樣本" />
-    <part Name="Description" Short="快速鉻（quickchrome）閃耀的表面在變幻的折射圖案中游動。隨著光線聚焦，符文開始顯現。" />
+    <part Name="Description" Short="快鉻(quickchrome)閃耀的表面在變幻的折射圖案中游動。隨著光線聚焦，符文開始顯現。" />
   </object>
   <object Name="CryochamberPlaqueSpider" Load="Merge">
     <part Name="Chat" Says="標本：相位蜘蛛" />

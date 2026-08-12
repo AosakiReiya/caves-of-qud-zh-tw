@@ -568,7 +568,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Snapjaw" Load="Merge">
   <part Name="Render" DisplayName="咬顎獸" />
-  <part Name="Description" Short="毛皮簇裝飾著緊繃肌肉上的皮膚。=pronouns.subjective= 雖然 站著 直立著，但看起來隨時準備伏地四肢爬行。=pronouns.Possessive= 鼻子在咆哮，=pronouns.possessive= 耳朵在抽動。=pronouns.Subjective= 發出叫聲，而 =pronouns.possessive= 鬣狗部落皮膚（hyena tribeskin）隨之回應。" />
+  <part Name="Description" Short="毛皮簇裝飾著緊繃肌肉上的皮膚。=pronouns.subjective= 雖然 站著 直立著，但看起來隨時準備伏地四肢爬行。=pronouns.Possessive= 鼻子在咆哮，=pronouns.possessive= 耳朵在抽動。=pronouns.Subjective= 發出叫聲，而 =pronouns.possessive= 鬣狗同族隨之回應。" />
   <xtagTextFragments YounglingNoise="*嘿*,*嘿嘿*,*嘿嘿嘿*" Activity="狩獵與採集，襲擊村莊，對著甲蟲月嚎叫，從骨頭上撕下肉塊" VillageActivity="睡在我們的 睡袋 裡，坐在我們的椅子上，閒逛、讀書、剝皮並食用 musa、對著月亮嚎叫、從丟棄的骨頭上剔肉" NeedsItemFor="為了我個人的收藏，為了滿足我的貪婪，因為其貿易價值，為了啟發我的藝術，為了啟發我的詩歌，為了毫無意義地咆哮，作為嚎叫的對象，作為我的繆思，為了協助農務，為了我們在甲蟲月下進行的遊戲" SacredThing="繁衍行為、哲學、他人的耕地、對甲蟲之月的嚎叫、咆哮、從骨頭上剔肉、酒精、大地的穀物、核果、藝術性、詩歌、溫暖的膳食、麵包與酒、陶藝、繪畫" ArableLand="毫無防備的村莊、不幸的農民、定居生物的家園" ValuedOre="肉與骨頭、新鮮肉塊、足跡" />
  </object>
  <object Name="Snapjaw Corpse" Load="Merge">
@@ -953,7 +953,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="FaundrenVillager" Load="Merge">
   <part Name="Render" DisplayName="福德倫村民" />
-  <part Name="Description" Short="=pronouns.Subjective= 與 =pronouns.possessive= 對手一同 嬉戲 並 遊玩，=pronouns.possessive= 纖瘦且充滿肌肉的身軀與 =pronouns.possessive= 成年守衛緊繃的肌肉形成對比。成年後忍（hindren）既恐懼又謹慎，而幼年後忍（faundren）則帶著好奇注視著新奇的事物。" />
+  <part Name="Description" Short="=pronouns.Subjective= 與 =pronouns.possessive= 對手一同 嬉戲 並 遊玩，=pronouns.possessive= 纖瘦且充滿肌肉的身軀與 =pronouns.possessive= 成年守衛緊繃的肌肉形成對比。成年希德倫(hindren)既恐懼又謹慎，而幼年希德倫幼體(faundren)則帶著好奇注視著新奇的事物。" />
  </object>
  <object Name="HindrenScout" Load="Merge">
   <part Name="Render" DisplayName="希德倫偵察兵" />
@@ -1186,7 +1186,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Rustacean" Load="Merge">
   <part Name="Render" DisplayName="{{r|鏽甲蟹}}" />
-  <part Name="Description" Short="一個呈現出空氣吸乾鐵鏽色調的寬闊扁平外殼開始出現綠鏽狀的剝落。=pronouns.Subjective= 揮動 一隻巨大的、鋸齒狀的單爪，上面沾滿了一整年的紅死（Red Death）——即侵蝕的金屬粉塵。" />
+  <part Name="Description" Short="一個呈現出空氣吸乾鐵鏽色調的寬闊扁平外殼開始出現綠鏽狀的剝落。=pronouns.Subjective= 揮動 一隻巨大的、鋸齒狀的單爪，上面沾滿了一整年的紅死病(Red Death)——即侵蝕的金屬粉塵。" />
  </object>
  <object Name="Rustacean Crab_Claw" Load="Merge">
   <part Name="Render" DisplayName="{{r|鏽蝕爪}}" />
@@ -1889,7 +1889,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Mechanimist Temple Paladin" Load="Merge">
   <part Name="Render" DisplayName="機械主義聖騎士" />
-  <part Name="Description" Short="兩股梯形編髮框住了 =pronouns.possessive= 的臉龐，宛如《色彩讚歌》中的電路邊注。=pronouns.Possessive= 寬闊的肩膀與斜方肌上留有使用焊條與護盾（egis）的印記，這些工藝工具同時也是神聖的武裝。" />
+  <part Name="Description" Short="兩股梯形編髮框住了 =pronouns.possessive= 的臉龐，宛如《色彩讚歌》中的電路邊注。=pronouns.Possessive= 寬闊的肩膀與斜方肌上留有使用焊條與盾牌(egis)的印記，這些工藝工具同時也是神聖的武裝。" />
  </object>
  <object Name="Mechanimist Warden" Load="Merge">
   <part Name="Render" DisplayName="聖所守衛" />
@@ -2423,7 +2423,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Dawning Ape" Load="Merge">
   <part Name="Render" DisplayName="黎明猿" />
-  <part Name="Description" Short="沉重的金屬手臂與鐘擺般的步態，讓人產生一種想法：指節行走是介於生命與機器之間的演化形態。人造頰墊在=pronouns.possessive= 鉻色爆炸頭（chrome-bang head）旁膨脹到恐怖的大小，而=pronouns.possessive= 的臉部螢幕以權力的調性顯示著情緒。" />
+  <part Name="Description" Short="沉重的金屬手臂與鐘擺般的步態，讓人產生一種想法：指節行走是介於生命與機器之間的演化形態。人造頰墊在=pronouns.possessive= 鉻色爆炸頭(chrome-bang head)旁膨脹到恐怖的大小，而=pronouns.possessive= 的臉部螢幕以權力的調性顯示著情緒。" />
   <stag Name="HardMaterial" Value="外殼" />
  </object>
  <object Name="Dawning ape fist" Load="Merge">
@@ -3818,7 +3818,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="CannibalConvert" Load="Merge">
   <part Name="Render" DisplayName="食人族與機械教徒信徒" />
-  <part Name="Description" Short="一件撕裂的庫非亞（kufiya）被剪開並縫製成兜帽，=pronouns.subjective= 還裁剪了一個背包，以接近色彩人民（chromaic people）的石板色長袍。一根包覆在銅線中的人類骨頭掛在 =pronouns.possessive= 臀部，而 =pronouns.subjective= 用釘了鹽的拇指摩擦著一片裂開電路板製成的護身符。" />
+  <part Name="Description" Short="一件撕裂的庫非亞（kufiya）被剪開並縫製成兜帽，=pronouns.subjective= 還裁剪了一個背包，以接近色彩族(chromaic people)的石板色長袍。一根包覆在銅線中的人類骨頭掛在 =pronouns.possessive= 臀部，而 =pronouns.subjective= 用釘了鹽的拇指摩擦著一片裂開電路板製成的護身符。" />
  </object>
  <object Name="IssachariConvert" Load="Merge">
   <part Name="Render" DisplayName="伊薩查突襲者與機械主義信徒" />
