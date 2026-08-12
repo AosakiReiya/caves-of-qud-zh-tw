@@ -127,7 +127,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <postfix Name="沃爾" />
       </postfixes>
     </namestyle>
-    <namestyle Name="Qudish Site" Format="TitleCase" Load="Merge">
+    <namestyle Name="Qudish Site" Format="TitleCase" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Priority="100" Combine="false" />
+      </scopes>
+
       <prefixes Load="Replace" Amount="1">
         <prefix Name="阿" />
         <prefix Name="阿拉" />
@@ -205,87 +209,155 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <postfix Name="佐爾" />
       </postfixes>
     </namestyle>
-    <namestyle Name="Qudish Banana Grove Site" Load="Merge">
+    <namestyle Name="Qudish Banana Grove Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="BananaGrove" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="香蕉林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Baroque Ruins Site" Load="Merge">
+    <namestyle Name="Qudish Baroque Ruins Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="BaroqueRuins" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="巴洛克遺跡 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Deep Jungle Site" Load="Merge">
+    <namestyle Name="Qudish Deep Jungle Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="DeepJungle" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="深林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Desert Canyon Site" Load="Merge">
+    <namestyle Name="Qudish Desert Canyon Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="DesertCanyon" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="沙漠峽谷 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Flower Fields Site" Load="Merge">
+    <namestyle Name="Qudish Flower Fields Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Flowerfields" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="花田 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Fungal Site" Load="Merge">
+    <namestyle Name="Qudish Fungal Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Fungal" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="真菌 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Hills Site" Load="Merge">
+    <namestyle Name="Qudish Hills Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Hills" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="丘陵 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Jungle Site" Load="Merge">
+    <namestyle Name="Qudish Jungle Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Jungle" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="叢林 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Lake Hinnom Site" Load="Merge">
+    <namestyle Name="Qudish Lake Hinnom Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="LakeHinnom" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="水域 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Moon Stair Site" Load="Merge">
+    <namestyle Name="Qudish Moon Stair Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="MoonStair" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="月之階梯 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Mountains Site" Load="Merge">
+    <namestyle Name="Qudish Mountains Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Mountains" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="山脈 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Palladium Reef Site" Load="Merge">
+    <namestyle Name="Qudish Palladium Reef Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="PalladiumReef" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="鈀金礁 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Ruins Site" Load="Merge">
+    <namestyle Name="Qudish Ruins Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Ruins" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="遺跡 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Salt Dunes Site" Load="Merge">
+    <namestyle Name="Qudish Salt Dunes Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Saltdunes" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="鹽丘群 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Salt Marsh Site" Load="Merge">
+    <namestyle Name="Qudish Salt Marsh Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Saltmarsh" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="鹽沼 =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Spindle Site" Load="Merge">
+    <namestyle Name="Qudish Spindle Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="TheSpindle" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="紡錘(Spindle) =name=" />
       </templates>
     </namestyle>
-    <namestyle Name="Qudish Water Site" Load="Merge">
+    <namestyle Name="Qudish Water Site" Base="Qudish Site" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Water" Priority="200" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="水域 =name=" />
       </templates>
@@ -1125,7 +1197,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         </templatevar>
       </templatevars>
     </namestyle>
-    <namestyle Name="Goatfolk Site" Format="TitleCase" Load="Merge">
+    <namestyle Name="Goatfolk Site" Format="TitleCase" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Culture="Goatfolk" Priority="100" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="=name==suffix=" Weight="1800" />
         <template Name="=prefix==suffix=" Weight="1800" />
@@ -1220,7 +1296,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <infix Name="拉" />
       </infixes>
     </namestyle>
-    <namestyle Name="Qlippoth Site" Format="TitleCase" Load="Merge">
+    <namestyle Name="Qlippoth Site" Format="TitleCase" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Culture="Goatfolk" Special="Qlippoth" Priority="100" Combine="false" />
+      </scopes>
+
       <templates Load="Replace">
         <template Name="=prefix==suffix=" Weight="1800" />
         <template Name="=name==location=" Weight="1125" />
@@ -4373,7 +4453,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <postfix Name="武爾" />
       </postfixes>
     </namestyle>
-    <namestyle Name="Chiliad Qudish Site" Format="TitleCase" Load="Merge">
+    <namestyle Name="Chiliad Qudish Site" Format="TitleCase" Load="Replace">
+      <scopes>
+        <scope Name="Main" Type="Site" Culture="Chiliad Qudish" Priority="150" Combine="false" />
+      </scopes>
+
       <prefixes Load="Replace" Amount="1">
         <prefix Name="阿" />
         <prefix Name="阿拉" />
