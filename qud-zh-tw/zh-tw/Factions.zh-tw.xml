@@ -21,9 +21,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 -->
 <factions Lang="zh-tw" Encoding="utf-8">
   <faction Name="Prey" DisplayName="放牧享樂主義者" />
-  <faction Name="約帕(Joppa)" DisplayName="約帕村民" FormatWithArticle="true" />
-  <faction Name="恰庫恰(Kyakukya)" DisplayName="恰庫恰村民" FormatWithArticle="true" />
-  <faction Name="以斯拉(Ezra)" DisplayName="艾茲拉村民" FormatWithArticle="true" />
+  <faction Name="Joppa" DisplayName="約帕村民" FormatWithArticle="true" />
+  <faction Name="Kyakukya" DisplayName="恰庫恰村民" FormatWithArticle="true" />
+  <faction Name="Ezra" DisplayName="艾茲拉村民" FormatWithArticle="true" />
   <faction Name="Snapjaws" DisplayName="咬顎獸" />
   <faction Name="Baboons" DisplayName="狒狒" />
   <faction Name="Apes" DisplayName="猿猴" />
@@ -71,7 +71,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Strangers" DisplayName="神秘陌生人" />
   <faction Name="Pariahs" DisplayName="賤民" />
   <faction Name="Hindren" DisplayName="貝拉的希德倫人" FormatWithArticle="true" />
-  <faction Name="莫龐戈(Mopango)" DisplayName="莫龐戈(Mopango)" FormatWithArticle="true" />
+  <faction Name="Mopango" DisplayName="Mopango" FormatWithArticle="true" />
   <faction Name="Girsh" DisplayName="吉爾什" FormatWithArticle="true" />
   <faction Name="Barathrumites" DisplayName="巴拉楚姆信徒" FormatWithArticle="true">
     <ranks>
@@ -88,7 +88,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </interests>
   </faction>
   <faction Name="Mechanimists" DisplayName="機械主義者" FormatWithArticle="true" />
-  <faction Name="環流(Gyre) Wights" DisplayName="渦流亡靈" FormatWithArticle="true" />
+  <faction Name="Gyre Wights" DisplayName="渦流亡靈" FormatWithArticle="true" />
   <faction Name="Mamon" DisplayName="瑪門之子(Children of Mamon)" FormatWithArticle="true" />
   <faction Name="Seekers" DisplayName="盲道尋求者" FormatWithArticle="true" />
   <faction Name="Wardens" DisplayName="守護者同盟" FormatWithArticle="true" Plural="false" />
@@ -105,5 +105,5 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Resheph" DisplayName="捲曲羔羊教派" FormatWithArticle="true" Plural="false" />
   <faction Name="Daughters" DisplayName="流亡之女" FormatWithArticle="true" Plural="true" />
   <faction Name="YdFreehold" DisplayName="伊德自由領居民" FormatWithArticle="true" />
-  <faction Name="夏瓦(Chavvah)" DisplayName="夏瓦(Chavvah)，生命之樹" FormatWithArticle="false" Plural="false" />
+  <faction Name="Chavvah" DisplayName="夏瓦(Chavvah)，生命之樹" FormatWithArticle="false" Plural="false" />
 </factions>

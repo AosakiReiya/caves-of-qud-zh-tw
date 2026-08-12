@@ -64,7 +64,7 @@
     <mutation Name="Shame Breath" DisplayName="羞愧吐息" BearerDescription="那些擁有羞辱呼吸的人" />
     <mutation Name="Plasma Emission" DisplayName="電漿 Emission" BearerDescription="發射電漿者">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -73,7 +73,7 @@
     </mutation>
     <mutation Name="Poison Gas Generation" DisplayName="毒氣生成" BearerDescription="那些會排出 毒氣 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -82,7 +82,7 @@
     </mutation>
     <mutation Name="Defoliant Generation" DisplayName="除葉劑 生成" BearerDescription="那些使用 除葉劑 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -91,7 +91,7 @@
     </mutation>
     <mutation Name="Fungicide Generation" DisplayName="殺真菌劑 生成" BearerDescription="那些使用 殺真菌劑 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -100,7 +100,7 @@
     </mutation>
     <mutation Name="Confusion Gas Generation" DisplayName="混亂瓦斯 生成" BearerDescription="那些排出 混亂瓦斯 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -109,7 +109,7 @@
     </mutation>
     <mutation Name="Normality Gas Generation" DisplayName="常態氣體 生成" BearerDescription="那些排出 常態氣體 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
@@ -118,7 +118,7 @@
     </mutation>
     <mutation Name="Glitter Dust Generation" DisplayName="閃爍粉塵 生成" BearerDescription="那些排出 閃爍粉塵 的人">
       <description><p>你在自身周圍釋放出爆發性的 <stat Name="GasName" />。</p></description>
-      <leveltext><p>釋放氣體，持續 <stat Name="持續時間" /></p>
+      <leveltext><p>釋放氣體，持續 <stat Name="Duration" /></p>
 <switch Name="LevelMatch">
 <case Value="raise"><p>{{rules|提高 <stat Name="LevelEffectDescription" />}}</p></case>
 <case Value="lower"><p>{{rules|降低 <stat Name="LevelEffectDescription" />}}</p></case>
