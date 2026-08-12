@@ -805,7 +805,13 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
             string zh;
             if (SectionHeaders.TryGetValue(value, out zh)) { value = zh; return; }
             string t = value.Trim();
-            if (t.Length > 0 && t != value && SectionHeaders.TryGetValue(t, out zh)) value = zh;
+            if (t.Length > 0 && t != value && SectionHeaders.TryGetValue(t, out zh)) { value = zh; return; }
+            // 純英文短文本（屬性名/技能名/能力名）透過整詞字典兜底
+            if (t.Length > 0 && t.Length <= 40 && !ZhTwTextCleaner.HasCjk(t))
+            {
+                string r = ZhTwTextCleaner.TranslateWord(t);
+                if (r != t) value = r;
+            }
         }
         catch { }
     }

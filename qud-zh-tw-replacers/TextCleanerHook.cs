@@ -155,7 +155,7 @@ public static class ZhTwTextCleaner
             // spice 生成詞組漏翻（HistorySpice 不經 mod 載入，執行期補翻）
             { "burnt", "燒毀" }, { "corroded", "腐蝕的" }, { "data", "資料" }, { "disks", "磁碟" },
             { "rife", "充斥" }, { "ruins", "遺跡" }, { "wreck", "殘骸" }, { "autarchy", "專制政體" },
-            { "sultan", "蘇丹" }, { "sultanate", "蘇丹國" }, { "dynasty", "王朝" },
+            { "sultan", "蘇丹" }, { "sultanate", "蘇丹國" }, { "dynasty", "王朝" }, { "nephilim", "尼腓利姆" }, { "nephal", "尼腓爾" },
             // 日誌類別名（journal note 硬編碼句內）
             { "Sultan Histories", "蘇丹歷史" }, { "Historic Sites", "歷史遺址" },
             { "Named Locations", "命名地點" }, { "Natural Features", "自然地景" },
@@ -252,6 +252,13 @@ public static class ZhTwTextCleaner
             // 玩家視角/所有格補詞（Markov 書摘、動態訊息）
             { "you", "你" }, { "your", "你的" }, { "my", "我的" }, { "him", "他" },
             { "her", "她" }, { "them", "他們" },
+            // combat weapon 段補詞（=subject.its.item#weapon= 未翻時逐詞兜底）
+            { "bite", "咬" }, { "bites", "咬" }, { "claw", "爪" }, { "claws", "爪" },
+            { "paw", "爪掌" }, { "paws", "爪掌" }, { "hoof", "蹄" }, { "hooves", "蹄" },
+            { "tusk", "獠牙" }, { "tusks", "獠牙" }, { "fang", "獠牙" }, { "fangs", "獠牙" },
+            { "beak", "喙" }, { "stinger", "尾刺" }, { "horn", "角" }, { "horns", "角" },
+            { "fist", "拳頭" }, { "fists", "拳頭" }, { "scratch", "抓傷" }, { "scratches", "抓傷" },
+            { "bronze", "青銅" }, { "iron", "鐵" }, { "steel", "鋼" }, { "dagger", "匕首" },
         };
 
     // spice/歷史生成整句漏翻 → 執行期整句替換（優先於逐詞）
@@ -468,7 +475,7 @@ public static class ZhTwTextCleaner
     // 用語幹 + \w*（非 \b 結尾）：避免漏掉屈折形（engulfed/dragged/sucking/sitting 等），
     // \b 開頭防止誤配子詞（transit 不付 \bsit）。
     private static readonly Regex FrameTrigger = new Regex(
-        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*",
+        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*|擊中|受到|落空|拿起了|拿走了",
         RegexOptions.Compiled);
 
     private static string TransliterateName(string word)
@@ -575,6 +582,30 @@ public static class ZhTwTextCleaner
             Cache[text] = result;
         }
         return result;
+    }
+
+    // 是否含中日韓文字（供 UI hook 判斷純英文短詞）
+    public static bool HasCjk(string text)
+    {
+        if (string.IsNullOrEmpty(text)) return false;
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = text[i];
+            if (c >= '一' && c <= '鿿') return true;
+        }
+        return false;
+    }
+
+    // 整詞翻譯（TMP/Unity UI 短文本用）：純英文短詞查 Words/Verbs/ProperNounZh，
+    // 供角色面板屬性名（Strength→力量）、技能名（Cleave→劈砍）等 TMP 文本兜底。
+    public static string TranslateWord(string word)
+    {
+        if (string.IsNullOrEmpty(word)) return word;
+        string zh;
+        if (Words.TryGetValue(word, out zh)) return zh;
+        if (Verbs.TryGetValue(word, out zh)) return zh;
+        if (ProperNounZh.TryGetValue(word, out zh)) return zh;
+        return word;
     }
 
     // ===== 防漏層：關鍵詞/短語（dram/data disks/of 等）在 Clean 被繞過時仍生效 =====
@@ -941,6 +972,30 @@ public static class ZhTwTextCleaner
         text = System.Text.RegularExpressions.Regex.Replace(
             text, @"^You\s+take\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
             "你因 $2 受到 $1 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        // ===== 中英混合 combat（=subject.Does:hit= 已轉「擊中」，subject 在句首）=====
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^(.+?)\s+擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
+            "$1 用 $4 擊中($2)，造成 $3 傷害$5", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^(.+?)\s+擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
+            "$1 用 $5 擊中 $2($3)，造成 $4 傷害$6", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^(.+?)\s+擊中\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            "$1 用 $3 擊中，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        // ===== 中英混合受到（=verb:take= 已轉「受到」）=====
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^(.+?)\s+受到\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
+            "$1 因 $3 受到 $2 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^(.+?)\s+受到\s+(\d+)\s+damage[.!]?$",
+            "$1 受到 $2 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        // ===== 拾取/奪取（玩家主詞 token 為空，=verb:take= 已轉「受到」）=====
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^受到\s+(?:the |a |an )?(.+?)\s+from\s+(.+?)[.!]?$",
+            "你從 $2 拿走了 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^受到\s+(?:the |a |an )?(.+?)[.!]?$",
+            "你拿起了 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 烹飪/香料整句（spice 未載入時的兜底）=====
         text = System.Text.RegularExpressions.Regex.Replace(
             text, @"^You\s+eat\s+the\s+meal[.!]?$",

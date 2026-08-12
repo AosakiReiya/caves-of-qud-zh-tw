@@ -198,27 +198,119 @@ def _clean(text, words, phrases):
     return text
 
 
-FRAME_RULES = [
+FRAME_FALLBACK = [
     (r'^You\s+sit\s+down\s+on\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$', r'你坐到 \1 上。'),
     (r'^You\s+wade\s+through\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$', r'你涉水穿過 \1。'),
     (r'^You\s+are\s+engulfed\s+by\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$', r'你被 \1 吞噬。'),
     (r'^(.+?)\s+is\s+dazed[.!]?$', r'\1 感到暈眩。'),
 ]
-FRAME_TRIGGER = re.compile(
-    r'(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|'
-    r'emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|'
-    r'enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*')
+
+
+def csstr(s):
+    # C# verbatim string @"..."："" → "
+    return s.replace('""', '"')
+
+
+def load_frame_rules():
+    """從 TextCleanerHook.cs 的 TranslateStatusFragments 自動提取 Regex.Replace 規則。"""
+    src = HOOK.read_text(encoding="utf-8")
+    rules = []
+    for m in re.finditer(
+        r'(?:System\.Text\.RegularExpressions\.)?Regex\.Replace\(\s*text\s*,\s*@"((?:""|[^"])*)"\s*,\s*"((?:""|[^"])*)"\s*,\s*(?:System\.Text\.RegularExpressions\.)?RegexOptions\.(\w+)',
+        src, re.S):
+        pat = csstr(m.group(1))
+        # C# 的 $n group 引用 → Python 用 MatchEvaluator 取代（未捕獲 group 補空，連 Python \n 不存在的 group 拋錯問題也避開）
+        rules.append((pat, csstr(m.group(2)), m.group(3)))
+    return rules or FRAME_FALLBACK
+
+
+def load_frame_trigger():
+    src = HOOK.read_text(encoding="utf-8")
+    m = re.search(r'FrameTrigger\s*=\s*new Regex\(\s*@"((?:""|[^"])*)"', src, re.S)
+    if not m:
+        return None
+    return csstr(m.group(1))
+
+
+FRAME_RULES = load_frame_rules()
+_TRIG_SRC = load_frame_trigger()
+if _TRIG_SRC:
+    FRAME_TRIGGER = re.compile(_TRIG_SRC)
+else:
+    FRAME_TRIGGER = re.compile(
+        r'(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|'
+        r'emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|'
+        r'enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*')
+
+
+def _frame_py_repl(tmpl):
+    """把 C# $n 替換模板轉成 Python 的 MatchEvaluator。"""
+    refs = [(g.group(0), int(g.group(1))) for g in re.finditer(r'\$(\d+)', tmpl)]
+
+    def ev(m):
+        out = tmpl
+        for token, n in refs:
+            try:
+                out = out.replace(token, m.group(n) or '')
+            except (IndexError, NotImplementedError):
+                pass
+        return out
+
+    return ev
 
 
 def _status_fragments(text):
     if '{{' not in text and not FRAME_TRIGGER.search(text):
         return text
-    for pat, repl in FRAME_RULES:
-        text = re.sub(pat, repl, text, flags=re.I)
+    for pat, repl_tmpl, flags in FRAME_RULES:
+        f = 0
+        if 'IgnoreCase' in flags: f |= re.I
+        if 'Singleline' in flags: f |= re.S
+        text = re.sub(pat, _frame_py_repl(repl_tmpl), text, flags=f)
     return text
 
 
+# ---- 模擬 HarmonyPatches.Translate（AddMsgPrefix 層）：Patterns 正則 + Possessive + Clean 補漏 ----
+def load_harmony_patterns():
+    src = HARMONY.read_text(encoding="utf-8")
+    out = []
+    for m in re.finditer(
+        r'new Regex\(@"((?:""|[^"])*)"\s*,\s*RegexOptions\.IgnoreCase\)\s*,\s*"((?:""|[^"])*)"',
+        src, re.S):
+        out.append((csstr(m.group(1)), csstr(m.group(2))))
+    return out
+
+
+HARMONY_RULES = load_harmony_patterns()
+POSSESSIVE = re.compile(r'\b(his|her|its|their|your)\b', re.I)
+LEADING_ARTICLE = re.compile(r'\b(?:the|a|an)\s+(?=[\u4e00-\u9fff])', re.I)
+POSS = {"his": "他的", "her": "她的", "its": "它的", "their": "他們的", "your": "你的"}
+
+
+def _add_msg_prefix(text, words, phrases):
+    """對應 C# ZhTwHarmonyPatches.Translate：命中 Patterns 即整句翻譯（未命中才落 ToStringProcess）。"""
+    inner = text.strip()
+    outer = None
+    m = re.match(r'^\{\{([^}|]*)\|(.*)\}\}$', inner, re.S)
+    if m:
+        outer, inner = m.group(1), m.group(2).strip()
+    for pat, repl in HARMONY_RULES:
+        if re.match(pat, inner, re.I):
+            result = re.sub(pat, _frame_py_repl(repl), inner, flags=re.I).strip()
+            result = POSSESSIVE.sub(lambda mm: POSS.get(mm.group(0).lower(), "它的"), result)
+            result = LEADING_ARTICLE.sub("", result).replace("  ", " ")
+            result = re.sub(r"用 (?:你的|我的|他的|她的|它的|他們的) ", "用 ", result)
+            result = _clean(result, words, phrases)
+            if outer:
+                result = "{{" + outer + "|" + result + "}}"
+            return result
+    return None
+
+
 def _to_string_process(text, words, phrases):
+    translated = _add_msg_prefix(text, words, phrases)
+    if translated is not None:
+        return translated
     hasEng, hasCjk = _scan_lang(text)
     if not hasEng: return text
     if not hasCjk:
@@ -247,6 +339,19 @@ def test_pipeline():
         ("Frozen watervine farmer is dazed.", "感到暈眩", "dazed"),
         ("這已經是純中文了。", "這已經是純中文了。", None),
         ("Village:Quest:Gate:Merchant", "Village:Quest:Gate:Merchant", None),
+        # ==== 中英混合 combat（=subject.Does:hit= 已轉「擊中」，for/with/weapon 仍英文）====
+        ("咬喉獸食屑 擊中 (x1) for 2 damage with her bite.", "造成 2 傷害", "for"),
+        ("你 擊中 (x1) for 2 damage with your bronze dagger!", "造成 2 傷害", "for"),
+        ("咬喉獸食屑 擊中 (x3) for 3 damage with her 拳頭.", "造成 3 傷害", "for"),
+        ("食屑獸 擊中 你 (x1) for 2 damage with 他的 爪.", "造成 2 傷害", "for"),
+        # ==== 中英混合受到（=verb:take= 已轉「受到」）====
+        ("你 受到 4 damage from 酸液.", "受到 4 傷害", "damage"),
+        ("咬喉獸食屑 受到 2 damage.", "受到 2 傷害", "damage"),
+        # ==== 拾取語境（玩家主詞 token 為空 →「受到 物品」不得殘留「受到」義）====
+        ("受到 皮革護甲.", "拿起了", "受到"),
+        ("受到 the 皮革護甲.", "拿起了", "the"),
+        ("You take the bronze dagger.", "拿起了", "take"),
+        ("你 擊中 (x2) for 3 damage with your 青銅匕首 [16]", "用 青銅匕首", "你的"),
     ]
     for inp, must, must_not in cases:
         out = _to_string_process(inp, words, phrases)
@@ -281,7 +386,103 @@ def test_data():
     check("ifPlural 值側無英文 token 洩漏", total == 0, f"{total} 個")
 
 
-# ============ 5. word_order（模板層語序修復 + 區段標題）============
+# ============ 5. localization_keys（zh-tw XML 的 key 屬性必須與 base 一致）============
+import xml.etree.ElementTree as _ET
+
+_KEY_ATTRS = ("Name", "ID", "Class", "Type", "Value")
+_DISP_ATTRS = {"DisplayName", "DisplayText", "Description", "Snippet", "ChargenTitle",
+               "SingularTitle", "Title", "Subjective", "Objective", "Possessive", "Reflexive",
+               "Substantive", "HelpText", "Accomplishment", "Hagiograph", "Gospel",
+               "TinkerCategory", "TinkerDisplayName", "Unit", "ProperName", "NameContext",
+               "IndefiniteArticle", "DefiniteArticle", "Article", "Plural", "Min", "Max",
+               "Level", "x", "y", "Chance", "Priority", "Factions", "Reputation", "XP",
+               "DescriptionResource", "SnippetResource", "SnippetText", "GameText"}
+
+
+def _find_base_dir():
+    cands = [
+        Path("/mnt/g/SteamLibrary/steamapps/common/Caves of Qud/CoQ_Data/StreamingAssets/Base"),
+        Path("/mnt/c/Games/Caves of Qud/CoQ_Data/StreamingAssets/Base"),
+        Path("C:/SteamLibrary/steamapps/common/Caves of Qud/CoQ_Data/StreamingAssets/Base"),
+    ]
+    for c in cands:
+        if c.exists():
+            return c
+    return None
+
+
+def test_localization_keys():
+    print("== localization_keys：zh-tw XML key 與 base 一致 ==")
+    import os
+    base_dir = _find_base_dir()
+    if base_dir is None:
+        check("base 目錄存在", False)
+        return
+    total = 0
+    for mf in sorted(ZH.glob("*.zh-tw.xml")):
+        name = mf.name
+        if not name.endswith("zh-tw.xml"): continue
+        bf = base_dir / name.replace(".zh-tw.xml", ".xml")
+        if not bf.exists(): continue
+        try:
+            mr = _ET.fromstring(mf.read_text(encoding="utf-8-sig"))
+        except _ET.ParseError as e:
+            check(f"{name} XML 可解析", False, str(e))
+            total += 1
+            continue
+        try:
+            br = _ET.fromstring(bf.read_text(encoding="utf-8-sig"))
+        except _ET.ParseError:
+            continue
+        bkeys = set()
+        for el in br.iter():
+            for a in _KEY_ATTRS:
+                v = el.get(a)
+                if v: bkeys.add(v)
+        bad = []
+        for el in mr.iter():
+            # 有 ID 屬性的元素：Name 是 DisplayText（pregen/quest/step/book 等）
+            if el.get("ID") is not None:
+                continue
+            # Worlds zone：Level/x/y 是 key，Name 是 DisplayText
+            if el.tag == "zone" and el.get("Level") is not None:
+                continue
+            # Naming：prefix/infix/postfix/template 的 Name 是生成音節文字
+            if name == "Naming.zh-tw.xml" and el.tag in ("prefix", "infix", "postfix", "suffix", "template", "templatevar", "value"):
+                continue
+            # Relics：relictypemapping Name 是 Key,DisplayText 雙重語義（historyspice 對齊，暫緩）
+            if el.tag == "relictypemapping":
+                continue
+            for a in _KEY_ATTRS:
+                v = el.get(a)
+                if v and a not in _DISP_ATTRS and _has_cjk(v) and v not in bkeys:
+                    bad.append((el.tag, a, v[:30]))
+        if bad:
+            total += 1
+            check(f"{name} key 屬性無中文（{len(bad)} 個）", False, f"e.g. <{bad[0][0]} {bad[0][1]}='{bad[0][2]}'")
+    if total == 0:
+        check("zh-tw XML key 屬性無中文", True)
+
+
+def _has_cjk(s):
+    return any("\u4e00" <= c <= "\u9fff" for c in s)
+
+
+# ============ 6. xml_structure（zh-tw XML 可解析 + 單一根）============
+def test_xml_structure():
+    print("== xml_structure：zh-tw XML 語法完整 ==")
+    bad = []
+    for mf in sorted(ZH.glob("*.zh-tw.xml")):
+        s = mf.read_text(encoding="utf-8-sig")
+        if s.count("<") < 2: continue
+        try:
+            _ET.fromstring(s)
+        except _ET.ParseError as e:
+            bad.append((mf.name, str(e)))
+    check("zh-tw XML 全部可解析", not bad, str(bad[:3]) if bad else "")
+
+
+# ============ 7. word_order（模板層語序修復 + 區段標題）============
 def test_word_order():
     print("== word_order：模板語序修復與區段標題 ==")
     strings = ZH / "Strings.zh-tw.xml"
@@ -401,14 +602,18 @@ def main():
     ap.add_argument("--pipeline", action="store_true")
     ap.add_argument("--data", action="store_true")
     ap.add_argument("--wordorder", action="store_true")
+    ap.add_argument("--localkeys", action="store_true")
+    ap.add_argument("--xmldata", action="store_true")
     ap.add_argument("--doessubject", action="store_true")
     ap.add_argument("--verbinflection", action="store_true")
     a = ap.parse_args()
-    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder or a.doessubject or a.verbinflection)
+    run_all = not (a.static or a.dict or a.pipeline or a.data or a.wordorder or a.localkeys or a.xmldata or a.doessubject or a.verbinflection)
     if run_all or a.static: test_static_cs()
     if run_all or a.dict: test_dictionary()
     if run_all or a.pipeline: test_pipeline()
     if run_all or a.data: test_data()
+    if run_all or a.localkeys: test_localization_keys()
+    if run_all or a.xmldata: test_xml_structure()
     if run_all or a.wordorder: test_word_order()
     if run_all or a.doessubject: test_does_subject()
     if run_all or a.verbinflection: test_verb_inflection()
