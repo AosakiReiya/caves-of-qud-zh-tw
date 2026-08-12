@@ -37,3 +37,8 @@
 - patch 位置：`qud-zh-tw-replacers/HarmonyPatches.cs`（TMP patch 區）、
   `qud-zh-tw-replacers/UiStringsHook.cs`（`SectionHeaders` 字典、`TmpHeaderPrefix`）。
 - 場景：`CoQ_Data/level0`。
+
+---
+## 狀態更新（2026-08-12）
+- 按使用者決定：**暫緩處理**（不影響遊玩）。Todo 4 僅記錄，最後處理。
+- 後續方向保留：level0 場景分析 / 反編譯 `Qud.UI.CharacterStatusScreen` / TMP Awake・OnEnable patch。
