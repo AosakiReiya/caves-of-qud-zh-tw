@@ -1299,4 +1299,73 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="Chiliad Creature Bands" Load="Merge">
   <part Name="Render" DisplayName="粉碎帶" />
  </object>
+  <object Name="Ehalcodon" Load="Merge">
+    <part Name="Render" DisplayName="{{M|伊哈爾科頓(Ehalcodon)}}" />
+  </object>
+  <object Name="Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Left Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Right Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Left Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Right Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="石墨烯帶" />
+  </object>
+  <object Name="Earth Gate W" Load="Merge">
+    <part Name="Render" DisplayName="大地之門 (Earth Gate)" />
+  </object>
+  <object Name="Earth Gate E" Load="Merge">
+    <part Name="Render" DisplayName="大地之門 (Earth Gate)" />
+  </object>
+  <object Name="BaseHologramProjector Barathrum" Load="Merge">
+    <part Name="Render" DisplayName="全息投影儀" />
+  </object>
+  <object Name="Barathrum Hologram" Load="Merge">
+    <part Name="Render" DisplayName="巴拉楚姆(Barathrum)的全息投影" />
+  </object>
+  <object Name="Star Orchid Temple Projector" Load="Merge">
+    <part Name="Render" DisplayName="神廟投影儀" />
+  </object>
+  <object Name="Chiliad Slynth Joppa" Load="Merge">
+    <part Name="Render" DisplayName="約帕的斯林斯灌溉者" />
+  </object>
+  <object Name="Chiliad Slynth Grit Gate" Load="Merge">
+    <part Name="Render" DisplayName="礫門的斯林斯扳手僧" />
+  </object>
+  <object Name="Chiliad Slynth Bey Lah" Load="Merge">
+    <part Name="Render" DisplayName="斯林斯偵察兵 (slynth scout)" />
+  </object>
+  <object Name="Chiliad Slynth Kyakukya" Load="Merge">
+    <part Name="Render" DisplayName="恰庫恰的斯林斯蘋果酒口" />
+  </object>
+  <object Name="Chiliad Slynth Ezra" Load="Merge">
+    <part Name="Render" DisplayName="斯林斯(slynth)流亡者" />
+  </object>
+  <object Name="Chiliad Slynth Mopango" Load="Merge">
+    <part Name="Render" DisplayName="莫龐戈的斯林斯之友" />
+  </object>
+  <object Name="Chiliad Slynth Chavvah" Load="Merge">
+    <part Name="Render" DisplayName="水晶斯林斯" />
+  </object>
+  <object Name="Fool of the Gyre" Load="Merge">
+    <part Name="Render" DisplayName="環流的愚者" />
+  </object>
+  <object Name="Chiliad Creature Chavvah" Load="Merge">
+    <part Name="Render" DisplayName="=creatureRegionAdjective= 鳴響的" />
+  </object>
+  <object Name="Chiliad Creature Gyre Wights" Load="Merge">
+    <part Name="Render" DisplayName="環流(Gyre)的=creatureRegionNoun=" />
+  </object>
+  <object Name="Chiliad Creature Mopango" Load="Merge">
+    <part Name="Render" DisplayName="mopango =creatureRegionNoun=" />
+  </object>
 </objects>

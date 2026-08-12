@@ -677,4 +677,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Description" Short="穿過一片黃銅與鉻的場域，二極體在 環流(Gyre) 中閃爍。" />
     <part Name="ChargeSink" NameForStatus="顯示" />
   </object>
+  <object Name="Chavvah Taproot" Load="Merge">
+    <part Name="Render" DisplayName="結晶主根" />
+  </object>
 </objects>

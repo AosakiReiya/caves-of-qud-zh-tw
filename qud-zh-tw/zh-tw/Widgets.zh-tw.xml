@@ -59,4 +59,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <object Name="DummyTinkerScreenObject" Load="Merge">
     <part Name="Render" DisplayName="{{C|已知修改}}" />
   </object>
+  <object Name="GritGateMedicalBayWidget" Load="Merge">
+    <part Name="Interesting" DisplayName="醫療艙" />
+  </object>
 </objects>

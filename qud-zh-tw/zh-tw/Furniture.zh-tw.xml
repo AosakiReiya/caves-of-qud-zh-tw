@@ -1884,4 +1884,67 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="MechPilotSeat" Load="Merge">
   <part Name="Description" Short="青色泡沫墊著 內部 的背部與深陷的座墊，旋鈕裝飾在彎曲的扶手上。整張椅子在噴射馬達上旋轉。" />
  </object>
+  <object Name="Bell of Rest" Load="Merge">
+    <part Name="Render" DisplayName="安息之鐘" />
+  </object>
+  <object Name="Death Gate W" Load="Merge">
+    <part Name="Render" DisplayName="死亡之門" />
+  </object>
+  <object Name="Death Gate E" Load="Merge">
+    <part Name="Render" DisplayName="死亡之門" />
+  </object>
+  <object Name="Life Gate W" Load="Merge">
+    <part Name="Render" DisplayName="生命之門" />
+  </object>
+  <object Name="Life Gate E" Load="Merge">
+    <part Name="Render" DisplayName="生命之門 (Life Gate)" />
+  </object>
+  <object Name="Combustion Turbine" Load="Merge">
+    <part Name="Render" DisplayName="{{K|燃燒}} {{c|渦輪機}}" />
+  </object>
+  <object Name="Electric Crematorium" Load="Merge">
+    <part Name="Render" DisplayName="電力火葬爐" />
+  </object>
+  <object Name="Energy Cell Rack" Load="Merge">
+    <part Name="Render" DisplayName="能量電池架" />
+  </object>
+  <object Name="Pumping Station" Load="Merge">
+    <part Name="Render" DisplayName="{{c|抽水站}}" />
+  </object>
+  <object Name="Solar Broadcast Power Station" Load="Merge">
+    <part Name="Render" DisplayName="{{W|太陽能}} {{c|廣播發電站}}" />
+  </object>
+  <object Name="Thermoelectric Turbine" Load="Merge">
+    <part Name="Render" DisplayName="{{R|熱電}} {{c|渦輪機}}" />
+  </object>
+  <object Name="Biodynamic Turbine" Load="Merge">
+    <part Name="Render" DisplayName="{{r|生物動力}} {{c|渦輪機}}" />
+  </object>
+  <object Name="Broadcast Power Plant" Load="Merge">
+    <part Name="Render" DisplayName="{{c|廣播能量}} {{leafy|植物}}" />
+  </object>
+  <object Name="Fusion Broadcast Power Station" Load="Merge">
+    <part Name="Render" DisplayName="{{C|融合}} {{c|廣播電廠}}" />
+  </object>
+  <object Name="Joppa Bookshelf" Load="Merge">
+    <part Name="Render" DisplayName="木製書架" />
+  </object>
+  <object Name="Grit Gate Honey Vase" Load="Merge">
+    <part Name="Render" DisplayName="花瓶" />
+  </object>
+  <object Name="Grit Gate Table" Load="Merge">
+    <part Name="Render" DisplayName="工作台" />
+  </object>
+  <object Name="Grit Gate Sleek Table" Load="Merge">
+    <part Name="Render" DisplayName="工作台" />
+  </object>
+  <object Name="Grit Gate Metal Table" Load="Merge">
+    <part Name="Render" DisplayName="金屬工作檯" />
+  </object>
+  <object Name="Barathrum Table" Load="Merge">
+    <part Name="Render" DisplayName="工作台" />
+  </object>
+  <object Name="Klanq Table" Load="Merge">
+    <part Name="Render" DisplayName="工作台" />
+  </object>
 </objects>

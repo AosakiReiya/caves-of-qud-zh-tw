@@ -453,6 +453,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Description" Short="黑暗湧入了布滿珊瑚蟲的開口坑洞邊緣。" />
   </object>
   <object Name="PondDown" Load="Merge">
+    <part Name="HiddenRender" DisplayName="石頭裂縫" />
     <part Name="Render" DisplayName="小裂縫" />
     <part Name="Description" Short="紅石中的裂縫向著地底噴出的水霧敞開。" />
   </object>
@@ -492,5 +493,29 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="螺旋樓梯下" />
     <part Name="Description" Short="光滑且雲霧狀的圓台在靈能懸浮的螺旋中漂浮著。" />
     <xtagGrammar iArticle="一些" />
+  </object>
+  <object Name="Chavvah Branch" Load="Merge">
+    <part Name="Render" DisplayName="結晶分枝" />
+  </object>
+  <object Name="Chavvah Dense Leaves" Load="Merge">
+    <part Name="Render" DisplayName="茂密的晶體葉片" />
+  </object>
+  <object Name="Chavvah Sparse Leaves" Load="Merge">
+    <part Name="Render" DisplayName="稀疏的水晶葉片" />
+  </object>
+  <object Name="Chavvah Chime Left" Load="Merge">
+    <part Name="Render" DisplayName="鳴響岩" />
+  </object>
+  <object Name="Chavvah Chime Right" Load="Merge">
+    <part Name="Render" DisplayName="鳴響岩" />
+  </object>
+  <object Name="Chavvah Taproot Floor" Load="Merge">
+    <part Name="Render" DisplayName="結晶主根" />
+  </object>
+  <object Name="Chavvah Spiral StairsUp" Load="Merge">
+    <part Name="Render" DisplayName="螺旋樓梯向上" />
+  </object>
+  <object Name="Chavvah Spiral StairsDown" Load="Merge">
+    <part Name="Render" DisplayName="螺旋樓梯向下" />
   </object>
 </objects>

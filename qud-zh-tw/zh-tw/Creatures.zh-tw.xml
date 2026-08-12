@@ -4360,4 +4360,67 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="SapientBear" Load="Merge">
   <part Name="Render" DisplayName="會說話的熊" />
  </object>
+  <object Name="Mopango Corpse" Load="Merge">
+    <part Name="Render" DisplayName="莫龐戈的屍體" />
+  </object>
+  <object Name="Gyre Wight of Agolgot" Load="Merge">
+    <part Name="Render" DisplayName="阿戈爾戈特的環流之靈" />
+  </object>
+  <object Name="Gyre Wight of Bethsaida" Load="Merge">
+    <part Name="Render" DisplayName="貝賽達蘇薩的環流之靈" />
+  </object>
+  <object Name="Gyre Wight of Shug'ruith" Load="Merge">
+    <part Name="Render" DisplayName="舒格魯斯的環流之靈" />
+  </object>
+  <object Name="Gyre Wight of Rermadon" Load="Merge">
+    <part Name="Render" DisplayName="雷爾馬登的環流之靈" />
+  </object>
+  <object Name="Gyre Wight of Qas" Load="Merge">
+    <part Name="Render" DisplayName="卡斯(Qas)的環流(Gyre)白靈" />
+  </object>
+  <object Name="Gyre Wight of Qon" Load="Merge">
+    <part Name="Render" DisplayName="昆(Qon)的環流(Gyre)幽靈" />
+  </object>
+  <object Name="Gyre Wight Apotheote" Load="Merge">
+    <part Name="Render" DisplayName="環流之靈昇華者" />
+  </object>
+  <object Name="Mopango Golem" Load="Merge">
+    <part Name="Render" DisplayName="莫龐戈魔像" />
+  </object>
+  <object Name="Mopango Charioteer Golem" Load="Merge">
+    <part Name="Render" DisplayName="莫龐戈戰車手魔像" />
+  </object>
+  <object Name="Ctesiphus" Load="Merge">
+    <part Name="Render" DisplayName="塞西豐斯(Ctesiphus)" />
+  </object>
+  <object Name="Shem -1" Load="Merge">
+    <part Name="Render" DisplayName="{{c|謝姆 -1}}" />
+  </object>
+  <object Name="Barathrum" Load="Merge">
+    <part Name="Render" DisplayName="巴拉楚姆(Barathrum)" />
+  </object>
+  <object Name="Neelahind" Load="Merge">
+    <part Name="Render" DisplayName="妮拉欣德(Neelahind)" />
+  </object>
+  <object Name="Bep" Load="Merge">
+    <part Name="Render" DisplayName="Bep" />
+  </object>
+  <object Name="0lam" Load="Merge">
+    <part Name="Render" DisplayName="0lam" />
+  </object>
+  <object Name="Graftek" Load="Merge">
+    <part Name="Render" DisplayName="{{C|葛拉夫特克(Graftek)}}" />
+  </object>
+  <object Name="Graftek_Tendril" Load="Merge">
+    <part Name="Render" DisplayName="觸手" />
+  </object>
+  <object Name="Mindrone" Load="Merge">
+    <part Name="Render" DisplayName="心靈無人機" />
+  </object>
+  <object Name="Mindrone_Zap" Load="Merge">
+    <part Name="Render" DisplayName="鞭狀天線" />
+  </object>
+  <object Name="Skittering Sentry" Load="Merge">
+    <part Name="Render" DisplayName="窸窣的哨兵" />
+  </object>
 </objects>

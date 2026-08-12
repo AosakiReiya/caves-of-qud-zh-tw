@@ -1,0 +1,1437 @@
+[
+ {
+  "file": "Creatures.xml",
+  "object": "Creature",
+  "part": "Render",
+  "base_dn": "[Creature]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Animal",
+  "part": "Render",
+  "base_dn": "[Animal]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseUrchin",
+  "part": "Render",
+  "base_dn": "[urchin]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseFarmer",
+  "part": "Render",
+  "base_dn": "[farmer]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseMopango",
+  "part": "Render",
+  "base_dn": "[base mopango]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Mopango Corpse",
+  "part": "Render",
+  "base_dn": "mopango corpse",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "MutatedPlant",
+  "part": "Render",
+  "base_dn": "[Mutated Plant]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "MutatedFungus",
+  "part": "Render",
+  "base_dn": "[Mutated Fungus]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseNest",
+  "part": "Render",
+  "base_dn": "[Nest]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "NaturalWeapon",
+  "part": "Render",
+  "base_dn": "[Natural Weapon]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "NaturalMissileWeapon",
+  "part": "Render",
+  "base_dn": "[Natural Missile Weapon]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseSlugsnout",
+  "part": "Render",
+  "base_dn": "[slugsnout]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseHindren",
+  "part": "Render",
+  "base_dn": "[base hindren]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Agolgot",
+  "part": "Render",
+  "base_dn": "gyre wight of Agolgot",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Snapjaw Troglodyte",
+  "part": "Render",
+  "base_dn": "[snapjaw troglodyte]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Bethsaida",
+  "part": "Render",
+  "base_dn": "gyre wight of Bethsaida",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Shug'ruith",
+  "part": "Render",
+  "base_dn": "gyre wight of Shug'ruith",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseBreatherCorpse",
+  "part": "Render",
+  "base_dn": "[breather corpse]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Rermadon",
+  "part": "Render",
+  "base_dn": "gyre wight of Rermadon",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Qas",
+  "part": "Render",
+  "base_dn": "gyre wight of Qas",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight of Qon",
+  "part": "Render",
+  "base_dn": "gyre wight of Qon",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Svardym",
+  "part": "Render",
+  "base_dn": "[svardym]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Gyre Wight Apotheote",
+  "part": "Render",
+  "base_dn": "gyre wight apotheote",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "PowerCore",
+  "part": "Render",
+  "base_dn": "[power core]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Mopango Golem",
+  "part": "Render",
+  "base_dn": "mopango golem",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Mopango Charioteer Golem",
+  "part": "Render",
+  "base_dn": "mopango charioteer golem",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "DromadTrader_Village0",
+  "part": "Render",
+  "base_dn": "[dromad merchant]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "HumanApothecary",
+  "part": "Render",
+  "base_dn": "[human apothecary]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "HumanTinker",
+  "part": "Render",
+  "base_dn": "[human tinker]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Ctesiphus",
+  "part": "Render",
+  "base_dn": "Ctesiphus",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Shem -1",
+  "part": "Render",
+  "base_dn": "{{c|Shem -1}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Barathrum",
+  "part": "Render",
+  "base_dn": "Barathrum",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Neelahind",
+  "part": "Render",
+  "base_dn": "Neelahind",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "BaseBiomech",
+  "part": "Render",
+  "base_dn": "[child]",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Bep",
+  "part": "Render",
+  "base_dn": "Bep",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "0lam",
+  "part": "Render",
+  "base_dn": "0lam",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Graftek",
+  "part": "Render",
+  "base_dn": "{{C|Graftek}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Graftek_Tendril",
+  "part": "Render",
+  "base_dn": "tendril",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Mindrone",
+  "part": "Render",
+  "base_dn": "mindrone",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Mindrone_Zap",
+  "part": "Render",
+  "base_dn": "whipping antenna",
+  "zh_dn": null
+ },
+ {
+  "file": "Creatures.xml",
+  "object": "Skittering Sentry",
+  "part": "Render",
+  "base_dn": "skittering sentry",
+  "zh_dn": null
+ },
+ {
+  "file": "Data.xml",
+  "object": "BaseUnknown",
+  "part": "Render",
+  "base_dn": "weird artifact",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Food",
+  "part": "Render",
+  "base_dn": "[Food]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Organ",
+  "part": "Render",
+  "base_dn": "[Organ]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Snack",
+  "part": "Render",
+  "base_dn": "[Snack]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Preservable",
+  "part": "Render",
+  "base_dn": "[preservable]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Raw Meat",
+  "part": "Render",
+  "base_dn": "[raw meat]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "BaseBreatherGland",
+  "part": "Render",
+  "base_dn": "[breather gland]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Mushroom",
+  "part": "Render",
+  "base_dn": "[mushroom]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "Jerky",
+  "part": "Render",
+  "base_dn": "[jerky]",
+  "zh_dn": null
+ },
+ {
+  "file": "Foods.xml",
+  "object": "BaseBreatherGlandPaste",
+  "part": "Render",
+  "base_dn": "[breather gland paste]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "MountedFurniture",
+  "part": "Render",
+  "base_dn": "[MountedFurniture]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "GritGateCommPanel",
+  "part": "Render",
+  "base_dn": "communications panel",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Bell of Rest",
+  "part": "Render",
+  "base_dn": "Bell of Rest",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Death Gate W",
+  "part": "Render",
+  "base_dn": "Death Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Death Gate E",
+  "part": "Render",
+  "base_dn": "Death Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Life Gate W",
+  "part": "Render",
+  "base_dn": "Life Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Life Gate E",
+  "part": "Render",
+  "base_dn": "Life Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Gate",
+  "part": "Render",
+  "base_dn": "[gate]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Combustion Turbine",
+  "part": "Render",
+  "base_dn": "{{K|combustion}} {{c|turbine}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Electric Crematorium",
+  "part": "Render",
+  "base_dn": "electric crematorium",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Energy Cell Rack",
+  "part": "Render",
+  "base_dn": "energy cell rack",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Pumping Station",
+  "part": "Render",
+  "base_dn": "{{c|pumping station}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Solar Broadcast Power Station",
+  "part": "Render",
+  "base_dn": "{{W|solar}} {{c|broadcast power station}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Thermoelectric Turbine",
+  "part": "Render",
+  "base_dn": "{{R|thermoelectric}} {{c|turbine}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Biodynamic Turbine",
+  "part": "Render",
+  "base_dn": "{{r|biodynamic}} {{c|turbine}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Broadcast Power Plant",
+  "part": "Render",
+  "base_dn": "{{c|broadcast power}} {{leafy|plant}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Fusion Broadcast Power Station",
+  "part": "Render",
+  "base_dn": "{{C|fusion}} {{c|broadcast power station}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Joppa Bookshelf",
+  "part": "Render",
+  "base_dn": "wooden bookshelf",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "BaseBed",
+  "part": "Render",
+  "base_dn": "[bed]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "BaseChair",
+  "part": "Render",
+  "base_dn": "[chair]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "BasePortableChair",
+  "part": "Render",
+  "base_dn": "[portablechair]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Vessel",
+  "part": "Render",
+  "base_dn": "[vase]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Grit Gate Honey Vase",
+  "part": "Render",
+  "base_dn": "vase",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Grit Gate Table",
+  "part": "Render",
+  "base_dn": "workbench",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Grit Gate Sleek Table",
+  "part": "Render",
+  "base_dn": "workbench",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Grit Gate Metal Table",
+  "part": "Render",
+  "base_dn": "metal workbench",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Barathrum Table",
+  "part": "Render",
+  "base_dn": "workbench",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Klanq Table",
+  "part": "Render",
+  "base_dn": "workbench",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Random Statue",
+  "part": "Render",
+  "base_dn": "[statue]",
+  "zh_dn": null
+ },
+ {
+  "file": "Furniture.xml",
+  "object": "Village Monument",
+  "part": "Render",
+  "base_dn": "[village monument]",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Ehalcodon",
+  "part": "Render",
+  "base_dn": "{{M|Ehalcodon}}",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Spindle Ribbon",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Left Spindle Ribbon",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Right Spindle Ribbon",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Spindle Ribbon Top",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Left Spindle Ribbon Top",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Right Spindle Ribbon Top",
+  "part": "Render",
+  "base_dn": "graphene ribbon",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "BaseEaterMonument",
+  "part": "Render",
+  "base_dn": "[eater monument]",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Earth Gate W",
+  "part": "Render",
+  "base_dn": "Earth Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Earth Gate E",
+  "part": "Render",
+  "base_dn": "Earth Gate",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "BaseHologramProjector Barathrum",
+  "part": "Render",
+  "base_dn": "hologram projector",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Barathrum Hologram",
+  "part": "Render",
+  "base_dn": "hologram of Barathrum",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Star Orchid Temple Projector",
+  "part": "Render",
+  "base_dn": "temple projector",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Joppa",
+  "part": "Render",
+  "base_dn": "slynth irrigator",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Grit Gate",
+  "part": "Render",
+  "base_dn": "slynth wrenchmonk",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Bey Lah",
+  "part": "Render",
+  "base_dn": "slynth scout",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Kyakukya",
+  "part": "Render",
+  "base_dn": "slynth cidermouth",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Ezra",
+  "part": "Render",
+  "base_dn": "slynth exile",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Mopango",
+  "part": "Render",
+  "base_dn": "slynth friend",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Slynth Chavvah",
+  "part": "Render",
+  "base_dn": "crystal slynth",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Fool of the Gyre",
+  "part": "Render",
+  "base_dn": "fool of the Gyre",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Creature Chavvah",
+  "part": "Render",
+  "base_dn": "=creatureRegionAdjective= chime",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Creature Gyre Wights",
+  "part": "Render",
+  "base_dn": "=creatureRegionNoun= of the Gyre",
+  "zh_dn": null
+ },
+ {
+  "file": "HiddenObjects.xml",
+  "object": "Chiliad Creature Mopango",
+  "part": "Render",
+  "base_dn": "mopango =creatureRegionNoun=",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Item",
+  "part": "Render",
+  "base_dn": "[Item]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "NotakeItem",
+  "part": "Render",
+  "base_dn": "[notakeItem]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Projectile",
+  "part": "Render",
+  "base_dn": "{{c|projectile}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Armor",
+  "part": "Render",
+  "base_dn": "[Armor]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Shield",
+  "part": "Render",
+  "base_dn": "[Shield]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseHindrenAxe",
+  "part": "Render",
+  "base_dn": "[BaseHindrenAxe]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Shayna",
+  "part": "Render",
+  "base_dn": "{{w-w-Y-w-w-w sequence|Shayna}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Ari",
+  "part": "Render",
+  "base_dn": "{{R-W-Y sequence|Ari}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Yal",
+  "part": "Render",
+  "base_dn": "{{B-C-Y sequence|Yal}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Svensword",
+  "part": "Render",
+  "base_dn": "[Svensword]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Caslainard",
+  "part": "Render",
+  "base_dn": "{{B-B-b-w-W-Y-W-w-b-B sequence|Caslainard}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Polluxus",
+  "part": "Render",
+  "base_dn": "{{w-W-Y-W-w-b-B-B sequence|Polluxus}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "La Jeunesse",
+  "part": "Render",
+  "base_dn": "{{r|La}} {{r-R-R-W-W-w-w sequence|Jeunesse}}",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Stasis Casque",
+  "part": "Render",
+  "base_dn": "stasis casque",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Psiamp Backpack",
+  "part": "Render",
+  "base_dn": "&amp;Kps&amp;Cion&amp;Kic amp&amp;Clif&amp;Kier ba&amp;Cckpa&amp;Kck",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Psiamp Helmet",
+  "part": "Render",
+  "base_dn": "&amp;Cps&amp;Yion&amp;Cic amp&amp;Ylif&amp;Cier he&amp;Ylm&amp;Cet",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Inhibitor Cuff",
+  "part": "Render",
+  "base_dn": "&amp;Kinhi&amp;rb&amp;Kitor cuff",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierArtifact",
+  "part": "Render",
+  "base_dn": "[base artifact]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierBody",
+  "part": "Render",
+  "base_dn": "[base armor]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierHead",
+  "part": "Render",
+  "base_dn": "[base head]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierFace",
+  "part": "Render",
+  "base_dn": "[base face]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierBack",
+  "part": "Render",
+  "base_dn": "[base back]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierHands",
+  "part": "Render",
+  "base_dn": "[base gloves]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierArm",
+  "part": "Render",
+  "base_dn": "[base bracelet]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierFeet",
+  "part": "Render",
+  "base_dn": "[base boots]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierFloating",
+  "part": "Render",
+  "base_dn": "[base floating]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseTierShield",
+  "part": "Render",
+  "base_dn": "[base shield]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Corpse",
+  "part": "Render",
+  "base_dn": "[Corpse]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Robot Corpse",
+  "part": "Render",
+  "base_dn": "[Corpse]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "GenericLimb",
+  "part": "Render",
+  "base_dn": "[limb]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "PlantLimb",
+  "part": "Render",
+  "base_dn": "[limb]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "FungusLimb",
+  "part": "Render",
+  "base_dn": "[limb]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "RobotLimb",
+  "part": "Render",
+  "base_dn": "[Corpse]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Energy Cell",
+  "part": "Render",
+  "base_dn": "[Energy Cell]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Liquid Fueled Energy Cell",
+  "part": "Render",
+  "base_dn": "[Liquid Fueled Energy Cell]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "LightSource",
+  "part": "Render",
+  "base_dn": "[LightSource]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Medication",
+  "part": "Render",
+  "base_dn": "[medication autoinjector]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Scrap",
+  "part": "Render",
+  "base_dn": "[scrap]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "ScrapX",
+  "part": "Render",
+  "base_dn": "[the ultimate scrap]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "BaseArtifact",
+  "part": "Render",
+  "base_dn": "[base artifact]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Joppa Recoiler",
+  "part": "Render",
+  "base_dn": "Joppa recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Grit Gate Recoiler",
+  "part": "Render",
+  "base_dn": "{{c|Grit Gate}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Golgotha Recoiler",
+  "part": "Render",
+  "base_dn": "{{g|Golgotha}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Kyakukya Recoiler",
+  "part": "Render",
+  "base_dn": "{{R|Kyakukya}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Six Day Stilt Recoiler",
+  "part": "Render",
+  "base_dn": "{{Y|Six Day Stilt}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Bethesda Susa Recoiler",
+  "part": "Render",
+  "base_dn": "{{C|Bethesda Susa}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Ezra Recoiler",
+  "part": "Render",
+  "base_dn": "{{W|Ezra}} recoiler",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Random Figurine",
+  "part": "Render",
+  "base_dn": "[figurine]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "SmallMetalTrinket",
+  "part": "Render",
+  "base_dn": "[toaster]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "WaterContainer",
+  "part": "Render",
+  "base_dn": "[Water Container]",
+  "zh_dn": null
+ },
+ {
+  "file": "Items.xml",
+  "object": "Grit Gate Dormant Waydroid",
+  "part": "Render",
+  "base_dn": "{{c|dormant waydroid}}",
+  "zh_dn": null
+ },
+ {
+  "file": "PhysicalPhenomena.xml",
+  "object": "PhysicalObject",
+  "part": "Render",
+  "base_dn": "[Object]",
+  "zh_dn": null
+ },
+ {
+  "file": "PhysicalPhenomena.xml",
+  "object": "Gas",
+  "part": "Render",
+  "base_dn": "[Gas]",
+  "zh_dn": null
+ },
+ {
+  "file": "PhysicalPhenomena.xml",
+  "object": "Hologram Distraction",
+  "part": "Render",
+  "base_dn": "[Hologram]",
+  "zh_dn": null
+ },
+ {
+  "file": "RootObjects.xml",
+  "object": "CosmeticObject",
+  "part": "Render",
+  "base_dn": "[Object]",
+  "zh_dn": null
+ },
+ {
+  "file": "TutorialStaging.xml",
+  "object": "TutorialClockworkBeetlePariah",
+  "part": "Render",
+  "base_dn": "clockwork beetle and pariah to its people",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "Wall",
+  "part": "Render",
+  "base_dn": "[Wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BaseSedimentaryRock",
+  "part": "Render",
+  "base_dn": "[rock wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BaseMetamorphicRock",
+  "part": "Render",
+  "base_dn": "[rock wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BasePlantWall",
+  "part": "Render",
+  "base_dn": "[plant wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "Walltrap",
+  "part": "Render",
+  "base_dn": "[wall trap]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BaseForcefield",
+  "part": "Render",
+  "base_dn": "[forcefield]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "Relief",
+  "part": "Render",
+  "base_dn": "[Wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BaseSultanWall",
+  "part": "Render",
+  "base_dn": "[ceremonial sultanate wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "BaseMuralWall",
+  "part": "Render",
+  "base_dn": "[mural wall]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall1",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall2",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWallOutside2",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWallOutside2Preserved",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall3",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWallOutside3",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall4",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWallOutside4",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall5",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "SultanMuralWall6",
+  "part": "Render",
+  "base_dn": "[sultan mural]",
+  "zh_dn": null
+ },
+ {
+  "file": "Walls.xml",
+  "object": "Chavvah Taproot",
+  "part": "Render",
+  "base_dn": "crystalline taproot",
+  "zh_dn": null
+ },
+ {
+  "file": "Widgets.xml",
+  "object": "Widget",
+  "part": "Render",
+  "base_dn": "[Widget]",
+  "zh_dn": null
+ },
+ {
+  "file": "Widgets.xml",
+  "object": "LandmarkJoppaIrudadHut",
+  "part": "ZoneLandmarkBox",
+  "base_dn": "hut",
+  "zh_dn": null
+ },
+ {
+  "file": "Widgets.xml",
+  "object": "GritGateMedicalBayWidget",
+  "part": "Interesting",
+  "base_dn": "medical bay",
+  "zh_dn": null
+ },
+ {
+  "file": "WorldTerrain.xml",
+  "object": "Terrain",
+  "part": "Render",
+  "base_dn": "[Terrain]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Plant",
+  "part": "Render",
+  "base_dn": "[Plant]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Fungus",
+  "part": "Render",
+  "base_dn": "[Fungus]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Coral",
+  "part": "Render",
+  "base_dn": "[Coral]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Sponge",
+  "part": "Render",
+  "base_dn": "[Sponge]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Crystal",
+  "part": "Render",
+  "base_dn": "[Crystal]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Branch",
+  "part": "Render",
+  "base_dn": "crystalline branch",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Dense Leaves",
+  "part": "Render",
+  "base_dn": "dense crystal leaves",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Sparse Leaves",
+  "part": "Render",
+  "base_dn": "sparse crystal leaves",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Chime Left",
+  "part": "Render",
+  "base_dn": "chiming rock",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Chime Right",
+  "part": "Render",
+  "base_dn": "chiming rock",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Taproot Floor",
+  "part": "Render",
+  "base_dn": "crystalline taproot",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Floor",
+  "part": "Render",
+  "base_dn": "[Ground]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "ClamGrass",
+  "part": "Render",
+  "base_dn": "[Ground]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "ArenaFloor",
+  "part": "Render",
+  "base_dn": "[Ground]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Walkway",
+  "part": "Render",
+  "base_dn": "[walkway]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "MarbleFloor",
+  "part": "Render",
+  "base_dn": "[Ground]",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "PondDown",
+  "part": "HiddenRender",
+  "base_dn": "stone crack",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Spiral StairsUp",
+  "part": "Render",
+  "base_dn": "spiral stairs up",
+  "zh_dn": null
+ },
+ {
+  "file": "ZoneTerrain.xml",
+  "object": "Chavvah Spiral StairsDown",
+  "part": "Render",
+  "base_dn": "spiral stairs down",
+  "zh_dn": null
+ }
+]

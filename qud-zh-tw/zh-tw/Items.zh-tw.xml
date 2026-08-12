@@ -4014,4 +4014,58 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="皮革加工工具" />
   <part Name="Description" Short="鑿、匙、沖、鑿、刃與剪。這些工具是由一位大師級工匠為了皮革加工藝術而製作的。" />
  </object>
+  <object Name="Shayna" Load="Merge">
+    <part Name="Render" DisplayName="{{w-w-Y-w-w-w sequence|莎娜(Shayna)}}" />
+  </object>
+  <object Name="Ari" Load="Merge">
+    <part Name="Render" DisplayName="{{R-W-Y sequence|艾瑞(Ari)}}" />
+  </object>
+  <object Name="Yal" Load="Merge">
+    <part Name="Render" DisplayName="{{B-C-Y sequence|雅爾(Yal)}}" />
+  </object>
+  <object Name="Caslainard" Load="Merge">
+    <part Name="Render" DisplayName="{{B-B-b-w-W-Y-W-w-b-B sequence|卡斯萊納德(Caslainard)}}" />
+  </object>
+  <object Name="Polluxus" Load="Merge">
+    <part Name="Render" DisplayName="{{w-W-Y-W-w-b-B-B sequence|波路克蘇斯(Polluxus)}}" />
+  </object>
+  <object Name="La Jeunesse" Load="Merge">
+    <part Name="Render" DisplayName="{{r|青春(La)}} {{r-R-R-W-W-w-w sequence|俊美(Jeunesse)}}" />
+  </object>
+  <object Name="Stasis Casque" Load="Merge">
+    <part Name="Render" DisplayName="停滯頭盔" />
+  </object>
+  <object Name="Psiamp Backpack" Load="Merge">
+    <part Name="Render" DisplayName="&amp;K心&amp;C靈&amp;K增幅&amp;Clif&amp;K背包" />
+  </object>
+  <object Name="Psiamp Helmet" Load="Merge">
+    <part Name="Render" DisplayName="&amp;C心&amp;Y靈&amp;C增幅&amp;Ylif&amp;C頭盔" />
+  </object>
+  <object Name="Inhibitor Cuff" Load="Merge">
+    <part Name="Render" DisplayName="&amp;K抑&amp;rb&amp;K制手銬" />
+  </object>
+  <object Name="Joppa Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="約帕(Joppa)後座力緩衝器" />
+  </object>
+  <object Name="Grit Gate Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{c|礫門(Grit Gate)}} 後座力緩衝器" />
+  </object>
+  <object Name="Golgotha Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{g|髑髏地(Golgotha)}} 後座力緩衝器" />
+  </object>
+  <object Name="Kyakukya Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{R|恰庫恰(Kyakukya)}} 後座力緩衝器" />
+  </object>
+  <object Name="Six Day Stilt Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{Y|六日高蹺(Six Day Stilt)}} 後座力緩衝器" />
+  </object>
+  <object Name="Bethesda Susa Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{C|貝賽達蘇薩(Bethesda Susa)}} 後座力緩衝器" />
+  </object>
+  <object Name="Ezra Recoiler" Load="Merge">
+    <part Name="Render" DisplayName="{{W|以斯拉(Ezra)}} 後座力緩衝器" />
+  </object>
+  <object Name="Grit Gate Dormant Waydroid" Load="Merge">
+    <part Name="Render" DisplayName="{{c|休眠中的威德羅德}}" />
+  </object>
 </objects>
