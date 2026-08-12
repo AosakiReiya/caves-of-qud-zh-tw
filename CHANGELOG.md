@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.2.3 — 2026-08-12
+
+- 還原被改壞的 string ID：
+  - `Strings.zh-tw.xml`：79 → 0（含自閉合 `Value=` 格式）
+  - `Strings.Conversations.zh-tw.xml`：593 → 0（正規化 `&#10;`/`&#xA;` 換行實體、
+    放寬專名 regex、動詞/詞序定向映射）
+- `does:` 主詞消失修復；blocker 擋路句去多餘「是」；does:are 贅詞優化
+- 殘留英文詞修復（`fix_residual_english.py`）：parasangs→帕拉桑、glotrot→舌腐症、
+  glotrot markup、ironshank、drame 等
+- ProperNounZh 新增執行期程序生名（本地 LLM 音譯）：Uppar→厄帕、Naalil→納利爾、
+  Cherubim、Girsh、Mechanimists、cragmensch、Baetyls、dromad merchants
+- RESISTANCES / SECONDARY ATTRIBUTES 標記暫緩（來源在 level0 場景，不影響遊玩）
+
 ## v0.2.2 — 2026-08-04
 
 - 修復殘留英文句子（HTML 能力描述、對話）：以本地 AI 翻譯 25 句
