@@ -104,3 +104,19 @@
   + be_verb_drop 防回歸測試（59 PASS）
 - [x] 村名：只優化新存檔（Naming Replace 已做），舊存檔不攔截（使用者確認）
 - [ ] 組合句子（執行期拼接句）提取：待評估（Shupparxfaundren 等複合名已記錄追加優化）
+## 新任務批次 2（2026-08-12 深夜，使用者確認修復）
+- [x] P1 token 保護：=...= 內 spice/item/of/with/for 等不再被 Words 誤翻
+  （No variable replacer by key '香料' 130 錯誤根因）
+  - TokenGuard/ProtectTokens/RestoreTokens 加入 Clean + TranslateKeyLeaks
+  - 移除 Words 的 spice→香料
+  - 新增 test_token_protect（68 PASS）
+- [x] P2 combat hit 補主詞：DoesZh 轉換版「擊中...」開頭句補「你」
+  - 6 個新 pattern（擊中 (x4) for N damage with X / 含目標名 / 無括號版）
+  - 新增 test_combat_hit_pattern
+- [x] P3 誤譯校訂：
+  - hyena tribeskin→鬣狗同族（使用者指出，語意錯誤）
+  - 後忍/欣德倫→希德倫（錯別字統一，肯德倫=kendren 保留）
+  - 色彩人民→色彩族、護盾(egis)→盾牌、快速鉻→快鉻、紅死→紅死病
+  - 新增 audit_description_parens.py（LLM 判定（English）括號誤譯，95 條掃描）
+- [ ] 待驗證（使用者重啟）：No variable replacer 歸零、combat 句「你 用 青銅匕首 擊中 哥布林(x4)，造成 8 傷害」
+- [ ] 追加（非緊急）：LLM 標出 23 條大小寫慣例微調（Torah/Waydroid/neutrafoam 等）
