@@ -22,6 +22,34 @@ public static class ZhTwTextCleaner
     private static readonly Regex LeadingArticle = new Regex(
         @"\b(?:The|A|An)\s+(?=[^\n]{0,20}[\u4e00-\u9fff])", RegexOptions.Compiled);
 
+    // ===== token 保護 =====
+    // Clean/KeyLeaks 的逐詞替換（Words/Verbs/Artifacts）會誤傷 =spice:...= 等 token 內部的
+    // 英文關鍵字（spice→香料、item→物品、of→的…），導致遊戲查變數失敗（
+    // "No variable replacer by key '香料' found"）。處理前把 token 換成佔位符，之後還原。
+    private static readonly Regex TokenGuard = new Regex(
+        @"=[A-Za-z0-9_.:;|!@/()+\-#'%]+=", RegexOptions.Compiled);
+
+    private static string ProtectTokens(string text, List<string> box)
+    {
+        return TokenGuard.Replace(text, delegate(Match m)
+        {
+            box.Add(m.Value);
+            return "\x00" + (box.Count - 1) + "\x00";
+        });
+    }
+
+    private static string RestoreTokens(string text, List<string> box)
+    {
+        if (box.Count == 0) return text;
+        return Regex.Replace(text, @"\x00(\d+)\x00", delegate(Match m)
+        {
+            int idx;
+            if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < box.Count)
+                return box[idx];
+            return m.Value;
+        });
+    }
+
     // 常見英文殘留詞 → 中文（只留明確縮寫/代名詞，避免把英文模板的好詞單獨翻譯）
     private static readonly Dictionary<string, string> Artifacts =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
@@ -204,7 +232,7 @@ public static class ZhTwTextCleaner
             { "shadow", "影子" }, { "share", "分享" }, { "shield", "盾牌" }, { "shrine", "神龕" },
             { "silver", "銀" }, { "skin", "皮膚" }, { "sky", "天空" }, { "smith", "鐵匠" },
             { "snow", "雪" }, { "soldier", "士兵" }, { "spear", "長矛" }, { "speed", "速度" },
-            { "spice", "香料" }, { "spy", "間諜" }, { "staff", "法杖" }, { "star", "星星" },
+            { "spy", "間諜" }, { "staff", "法杖" }, { "star", "星星" },
             { "start", "開始" }, { "stone", "石頭" }, { "stop", "停止" }, { "storm", "風暴" },
             { "success", "成功" }, { "sun", "太陽" }, { "sword", "劍" }, { "tail", "尾巴" },
             { "target", "目標" }, { "temple", "寺廟" }, { "thief", "盜賊" }, { "thunder", "雷電" },
@@ -518,7 +546,11 @@ public static class ZhTwTextCleaner
         string cached;
         if (Cache.TryGetValue(text, out cached)) return cached;
 
-        string result = LeadingArticle.Replace(text, "");
+        // 保護 =...= token（避免 Words/Verbs/Artifacts 誤傷 token 內關鍵字）
+        var tokenBox = new List<string>();
+        string work = ProtectTokens(text, tokenBox);
+
+        string result = LeadingArticle.Replace(work, "");
         // 逐詞替換常見殘留（整詞邊界、大小寫不敏感）
         foreach (var kv in Artifacts)
         {
@@ -535,6 +567,8 @@ public static class ZhTwTextCleaner
         result = WordsRegex.Replace(result, new MatchEvaluator(WordsMatch));
         // 程序化專名音譯（STEP 4 防漏：漏網英文專名 → 繁中音譯）
         result = CleanNames(result);
+        // 還原 token
+        result = RestoreTokens(result, tokenBox);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -551,9 +585,11 @@ public static class ZhTwTextCleaner
         bool hasEng, hasCjk;
         ScanLang(text, out hasEng, out hasCjk);
         if (!hasEng || !hasCjk) return text;
-        text = PhraseRegex.Replace(text, new MatchEvaluator(PhraseMatch));
-        text = WordsRegex.Replace(text, new MatchEvaluator(WordsMatch));
-        return text;
+        var tokenBox = new List<string>();
+        string work = ProtectTokens(text, tokenBox);
+        work = PhraseRegex.Replace(work, new MatchEvaluator(PhraseMatch));
+        work = WordsRegex.Replace(work, new MatchEvaluator(WordsMatch));
+        return RestoreTokens(work, tokenBox);
     }
 
     // TextBuilder.ToString() 後綴：清理組裝後的動態生成文本（每生成字串一次，非每幀）
@@ -858,6 +894,25 @@ public static class ZhTwTextCleaner
         text = System.Text.RegularExpressions.Regex.Replace(
             text, @"^You\s+hit\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $3 擊中 $1，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        // ===== DoesZh 已轉換的玩家 hit（主詞「擊中」開頭，補回「你」；=object.the.name= 目標名）=====
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            "你用 $3 擊中($1)，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            "你用 $3 擊中($1)，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            "你用 $4 擊中 $1($2)，造成 $3 傷害[$5]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            "你用 $4 擊中 $1($2)，造成 $3 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            "你用 $3 擊中 $1，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            "你用 $3 擊中 $1，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
             text, @"^You\s+(?:critically\s+)?hit\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "你用 $3 擊中($1)，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);

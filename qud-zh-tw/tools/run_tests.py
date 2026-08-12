@@ -369,6 +369,31 @@ def test_be_verb_drop():
     check("ItDoes be 動詞回空", "IsBeVerb(verb)) return \"\";" in r)
 
 
+def test_token_protect():
+    print("== token_protect：=...= token 內關鍵字不被 Words 誤傷 ==")
+    hook = HOOK.read_text(encoding="utf-8")
+    check("TokenGuard regex 存在", "TokenGuard" in hook)
+    check("ProtectTokens 存在", "ProtectTokens" in hook)
+    check("RestoreTokens 存在", "RestoreTokens" in hook)
+    check("Clean 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
+    check("Clean 還原 token", "RestoreTokens(result, tokenBox)" in hook)
+    check("KeyLeaks 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
+    # spice 不該在 Words 中（避免 =spice:...= token 被翻成「香料」→ No variable replacer）
+    import re as _re
+    m = _re.search(r'private static readonly Dictionary<string, string> Words\s*=(.*?)\n\s*\};', hook, _re.S)
+    if m:
+        check("Words 不含 spice→香料", '"spice", "香料"' not in m.group(1))
+    else:
+        check("Words 字典可解析", False)
+
+
+def test_combat_hit_pattern():
+    print("== combat_hit_pattern：DoesZh 轉換版 hit 句補主詞「你」==")
+    hook = HOOK.read_text(encoding="utf-8")
+    check("含『擊中』開頭 hit pattern", '^擊中\\s+\\(' in hook or "^擊中" in hook)
+    check("含『你用 $3 擊中』替換", "你用 $3 擊中" in hook)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -388,6 +413,8 @@ def main():
     if run_all or a.doessubject: test_does_subject()
     if run_all or a.verbinflection: test_verb_inflection()
     if run_all or a.verbinflection: test_be_verb_drop()
+    if run_all or a.verbinflection: test_token_protect()
+    if run_all or a.verbinflection: test_combat_hit_pattern()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
