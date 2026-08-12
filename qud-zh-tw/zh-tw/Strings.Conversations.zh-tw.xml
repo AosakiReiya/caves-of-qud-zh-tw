@@ -250,7 +250,7 @@ Hinnom？為了盛開的藻類，妳跨越了妳棲息地的背脊！
  <string Context="Conversation 巴拉楚姆(Barathrum).Z-WhyAscend2.Text" ID="In the age of the covenate, a coterie of our urshiib ancestors took to the stars to ply their burning cores! Can you envision it??&#xA;&#xA;Ho, ho! I know a secret! Heh, heh! I know... there is a functioning starship atop the Spindle. We can take it, =name=! We launch ourselves into the deepness of the dusted cosmos and find the starshiib! You and I, ho ho!&#xA;&#xA;Starshiib!">
 在盟約時代，我們 urshiib 祖先的一個小圈子前往星際，去運用他們燃燒的核心！你能想像嗎？？
 
-嚯，嚯！我知道一個秘密！嘿，嘿！我知道……在紡錘頂端有一艘功能完好的星艦。我們可以奪取它，=name=！我們將把自己發射到塵封宇宙的深處，尋找 starshiib！你和我，嚯 嚯！
+嚯，嚯！我知道一個秘密！嘿，嘿！我知道……在紡錘頂端有一艘功能完好的星艦。我們可以奪取它，=name=！我們將把自己發射到塵封宇宙的深處，尋找 星之熊族！你和我，嚯 嚯！
 
 Starshiib！</string>
  <string Context="Conversation 巴拉楚姆(Barathrum).Z-WhyAscend2.Z-Starshiib1Choice.Text" ID="Barathrum, we're to rest the fate of Qud on a mere cub's tale?">
@@ -456,7 +456,7 @@ Starshiib！</string>
  <string Context="Conversation 巴拉楚姆(Barathrum).TombBody1.Text" ID="The climber design relies on the use of electromagnets to interface with the planet's magnetic field and generate torque. Unfortunately, the Spindle generates its own interfering field, perhaps as a mechanism to prevent unwanted ascension.&#xA;&#xA;Our aim is to access the Spindle's control unit and disable the field. How we accomplish this, however, is an enigma. From disparate bits across the archives of the digitum, Ereshkigal has stitched together a cryptic but instructional brocade. She's learned the field can be turned off from a place called Brightsheol, located in the Thin World and accessible only through Resheph's tomb inside the Tomb of the Eaters.">
 攀爬者的設計依賴於利用電磁鐵與行星磁場進行交互並產生轉矩。不幸的是，紡錘(Spindle) 會產生自身的干擾場，這或許是為了防止不必要的上升而設計的機制。
 
-我們的目標是進入 紡錘的 控制單元並禁用該磁場。然而，我們如何達成此目標仍是一個謎團。從 digitum 檔案庫中散落的碎片裡，Ereshkigal 縫合出了一段晦澀但具指導意義的錦緞。她得知該磁場可以從一個名為 布萊特希歐 的地方關閉，該地位於 薄世界，且只能透過食者之墓 內部 的 Resheph 之墓進入。</string>
+我們的目標是進入 紡錘的 控制單元並禁用該磁場。然而，我們如何達成此目標仍是一個謎團。從 數位寶庫 檔案庫中散落的碎片裡，Ereshkigal 縫合出了一段晦澀但具指導意義的錦緞。她得知該磁場可以從一個名為 布萊特希歐 的地方關閉，該地位於 薄世界，且只能透過食者之墓 內部 的 Resheph 之墓進入。</string>
  <string Context="Conversation 巴拉楚姆(Barathrum).TombBody2.Text" ID="Strange, this, and imprecise, but as tinkers we know: a crude blueprint is better than no blueprint. You must return to Omonporch and enter the Tomb of the Eaters. Once inside, trace the errant paths cut into the mausoleum by robbers and vandals, and ascend to Resheph's burial chamber.&#xA;&#xA;As for gaining entrance to the Tomb, Resheph sealed the gates a thousand years ago, but there's a flaw in the seal. The ancient Mark of Death has been lost to time, but if you were to recover it and incise the mark on your body, the Death Gate would open for you, as it did for countless Eater cadavers in the long-blurred past.&#xA;&#xA;Recover the Mark of Death, =name=, enter the Tomb, and cross into Brightsheol. Place your paws once again on the dial and drum.">
 這很奇怪，也不夠精確，但作為 修補匠 我們知道：一份粗略的藍圖總比沒有好。你必須回到 歐蒙波奇(Omonporch) 並進入食者之墓。一旦進入 內部，請沿著盜賊與破壞者在陵墓中開闢出的錯誤路徑前行，並登上 Resheph 的埋葬室。
 
@@ -475,7 +475,7 @@ Starshiib！</string>
  <string Context="Conversation 巴拉楚姆(Barathrum).TombExplain1.Text" ID="The climber design relies on the use of electromagnets to interface with the planet's magnetic field and generate torque. Unfortunately, the Spindle generates its own interfering field, perhaps as a mechanism to prevent unwanted ascension.&#xA;&#xA;Our aim is to access the Spindle's control unit and disable the field. How we accomplish this, however, is an enigma. From disparate bits across the archives of the digitum, Ereshkigal has stitched together a cryptic but instructional brocade. She's learned the field can be turned off from a place called Brightsheol, located in the Thin World and accessible only through Resheph's tomb inside the Tomb of the Eaters.">
 攀爬者的設計依賴於利用電磁鐵與行星磁場進行交互並產生轉矩。不幸的是，紡錘(Spindle) 會產生自身的干擾場，這或許是為了防止不必要的上升而設計的機制。
 
-我們的目標是進入 紡錘的 控制單元並禁用該磁場。然而，我們如何達成此目標仍是一個謎團。從 digitum 檔案庫中散落的碎片裡，Ereshkigal 縫合出了一段晦澀但具指導意義的錦緞。她得知該磁場可以從一個名為 布萊特希歐 的地方關閉，該地位於 薄世界，且只能透過食者之墓 內部 的 Resheph 之墓進入。</string>
+我們的目標是進入 紡錘的 控制單元並禁用該磁場。然而，我們如何達成此目標仍是一個謎團。從 數位寶庫 檔案庫中散落的碎片裡，Ereshkigal 縫合出了一段晦澀但具指導意義的錦緞。她得知該磁場可以從一個名為 布萊特希歐 的地方關閉，該地位於 薄世界，且只能透過食者之墓 內部 的 Resheph 之墓進入。</string>
  <string Context="Conversation 巴拉楚姆(Barathrum).TombExplain2.Text" ID="Strange, this, and imprecise, but as tinkers we know: a crude blueprint is better than no blueprint. You must return to Omonporch and enter the Tomb of the Eaters. Once inside, trace the errant paths cut into the mausoleum by robbers and vandals, and ascend to Resheph's burial chamber.&#xA;&#xA;As for gaining entrance to the Tomb, Resheph sealed the gates a thousand years ago, but there's a flaw in the seal. The ancient Mark of Death has been lost to time, but if you were to recover it and incise the mark on your body, the Death Gate would open for you, as it did for countless Eater cadavers in the long-blurred past.&#xA;&#xA;You're to recover the Mark of Death, =name=, enter the Tomb, and cross into Brightsheol.">
 這很奇怪且不夠精確，但作為 修補匠 我們知道：一份粗略的藍圖總比沒有好。你必須回到 歐蒙波奇(Omonporch) 並進入食者之墓。一旦進入 內部，循著盜賊與破壞者在陵墓中鑿出的錯誤路徑，向上攀升至 Resheph 的埋葬室。
 
@@ -627,7 +627,7 @@ Resheph，環流的瘟疫已經回歸。你能再次幫助消除它們嗎？</st
  <string Context="Conversation Resheph.環流(Gyre).DecisionChoice2.Text" ID="I am ready to speak on the final fate of Qud.">
 我已準備好談論卡德的最終命運。</string>
  <string Context="Conversation Resheph.環流(Gyre).ReshephUltraChoice.Text" ID="Resheph, I have annulled the nephilim, the greatest of the Gyre's plagues. Your plan is broken.">
-瑞舍夫（Resheph），我已廢除了尼菲林（nephilim），那是環流的 plagues 中最強大的存在。你的計畫已經破滅了。</string>
+瑞舍夫（Resheph），我已廢除了尼菲林（nephilim），那是環流的 瘟疫 中最強大的存在。你的計畫已經破滅了。</string>
  <string Context="Conversation Resheph.環流(Gyre).PurgeChoice.Text" ID="Why purge all life? Aside from the immorality of it, nothing would remain.">
 為何要淨化所有生命？除了不道德之外，到時將一無所有。</string>
  <string Context="Conversation Resheph.環流(Gyre).CovenReturnChoice.Text" ID="Why do you believe the Coven now returns?">
@@ -2323,7 +2323,7 @@ A 吉什林？這是一個 吉什林。</string>
 
 我在池中嚐到了一點紅色斑點。是頁岩，就像我們在 紅岩 旁的土壤中發現的那種……</string>
  <string Context="Conversation Mehmet.WorkMore.Text" ID="Hike there, will you? To Red Rock. Just about two parasangs north of Joppa.&#xA;&#xA;Kill the vermin and bring one's corpse back, for seein' what it is. Elder will take care to pay you after, waterhand.">
-去那裡走一趟，好嗎？去 紅岩。就在 約帕(Joppa) 以北大約兩個 parasangs 的地方。
+去那裡走一趟，好嗎？去 紅岩。就在 約帕(Joppa) 以北大約兩個 帕拉桑 的地方。
 
 殺掉那些害蟲並把屍體帶回來，好讓我們看看是什麼東西。長老會負責在事後付錢給你，水手。</string>
  <string Context="Conversation Mehmet.WorkMore.EndChoice.Text" ID="I will do as you ask.">
@@ -3192,7 +3192,7 @@ dohohohohoho。</string>
  <string Context="Conversation shoemaker.Start.Text.Text3" ID="Boots! Shoes! Slippers! Sabatons! How would you prefer to cover your feet, =player.formalAddressTerm=?">
 靴子！鞋子！拖鞋！重型足甲！您想如何遮蓋您的雙腳，=player.formalAddressTerm=？</string>
  <string Context="Conversation shoemaker.Start.Text.Text4" ID="Even as high-quality as my products are, =player.formalAddressTerm=, I don't suggest you go walking in the fracti to test them out.">
-即便我的產品品質再高，=player.formalAddressTerm=，我也不建議您去 fracti 裡走動來測試它們。</string>
+即便我的產品品質再高，=player.formalAddressTerm=，我也不建議您去 裂縫 裡走動來測試它們。</string>
  <string Context="Conversation shoemaker.Start.Text.Text5" ID="Anything you need to ask 'a boot', =player.FormalAddressTerm=? Just a little cobbler's joke, there.">
 有什麼想問「靴子」的嗎，=player.FormalAddressTerm=? 只是個鞋匠的小玩笑罷了。</string>
  <string Context="Conversation shoemaker.Start.Text.Text6" ID="Hot sands out there, =player.formalAddressTerm=. Is your footwear protecting you?">
@@ -3477,7 +3477,7 @@ Argyve，我不是學徒。現在巴拉斯魯姆教派（Barathrumites）稱呼�
  <string Context="Conversation Otho.Start.EndChoice2.Text" ID="Thank you. I will return.">
 謝謝。我會再回來的。</string>
  <string Context="Conversation Otho.Start2.Text" ID="Welcome to Grit Gate. I am Otho, Barathrum's steward. I apologize for the manner of our introduction, but we must take precautions. Qud is a very unforgiving place.&#xA;&#xA;I am pleased to see that you've returned with the waydroid, though you still know little of the dangers you bear. Take this firearm as your reward. It bears the mark of our finest gunsmith, Sparafucile.&#xA;&#xA;Return when you are ready to discuss the signal.">
-歡迎來到礫門。我是奧托，巴拉楚姆的 steward。我很抱歉以這種方式與您見面，但我們必須採取預防措施。卡德是一個非常不留情面的地方。
+歡迎來到礫門。我是奧托，巴拉楚姆的 管事。我很抱歉以這種方式與您見面，但我們必須採取預防措施。卡德是一個非常不留情面的地方。
 
 很高興看到你帶著 waydroid 回來，儘管你對自己所承載的危險仍知之甚少。拿這把槍械作為你的獎勵吧。它印有我們最優秀的 槍械師 斯帕拉福西爾 的標記。
 
@@ -3501,7 +3501,7 @@ Argyve，我不是學徒。現在巴拉斯魯姆教派（Barathrumites）稱呼�
  <string Context="Conversation Otho.Signal.Text" ID="The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, {{m|Q Girl}}, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.&#xA;&#xA;We've long known the location of a fully functioning {{W|baetyl}} within the bowels of the great hall {{C|Bethesda Susa}}. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.">
 該訊號是從未知來源廣播的重複傳輸內容。=V0tinkeraddendum= 我們的一位 修補匠，{{m|Q 女孩}}，在架設長波偵測器時發現了它。不幸的是，它是加密過的，我們這裡沒有解密的手段。不過，你或許能在這件事上提供一些幫助。
 
-我們早就知道一個功能完好的 {{W|baetyl}} 就位於大殿 {{C|貝賽達蘇薩(Bethesda Susa)}} 的深處。機械主義者已經在該地點周圍進行了聖化並建造了一座神廟。Q 女孩聲稱她已開發出一種解密訊號的方法，但她需要 baetyl 的運算能力。如果你能潛入機械主義者的營地，你或許就能啟動 baetyl 並解碼訊號。</string>
+我們早就知道一個功能完好的 {{W|baetyl}} 就位於大殿 {{C|貝賽達蘇薩(Bethesda Susa)}} 的深處。機械主義者已經在該地點周圍進行了聖化並建造了一座神廟。Q 女孩聲稱她已開發出一種解密訊號的方法，但她需要 聖碑 的運算能力。如果你能潛入機械主義者的營地，你或許就能啟動 聖碑 並解碼訊號。</string>
  <string Context="Conversation Otho.Signal.Baetyl?Choice.Text" ID="What is a baetyl?">
 什麼是貝提爾？</string>
  <string Context="Conversation Otho.Baetyl?.Text" ID="They are antique stones located in certain places deep within the caverns of Qud. We believe they are some sort of hyper-advanced machines built by the Eaters. Often one claims to possess a sentience of its own. However, most of them have gone haywire in the eons since their creation; it is rare indeed to discover one whose circuitry is wholly uncorroded.&#10;&#10;The Mechanimists worship this one as an idol, and they will protect it at all costs. You will need to find a way through their host to the baetyl itself.&#10;&#10;Do you believe you can accomplish this task?">
@@ -3732,13 +3732,13 @@ Quetzal！你是誰，陌生人？</string>
  <string Context="Conversation Q Girl.Start2.EndChoice.Text" ID="I am.">
 我存在。</string>
  <string Context="Conversation Q Girl.Start3.Text" ID="Quetzal, quetzal, quetzal! Welcome to the workshop, =player.formalAddressTerm=.">
-Quetzal, quetzal, quetzal！歡迎來到 工作坊，=player.formalAddressTerm=。</string>
+Quetzal, 羽蛇, 羽蛇！歡迎來到 工作坊，=player.formalAddressTerm=。</string>
  <string Context="Conversation Q Girl.Start3.ClimberChoice.Text" ID="Barathrum asked me to deliver your blueprints to Pax Klanq.">
 巴拉楚姆(Barathrum) 叫我把你的藍圖送到 派克斯克蘭克 那裡。</string>
  <string Context="Conversation Q Girl.Start3.RumblingChoice.Text" ID="Did you feel that rumbling, Q Girl?">
 妳感覺到那陣隆隆聲了嗎，Q 女孩？</string>
  <string Context="Conversation Q Girl.Start3.QuetzalChoice.Text" ID="What does 'quetzal' mean?">
-'quetzal' 是什麼意思？</string>
+'羽蛇' 是什麼意思？</string>
  <string Context="Conversation Q Girl.Start3.HairChoice.Text" ID="Your hair is a quasar of red ochre and indigo.">
 你的頭髮宛如紅赭石與靛藍交織的類星體。</string>
  <string Context="Conversation Q Girl.Start3.GogglesChoice.Text" ID="Do you like my goggles?">
@@ -5113,7 +5113,7 @@ Sheba Hag？</string>
 {{emote|*尼克 沉思地點頭。*}}</string>
  <string Context="Conversation Neek.GritGate2.Text" ID="You go and run at Q Girl and tap all the gadgets and tap her on the head.&#xA;Then you sneak by Otho's office.&#xA;Then you hug Shem -1 and you drag them to the library and read to them. Sometimes Barathrum and Hortensa are in there, and they smile at you.&#xA;Then you get hungry and you roll toward the kitchen. You slurp honey from the vase and Dardi glares at you. You say, &quot;I'm just 'jidding'.&quot;&#xA;Then you climb the pipes and whisper to Aloysius, &quot;Live and drink, live and drink, live and drink.&quot;&#xA;Then you pat the chromelings on their heads. You say to Ereshkigal, &quot;boom boom boom boom boom I love you.&quot;&#xA;Then you sneak into storage and pat all the chromelings on their heads.&#xA;You take a nap in the peptic chair.&#xA;Then you get a bright idea and go back to your room to write it in your notebook.">
 你跑向 Q 女孩，按了按所有的裝置，然後拍拍她的頭。
-接著你溜過 奧托的 office。
+接著你溜過 奧托的 辦公室。
 然後你擁抱 謝姆-1(Shem -1)，把他們拖到圖書館讀書給他們聽。有時 巴拉楚姆(Barathrum) 和 霍騰莎 會在那裡，她們對你微笑。
 接著你覺得餓了，朝著廚房滾過去。你從花瓶裡吸食蜂蜜，達迪 對你怒目而視。你說：「我只是在『開玩笑』。」
 接著你爬上管線，對 阿洛修斯 低聲說：「活著喝吧，活著喝吧，活著喝吧。」
@@ -5638,7 +5638,7 @@ Qud 並非 約帕(Joppa)。你需要證明自己的價值，以免浪費我們�
  <string Context="Conversation PaxKlanq2.IsGolemReady.WelcomeChoice.Text" ID="OK.">
 好的。</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.Text" ID="Soup, body, catalyst, atzmus, armament, incantation, hamsa, power source, soup. Ask component!">
-湯、身體、催化劑、atzmus、武裝、咒語、hamsa、動力源、湯。詢問成分！</string>
+湯、身體、催化劑、阿特茲穆斯、武裝、咒語、hamsa、動力源、湯。詢問成分！</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.SoupChoice.Text" ID="Tell me about the soup.">
 跟我說說那碗湯。</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.BodyChoice.Text" ID="Tell me about the body.">
@@ -5646,7 +5646,7 @@ Qud 並非 約帕(Joppa)。你需要證明自己的價值，以免浪費我們�
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.CatalystChoice.Text" ID="Tell me about the catalyst.">
 跟我說說關於催化劑的事。</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.AtzmusChoice.Text" ID="Tell me about the atzmus.">
-跟我說說關於 atzmus 的事。</string>
+跟我說說關於 阿特茲穆斯 的事。</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.ArmamentChoice.Text" ID="Tell me about the armament.">
 跟我說說關於武裝的事。</string>
  <string Context="Conversation PaxKlanq2.GolemComponentQuestions.IncantationChoice.Text" ID="Tell me about the incantation.">
@@ -6055,7 +6055,7 @@ Earl 阿斯福德爾，這位 巴拉楚姆信徒 請求您的許可，以租借 
  <string Context="Conversation SapientFungi.Start.Text.Text2" ID="What is it?">
 那是什麽？</string>
  <string Context="Conversation SapientFungi.Start.Text.Text3" ID="Live and drink, metazoon.">
-活著並盡情飲用吧，metazoon。</string>
+活著並盡情飲用吧，後生生物。</string>
  <string Context="Conversation SapientFungi.Start.Text.Text4" ID="Live and drink, =player.formalAddressTerm=.">
 盡情生活與飲酒吧，=player.formalAddressTerm=。</string>
  <string Context="Conversation Antelopes.Start.Text" ID="{{emote|*idly grazes*}}">
@@ -6503,7 +6503,7 @@ Kendren，你有……關於 艾斯金德 和 Kindrish 的消息嗎？</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_WornBracer" ID="Bracers are a Bey Lah craft! It would make no sense for a kendren to have one, then throw it away in the village.">
 護腕是 貝拉(Bey Lah) 的工藝！一個 肯德倫 (kendren) 擁有它，然後在村莊裡把它扔掉，這根本不合邏輯。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_SplinteredWeaponHaft" ID="Kesehind wields Ari, a battleaxe handed down through generations. It cannot break, and if it broke a weapon there would be scorch marks on it. This evidence does not hold up.">
-凱塞欣德 wielding 艾瑞(Ari)，一把代代相傳的戰斧。它不會折斷，而且如果有一件武器折斷了，上面應該會有燒焦的痕跡。這項證據站不住腳。</string>
+凱塞欣德 揮舞著 艾瑞(Ari)，一把代代相傳的戰斧。它不會折斷，而且如果有一件武器折斷了，上面應該會有燒焦的痕跡。這項證據站不住腳。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_TalkingLateAtNight" ID="There are few voices as low as Kesehind's in our village. Witnesses report a higher-pitched voice, don't they? They would know if Kesehind were speaking.">
 我們村莊裡很少有像 凱塞欣德的 聲音那麼低沉。目擊者報告說那是較高頻率的聲音，不是嗎？如果 凱塞欣德 在說話，他們一定會知道的。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_YuckwheatChaff" ID="Oh, no, that wouldn't be Kesehind. He'd sooner die of fever than choke down a single stem of yuckwheat.">
@@ -6619,25 +6619,25 @@ Kendren，你有……關於 艾斯金德 和 Kindrish 的消息嗎？</string>
 
 此外……Keh 試圖在缺乏正當程序的情況下將罪名嫁禍給 艾斯金德，這讓我看清了她對權力的濫用。她不必離開 貝拉(Bey Lah)，但她再次變回了 凱欣德——被剝奪了她的頭銜與地位。
 
-至於 hindriarchy，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德 將擔任臨時領導人。願 欣德里亞克(Hindriarch) Esk 引領我們走向更光明的未來！</string>
+至於 欣德里亞克政權，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德 將擔任臨時領導人。願 欣德里亞克(Hindriarch) Esk 引領我們走向更光明的未來！</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinFinale.KeseProsperousNoLove" ID="The evidence is clear: Eskhind did not steal Kindrish. The crime was committed by none other than Grand-Doe's protector, Kesehind. He will be stripped of the ancestral axe he carries, stripped of his property, and stripped from our oral histories. Never will his name be spoken here again, and he will never return... on pain of death.&#xA;&#xA;Moreover... Keh's attempt to pin blame on Eskhind without due process opened my eyes to her abuses of power. She need not leave Bey Lah, but she is Keh-hind once more-- stripped of her title and standing.&#xA;&#xA;As for the hindriarchy, Eskhind will act as an interim leader until we figure out what to do next, as a people. May Hindriarch Esk lead us to a brighter future!">
 證據確鑿：艾斯金德 並未偷走 Kindrish。這場罪行是由大鹿的守護者，凱塞欣德 所犯下的。他將被剝奪攜帶的祖傳斧頭、剝奪其財產，並從我們的口述歷史中抹除。他的名字絕不會再在此被提及，他也絕不會再回來……違者處死。
 
 此外……Keh 試圖在缺乏正當程序的情況下將罪名嫁禍給 艾斯金德，這讓我看清了她對權力的濫用。她不必離開 貝拉(Bey Lah)，但她再次變回了 凱欣德——被剝奪了她的頭銜與地位。
 
-至於 hindriarchy，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德 將擔任臨時領導人。願 欣德里亞克(Hindriarch) Esk 引領我們走向更光明的未來！</string>
+至於 欣德里亞克政權，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德 將擔任臨時領導人。願 欣德里亞克(Hindriarch) Esk 引領我們走向更光明的未來！</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinFinale.KeseMixedLove" ID="The evidence is clear: Eskhind did not steal Kindrish. The crime was committed by none other than Grand-Doe's protector, Kesehind. He will be stripped of the ancestral axe he carries, stripped of his property, and stripped from our oral histories. Never will his name be spoken here again, and he will never return... on pain of death.&#xA;&#xA;Moreover... Keh's attempt to pin blame on Eskhind without due process opened my eyes to her abuses of power. She need not leave Bey Lah, but she is Keh-hind once more-- stripped of her title and standing.&#xA;&#xA;As for the hindriarchy, Eskhind will act as an interim leader until we figure out what to do next, as a people. It will be a challenge to accept change, but we will be stronger for it.">
 證據確鑿：艾斯金德並沒有偷走 Kindrish。這項罪行是由大母鹿的守護者，凱塞欣德所犯下的。他將被剝奪所攜帶的祖傳斧頭、剝奪其財產，並從我們的口述歷史中除名。他的名字將永遠不再被這裡提及，他也絕不能再回來……違者處死。
 
 此外……Keh 在沒有經過正當程序的情況下試圖將罪名嫁禍給艾斯金德，這讓我看清了她濫用權力的行徑。她不必離開貝拉，但她再次變回了凱欣德——被剝奪了她的頭銜與地位。
 
-至於 hindriarchy，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。接受改變將會是一個挑戰，但我們會因此變得更強大。</string>
+至於 欣德里亞克政權，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。接受改變將會是一個挑戰，但我們會因此變得更強大。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinFinale.KeseMixedNoLove" ID="The evidence is clear: Eskhind did not steal Kindrish. The crime was committed by none other than Grand-Doe's protector, Kesehind. He will be stripped of the ancestral axe he carries, stripped of his property, and stripped from our oral histories. Never will his name be spoken here again, and he will never return... on pain of death.&#xA;&#xA;Moreover... Keh's attempt to pin blame on Eskhind without due process opened my eyes to her abuses of power. She need not leave Bey Lah, but she is Keh-hind once more-- stripped of her title and standing.&#xA;&#xA;As for the hindriarchy, Eskhind will act as an interim leader until we figure out what to do next, as a people. It will be a challenge to accept change, but we will be stronger for it.">
 證據確鑿：艾斯金德並沒有偷走 Kindrish。這項罪行是由大母鹿的守護者，凱塞欣德所犯下的。他將被剝奪所攜帶的祖傳斧頭、剝奪其財產，並從我們的口述歷史中除名。他的名字將永遠不再被這裡提及，他也絕不能再回來……違者處死。
 
 此外……Keh 在沒有經過正當程序的情況下試圖將罪名嫁禍給艾斯金德，這讓我看清了她濫用權力的行徑。她不必離開貝拉，但她再次變回了凱欣德——被剝奪了她的頭銜與地位。
 
-至於 hindriarchy，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。接受改變將會是一個挑戰，但我們會因此變得更強大。</string>
+至於 欣德里亞克政權，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。接受改變將會是一個挑戰，但我們會因此變得更強大。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinFinale.KeseTumultuousLove" ID="The evidence is clear: Eskhind did not steal Kindrish. The crime was committed by none other than Grand-Doe's protector, Kesehind. He will be stripped of the ancestral axe he carries, stripped of property, and stripped from our oral histories. Never will his name be spoken here again, and he will never return... on pain of death.&#10;&#10;Eskhind is free to go, and I'm... I'm going with her. This place is not safe.&#10;&#10;May the fates have mercy on you.">
 證據確鑿：艾斯金德 並沒有偷走 Kindrish。這場犯罪的兇手正是大鹿（Grand-Doe）的守護者，凱塞欣德。他將被剝奪所攜帶的祖傳斧頭、剝奪財產，並從我們的口述歷史中抹除。他的名字在此地絕不會再被提及，他也永遠不得歸來……違者處死。
 
@@ -6649,7 +6649,7 @@ Kendren，你有……關於 艾斯金德 和 Kindrish 的消息嗎？</string>
 
 此外……Keh 在沒有經過正當程序的情況下試圖將罪名嫁禍給艾斯金德，這讓我看清了她濫用權力的行徑。她不必離開貝拉，但她再次變回了凱欣德——被剝奪了她的頭銜與地位。
 
-至於 hindriarchy，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。
+至於 欣德里亞克政權，在我們作為一個民族決定下一步該怎麼做之前，艾斯金德將擔任臨時領導人。
 
 我擔心未來會有黑暗的時期。在接下來的日子裡，我們必須保持堅強。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinFinale.KehProsperousLove" ID="The evidence is clear: Bey Lah's own Hindriarch has betrayed her people. She took our ancestral treasure as her own, pinning the crime on an exile she knew could not defend herself. For this treason, she is hereby stripped of title, stripped of property, stripped of home.&#xA;&#xA;With the exile of Keh-Hind, the hindriarchy lies vacant, with no elders fit to take it. Eskhind will act as an interim leader until we figure out what to do next, as a people. May Hindriarch Esk lead us to a brighter future!">
@@ -6896,7 +6896,7 @@ Kendren I，我很感激你讓我看清了真相，但我多麼希望你能早�
  <string Context="Conversation Eskhind.What are you saying?.Text" ID="What do you imagine I am saying? The aging, ineffectual leader of a village in isolation. A system that strives to forget anyone who sees the outside, no matter how much its inhabitants strive for a better tomorrow.&#xA;&#xA;Bey Lah's isolationism provides ideal patsies for any crime the Hindriarch chooses to commit.">
 你以為我在說什麼？一個與世隔絕的村莊裡，那種衰老且無能的領導者。一個竭力忘記任何目睹過外界之人，無論其居民如何努力追求更好的明天。 
 
-貝拉的 isolationism 為 欣德里亞克(Hindriarch) 想要犯下的任何罪行都提供了理想的替罪羊。</string>
+貝拉的 孤立主義 為 欣德里亞克(Hindriarch) 想要犯下的任何罪行都提供了理想的替罪羊。</string>
  <string Context="Conversation Eskhind.What are you saying?.You think Keh stole the treasure?Choice.Text" ID="You think Keh stole the treasure?">
 你認為 Keh 偷走了寶藏嗎？</string>
  <string Context="Conversation Eskhind.What are you saying?.Why should I believe you?Choice.Text" ID="Why should I believe you?">
@@ -7968,7 +7968,7 @@ kendren 崇拜石頭是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text15" ID="Is it true that kendren children are thrown out of the nest right after being born?">
 肯德倫（kendren）的孩子是在出生後就立刻被趕出巢穴的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text16" ID="Is it true that all kendren say 'quetzal' when they are happy?">
-所有的肯德倫人在開心時都會說「quetzal」，這是真的嗎？</string>
+所有的肯德倫人在開心時都會說「羽蛇」，這是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text17" ID="Is it true that kendren chefs can fry water?">
 據說 kendren 廚師連水都能煎，這是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text18" ID="Is it true that kendren all live far underground?">
@@ -7976,7 +7976,7 @@ kendren 崇拜石頭是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text19" ID="Is it true that kendren live in great bubbles?">
 肯德倫（kendren）住在巨大的泡泡裡，這是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text20" ID="Is it true that kendren sleep in a snarcomfagus?">
-kendren 真的是睡在 snarcomfagus 裡嗎？</string>
+kendren 真的是睡在 斯納科穆法格斯 裡嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text21" ID="Is there really a King of the Moon, kendren?">
 kendren，真的存在月亮之王嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text22" ID="I heard from my friend who heard it from their yma that the Grand-Doe says that hindren who leave Bey Lah grow an extra pair of arms. And the Grand-Doe says it so you know it's true.">
@@ -7994,7 +7994,7 @@ kendren，真的存在月亮之王嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text28" ID="Um, kendren, does the yempuris phi really exist? Is it really coming to get us?">
 嗯，kendren，葉姆普里斯·斐 真的存在嗎？它真的要來找我們了嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text29" ID="Do you have glotrot? Do you have ironshank? Do you have funglefection? Have you ever had them? Is it gross? Can I see?">
-你有得了 glotrot 嗎？你有 ironshank 嗎？你有 funglefection 嗎？你曾經得過這些病嗎？很噁心嗎？我能看看嗎？</string>
+你有得了 舌腐症 嗎？你有 鐵腳病 嗎？你有 真菌感染 嗎？你曾經得過這些病嗎？很噁心嗎？我能看看嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text30" ID="Is it true that kendren sometimes die of cooking too hard?">
 據說 kendren 有時會因為烹飪過度而死，這是真的嗎？</string>
  <string Context="Conversation FaundrenVillager.Start.Text.Text31" ID="Kendren! Kendren! Take me with you! I want to see the Sixty Stilts!">
@@ -8307,7 +8307,7 @@ Credo？</string>
 
 在服務了幾十年之後，我簡直太「喜歡」被分配到這個臭烘臭氣的偏僻 musa 林地了，還毫無尊嚴地被丟進一個辦公室，隔壁坐著一個整天日以繼夜工作的肉質 修補匠，透過史上最薄、導電性最強的牆壁製造各種噪音。
 
-人類怎麼說來著？「活出 dreen 的樣貌」？是的，我正活出 dreen 的樣貌。</string>
+人類怎麼說來著？「活出 德林 的樣貌」？是的，我正活出 德林 的樣貌。</string>
  <string Context="Conversation Sixshrew.CrankyPlant.EndChoice.Text" ID="I'll be on my way. Live and drink.">
 我該走了。盡情生活，盡情飲酒吧。</string>
  <string Context="Conversation BananaRancher.Start.Text.Text" ID="Eat and thrive, =player.formalAddressTerm=.">
@@ -9276,7 +9276,7 @@ Kah 已獲得自由。看到它安息，我的心也得到了慰藉。 =ifplayer
 活下去並保持自由，卡。</string>
  <string Context="Conversation Shomer.Start.Text" ID="Saad, welcom.&#10;Saad, from thyn heres shaken the wet and olde lif.&#10;Saad, in-to a smal vessel pouren hit.&#10;Saad, to thyn sash attachen the vessel.&#10;Saad, crossen nou thrugh the heigh gate and in-to Brightsheol.">
 Saad，歡迎。
-Saad，從你那搖 shaken 的濕冷舊生活中脫離。
+Saad，從你那搖 顫抖的 的濕冷舊生活中脫離。
 Saad，將其倒入小小的容器中。
 Saad，將容器繫於你的腰帶上。
 Saad，現在穿過高門進入布萊特希歐。</string>
@@ -9395,7 +9395,7 @@ Saad，現在回來吧。</string>
  <string Context="Conversation Shomer.Return.EndChoice2.Text" ID="I need time to reconsider.">
 我需要時間重新考慮。</string>
  <string Context="Conversation Shomer.Cross.Text" ID="Saad, nou-then crossen in-to Brightsheol.">
-Saad，nou-then 跨越進入 布萊特希歐。</string>
+Saad，nou-然後 跨越進入 布萊特希歐。</string>
  <string Context="Conversation Shomer.Cross.EndChoice.Text" ID="I am ready.">
 我準備好了。</string>
  <string Context="Conversation Shomer.Cross.EndChoice2.Text" ID="I need time to reconsider.">
@@ -9510,7 +9510,7 @@ Saad，nou-then 跨越進入 布萊特希歐。</string>
 
 {{emote|赫羅多迪庫斯 向你投射出一道藍色的光錐。}}
 
-正在開始 ptychoscan............</string>
+正在開始 心靈掃描............</string>
  <string Context="Conversation ImperialBiographer.DoThat2.Text" ID="...................................">
 ...................................</string>
  <string Context="Conversation ImperialBiographer.DoThat3.Text" ID="...................................">
@@ -9532,7 +9532,7 @@ Saad，nou-then 跨越進入 布萊特希歐。</string>
 
 {{emote|赫羅多迪庫斯 shines a cone of blue light at you.}} 
 
-正在啟動 ptychoscan............</string>
+正在啟動 心靈掃描............</string>
  <string Context="Conversation ImperialBiographer.DoThatResheph2.Text" ID="...................................">
 ...................................</string>
  <string Context="Conversation ImperialBiographer.DoThatResheph3.Text" ID="...................................">
@@ -9810,7 +9810,7 @@ Poth 扛著！</string>
  <string Context="Conversation 貝普(Bep).貝普(Bep).Text" ID="bep is bep. good meet!">
 貝普就是貝普。很高興見到你！</string>
  <string Context="Conversation 貝普(Bep).Svardym.Text" ID="bep varrrdym from the egg, once.">
-貝普(Bep) varrrdym 曾從蛋中孵化。</string>
+貝普(Bep) 瓦爾德姆 曾從蛋中孵化。</string>
  <string Context="Conversation 貝普(Bep).Svardym.GyreChoice.Text" ID="What do you know of the Gyre?">
 你對環流了解多少？</string>
  <string Context="Conversation 貝普(Bep).環流(Gyre).Text" ID="grre? bep flame and bend brass to make ring ball grre for librrry.">
@@ -10416,7 +10416,7 @@ BY TRETE GALGALLIM SERVEN, BUT NON NOU.</string>
  <string Context="Conversation ChavvahPrime.WelcomeNoPhysiology.DoneQuestChoice2.Text" ID="I've destroyed the chime, Dyvvrach.">
 我已經摧毀了鐘聲，迪夫拉克。</string>
  <string Context="Conversation ChavvahPrime.WelcomeNoPhysiology.BarathrumChavvahDoneChoice.Text" ID="I have completed the ritual of -elseing. Will you power Barathrum's starclimb, as you said?">
-我已經完成了「-elseing」的儀式。你會如你所說的那樣，為巴拉楚姆的星攀（starclimb）注入力量嗎？</string>
+我已經完成了「-轉生儀式」的儀式。你會如你所說的那樣，為巴拉楚姆的星攀（starclimb）注入力量嗎？</string>
  <string Context="Conversation ChavvahPrime.WelcomeNoPhysiology.BarathrumChoice.Text" ID="I come in the name of need. Barathrum asks the strength of your psyche to power our starclimb.">
 我因需求而來。巴拉楚姆(Barathrum) 要求你的心靈強度，以驅動我們的星際攀升（starclimb）。</string>
  <string Context="Conversation ChavvahPrime.夏瓦(Chavvah).Text" ID="This keter roams above my trunk at Eyn Roj, traveler =name=, and across the Stair I dream. You found me, this keter where I chime in dozens.">
@@ -10450,7 +10450,7 @@ BY TRETE GALGALLIM SERVEN, BUT NON NOU.</string>
 
 我在 Gyredream 中就感覺到你的到來了，=name=。我早已預感到了這一刻。我也正感受著它。
 
--elseing 的儀式已經完成，水手（waterhand）。你已圓滿達成任務，並獲得我們的謝意。</string>
+-轉生儀式 的儀式已經完成，水手（waterhand）。你已圓滿達成任務，並獲得我們的謝意。</string>
  <string Context="Conversation ChavvahPrime.Accept.Text" ID="Thank you, traveler =name=.">
 謝謝你，旅人 =name=。</string>
  <string Context="Conversation ChavvahPrime.Tau.Text" ID="My chimeling, burning bright, all starlight and right angles in her heart. She leaves Chavvah; it is her choice. I..">
@@ -10476,7 +10476,7 @@ BY TRETE GALGALLIM SERVEN, BUT NON NOU.</string>
  <string Context="Conversation ChavvahPrime.BarathrumChavvahDone.Text" ID="{{emote|*Dyvvrach chimes*}}">
 {{emote|*迪夫拉克 chimes*}}</string>
  <string Context="Conversation ChavvahPrime.BarathrumChavvahDone2.Text" ID="You have completed the ritual of -elseing. You have set bright Tau free.&#xA;&#xA;Yes, =name=. I will turn my chimes Spindleward to tune, then vibrate at our verve frequency. I will power your starclimb.&#xA;&#xA;Be vested to tell whoever you must that Chavvah has made this commitment.">
-你已完成了 -elseing 的儀式。你釋放了明亮的 Tau。
+你已完成了 -轉生儀式 的儀式。你釋放了明亮的 Tau。
 
 是的，=name=。我會將我的風鈴轉向紡車方向進行調音，然後以我們的活力頻率震動。我會為你的星際攀升提供動力。
 
@@ -10508,7 +10508,7 @@ BY TRETE GALGALLIM SERVEN, BUT NON NOU.</string>
  <string Context="Conversation ChavvahPrime.WillYouHelp2.Text" ID="I will power his starclimb. If you take Tau's chime to taproot, for her to walk away. If you finish the ritual of -elseing.">
 我將為他的星攀（starclimb）注入力量。若你帶著陶（Tau）的鐘聲前往根鬚，讓她離去。若你完成了「非此」（-elseing）的儀式。</string>
  <string Context="Conversation ChavvahPrime.WillYouHelp2.WorkChoice.Text" ID="The ritual of -elseing?">
--elseing 的儀式？</string>
+-轉生儀式 的儀式？</string>
  <string Context="Conversation ChavvahPrime.WillYouHelp2.WelcomeChoice.Text" ID="I see.">
 我明白了。</string>
  <string Context="Conversation ChavvahPrime.WillYouHelp_ChavvahFinished.Text" ID="{{emote|*Dyvvrach chimes*}}">
@@ -10554,7 +10554,7 @@ Tau 已離去。</string>
  <string Context="Conversation Miryam.KilledCompanion.Text" ID="No parting is simple. I see you, -elser.">
 離別從不簡單。我注視著你，-elser。</string>
  <string Context="Conversation Miryam.KilledCompanion.Companion2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Miryam.Companion2.Text" ID="And the sole tether she reached for severed. I mourn for the future she built for herself, now, and worry for Tau herself.&#10;&#10;Thank you, all the same, for taking part in this. May you find your comfort.">
 而她所伸手抓取的唯一紐帶也斷裂了。我為她曾為自己建立的未來感到哀悼，並為陶（Tau）本人感到憂慮。
 
@@ -10564,7 +10564,7 @@ Tau 已完成了「-elseing」儀式。</string>
  <string Context="Conversation Miryam.ElseWelcome.Text" ID="No parting is simple. I see you, fair -elser.">
 離別從不簡單。我看到了你，美麗的 -elser。</string>
  <string Context="Conversation Miryam.ElseWelcome.Else2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Miryam.Else2.Text" ID="{{emote|*Miryam tolls.*}}&#10;&#10;And the gyre tide carries her a darkling way, perhaps never for us to see again. I will carry with me memory of her -then.&#10;&#10;Thank you for taking part in this. May you find your comfort.">
 {{emote|*米里亞姆 敲響了鐘聲。*}}
 
@@ -10678,7 +10678,7 @@ Tau 已經完成了她的——「他者化」（elseing）。</string>
 
 我在想，你是否了解這種重量？你能嗎？</string>
  <string Context="Conversation Tzedech.ElseWelcome.Else2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Tzedech.Else2.Text" ID="I am torn asunder! This outcome, this outcome, the shear splits me. Why Ptoh? How? Has this always been us? Which of us yet carry this -else to reify under pressure to our extancy?&#xA;&#xA;Do not answer. There is no word-answer, and perhaps none at all. You have done us a service and I thank you for this -elseing.">
 我心碎神傷！這個結果，這個結果，將我徹底撕裂。為什麼是 普托(Ptoh)? 為什麼？我們一直以來都是如此嗎？我們之中還有誰帶著這份——「他物」，在壓力之下將其具象化到我們的存在之中？
 
@@ -10698,7 +10698,7 @@ Tau 已完成了「-elseing」儀式。</string>
  <string Context="Conversation Tzedech.Welcome.UpsetChoice.Text" ID="Is something the matter?">
 出什麼事了嗎？</string>
  <string Context="Conversation Tzedech.Welcome.GyredreamChoice.Text" ID="Is all this about gyredream?">
-這一切都與 gyredream 有關嗎？</string>
+這一切都與 環流之夢 有關嗎？</string>
  <string Context="Conversation Tzedech.Welcome.TauChoice.Text" ID="I am to carry Tau's chime to Taproot, so she can leave Chavvah.">
 我必須將 Tau 的鐘帶到 Taproot，這樣她才能離開 夏瓦(Chavvah)。</string>
  <string Context="Conversation Tzedech.PostQuestions.Text" ID="I accept. Ask if asking.">
@@ -10868,7 +10868,7 @@ Tau 已消失。</string>
  <string Context="Conversation Dreamer.KilledCompanion.Text" ID="{{emote|*A long chime rings. The bed of a shallow creek teems with life and death, nature's self-consuming ouroboros.}}">
 {{emote|*一聲長鳴響起。淺溪的河床充滿了生與死，宛如大自然自我吞噬的銜尾蛇。}}</string>
  <string Context="Conversation Dreamer.KilledCompanion.Companion2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Dreamer.Companion2.Text" ID="{{emote|*From the banks of a shallow creek, you watch a toad floating on the water, belly up. It flails, helpless against even the gentle current of the water in which you placed it seconds ago. You watch it float away, toward the rushing currents ahead.&#10;&#10;Helpless to myriad unknowable fates, the toad disappears from view into the rapids, sent there by your hand.*}}">
 {{emote|*在淺溪的岸邊，你注視著一隻肚皮朝上、漂浮在水面上的蟾蜍。它胡亂地掙扎著，面對幾秒前被你放入的那股輕微水流也顯得無力招架。你注視著它隨波逐流，向著前方湍急的水流漂去。
 
@@ -10878,7 +10878,7 @@ Tau 已完成了「-elseing」儀式。</string>
  <string Context="Conversation Dreamer.ElseWelcome.Text" ID="{{emote|*A long chime rings. The bed of a shallow creek teems with life and death, nature's self-consuming ouroboros.*}}">
 {{emote|*一聲長鳴響起。淺溪的河床充滿了生與死，如同大自然自我吞噬的銜尾蛇。*}}</string>
  <string Context="Conversation Dreamer.ElseWelcome.Else2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Dreamer.Else2.Text" ID="{{emote|*From the mouth of the jar in your little hands, you watch a frog leap into the water of a softly burbling creek. The gentle current sweeps the frog's little body away to an unknown fate as curious crayfish peek out from their hiding places. The jar in your hands is empty.*}}">
 {{emote|*從你小手裡的罐口看去，你注視著一隻青蛙跳進了輕輕潺潺的小溪中。溫柔的流水將青蛙嬌小的身體沖向未知的命運，而好奇的小螯蝦正從隱蔽處窺視著。你手中的罐子空了。*}}</string>
  <string Context="Conversation Dreamer.Else2.WelcomeChoice.Text" ID="I... have more to ask you.">
@@ -10936,7 +10936,7 @@ Tau 在存在物質中輕柔地攪動。她會——接著，但或許不會像 
 
 我們隨之共鳴。你的輕聲細語淹沒在我們自我哀嚎的節奏之下。</string>
  <string Context="Conversation Thicksalt.KilledCompanion.Companion2Choice.Text" ID="Tau has completed the -elseing ritual.">
-Tau 已完成了「-elseing」儀式。</string>
+Tau 已完成了「-轉生儀式」儀式。</string>
  <string Context="Conversation Thicksalt.Companion2.Text" ID="{{emote|*the chime is hard to distinguish from the rising cacophony.*}}&#10;&#10;Crungled allway. Soft reaches through the bounds of everyshape and afflicts us with fireless hotbark. It resonates through Tau's cavernous absence. Arid tearsalt dries between the Lovers.">
 {{emote|*那鐘聲難以與漸起的嘈雜聲區分。*}}
 
@@ -11076,7 +11076,7 @@ Tau 在柔軟之後會變——變成什麼？你，你是說……你剛才說�
  <string Context="Conversation Tammuz.Name.TwofirmChoice.Text" ID="Twofirm?">
 兩倍？</string>
  <string Context="Conversation Tammuz.Twofirm.Text" ID="The t-two sephirots. -then and -else. I cannot be -else. *I* cannot, of course. But -then? It does not seem so.&#10;&#10;Their chimes ring at the right frequencies, others. But not so, mine.">
-t-two 賽菲羅特（sephirots）。「然後」與「否則」。我無法成為「否則」。*我*當然不行。但「然後」呢？似乎並非如此。
+t-二 賽菲羅特（sephirots）。「然後」與「否則」。我無法成為「否則」。*我*當然不行。但「然後」呢？似乎並非如此。
 
 其他的鐘聲頻率都對，但我的卻不對。</string>
  <string Context="Conversation Tammuz.Twofirm.TwofirmChoice.Text" ID="Twofirm?">
@@ -11174,7 +11174,7 @@ t-two 賽菲羅特（sephirots）。「然後」與「否則」。我無法成�
  <string Context="Conversation TauNoLonger.FavorGift.Text" ID="I wish the same for you, =name=.&#10;&#10;Before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.&#10;&#10;Then live and drink.">
 =name=，我也同樣祝福你。
 
-在你離開之前，收下這個，這是我身體的一部分，以感謝你完成了 -elseing。
+在你離開之前，收下這個，這是我身體的一部分，以感謝你完成了 -轉生儀式。
 
 然後去生活與飲酒吧。</string>
  <string Context="Conversation TauNoLonger.Leave.Text" ID="As I you to yours, =name=. Live and drink.">
@@ -11182,11 +11182,11 @@ t-two 賽菲羅特（sephirots）。「然後」與「否則」。我無法成�
  <string Context="Conversation TauNoLonger.LeaveGift.Text" ID="As I you to yours, =name=. &#10;&#10;But before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.&#10;&#10;Then live and drink.">
 正如我對你所做的一樣，=name=。
 
-但在你走之前，收下這個，這是我身體的一部分，以感謝你完成了 -elseing。
+但在你走之前，收下這個，這是我身體的一部分，以感謝你完成了 -轉生儀式。
 
 然後去生活吧，去飲酒吧。</string>
  <string Context="Conversation TauNoLonger.EndGift.Text" ID="Before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.&#10;&#10;Then live and drink, =name=.">
-在你離開之前，收下這個，這是我身體的一部分，感謝你完成了 -elseing。
+在你離開之前，收下這個，這是我身體的一部分，感謝你完成了 -轉生儀式。
 
 然後活下去吧，盡情飲酒，=name=。</string>
  <string Context="Conversation WanderingTau.Orphaned.Text" ID="The echoes of ending reverberate from the roots I once called mine.&#10;&#10;My liaison is severed. Why?">
@@ -11344,7 +11344,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightAgolgot.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightAgolgot.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightAgolgot.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightAgolgot.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">
@@ -11366,7 +11366,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightBethsaida.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightBethsaida.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightBethsaida.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightBethsaida.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">
@@ -11386,7 +11386,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightShug'ruith.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightShug'ruith.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightShug'ruith.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightShug'ruith.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">
@@ -11404,7 +11404,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightRermadon.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightRermadon.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightRermadon.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightRermadon.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">
@@ -11424,7 +11424,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightQas.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightQas.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightQas.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightQas.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">
@@ -11444,7 +11444,7 @@ Maggot！你以為言語是什麼？是探詢的箭矢嗎？言語是磚塊。�
  <string Context="Conversation GyreWightQon.Start.Text.Text" ID="O! O! A new life obtains? You musn't shudder at old Death!">
 喔！喔！獲得了新生命嗎？你絕不能對舊有的死亡感到畏縮！</string>
  <string Context="Conversation GyreWightQon.Start.Text.Text2" ID="When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.">
-當隱士諮詢 teraphim 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
+當隱士諮詢 特辣菲姆 並看見死亡之眼時，唯有愚者才會焦慮！只有「變遷」，沒有「終結」。</string>
  <string Context="Conversation GyreWightQon.Start.Text.Text3" ID="A plague is what burns the core out and lets the berries grow.">
 瘟疫燒盡了核心，才讓漿果得以生長。</string>
  <string Context="Conversation GyreWightQon.Start.Text.Text4" ID="O Nephilim! Come for our star bath??">

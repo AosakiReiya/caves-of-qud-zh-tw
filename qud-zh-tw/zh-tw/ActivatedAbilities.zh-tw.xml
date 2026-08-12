@@ -1083,7 +1083,7 @@
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandToggleAkimbo">
-    <description>當你同時 wielding 多把槍進行遠程攻擊時，你會對每把槍都發射一發子彈。</description>
+    <description>當你同時 揮舞著 多把槍進行遠程攻擊時，你會對每把槍都發射一發子彈。</description>
   </ability>
   <ability Command="CommandPistolEmptyTheClips">
     <description><p>使用 手槍 僅需半輪而非完整的一輪。</p>

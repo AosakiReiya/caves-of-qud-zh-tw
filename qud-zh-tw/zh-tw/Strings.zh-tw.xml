@@ -776,7 +776,7 @@ alone if no match found.
  <string Context="Resheph Gospel (heals gyre 2)" ID="In %=year=%, the Gyre widened, and the second triad of plagues afflicted the land. The legs of kith and kin annealed to iron, darkness bloomed from the earth, and the svardym blackened the sky. Resheph walked below the chrome arches and healed the sick.">在 %=year=% 年，環流擴張了，第二波瘟疫災難襲擊了大地。親友的肢體與血脈被鍛造成鐵，黑暗從土地中綻放，而斯瓦迪姆遮蔽了天空。Resheph 在鉻色拱門下行走，治癒了病人。</string>
  <string Context="Resheph Gospel (birth)" ID="One starry evening, a babe was found swaddled with its mouth full of circuits by a group of baetyls in Red Rock. They took him into their fold and fostered him, and he became known as Resheph, the Coiled Lamb of Baetyls.">在一個星光熠熠的夜晚，一群在紅岩的貝提爾發現了一個口中塞滿電路的嬰兒。他們將他收留並撫養長大，他後來被稱為「捲曲之羔羊」Resheph，屬於貝提爾。</string>
  <string Context="Resheph Cognomen" ID="the Coiled Lamb of Baetyls">貝提爾的捲曲羔羊</string>
- <string Context="Resheph Gospel (learns curse)" ID="At Starfarer's Quay, Resheph consulted with mysterious strangers and learned the secret of the Gyre. By cause of the misdeeds of the elder saads and sultans, star beings had levied a curse on Qud. Resheph vowed to make right from this wrong and redeem our doomed world.">在 星行者碼頭，Resheph 向 神秘陌生人 諮詢，並得知了 環流(Gyre) 的秘密。由於長輩 saads 與蘇丹們的惡行，星辰生物對 卡德(Qud) 降下了詛咒。Resheph 發誓要撥亂反正，救贖我們注定毀滅的世界。</string>
+ <string Context="Resheph Gospel (learns curse)" ID="At Starfarer's Quay, Resheph consulted with mysterious strangers and learned the secret of the Gyre. By cause of the misdeeds of the elder saads and sultans, star beings had levied a curse on Qud. Resheph vowed to make right from this wrong and redeem our doomed world.">在 星行者碼頭，Resheph 向 神秘陌生人 諮詢，並得知了 環流(Gyre) 的秘密。由於長輩 薩德們 與蘇丹們的惡行，星辰生物對 卡德(Qud) 降下了詛咒。Resheph 發誓要撥亂反正，救贖我們注定毀滅的世界。</string>
  <string Context="Resheph Gospel (meets Rebekah)" ID="While traveling near Bethesda Susa, Resheph lost control of his chariot and drove it off a cliff. Luckily, a local physician named Rebekah came to his rescue. Moved by her kindness, Resheph enrolled at a nearby hospice as her apprentice.">在前往 貝賽達蘇薩(Bethesda Susa) 的途中，Resheph 失去了對戰車的控制並衝下了懸崖。幸運的是，一位名叫 Rebekah 的當地醫生前來救援。Resheph 被她的善良所感動，隨後進入附近的療養院成為她的學徒。</string>
  <string Context="Resheph Gospel (rebuffs Girsh)" ID="In %=year=%, the Gyre widened, and the final plague afflicted the land. The Girsh Nephilim rose from their cradles on the Moon Stair and slouched toward Qud to eat its young. Resheph rose to meet them in battle and cast them back.">在 %=year=% 年，環流擴張，最後一場瘟疫襲擊了這片土地。吉爾什尼菲林從他們位於月之階梯的搖籃中起身，向卡德緩步走去，企圖吞噬其幼崽。瑞舍夫挺身而出與之交戰，並將他們擊退。</string>
  <string Context="Resheph Gospel (weird sky)" ID="At twilight in the shadow of the Spindle, the people of Omonporch saw an image on the horizon that looked like a ghost bathed in cerulean. It was Resheph, and after he came and left Omonporch, the people built a monument to him, and thenceforth called him Ghost-in-Cerulean.">在紡錘的陰影下的黃昏時分，歐蒙波奇的人民在天際線看到了一個看起來像是沐浴在蔚藍中的幽靈影像。那是雷舍夫（Resheph），在他來到並離開歐蒙波奇之後，人們為他建造了一座紀念碑，從此稱他為「蔚藍之幽靈」。</string>
@@ -1212,9 +1212,9 @@ alone if no match found.
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.">目前，你正受到騷擾者的監視與追捕，他們是普托的僕從，也是那些在淺灘中攫取初生心靈感應者的鳥類精神獵物。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by owls, Ptoh's servants and birds of psychic prey who snatch espers from the nighted weald.">目前，你正受到貓頭鷹、普托的 僕人 以及 鳥 等心靈獵物的監視與追捕，他們會從漆黑的森林中掠走靈媒。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by condors, Ptoh's servants and birds of psychic prey who snatch thriving espers from the vast wood.">目前，你正受到禿鷹、普托的僕從以及那些在廣袤森林中獵捕強大靈能者的鳥類精神獵物的監視與追逐。</string>
- <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.">目前，你正受到 strixes、普托的僕從以及會飲用成熟心靈感應者之血的鳥類精神獵物的監視與追捕。</string>
+ <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.">目前，你正受到 鴞梟、普托的僕從以及會飲用成熟心靈感應者之血的鳥類精神獵物的監視與追捕。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by eagles, Ptoh's servants and birds of psychic prey who seize powerful espers from their roosts.">目前，您正受到鷹、 普托的 僕從以及會從棲息地劫走強大心靈感應者的 鳥 等精神獵物的監視與追捕。</string>
- <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by rukhs, Ptoh's most powerful servants and birds of psychic prey who seize masterful espers from their belfries.">目前，您正受到 rukhs 的監視與追捕，牠們是 普托(Ptoh) 最強大的僕從，也是一種會從鐘樓中劫走高階靈能者的 鳥 類心靈獵物。</string>
+ <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by rukhs, Ptoh's most powerful servants and birds of psychic prey who seize masterful espers from their belfries.">目前，您正受到 巨梟 的監視與追捕，牠們是 普托(Ptoh) 最強大的僕從，也是一種會從鐘樓中劫走高階靈能者的 鳥 類心靈獵物。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="You are also visible to psychic beings from other dimensions.">其他維度的靈能生物也能看見您。</string>
  <string Context="PsychicHunterSystem GlimmerDescription" ID="=fragments.join:&#xA;&#xA;=" Value="=fragments.join:&#xA;&#xA;=" />
  <string Context="PsychicHunterSystem Reality Stabilzation Failure" ID="Some dimensional interlopers attempt to enter this region of spacetime, but the ambient normality field keeps them at bay.">一些維度入侵者試圖進入此時空區域，但周遭的常態場將他們拒之門外。</string>
@@ -1514,7 +1514,7 @@ alone if no match found.
  <string Context="journal category" ID="Merchants">商人</string>
  <string Context="journal category" ID="Natural Features">自然景觀</string>
  <string Context="journal category" ID="Oddities">奇物</string>
- <string Context="journal category" ID="Ruins with Becoming Nooks">遺跡 with 蛻變角落</string>
+ <string Context="journal category" ID="Ruins with Becoming Nooks">遺跡 與 蛻變角落</string>
  <string Context="journal category" ID="Ruins">遺跡</string>
  <string Context="journal category" ID="Settlements">定居點</string>
  <string Context="RandomlyMutation gain mutation spentPointsReport fragment" ID="You gain =mutation.name=!">你獲得了 =mutation.name=！</string>
@@ -1572,7 +1572,7 @@ alone if no match found.
  <string Context="FindASiteDynamicQuestTemplate quest name" ID="Find =targetLocation.text|strip|titleCaseWithArticle=">尋找 =targetLocation.text|strip|titleCaseWithArticle=</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located within =max= parasangs of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =landmarkLocation.text|initLowerIfArticle=. 以內 =max= 帕桑格（parasangs）處的 =targetLocation.text=。</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located next to =landmarkLocation.text|initLowerIfArticle=.">前往 =targetLocation.text=，位於 =landmarkLocation.text|initLowerIfArticle= 旁邊。</string>
- <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located =min=-=max= parasangs =direction.expandedDirection= of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =min=-=max= parasangs =direction.expandedDirection= 處的 =landmarkLocation.text|initLowerIfArticle=，即 =targetLocation.text=。</string>
+ <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located =min=-=max= parasangs =direction.expandedDirection= of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =min=-=max= 帕拉桑 =direction.expandedDirection= 處的 =landmarkLocation.text|initLowerIfArticle=，即 =targetLocation.text=。</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located =direction.expandedDirection= along the =path= that runs through =landmarkLocation.text|initLowerIfArticle=.">找到 =targetLocation.text=，它位於穿過 =landmarkLocation.text|initLowerIfArticle= 的 =path= 上，方向為 =direction.expandedDirection=。</string>
  <string Context="FindASiteDynamicQuestTemplate return step name" ID="Return to =quest.originZone|titleCaseWithArticle=">返回至 =quest.originZone|titleCaseWithArticle=</string>
  <string Context="FindASiteDynamicQuestTemplate return step text" ID="Return to =quest.originZone= and speak to =giver.displayNameOnlyDirect|strip=.">回到 =quest.originZone= 並與 =giver.displayNameOnlyDirect|strip= 交談。</string>
@@ -2371,8 +2371,8 @@ alone if no match found.
  <string Context="Glotrot Effect Apply Player Popup" ID="You have contracted glotrot! Your tongue begins to bleed as the muscle rots away.">你感染了舌腐病！隨著肌肉腐爛，你的舌頭開始流血。</string>
  <string Context="Glotrot Effect Apply Accomplishment" ID="You contracted glotrot.">你感染了聲帶腐爛症 (glotrot)。</string>
  <string Context="Glotrot Effect Apply Accomplishment Mural" ID="Woe to the scroundrels and dastards who conspired to have =name= contract the rotting tongue!">那些陰謀讓 =name= 感染腐爛之舌的惡棍與無賴，必遭天譴！</string>
- <string Context="Glotrot Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting glotrot before escaping to =player.terrain.t=">在靠近 髑髏地(Golgotha) 的位置，=name= 被強盜俘虜了。=player.Subjective= 被囚禁了 =captivityTime= 年之久，最終在逃往 =player.terrain.t= 之前染上了 glotrot。</string>
- <string Context="Glotrot Effect Description" ID="{{glotrot|glotrot}}">{{glotrot|glotrot}}</string>
+ <string Context="Glotrot Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting glotrot before escaping to =player.terrain.t=">在靠近 髑髏地(Golgotha) 的位置，=name= 被強盜俘虜了。=player.Subjective= 被囚禁了 =captivityTime= 年之久，最終在逃往 =player.terrain.t= 之前染上了 舌腐症。</string>
+ <string Context="Glotrot Effect Description" ID="{{glotrot|舌腐症}}">{{glotrot|舌腐症}}</string>
  <string Context="Glotrot Effect Eating/Drinking Player Popup" ID="You tear open the tender muscle fibers of your tongue.">您撕裂了舌頭柔軟的肌肉纖維。</string>
  <string Context="Glotrot Effect Remove Player Popup" ID="You are cured of glotrot. Your tongue regrows.">你已痊癒，不再患有舌腐症。你的舌頭重新長出來了。</string>
  <string Context="Glotrot Effect Remove Accomplishment" ID="You were cured of glotrot and your tongue regrew.">你的舌頭傷口已痊癒，且舌頭重新長出來了。</string>
@@ -3411,7 +3411,7 @@ alone if no match found.
  <string Context="ReduceEnergyCosts RulesPostfix LinearRandom All" ID="Confers =min.range#max= =number.ifPlural:points:point= of reduction/increase in action costs.">賦予行動成本 =min.range#max= =number.ifPlural:points:point= 的減少/增加。</string>
  <string Context="ReflectProjectiles DefaultVerb" ID="reflect">反射</string>
  <string Context="ProjectileReflectionShield DisplayName" ID="{{Y|reflectively shielded}}">{{Y|反射護盾}}</string>
- <string Context="ProjectileReflectionShield Details" ID="Reflects incoming projectiles and thrown objects at a =chance=% chance.">有 =chance=% 的機率反射 incoming 投射物與投擲物。</string>
+ <string Context="ProjectileReflectionShield Details" ID="Reflects incoming projectiles and thrown objects at a =chance=% chance.">有 =chance=% 的機率反射 襲來的 投射物與投擲物。</string>
  <string Context="ReflectProjectiles Details FailureDescription" ID="Deactivated">已停用</string>
  <string Context="ReflectProjectiles Check activates" ID="=subject.Does:activate= =subject.its= reflective shield.">=subject.Does:activate= =subject.its= 反射性 盾牌。</string>
  <string Context="ReflectProjectiles Check deactivated" ID="=subject.Does:have= =subject.its= reflective shield deactivated.">=subject.Does:have= =subject.its= 反射盾牌已停用。</string>
@@ -3428,7 +3428,7 @@ alone if no match found.
  <string Context="Repair CriticalFailure Broke" ID="You think you broke =object.them=...">你以為你打破了 =object.them=...</string>
  <string Context="RestoreOnDeath PlayerRestored" ID="You uncannily avoid your demise, and your life is restored.">你不可思議地避開了死亡，生命得以恢復。</string>
  <string Context="RestoreOnDeath OtherRestored" ID="=subject.Does:shimmer= before your eyes!">=subject.Does:shimmer= 在你眼前閃爍！</string>
- <string Context="RestoreOnDeath, AppendEffect" ID="Respawns =amount.multiplicative:zeroEmpty= at =health=% health">在 =health=% health 處重生 =amount.multiplicative:zeroEmpty=</string>
+ <string Context="RestoreOnDeath, AppendEffect" ID="Respawns =amount.multiplicative:zeroEmpty= at =health=% health">在 =health=% 生命值 處重生 =amount.multiplicative:zeroEmpty=</string>
  <string Context="RocketSkates GetRunningBehavior MessageName" ID="power skating">動力滑行</string>
  <string Context="RocketSkates GetRunningBehavior Ability Name" ID="Power Skate">動力滑行</string>
  <string Context="RocketSkates GetRunningBehavior Verb" ID="power skate">動力滑行</string>
@@ -3554,7 +3554,7 @@ alone if no match found.
  <string Context="Wire DisplayName Clause" ID="(=count=')" OrderAdjust="-60">('=count=')</string>
  <string Context="Yurtmat RulesPostfix" ID="=bonus.signed= DV while occupying the same tile as foliage">佔據與植被相同的地圖格時，獲得 =bonus.signed= DV</string>
  <string Context="Yurtmat StatShifter DisplayName" ID="camouflage">偽裝</string>
- <string Context="LeaksFluid TellLeakAmount" ID="=subject.Does#verb= =liquid.drams.of.liquid#volume=.">=subject.Does#verb= =liquid.drams.of.liquid#體積。</string>
+ <string Context="LeaksFluid TellLeakAmount" ID="=subject.Does#verb= =liquid.drams.of.liquid#volume=.">=subject.Does#verb= =liquid.德蘭.of.liquid#體積。</string>
  <string Context="Liquid Volume - Smear of unknown liquid" ID="liquid-covered">覆蓋著液體的</string>
  <string Context="Liquid Volume - Smeared liquid" ID="=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=">=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=</string>
  <string Context="Liquid Volume - Stain of unknown liquid" ID="stained">染色</string>
@@ -3954,7 +3954,7 @@ alone if no match found.
  <string Context="ModLiquidCooled Liquid Fill =snapshotName= Before Loading" ID="=subject.the.name=">=subject.the.name=</string>
  <string Context="ModLiquidCooled Liquid Fill Message" ID="You=partial.if: partially:= fill =snapshotName= with =volume.liquid.name=.">You=partial.if: partially:= 將 =snapshotName= 用 =volume.liquid.name= 填滿。</string>
  <string Context="ModLiquidCooled Display Adjective" ID="{{=liquid.color=|liquid-cooled}}" OrderAdjust="0">{{=liquid.color=|液體冷卻}}</string>
- <string Context="ModLiquidCooled Ask Amount Popup" ID="Supply =host.the.name= with how many drams of your =liquid.name|strip=? (max=equals==amount=)">提供 =host.the.name= 多少 drame 的你的 =liquid.name|strip=? (最大值為 =equals==amount=)</string>
+ <string Context="ModLiquidCooled Ask Amount Popup" ID="Supply =host.the.name= with how many drams of your =liquid.name|strip=? (max=equals==amount=)">提供 =host.the.name= 多少 德蘭 的你的 =liquid.name|strip=? (最大值為 =equals==amount=)</string>
  <string Context="ModLiquidCooled No Liquid For Host" ID="You have no =liquid.name|strip= to supply =host.the.name= with.">你沒有 =liquid.name|strip= 可以提供給 =host.the.name=。</string>
  <string Context="ModLiquidCooled Host Full" ID="=host.Does:have= no room for more =liquid.name|strip=.">=host.Does:have= 沒有更多 =liquid.name|strip= 的空間。</string>
  <string Context="ModLiquidCooled Transfer Message" ID="=owner.Does:transfer= =amount.things:dram= of =liquid.name|strip= to =host.aForNPCSubject.name#owner=.">=owner.Does:transfer= =amount.things:dram= 的 =liquid.name|strip= 給 =host.aForNPCSubject.name#owner=。</string>
@@ -3980,7 +3980,7 @@ alone if no match found.
  <string Context="ModMorphogenetic Techscanning NameForStatus" ID="MorphogeneticResonator">形態發生共振器</string>
  <string Context="ModMorphogenetic Display Adjective" ID="{{m|morphogenetic}}" OrderAdjust="0">{{m|形態發生}}</string>
  <string Context="ModMorphogenetic Description" ID="Morphogenetic: When powered and used to perform a successful, damaging hit, this weapon attempts to daze all other creatures of the same species as your target on the local map. Compute power on the local lattice increases the strength of this effect.">形態發生學（Morphogenetic）：當充能並成功造成傷害時，此武器會嘗試使在地圖上與你的目標同種的所有其他生物陷入暈眩。計算在地格上的能量將增加此效果的強度。</string>
- <string Context="ModMorphogenetic Shock Message" ID="A weird=analgesic.if::, painful= shock reverberates through you.">一種奇怪的=analgesic.if::，痛苦的= shock 迴盪著你的全身。</string>
+ <string Context="ModMorphogenetic Shock Message" ID="A weird=analgesic.if::, painful= shock reverberates through you.">一種奇怪的=analgesic.if::，痛苦的= 震擊 迴盪著你的全身。</string>
  <string Context="ModNanon Techscanning NameForStatus" ID="Nanon">納農</string>
  <string Context="ModNanon Display Adjective" ID="{{K|nanon}}" OrderAdjust="0">{{K|納農}}</string>
  <string Context="ModNanon Description" ID="Nanon: This weapon has a chance to dismember on penetration.">納諾 (Nanon)：此武器在穿透時有機會造成肢解。</string>

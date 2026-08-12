@@ -102,7 +102,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   </quest>
   <quest ID="Decoding the Signal" Name="解碼訊號" Accomplishment="你在岩石神廟與貝提爾交談，並解碼了那神秘的訊號。" Hagiograph="勇氣！=name= 縱身躍入開放冰架的裂口中，並以神聖語言與貝提爾對話。" Gospel="在內部的一塊巨冰中，=name= 透過與閃爍的貝提爾（baetyl）交換耳語誓言，與機械主義者建立了 =player.possessive= 友誼。">
     <step ID="Get Q Girl's Instructions onto the Data Disk" Name="將 Q 女孩的指令寫入數據磁碟">
-      <text>在 工作坊 與 Q 女孩 交談，並要求她將對 baetyl 的指令編碼到磁碟上。</text>
+      <text>在 工作坊 與 Q 女孩 交談，並要求她將對 聖碑 的指令編碼到磁碟上。</text>
     </step>
     <step ID="Locate the Mechanimist Compound at 貝賽達蘇薩(Bethesda Susa)" Name="在貝賽達蘇薩尋找機械主義者營地">
       <text>向北旅行前往巨大的洞穴 貝賽達蘇薩(Bethesda Susa) 並尋找機械主義者（Mechanimist）的神廟。</text>
@@ -269,7 +269,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <text>沿著 夏瓦的 taproot 向下前往其終點，深達 40 層地層。</text>
     </step>
     <step ID="Reunite Tau with Her Chime" Name="讓 Tau 與她的鈴鐺重逢">
-      <text>將她的風鈴觸碰 Taproot，並完成 -elseing 的儀式。</text>
+      <text>將她的風鈴觸碰 Taproot，並完成 -轉生儀式 的儀式。</text>
     </step>
     <step ID="Return to the Keter" Name="返回 Keter">
       <text>回到 keter 並與 迪夫拉克 交談。</text>

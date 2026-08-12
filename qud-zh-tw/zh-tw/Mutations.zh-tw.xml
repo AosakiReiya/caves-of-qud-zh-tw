@@ -394,7 +394,7 @@
                         <case Value="true" />
                         <default><p>{{rules|召喚出更強大的植物}}</p></default>
                     </switch>
-                    <p>+200 reputation with {{w|the 植物聯盟(Consortium of Phyta)}}</p>
+                    <p>+200 reputation 與 {{w|the 植物聯盟(Consortium of Phyta)}}</p>
                 </leveltext>
     </mutation>
     <mutation Name="Clairvoyance" DisplayName="千里眼" BearerDescription="千里眼" BiomeEpithet="全景監獄">
