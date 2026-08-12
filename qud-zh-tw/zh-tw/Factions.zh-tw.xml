@@ -71,7 +71,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Strangers" DisplayName="神秘陌生人" />
   <faction Name="Pariahs" DisplayName="賤民" />
   <faction Name="Hindren" DisplayName="貝拉的希德倫人" FormatWithArticle="true" />
-  <faction Name="Mopango" DisplayName="Mopango" FormatWithArticle="true" />
+  <faction Name="Mopango" DisplayName="莫龐戈(Mopango)" FormatWithArticle="true" />
   <faction Name="Girsh" DisplayName="吉爾什" FormatWithArticle="true" />
   <faction Name="Barathrumites" DisplayName="巴拉楚姆信徒" FormatWithArticle="true">
     <ranks>

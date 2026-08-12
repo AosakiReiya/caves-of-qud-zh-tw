@@ -801,16 +801,33 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
     {
         try
         {
-            if (string.IsNullOrEmpty(value) || value.Length > 40) return;
+            if (string.IsNullOrEmpty(value)) return;
             string zh;
             if (SectionHeaders.TryGetValue(value, out zh)) { value = zh; return; }
             string t = value.Trim();
             if (t.Length > 0 && t != value && SectionHeaders.TryGetValue(t, out zh)) { value = zh; return; }
-            // 純英文短文本（屬性名/技能名/能力名）透過整詞字典兜底
-            if (t.Length > 0 && t.Length <= 40 && !ZhTwTextCleaner.HasCjk(t))
+            if (t.Length == 0) return;
+            if (t.Length <= 40)
             {
-                string r = ZhTwTextCleaner.TranslateWord(t);
-                if (r != t) value = r;
+                // 短文本：純英文 → 詞級白名單（10 Agility→10 敏捷、Dismember→肢解）；
+                // 中英混雜 → Clean（冠詞剝除 + 逐詞）
+                if (!ZhTwTextCleaner.HasCjk(t))
+                {
+                    string r = ZhTwTextCleaner.TranslateTmpText(t);
+                    if (r != t) value = r;
+                }
+                else
+                {
+                    string r = ZhTwTextCleaner.Clean(t);
+                    if (r != t) value = r;
+                }
+            }
+            else if (t.Length <= 600)
+            {
+                // 長文本（聲望句/狀態描述等）：中英混雜才走 Clean（冠詞剝除 + 逐詞），
+                // 純英文長句跳過（避免熱渲染路徑拖慢）
+                string r = ZhTwTextCleaner.Clean(t);
+                if (r != t) value = r.TrimStart();
             }
         }
         catch { }

@@ -1787,7 +1787,7 @@ alone if no match found.
  <string Context="FactionInterest" ID="sultan tomb inscriptions">蘇丹陵墓銘文</string>
  <string Context="FactionInterest" ID="the location of the ancestral bracelet Kindrish">祖傳手鍊 Kindrish 的位置</string>
  <string Context="FactionInterest" ID="the location of ichor merchants">膿液商人的地點</string>
- <string Context="FactionInterest" ID="the location of girsh nephilim">吉爾什 nephilim 的位置</string>
+ <string Context="FactionInterest" ID="the location of girsh nephilim">吉爾什 尼腓利姆 的位置</string>
  <string Context="FactionInterest" ID="everything">一切</string>
  <string Context="FactionInterest (should never be used except mods, and river is untranslated)" ID="locations along the River =@river|capitalize=">=@river|capitalize= 河沿岸的地點</string>
  <string Context="FactionInterest (should never be used except mods, and river is untranslated)" ID="locations in the River =@river|capitalize='s duskwaters">位於 =@river|capitalize='s 暮水中的地點</string>

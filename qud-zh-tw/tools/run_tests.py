@@ -318,13 +318,36 @@ def _to_string_process(text, words, phrases):
     return _clean(_status_fragments(text), words, phrases)
 
 
+def _tmp_process(text, words, phrases):
+    """模擬 TmpHeaderPrefix（Unity TMP set_text）：短純英文→詞級白名單；中英混雜/長文本→Clean。"""
+    if not text: return text
+    t = text.strip()
+    if len(t) <= 40 and not _has_cjk_scan(t):
+        return _clean(_translate_tmp_words(t, words), words, phrases)
+    return _clean(t, words, phrases)
+
+
+def _has_cjk_scan(s):
+    return any("\u4e00" <= c <= "\u9fff" for c in s)
+
+
+def _translate_tmp_words(text, words):
+    """模擬 TranslateTmpText：白名單（TmpWords/Words 字典）整詞替換。"""
+    r = text
+    for k in sorted(words, key=len, reverse=True):
+        if not k or re.search(r"[^A-Za-z ]", k):
+            continue
+        r = re.sub(r"(?i)\b" + re.escape(k) + r"\b", words[k], r)
+    return r
+
+
 def test_pipeline():
     print("== pipeline：ToStrocess 模擬語料 ==")
     dicts = load_dicts()
     words = {}
     phrases = {}
     for field, d in dicts.items():
-        if field == "hook.Words":
+        if field == "hook.Words" or field == "hook.ProperNounZh":
             for k, v in d.items(): words[k.lower()] = v
         if field == "hook.PhraseLeaks":
             for k, v in d.items(): phrases[k.lower()] = v
@@ -352,9 +375,20 @@ def test_pipeline():
         ("受到 the 皮革護甲.", "拿起了", "the"),
         ("You take the bronze dagger.", "拿起了", "take"),
         ("你 擊中 (x2) for 3 damage with your 青銅匕首 [16]", "用 青銅匕首", "你的"),
+        # ==== TMP 顯示層（技能頁面/聲望句）====
+        ("10 Agility", "10 敏捷", "Agility"),
+        ("19 Strength", "19 力量", "Strength"),
+        ("{{C|10}} {{|Agility}}", "{{|敏捷}}", "Agility"),
+        ("Dismember", "肢解", "Dismember"),
+        ("Strength", "力量", "Strength"),
+        ("The Mopango 有興趣分享 科技 的秘密。", "莫龐戈", "The"),
+        ("The 伊帕德 的村民 有興趣聽聽關於他們的八卦。", "伊帕德 的村民", "The"),
     ]
     for inp, must, must_not in cases:
-        out = _to_string_process(inp, words, phrases)
+        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):
+            out = _tmp_process(inp, words, phrases)
+        else:
+            out = _to_string_process(inp, words, phrases)
         ok = must in out and (must_not is None or must_not not in out)
         check(f"語料: {inp[:40]}", ok, f"-> {out}" if not ok else "")
 

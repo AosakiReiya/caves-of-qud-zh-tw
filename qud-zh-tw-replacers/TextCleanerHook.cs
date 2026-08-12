@@ -416,6 +416,12 @@ public static class ZhTwTextCleaner
             { "Maazoppir", "馬佐皮爾(Maazoppir)" }, { "Reshep", "雷舍夫(Reshep)" },
             { "Resheph", "雷舍夫(Resheph)" }, { "Mamon", "馬蒙(Mamon)" },
             { "Sheba", "示巴(Sheba)" },
+            // 執行期 faction 名（=faction.FormattedName= 槽位，GetFormattedName 若用英文名則靠此兜底）
+            { "Mopango", "莫龐戈(Mopango)" }, 
+            { "Gyre Wights", "渦流亡靈(Gyre Wights)" }, { "Kyakukya", "恰庫恰(Kyakukya)" },
+            { "YdFreehold", "伊德自由領(YdFreehold)" }, { "Issachari", "伊薩查部落(Issachari)" },
+            { "Chavvah", "夏瓦(Chavvah)" }, { "villagers of Joppa", "約帕村民" },
+            { "villagers of Kyakukya", "恰庫恰村民" }, { "villagers of Ezra", "艾茲拉村民" },
             // 執行期固定專名（Factions 等），跑 translate_propernouns（本地 LLM）音譯
             { "Cherubim", "切魯比姆(Cherubim)" }, { "Girsh", "吉爾什(Girsh)" },
             { "Mechanimists", "梅卡尼主義者(Mechanimists)" },
@@ -596,6 +602,71 @@ public static class ZhTwTextCleaner
         return false;
     }
 
+    // TMP/console 短文本白名單（屬性/技能/能力名）：詞級翻譯只替換此表內的詞，
+    // 避免誤傷英文模板詞（如 "Use"、"Skill" 等不該被逐詞翻譯的 UI 詞）。
+    private static readonly Dictionary<string, string> TmpWords =
+        new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            // 屬性
+            { "Strength", "力量" }, { "Agility", "敏捷" }, { "Toughness", "韌性" },
+            { "Willpower", "意志" }, { "Intelligence", "智力" }, { "Ego", "心智" },
+            { "Speed", "速度" }, { "MoveSpeed", "移動速度" }, { "Level", "等級" },
+            // 技能/能力（高頻白名單）
+            { "Swift Reflexes", "迅捷反射" }, { "Spry", "靈活" }, { "Jump", "跳躍" },
+            { "Tumble", "翻滾" }, { "Axe Proficiency", "斧頭精通" }, { "Cleave", "劈砍" },
+            { "Charging Strike", "衝鋒突刺" }, { "Dismember", "肢解" },
+            { "Hook and Drag", "鉤拽" }, { "Decapitate", "斬首" }, { "Berserk!", "狂暴！" },
+            { "Cudgel Proficiency", "棍術精通" }, { "Bludgeon", "猛擊" }, { "Conk", "敲昏" },
+            { "Backswing", "回身揮擊" }, { "Slam", "猛擊" }, { "Demolish", "粉碎" },
+            { "Flurry", "疾風連擊" }, { "Lunge", "突刺" }, { "Swipe", "揮斬" },
+            { "Dueling Stance", "決鬥姿態" }, { "Block", "格擋" }, { "Shield Slam", "盾牌猛擊" },
+            { "Deft Blocking", "靈巧格擋" }, { "Swift Blocking", "迅捷格擋" },
+            { "Staggering Block", "踉蹌格擋" }, { "Shield Wall", "盾牆" },
+            { "Jab", "刺擊" }, { "Hobble", "跛行" }, { "Shank", "捅刺" },
+            { "Hurdle", "跨越" }, { "Deft Throwing", "精準投擲" }, { "Charge", "衝鋒" },
+            { "Kickback", "反衝" }, { "Juke", "假動作" }, { "Akimbo", "雙持" },
+            { "Disassemble", "拆解" }, { "Reverse Engineer", "逆向工程" },
+            { "Scavenger", "拾荒者" }, { "Repair", "修理" }, { "Deploy Turret", "部署砲塔" },
+            { "Tinker I", "修理匠 I" }, { "Tinker II", "修理匠 II" }, { "Tinker III", "修理匠 III" },
+            { "Meditate", "冥想" }, { "Fasting Way", "禁食之道" }, { "Iron Mind", "鐵意志" },
+            { "Lionheart", "獅心" }, { "Conatus", "內驅力" }, { "Mind over Body", "心勝於身" },
+            { "Proselytize", "傳教" }, { "Intimidate", "恐嚇" }, { "Berate", "斥責" },
+            { "Snake Oiler", "油嘴滑舌" }, { "Inspiring Presence", "鼓舞人心" },
+            { "Menacing Stare", "威嚇凝視" }, { "Steady Hands", "穩手" },
+            { "Suppressive Fire", "壓制射擊" }, { "Scavenger", "拾荒者" },
+            { "Make Camp", "紮營" }, { "Mind's Compass", "心靈羅盤" },
+            { "Tomorrowful", "面向未來" },
+        };
+
+    // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再詞級（只替換白名單詞）
+    // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再三詞/雙詞/單詞級（只替換白名單詞）
+    public static string TranslateTmpText(string text)
+    {
+        if (string.IsNullOrEmpty(text)) return text;
+        string zh;
+        string trimmed = text.Trim();
+        if (TmpWords.TryGetValue(trimmed, out zh)) return zh;
+        string r = text;
+        // 多詞技能名優先（整詞邊界，避免被單詞拆散）
+        foreach (var kv in TmpWords)
+        {
+            if (kv.Key.IndexOf(' ') > 0)
+            {
+                r = Regex.Replace(r, "\b" + Regex.Escape(kv.Key) + "\b", kv.Value);
+            }
+        }
+        // 單詞級：只替換白名單/常規字典中的英文單詞（整詞邊界），保留數字/markup/已譯中文
+        r = Regex.Replace(r, "\b[A-Za-z][A-Za-z]*\b", delegate(Match m)
+        {
+            string w = m.Value;
+            string t;
+            if (TmpWords.TryGetValue(w, out t)) return t;
+            t = TranslateWord(w);
+            return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
+        });
+        return r;
+    }
+
     // 整詞翻譯（TMP/Unity UI 短文本用）：純英文短詞查 Words/Verbs/ProperNounZh，
     // 供角色面板屬性名（Strength→力量）、技能名（Cleave→劈砍）等 TMP 文本兜底。
     public static string TranslateWord(string word)
@@ -680,6 +751,12 @@ public static class ZhTwTextCleaner
         {
             text = TryStage(text, TranslateStatusFragments, "StatusFragments");
             text = TryStage(text, TranslateDirection, "Direction");
+            // console 純英文短文本（技能需求「10 Agility」、屬性名等）→ 詞級白名單兜底
+            if (text.Length <= 40)
+            {
+                string t2 = TranslateTmpText(text);
+                if (t2 != text) text = t2;
+            }
             return text;
         }
         text = TryStage(text, TranslateStatusFragments, "StatusFragments");
