@@ -705,7 +705,6 @@ public static class ZhTwTextCleaner
             { "Suppressive Fire", "壓制射擊" },
             { "Make Camp", "紮營" }, { "Mind's Compass", "心靈羅盤" },
             { "Tomorrowful", "面向未來" },
-        }
             // 2026-08-13 補：全技能/技能樹名（遊戲短文本 TMP 路徑漏詞）
             { "Draw a Bead", "繪製珠飾" },
             { "Flattening Fire", "壓平火焰" },
@@ -789,7 +788,7 @@ public static class ZhTwTextCleaner
             { "Tinkering", "修補" },
             { "Wayfaring", "旅者" },
             { "Nonlinearity", "非線性" },
-;
+        };
 
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再詞級（只替換白名單詞）
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再三詞/雙詞/單詞級（只替換白名單詞）

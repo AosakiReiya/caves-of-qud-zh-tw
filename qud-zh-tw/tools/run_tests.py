@@ -912,6 +912,63 @@ def test_shorttext_coverage():
         check("commanding 無『指揮中的』", "指揮中的" not in h)
 
 
+def test_cs_structure():
+    """C# 結構順序驗證：字串/註釋剝離後棧式配對 + 字典尾閉合 + 孤立分號檢查。
+    計數平衡會被「早閉」（}後條目仍在字典外）騙過——本測試抓順序錯誤。"""
+    print("== cs_structure：花括號順序 / 字典閉合 / 孤立分號 ==")
+    for cs in (HOOK, REPLACERS, UIHOOK, HARMONY):
+        if not cs.exists():
+            check(f"{cs.name} 存在", False); continue
+        src = cs.read_text(encoding="utf-8")
+        # 剝離字串與註釋
+        t = re.sub(r'@"(?:""|[^"])*"|"(?:\\.|[^"\\])*"', '""', src)
+        t = re.sub(r'//[^\n]*', '', t)
+        t = re.sub(r'/\*.*?\*/', '', t, flags=re.S)
+        stack = []
+        brace_errs = []
+        for i, ch in enumerate(t):
+            if ch in '({[':
+                stack.append(ch)
+            elif ch in ')}]':
+                if not stack:
+                    brace_errs.append(f"{cs.name}@{i}:{ch} 無對應開括號"); break
+                o = stack.pop()
+                if '({['.index(o) != ')}]'.index(ch):
+                    brace_errs.append(f"{cs.name}@{i}: {o}{ch} 不匹配"); break
+        if stack:
+            brace_errs.append(f"{cs.name}: {len(stack)} 個未閉合 {''.join(stack[:5])}")
+        check(f"{cs.name} 括號順序正確", not brace_errs, "; ".join(brace_errs[:2]))
+        # 字典/物件初始化：`{ "..." }` 條目行的前方若出現「更淺縮排的 }」= 字典提前閉合（條目跌出）
+        lines = t.split('\n')
+        problems = []
+        entry_re = re.compile(r'^(\s*)\{\s*"')
+        close_re = re.compile(r'^(\s*)\}\s*$')
+        dict_def_re = re.compile(r'(?:Dictionary|new\s+[A-Za-z0-9_<>,.]+)\)?\s*$|\{\s*$')
+        # 對每個條目行：往前找最近的字典定義行，檢查其間是否夾一個更淺/等深閉合行
+        for idx, ln in enumerate(lines):
+            em = entry_re.match(ln)
+            if not em:
+                continue
+            indent = len(em.group(1))
+            seen_close = False
+            for j in range(idx - 1, max(-1, idx - 200), -1):
+                l2 = lines[j]
+                dm = dict_def_re.search(l2)
+                if dm or re.search(r'private static readonly Dictionary', l2):
+                    break
+                cm = close_re.match(l2)
+                if cm and len(cm.group(1)) <= indent:
+                    seen_close = True
+                    break
+            if seen_close:
+                problems.append(f"{cs.name}:{idx+1} 字典提前閉合（條目在閉合後） {ln.strip()[:24]!r}")
+        # 孤立分號行
+        for idx, ln in enumerate(lines):
+            if ln.strip() == ';':
+                problems.append(f"{cs.name}:{idx+1} 孤立分號行")
+        check(f"{cs.name} 無字典提前閉合/孤立分號", not problems, "; ".join(problems[:6]))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -944,6 +1001,7 @@ def main():
     if run_all or a.data: test_interests_coverage()
     if run_all or a.xmldata: test_propernouns()
     if run_all or a.static: test_shorttext_coverage()
+    if run_all or a.static: test_cs_structure()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
