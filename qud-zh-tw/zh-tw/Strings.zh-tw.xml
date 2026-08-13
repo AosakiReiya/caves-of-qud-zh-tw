@@ -2707,11 +2707,11 @@ alone if no match found.
  <string Context="BlinkOnDamage Message Log" ID="=subject.Does:blink= away from the danger.">=subject.Does:blink= 閃避了危險。</string>
  <string Context="BurnOffGas Message Log" ID="=subject.Does:burn= off =object.a.name=.">=subject.Does:burn= 燒掉了 =object.a.name=。</string>
  <string Context="Combat Player Miss Message (terse)" ID="You miss!">你沒擊中！</string>
- <string Context="Combat Player Miss Message (with weapon)" ID="{{r|=subject.Does:miss= with =subject.its.item#weapon=!}} [=hitResult= vs. =dv=]">{{r|=subject.Does:miss= 用 =subject.its.item#weapon=!}} [=hitResult= 對決 =dv=]</string>
- <string Context="Combat Player Miss Message (no weapon)" ID="{{r|You miss!}} [=hitResult= vs. =dv=]">{{r|你沒打中！}} [=hitResult= 對比 =dv=]</string>
+ <string Context="Combat Player Miss Message (with weapon)" ID="{{r|=subject.Does:miss= with =subject.its.item#weapon=!}} [=hitResult= vs. =dv=]">{{r|=subject.Does:miss= 用 =subject.its.item#weapon=!}} [=hitResult= 對上 =dv=]</string>
+ <string Context="Combat Player Miss Message (no weapon)" ID="{{r|You miss!}} [=hitResult= vs. =dv=]">{{r|你沒打中！}} [=hitResult= 對上 =dv=]</string>
  <string Context="Combat Attacker Miss Message (terse)" ID="=subject.Does:miss= you!">=subject.Does:miss= 你！</string>
- <string Context="Combat Attacker Miss Message (with weapon)" ID="=subject.Does:miss= you with =subject.its.item#weapon=! [=hitResult= vs. =dv=]">=subject.Does:miss= 你，使用 =subject.its.item#weapon=! [=hitResult= 對比 =dv=]</string>
- <string Context="Combat Attacker Miss Message (no weapon)" ID="=subject.Does:miss= you! [=hitResult= vs. =dv=]">=subject.Does:miss= 沒中你！[=hitResult= 對比 =dv=]</string>
+ <string Context="Combat Attacker Miss Message (with weapon)" ID="=subject.Does:miss= you with =subject.its.item#weapon=! [=hitResult= vs. =dv=]">=subject.Does:miss= 你，使用 =subject.its.item#weapon=! [=hitResult= 對上 =dv=]</string>
+ <string Context="Combat Attacker Miss Message (no weapon)" ID="=subject.Does:miss= you! [=hitResult= vs. =dv=]">=subject.Does:miss= 沒中你！[=hitResult= 對上 =dv=]</string>
  <string Context="CrypticParticleText" ID="{{c|'=CRYPTICWORD='}}">{{c|'=CRYPTICWORD='}}</string>
  <string Context="約帕(Joppa) Zealot Yells" ID="Who ventures into the Great Salt Desert, and nearer the Six Day Stilt?">誰會冒險進入大鹽沙漠，並靠近六日高蹺(Six Day Stilt)？</string>
  <string Context="約帕(Joppa) Zealot Yells" ID="Hmm, what of your artifacts? Make an offering of them to Shekhinah at the Sacred Well.">嗯，你的神器呢？將它們獻祭給位於神聖之井的 Shekhinah。</string>

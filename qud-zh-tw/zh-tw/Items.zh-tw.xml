@@ -3330,6 +3330,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{r|生物動力}} {{c|電池}}" />
   <part Name="Description" Short="在電池的 內部 絕緣桶內，電動裝置從血液中榨取能量並將其轉換為電荷。" />
  </object>
+ <object Name="Light Torch" Load="Merge">
+  <part Name="Render" DisplayName="光之炬火(Light Torch)" />
+ </object>
  <object Name="Torch" Load="Merge">
   <part Name="Render" DisplayName="火把(Torch)" />
   <part Name="Description" Short="一段長長的鹽莖被包裹在浸透油脂的布料中。" />

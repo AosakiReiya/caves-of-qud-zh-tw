@@ -20,9 +20,10 @@ run_tests.py — 繁中漢化防回歸測試套件。
   python3 tools/run_tests.py --data     # 只跑 data
 """
 import argparse
-import re
+import re, glob
 import sys
 from pathlib import Path
+import os
 
 ROOT = Path(__file__).resolve().parent
 PROJ = ROOT.parent                     # qud-zh-tw (data mod)
@@ -1247,11 +1248,44 @@ def main():
     if run_all or a.data: test_interests_coverage()
     if run_all or a.data: test_liquids_integrity()
     if run_all or a.xmldata: test_propernouns()
+    if run_all or a.xmldata: test_template_vs_uniform()
+    if run_all or a.xmldata: test_no_paren_stub()
+    if run_all or a.xmldata: test_light_torch_covered()
     if run_all or a.static: test_shorttext_coverage()
     if run_all or a.static: test_cs_structure()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
+
+
+def test_template_vs_uniform():
+    """語料一致性（2026-08-13 用戶回報）：含 vs. 的 combat 模板，譯文一律「對上」，
+    不得出現「對決/對比」等不一致譯法。"""
+    bad=[]
+    for f in sorted(ZH.glob("*.zh-tw.xml")):
+        src=f.read_text(encoding="utf-8-sig")
+        for m in re.finditer(r'<string\b[^>]*?ID="([^"]*vs\.[^"]*)"[^>]*>(.*?)</string>', src, re.S):
+            if "對上" not in m.group(2) and " vs. =dv=" in m.group(1):
+                bad.append((Path(f).name, m.group(1)[:40]))
+    check("模板 vs. 譯文一律「對上」", not bad, "; ".join(f"{a}:{b}" for a,b in bad[:3]))
+
+def test_no_paren_stub():
+    """語料值不得以「(」結尾或缺損括號（2026-08-13 用戶回報「火把 (」殘損）。"""
+    bad=[]
+    pat=re.compile(r'<string\b[^>]*?>(.*?)</string>', re.S)
+    for f in sorted(ZH.glob("*.zh-tw.xml")):
+        src=f.read_text(encoding="utf-8-sig")
+        for m in pat.finditer(src):
+            v=m.group(1).strip()
+            if v.endswith("(") or "()" in v:
+                bad.append((Path(f).name, v[:40]))
+    check("語料無殘缺括號「(」尾/()", not bad, "; ".join(f"{a}:{b}" for a,b in bad[:3]))
+
+def test_light_torch_covered():
+    """Light Torch 物品名語料覆蓋（防「它的光線 火把」拆碎重演）。"""
+    items=ZH/"Items.zh-tw.xml"
+    ok = items.exists() and "Name=\"Light Torch\"" in items.read_text(encoding="utf-8-sig")
+    check("Light Torch DisplayName 已覆蓋", ok, "")
 
 if __name__ == "__main__":
     main()
