@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud - Generated Localizable XML 2.0.212.29
 
@@ -29,30 +29,30 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="投射物" />
  </object>
  <object Name="MineShell" Load="Merge">
-  <part Name="Render" DisplayName="{{c|地雷}}" />
+  <part Name="Render" DisplayName="{{c|地雷(MineShell)}}" />
   <part Name="Description" Short="無政府狀態被時間的虛擬對極捲入停滯狀態，並封裝進一個金屬圓盤中。唯有移動的指令能引導它不再凝聚。" />
  </object>
  <object Name="Grenade" Load="Merge">
-  <part Name="Render" DisplayName="{{c|[手榴彈]}}" />
+  <part Name="Render" DisplayName="{{c|[手榴彈](Grenade)}}" />
  </object>
  <object Name="Club" Load="Merge">
-  <part Name="Render" DisplayName="棍棒" />
+  <part Name="Render" DisplayName="棍棒(Club)" />
   <part Name="Description" Short="木頭被削成了一個鈍器球狀物。" />
  </object>
  <object Name="Wrench" Load="Merge">
-  <part Name="Render" DisplayName="扳手" />
+  <part Name="Render" DisplayName="扳手(Wrench)" />
   <part Name="Description" Short="一段受時間折磨的金屬被螺紋鐵穿透，以獲得額外的扭矩。" />
  </object>
  <object Name="Pestle" Load="Merge">
-  <part Name="Render" DisplayName="研杵" />
+  <part Name="Render" DisplayName="研杵(Pestle)" />
   <part Name="Description" Short="石球上沾滿了幽默粉末。" />
  </object>
  <object Name="Staff" Load="Merge">
-  <part Name="Render" DisplayName="法杖" />
+  <part Name="Render" DisplayName="法杖(Staff)" />
   <part Name="Description" Short="徑切巫木在其扭曲的長度上佈滿了千百個缺口。" />
  </object>
  <object Name="Walking Stick" Load="Merge">
-  <part Name="Render" DisplayName="手杖" />
+  <part Name="Render" DisplayName="手杖(Walking Stick)" />
   <part Name="Description" Short="鹽莖從其沼澤家園被收割下來，並在鹹味的高溫陽光下曬乾。它的頂端螺旋成鉤狀。" />
  </object>
  <object Name="Mace2" Load="Merge">
@@ -60,7 +60,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一個鐘銅球莖螺紋固定在有傷痕的木製軸上。" />
  </object>
  <object Name="Warhammer2" Load="Merge">
-  <part Name="Render" DisplayName="鐵晨錘" />
+  <part Name="Render" DisplayName="鐵晨錘(Warhammer2)" />
   <part Name="Description" Short="鐵線展開成一個帶有六個法蘭的頭部。" />
  </object>
  <object Name="Steel War Hammer" Load="Merge">
@@ -76,7 +76,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一根磨光的鋼製球狀物從被戰鬥啄蝕過的桿件中吹出。" />
  </object>
  <object Name="Shillelagh" Load="Merge">
-  <part Name="Render" DisplayName="希拉萊格棍" />
+  <part Name="Render" DisplayName="希拉萊格棍(Shillelagh)" />
   <part Name="Description" Short="橫跨整個 莫格拉伊(Moghra'yi)，木材是從北極巨獸的樹幹上砍伐下來，再由異國藝術的修行者削成木棒。他們將樹皮的一端塑造成橡木結。" />
  </object>
  <object Name="Billowing Conch of the Aji" Load="Merge">
@@ -84,11 +84,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一個拳頭大小的蝸牛殼捲曲成柔軟的螺旋，被煙灰熏黑，並散發著硫磺味。" />
  </object>
  <object Name="Grandfather Horn" Load="Merge">
-  <part Name="Render" DisplayName="祖父號角" />
+  <part Name="Render" DisplayName="祖父號角(Grandfather Horn)" />
   <part Name="Description" Short="那是隻枯槁芒果羊那蒼白且彎曲的角，刻滿風霜並點綴著緋紅色的流蘇。" />
  </object>
  <object Name="Amber-Tipped Staff" Load="Merge">
-  <part Name="Render" DisplayName="琥珀尖端法杖" />
+  <part Name="Render" DisplayName="琥珀尖端法杖(Amber-Tipped Staff)" />
   <part Name="Description" Short="這是一根扭曲的相思木手杖，上面鑲嵌著一顆原始琥珀小球。" />
  </object>
  <object Name="Cudgel3" Load="Merge">
@@ -165,11 +165,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="鐘銅被塑造成尖銳的形狀，手柄則纏繞著皮革。" />
  </object>
  <object Name="Desert Kris" Load="Merge">
-  <part Name="Render" DisplayName="沙漠克里斯短劍" />
+  <part Name="Render" DisplayName="沙漠克里斯短劍(Desert Kris)" />
   <part Name="Description" Short="鐵蟲從其石鹽材質的柄部中探出頭來。" />
  </object>
  <object Name="Dagger2" Load="Merge">
-  <part Name="Render" DisplayName="鐵匕首" />
+  <part Name="Render" DisplayName="鐵匕首(Dagger2)" />
   <part Name="Description" Short="坑洞如同鐵製邊緣世界的 隕石坑 一般標記著刀刃。" />
  </object>
  <object Name="Steel Kukri" Load="Merge">
@@ -226,7 +226,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="夸克-膠子 電漿 在早期宇宙的虛空峰頂迅速冷卻並熄滅，除非那些球狀物被困在時空的 6D 扭結中。在那裡，牠們在滑流中滑行了數十億年，直到生物發現了牠們，建造機器來提取、冷卻，並在恆星熔爐中重新加熱牠們。" />
  </object>
  <object Name="Vibro Dagger" Load="Merge">
-  <part Name="Render" DisplayName="{{c|震動匕首}}" />
+  <part Name="Render" DisplayName="{{c|震動匕首(Vibro Dagger)}}" />
   <part Name="Description" Short="一把霧面的離子塑化刃位於指托柄上。充能時，它會在寬幅運動中變得模糊，並將其物質障礙撞開。" />
   <part Name="RulesDescription" Text="充能時，此武器的穿透值等於防禦者的護甲值。" />
  </object>
@@ -247,15 +247,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="潮濕的皮革包裹著木柄，直到尖銳的鐘青銅刃口處。" />
  </object>
  <object Name="Hand Axe" Load="Merge">
-  <part Name="Render" DisplayName="手斧" />
+  <part Name="Render" DisplayName="手斧(Hand Axe)" />
   <part Name="Description" Short="斧刃上沾著鹽莖（鹽莖）的纖維碎屑。" />
  </object>
  <object Name="Iron Vinereaper" Load="Merge">
-  <part Name="Render" DisplayName="鐵蔓收割者" />
+  <part Name="Render" DisplayName="鐵蔓收割者(Iron Vinereaper)" />
   <part Name="Description" Short="鍛鐵被模製成新月形，用以收割 水藤 的粗糙皮層。" />
  </object>
  <object Name="Battle Axe2" Load="Merge">
-  <part Name="Render" DisplayName="鐵戰斧" />
+  <part Name="Render" DisplayName="鐵戰斧(Battle Axe2)" />
   <part Name="Description" Short="在這把飽經歲月磨損的斧頭上，髮絲般的鏽跡從鉤部延伸至另一個鉤部。" />
  </object>
  <object Name="Steel Battle Axe" Load="Merge">
@@ -327,7 +327,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="夸克-膠子 電漿 在早期宇宙的虛空峰頂迅速冷卻並熄滅，除非那些球狀物被困在時空的 6D 扭結中。在那裡，牠們在滑流中滑行了數十億年，直到生物發現了牠們，建造機器來提取、冷卻，並在恆星熔爐中重新加熱牠們。" />
  </object>
  <object Name="Stun Whip" Load="Merge">
-  <part Name="Render" DisplayName="{{c|暈眩鞭}}" />
+  <part Name="Render" DisplayName="{{c|暈眩鞭(Stun Whip)}}" />
   <part Name="Description" Short="一條帶狀金屬帶抖動著，蘊含著衝擊潛力。這件塑化器手柄透過電池盒卡在跟部結點上。" />
  </object>
  <object Name="Leather Whip" Load="Merge">
@@ -343,11 +343,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="刮痕遍布整段刃緣青銅鐘，皮膚油脂使雙手皮革握把變得潮濕。" />
  </object>
  <object Name="Long Sword2" Load="Merge">
-  <part Name="Render" DisplayName="鐵長劍" />
+  <part Name="Render" DisplayName="鐵長劍(Long Sword2)" />
   <part Name="Description" Short="凹坑標記著刀刃的長度，猶如鐵製邊緣世界的 隕石坑。" />
  </object>
  <object Name="Long Sword2th" Load="Merge">
-  <part Name="Render" DisplayName="雙手鐵長劍" />
+  <part Name="Render" DisplayName="雙手鐵長劍(Long Sword2th)" />
   <part Name="Description" Short="凹坑遍布於寬闊的刀刃上，猶如鐵製邊緣世界的 隕石坑。" />
  </object>
  <object Name="Steel Long Sword" Load="Merge">
@@ -399,11 +399,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="高爐抽乾了行星的潮汐能量，將碳加熱至太陽般的溫度，並將其注入六角形的 黴菌 中。用於取出鑄件的翡翠鉗將釩——即那抹綠光——霧化並排入歧管中，使金屬產生瑕疵並賦予其特有的色澤。佈滿塵埃顆粒的鑄件被剔除並餵給食石生物，僅留下完美的六角柱體。" />
  </object>
  <object Name="Sharpened Polyp" Load="Merge">
-  <part Name="Render" DisplayName="{{r|磨尖的肉瘤}}" />
+  <part Name="Render" DisplayName="{{r|磨尖的肉瘤(Sharpened Polyp)}}" />
   <part Name="Description" Short="骸骨珊瑚被從其礁石家園上撕裂，並被咀嚼成鋒利的邊緣。" />
  </object>
  <object Name="Ceremonial Khopesh" Load="Merge">
-  <part Name="Render" DisplayName="儀式用震動彎刀" />
+  <part Name="Render" DisplayName="儀式用震動彎刀(Ceremonial Khopesh)" />
   <part Name="Description" Short="一條蔚藍色的絲帶穿過劍柄，引導著幻影鋼的外弧。刃口模糊成了一段已逝詩句的字跡。" />
   <part Name="BootSequence" VerbOnBootInitialized="嗡嗡聲" VerbOnBootDone="嗡嗡聲" VerbOnBootAborted="喀噠聲" />
  </object>
@@ -416,7 +416,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="夸克-膠子 電漿 在早期宇宙的虛空峰頂迅速冷卻並熄滅，除非那些球狀物被困在時空的 6D 扭結中。在那裡，牠們在滑流中滑行了數十億年，直到生物發現了牠們，建造機器來提取、冷卻，並在恆星熔爐中重新加熱牠們。" />
  </object>
  <object Name="Vibro Blade" Load="Merge">
-  <part Name="Render" DisplayName="{{c|震動刃}}" />
+  <part Name="Render" DisplayName="{{c|震動刃(Vibro Blade)}}" />
   <part Name="Description" Short="一把長而霧面的離子塑化劑刀刃放置在指托柄上。充能時，它會在寬幅運動中變得模糊，並將其物質障礙撞開。" />
   <part Name="RulesDescription" Text="充能時，此武器的穿透值等於防禦者的護甲值。" />
  </object>
@@ -444,7 +444,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Difucila" Load="Merge">
-  <part Name="Render" DisplayName="蝕刻砍刀" />
+  <part Name="Render" DisplayName="蝕刻砍刀(Difucila)" />
   <part Name="Description" Short="美麗的葉片緞帶沿著寬闊且塗油的刀刃邊緣刻劃而成。松木手柄上雕刻著它的名字：Difucila。" />
   <part Name="MakersMark" CrafterName="斯帕拉福西爾" />
   <xtagGrammar Proper="錯誤" />
@@ -467,11 +467,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="鉛被鑄造成圓柱狀塊狀物，並削成尖端。" />
  </object>
  <object Name="Desert Rifle" Load="Merge">
-  <part Name="Render" DisplayName="伊薩查步槍" />
+  <part Name="Render" DisplayName="伊薩查步槍(Desert Rifle)" />
   <part Name="Description" Short="槍管鋼材上佈滿了百次鹽暴留下的坑洞。槍托是以伊薩查里（Issachari）沙丘部落風格，從纖維狀的 鹽莖 中手工雕刻而成。" />
  </object>
  <object Name="Carbine" Load="Merge">
-  <part Name="Render" DisplayName="卡賓槍" />
+  <part Name="Render" DisplayName="卡賓槍(Carbine)" />
   <part Name="Description" Short="碳鋼在其鋸齒狀口部閃閃發光。凹陷的槍托與肩部成直角。" />
  </object>
  <object Name="MasterworkCarbine" Load="Merge">
@@ -481,11 +481,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="MakersMark" CrafterName="斯帕拉福西爾" />
  </object>
  <object Name="Sniper Rifle" Load="Merge">
-  <part Name="Render" DisplayName="狙擊步槍" />
+  <part Name="Render" DisplayName="狙擊步槍(Sniper Rifle)" />
   <part Name="Description" Short="專業的膛線將其碳鋼槍管刻劃出螺旋精度的溝槽。瞄準鏡玻璃上有污漬。" />
  </object>
  <object Name="Musket" Load="Merge">
-  <part Name="Render" DisplayName="火槍" />
+  <part Name="Render" DisplayName="火槍(Musket)" />
   <part Name="Description" Short="由回收鋼材製成的滑膛槍管，因火藥殘渣的斑點而變黑。" />
  </object>
  <object Name="Laser Rifle" Load="Merge">
@@ -502,7 +502,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="三個碳鋼桶組成了一個帶有弧形邊緣、充滿發光儀式感的三角形。它們在鏡面點 內部 緊密相連。" />
  </object>
  <object Name="Eigenrifle" Load="Merge">
-  <part Name="Render" DisplayName="本徵步槍" />
+  <part Name="Render" DisplayName="本徵步槍(Eigenrifle)" />
   <part Name="Description" Short="&#xA;&#xA;沒關係。" />
  </object>
  <object Name="ProjectileEigenrifle" Load="Merge">
@@ -544,7 +544,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="嗡嗡聲" />
  </object>
  <object Name="Phase Cannon" Load="Merge">
-  <part Name="Render" DisplayName="相位砲" />
+  <part Name="Render" DisplayName="相位砲(Phase Cannon)" />
   <part Name="Description" Short="骨骰標記了沿著錐體長度的相位裂隙。噪音在期待跨平面融合的過程中被從時間中抽離。" />
  </object>
  <object Name="ProjectilePhaseCannon" Load="Merge">
@@ -553,15 +553,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="TreatAsSolid" Message="=subject.T= 在常態的壓力下 崩塌。" />
  </object>
  <object Name="Short Bow" Load="Merge">
-  <part Name="Render" DisplayName="短弓" />
+  <part Name="Render" DisplayName="短弓(Short Bow)" />
   <part Name="Description" Short="一根跳鹽蟲的後肢被燒得乾淨，並彎曲成反曲弓的形狀。弦被繫在弓頭上。" />
  </object>
  <object Name="Compound Bow" Load="Merge">
-  <part Name="Render" DisplayName="複合弓" />
+  <part Name="Render" DisplayName="複合弓(Compound Bow)" />
   <part Name="Description" Short="惰輪被改裝到肢體上，纏繞的電纜變得僵硬，以增強弓箭手的力量。" />
  </object>
  <object Name="Dart Gun" Load="Merge">
-  <part Name="Render" DisplayName="飛鏢槍" />
+  <part Name="Render" DisplayName="飛鏢槍(Dart Gun)" />
   <part Name="Description" Short="豬筋弓弦被刻在一個鹽莖（鹽莖）軌道後方，該軌道已縮窄以配合飛鏢。" />
  </object>
  <object Name="Electrobow" Load="Merge">
@@ -618,7 +618,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{B|folded carbide}} 箭矢" />
  </object>
  <object Name="Fullerite Arrow" Load="Merge">
-  <part Name="Render" DisplayName="{{K|富勒烯箭}}" />
+  <part Name="Render" DisplayName="{{K|富勒烯箭(Fullerite Arrow)}}" />
   <part Name="Description" Short="一支裝飾著鳥羽的狹窄箭桿，頂端鑲嵌著一顆富勒石箭頭。" />
  </object>
  <object Name="ProjectileFulleriteArrow" Load="Merge">
@@ -649,26 +649,26 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="呼嘯聲" />
  </object>
  <object Name="Chaingun" Load="Merge">
-  <part Name="Render" DisplayName="機關槍" />
+  <part Name="Render" DisplayName="機關槍(Chaingun)" />
   <part Name="Description" Short="鉻合金鏈條纏繞在自動上鍊飛輪上，上面點綴著油脂露珠。一根長管上有鋼鐵留下的刻痕。" />
  </object>
  <object Name="Grenade Launcher" Load="Merge">
-  <part Name="Render" DisplayName="榴彈發射器" />
+  <part Name="Render" DisplayName="榴彈發射器(Grenade Launcher)" />
   <part Name="Description" Short="擊針撞擊鋼材的滴答聲讓動物們驚動。鉻合金瞄具緩解了拋物線的弧度。" />
  </object>
  <object Name="Missile Launcher" Load="Merge">
-  <part Name="Render" DisplayName="飛彈發射器" />
+  <part Name="Render" DisplayName="飛彈發射器(Missile Launcher)" />
   <part Name="Description" Short="油脂弄濕了扳機柄，並沿著寬闊的飛彈滑道流下，流向焊接好的肩托。" />
  </object>
  <object Name="HE Missile" Load="Merge">
-  <part Name="Render" DisplayName="高爆飛彈" />
+  <part Name="Render" DisplayName="高爆飛彈(HE Missile)" />
   <part Name="Description" Short="一個明亮的氣頭人站在鋼製死亡滑槽的盡頭。" />
  </object>
  <object Name="ProjectileHEMissile" Load="Merge">
   <part Name="Render" DisplayName="飛彈" />
  </object>
  <object Name="Flamethrower" Load="Merge">
-  <part Name="Render" DisplayName="火焰噴射器" />
+  <part Name="Render" DisplayName="火焰噴射器(Flamethrower)" />
   <part Name="Description" Short="清澈的燃料幫浦露出了絲狀油漬，其後方電壓表正滴答作響。傾斜的熱盾牌已被燒得漆黑。" />
  </object>
  <object Name="ProjectileFlamethrower" Load="Merge">
@@ -692,7 +692,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="衝刺" />
  </object>
  <object Name="Mortar Tube" Load="Merge">
-  <part Name="Render" DisplayName="{{c|迫擊砲管}}" />
+  <part Name="Render" DisplayName="{{c|迫擊砲管(Mortar Tube)}}" />
   <part Name="Description" Short="乾涸的槍塵塗抹在灰泥的內月面上。" />
  </object>
  <object Name="ProjectileMortar" Load="Merge">
@@ -708,7 +708,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="衝刺" />
  </object>
  <object Name="Arc Cannon" Load="Merge">
-  <part Name="Render" DisplayName="{{c|弧形大砲}}" />
+  <part Name="Render" DisplayName="{{c|弧形大砲(Arc Cannon)}}" />
   <part Name="Description" Short="編織在一起的電纜構成了爆裂槍的槍管，沿著彎曲的電磁場線發射。" />
  </object>
  <object Name="ProjectileArcCannon" Load="Merge">
@@ -716,7 +716,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="躍起" />
  </object>
  <object Name="Linear Cannon" Load="Merge">
-  <part Name="Render" DisplayName="線性砲" />
+  <part Name="Render" DisplayName="線性砲(Linear Cannon)" />
   <part Name="Description" Short="巴洛克式且如風箏般的金屬體積沿著軸心排列，如同車床般削去其內部空間的維度。一個由彩繪富勒石製成的巨大柄部與握把支撐著它們巨大的重量。" />
   <part Name="MagazineAmmoLoader" NameForStatus="裝填機制" />
   <part Name="EnergyAmmoLoader" NameForStatus="線性加速器" />
@@ -736,22 +736,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar massNoun="真實" />
  </object>
  <object Name="Swarm Rack" Load="Merge">
-  <part Name="Render" DisplayName="{{m|集群架}}" />
+  <part Name="Render" DisplayName="{{m|集群架(Swarm Rack)}}" />
   <part Name="Description" Short="一個佈滿鉻與石英粉末的蜂巢狀物矗立在觀景平面上，威脅著要抹除一切。金屬焊條在其巨大的重量下彎曲，火箭頭從六角形蜂巢中探出頭來。" />
  </object>
  <object Name="ProjectileSwarmRocket" Load="Merge">
   <part Name="Render" DisplayName="{{m|火箭}}" />
  </object>
  <object Name="Borderlands Revolver" Load="Merge">
-  <part Name="Render" DisplayName="鍍鉻左輪手槍" />
+  <part Name="Render" DisplayName="鍍鉻左輪手槍(Borderlands Revolver)" />
   <part Name="Description" Short="一個沾滿污漬與鹽分的鉻合金輪盤隨著月相跳動。就在一個 鹽莖 手控面板的正上方，握把獎章閃爍著德爾斐血脈的光芒。" />
  </object>
  <object Name="Semi-Automatic Pistol" Load="Merge">
-  <part Name="Render" DisplayName="半自動手槍" />
+  <part Name="Render" DisplayName="半自動手槍(Semi-Automatic Pistol)" />
   <part Name="Description" Short="黑色壓克力握把佈滿了細微的裂紋，那是因緊張且汗濕的手緊握，試圖從射擊中擠出精準度所致。" />
  </object>
  <object Name="Grappling Gun" Load="Merge">
-  <part Name="Render" DisplayName="抓鉤槍" />
+  <part Name="Render" DisplayName="抓鉤槍(Grappling Gun)" />
   <part Name="Description" Short="一根拉力彈簧推動擊針撞擊氣體桶，並彈出一個纜線抓鉤；接著絞盤將其收回。" />
  </object>
  <object Name="ProjectileGrapplingGun" Load="Merge">
@@ -759,7 +759,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="疾馳" />
  </object>
  <object Name="Chain Pistol" Load="Merge">
-  <part Name="Render" DisplayName="連發手槍" />
+  <part Name="Render" DisplayName="連發手槍(Chain Pistol)" />
   <part Name="Description" Short="一個錫質細夾掛在有刮痕的鍍鉻彈匣槽上。" />
  </object>
  <object Name="Laser Pistol" Load="Merge">
@@ -772,7 +772,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="TreatAsSolid" Message="黑暗吞噬了 =subject.t=!" />
  </object>
  <object Name="Eigenpistol" Load="Merge">
-  <part Name="Render" DisplayName="本徵手槍" />
+  <part Name="Render" DisplayName="本徵手槍(Eigenpistol)" />
   <part Name="Description" Short="&#xA;&#xA;沒關係。" />
  </object>
  <object Name="ProjectileEigenpistol" Load="Merge">
@@ -780,7 +780,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="嗡嗡聲" />
  </object>
  <object Name="Arc Winder" Load="Merge">
-  <part Name="Render" DisplayName="弧形繞線者" />
+  <part Name="Render" DisplayName="弧形繞線者(Arc Winder)" />
   <part Name="Description" Short="螺旋曲柄閉合了鍍鉻外殼的電路，並透過兩個接觸尖端排出電荷。煙霧在它們的黃光中旋轉。" />
  </object>
  <object Name="ProjectileElectroPistol" Load="Merge">
@@ -819,7 +819,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="條紋" />
  </object>
  <object Name="Blood-Gradient Hand Vacuum" Load="Merge">
-  <part Name="Render" DisplayName="血色漸變手持真空吸塵器" />
+  <part Name="Render" DisplayName="血色漸變手持真空吸塵器(Blood-Gradient Hand Vacuum)" />
   <part Name="BioAmmoLoader" NameForStatus="生命力轉移系統" />
   <part Name="LiquidProducer" NameForStatus="失血微管" />
   <part Name="LiquidFueledPowerPlant" NameForStatus="生物動力萃取器" />
@@ -839,7 +839,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="條紋" />
  </object>
  <object Name="Space Inverter" Load="Merge">
-  <part Name="Render" DisplayName="空間反轉器" />
+  <part Name="Render" DisplayName="空間反轉器(Space Inverter)" />
   <part Name="Description" Short="在槍口後方，一個被玻璃束縛、不穩定的時空光環纏繞著星際繫帶。觸發機制會切斷繫帶，並將異常點抽吸到自由世界中。" />
  </object>
  <object Name="High-Voltage Arc Winder" Load="Merge">
@@ -857,7 +857,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="旋轉" />
  </object>
  <object Name="Longreach Grappling Gun" Load="Merge">
-  <part Name="Render" DisplayName="長程抓鉤槍" />
+  <part Name="Render" DisplayName="長程抓鉤槍(Longreach Grappling Gun)" />
   <part Name="Description" Short="一根拉力彈簧將擊針推向撞擊氣體桶，並在精確的距離內彈射出長纜線的抓鉤；接著絞盤會將其收回。" />
  </object>
  <object Name="BaseShotgunProjectile" Load="Merge">
@@ -865,19 +865,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Projectile" PassByVerb="嗖的一聲" />
  </object>
  <object Name="Shotgun Shell" Load="Merge">
-  <part Name="Render" DisplayName="散彈槍子彈" />
+  <part Name="Render" DisplayName="散彈槍子彈(Shotgun Shell)" />
   <part Name="Description" Short="幾顆彈丸被封裝在厚實的蠟紙與塑膠外殼中。" />
  </object>
  <object Name="Pump Shotgun" Load="Merge">
-  <part Name="Render" DisplayName="泵動霰彈槍" />
+  <part Name="Render" DisplayName="泵動霰彈槍(Pump Shotgun)" />
   <part Name="Description" Short="一個胡桃木前托懸掛在鉻合金肋部下方，當被抽動時，會發出狂喜般的咔嗒聲。" />
  </object>
  <object Name="Combat Shotgun" Load="Merge">
-  <part Name="Render" DisplayName="戰鬥散彈槍" />
+  <part Name="Render" DisplayName="戰鬥散彈槍(Combat Shotgun)" />
   <part Name="Description" Short="核木零件被拆卸下來，取而代之的是無星的金屬。一個塗了油脂的泵以極小的摩擦力滑入腔室。" />
  </object>
  <object Name="Ruin of House Isner" Load="Merge">
-  <part Name="Render" DisplayName="伊斯納家族廢墟" />
+  <part Name="Render" DisplayName="伊斯納家族廢墟(Ruin of House Isner)" />
   <part Name="Description" Short="這把由黃銅與鉻製成的手槍工藝精湛得令人屏息：金絲楠木握把緊貼掌心，擊錘依循拇指輪廓進行了微米級的塑形，準星則像滑動的絲綢般引導視線沿著槍管向下。&#xA;整個槍身刻滿了枯萎的常春藤，槍口沾染著血跡。" />
   <part Name="RulesDescription" Text="+1 心智 (Ego)¶xA;使用此武器造成的暴擊將獲得額外的 +4 穿透檢定加成。&#xA;當此武器發射最後一顆彈藥時，該射擊將具備完美瞄準，並保證造成暴擊。" />
   <part Name="TakenAccomplishment" Text="你回收了傑作手槍與傳奇的復仇頌歌：=this.refname=。" Hagiograph="槍手蘇丹 =name= 用一把傑作左輪手槍殺死了伊斯納家族的七位領主，並在他們堆積如山的屍體上進餐。" Gospel="在靠近 =landmark.nearest= 的荒野深處，=name= 偶然發現了一群正在進行秘密儀式的 水霸。因為他們那雙陰險的眼睛，=name= 用一把精良的左輪手槍殺死了七位領主，並在他們的屍堆上進餐。" />
@@ -886,15 +886,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <tag Name="DefiniteArticle" Value="這" />
  </object>
  <object Name="Geomagnetic Disc" Load="Merge">
-  <part Name="Render" DisplayName="地磁圓盤" />
+  <part Name="Render" DisplayName="地磁圓盤(Geomagnetic Disc)" />
   <part Name="Description" Short="離子在旋轉輪上被甩成完美的晶形圓盤，而海藍寶石則透過深海蒸汽熱固於內環之上。" />
  </object>
  <object Name="ThrowingAxe" Load="Merge">
-  <part Name="Render" DisplayName="投擲斧" />
+  <part Name="Render" DisplayName="投擲斧(ThrowingAxe)" />
   <part Name="Description" Short="一個佈滿鹽漬刮痕的刀刃，透過木楔固定在碎裂的手柄上。" />
  </object>
  <object Name="CastNet" Load="Merge">
-  <part Name="Render" DisplayName="投網" />
+  <part Name="Render" DisplayName="投網(CastNet)" />
   <part Name="Description" Short="亞麻從艾里斯之碗（Bowl of Iris）中收割，剝成纖維，再由蒼白海（Pale Sea）的漁民編織成柔軟的網格。" />
  </object>
  <object Name="BaseStone" Load="Merge">
@@ -954,15 +954,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="厚重的金屬外殼包覆著爆炸物，並夾在一個快速釋放槓桿上。上面刻著象徵危險的交叉骨標誌。" />
  </object>
  <object Name="StunGasGrenade1" Load="Merge">
-  <part Name="Render" DisplayName="一型暈眩氣體手榴彈" />
+  <part Name="Render" DisplayName="一型暈眩氣體手榴彈(StunGasGrenade1)" />
   <part Name="Description" Short="一個鑄鐵燈泡由帶有拉環的槓桿夾住。其蓋子內緣佈滿了銳利的邊緣。" />
  </object>
  <object Name="StunGasGrenade2" Load="Merge">
-  <part Name="Render" DisplayName="二型暈眩氣體手榴彈" />
+  <part Name="Render" DisplayName="二型暈眩氣體手榴彈(StunGasGrenade2)" />
   <part Name="Description" Short="一堆由蜂窩狀六角形組成的金屬片被鉻色槓桿夾住。其蓋子內襯著銳利的邊緣。" />
  </object>
  <object Name="StunGasGrenade3" Load="Merge">
-  <part Name="Render" DisplayName="三型暈眩氣體手榴彈" />
+  <part Name="Render" DisplayName="三型暈眩氣體手榴彈(StunGasGrenade3)" />
   <part Name="Description" Short="厚重的金屬外殼包裹著爆炸物，並夾在一個快速釋放槓桿上。它的蓋子內緣佈滿了銳利的邊緣。" />
  </object>
  <object Name="AcidGasGrenade1" Load="Merge">
@@ -978,11 +978,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="厚重的金屬外殼包裹著爆炸物，並夾在一個快速釋放槓桿上。它正在 內部 嘶嘶作響。" />
  </object>
  <object Name="FlashbangGrenade1" Load="Merge">
-  <part Name="Render" DisplayName="一型閃光彈" />
+  <part Name="Render" DisplayName="一型閃光彈(FlashbangGrenade1)" />
   <part Name="Description" Short="一個鑄鐵燈泡被帶有拉環的槓桿夾住。上面刻著一張眼睛的圖案。" />
  </object>
  <object Name="FlashbangGrenade2" Load="Merge">
-  <part Name="Render" DisplayName="二型閃光彈" />
+  <part Name="Render" DisplayName="二型閃光彈(FlashbangGrenade2)" />
   <part Name="Description" Short="一堆由蜂窩狀六角形組成的金屬群組被一個鉻色槓桿夾住。上面刻著一張眼睛的圖案。" />
  </object>
  <object Name="FlashbangGrenade3" Load="Merge">
@@ -1168,15 +1168,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一個鑄鐵燈泡被帶有拉環的槓桿夾住。它在微光中改變了透視感。" />
  </object>
  <object Name="HandENuke" Load="Merge">
-  <part Name="Render" DisplayName="{{m|手持核彈}}" />
+  <part Name="Render" DisplayName="{{m|手持核彈(HandENuke)}}" />
   <part Name="Description" Short="厚重的金屬外殼包裹著這枚爆炸物，並夾在一個快速釋放槓桿上。上面刻著一束爆炸箭簇的圖案，並因自身的重量而發出嘎啦聲。" />
  </object>
  <object Name="Carapace" Load="Merge">
-  <part Name="Render" DisplayName="甲殼" />
+  <part Name="Render" DisplayName="甲殼(Carapace)" />
   <part Name="Description" Short="厚實且帶有裝甲的骨質物質依附其宿主形狀而彎曲。" />
  </object>
  <object Name="Quills" Load="Merge">
-  <part Name="Render" DisplayName="刺" />
+  <part Name="Render" DisplayName="刺(Quills)" />
   <part Name="Description" Short="成百上千根化石化的毛髮，如保護層般覆蓋在軀體上。" />
   <tag Name="AbilityName" Value="羽翎投擲" />
   <tag Name="DisplayNameSingular" Value="羽毛筆" />
@@ -1190,7 +1190,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="尾部的刺狀物頂端鑲嵌著一顆帶毒露珠般的寶石。" />
  </object>
  <object Name="Horns" Load="Merge">
-  <part Name="Render" DisplayName="角" />
+  <part Name="Render" DisplayName="角(Horns Casque)" />
   <part Name="Description" Short="一對開有溝槽的骨質突起向頭部上方的一個對稱點延伸。" />
  </object>
  <object Name="Horns Single" Load="Merge">
@@ -1214,7 +1214,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="鐵鉤被固定在殘餘的腿部肢體上，為穿戴者提供一種笨拙且刮擦地移動方式。" />
  </object>
  <object Name="Beak" Load="Merge">
-  <part Name="Render" DisplayName="喙" />
+  <part Name="Render" DisplayName="喙(Beak Bill)" />
   <part Name="Description" Short="一件梳理工具以畫家的角度從頭骨中彎曲出來，上面點綴著一對呼吸微粒。" />
  </object>
  <object Name="Beak Bill" Load="Merge">
@@ -1305,12 +1305,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="小腿處為粗糙且緊紡的布料，但在腳踝處收緊。織物的重量使寬大的帶子向下垂墜。" />
  </object>
  <object Name="Bark Armor" Load="Merge">
-  <part Name="Render" DisplayName="樹皮護甲" />
+  <part Name="Render" DisplayName="樹皮護甲(Bark Armor)" />
   <part Name="Description" Short="削薄的山茱萸片貼合著胸部、腰部與大腿。外殼已被甲蟲啃食。" />
   <xtagGrammar adjunctNoun="套裝" massNoun="真實" />
  </object>
  <object Name="Leather Armor" Load="Merge">
-  <part Name="Render" DisplayName="皮革護甲" />
+  <part Name="Render" DisplayName="皮革護甲(Leather Armor)" />
   <part Name="Description" Short="煮過的山羊皮被剪裁成胸甲，並配有帶子和鐵扣。它聞起來有蜂蠟的味道。" />
   <xtagGrammar adjunctNoun="套裝" massNoun="真實" />
  </object>
@@ -1319,28 +1319,28 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="常春藤糾結的蘆葦狀內臟被撕裂、編織，並用刺繡腰帶裝飾鍍金。" />
  </object>
  <object Name="Studded Leather Armor" Load="Merge">
-  <part Name="Render" DisplayName="鉚釘皮甲" />
+  <part Name="Render" DisplayName="鉚釘皮甲(Studded Leather Armor)" />
   <part Name="Description" Short="從垃圾海中撈出的古老且難以捉摸的鍍鉻插銷，鑲嵌在厚實的煮熟山羊皮楔子中。" />
   <xtagGrammar adjunctNoun="套裝" massNoun="真實" />
  </object>
  <object Name="Pocketed Vest" Load="Merge">
-  <part Name="Render" DisplayName="口袋背心" />
+  <part Name="Render" DisplayName="口袋背心(Pocketed Vest)" />
   <part Name="Description" Short="一件粗糙的短裙被送到口袋裁縫處，為了洞穴探險與小物釣魚進行了裝備整修。" />
  </object>
  <object Name="Sooty Smock" Load="Merge">
-  <part Name="Render" DisplayName="煤煙罩衫" />
+  <part Name="Render" DisplayName="煤煙罩衫(Sooty Smock)" />
   <part Name="Description" Short="一件圍裙上佈滿了吸光虛空般的碳隕石坑，那是智者們在注視著星辰奔向其排除中點時所夢見之物。" />
  </object>
  <object Name="Slate Frock" Load="Merge">
-  <part Name="Render" DisplayName="石板長袍" />
+  <part Name="Render" DisplayName="石板長袍(Slate Frock)" />
   <part Name="Description" Short="亞麻布被裁剪成符合身體形狀的尺寸，並放入由雙桉葉與鐵屑組成的染料池中，以呈現出一種帶有色澤的光澤。" />
  </object>
  <object Name="Umber Frock" Load="Merge">
-  <part Name="Render" DisplayName="赭色長袍" />
+  <part Name="Render" DisplayName="赭色長袍(Umber Frock)" />
   <part Name="Description" Short="粗糙且發癢的亞麻經過粗略紡線、裁剪成型，並由一根大麻繩緊固。" />
  </object>
  <object Name="Ring Mail" Load="Merge">
-  <part Name="Render" DisplayName="鎖子甲" />
+  <part Name="Render" DisplayName="鎖子甲(Ring Mail)" />
   <part Name="Description" Short="一件皮革襯衫上縫有鋼製環扣。" />
   <xtagGrammar adjunctNoun="設定" massNoun="真實" />
  </object>
@@ -1372,11 +1372,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="套裝" massNoun="真實" />
  </object>
  <object Name="Slate Mantle" Load="Merge">
-  <part Name="Render" DisplayName="石板斗篷" />
+  <part Name="Render" DisplayName="石板斗篷(Slate Mantle)" />
   <part Name="Description" Short="布料曾浸泡在雙桉葉與鐵屑的染液中，以取得一種鉻色的光澤，隨後被裁剪成一件帶有荷葉邊肩裙的服飾。" />
  </object>
  <object Name="Flexivest" Load="Merge">
-  <part Name="Render" DisplayName="彈力背心" />
+  <part Name="Render" DisplayName="彈力背心(Flexivest)" />
   <part Name="Description" Short="一條彈性纖維布料被緊繃地覆蓋在半硬塑料胸甲上，形成了一套靈活的鎖子甲。" />
  </object>
  <object Name="Rubber Suit" Load="Merge">
@@ -1393,7 +1393,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="ReduceEnergyCosts" ScopeDescription="在使用注射器時的能量消耗" NameForStatus="StentSystem" />
  </object>
  <object Name="Recycling Suit" Load="Merge">
-  <part Name="Render" DisplayName="{{B|回收套裝}}" />
+  <part Name="Render" DisplayName="{{B|回收套裝(Recycling Suit)}}" />
   <part Name="Description" Short="橡膠管穿梭於裝有過濾器的回收彈性纖維（elastyne）中，從過度勞累的身體中回收廢水。" />
  </object>
  <object Name="Leafy Vest" Load="Merge">
@@ -1416,7 +1416,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="套裝" massNoun="真實" />
  </object>
  <object Name="Nanoweave Vest" Load="Merge">
-  <part Name="Render" DisplayName="奈米編織背心" />
+  <part Name="Render" DisplayName="奈米編織背心(Nanoweave Vest)" />
   <part Name="Description" Short="多樣的纖維色彩斑斕，擁有無與倫比的觸感。分子緯向線在分形織機上穿過縮小的經向線。" />
  </object>
  <object Name="Thermo Cask" Load="Merge">
@@ -1424,7 +1424,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="冷卻液與防凍劑的四面玻璃管蜿蜒穿過桶裝鎖甲的壓縮機，冷凝器與蒸發器線圈像隔熱灌木上的祖父 樹木 一樣從肩膀處旋轉伸展出來。" />
  </object>
  <object Name="Gas Tumbler" Load="Merge">
-  <part Name="Render" DisplayName="瓦斯翻轉器" />
+  <part Name="Render" DisplayName="瓦斯翻轉器(Gas Tumbler)" />
   <part Name="Description" Short="染色冰鋼罐裝在背架上。其閥門從通量增壓器中彈出，散開的軟管允許多個輸入流。" />
   <part Name="BootSequence" VerbOnBootInitialized="旋轉" VerbOnBootDone="爆裂" VerbOnBootAborted="噴濺" />
  </object>
@@ -1462,11 +1462,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一件絲綢肩披經過裁剪，並使用從艾里斯之碗（Bowl of Iris）橡樹上刮下的碎裂 昆蟲 進行染色。" />
  </object>
  <object Name="Leather Cloak" Load="Merge">
-  <part Name="Render" DisplayName="皮革斗篷" />
+  <part Name="Render" DisplayName="皮革斗篷(Leather Cloak)" />
   <part Name="Description" Short="一層山羊皮製成的裹屍布被歲月的酸液染上了圓形的斑點。" />
  </object>
  <object Name="Panther's Cloak" Load="Merge">
-  <part Name="Render" DisplayName="豹紋斗篷" />
+  <part Name="Render" DisplayName="豹紋斗篷(Panther's Cloak)" />
   <part Name="Description" Short="切開的皮革上有斑點狀的眩光，使其束縛步足轉化為豹形自我。" />
  </object>
  <object Name="Issachari Banner" Load="Merge">
@@ -1474,11 +1474,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="鹽白底色上的鉑金縫線，唯有受過幻象訓練的伊薩查里（Issachari）之眼才能辨識。這面旗幟已被縫入一個緋紅色的衣領中。" />
  </object>
  <object Name="Mechanical Wings" Load="Merge">
-  <part Name="Render" DisplayName="機械之翼" />
+  <part Name="Render" DisplayName="機械之翼(Mechanical Wings)" />
   <part Name="Description" Short="力量透過一系列不可思議的拍動動作，被推過青銅 棘刺，隨後陽傘砰然打開以捕捉變幻莫測的風。" />
  </object>
  <object Name="Nylon Bodypack" Load="Merge">
-  <part Name="Render" DisplayName="尼龍背囊" />
+  <part Name="Render" DisplayName="尼龍背囊(Nylon Bodypack)" />
   <part Name="Description" Short="來源不明的毛髮黏附在尼龍臀部與肩帶的菱形圖案上。拉鍊與鈕扣袋方便攜帶所有必需的地底工具。" />
  </object>
  <object Name="Grassy Yurtmat" Load="Merge">
@@ -1498,11 +1498,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="閃亮的電路風格縫線沿著肩部織物向下延伸。" />
  </object>
  <object Name="Molly Netting" Load="Merge">
-  <part Name="Render" DisplayName="莫莉網" />
+  <part Name="Render" DisplayName="莫莉網(Molly Netting)" />
   <part Name="Description" Short="採用古老的繩索編織儀式，編織出一件由纖維支撐帶構成的背負式網袋。" />
  </object>
  <object Name="Ironweave Cloak" Load="Merge">
-  <part Name="Render" DisplayName="鐵織斗篷" />
+  <part Name="Render" DisplayName="鐵織斗篷(Ironweave Cloak)" />
   <part Name="Description" Short="銀色的流動織物如同布料般輕盈，隨後在靜止或受壓時變硬。縫線處開始形成一層淡淡的氧化層。" />
  </object>
  <object Name="Praetorian's Cloak" Load="Merge">
@@ -1554,7 +1554,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="電極在 uuflax 編織的晶格上閃爍。袖口寬大且具時尚感，展示著金色與青色的紋章電路。" />
  </object>
  <object Name="Gigantic Chassis Plate" Load="Merge">
-  <part Name="Render" DisplayName="{{c|底盤裝甲板}}" />
+  <part Name="Render" DisplayName="{{c|底盤裝甲板(Gigantic Chassis Plate)}}" />
   <part Name="Description" Short="一塊巨大的燒焦且捲曲的鍍鉻板片是從一個地表-移動者身上拆解下來的。它像星帆一樣籠罩著其怪獸般的持有者。" />
  </object>
  <object Name="Witchwood Wreath" Load="Merge">
@@ -1567,11 +1567,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="皇冠因長年佩戴而壓碎成百褶般的皺紋，帽簷上留下了汗水與鹽分交織出的分形痕跡。" />
  </object>
  <object Name="Gentling Collar" Load="Merge">
-  <part Name="Render" DisplayName="馴服之錐" />
+  <part Name="Render" DisplayName="馴服之錐(Gentling Collar)" />
   <part Name="Description" Short="在羊毛紙與壓克力中，經驗的痛苦被磨平為均勻的兒童圓錐體。動脈夾從 內部 表面露出來。圓錐體由黃銅鏈固定，並以玻璃珠裝飾，頂端烙印著「神聖菱形」，這是純真代價的象徵。" />
  </object>
  <object Name="Leather Cap" Load="Merge">
-  <part Name="Render" DisplayName="皮革帽" />
+  <part Name="Render" DisplayName="皮革帽(Leather Cap)" />
   <part Name="Description" Short="這是一款皮革頭蓋，採用無邊緣風格縫製，適合那些比起遮蔽寶石般的眼睛，更喜歡嵌入裂縫的人。" />
  </object>
  <object Name="Crimson Hood" Load="Merge">
@@ -1579,7 +1579,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="紅色的蕾絲纏繞著臉龐，以襯托出一位 釀酒師的 wife 那因陽光而紅潤的面頰。" />
  </object>
  <object Name="Knollworm Skull" Load="Merge">
-  <part Name="Render" DisplayName="丘蟲頭骨" />
+  <part Name="Render" DisplayName="丘蟲頭骨(Knollworm Skull)" />
   <part Name="Description" Short="一個醜陋的喙傾斜過腦腔，在昏暗且隱痛的太陽所發出的恐怖光芒下遮蔽了臉龐。" />
  </object>
  <object Name="Steel Helmet" Load="Merge">
@@ -1591,7 +1591,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一塊阿科諾特稱之為「黑色拉伸物」的黏稠物質，是從橡膠洞穴中撈取出來並黏在頭皮上的。" />
  </object>
  <object Name="Electric Snail Shell" Load="Merge">
-  <part Name="Render" DisplayName="電蝸牛殼" />
+  <part Name="Render" DisplayName="電蝸牛殼(Electric Snail Shell)" />
   <part Name="Description" Short="一個黃色的螺旋狀貝殼洞口裝甲著頭部，僅輕微地損害了視線。" />
  </object>
  <object Name="Ape Fur Hat" Load="Merge">
@@ -1603,7 +1603,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="這件可穿戴的正方形物品仿照泥瓦匠的平頭帽設計，並裝飾著彩色流蘇。" />
  </object>
  <object Name="Chain Coif" Load="Merge">
-  <part Name="Render" DisplayName="鎖鏈頭罩" />
+  <part Name="Render" DisplayName="鎖鏈頭罩(Chain Coif)" />
   <part Name="Description" Short="一個開孔的鋼製鏈條套在頭部與頸部。" />
  </object>
  <object Name="BaseForkHornedHelmet" Load="Merge">
@@ -1611,11 +1611,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="某隻巨型麋鹿那佈滿苔蘚的鹿角，似乎穿透了一頂永恆不朽的皮革頭盔。" />
  </object>
  <object Name="Headlamp" Load="Merge">
-  <part Name="Render" DisplayName="頭燈" />
+  <part Name="Render" DisplayName="頭燈(Headlamp)" />
   <part Name="Description" Short="一盞鹵素燈固定在皮革頭帶上。" />
  </object>
  <object Name="Miner's Helmet" Load="Merge">
-  <part Name="Render" DisplayName="礦工頭盔" />
+  <part Name="Render" DisplayName="礦工頭盔(Miner's Helmet)" />
   <part Name="Description" Short="一個由鐵與硬化果肉組成的圓頂包含著自身的照明光源。" />
  </object>
  <object Name="Plastifer Bonnet" Load="Merge">
@@ -1627,7 +1627,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="葉片在覆蓋著可穿戴表土的圓頂層上生長。" />
  </object>
  <object Name="Ganglionic Teleprojector" Load="Merge">
-  <part Name="Render" DisplayName="神經節遠距投影儀" />
+  <part Name="Render" DisplayName="神經節遠距投影儀(Ganglionic Teleprojector)" />
   <part Name="Description" Short="一個溝槽狀的面罩被鎢絲束包裹著。兩根天線像機器人一樣從太陽穴處捲曲而出。" />
  </object>
  <object Name="Fullerite Armet" Load="Merge">
@@ -1664,11 +1664,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="夸克-膠子 電漿 在早期宇宙的虛空峰頂迅速冷卻並熄滅，除非那些球狀物被困在時空的 6D 扭結中。在那裡，牠們在滑流中滑行了數十億年，直到生物發現了牠們，建造機器來提取、冷卻，並在恆星熔爐中重新加熱牠們。" />
  </object>
  <object Name="Mental Aggregator" Load="Merge">
-  <part Name="Render" DisplayName="精神聚合器" />
+  <part Name="Render" DisplayName="精神聚合器(Mental Aggregator)" />
   <part Name="Description" Short="一片皺巴巴的紙質金屬片斜靠在休止角上。" />
  </object>
  <object Name="Psychodyne Helmet" Load="Merge">
-  <part Name="Render" DisplayName="靈力動力頭盔" />
+  <part Name="Render" DisplayName="靈力動力頭盔(Psychodyne Helmet)" />
   <part Name="Description" Short="四面體氙玻璃（Tetraxenonoglass）使照射到外殼的光線產生藍移。在內側，電磁鐵激發一層星形軟體動物組織，以創造完美的靈能聲學效果。" />
   <part Name="EquipStatBoost" NameForStatus="心理動力電路" />
  </object>
@@ -1689,7 +1689,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="皂石上的烈火滲入潮濕的夜晚，於血色繪製的黃昏終點處消散。面具佩戴者承接了此物以及所有的二元性。" />
  </object>
  <object Name="Gentling Mask" Load="Merge">
-  <part Name="Render" DisplayName="馴服面具" />
+  <part Name="Render" DisplayName="馴服面具(Gentling Mask)" />
   <part Name="Description" Short="在羊毛紙與壓克力之中，經驗的痛苦被磨平，化作孩童的面貌。神經夾從凹陷的內部表面探出頭來。面具由黃銅鍊固定，並以玻璃珠裝飾，額頭上烙印著神聖菱形，那是純真代價的象徵。" />
  </object>
  <object Name="Goggles" Load="Merge">
@@ -1703,20 +1703,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="RefractLight" Verb="反射" />
  </object>
  <object Name="Night-vision Goggles" Load="Merge">
-  <part Name="Render" DisplayName="夜視鏡" />
+  <part Name="Render" DisplayName="夜視鏡(Night-vision Goggles)" />
   <part Name="Description" Short="帶有對焦環的雙筒望遠鏡能讀取紅外光的徵兆，並產生具有紋理感的眼溫綠色圖像。" />
   <xtagGrammar adjunctNoun="對" />
  </object>
  <object Name="Vinewood Sap Mask" Load="Merge">
-  <part Name="Render" DisplayName="藤木樹液面具" />
+  <part Name="Render" DisplayName="藤木樹液面具(Vinewood Sap Mask)" />
   <part Name="Description" Short="一個折疊的麻布三角形小袋浸透了葡萄木樹脂，用以吸收有害蒸氣。" />
  </object>
  <object Name="Gas Mask" Load="Merge">
-  <part Name="Render" DisplayName="防毒面具" />
+  <part Name="Render" DisplayName="防毒面具(Gas Mask)" />
   <part Name="Description" Short="一個耐用的塑膠面具配備了簡單的濾網，以防禦有害氣體。" />
  </object>
  <object Name="Telescopic Monocle" Load="Merge">
-  <part Name="Render" DisplayName="伸縮單片眼鏡" />
+  <part Name="Render" DisplayName="伸縮單片眼鏡(Telescopic Monocle)" />
   <part Name="Description" Short="彎曲的玻璃蓋住了系列同心黃銅管中最窄的一個。最寬的一個配有皮革頭帶。" />
   <part Name="Toolbox" BehaviorDescription="賦予鑑定神器時的加成，效果等同於你的智力值增加了 5。" NameForStatus="Magnification" />
  </object>
@@ -1753,7 +1753,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="加速化的夢幻物質膨脹至潮汐之力，並使圓環的薄膜帶電。它散發出大理石般的煙霧。" />
  </object>
  <object Name="Dazzle Cheek" Load="Merge">
-  <part Name="Render" DisplayName="閃耀頰" />
+  <part Name="Render" DisplayName="閃耀頰(Dazzle Cheek)" />
   <part Name="Description" Short="幾何圖形在面具的水晶二極體上游動。它的表情呈現出一種催眠般的微笑。" />
   <part Name="EquipStatBoost" NameForStatus="眩目偽裝系統" />
   <part Name="AddsRep" NameForStatus="催眠產生器" />
@@ -1772,16 +1772,16 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{m-M sequence|beaded}} 手鍊" />
  </object>
  <object Name="Blood-stained neck-ring" Load="Merge">
-  <part Name="Render" DisplayName="頸環" />
+  <part Name="Render" DisplayName="頸環(Blood-stained neck-ring)" />
   <part Name="Description" Short="一根寬大的銅製管線充當了臨時護喉。上面濺灑著蠕蟲之血與海鏽的斑點。" />
  </object>
  <object Name="Compass Bracelet" Load="Merge">
-  <part Name="Render" DisplayName="指南針手鐲" />
+  <part Name="Render" DisplayName="指南針手鐲(Compass Bracelet)" />
   <part Name="Description" Short="一個玻璃透鏡封住了磁化針，位於皮革腕帶內部。" />
   <part Name="NavigationBonus" NameForStatus="指南針" />
  </object>
  <object Name="Wrist Fan" Load="Merge">
-  <part Name="Render" DisplayName="腕扇" />
+  <part Name="Render" DisplayName="腕扇(Wrist Fan)" />
   <part Name="Description" Short="微型翼型葉片在圓形面上旋轉，吹出輕柔的氣流。" />
   <part Name="PartsGas" NameForStatus="RotaryMotor" />
  </object>
@@ -1808,26 +1808,26 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="手鐲扣環上有一個鮮豔的鈷藍色鈕扣。&#xA;「你認為這是真正的 =name= 嗎？沒錯，就是它。」" />
  </object>
  <object Name="Force Bracelet" Load="Merge">
-  <part Name="Render" DisplayName="力場手鐲" />
+  <part Name="Render" DisplayName="力場手鐲(Force Bracelet)" />
   <part Name="Description" Short="一個小的六角形 開關 位於不加修飾的鉻合金腕帶上。" />
  </object>
  <object Name="Wristcalc" Load="Merge">
-  <part Name="Render" DisplayName="腕部計算器" />
+  <part Name="Render" DisplayName="腕部計算器(Wristcalc)" />
   <part Name="Description" Short="二極體透過環繞金屬鏈條的弧形玻璃大氣，發出青藍色的光芒。" />
   <part Name="Toolbox" BehaviorDescription="裝備並通電後，此物品能提供鑑定神器時的加成，效果等同於你的智力值增加了 2。" NameForStatus="資料庫" />
   <part Name="ActiveLightSource" NameForStatus="畫面" />
  </object>
  <object Name="Precinct Navigator" Load="Merge">
-  <part Name="Render" DisplayName="區域導航員" />
+  <part Name="Render" DisplayName="區域導航員(Precinct Navigator)" />
   <part Name="Description" Short="玻璃月亮上繪有網格線和一個紅點，簡單的矩形描繪著曾經井然有序、如今卻像扭曲的根系般穿透時空的鉻合金街道。" />
   <part Name="NavigationBonus" NameForStatus="導航系統" />
  </object>
  <object Name="Homoelectric Wrist Warmer" Load="Merge">
-  <part Name="Render" DisplayName="同電腕套" />
+  <part Name="Render" DisplayName="同電腕套(Homoelectric Wrist Warmer)" />
   <part Name="Description" Short="一件針織袖套透過接觸靜電取暖。" />
  </object>
  <object Name="Slip Ring" Load="Merge">
-  <part Name="Render" DisplayName="滑動環" />
+  <part Name="Render" DisplayName="滑動環(Slip Ring)" />
   <part Name="Description" Short="滑溜的油脂塗抹在金屬圓環表面呈六角形排列的孔隙上。有一個用於補充潤滑劑的推帽。" />
  </object>
  <object Name="Displacer Bracelet" Load="Merge">
@@ -1835,7 +1835,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="波動的象形文字刻在這枚閃亮金屬圓環的內表面上。" />
  </object>
  <object Name="Ontological Anchor" Load="Merge">
-  <part Name="Render" DisplayName="{{K|本體論錨點}}" />
+  <part Name="Render" DisplayName="{{K|本體論錨點(Ontological Anchor)}}" />
   <part Name="Description" Short="冥界金屬上刻有菱形十二面體蜂巢的二維投影，使其能夠扣合在當地的靈脈線上。" />
  </object>
  <object Name="Tri-Hologram Bracelet" Load="Merge">
@@ -1853,11 +1853,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="對" />
  </object>
  <object Name="Boar-skin gloves" Load="Merge">
-  <part Name="Render" DisplayName="野豬皮手套" />
+  <part Name="Render" DisplayName="野豬皮手套(Boar-skin gloves)" />
   <part Name="Description" Short="由峽谷深處野豬皮製成的手套，由鹽切者佩戴，用以防禦莖部的荊棘。" />
  </object>
  <object Name="Leather Gloves" Load="Merge">
-  <part Name="Render" DisplayName="皮革手套" />
+  <part Name="Render" DisplayName="皮革手套(Leather Gloves)" />
   <part Name="Description" Short="一位第一百代的峽谷探險者將山羊皮切割成骨手形狀的模型，並將其嵌在他們 工作坊 那面古老的石灰牆上。" />
  </object>
  <object Name="Steel Gauntlets" Load="Merge">
@@ -1865,7 +1865,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="灑滿鹽粉的鋼鱗環繞著手指與手腕，形成金屬外骨骼。" />
  </object>
  <object Name="Ulnar Stimulators" Load="Merge">
-  <part Name="Render" DisplayName="尺側刺激器" />
+  <part Name="Render" DisplayName="尺側刺激器(Ulnar Stimulators)" />
   <part Name="Description" Short="緊貼皮膚的導電網狀手套讓雙手進入高效運作狀態。" />
  </object>
  <object Name="Ape Fur Gloves" Load="Merge">
@@ -1877,7 +1877,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="從橡膠洞穴中撈取出的阿科諾特所稱之為「黑色拉伸」的污垢物質，並已根據手型進行裁剪。" />
  </object>
  <object Name="Chain Gauntlets" Load="Merge">
-  <part Name="Render" DisplayName="鎖鏈手套" />
+  <part Name="Render" DisplayName="鎖鏈手套(Chain Gauntlets)" />
   <part Name="Description" Short="皮革手套由細心捲曲成數百個鏈環的擠壓金屬絲加固而成。" />
  </object>
  <object Name="Carbide Gauntlets" Load="Merge">
@@ -1933,7 +1933,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="對" />
  </object>
  <object Name="Leather Moccasins" Load="Merge">
-  <part Name="Render" DisplayName="皮革莫卡辛鞋" />
+  <part Name="Render" DisplayName="皮革莫卡辛鞋(Leather Moccasins)" />
   <part Name="Description" Short="野豬皮鞋面上有輕微的裂縫，在風蝕石英中閃爍著微光。" />
  </object>
  <object Name="Sandals" Load="Merge">
@@ -1945,20 +1945,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="鱗片像石製長矛一樣排列在鞋圍周圍。光線從琺瑯光澤上反射出來。" />
  </object>
  <object Name="Leather Boots" Load="Merge">
-  <part Name="Render" DisplayName="皮革靴子" />
+  <part Name="Render" DisplayName="皮革靴子(Leather Boots)" />
   <part Name="Description" Short="一條從地底運算核心中撈出的金屬線，裝飾在死野豬皮製成的鞋尾上。" />
  </object>
  <object Name="Magnetized Boots" Load="Merge">
-  <part Name="Render" DisplayName="磁力靴" />
+  <part Name="Render" DisplayName="磁力靴(Magnetized Boots)" />
   <part Name="Description" Short="從靴子的邊緣到鞋跟，在墨跡斑駁的靴底之下，一片薄薄的磁化鎳板將穿戴者強行焊接在鐵質壤土上。" />
   <part Name="SaveModifier" NameForStatus="魔力鞋墊" />
  </object>
  <object Name="Sandals of the River-Wives" Load="Merge">
-  <part Name="Render" DisplayName="河妻涼鞋" />
+  <part Name="Render" DisplayName="河妻涼鞋(Sandals of the River-Wives)" />
   <part Name="Description" Short="一枚峽谷珍珠固定著涼鞋帶，上面繡有湍流寧芙的融合意象。如同冰川流動本身，對 Calypso 的崇拜隨著 mystai 穿過破碎的蜂巢結構，並從橄欖山下的頁岩裂隙中進入。在那裡，它分裂成許多名字之妻的神祕事蹟，淡水記憶變得比其平滑的起源表面更加多面。" />
  </object>
  <object Name="Chain Boots" Load="Merge">
-  <part Name="Render" DisplayName="鎖鏈靴" />
+  <part Name="Render" DisplayName="鎖鏈靴(Chain Boots)" />
   <part Name="Description" Short="皮革靴子由細心捲曲成數百個鏈環的擠壓金屬絲加固。" />
  </object>
  <object Name="Steel Boots" Load="Merge">
@@ -1974,12 +1974,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="帶有缺口的摺疊金屬以暗藍色環繞著一雙湖中捕獲的 靴子。" />
  </object>
  <object Name="Spring Boots" Load="Merge">
-  <part Name="Render" DisplayName="躍動靴" />
+  <part Name="Render" DisplayName="躍動靴(Spring Boots)" />
   <part Name="Description" Short="某位聰明的修補匠在每隻靴子周圍融合了彈簧拉力腱，以模仿大型奔跑鳥類的步態。" />
   <part Name="RulesDescription" Text="只要你穿戴此物品至少 100 回合，你的衝刺速度將提升至移動速度的三倍。" />
  </object>
  <object Name="Grease Boots" Load="Merge">
-  <part Name="Render" DisplayName="塗油鋼靴" />
+  <part Name="Render" DisplayName="塗油鋼靴(Grease Boots)" />
   <part Name="Description" Short="帶有撬痕的鋼帶被鉚接在一雙褶皺的野豬 皮革靴子 上。它們的鞋底塗抹了從食者墳墓液壓機上刮下的滑動蠟。" />
  </object>
  <object Name="Plastifer Sneakers" Load="Merge">
@@ -1987,7 +1987,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一對被氣體捕捉的泡沫在受壓時會瞬間變硬。它們的喀斯特表面佈滿了千禧年留下的彩色磨損以及其產生的化學反應；這種材料已衝破了預期壽命的外圈，進入了未知的虛空。" />
  </object>
  <object Name="Yeshyrskin Slippers" Load="Merge">
-  <part Name="Render" DisplayName="耶希爾皮拖鞋" />
+  <part Name="Render" DisplayName="耶希爾皮拖鞋(Yeshyrskin Slippers)" />
   <part Name="Description" Short="銀線從幽靈般的 yeshyr 身上緊勒下一片羽毛狀的皮膚，牠們是在 Odrum 北邊的遺跡果園中獵捕的。這些皮膚由一顆冒煙的珍珠固定。" />
  </object>
  <object Name="Fullerite Boots" Load="Merge">
@@ -1995,7 +1995,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="焊接的陳舊黃昏帶狀物束縛著腿部，卻像礦石般讓穿戴者沉重地貼向地面。" />
  </object>
  <object Name="Step Sowers" Load="Merge">
-  <part Name="Render" DisplayName="踏步播種者" />
+  <part Name="Render" DisplayName="踏步播種者(Step Sowers)" />
   <part Name="Description" Short="腳踝由皮革帶和金箔扣環束緊；碎裂的植物物質弄髒了鞋底。" />
  </object>
  <object Name="Rocket Skates" Load="Merge">
@@ -2022,7 +2022,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="萬花筒般的格子紋理裝飾著舌頭與鞋面。在後跟處，一個二極體方塊顯示著變幻莫測的牆壁影像。" />
  </object>
  <object Name="Anti-Gravity Boots" Load="Merge">
-  <part Name="Render" DisplayName="{{K|反重力靴子}}" />
+  <part Name="Render" DisplayName="{{K|反重力靴子(Anti-Gravity Boots)}}" />
   <part Name="Description" Short="鞋底的原始金屬條受玻色子線圈磁化，產生連續的負質量氣泡帶，將穿戴者向上排斥。" />
   <part Name="MechanicalWings" NameForStatus="反重力系統" />
  </object>
@@ -2055,7 +2055,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="色彩在發光粉塵的微粒周圍旋轉。" />
  </object>
  <object Name="Floating Glowsphere" Load="Merge">
-  <part Name="Render" DisplayName="漂浮的 {{Y|發光球體}}" />
+  <part Name="Render" DisplayName="漂浮的 {{Y|發光球體(Glowsphere)}}" />
   <part Name="Description" Short="一顆磷光的蛋白石狀物躺在手掌中，散發著千年前吸收的極光之光。它以超自然的方式漂浮著。" />
  </object>
  <object Name="Quantum Mote" Load="Merge">
@@ -2064,7 +2064,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="SaveModifier" NameForStatus="機率場" />
  </object>
  <object Name="Point-Defense Drone" Load="Merge">
-  <part Name="Render" DisplayName="防禦無人機" />
+  <part Name="Render" DisplayName="防禦無人機(Point-Defense Drone)" />
   <part Name="Description" Short="巨蛙高聳的身軀靜止在和平之中，裝飾得如同皮膚神廟一般。=pronouns.Possessive= 肩膀上垂掛著各種價值的柔軟布料與飾品；=pronouns.subjective= 完全不在意是否將它們整理或分開。" />
  </object>
  <object Name="ProjectilePointDefenseLaser" Load="Merge">
@@ -2114,11 +2114,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="由頁岩粉色、碎蝸牛與閃爍大理石構成的尖塔圍繞著零點旋轉，在礦物虹彩中模糊成一片色彩。" />
  </object>
  <object Name="Wooden Buckler" Load="Merge">
-  <part Name="Render" DisplayName="木盾" />
+  <part Name="Render" DisplayName="木盾(Wooden Buckler)" />
   <part Name="Description" Short="一個刻有丘陵氏族符文的犬刺圓輪，透過皮革帶固定在手臂上。" />
  </object>
  <object Name="Iron Buckler" Load="Merge">
-  <part Name="Render" DisplayName="鐵圓盾" />
+  <part Name="Render" DisplayName="鐵圓盾(Iron Buckler)" />
   <part Name="Description" Short="一片由開採鐵製成的紅暈面頰，被鍛造成用於手臂防禦的輪盤。" />
  </object>
  <object Name="Steel Buckler" Load="Merge">
@@ -2146,11 +2146,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="高爐吸取了行星的潮汐能量，將碳加熱至太陽般的溫度，並將其注入六角形的 黴菌 中。用於取出鑄件的翡翠鉗使釩——那抹綠光——霧化並排入歧管中，使金屬變得不完美，並賦予了它特有的色調。" />
  </object>
  <object Name="Clay Pot" Load="Merge">
-  <part Name="Render" DisplayName="陶罐" />
+  <part Name="Render" DisplayName="陶罐(Clay Pot)" />
   <part Name="Description" Short="一個在沼澤爐中燒製的 Svy 泥土陶罐，捕捉了幾把來自土壤之海的泥土，並將其封存在泡泡世界中。" />
  </object>
  <object Name="Tread Guard" Load="Merge">
-  <part Name="Render" DisplayName="踏步守衛" />
+  <part Name="Render" DisplayName="踏步守衛(Tread Guard)" />
   <part Name="Description" Short="金屬框架安裝在履帶上，以防止輪胎被碎屑卡住。" />
  </object>
  <object Name="Stopsvaalinn" Load="Merge">
@@ -2167,7 +2167,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="BarathrumiteSafetyBand" Load="Merge">
-  <part Name="Render" DisplayName="生命迴圈" />
+  <part Name="Render" DisplayName="生命迴圈(BarathrumiteSafetyBand)" />
   <part Name="Description" Short="每個閃亮的鉻合金段上都淺刻著一個不同的「生命」符文。" />
  </object>
  <object Name="SlogTrophy" Load="Merge">
@@ -2193,7 +2193,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="這塊黑色金屬板已被磨得光亮，原本可能裝飾在其啞光表面上的任何符號都已消失不見。" />
  </object>
  <object Name="ScrapCape" Load="Merge">
-  <part Name="Render" DisplayName="廢料斗篷" />
+  <part Name="Render" DisplayName="廢料斗篷(ScrapCape)" />
   <part Name="Description" Short="這件斗篷由第 29 層深處的廢物編織而成；千年的歷史如今披掛在臀部上。" />
  </object>
  <object Name="n-Pointed Asterisk" Load="Merge">
@@ -2211,7 +2211,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="TakenAccomplishment" Text="你雙手緊握著 =this.refname= 的黑色玻璃。" Hagiograph="Amaranthine =name=! 在由 =player.possessive= 夢境物質所鑄就的神王面前畏縮吧，那位熊著黑玻璃的存在！" Gospel="當在 恰庫恰(Kyakukya) 附近的 叢林 漫遊時，=name= 夢見 =player.subjective= 環繞著一顆幽暗之星，並在其巨大的吸積盤中堆疊出自我的組成基石。從那以後，=name= 便隨身攜帶一個無星的三角稜鏡。" />
  </object>
  <object Name="TauChime" Load="Merge">
-  <part Name="Render" DisplayName="靜止水晶鈴" />
+  <part Name="Render" DisplayName="靜止水晶鈴(TauChime)" />
   <part Name="Description" Short="尖銳的點被鑲嵌著明亮璀璨的紫水晶與藍寶石。色彩依舊存在，但在其消逝的光芒中燃燒成石楠色。鐘聲沉重而靜止。" />
  </object>
  <object Name="TauHeadpiece" Load="Merge">
@@ -2280,7 +2280,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="真實" />
  </object>
  <object Name="Repulsive Device" Load="Merge">
-  <part Name="Render" DisplayName="{{M|排斥裝置}}" />
+  <part Name="Render" DisplayName="{{M|排斥裝置(Repulsive Device)}}" />
   <part Name="Description" Short="雖然其大小與重量與人類嬰兒相仿，但這個閃亮的黑色裝置形狀更像是從子宮中過早剝離的胎兒。它的表面光滑且溫暖，在漆黑的皮膚下某處有著微弱的脈動在呼吸。尾端有一個鑲嵌著鉤牙的孔口，永遠在尋找一個它從未找到的錨點。" />
  </object>
  <object Name="Otherpearl" Load="Merge">
@@ -2599,19 +2599,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一塊從發光的紡錘上崩落的碎片，因墜落地球而帶有磁性，正繞著其選定的守護者旋轉。" />
  </object>
  <object Name="Albino Ape Pelt" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|白化猿皮}}" />
+  <part Name="Render" DisplayName="{{Y|白化猿皮(Albino Ape Pelt)}}" />
   <part Name="Description" Short="雪白的精細猿毛梯形物，因其美麗與保暖性而備受珍視。" />
  </object>
  <object Name="Ogre Ape Pelt" Load="Merge">
-  <part Name="Render" DisplayName="{{W|食人猿皮毛}}" />
+  <part Name="Render" DisplayName="{{W|食人猿皮毛(Ogre Ape Pelt)}}" />
   <part Name="Description" Short="一墊粗糙的金髮上濺灑著兩種色調的血跡。" />
  </object>
  <object Name="EyelessCrabShell" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|無眼蟹外殼}}" />
+  <part Name="Render" DisplayName="{{Y|無眼蟹外殼(EyelessCrabShell)}}" />
   <part Name="Description" Short="珍珠般的甲殼環繞著手spur，可用於偏轉近戰攻擊。" />
  </object>
  <object Name="SalthopperMandible" Load="Merge">
-  <part Name="Render" DisplayName="{{G|跳鹽蟲下顎}}" />
+  <part Name="Render" DisplayName="{{G|跳鹽蟲下顎(SalthopperMandible)}}" />
   <part Name="Description" Short="一根由漂白幾丁質製成的鋸齒狀刃棒上，仍黏附著死去的跳鹽蟲最後一餐的血肉殘渣。" />
  </object>
  <object Name="Corpse" Load="Merge">
@@ -2690,7 +2690,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="屠殺的力量重新排列了身體的部分。你思考著「重新排列」在不同語境下的含義：棋盤上的棋子、國王殿堂中受寵的朝臣，以及身體上的部位。" />
  </object>
  <object Name="Ancient Corpse" Load="Merge">
-  <part Name="Render" DisplayName="木乃伊屍體" />
+  <part Name="Render" DisplayName="木乃伊屍體(Ancient Corpse)" />
   <part Name="Food" Message="嚐起來像是虛無。" />
   <part Name="Description" Short="是誰保存了這具殘骸的皮囊與內臟？是 莫格拉伊(Moghra'yi) 的乾燥空氣嗎？還是人類儀式那種溺愛般的執著？這重要嗎？" />
  </object>
@@ -2705,7 +2705,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="這裡躺著一位類人生物，他從未想過自己的軀幹會庇護著微小蕈類的鰓部塵埃，但他本該料到的。" />
  </object>
  <object Name="TarBones" Load="Merge">
-  <part Name="Render" DisplayName="{{K|佈滿焦油的骨骸}}" />
+  <part Name="Render" DisplayName="{{K|佈滿焦油的骨骸(TarBones)}}" />
   <part Name="Description" Short="組織在生長時便已礦物化，隨後從生命之樹上折斷，成為生命的器物。接著它被燉煮在燒焦的泥炭中，轉化為硬質的黏稠物。" />
   <part Name="Food" Message="對你的口味來說太黏糊了。" />
  </object>
@@ -2719,7 +2719,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="組織在生長過程中礦物化，隨後從生命之樹上斷裂，成為生命的遺物。" />
  </object>
  <object Name="ExileCorpse" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|人類遺骸}}" />
+  <part Name="Render" DisplayName="{{Y|人類遺骸(ExileCorpse)}}" />
   <part Name="Food" Message="嚐起來濕軟且憂鬱。" />
   <part Name="Description" Short="從一池珊瑚樹脂中探出的，是一名成年人類未漂白的骨骸。其殘骸已播種出一片異世界的菇林。" />
  </object>
@@ -2728,11 +2728,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="在一叢鹽莖中，探出了某位成年人類未經漂白的骨骸。" />
  </object>
  <object Name="CaverCorpse" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|遠古骨骸}}" />
+  <part Name="Render" DisplayName="{{Y|遠古骨骸(CaverCorpse)}}" />
   <part Name="Food" Message="脆弱的骨片碎裂了。" />
  </object>
  <object Name="SkrefCorpse" Load="Merge">
-  <part Name="Render" DisplayName="扁平的殘骸" />
+  <part Name="Render" DisplayName="扁平的殘骸(SkrefCorpse)" />
   <part Name="Food" Message="肉餅很嫩。" />
   <part Name="Description" Short="這些看起來是某個虛榮的人類的扁平的殘骸。" />
  </object>
@@ -2742,37 +2742,37 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="BiologicalIndexer" Load="Merge">
   <part Name="Description" Short="一個微小的石墨烯陣列，能針對有機生命形式的儲存庫處理光學數據。" />
-  <part Name="Render" DisplayName="{{Y|光學生物掃描儀}}" />
+  <part Name="Render" DisplayName="{{Y|光學生物掃描儀(BiologicalIndexer)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以得知生物型生物的精確生命值、護甲值與閃避值。" />
  </object>
  <object Name="TechnologicalIndexer" Load="Merge">
   <part Name="Description" Short="一個微小的石墨烯陣列，能針對機器生命與人工製品的資料庫處理光學數據。" />
-  <part Name="Render" DisplayName="{{Y|光學技術掃描儀}}" />
+  <part Name="Render" DisplayName="{{Y|光學技術掃描儀(TechnologicalIndexer)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以獲取機器生物精確的生命值、護甲與閃避值，並能自動辨識神器。" />
  </object>
  <object Name="ForceModulator" Load="Merge">
   <part Name="Description" Short="你最小微部分的發射頻率已與標準的力量發射波段同步。" />
-  <part Name="Render" DisplayName="{{Y|力場調變器}}" />
+  <part Name="Render" DisplayName="{{Y|力場調變器(ForceModulator)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以穿過力場。" />
  </object>
  <object Name="CherubicVisage" Load="Merge">
   <part Name="Description" Short="肉體的指令支配著臉部骨骼結構與豐滿組織質量的重塑，使其呈現出柔軟且天使般的容貌。透過這種奇術，居住在崩塌冰架懷抱中的古老伊布爾（Ibul）人民，在燈火通明的街道上漫步，帶著紅潤雙頰的漠然。" />
-  <part Name="Render" DisplayName="{{Y|天使般的容貌}}" />
+  <part Name="Render" DisplayName="{{Y|天使般的容貌(CherubicVisage)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+1 心智" />
  </object>
  <object Name="ElectromagneticSensor" Load="Merge">
   <part Name="Description" Short="此感測器可觀測到由機器族群引起的電磁場微小扭曲。" />
-  <part Name="Render" DisplayName="{{Y|電磁感應器}}" />
+  <part Name="Render" DisplayName="{{Y|電磁感應器(ElectromagneticSensor)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你不需要親眼看到，就能偵測到附近的 機器人。" />
  </object>
  <object Name="NavigationSystem" Load="Merge">
   <part Name="Description" Short="地理社交位置數據繪製在玻璃月牙上，並以取代其位置、在土地上移動的活生生壤土之圖樣作為底襯。" />
-  <part Name="Render" DisplayName="{{Y|導航系統}}" />
+  <part Name="Render" DisplayName="{{Y|導航系統(NavigationSystem)}}" />
   <part Name="MultiNavigationBonus" NameForStatus="導航模組" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你在 遺跡 中迷路的機率降低了 30%。&#xA;你在其他地形中迷路的機率降低了 10%。&#xA;這些效果不會與 指南針手鐲 的加成疊加。" />
  </object>
  <object Name="TibularHydrojets" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|管狀噴射推進器}}" />
+  <part Name="Render" DisplayName="{{Y|管狀噴射推進器(TibularHydrojets)}}" />
   <part Name="Description" Short="平面滑槽傳導肌電力量，並推動身體穿過水流。" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+200 游泳速度" />
  </object>
@@ -2789,7 +2789,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="DermalInsulation" Load="Merge">
   <part Name="Description" Short="枕頭般的玻璃纖維鱗片在支撐軸周圍緊繃。一旦安裝完成，它們會在皮膚下展開並膨脹。" />
-  <part Name="Render" DisplayName="{{Y|真皮隔熱層}}" />
+  <part Name="Render" DisplayName="{{Y|真皮隔熱層(DermalInsulation)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+6 抗熱&#xA;+6 抗寒&#xA;+6 抗電&#xA;+6 抗酸" />
  </object>
  <object Name="NightVision" Load="Merge">
@@ -2799,12 +2799,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="HyperElasticAnkleTendons" Load="Merge">
   <part Name="Description" Short="水凝膠條狀繩索被捆綁在一起。" />
-  <part Name="Render" DisplayName="{{Y|超彈性腳踝肌腱}}" />
+  <part Name="Render" DisplayName="{{Y|超彈性腳踝肌腱(HyperElasticAnkleTendons)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+6 移動速度" />
  </object>
  <object Name="ParabolicMuscularSubroutine" Load="Merge">
   <part Name="Description" Short="神經束沿著拋物線滑尺排列，用以刺激手臂的肌肉。" />
-  <part Name="Render" DisplayName="{{Y|拋物線肌肉子程序}}" />
+  <part Name="Render" DisplayName="{{Y|拋物線肌肉子程序(ParabolicMuscularSubroutine)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的投擲距離增加 2。&#xA;當你向位於你投擲距離內部 的目標投擲物品時，你的投擲準確度為 100%。" />
  </object>
  <object Name="TranslucentSkin" Load="Merge">
@@ -2814,71 +2814,71 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="StabilizerArmLocks" Load="Merge">
   <part Name="Description" Short="鉻製扣環固定住手臂關節，以模擬死寂般的無生命狀態。" />
-  <part Name="Render" DisplayName="{{Y|穩定器手臂鎖}}" />
+  <part Name="Render" DisplayName="{{Y|穩定器手臂鎖(StabilizerArmLocks)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="為了判定你的遠程攻擊準確度，你的敏捷值將被視為高出 6 點。" />
  </object>
  <object Name="RapidReleaseFingerFlexors" Load="Merge">
   <part Name="Description" Short="神經充電組織套管傳遞意志的速度，超越了細胞生物學所能達到的極限。" />
-  <part Name="Render" DisplayName="{{Y|快速釋放手指屈肌}}" />
+  <part Name="Render" DisplayName="{{Y|快速釋放手指屈肌(RapidReleaseFingerFlexors)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的手槍射速加快了 25%。" />
  </object>
  <object Name="CarbideHandBones" Load="Merge">
   <part Name="Description" Short="藍色碳化物僅會造成凹痕，而脆弱的膠原蛋白則會被砸得粉碎。" />
-  <part Name="Render" DisplayName="{{Y|碳化物手骨}}" />
+  <part Name="Render" DisplayName="{{Y|碳化物手骨(CarbideHandBones)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的拳頭造成 2d3 傷害。" />
  </object>
  <object Name="CarbideFist" Load="Merge">
-  <part Name="Render" DisplayName="{{K|碳化物拳頭}}" />
+  <part Name="Render" DisplayName="{{K|碳化物拳頭(CarbideFist)}}" />
   <part Name="Description" Short="鈷藍色金屬製成的骸骨之手仍處於暫時的無生命狀態中。" />
  </object>
  <object Name="Pentaceps" Load="Merge">
   <part Name="Description" Short="四組膝關節伸肌獲得了合成第五組的協助。" />
-  <part Name="Render" DisplayName="{{Y|五頭菌}}" />
+  <part Name="Render" DisplayName="{{Y|五頭菌(Pentaceps)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的衝鋒範圍增加 4 格。" />
  </object>
  <object Name="CommunicationsInterlock" Load="Merge">
   <part Name="Description" Short="透過多叉棍狀工具與密碼盒，使用者可以與所有可用的機器人接口進行介面連接。" />
-  <part Name="Render" DisplayName="{{Y|通訊鎖定裝置}}" />
+  <part Name="Render" DisplayName="{{Y|通訊鎖定裝置(CommunicationsInterlock)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你斥責 機器人，彷彿你的等級高出 5 級一般。" />
  </object>
  <object Name="InflatableAxons" Load="Merge">
   <part Name="Description" Short="奈米級支架使那纖細的腦絲膨脹，進而限制意志的傳導。" />
-  <part Name="Render" DisplayName="{{Y|充氣軸突}}" />
+  <part Name="Render" DisplayName="{{Y|充氣軸突(InflatableAxons)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="已啟動。冷卻時間 100。&#xA;你獲得 +40 敏捷，持續 10 回合，隨後你會變得遲鈍，持續 10 回合（-10 敏捷）。" />
  </object>
  <object Name="NocturnalApex" Load="Merge">
   <part Name="Description" Short="聖城的居民，其代謝節律與他們的晝夜儀式同步：日間，在溝槽狀神廟的陰影下祈禱休憩；夜間，則在有毒的樹林中徘徊尋找祭品。" />
-  <part Name="Render" DisplayName="{{Y|夜行性頂端生物}}" />
+  <part Name="Render" DisplayName="{{Y|夜行性頂端生物(NocturnalApex)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="白天時自然治療速度 +10%。&#xA;每晚一次，你可以進行「潛行」，在 100 回合內獲得 +6 敏捷與 +10 移動速度。" />
  </object>
  <object Name="AirCurrentMicrosensor" Load="Merge">
   <part Name="Description" Short="在煙騰神海附近，海水撞擊日岩並噴發出惡臭蒸氣，火山洞穴構成了一座迷宮，形成了一個視覺效用減弱的無維度空間。對於深淵之子而言，新的感官在此處茁壯成長。" />
-  <part Name="Render" DisplayName="{{Y|氣流微型感測器}}" />
+  <part Name="Render" DisplayName="{{Y|氣流微型感測器(AirCurrentMicrosensor)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="樓梯和其他上下地圖轉換點都會向你顯示。" />
  </object>
  <object Name="PneumaticPistons" Load="Merge">
   <part Name="Description" Short="壓縮氣體驅動活塞桿進入塗滿石墨粉的肌肉組織中，並讓跳躍者騰空而起。" />
-  <part Name="Render" DisplayName="{{Y|氣動活塞}}" />
+  <part Name="Render" DisplayName="{{Y|氣動活塞(PneumaticPistons)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的跳躍距離增加 4 格。" />
  </object>
  <object Name="ReactiveCranialPlating" Load="Merge">
   <part Name="Description" Short="碳化物板被模塑成頭骨形狀，並與受撞擊時會膨脹的泡沫合金結合。" />
-  <part Name="Render" DisplayName="{{Y|反應式顱骨裝甲}}" />
+  <part Name="Render" DisplayName="{{Y|反應式顱骨裝甲(ReactiveCranialPlating)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你不會因動能效果而陷入眩暈或昏迷狀態。" />
  </object>
  <object Name="PhaseHarmonicModulator" Load="Merge">
   <part Name="Description" Short="倒置的頂部平衡了裝在仿生圓盤中的控制單元的微觀結構。內部，現實的相位被疊加並向外投影。" />
-  <part Name="Render" DisplayName="{{Y|相位諧波調變器}}" />
+  <part Name="Render" DisplayName="{{Y|相位諧波調變器(PhaseHarmonicModulator)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以與同相與異相的物體及生物進行互動。" />
  </object>
  <object Name="FireSuppressionSystem" Load="Merge">
   <part Name="Description" Short="熱活化凝膠儲存在仿生膠囊中，並透過皮下橡膠軟管進行分配。" />
-  <part Name="Render" DisplayName="{{Y|滅火系統}}" />
+  <part Name="Render" DisplayName="{{Y|滅火系統(FireSuppressionSystem)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="當你身上著火時，每回合會自動噴射阻燃凝膠。" />
  </object>
  <object Name="AnchorSpikes" Load="Merge">
   <part Name="Description" Short="尖端鑲嵌著冰鋼（crysteel）的尖刺被縫合在骨骼上，當肌肉緊繃時會穿透皮膚與地面。" />
-  <part Name="Render" DisplayName="{{Y|錨釘}}" />
+  <part Name="Render" DisplayName="{{Y|錨釘(AnchorSpikes)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你不會被物理手段強迫移動。" />
  </object>
  <object Name="SkinGlitter2" Load="Merge">
@@ -2899,12 +2899,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="GroundingShunts" Load="Merge">
   <part Name="Description" Short="碳纖維從兩個皮膚電傳導接觸墊中射出。" />
-  <part Name="Render" DisplayName="{{Y|接地分流器}}" />
+  <part Name="Render" DisplayName="{{Y|接地分流器(GroundingShunts)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+50 電阻抗性" />
  </object>
  <object Name="DermalPlating" Load="Merge">
   <part Name="Description" Short="薄片狀碳化物的交織板塊組成了一層皮下薄膜。" />
-  <part Name="Render" DisplayName="{{Y|真皮裝甲}}" />
+  <part Name="Render" DisplayName="{{Y|真皮裝甲(DermalPlating)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+1 AV" />
  </object>
  <object Name="TransparentSkin" Load="Merge">
@@ -2914,12 +2914,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="BionicHands" Load="Merge">
   <part Name="Description" Short="一雙全新的、由石墨烯與中性泡沫（neutrafoam）製成的雙手。其支柱正等待著啟動。" />
-  <part Name="Render" DisplayName="{{Y|仿生手}}" />
+  <part Name="Render" DisplayName="{{Y|仿生手(BionicHands)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+2 敏捷" />
  </object>
  <object Name="BionicArm" Load="Merge">
   <part Name="Description" Short="一隻完全由石墨烯與中性泡沫（neutrafoam）製成的新手臂。它的支柱正等待著啟動。" />
-  <part Name="Render" DisplayName="{{Y|仿生手臂}}" />
+  <part Name="Render" DisplayName="{{Y|仿生手臂(BionicArm)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+2 力量" />
  </object>
  <object Name="UltraElasticAnkleTendons" Load="Merge">
@@ -2939,7 +2939,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="BionicHeart" Load="Merge">
   <part Name="Description" Short="一個鉻製裝置，它以平滑的波動而非屍骸生長肌肉組織那種瘋狂的跳動來泵送血液。" />
-  <part Name="Render" DisplayName="{{Y|仿生心臟}}" />
+  <part Name="Render" DisplayName="{{Y|仿生心臟(BionicHeart)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+2 韌性" />
  </object>
  <object Name="GiantHands" Load="Merge">
@@ -2949,33 +2949,33 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="MedassistModule" Load="Merge">
   <part Name="Description" Short="支架與氣動施注器已硬連線至一個智慧控制單元，由其主導將多變染料注入血管中。" />
-  <part Name="Render" DisplayName="{{Y|醫療輔助模組}}" />
+  <part Name="Render" DisplayName="{{Y|醫療輔助模組(MedassistModule)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="減少使用注射器的動作消耗量 80%。&#xA;最多可裝填 8 個注射器，醫療輔助模組 AI 會在適當時機（自行判斷）自動為您使用，且不消耗動作點數。" />
   <part Name="ReduceEnergyCosts" NameForStatus="ManualStentSystem" />
  </object>
  <object Name="PalladiumElectrodeposits" Load="Merge">
   <part Name="Description" Short="從鈀中溶解出的離子粉末促進了運算電流的傳輸。" />
-  <part Name="Render" DisplayName="{{Y|鈀電沉積物}}" />
+  <part Name="Render" DisplayName="{{Y|鈀電沉積物(PalladiumElectrodeposits)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="在本地晶格提供 20 單位的運算能力。&#xA;若植入頭部，+2 智力。" />
  </object>
  <object Name="SecurityInterlock" Load="Merge">
   <part Name="Description" Short="每一種光譜中的每一種波長，皆有其溝槽鍵，能開啟每一道傳送門。" />
-  <part Name="Render" DisplayName="{{Y|安全鎖}}" />
+  <part Name="Render" DisplayName="{{Y|安全鎖(SecurityInterlock)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以解開任何門。" />
  </object>
  <object Name="IntravenousPort" Load="Merge">
   <part Name="Description" Short="三條導尿管從皮膚下方壓印出痕跡。" />
-  <part Name="Render" DisplayName="{{Y|靜脈注射口}}" />
+  <part Name="Render" DisplayName="{{Y|靜脈注射口(IntravenousPort)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="補劑的效果持續時間加倍。" />
  </object>
  <object Name="HighGradeDermalInsulation" Load="Merge">
   <part Name="Description" Short="枕頭般的中性泡沫鱗片在支撐軸周圍緊繃。一旦安裝完成，它們會在皮膚下展開並膨脹。" />
-  <part Name="Render" DisplayName="{{Y|高階真皮絕緣層}}" />
+  <part Name="Render" DisplayName="{{Y|高階真皮絕緣層(HighGradeDermalInsulation)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+9 抗熱&#xA;+9 抗寒&#xA;+9 抗電&#xA;+9 抗酸" />
  </object>
  <object Name="MatterRecompositer" Load="Merge">
   <part Name="Description" Short="這個微型小桶內的通量可以在足夠大的尺度上摺疊空間，將人類軀殼轉移到附近。" />
-  <part Name="Render" DisplayName="{{Y|物質重組器}}" />
+  <part Name="Render" DisplayName="{{Y|物質重組器(MatterRecompositer)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="已啟動。冷卻時間 100。&#xA;你傳送至地圖上一個隨機且已探索過的區域。" />
  </object>
  <object Name="CustomVisage" Load="Merge">
@@ -2985,17 +2985,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="EquipmentRack" Load="Merge">
   <part Name="Description" Short="碳化物安裝桿支撐著一個陀螺儀架，旨在存放額外的行李。" />
-  <part Name="Render" DisplayName="{{Y|裝備架}}" />
+  <part Name="Render" DisplayName="{{Y|裝備架(EquipmentRack)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你獲得一個額外的背部裝備欄位。" />
  </object>
  <object Name="BionicLiver" Load="Merge">
   <part Name="Description" Short="消化膽汁與鹼性物質在玻璃腔室中翻騰，而合成組織則篩選掉生物毒素。" />
-  <part Name="Render" DisplayName="{{Y|仿生肝臟}}" />
+  <part Name="Render" DisplayName="{{Y|仿生肝臟(BionicLiver)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你對毒素與疾病免疫。" />
  </object>
  <object Name="AnomalyFumigator" Load="Merge">
   <part Name="Description" Short="超因果電路將時空結構激發成常向微粒。" />
-  <part Name="Render" DisplayName="{{Y|異常物熏蒸器}}" />
+  <part Name="Render" DisplayName="{{Y|異常物熏蒸器(AnomalyFumigator)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你每回合都會釋放常態氣體雲。" />
  </object>
  <object Name="SingleSkillsoft3" Load="Merge">
@@ -3014,39 +3014,39 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的拳頭造成 2d4+1 點傷害。" />
  </object>
  <object Name="FulleriteFist" Load="Merge">
-  <part Name="Render" DisplayName="{{K|富勒來特拳}}" />
+  <part Name="Render" DisplayName="{{K|富勒來特拳(FulleriteFist)}}" />
   <part Name="Description" Short="漆黑金屬製成的骸骨之手仍懸浮在暫時的死寂狀態中。" />
  </object>
  <object Name="MotorizedTreads" Load="Merge">
   <part Name="Description" Short="三角形履帶纏繞在巨型齒輪的齒尖上以驅動移動。其人類形態已脫離了雙足運動的限制。" />
-  <part Name="Render" DisplayName="{{Y|馬達驅動履帶}}" />
+  <part Name="Render" DisplayName="{{Y|馬達驅動履帶(MotorizedTreads)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+150 移動速度&#xA;+4 強制位移、擊倒與束縛抗性&#xA;你無法穿鞋。&#xA;此植入物無法拆卸。" />
   <part Name="SaveModifier" NameForStatus="DriveTrain" />
  </object>
  <object Name="ReactiveTraumaPlate" Load="Merge">
   <part Name="Description" Short="一片輪廓分明的塑鋼護身板，能吸收衝擊力並分解進入血液中。" />
-  <part Name="Render" DisplayName="{{Y|反應式創傷裝甲}}" />
+  <part Name="Render" DisplayName="{{Y|反應式創傷裝甲(ReactiveTraumaPlate)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="中和一個會造成致命傷害或至少造成你最大生命值 50% 傷害的傷害來源。此植入物會在過程中被毀壞。" />
   <part Name="LifeSaver" LethalMessage="=subject.Name's= =object.name= =object.verb:burst= 向外爆裂，摧毀 =objpronouns.reflexive= 以防止潛在的致命傷害。" MaxHitpointsThresholdMessage="=subject.Name's= =object.name= 向外 =object.verb:burst=，摧毀 =objpronouns.reflexive= 以防止災難性的損害。" NameForStatus="TraumaInterventionSystem" />
  </object>
  <object Name="GunRack" Load="Merge">
   <part Name="Description" Short="背負式的拋光鉻製槍架在雙肩各有一個手槍槽位，或可讓一支步槍置於任選的一側肩膀上。" />
-  <part Name="Render" DisplayName="{{Y|槍架}}" />
+  <part Name="Render" DisplayName="{{Y|槍架(GunRack)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你獲得額外的左側與右側 飛彈 武器欄位。&#xA;你的背部無法裝備裝備。" />
  </object>
  <object Name="OnboardRecoiler" Load="Merge">
   <part Name="Description" Short="一個地理空間核心被裝上了仿生繫繩。" />
-  <part Name="Render" DisplayName="{{Y|車載捲線器}}" />
+  <part Name="Render" DisplayName="{{Y|車載捲線器(OnboardRecoiler)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以將此植入物印上一個位置（冷卻時間 100），並以此為目標進行回彈（冷卻時間 50）。" />
  </object>
  <object Name="MagneticCore" Load="Merge">
   <part Name="Description" Short="層壓金屬被束縛成同心球體，能軟化磁渦流並為近場軌道提供動力。" />
-  <part Name="Render" DisplayName="{{Y|磁核}}" />
+  <part Name="Render" DisplayName="{{Y|磁核(MagneticCore)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你獲得一個額外的「漂浮於附近」裝備欄位。" />
  </object>
  <object Name="Phase-Adaptive Scope" Load="Merge">
   <part Name="Description" Short="一小塊四氙玻璃呈 Q 半徑彎曲，以補償跨維度的視差。" />
-  <part Name="Render" DisplayName="{{Y|相位適應瞄準鏡}}" />
+  <part Name="Render" DisplayName="{{Y|相位適應瞄準鏡(Phase-Adaptive Scope)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="當你發射 飛彈 武器或投擲物品時，你的 投射物 會改變相位以穿過障礙物並擊中目標。" />
  </object>
  <object Name="Schemasoft4" Load="Merge">
@@ -3056,7 +3056,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="PrecisionForceLathe" Load="Merge">
   <part Name="Description" Short="磁屏蔽琴頭將空間保持在動能懸浮狀態，同時一個力紡錘旋轉並將其磨尖成點。" />
-  <part Name="Render" DisplayName="{{Y|精密力矩車床}}" />
+  <part Name="Render" DisplayName="{{Y|精密力矩車床(PrecisionForceLathe)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你在空閒的手部或投擲武器欄位中製造力場小刀。&#xA;如果你投擲一把力場小刀，另一把會立即在你的投擲武器欄位中具現化。&#xA;力場小刀造成 1d8 傷害，其穿透值等於目標的護甲值，並具有 +6 的投擲距離。&#xA;力場小刀在失去與你的接觸或被卸下後會消失。&#xA;如果你安裝了力場調節器植入物，力場小刀可以穿過 力場 進行投擲。&#xA;" />
  </object>
  <object Name="ForceKnife" Load="Merge">
@@ -3066,62 +3066,62 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="GraftedMirrorArm" Load="Merge">
   <part Name="Description" Short="一個塑化肢從肩胛骨分叉而出，並在其生長的雙胞胎肢體上複製從神經傳達至肌肉的指令。" />
-  <part Name="Render" DisplayName="{{Y|嫁接鏡面手臂}}" />
+  <part Name="Render" DisplayName="{{Y|嫁接鏡面手臂(GraftedMirrorArm)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你獲得一個額外的投擲武器欄位。&#xA;當你進行投擲時，會同時從所有投擲武器欄位進行投擲。" />
  </object>
  <object Name="MicromanipulatorArray" Load="Merge">
   <part Name="Description" Short="十幾個骨架與操作器從一個與掌骨融合的金屬支架中向外展開。" />
-  <part Name="Render" DisplayName="{{Y|微操縱器陣列}}" />
+  <part Name="Render" DisplayName="{{Y|微操縱器陣列(MicromanipulatorArray)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你可以進行 修補匠 行為並在戰鬥中修理，消耗一個回合的動作成本。&#xA;將其他 修補匠 技能的動作成本降低 40%。&#xA;提供鑑定神器時的加成，效果等同於你的智力值增加了 8。&#xA;拆解神器時回收碎片機率 +10%。" />
   <part Name="Toolbox" NameForStatus="DiagnosticSensors" />
  </object>
  <object Name="PenetratingRadar" Load="Merge">
   <part Name="Description" Short="皮科相位收發器陣列組合成了一個極其細緻的周遭環境模型。" />
-  <part Name="Render" DisplayName="{{Y|穿透雷達}}" />
+  <part Name="Render" DisplayName="{{Y|穿透雷達(PenetratingRadar)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你在周圍 10 格的半徑範圍內獲得完全視野，僅會被力場和時空異常阻擋。" />
  </object>
  <object Name="BiodynamicPowerPlant" Load="Merge">
   <part Name="Description" Short="微型渦輪機從血液循環及其中的化學反應中汲取血能。" />
-  <part Name="Render" DisplayName="{{Y|生物動力發電廠}}" />
+  <part Name="Render" DisplayName="{{Y|生物動力發電廠(BiodynamicPowerPlant)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="每回合為可使用機載電力系統的裝備提供持續 5000 單位的電量，例如具有 Jacked 模組的物品。" />
  </object>
  <object Name="StasisProjector" Load="Merge">
   <part Name="Description" Short="晶體沿著靜止的角度捲曲。" />
-  <part Name="Render" DisplayName="{{Y|停滯投影儀}}" />
+  <part Name="Render" DisplayName="{{Y|停滯投影儀(StasisProjector)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="已啟動。冷卻時間 100。&#xA;創造最多 6 個連續的靜止場方格，持續約 5 回合。" />
  </object>
  <object Name="HolographicVisage" Load="Merge">
   <part Name="Description" Short="乳液滑過臉頰，雷射光線喚起了空想性錯視的溫暖感。" />
-  <part Name="Render" DisplayName="{{Y|全息面容}}" />
+  <part Name="Render" DisplayName="{{Y|全息面容(HolographicVisage)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="安裝此植入物時，與你選擇的派系聲望 +200。&#xA;你可以啟動此植入物來更換所選的派系。" />
  </object>
  <object Name="OpticalMultiscanner" Load="Merge">
   <part Name="Description" Short="一個微小的石墨烯陣列，根據最終的存在論與現象學帳簿來處理光學數據。" />
-  <part Name="Render" DisplayName="{{Y|光學多功能掃描儀}}" />
+  <part Name="Render" DisplayName="{{Y|光學多功能掃描儀(OpticalMultiscanner)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="您可以得知機器生物、生物以及建築物的精確生命值、護甲值與閃避值。&#xA;您會自動鑑定神器。&#xA;樓梯和其他上下地圖的轉換點對您而言總是透明的。" />
  </object>
  <object Name="SocialCoprocessor" Load="Merge">
   <part Name="Description" Short="在中央處理器周圍，神經移植體附著在負責感受社交溫度的腦葉上。" />
-  <part Name="Render" DisplayName="{{Y|社交協處理器}}" />
+  <part Name="Render" DisplayName="{{Y|社交協處理器(SocialCoprocessor)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="每當你與新生物進行 水之儀式 時，你會獲得額外的 25 聲望。如果你在第一次與某個生物交際後安裝此植入物，下次與該生物交際時會獲得 25 聲望。&#xA;水之儀式 的聲望消耗降低 20%。&#xA;你可以額外感化一名 =proselytizeLimitBonus.things:additional creature=。&#xA;本地晶格的運算能力會提升此植入物的效能。" />
  </object>
  <object Name="StasisEntangler" Load="Merge">
   <part Name="Description" Short="削過的晶面經過矩陣排列與角度調整，將靜謐傳導至活體頂點圖譜之中。" />
-  <part Name="Render" DisplayName="{{Y|停滯糾纏器}}" />
+  <part Name="Render" DisplayName="{{Y|停滯糾纏器(StasisEntangler)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="已啟動。冷卻時間 200。&#xA;你選擇視線範圍內的一個生物。所有其他生物將進入靜止場，持續 15 回合。" />
  </object>
  <object Name="CrysteelHandBones" Load="Merge">
   <part Name="Description" Short="斑駁的冰晶鋼僅會產生凹痕，而脆弱的膠原蛋白則會被砸得粉碎。" />
-  <part Name="Render" DisplayName="{{Y|冰鋼手骨}}" />
+  <part Name="Render" DisplayName="{{Y|冰鋼手骨(CrysteelHandBones)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="你的拳頭造成 3d4 傷害。" />
  </object>
  <object Name="CrysteelFist" Load="Merge">
-  <part Name="Render" DisplayName="{{G|冰鋼拳}}" />
+  <part Name="Render" DisplayName="{{G|冰鋼拳(CrysteelFist)}}" />
   <part Name="Description" Short="一隻斑駁翡翠金屬製成的骸骨之手，懸浮在暫時的死寂之中。" />
  </object>
  <object Name="HighFidelityMatterRecompositer" Load="Merge">
   <part Name="Description" Short="這只微型容器內部的通量，其空間摺疊規模足以將人類軀殼轉移至附近。非線性電路會計算所有可能的結果，並捨棄那些會讓宿主落在目標區域外的選項。" />
-  <part Name="Render" DisplayName="{{Y|高保真物質重組器}}" />
+  <part Name="Render" DisplayName="{{Y|高保真物質重組器(HighFidelityMatterRecompositer)}}" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="已啟動。冷卻時間 50。&#xA;你傳送到地圖上任何已探索過的區域。" />
  </object>
  <object Name="TreeSkillsoft" Load="Merge">
@@ -3134,22 +3134,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="" />
  </object>
  <object Name="CathedraSapphire" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|帶有藍寶石花紋的座艙}}" />
+  <part Name="Render" DisplayName="{{Y|帶有藍寶石花紋的座艙(CathedraSapphire)}}" />
   <part Name="Description" Short="=pronouns.Possessive= 的手指莖在木笛上跳動滑行，而 =pronouns.subjective= 踏著步 在褶皺的 根系 上進行橫向吉格舞。=pronouns.possessive= 冠冕花的花瓣同時變換著色彩，顯得十分愉悅。" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智(Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在周圍區域引發一股衝擊力，將敵人擊退並使其昏迷。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法移除。" />
  </object>
  <object Name="CathedraRuby" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|紅寶石花紋座殿}}" />
+  <part Name="Render" DisplayName="{{Y|紅寶石花紋座殿(CathedraRuby)}}" />
   <part Name="Description" Short="熔渣形成的波浪狀脊線中斷了這座巨大座椅的平面幾何結構，這些傷痕見證了當 Mystai 將雕刻它的紅寶石 巨石 從豬猡般的土地中翻弄出來的那一刻。濺痕與爪印被灼燒且凌亂不堪；轉化的儀式永無止盡。" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍產生了一個熱力感應場。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
  </object>
  <object Name="CathedraWhiteOpal" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|帶有白歐泊鑲嵌的座殿}}" />
+  <part Name="Render" DisplayName="{{Y|帶有白歐泊鑲嵌的座殿(CathedraWhiteOpal)}}" />
   <part Name="Description" Short="無數閃爍的光彩附著在金座浮雕上的赤裸族群身上。他們是那座鍍金山丘的人民，其身體以幾何學允許的所有方式相互交織，從頂峰溢出，沿著捲軸狀的手臂向下延伸，那些手臂曾支撐著大祭司渴求慾望的顫抖肢體。" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在自身周圍釋放出爆發性的 閃爍粉塵。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法拆卸。" />
  </object>
  <object Name="CathedraBlackOpal" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|帶有黑歐泊鑲嵌的座殿}}" />
+  <part Name="Render" DisplayName="{{Y|帶有黑歐泊鑲嵌的座殿(CathedraBlackOpal)}}" />
   <part Name="Description" Short="在它寬大的濺痕與平面扶手之上，髮絲般的紋路將椅子及其鮮豔的寶石劃分為一個個星系集群。它們微觀尺度的分形圖案超越了現已化石化的木匠之技藝；這一定是地脈留下的傷痕。" />
   <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+4 心智 (Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你撕裂了時空，傳送到卡德的一個隨機位置。&#xA;&#xA;你的背部無法裝備物品。&#xA;此植入物無法移除。" />
  </object>
@@ -3162,13 +3162,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="乾脆的羊皮紙被裝訂成一本手抄本。" />
  </object>
  <object Name="FocalCookbook" Load="Merge">
-  <part Name="Render" DisplayName="食譜" />
+  <part Name="Render" DisplayName="食譜(FocalCookbook)" />
  </object>
  <object Name="StandaloneMarkovBook" Load="Merge">
   <part Name="Render" DisplayName="書本" />
  </object>
  <object Name="BloodstainedSheaf" Load="Merge">
-  <part Name="Render" DisplayName="{{W|一捆沾血的山羊皮羊皮紙}}" />
+  <part Name="Render" DisplayName="{{W|一捆沾血的山羊皮羊皮紙(BloodstainedSheaf)}}" />
   <part Name="Description" Short="剝落並拉伸的羊皮紙片被樹液黏合在一起，上面用幼羊血塗鴉而成。" />
   <xtagGrammar Proper="錯誤" adjunctNoun="" />
  </object>
@@ -3186,7 +3186,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="錯誤" adjunctNoun="" />
  </object>
  <object Name="HeirloomsCatalog" Load="Merge">
-  <part Name="Render" DisplayName="{{W|卡德的傳家寶}}" />
+  <part Name="Render" DisplayName="{{W|卡德的傳家寶(HeirloomsCatalog)}}" />
  </object>
  <object Name="Sheaf1" Load="Merge">
   <part Name="Render" DisplayName="{{W|一捆破舊的羊皮紙}}" />
@@ -3194,7 +3194,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar Proper="錯誤" adjunctNoun="" />
  </object>
  <object Name="Scroll Bound by Kelp" Load="Merge">
-  <part Name="Render" DisplayName="{{W|由一縷海帶束縛的卷軸}}" />
+  <part Name="Render" DisplayName="{{W|由一縷海帶束縛的卷軸(Scroll Bound by Kelp)}}" />
   <part Name="Description" Short="幾張破舊且帶有歲月痕跡的羊皮紙由來自遠方礁石的海藻繩索綁在一起。" />
   <xtagGrammar Proper="錯誤" adjunctNoun="" />
  </object>
@@ -3215,7 +3215,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一本厚重的巨著，書頁被夾在兩塊塗蠟木板之間。" />
  </object>
  <object Name="DarkCalculus" Load="Merge">
-  <part Name="Render" DisplayName="{{W|論黑暗微積分之起源與本質}}" />
+  <part Name="Render" DisplayName="{{W|論黑暗微積分之起源與本質(DarkCalculus)}}" />
   <part Name="Description" Short="精美的橫線羊皮紙頁被裝訂成一本代數法典。" />
  </object>
  <object Name="Canticles3" Load="Merge">
@@ -3223,39 +3223,39 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一台由螺旋齒輪組和銅質管道構成的機器，已被細緻地刻在機械主義者托拉（torah）的封面板上。" />
  </object>
  <object Name="MimicandMadpole" Load="Merge">
-  <part Name="Render" DisplayName="{{W|擬態者與瘋狂池鼠}}" />
+  <part Name="Render" DisplayName="{{W|擬態者與瘋狂池鼠(MimicandMadpole)}}" />
  </object>
  <object Name="OnHumanMimicry" Load="Merge">
-  <part Name="Render" DisplayName="{{W|論人類型態對動植物的擬態}}" />
+  <part Name="Render" DisplayName="{{W|論人類型態對動植物的擬態(OnHumanMimicry)}}" />
  </object>
  <object Name="FromEntropytoHierarchy" Load="Merge">
-  <part Name="Render" DisplayName="{{W|從熵到階級}}" />
+  <part Name="Render" DisplayName="{{W|從熵到階級(FromEntropytoHierarchy)}}" />
  </object>
  <object Name="FromEntropytoHierarchy2" Load="Merge">
   <part Name="Render" DisplayName="{{W|從熵到階層，第二版}}" />
  </object>
  <object Name="DisquisitionOnTheMaladyOfTheMimic" Load="Merge">
-  <part Name="Render" DisplayName="{{W|關於擬態病症的論述}}" />
+  <part Name="Render" DisplayName="{{W|關於擬態病症的論述(DisquisitionOnTheMaladyOfTheMimic)}}" />
  </object>
  <object Name="Crime and Punishment" Load="Merge">
-  <part Name="Render" DisplayName="{{W|罪與罰}}" />
+  <part Name="Render" DisplayName="{{W|罪與罰(Crime and Punishment)}}" />
   <part Name="Description" Short="這本古老且厚重的巨著，其封面已褪色成由萬千家庭的塵埃與皮脂所構成的平均色調。" />
  </object>
  <object Name="AphorismsAboutBirds" Load="Merge">
-  <part Name="Render" DisplayName="{{W|關於鳥的格言}}" />
+  <part Name="Render" DisplayName="{{W|關於鳥的格言(AphorismsAboutBirds)}}" />
  </object>
  <object Name="BloodandFear" Load="Merge">
-  <part Name="Render" DisplayName="{{W|血與恐懼：論 拉的生命週期}}" />
+  <part Name="Render" DisplayName="{{W|血與恐懼：論 拉的生命週期(BloodandFear)}}" />
  </object>
  <object Name="ArtlessBeauty" Load="Merge">
-  <part Name="Render" DisplayName="{{W|樸素之美}}" />
+  <part Name="Render" DisplayName="{{W|樸素之美(ArtlessBeauty)}}" />
  </object>
  <object Name="FaunsoftheMeadow" Load="Merge">
-  <part Name="Render" DisplayName="{{W|草地法恩}}" />
+  <part Name="Render" DisplayName="{{W|草地法恩(FaunsoftheMeadow)}}" />
   <part Name="Description" Short="這本大字本是由手工製漿並壓製的鹽莖紙製成。封面用樹脂保存。" />
  </object>
  <object Name="MurmursPrayer" Load="Merge">
-  <part Name="Render" DisplayName="{{W|低語者的祈禱}}" />
+  <part Name="Render" DisplayName="{{W|低語者的祈禱(MurmursPrayer)}}" />
   <part Name="Description" Short="這本大字本是由手工製漿並壓製的鹽莖紙製成。封面以樹脂保存。" />
  </object>
  <object Name="InMaqqomYd" Load="Merge">
@@ -3266,14 +3266,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{W|艾塔與地球人，第一篇}}" />
  </object>
  <object Name="CouncilAtGammaRock" Load="Merge">
-  <part Name="Render" DisplayName="{{W|伽瑪岩委員會}}" />
+  <part Name="Render" DisplayName="{{W|伽瑪岩委員會(CouncilAtGammaRock)}}" />
   <part Name="Description" Short="一份鬆散的羊皮紙帳簿已被捲起，以臍帶繫結，並蓋上了 機械主義者 的蠟封。" />
  </object>
  <object Name="ModuloMoonStair" Load="Merge">
-  <part Name="Render" DisplayName="{{W|模數 月之階梯 與生命之樹}}" />
+  <part Name="Render" DisplayName="{{W|模數 月之階梯 與生命之樹(ModuloMoonStair)}}" />
  </object>
  <object Name="GolemOperatingManual" Load="Merge">
-  <part Name="Render" DisplayName="{{W|大型生物操作手冊}}" />
+  <part Name="Render" DisplayName="{{W|大型生物操作手冊(GolemOperatingManual)}}" />
   <part Name="Description" Short="精美的橫線羊皮紙頁被裝訂成一本代數法典。" />
  </object>
  <object Name="MerchantAdvertisement" Load="Merge">
@@ -3290,11 +3290,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一本鬆散的 鹽莖 果肉帳簿已被裝訂在蠟木棒上並捲起。" />
  </object>
  <object Name="DataDisk" Load="Merge">
-  <part Name="Render" DisplayName="數據磁碟" />
+  <part Name="Render" DisplayName="數據磁碟(DataDisk)" />
   <part Name="Description" Short="在金屬遮光板下方，一個晶體圓盤刻有用於編碼數據的微觀凹坑。" />
  </object>
  <object Name="Chem Cell" Load="Merge">
-  <part Name="Render" DisplayName="{{c|化學電池}}" />
+  <part Name="Render" DisplayName="{{c|化學電池(Chem Cell)}}" />
   <part Name="Description" Short="內部的小桶中，液態鹽將離子傳輸至陰極並產生火花。" />
  </object>
  <object Name="Fidget Cell" Load="Merge">
@@ -3331,7 +3331,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="在電池的 內部 絕緣桶內，電動裝置從血液中榨取能量並將其轉換為電荷。" />
  </object>
  <object Name="Torch" Load="Merge">
-  <part Name="Render" DisplayName="火把" />
+  <part Name="Render" DisplayName="火把(Torch)" />
   <part Name="Description" Short="一段長長的鹽莖被包裹在浸透油脂的布料中。" />
  </object>
  <object Name="Glowsphere" Load="Merge">
@@ -3339,7 +3339,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一顆磷光的蛋白石大小的物體正好能握在手掌中，散發著千年前吸收的極光之光。" />
  </object>
  <object Name="Bandage" Load="Merge">
-  <part Name="Render" DisplayName="繃帶" />
+  <part Name="Render" DisplayName="繃帶(Bandage)" />
   <part Name="Description" Short="這是纏繞在木棒上的蠕蟲絲紗，可用於止血。" />
  </object>
  <object Name="Empty Booster" Load="Merge">
@@ -3347,7 +3347,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="玻璃管和注射針將補劑直接注入血液。這支是空的。" />
  </object>
  <object Name="Witchwood Bark" Load="Merge">
-  <part Name="Render" DisplayName="{{W|巫術木皮}}" />
+  <part Name="Render" DisplayName="{{W|巫術木皮(Witchwood Bark)}}" />
   <part Name="Food" Message="一股溫暖的刺痛感席捲全身。" />
   <part Name="Description" Short="地衣附著在木柴棚蜿蜒的溝槽中，閃爍著光芒並散發著香料味。" />
   <part Name="RulesDescription" Text="食用時可治療並使目標混亂。" />
@@ -3357,82 +3357,82 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一片廢料從機器化石上脫落或剝落下來。" />
  </object>
  <object Name="Scrap Metal" Load="Merge">
-  <part Name="Render" DisplayName="彎曲的金屬片" />
+  <part Name="Render" DisplayName="彎曲的金屬片(Scrap Metal)" />
  </object>
  <object Name="Scrap Crystal" Load="Merge">
-  <part Name="Render" DisplayName="裂紋透鏡" />
+  <part Name="Render" DisplayName="裂紋透鏡(Scrap Crystal)" />
  </object>
  <object Name="Scrap Electronics" Load="Merge">
-  <part Name="Render" DisplayName="破碎微晶片" />
+  <part Name="Render" DisplayName="破碎微晶片(Scrap Electronics)" />
  </object>
  <object Name="Scrap Energy" Load="Merge">
-  <part Name="Render" DisplayName="燒毀的電容器" />
+  <part Name="Render" DisplayName="燒毀的電容器(Scrap Energy)" />
  </object>
  <object Name="Scrap 00" Load="Merge">
-  <part Name="Render" DisplayName="鏽蝕電路板" />
+  <part Name="Render" DisplayName="鏽蝕電路板(Scrap 00)" />
  </object>
  <object Name="Scrap 1" Load="Merge">
-  <part Name="Render" DisplayName="失效能量中繼器" />
+  <part Name="Render" DisplayName="失效能量中繼器(Scrap 1)" />
  </object>
  <object Name="Scrap 2" Load="Merge">
-  <part Name="Render" DisplayName="燒毀的處理核心" />
+  <part Name="Render" DisplayName="燒毀的處理核心(Scrap 2)" />
  </object>
  <object Name="Scrap 3" Load="Merge">
-  <part Name="Render" DisplayName="裂紋機器人外殼" />
+  <part Name="Render" DisplayName="裂紋機器人外殼(Scrap 3)" />
  </object>
  <object Name="Scrap 4" Load="Merge">
-  <part Name="Render" DisplayName="損壞的微控制器陣列" />
+  <part Name="Render" DisplayName="損壞的微控制器陣列(Scrap 4)" />
  </object>
  <object Name="Scrap 5" Load="Merge">
-  <part Name="Render" DisplayName="部分單質組件" />
+  <part Name="Render" DisplayName="部分單質組件(Scrap 5)" />
  </object>
  <object Name="Scrap 6" Load="Merge">
-  <part Name="Render" DisplayName="失調的反物質微型反應爐" />
+  <part Name="Render" DisplayName="失調的反物質微型反應爐(Scrap 6)" />
  </object>
  <object Name="Scrap 7" Load="Merge">
   <part Name="Render" DisplayName="功能失調的 AI 主單元" />
  </object>
  <object Name="Scrap 8" Load="Merge">
-  <part Name="Render" DisplayName="變形核心" />
+  <part Name="Render" DisplayName="變形核心(Scrap 8)" />
  </object>
  <object Name="Med Scrap Metal" Load="Merge">
-  <part Name="Render" DisplayName="鈍頭手術刀" />
+  <part Name="Render" DisplayName="鈍頭手術刀(Med Scrap Metal)" />
  </object>
  <object Name="Med Scrap Crystal" Load="Merge">
-  <part Name="Render" DisplayName="破碎的放大鏡" />
+  <part Name="Render" DisplayName="破碎的放大鏡(Med Scrap Crystal)" />
  </object>
  <object Name="Med Scrap Electronics" Load="Merge">
-  <part Name="Render" DisplayName="彎曲的手術支架" />
+  <part Name="Render" DisplayName="彎曲的手術支架(Med Scrap Electronics)" />
  </object>
  <object Name="Med Scrap Energy" Load="Merge">
-  <part Name="Render" DisplayName="燒毀的植入核心" />
+  <part Name="Render" DisplayName="燒毀的植入核心(Med Scrap Energy)" />
  </object>
  <object Name="Med Scrap 00" Load="Merge">
-  <part Name="Render" DisplayName="扭曲變形肌" />
+  <part Name="Render" DisplayName="扭曲變形肌(Med Scrap 00)" />
  </object>
  <object Name="Med Scrap 1" Load="Merge">
-  <part Name="Render" DisplayName="磨損的替換閥門" />
+  <part Name="Render" DisplayName="磨損的替換閥門(Med Scrap 1)" />
  </object>
  <object Name="Med Scrap 2" Load="Merge">
-  <part Name="Render" DisplayName="毀壞的控制器" />
+  <part Name="Render" DisplayName="毀壞的控制器(Med Scrap 2)" />
  </object>
  <object Name="Med Scrap 3" Load="Merge">
-  <part Name="Render" DisplayName="破碎晶骨" />
+  <part Name="Render" DisplayName="破碎晶骨(Med Scrap 3)" />
  </object>
  <object Name="Med Scrap 4" Load="Merge">
-  <part Name="Render" DisplayName="粉末狀奈米殼" />
+  <part Name="Render" DisplayName="粉末狀奈米殼(Med Scrap 4)" />
  </object>
  <object Name="Med Scrap 5" Load="Merge">
-  <part Name="Render" DisplayName="耗盡的莖部產生器" />
+  <part Name="Render" DisplayName="耗盡的莖部產生器(Med Scrap 5)" />
  </object>
  <object Name="Med Scrap 6" Load="Merge">
-  <part Name="Render" DisplayName="失調的皮質再生器" />
+  <part Name="Render" DisplayName="失調的皮質再生器(Med Scrap 6)" />
  </object>
  <object Name="Med Scrap 7" Load="Merge">
-  <part Name="Render" DisplayName="故障細胞端粒分解器" />
+  <part Name="Render" DisplayName="故障細胞端粒分解器(Med Scrap 7)" />
  </object>
  <object Name="Med Scrap 8" Load="Merge">
-  <part Name="Render" DisplayName="劣質替換頭部" />
+  <part Name="Render" DisplayName="劣質替換頭部(Med Scrap 8)" />
  </object>
  <object Name="Tonic" Load="Merge">
   <part Name="Description" Short="玻璃管與注射針將補劑直接注入血液中。" />
@@ -3481,33 +3481,33 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{c|[工具]}}" />
  </object>
  <object Name="Basic Toolkit" Load="Merge">
-  <part Name="Render" DisplayName="{{c|基礎工具箱}}" />
+  <part Name="Render" DisplayName="{{c|基礎工具箱(Basic Toolkit)}}" />
   <part Name="Description" Short="一組修補工具撞擊著錫罐發出鏗鏘聲：鑷子、一把小錘子、老虎鉗、反向鉗、玻璃彈珠和三把扳手。" />
   <part Name="Toolbox" BehaviorDescription="此物品在拆解神器時，會增加獲得額外碎片（bits）的機率。" />
  </object>
  <object Name="Advanced Toolkit" Load="Merge">
-  <part Name="Render" DisplayName="{{C|進階工具箱}}" />
+  <part Name="Render" DisplayName="{{C|進階工具箱(Advanced Toolkit)}}" />
   <part Name="Description" Short="一組修補工具撞擊著碳化物：電壓表、聚合物夾、焊接刀、離子盾牌、電路板，以及三個備用真空管。" />
   <part Name="Toolbox" BehaviorDescription="通電時，此物品會大幅增加鑑定神器以及拆解神器時回收額外碎片機率。未通電時，它作為基礎工具箱使用，能輕微增加回收額外碎片的機率。" />
  </object>
  <object Name="Pickaxe" Load="Merge">
-  <part Name="Render" DisplayName="{{c|十字鎬}}" />
+  <part Name="Render" DisplayName="{{c|十字鎬(Pickaxe)}}" />
   <part Name="Description" Short="=pronouns.Possessive= 翠綠的花冠如側紗般垂落在 =pronouns.possessive= 肩膀上，而 =pronouns.possessive= 指狀莖在閃爍的陰極上蠕動。" />
  </object>
  <object Name="Nanopneumatic Jackhammer" Load="Merge">
-  <part Name="Render" DisplayName="奈米氣壓碎石機" />
+  <part Name="Render" DisplayName="奈米氣壓碎石機(Nanopneumatic Jackhammer)" />
   <part Name="Description" Short="一根氣動管被驅動穿過棘輪與巨大的鑽頭。帶有褶皺的氣囊允許振動吸收以產生連鎖壓力，同時穩定背帶能保護使用者的接觸點免受不安全的震動影響。" />
  </object>
  <object Name="Hoversled" Load="Merge">
-  <part Name="Render" DisplayName="懸浮雪橇" />
+  <part Name="Render" DisplayName="懸浮雪橇(Hoversled)" />
   <part Name="Description" Short="一輛雪橇在地面上方排斥漂浮，並在以太波浪上輕輕搖晃。它被一層飄散的塵埃光冕所環繞。" />
  </object>
  <object Name="Portable Wall" Load="Merge">
-  <part Name="Render" DisplayName="便攜式牆壁" />
+  <part Name="Render" DisplayName="便攜式牆壁(Portable Wall)" />
   <part Name="Description" Short="每個手持盒的外側表面都刻有微小的符文。儘管反對者仍在苦思其含義，但大多數 卡德的 知名語言學教派已達成單一解釋：「獻給當自然與建築師皆令你失望之時」。一個黃銅拉環將你與這些話語所承諾的未來隔開。" />
  </object>
  <object Name="Spiral Borer" Load="Merge">
-  <part Name="Render" DisplayName="螺旋鑽孔者" />
+  <part Name="Render" DisplayName="螺旋鑽孔者(Spiral Borer)" />
   <part Name="Description" Short="一個裝滿核心金屬、沉重的開槽背囊壓著肩膀。側面印有指向地下的鑽頭象形圖。" />
  </object>
  <object Name="Tattoo Gun" Load="Merge">
@@ -3515,7 +3515,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="墨水透過針頭與旋轉馬達噴射進皮膚 {{W|帆布}} 的內部與下方。" />
  </object>
  <object Name="TemplarPhylactery" Load="Merge">
-  <part Name="Render" DisplayName="聖騎士命匣" />
+  <part Name="Render" DisplayName="聖騎士命匣(TemplarPhylactery)" />
   <part Name="Description" Short="一個木雕珠寶盒開啟後，露出了照相板與光束投射器。水晶邊緣的裂縫中刻有一段選自菱形托拉（rhombic torah）的詩句。" />
  </object>
  <object Name="Neuro Animator" Load="Merge">
@@ -3523,7 +3523,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="我被罷免的渴望從未如此強烈過。&#xA;&#xA;喔，不是因為 斯林斯！好吧，是的，是因為 斯林斯，但那是因為我寧願和他們待在一起——偵查、守衛，甚至照料 lah 都比這些枯燥的監督工作好。&#xA;&#xA;食宿、任務分配……我從未想過移民竟然需要如此密集的物流規劃。" />
  </object>
  <object Name="Droid Scrambler" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|機器人干擾器}}" />
+  <part Name="Render" DisplayName="{{Y|機器人干擾器(Droid Scrambler)}}" />
   <part Name="Description" Short="一個圓盤狀發射器發出斷續的嗶嗶聲，在短程頻段內產生干擾。" />
  </object>
  <object Name="BaseRecoiler" Load="Merge">
@@ -3555,24 +3555,24 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{W|伊德自由領}} 迴 recoil器" />
  </object>
  <object Name="Ruin Recoiler" Load="Merge">
-  <part Name="Render" DisplayName="隨機點回彈器" />
+  <part Name="Render" DisplayName="隨機點回彈器(Ruin Recoiler)" />
  </object>
  <object Name="Programmable Recoiler" Load="Merge">
-  <part Name="Render" DisplayName="可程式化回彈器" />
+  <part Name="Render" DisplayName="可程式化回彈器(Programmable Recoiler)" />
  </object>
  <object Name="Reprogrammable Recoiler" Load="Merge">
-  <part Name="Render" DisplayName="可重新編程回彈器" />
+  <part Name="Render" DisplayName="可重新編程回彈器(Reprogrammable Recoiler)" />
  </object>
  <object Name="Spraybottle" Load="Merge">
-  <part Name="Render" DisplayName="噴霧瓶" />
+  <part Name="Render" DisplayName="噴霧瓶(Spraybottle)" />
   <part Name="Description" Short="某些修補匠研發了一種虹吸管和加壓噴嘴，用來噴灑他們不想直接傾倒的液體。" />
  </object>
  <object Name="Fixit Spray" Load="Merge">
-  <part Name="Render" DisplayName="修復噴霧泡沫" />
+  <part Name="Render" DisplayName="修復噴霧泡沫(Fixit Spray)" />
   <part Name="Description" Short="一個裝滿發泡填縫劑的噴霧罐。" />
  </object>
  <object Name="Desalination Pellet" Load="Merge">
-  <part Name="Render" DisplayName="脫鹽顆粒" />
+  <part Name="Render" DisplayName="脫鹽顆粒(Desalination Pellet)" />
   <part Name="Description" Short="一層白堊色的米質格狀蓋子從液體中吸取鹽分。其表面刻有字母「H」。" />
   <part Name="DesalinationPellet" Message="=subject.T= 嘶嘶作響 持續數秒。" DestroyMessage="=subject.T= 會持續幾秒鐘的 嘶嘶作響，然後 蒸發。" ConvertMessage="=object.T= =object.verb:react= 異常地與 =subject.t= 互動，並將 =object.verb:convert= =pronouns.objective= 轉換為 =volume.drams.of.liquid|strip=。" />
  </object>
@@ -3586,18 +3586,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="&quot;噴腦器：如果這些牆壁會說話的話...&quot;" />
  </object>
  <object Name="High-Powered Magnet" Load="Merge">
-  <part Name="Render" DisplayName="強力磁鐵" />
+  <part Name="Render" DisplayName="強力磁鐵(High-Powered Magnet)" />
   <part Name="Description" Short="鐵碎片斑駁了它潰爛的表面。" />
  </object>
  <object Name="Jewel-Encrusted Item" Load="Merge">
-  <part Name="Render" DisplayName="物品" />
+  <part Name="Render" DisplayName="物品(Jewel-Encrusted Item)" />
  </object>
  <object Name="Bronze Ingot" Load="Merge">
-  <part Name="Render" DisplayName="{{w|青銅錠}}" />
+  <part Name="Render" DisplayName="{{w|青銅錠(Bronze Ingot)}}" />
   <part Name="Description" Short="一個沉重且呈錐形的塊狀物是由銅與錫組成的雙色液體湯所鑄造而成。" />
  </object>
  <object Name="Grave Goods" Load="Merge">
-  <part Name="Render" DisplayName="隨葬品" />
+  <part Name="Render" DisplayName="隨葬品(Grave Goods)" />
   <part Name="Description" Short="為了將通往 布萊特希歐 或其他薄弱之地的路徑儀式化，埋藏了幾件裝飾品：硬幣、人偶、小盒墜飾與煙斗。" />
   <xtagGrammar massNoun="真實" />
  </object>
@@ -3610,11 +3610,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一團金屬在星光般的色調下閃爍。" />
  </object>
  <object Name="Gold Nugget" Load="Merge">
-  <part Name="Render" DisplayName="{{W|金塊}}" />
+  <part Name="Render" DisplayName="{{W|金塊(Gold Nugget)}}" />
   <part Name="Description" Short="一團金屬在{{B|明亮太陽渣}}的珠寶商色調下閃閃發光。" />
  </object>
  <object Name="Gemstone" Load="Merge">
-  <part Name="Render" DisplayName="粗糙寶石" />
+  <part Name="Render" DisplayName="粗糙寶石(Gemstone)" />
  </object>
  <object Name="Rough Agate" Load="Merge">
   <part Name="Render" DisplayName="粗糙的 {{K|瑪瑙}} 原石" />
@@ -3645,7 +3645,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="它穿梭於虛空，撞擊在一塊黑石上，帶著光芒與自由，重重地降落在我們的世界。" />
  </object>
  <object Name="Polished Gemstone" Load="Merge">
-  <part Name="Render" DisplayName="光滑寶石" />
+  <part Name="Render" DisplayName="光滑寶石(Polished Gemstone)" />
  </object>
  <object Name="Polished Agate" Load="Merge">
   <part Name="Render" DisplayName="光滑的 {{K|瑪瑙}} 寶石" />
@@ -3719,52 +3719,52 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="來自 Odrum 蜂巢的蠟被混入染料，並模製成筆尖的形狀。它們一同收納在盒中，採樣世界的虹彩，並提供擴張世界的工具。" />
  </object>
  <object Name="Salt Mill" Load="Merge">
-  <part Name="Render" DisplayName="鹽磨坊" />
+  <part Name="Render" DisplayName="鹽磨坊(Salt Mill)" />
   <part Name="Description" Short="雕刻並染色過的橄欖木內嵌著鋼牙，用於磨碎烹飪鹽中的雜質。" />
  </object>
  <object Name="Spiral Iron" Load="Merge">
-  <part Name="Render" DisplayName="旋渦鐵" />
+  <part Name="Render" DisplayName="旋渦鐵(Spiral Iron)" />
   <part Name="Description" Short="灼熱的金屬夾迫著燃燒的毛髮貼向環流的旋轉曲線。" />
  </object>
  <object Name="Bubble Level" Load="Merge">
-  <part Name="Render" DisplayName="水平儀" />
+  <part Name="Render" DisplayName="水平儀(Bubble Level)" />
   <part Name="Description" Short="一片晶體狀的環形面板橫切了直線邊緣，並在視野中央形成一個油膩的氣泡。" />
  </object>
  <object Name="FoldingChair" Load="Merge">
-  <part Name="Render" DisplayName="{{c|金屬摺疊椅}}" />
+  <part Name="Render" DisplayName="{{c|金屬摺疊椅(FoldingChair)}}" />
   <part Name="Description" Short="用途明確的管線在焊接接頭處散開，並支撐著一塊坐板。" />
  </object>
  <object Name="PlasticTree" Load="Merge">
   <part Name="Description" Short="葉片如蠟質般展開，模仿著生命的姿態。近看顯得堅硬且油膩，但隨著你退後，其邊緣在視覺上變得柔和，並發揮著樹木的功能。" />
-  <part Name="Render" DisplayName="塑膠樹" />
+  <part Name="Render" DisplayName="塑膠樹(PlasticTree)" />
  </object>
  <object Name="Small Sphere of Negative Weight" Load="Merge">
-  <part Name="Render" DisplayName="小型負重球體" />
+  <part Name="Render" DisplayName="小型負重球體(Small Sphere of Negative Weight)" />
   <part Name="Description" Short="一顆某種黑色硫化金屬球屈服於重力的負壓，試圖向上墜落。" />
  </object>
  <object Name="Timecube" Load="Merge">
-  <part Name="Render" DisplayName="{{K|時間方塊}}" />
+  <part Name="Render" DisplayName="{{K|時間方塊(Timecube)}}" />
   <part Name="Description" Short="一個僅有四個角的立方體。象徵日出、正午、日落和午夜的刻面象形文字堅持著一種新的日期劃分方式。上面雕刻著破碎時鐘的奇幻描繪。" />
  </object>
  <object Name="Waterskin" Load="Merge">
-  <part Name="Render" DisplayName="水囊" />
+  <part Name="Render" DisplayName="水囊(Waterskin)" />
   <part Name="Description" Short="山羊的膀胱底部打了一個結，並由一條腸子吊掛著。" />
  </object>
  <object Name="Oilskin" Load="Merge">
-  <part Name="Render" DisplayName="油布" />
+  <part Name="Render" DisplayName="油布(Oilskin)" />
   <part Name="Description" Short="山羊的膀胱底部打了一個結，並由一條腸子吊掛著。" />
  </object>
  <object Name="Camel Bladder" Load="Merge">
-  <part Name="Render" DisplayName="駱駝膀胱" />
+  <part Name="Render" DisplayName="駱駝膀胱(Camel Bladder)" />
   <part Name="Description" Short="一個巨大的駱駝膀胱在底部打結，並由一條腸子吊掛著。" />
   <part Name="RulesDescription" Text="穿戴時，此物品內的液體不會計入你的負重。" />
  </object>
  <object Name="Canteen" Load="Merge">
-  <part Name="Render" DisplayName="水壺" />
+  <part Name="Render" DisplayName="水壺(Canteen)" />
   <part Name="Description" Short="一個鋁製水罐被橄欖綠色的布料包裹著，以便儲水。" />
  </object>
  <object Name="Phial" Load="Merge">
-  <part Name="Render" DisplayName="小瓶" />
+  <part Name="Render" DisplayName="小瓶(Phial)" />
   <part Name="Description" Short="一條用於存放珍貴液體的短玻璃槽，轉動時會閃爍微光。" />
  </object>
  <object Name="SoupPhial" Load="Merge">
@@ -3777,7 +3777,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="A 小瓶 of glass." />
  </object>
  <object Name="StorageTank" Load="Merge">
-  <part Name="Render" DisplayName="儲存槽" />
+  <part Name="Render" DisplayName="儲存槽(StorageTank)" />
   <part Name="Description" Short="鉻被模造成一個罐子，並用黃銅安裝支架固定。" />
  </object>
  <object Name="Gourd" Load="Merge">
@@ -3785,11 +3785,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="膠原蛋白被塑造成液態容器。" />
  </object>
  <object Name="Entropy Cyst" Load="Merge">
-  <part Name="Render" DisplayName="熵囊腫" />
+  <part Name="Render" DisplayName="熵囊腫(Entropy Cyst)" />
   <part Name="Description" Short="一個顫動的靜電泡正興奮地擴張著尺寸，就像一個焦慮的生命體。" />
  </object>
  <object Name="Magnetic Bottle" Load="Merge">
-  <part Name="Render" DisplayName="磁瓶" />
+  <part Name="Render" DisplayName="磁瓶(Magnetic Bottle)" />
   <part Name="Description" Short="磁性玻璃使其中所含的平靜鐵流體產生尖銳扭曲。" />
   <part Name="RulesDescription" Text="通電時，此容器可以安全地從任何來源注入中子通量，且中子通量也可以安全地從此容器倒入其他合適的容器中。" />
  </object>
@@ -3798,14 +3798,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="沒有任何學者知道是誰撰寫了《卡德編年史》，也不知道這部編年史何時開始記錄。但量化主義者想出了一種方法，將他們自己的頁面與官方帳簿糾纏在一起，使他們能夠以有利的角度把自己插入歷史之中。少數幾頁這樣的內容仍被保留下來。" />
  </object>
  <object Name="FungalInfection" Load="Merge">
-  <part Name="Render" DisplayName="感染" />
+  <part Name="Render" DisplayName="感染(FungalInfection)" />
  </object>
  <object Name="LuminousInfection" Load="Merge">
-  <part Name="Render" DisplayName="{{C|發光皮殼}}" />
+  <part Name="Render" DisplayName="{{C|發光皮殼(LuminousInfection)}}" />
   <part Name="Description" Short="霜點狀的結節覆蓋在受感染的皮膚上，寒冷的霧氣在其間繚繞。真菌群落已將表皮改造得宛如一片微縮的冰封山脈。" />
  </object>
  <object Name="PuffInfection" Load="Merge">
-  <part Name="Render" DisplayName="{{G|反覆無常的鰓}}" />
+  <part Name="Render" DisplayName="{{G|反覆無常的鰓(PuffInfection)}}" />
   <part Name="Description" Short="微小的孢子塵埃從那在條紋皮膚上抽動的肉質鰓片中飄落。內部仍有另外一千個孢子正等待被擠出。" />
  </object>
  <object Name="MumblesInfection" Load="Merge">
@@ -3813,7 +3813,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="數十個微小的嘴巴鑲嵌在受感染的皮膚上，它們濕潤的嘴唇非同步地收縮，並喘息著說著廢話。偶爾，這陣嘈雜會匯聚成有意義的言語。" />
  </object>
  <object Name="WaxInfection" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|蠟狀肉}}" />
+  <part Name="Render" DisplayName="{{Y|蠟狀肉(WaxInfection)}}" />
   <part Name="Description" Short="一種流蠟真菌將肢體封存在透明的鑄模中。體溫融化了最內層，濃稠且帶蠟質的乳汁在硬化的牢籠中晃動。" />
  </object>
  <object Name="PaxInfection" Load="Merge">
@@ -3824,19 +3824,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一個編碼過的紙金屬矩形可以滑入鎖定機制中，用以開啟某些類型的門。" />
  </object>
  <object Name="Red Security Card" Load="Merge">
-  <part Name="Render" DisplayName="{{r|勞工安全卡}}" />
+  <part Name="Render" DisplayName="{{r|勞工安全卡(Red Security Card)}}" />
  </object>
  <object Name="Yellow Security Card" Load="Merge">
-  <part Name="Render" DisplayName="{{W|維護安全卡}}" />
+  <part Name="Render" DisplayName="{{W|維護安全卡(Yellow Security Card)}}" />
  </object>
  <object Name="Green Security Card" Load="Merge">
-  <part Name="Render" DisplayName="{{G|緊急服務安全卡}}" />
+  <part Name="Render" DisplayName="{{G|緊急服務安全卡(Green Security Card)}}" />
  </object>
  <object Name="Blue Security Card" Load="Merge">
-  <part Name="Render" DisplayName="{{B|執法安全卡}}" />
+  <part Name="Render" DisplayName="{{B|執法安全卡(Blue Security Card)}}" />
  </object>
  <object Name="Purple Security Card" Load="Merge">
-  <part Name="Render" DisplayName="{{M|軍用安全卡}}" />
+  <part Name="Render" DisplayName="{{M|軍用安全卡(Purple Security Card)}}" />
  </object>
  <object Name="Copper Trollking Key" Load="Merge">
   <part Name="Render" DisplayName="{{w|青銅}}鑰匙" />
@@ -3863,19 +3863,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="水晶中齒狀的不完美處，像是秘密鑰匙的咬合切口。" />
  </object>
  <object Name="HurdyGurdy" Load="Merge">
-  <part Name="Render" DisplayName="手搖風琴" />
+  <part Name="Render" DisplayName="手搖風琴(HurdyGurdy)" />
   <part Name="Description" Short="外部曲柄的扭力拖動著塗滿松香的輪子摩擦金屬纜繩，其抗議聲從木箱中發出低沉且旋律性的呻吟。" />
  </object>
  <object Name="Farmers Token" Load="Merge">
-  <part Name="Render" DisplayName="{{G|農夫代幣}}" />
+  <part Name="Render" DisplayName="{{G|農夫代幣(Farmers Token)}}" />
   <part Name="Description" Short="這枚古老的青銅硬幣中心被切出了一個正方形。時間賦予了它一層海泡石般的銅綠。" />
  </object>
  <object Name="Merchant's Token" Load="Merge">
-  <part Name="Render" DisplayName="{{W|商人代幣}}" />
+  <part Name="Render" DisplayName="{{W|商人代幣(Merchant's Token)}}" />
   <part Name="Description" Short="一枚銀色謝克爾上壓印著集市那被藤蔓纏繞的鱗片圖案。" />
  </object>
  <object Name="Minstrel's Token" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|吟遊詩人代幣}}" />
+  <part Name="Render" DisplayName="{{Y|吟遊詩人代幣(Minstrel's Token)}}" />
   <part Name="Description" Short="一枚古老的鉑金謝克爾上刻有「極古之鳥」的圖像。" />
  </object>
  <object Name="Barathrumite Token" Load="Merge">
@@ -3883,7 +3883,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="一片紙鋼圓盤上壓印著巴拉楚姆老者的輪廓。" />
  </object>
  <object Name="Wire Strand" Load="Merge">
-  <part Name="Render" DisplayName="{{r|金屬絲線}}" />
+  <part Name="Render" DisplayName="{{r|金屬絲線(Wire Strand)}}" />
   <part Name="Description" Short="從金屬礦石中擠出的線材在併攏時會導電。" />
   <part Name="DeployableInfrastructure" DeployNoun="佈線" MessageByCountSuffix="之線" />
  </object>
@@ -3893,7 +3893,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="堆" massNoun="真實" />
  </object>
  <object Name="Wax Nodule" Load="Merge">
-  <part Name="Render" DisplayName="蠟結節" />
+  <part Name="Render" DisplayName="蠟結節(Wax Nodule)" />
   <part Name="Description" Short="這是一塊由植物分泌並冷卻成塊狀的蠟質物質。" />
  </object>
  <object Name="Bouquet" Load="Merge">
@@ -3908,17 +3908,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <xtagGrammar adjunctNoun="一束" massNoun="真實" />
  </object>
  <object Name="Crystal Flowers" Load="Merge">
-  <part Name="Render" DisplayName="水晶花" />
+  <part Name="Render" DisplayName="水晶花(Crystal Flowers)" />
   <part Name="Description" Short="一朵蠟燭石英花將光芒擴散至整個色譜，並將其集中在花瓣桶中。" />
  </object>
  <object Name="BaseDataDisk" Load="Merge">
   <part Name="Description" Short="在金屬遮光板下方，一個晶體圓盤刻有用於編碼數據的微觀凹坑。" />
  </object>
  <object Name="Argyve's Data Disk" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|蓋印數據磁碟}}" />
+  <part Name="Render" DisplayName="{{Y|蓋印數據磁碟(Argyve's Data Disk)}}" />
  </object>
  <object Name="Scratched Data Disk" Load="Merge">
-  <part Name="Render" DisplayName="{{Y|刮痕的數據磁碟}}" />
+  <part Name="Render" DisplayName="{{Y|刮痕的數據磁碟(Scratched Data Disk)}}" />
  </object>
  <object Name="Stamped Data Disk" Load="Merge">
   <part Name="Render" DisplayName="{{Y|蓋印數據磁碟}}" />
@@ -3933,11 +3933,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="{{Y|蓋印的數據磁碟}} [內含 {{C|訊號}} 編碼]" />
  </object>
  <object Name="Scrapped Waydroid" Load="Merge">
-  <part Name="Render" DisplayName="報廢的威德羅伊德" />
+  <part Name="Render" DisplayName="報廢的威德羅伊德(Scrapped Waydroid)" />
   <part Name="Description" Short="這裡躺著一個廢棄空降機（waydroid）的金屬殘骸。它已被剝奪了所有貴重物品：銅線、LED 燈和鉻合金軸承。它不再發出嗶嗶聲或嗡嗡聲。" />
  </object>
  <object Name="Dormant Waydroid" Load="Merge">
-  <part Name="Render" DisplayName="{{c|休眠的空降機}}" />
+  <part Name="Render" DisplayName="{{c|休眠的空降機(Dormant Waydroid)}}" />
   <part Name="Description" Short="這裡躺著一個在無知中沉睡的 Waydroid。是否有一位心甘情願的 修補匠 能讓它重獲生命？" />
  </object>
  <object Name="礫門(Grit Gate) Dormant Waydroid" Load="Merge">
@@ -3948,19 +3948,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="這片毛茸茸的皮膚上塗抹著乾涸的血跡。" />
  </object>
  <object Name="Clue_BloodyWatervine" Load="Merge">
-  <part Name="Render" DisplayName="一叢水藤" />
+  <part Name="Render" DisplayName="一叢水藤(BloodyWatervine)" />
   <part Name="Description" Short="這叢水藤鹽漬的溝壑中留有乾涸的血跡。" />
  </object>
  <object Name="Clue_SplinteredWeaponHaft" Load="Merge">
-  <part Name="Render" DisplayName="碎裂的手柄" />
+  <part Name="Render" DisplayName="碎裂的手柄(SplinteredWeaponHaft)" />
   <part Name="Description" Short="這些碎裂的木片曾是某件武器的柄部，該武器一定是在戰鬥中損壞的。" />
  </object>
  <object Name="Clue_BulgingWaterskin" Load="Merge">
-  <part Name="Render" DisplayName="膨脹的水袋" />
+  <part Name="Render" DisplayName="膨脹的水袋(BulgingWaterskin)" />
   <part Name="Description" Short="這個水囊裝得滿滿的，並用蠟密封，彷彿是來自商人的儲藏品。" />
  </object>
  <object Name="Clue_CopperNugget" Load="Merge">
-  <part Name="Render" DisplayName="有刮痕的銅塊" />
+  <part Name="Render" DisplayName="有刮痕的銅塊(CopperNugget)" />
   <part Name="Description" Short="銅被壓成塊狀，並從其天然礦床中採集。上面有一道裂痕將其一分為二。" />
  </object>
  <object Name="Clue_GreatSaltbackPrint" Load="Merge">
@@ -3968,11 +3968,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="只有大鹽背獸能留下像溫泉一樣大的足跡。" />
  </object>
  <object Name="Clue_SeveredTongue" Load="Merge">
-  <part Name="Render" DisplayName="斷舌" />
+  <part Name="Render" DisplayName="斷舌(SeveredTongue)" />
   <part Name="Description" Short="這塊腐黑且呈條狀的肉塊，可能曾是某人的病變舌頭。" />
  </object>
  <object Name="Clue_YuckwheatChaff" Load="Merge">
-  <part Name="Render" DisplayName="惡臭麥糠" />
+  <part Name="Render" DisplayName="惡臭麥糠(YuckwheatChaff)" />
   <part Name="Description" Short="惡臭麥 莖部的糠皮嚐起來比莖本身還難吃，而且沒有任何藥用價值，所以有人把它扔掉也不奇怪。" />
  </object>
  <object Name="Clue_Putrescence" Load="Merge">
@@ -3980,20 +3980,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="翻出的腸子暴露在污濁的空氣中，任其腐爛。" />
  </object>
  <object Name="Clue_LeatherScraps" Load="Merge">
-  <part Name="Render" DisplayName="皮革碎片" />
+  <part Name="Render" DisplayName="皮革碎片(LeatherScraps)" />
   <part Name="Description" Short="皮革碎片 是為了某個未知的皮革製作計畫，從較大範圍的皮料中切割下來的。" />
   <xtagGrammar massNoun="真實" />
  </object>
  <object Name="Clue_DiscardedBracer" Load="Merge">
-  <part Name="Render" DisplayName="撕裂皮革護腕" />
+  <part Name="Render" DisplayName="撕裂皮革護腕(DiscardedBracer)" />
   <part Name="Description" Short="皮革護腕在被撕裂的地方磨損了。" />
  </object>
  <object Name="Clue_LeatherworkingHammer" Load="Merge">
-  <part Name="Render" DisplayName="皮革加工錘" />
+  <part Name="Render" DisplayName="皮革加工錘(LeatherworkingHammer)" />
   <part Name="Description" Short="這把粗糙的錘子是用於皮革加工時敲擊鉚釘組和沖孔器的那種工具。" />
  </object>
  <object Name="Clue_EmptyInjector" Load="Merge">
-  <part Name="Render" DisplayName="使用過的注射器" />
+  <part Name="Render" DisplayName="使用過的注射器(EmptyInjector)" />
   <part Name="Description" Short="黏糊糊的補劑殘留物仍覆蓋在玻璃管上。" />
  </object>
  <object Name="Clue_BloodyArrow" Load="Merge">
@@ -4007,11 +4007,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <tag Name="DefiniteArticle" Value="這" />
  </object>
  <object Name="Clue_WornBracer" Load="Merge">
-  <part Name="Render" DisplayName="磨損的皮革護腕" />
+  <part Name="Render" DisplayName="磨損的皮革護腕(WornBracer)" />
   <part Name="Description" Short="這件 皮革護腕 佈滿了乾涸體鹽的條紋，那是重度使用的痕跡。" />
  </object>
  <object Name="Clue_ForeignLeatherworkingTools" Load="Merge">
-  <part Name="Render" DisplayName="皮革加工工具" />
+  <part Name="Render" DisplayName="皮革加工工具(ForeignLeatherworkingTools)" />
   <part Name="Description" Short="鑿、匙、沖、鑿、刃與剪。這些工具是由一位大師級工匠為了皮革加工藝術而製作的。" />
  </object>
   <object Name="Shayna" Load="Merge">
@@ -4033,7 +4033,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="{{r|青春(La)}} {{r-R-R-W-W-w-w sequence|俊美(Jeunesse)}}" />
   </object>
   <object Name="Stasis Casque" Load="Merge">
-    <part Name="Render" DisplayName="停滯頭盔" />
+    <part Name="Render" DisplayName="停滯頭盔(Stasis Casque)" />
   </object>
   <object Name="Psiamp Backpack" Load="Merge">
     <part Name="Render" DisplayName="&amp;K心&amp;C靈&amp;K增幅&amp;Clif&amp;K背包" />
@@ -4066,6 +4066,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="{{W|以斯拉(Ezra)}} 後座力緩衝器" />
   </object>
   <object Name="Grit Gate Dormant Waydroid" Load="Merge">
-    <part Name="Render" DisplayName="{{c|休眠中的威德羅德}}" />
+    <part Name="Render" DisplayName="{{c|休眠中的威德羅德(Dormant Waydroid)}}" />
   </object>
 </objects>

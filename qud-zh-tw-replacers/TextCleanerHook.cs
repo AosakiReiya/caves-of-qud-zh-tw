@@ -311,6 +311,9 @@ public static class ZhTwTextCleaner
     private static readonly Dictionary<string, string> PhraseLeaks =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
+            // 電池/充能狀態標籤（顯示名後綴 (Full) 等，遊戲動態附加）
+            { "(Full)", "(滿電)" }, { "(Empty)", "(空)" },
+            { "(Partially charged)", "(部分充電)" },
             // History Worships/Despises faction 名 fragment（=faction.FormattedName= 槽位）
             { "%Worships.LegendaryCreature.SacredThing", "崇拜傳說生物的聖物" },
             { "%Worships.LegendaryCreature", "傳說生物的崇拜者" },
@@ -532,8 +535,12 @@ public static class ZhTwTextCleaner
     // 用語幹 + \w*（非 \b 結尾）：避免漏掉屈折形（engulfed/dragged/sucking/sitting 等），
     // \b 開頭防止誤配子詞（transit 不付 \bsit）。
     private static readonly Regex FrameTrigger = new Regex(
-        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|pilot|knock|stop|move|look|turn|fall|rise)\w*|擊中|受到|落空|拿起了|拿走了",
+        @"(?i)\b(hit|miss|toggle|dazed|stand|take|eat|toss|gather|sit|climb|jump|wade|swim|emerge|bump|bond|detach|slip|swap|entangle|engulf|drag|suck|impal|lying|sitting|enclosed|pilot|knock|stop|move|look|turn|fall|rise|dies|died)\w*|擊中|受到|落空|拿起了|拿走了",
         RegexOptions.Compiled);
+
+    // combat 殘留提示（無 {{、無 frame 動詞，但明確是 xN 傷害/死亡句 → 仍需整句處理）
+    private static readonly Regex CombatLeakHint = new Regex(
+        @"\(x\d+\)\s+for\s+\d+\s+damage|dies[.!]?$|died[.!]?$", RegexOptions.Compiled);
 
     private static string TransliterateName(string word)
     {
@@ -1042,6 +1049,9 @@ public static class ZhTwTextCleaner
             System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // 靜態效果名（{{X|english}} → {{X|中文}}）
         text = EffectNameToken.Replace(text, new System.Text.RegularExpressions.MatchEvaluator(EffectNameMatch));
+        // combat 整句輸出後，武器段殘留的「with your X」剝除所有格（用 你的 青銅匕首 → 用 青銅匕首）
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"用 (?:你的|我的|他的|她的|它的|他們的|the|a|an) ", "用 ");
         return text;
     }
 
@@ -1050,152 +1060,159 @@ public static class ZhTwTextCleaner
     {
         if (string.IsNullOrEmpty(text)) return text;
         // 便宜預過濾：無 {{ 模板且無任何 frame 動詞 → 37 個正則不會命中，直接跳過
-        if (text.IndexOf("{{", StringComparison.Ordinal) < 0 && !FrameTrigger.IsMatch(text))
+        if (text.IndexOf("{{", StringComparison.Ordinal) < 0 && !FrameTrigger.IsMatch(text) && !CombatLeakHint.IsMatch(text))
             return text;
         text = TranslateDisplayNameFragments(text);
         // ===== 戰鬥/動作整句（在 Clean 逐詞破壞前翻譯，避免詞序壞掉）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+(?:critically\s+)?hit\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+(?:critically\s+)?hit\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $3 擊中($1)，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+hit\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+hit\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $3 擊中 $1，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== DoesZh 已轉換的玩家 hit（主詞「擊中」開頭，補回「你」；=object.the.name= 目標名）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $3 擊中($1)，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "你用 $3 擊中($1)，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $4 擊中 $1($2)，造成 $3 傷害[$5]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "你用 $4 擊中 $1($2)，造成 $3 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)!?\s*\[(.+?)\]$",
             "你用 $3 擊中 $1，造成 $2 傷害[$4]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*擊中\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "你用 $3 擊中 $1，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+(?:critically\s+)?hit\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+(?:critically\s+)?hit\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "你用 $3 擊中($1)，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+hit\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)\.?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+hit\s+(.+?)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)\.?\s*\[(.+?)\]$",
             "$1 用 $4 擊中 $2，造成 $3 傷害[$5]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+miss(?:ed)?\s+with\s+(.+?)[.!]?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+miss(?:ed)?\s+with\s+(.+?)[.!]?\s*\[(.+?)\]$",
             "你未擊中 $1[$2]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+miss(?:ed)?\s+(.+?)[.!]?\s*\[(.+?)\]$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+miss(?:ed)?\s+(.+?)[.!]?\s*\[(.+?)\]$",
             "你未擊中 $1[$2]", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+toggle\s+(.+?)\s+(on|off)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+toggle\s+(.+?)\s+(on|off)[.!]?$",
             "你將 $1 切換為$2", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = text.Replace("切換為on", "切換為開啟").Replace("切換為off", "切換為關閉");
+        // ===== 死亡整句（The X dies → X 死亡；容許 :: 等訊息前綴）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+is\s+dazed[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(?:The\s+)?(.+?)\s+dies[.!]?$",
+            "$1 死亡。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(?:The\s+)?(.+?)\s+died[.!]?$",
+            "$1 死亡。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+is\s+dazed[.!]?$",
             "$1 感到暈眩。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+stands?\s+up[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+stands?\s+up[.!]?$",
             "$1 站起來了。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+takes?\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+takes?\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
             "$1 因 $3 受到 $2 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+take\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+take\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
             "你因 $2 受到 $1 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 中英混合 combat（=subject.Does:hit= 已轉「擊中」，subject 在句首）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+擊中\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
             "$1 用 $4 擊中($2)，造成 $3 傷害$5", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+擊中\s+(.+?)\s+\((.+?)\)\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?\s*(\[(.*?)\])?$",
             "$1 用 $5 擊中 $2($3)，造成 $4 傷害$6", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+擊中\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+擊中\s+for\s+(\d+)\s+damage\s+with\s+(.+?)[.!]?$",
             "$1 用 $3 擊中，造成 $2 傷害", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 中英混合受到（=verb:take= 已轉「受到」）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+受到\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+受到\s+(\d+)\s+damage\s+from\s+(.+?)[.!]?$",
             "$1 因 $3 受到 $2 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^(.+?)\s+受到\s+(\d+)\s+damage[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(.+?)\s+受到\s+(\d+)\s+damage[.!]?$",
             "$1 受到 $2 傷害。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 拾取/奪取（玩家主詞 token 為空，=verb:take= 已轉「受到」）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^受到\s+(?:the |a |an )?(.+?)\s+from\s+(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*受到\s+(?:the |a |an )?(.+?)\s+from\s+(.+?)[.!]?$",
             "你從 $2 拿走了 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^受到\s+(?:the |a |an )?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*受到\s+(?:the |a |an )?(.+?)[.!]?$",
             "你拿起了 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 烹飪/香料整句（spice 未載入時的兜底）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+eat\s+the\s+meal[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+eat\s+the\s+meal[.!]?$",
             "你吃下了這份餐點。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+toss\s+(.+?)\s+into\s+a\s+pot\s+and\s+stir[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+toss\s+(.+?)\s+into\s+a\s+pot\s+and\s+stir[.!]?$",
             "你將 $1 丟進鍋子裡並攪拌。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+gather\s+(.+?)\s+for\s+your\s+meal[.:]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+gather\s+(.+?)\s+for\s+your\s+meal[.:]?$",
             "你收集了 $1 來當作餐點。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+toss\s+them\s+in\s+a\s+pot\s+and\s+stir[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+toss\s+them\s+in\s+a\s+pot\s+and\s+stir[.!]?$",
             "你將它們丟進鍋子裡攪拌。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== XDidYToZ frame 整句（物件名可能尚未本地化，frame 必先翻）=====
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+sit\s+down\s+on\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+sit\s+down\s+on\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你坐到 $1 上。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+sit\s+down\s+in\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+sit\s+down\s+in\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你坐到 $1 裡。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+climb\s+onto\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+climb\s+onto\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你爬上 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+jump\s+onto\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+jump\s+onto\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你跳到 $1 上。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+wade\s+through\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+wade\s+through\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你涉水穿過 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+swim\s+through\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+swim\s+through\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你游泳穿過 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+emerge\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+emerge\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你從 $1 現身。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+bump\s+into\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+bump\s+into\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你撞到 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+bond\s+with\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+bond\s+with\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你與 $1 締結聯繫。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+detach\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+detach\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你從 $1 脫離。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+slip\s+away\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+slip\s+away\s+from\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你從 $1 溜走。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+swap\s+positions\s+with\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+swap\s+positions\s+with\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你與 $1 交換位置。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+get\s+entangled\s+in\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+get\s+entangled\s+in\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你被 $1 纏住。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // 被動 frame（You are X by Y）
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+are\s+engulfed\s+by\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+are\s+engulfed\s+by\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你被 $1 吞噬。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+are\s+dragged\s+toward\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+are\s+dragged\s+toward\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你被拖向 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+are\s+sucked\s+into\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+are\s+sucked\s+into\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你被吸入 $1。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = System.Text.RegularExpressions.Regex.Replace(
-            text, @"^You\s+are\s+impaled\s+by\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+are\s+impaled\s+by\s+(?:the\s+|a\s+|an\s+)?(.+?)[.!]?$",
             "你被 $1 刺穿。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // 動態模板（內嵌 X 物件名）
         text = System.Text.RegularExpressions.Regex.Replace(

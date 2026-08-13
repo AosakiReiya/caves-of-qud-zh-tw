@@ -400,6 +400,13 @@ def test_pipeline():
         # ==== 逐詞語病（短語層）====
         ("由於 那裡 是 熊 在 你的 way, 你停止了 移動中。", "擋住了你的路", "移動中"),
         ("熊 在 你的 way。", "擋住了你的路", "way"),
+        # ==== 訊息前綴（:: + 台詞）與死亡整句（2026-08-13 修復）====
+        (":: 你 擊中 (x2) for 4 damage with your 青銅匕首! [9]", "用 青銅匕首 擊中(x2)", "for"),
+        ("::The 熊 dies!", "熊 死亡。", "dies"),
+        ("The 熊 dies!", "熊 死亡。", "The"),
+        ("::你 擊中 (x1) for 2 damage with your 鐵匕首!", "用 鐵匕首 擊中(x1)", "your"),
+        # ==== 電池狀態（PhraseLeaks 新增）====
+        ("你辨識出 奇特小玩意 是 化學電池 (Full)。", "(滿電)", "Full"),
     ]
     for inp, must, must_not in cases:
         if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):
@@ -673,8 +680,10 @@ def test_token_protect():
 def test_combat_hit_pattern():
     print("== combat_hit_pattern：DoesZh 轉換版 hit 句補主詞「你」==")
     hook = HOOK.read_text(encoding="utf-8")
-    check("含『擊中』開頭 hit pattern", '^擊中\\s+\\(' in hook or "^擊中" in hook)
+    check("含『擊中』開頭 hit pattern（前綴耐受）", '擊中\\s+\\(' in hook and '^[^\\u4e00' in hook)
     check("含『你用 $3 擊中』替換", "你用 $3 擊中" in hook)
+    check("含死亡整句（dies）", 'dies[.!]?$' in hook)
+    check("含武器段所有格剝除", '用 (?:你的|我的|他的|她的|它的|他們的|the|a|an) ' in hook)
 
 
 def _find_game_data():
