@@ -879,6 +879,39 @@ def test_propernouns():
         check("141 通稱派系不加括號（檢查無誤刪）", 'DisplayName="咬顎獸"' in f or 'DisplayName="狒狒"' in f)
 
 
+def test_shorttext_coverage():
+    print("== shorttext_coverage：TmpWords 覆蓋全部遊戲 power/技能樹名 ==")
+    import xml.etree.ElementTree as ET
+    game = _find_game_data()
+    hook = HOOK.read_text(encoding="utf-8")
+    m = re.search(r'TmpWords\s*=\s*new Dictionary.*?\{(.*?)\n\s*\};', hook, re.S)
+    if game is None or m is None:
+        check("TmpWords 可解析且遊戲可定位", False); return
+    tw = set(re.findall(r'\{\s*"([^"]+)"\s*,\s*"', m.group(1)))
+    g = ET.parse(game / "CoQ_Data/StreamingAssets/Base/Skills.xml").getroot()
+    missing = [p.get("Name") for p in g.iter("power") if p.get("Name") and p.get("Name") not in tw]
+    check("TmpWords 覆蓋全部 power 名", not missing, "; ".join(missing[:6]))
+    # 已修樣本防回歸（語料層漏翻）
+    strings = ZH / "Strings.zh-tw.xml"
+    if strings.exists():
+        s = strings.read_text(encoding="utf-8-sig")
+        check("armor 殘留已修", "凱塞欣德的 armor" not in s)
+        check("shop 殘留已修", "哈米蟹的 shop" not in s)
+        check("Slam 殘留已修", "盾牌 Slam" not in s)
+        check("Willowy 殘留已修", "Willowy：此物品" not in s)
+        vals = re.findall(r">([^<]*)</string>", s)
+        import re as _r
+        bare = [re.sub(r"=[^=]{1,80}=", "", v) for v in vals]
+        check("tory 殘留已修（值側剝 token；調試行除外）",
+              not any("tory" in v.lower() and re.search(r"[\u4e00-\u9fff]", v) and "Inventory.cs" not in v for v in bare))
+    # spice 錯譯已修
+    hp = PROJ / "historyspice.zh-tw.json"
+    if hp.exists():
+        h = hp.read_text(encoding="utf-8")
+        check("quarters 無『四分之一』錯譯", "四分之一" not in h)
+        check("commanding 無『指揮中的』", "指揮中的" not in h)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -910,6 +943,7 @@ def main():
     if run_all or a.xmldata: test_sultanterm_values()
     if run_all or a.data: test_interests_coverage()
     if run_all or a.xmldata: test_propernouns()
+    if run_all or a.static: test_shorttext_coverage()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 

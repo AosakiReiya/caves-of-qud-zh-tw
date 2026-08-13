@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud - Generated Localizable XML 2.0.212.29
 
@@ -41,7 +41,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <power Name="Harvestry" DisplayName="收穫術" Description="你可以從植物中採集新鮮食材和其他可用部位。" Snippet="收穫術" />
     <power Name="Butchery" DisplayName="屠殺" Description="你可以從動物屍體中屠宰新鮮食材和其他可用部位。" Snippet="屠殺" />
     <power Name="Spicer" DisplayName="香料商" Description="當你選擇烹飪食材時，你可以選擇最多三種而非兩種。使用三種食材烹飪的餐點會賦予更強大的狀態效果。" Snippet="加香料" />
-    <power Name="Carbide Chef" DisplayName="Carbide 廚師" Description="每當你升級時，以及在探索新地圖時有 5% 的機率，你會獲得為期兩天的「靈感」狀態。處於靈感狀態時，下次透過選擇食材來烹飪餐點時，你可以從三個動態生成的特效中選擇一個來套用。你會為所選的特效創造出一道食譜。" Snippet="碳化物廚師" />
+    <power Name="Carbide Chef" DisplayName="碳化物廚師(Carbide Chef)" Description="每當你升級時，以及在探索新地圖時有 5% 的機率，你會獲得為期兩天的「靈感」狀態。處於靈感狀態時，下次透過選擇食材來烹飪餐點時，你可以從三個動態生成的特效中選擇一個來套用。你會為所選的特效創造出一道食譜。" Snippet="碳化物廚師" />
   </skill>
   <skill Name="Cudgel" DisplayName="槌棒" Description="你精通粉碎與打擊類武器。" Snippet="木棒">
     <power Name="Cudgel Proficiency" DisplayName="棍棒熟練度" Description="使用棍棒攻擊時獲得 +2 命中。" Snippet="木棒" />

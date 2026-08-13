@@ -371,7 +371,7 @@ alone if no match found.
  <string Context="JournalLine StandardNote" ID="{{=tradeablecolor=|$}} =journaltext=">{{=tradeablecolor=|$}} =journaltext=</string>
  <string Context="Character Status Screen Tab Name (Short)" ID="Journal">日誌</string>
  <string Context="Character Status Screen Tab Name (Long)" ID="Journal">日誌</string>
- <string Context="JournalStatusScreen History Of Sultan Category Label" ID="{{W|HISTORY OF =sultan|upper=}}">{{W|HISTORY OF =sultan|upper=}}</string>
+ <string Context="JournalStatusScreen History Of Sultan Category Label" ID="{{W|HISTORY OF =sultan|upper=}}">{{W|=sultan|upper= 的歷史}}</string>
  <string Context="JournalStatusScreen SortModeRecentlyLearned Selected" ID="{{W|Most recently learned}}">{{W|最近學會}}</string>
  <string Context="JournalStatusScreen SortModeRecentlyLearned NotSelected" ID="{{y|Most recently learned}}">{{y|最近學會}}</string>
  <string Context="JournalStatusScreen SortModeFrequentlyCooked Selected" ID="{{W|Most frequently cooked}}">{{W|最常烹飪}}</string>
@@ -750,7 +750,7 @@ alone if no match found.
  <string Context="QudHistoryFactory Name Chance" ID="=spice:entity@siteTopology2.!random= =spice:entity@siteTopology1.!random= =nameRoot=">=spice:entity@siteTopology2.!random= =spice:entity@siteTopology1.!random= =nameRoot=</string>
  <string Context="QudHistoryFactory Name Sanitize" ID="=name|trim|slim|title=">=name|trim|slim|title=</string>
  <string Context="QudHistoryFactory Name Chance" ID="some forgotten ruins">一些被遺忘的遺跡</string>
- <string Context="QudHistoryFactory cultName chance" ID="=spice:commonPhrases.cult.!random|capitalize= of the =spice.entity:cognomen[random]|trimLeadingThe=">=spice:commonPhrases.cult.!random|capitalize= 之 =spice.entity:cognomen[random]|trimLeadingThe=</string>
+ <string Context="QudHistoryFactory cultName chance" ID="=spice:commonPhrases.cult.!random|capitalize= of the =spice.entity:cognomen[random]|trimLeadingThe=">=spice.entity:cognomen[random]|trimLeadingThe= 之 =spice:commonPhrases.cult.!random|capitalize=</string>
  <string Context="QudHistoryFactory cultName chance" ID="=spice.entity:cognomen[random]|trimLeadingThe= =spice:commonPhrases.cult.!random|capitalize=">=spice.entity:cognomen[random]|trimLeadingThe= =spice:commonPhrases.cult.!random|capitalize=</string>
  <string Context="QudHistoryFactory cultName chance" ID="Cult of =spice.entity:name=">=spice.entity:name= 之教派</string>
  <string Context="QudHistoryFactory cultName chance" ID="=suffix.ordinal|title= =spice.entity:nameRoot|wordRoot=ian =spice:commonPhrases.cult.!random|capitalize=">=suffix.ordinal|title= =spice.entity:nameRoot|wordRoot=ian =spice:commonPhrases.cult.!random|capitalize=</string>
@@ -2833,9 +2833,9 @@ alone if no match found.
  <string Context="Description Feeling Friend" ID="{{G|Friendly}}">{{G|友善}}</string>
  <string Context="Description Feeling Hostile" ID="{{R|Hostile}}">{{R|敵對}}</string>
  <string Context="Description Feeling Neutral" ID="Neutral">中立</string>
- <string Context="Look Window Recall Story Button" ID="Recall {{W|S}}tory">回憶{{W|S}}tory</string>
+ <string Context="Look Window Recall Story Button" ID="Recall {{W|S}}tory">{{W|S}}回憶</string>
  <string Context="Description Recall Menu Console UI" ID="press {{W|space}}">按 {{W|空白鍵}}</string>
- <string Context="Description Recall Menu Console UI (hardcoded key of S)" ID="recall {{W|s}}tory">回憶{{W|s}}tory</string>
+ <string Context="Description Recall Menu Console UI (hardcoded key of S)" ID="recall {{W|s}}tory">{{W|s}}回憶</string>
  <string Context="Description Recall Menu" ID="[=buttons.orList=]">[=buttons.orList=]</string>
  <string Context="MakersMark: Unknown CrafterName" ID="a crafter">工匠</string>
  <string Context="MakersMark - Description message" ID="=subject.This= =subject.descriptiveCategory|pluralize#subject= =subject.verb:bear= the =names.pluralize:mark= of =names.andList=.">=subject.This= =subject.descriptiveCategory|pluralize#subject= =subject.verb:bear= 了 =names.andList=. 的 =names.pluralize:mark=。</string>
@@ -4069,7 +4069,7 @@ alone if no match found.
  <string Context="ModSpiked ShieldSlamDamage ExtraDesc (default)" ID="+bleeding">+流血</string>
  <string Context="ModSpiked Display Adjective" ID="{{spiked|spiked}}" OrderAdjust="5">{{spiked|尖刺}}</string>
  <string Context="ModSpiked Description" ID="Spiked: This item causes additional bleeding damage.">尖刺：此物品會造成額外的流血傷害。</string>
- <string Context="ModSpiked Description Shield" ID="Spiked: This item adds bonus damage to Shield Slam equal to your Strength modifier and causes your target to bleed.">尖刺：此物品會根據你的力量修正值，為 盾牌 Slam 增加額外傷害，並使目標流血。</string>
+ <string Context="ModSpiked Description Shield" ID="Spiked: This item adds bonus damage to Shield Slam equal to your Strength modifier and causes your target to bleed.">尖刺：此物品會根據你的力量修正值，為盾牌猛擊(Slam)增加額外傷害，並使目標流血。</string>
  <string Context="ModSpiked Description Unarmed" ID="Spiked: Unarmed attacks performed while this item is equipped cause bleeding.">帶刺：裝備此物品時進行的徒手攻擊會造成流血。</string>
  <string Context="ModSpringLoaded Techscanning NameForStatus" ID="MobilityAssist">移動輔助</string>
  <string Context="ModSpringLoaded Display Adjective" ID="spring-loaded" OrderAdjust="0">彈簧加壓</string>
@@ -4094,7 +4094,7 @@ alone if no match found.
  <string Context="ModVisored Display Adjective" ID="visored" OrderAdjust="0">戴著面罩的</string>
  <string Context="ModVisored Description" ID="Visored: +1 DV">面罩：+1 DV</string>
  <string Context="ModWillowy Adjective" ID="willowy" OrderAdjust="0">苗條的</string>
- <string Context="ModWillowy ShortDescription" ID="Willowy: This item weighs much less than normal.">Willowy：此物品的重量比平常輕得多。</string>
+ <string Context="ModWillowy ShortDescription" ID="Willowy: This item weighs much less than normal.">輕盈(Willowy)：此物品的重量比平常輕得多。</string>
  <string Context="ModWired Techscanning NameForStatus" ID="Wiring">佈線</string>
  <string Context="ModWired Adjective" ID="{{c|wired}}" OrderAdjust="0">{{c|有線}}</string>
  <string Context="ModWired Description" ID="Wired: Has electrical wiring.">有線：具有電線。</string>
@@ -4436,7 +4436,7 @@ alone if no match found.
  <string Context="Physics (Inventory) Category" ID="Missile Weapons">飛彈武器</string>
  <string Context="Physics (Inventory) Category" ID="Natural Armor">天然護甲</string>
  <string Context="Physics (Inventory) Category" ID="Natural Missile Weapon">天然飛彈武器</string>
- <string Context="Physics (Inventory) Category" ID="Natural Weapons">天然武器 Natural Weapons</string>
+ <string Context="Physics (Inventory) Category" ID="Natural Weapons">天然武器</string>
  <string Context="Physics (Inventory) Category" ID="Nest">巢穴</string>
  <string Context="Physics (Inventory) Category" ID="Plants">植物</string>
  <string Context="Physics (Inventory) Category" ID="Projectiles">投射物</string>
@@ -5124,7 +5124,7 @@ alone if no match found.
  <string Context="KithAndKinGameState MotiveEvidence Kese ItemClueReveal 0" ID="That's strange. This bracer is heavily worn, but surprisingly clean. " Value="真奇怪。這款護腕磨損得很嚴重，但卻出奇地乾淨。" />
  <string Context="KithAndKinGameState MotiveEvidence Kese ItemClue 1" ID="Kesehind tried to clean blood off his armor, but missed a spot. " Value="凱塞欣德試圖清理盔甲上的血跡，但漏掉了一個地方。" />
  <string Context="KithAndKinGameState MotiveEvidence Kese ItemClueReveal 1" ID="Carmine streaks on Kesehind's armor suggest that he tried and failed to wipe away spilled blood. " Value="凱塞欣德的護甲上有著緋紅色的條紋，顯示他曾試圖擦拭濺出的血跡但失敗了。" />
- <string Context="KithAndKinGameState MotiveEvidence Kese LookText 1" ID="Kesehind's armor has bloodstains that he failed to remove. " Value="凱塞欣德的 armor 上有他未能清除的血跡。" />
+ <string Context="KithAndKinGameState MotiveEvidence Kese LookText 1" ID="Kesehind's armor has bloodstains that he failed to remove. " Value="凱塞欣德的護甲上有他未能清除的血跡。" />
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 0" ID="The Bey Lah scouts have had trouble with violent kendren. What if one slipped by?">貝拉偵察兵一直受到暴力肯德倫的困擾。如果其中一個溜過去了怎麼辦？</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 0" ID="The kendren are becoming more brazen in their hostility. I've had to misdirect and fight them off several times this month alone.">肯德倫(kendren)的敵意變得愈發囂張。光是這個月，我就不得不好幾次誤導並擊退他們。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 1" ID="The scouts have seen kendren treasure hunters about. That type will take anything not nailed down.">偵察兵看到附近有肯德倫(kendren)寶藏獵人出沒。那種傢伙只要不是釘死的，什麼都會偷走。</string>
@@ -5244,7 +5244,7 @@ alone if no match found.
  <string Context="JoppaWorldBuilder ZoneName Indefinite Article - 貝拉(Bey Lah) outskirts" ID="some">一些</string>
  <string ID="Hydropon">水耕</string>
  <string ID="the Hydropon">水耕廠</string>
- <string ID="Hamilcrab's shop">哈米蟹的 shop</string>
+ <string ID="Hamilcrab's shop">哈米蟹的商店</string>
  <string ID="Generating village history...">正在生成村莊歷史...</string>
  <string ID="some flattened remains">一些扁平的殘骸</string>
  <string ID="a secluded merchant from the Consortium of Phyta">一位來自 植物聯盟(Consortium of Phyta) 的隱居商人</string>
