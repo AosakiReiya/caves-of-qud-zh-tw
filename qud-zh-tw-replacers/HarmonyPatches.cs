@@ -29,6 +29,8 @@ public static class ZhTwHarmonyPatches
         Tuple.Create(new Regex(@"^The (.+?) hits for (\d+) damage with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "$1 用 $3 擊中，造成 $2 傷害$4"),
         Tuple.Create(new Regex(@"^The (.+?) hits for (\d+) damage(?:!? ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "$1 擊中，造成 $2 傷害$3"),
         // ==== 落空 ====
+        Tuple.Create(new Regex(@"^You miss with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未擊中（用 $1）$2"),
+        Tuple.Create(new Regex(@"^The (.+?) misses (.+?) with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "$1 未擊中 $2（用 $3）$4"),
         Tuple.Create(new Regex(@"^You miss (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未擊中 $1$2"),
         Tuple.Create(new Regex(@"^The (.+?) misses (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "$1 未擊中 $2$3"),
         // ==== 死亡 ====
@@ -40,8 +42,8 @@ public static class ZhTwHarmonyPatches
         Tuple.Create(new Regex(@"^You take (\d+) damage(?:!? ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你受到 $1 傷害$2"),
         Tuple.Create(new Regex(@"^The (.+?) takes (\d+) damage(?:!? ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "$1 受到 $2 傷害$3"),
         // ==== 穿透失敗 ====
-        Tuple.Create(new Regex(@"^You don't penetrate (?:the )?(.+?)'s armor with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未能用 $2 穿透 $1 的護甲$3"),
-        Tuple.Create(new Regex(@"^You don't penetrate (?:the )?(.+?)'s armor(?:!? ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未能穿透 $1 的護甲$2"),
+        Tuple.Create(new Regex(@"^You don't penetrate (?:the )?(.+?)'s armor with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未能用 $2 穿透 $1 的護甲 $3"),
+        Tuple.Create(new Regex(@"^You don't penetrate (?:the )?(.+?)'s armor(?:!? ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你未能穿透 $1 的護甲 $2"),
         // ==== 中英混合 combat（=subject.Does:hit= 等 token 已在訊息建構時轉成「擊中」，輸入為「X 擊中 (x1) for N damage with Y」）====
         // ---- 玩家命中 ----
         Tuple.Create(new Regex(@"^你 擊中 \((x\d+)\) for (\d+) damage with (.+?)[.!]?(?: ?(\[[^\]]*\]))?$", RegexOptions.IgnoreCase), "你用 $3 擊中($1)，造成 $2 傷害$4"),
@@ -306,7 +308,7 @@ public static class ZhTwHarmonyPatches
                 result = LeadingArticle.Replace(result, "");
                 result = result.Replace("  ", " ");
                 // 語境化：自己的武器/部位前的所有格冗餘（「用 你的 青銅匕首」→「用 青銅匕首」）
-                result = Regex.Replace(result, @"用 (?:你的|我的|他的|她的|它的|他們的) ", "用 ");
+                result = Regex.Replace(result, @"用 (?:你的|the|a|an) ", "用 ");
                 // 補逐詞：pattern 攔截後 weapon 段可能殘留英文（如 her bite / your iron dagger），
                 // 由 Clean 逐詞層兜底翻成中文（bite→咬、iron→鐵），不重跑整句 pattern。
                 try { result = ZhTwTextCleaner.Clean(result); } catch { }

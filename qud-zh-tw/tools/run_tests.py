@@ -313,7 +313,7 @@ def _add_msg_prefix(text, words, phrases):
             result = re.sub(pat, _frame_py_repl(repl), inner, flags=re.I).strip()
             result = POSSESSIVE.sub(lambda mm: POSS.get(mm.group(0).lower(), "它的"), result)
             result = LEADING_ARTICLE.sub("", result).replace("  ", " ")
-            result = re.sub(r"用 (?:你的|我的|他的|她的|它的|他們的) ", "用 ", result)
+            result = re.sub(r"用 (?:你的|the|a|an) ", "用 ", result)
             result = _clean(result, words, phrases)
             if outer:
                 result = "{{" + outer + "|" + result + "}}"
@@ -407,6 +407,14 @@ def test_pipeline():
         ("::你 擊中 (x1) for 2 damage with your 鐵匕首!", "用 鐵匕首 擊中(x1)", "your"),
         # ==== 電池狀態（PhraseLeaks 新增）====
         ("你辨識出 奇特小玩意 是 化學電池 (Full)。", "(滿電)", "Full"),
+        # ==== miss 變體（2026-08-13 補全）====
+        ("You miss with your bronze dagger! [9]", "你未擊中（用", "與"),
+        ("The 熊 misses you with her bite! [18]", "熊 未擊中 你（用 她的 咬", "與"),
+        ("You don't penetrate the bear's armor with your bronze dagger! [18]", "的護甲 [18]", "的護甲["),
+        # ==== 技能需求串（Clean 詞組層）====
+        ("[200sp] 25 敏捷, Draw a Bead, Wounding Fire", "繪製珠飾", "Draw"),
+        ("[150sp] 19 敏捷, Sure Fire", "萬無一失", "Sure"),
+        ("[200sp] 25 敏捷, Disorienting Fire", "令人迷失方向的火焰", "Disorienting"),
     ]
     for inp, must, must_not in cases:
         if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):
@@ -683,7 +691,7 @@ def test_combat_hit_pattern():
     check("含『擊中』開頭 hit pattern（前綴耐受）", '擊中\\s+\\(' in hook and '^[^\\u4e00' in hook)
     check("含『你用 $3 擊中』替換", "你用 $3 擊中" in hook)
     check("含死亡整句（dies）", 'dies[.!]?$' in hook)
-    check("含武器段所有格剝除", '用 (?:你的|我的|他的|她的|它的|他們的|the|a|an) ' in hook)
+    check("含武器段所有格剝除（僅你的）", '用 (?:你的|the|a|an) ' in hook)
 
 
 def _find_game_data():
@@ -891,6 +899,14 @@ def test_shorttext_coverage():
     g = ET.parse(game / "CoQ_Data/StreamingAssets/Base/Skills.xml").getroot()
     missing = [p.get("Name") for p in g.iter("power") if p.get("Name") and p.get("Name") not in tw]
     check("TmpWords 覆蓋全部 power 名", not missing, "; ".join(missing[:6]))
+    # PhraseLeaks（Clean 詞組層）也需覆蓋 power 名，防需求串等混雜句漏
+    m2 = re.search(r'PhraseLeaks\s*=\s*new Dictionary.*?\{(.*?)\n\s*\};', hook, re.S)
+    if m2:
+        pl = set(re.findall(r'\{\s*"([^"]+)"\s*,\s*"', m2.group(1)))
+        missing2 = [p.get("Name") for p in g.iter("power") if p.get("Name") and p.get("Name") not in pl]
+        check("PhraseLeaks 覆蓋全部 power 名", not missing2, "; ".join(missing2[:6]))
+    else:
+        check("PhraseLeaks 可解析", False)
     # 已修樣本防回歸（語料層漏翻）
     strings = ZH / "Strings.zh-tw.xml"
     if strings.exists():
