@@ -200,15 +200,41 @@ def _scan_lang(text):
     return hasEng, hasCjk
 
 
+def _sim_protect_parens(text):
+    """模擬 C# ProtectParens：緊鄰中文的 (English) 括號換成佔位符（逐詞後還原）。"""
+    box = []
+    out = []
+    i = 0
+    while i < len(text):
+        if text[i] == '(' and i > 0:
+            j = text.find(')', i)
+            if j != -1:
+                p = i - 1
+                while p >= 0 and text[p] in ' \t':
+                    p -= 1
+                if p >= 0 and '一' <= text[p] <= '鿿':
+                    box.append(text[i:j + 1])
+                    out.append('\x02' + str(len(box) - 1) + '\x02')
+                    i = j + 1
+                    continue
+        out.append(text[i])
+        i += 1
+    return ''.join(out), box
+
+
 def _clean(text, words, phrases):
     hasEng, hasCjk = _scan_lang(text)
     if not (hasEng and hasCjk): return text
-    # PhraseRegex 先（整句）
+    # PhraseRegex 先（整句/詞組；與 C# Clean 順序一致）
     for k in sorted(phrases, key=len, reverse=True):
         text = re.sub(r'(?i)' + re.escape(k), phrases[k], text)
+    # Phrase 產生的「中文(English)」括號保護（避免 Words 逐詞污染括號英文）
+    text, paren_box = _sim_protect_parens(text)
     # WordsRegex 後（整詞）；Python 要求 (?i) 在開頭（C# 可 `\b(?i)`）
     for k in sorted(words, key=len, reverse=True):
         text = re.sub(r'(?i)\b' + re.escape(k) + r'\b', words[k], text)
+    for idx, seg in enumerate(paren_box):
+        text = text.replace('\x02' + str(idx) + '\x02', seg)
     return text
 
 
@@ -413,8 +439,8 @@ def test_pipeline():
         ("You don't penetrate the bear's armor with your bronze dagger! [18]", "的護甲 [18]", "的護甲["),
         # ==== 技能需求串（Clean 詞組層）====
         ("[200sp] 25 敏捷, Draw a Bead, Wounding Fire", "繪製珠飾", "Draw"),
-        ("[150sp] 19 敏捷, Sure Fire", "萬無一失", "Sure"),
-        ("[200sp] 25 敏捷, Disorienting Fire", "令人迷失方向的火焰", "Disorienting"),
+        ("[150sp] 19 敏捷, Sure Fire", "萬無一失(Sure Fire)", "Sure 火焰"),
+        ("[200sp] 25 敏捷, Disorienting Fire", "令人迷失方向的火焰(Disorienting Fire)", "Disorienting 火焰"),
     ]
     for inp, must, must_not in cases:
         if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):
@@ -730,7 +756,12 @@ def test_paren_protect():
     check("ProtectParens 存在", "ProtectParens" in hook)
     check("RestoreParens 存在", "RestoreParens" in hook)
     check("PossessiveZh 存在", "PossessiveZh" in hook)
-    check("Clean 保護括號（在逐詞替換前）", "ProtectParens(work, parenBox)" in hook)
+    check("Clean 保護括號（在逐詞替換前）",
+          "ProtectParens(result, parenBox)" in hook or "ProtectParens(work, parenBox)" in hook)
+    hook_pos = hook.find("ProtectParens(result, parenBox)")
+    if hook_pos == -1:
+        hook_pos = hook.find("ProtectParens(work, parenBox)")
+    check("括號保護在 Phrase 之後 Words 之前", hook_pos != -1 and "WordsRegex" in hook[hook_pos:hook_pos+600])
     check("Clean 還原括號", "RestoreParens(result, parenBox)" in hook)
     check("'s 後接中文規則", "'s\\s+" in hook and '"哈爾"' not in hook)
     # 模擬「保護式逐詞替換」：對已翻譯 ProperNoun 樣本，括號內不該被替換成中文
@@ -907,6 +938,20 @@ def test_shorttext_coverage():
         check("PhraseLeaks 覆蓋全部 power 名", not missing2, "; ".join(missing2[:6]))
     else:
         check("PhraseLeaks 可解析", False)
+    # Skills DisplayName 不得為純英文（語料漏翻防回歸，除 Name 原文本身）
+    skillsf = ZH / "Skills.zh-tw.xml"
+    if skillsf.exists():
+        import xml.etree.ElementTree as _ET2
+        try:
+            _root = _ET2.fromstring(skillsf.read_text(encoding="utf-8-sig"))
+            unt = []
+            for _p in _root.iter("power"):
+                _n = _p.get("Name"); _d = _p.get("DisplayName") or _p.get("Snippet") or ""
+                if _d and re.fullmatch(r"[A-Za-z .'\-]+", _d.strip()) and _d.strip() != _n:
+                    unt.append(f"{_p.get('Name')}→{_d}")
+            check("Skills DisplayName 無純英文（Conatus 類）", not unt, "; ".join(unt[:5]))
+        except Exception as _e:
+            check("Skills.zh-tw.xml 可解析", False, str(_e))
     # 已修樣本防回歸（語料層漏翻）
     strings = ZH / "Strings.zh-tw.xml"
     if strings.exists():
@@ -926,6 +971,9 @@ def test_shorttext_coverage():
         h = hp.read_text(encoding="utf-8")
         check("quarters 無『四分之一』錯譯", "四分之一" not in h)
         check("commanding 無『指揮中的』", "指揮中的" not in h)
+    hook2 = HOOK.read_text(encoding="utf-8")
+    check("Ego 譯名為自我", '"Ego", "自我"' in hook2)
+    check("Willpower 譯名為意志", '"Willpower", "意志"' in hook2)
 
 
 def test_cs_structure():

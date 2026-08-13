@@ -824,10 +824,18 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
             }
             else if (t.Length <= 600)
             {
-                // 長文本（聲望句/狀態描述等）：中英混雜才走 Clean（冠詞剝除 + 逐詞），
-                // 純英文長句跳過（避免熱渲染路徑拖慢）
-                string r = ZhTwTextCleaner.Clean(t);
-                if (r != t) value = r.TrimStart();
+                // 長文本（需求串/聲望句等）：純英文 → 詞級白名單（TmpWords，含技能名/屬性）；
+                // 中英混雜 → Clean（冠詞剝除 + 逐詞）
+                if (!ZhTwTextCleaner.HasCjk(t))
+                {
+                    string r = ZhTwTextCleaner.TranslateTmpText(t);
+                    if (r != t) value = r;
+                }
+                else
+                {
+                    string r = ZhTwTextCleaner.Clean(t);
+                    if (r != t) value = r.TrimStart();
+                }
             }
         }
         catch { }

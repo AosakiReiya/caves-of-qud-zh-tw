@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <activatedabilities Lang="zh-tw" Encoding="utf-8">
   <ability Command="CommandAmputateLimb">
@@ -362,7 +362,7 @@
 <p>每次使用都會稍微吸引更多心靈入侵者的注意。</p>
 <br />
 <statline Name="CooldownNoWillpower" DisplayName="冷卻時間" />
-<p>冷卻時間不受意志力（Willpower）影響。</p></description>
+<p>冷卻時間不受意志（Willpower）影響。</p></description>
   </ability>
   <ability Command="CommandMentalMirror">
     <description><p>當「精神鏡像」冷卻結束時，若你遭受精神攻擊，你會獲得 +<stat Name="BonusMA" /> MA。如果該攻擊未能穿透你的 MA，則會反射回攻擊者身上。</p>
@@ -1049,7 +1049,7 @@
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandPersuasionBerate">
-    <description><p>你羞辱附近的生物，使其 DV、命中率、心智（Ego）與意志力（Willpower）降低 4 點，且敏捷（Quickness）降低 10%。</p>
+    <description><p>你羞辱附近的生物，使其 DV、命中率、自我（Ego）與意志（Willpower）降低 4 點，且敏捷（Quickness）降低 10%。</p>
 <br />
 <statline Name="Duration" DisplayName="Duration" />
 <statline Name="Range" DisplayName="射程" />
@@ -1079,7 +1079,7 @@
   <ability Command="CommandRebukeRobot">
     <description><p>你斥責機器人，使其徘徊離去或加入你。</p>
 <br />
-<p>針對機器人的心智（Ego）型攻擊。</p>
+<p>針對機器人的自我（Ego）型攻擊。</p>
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandToggleAkimbo">

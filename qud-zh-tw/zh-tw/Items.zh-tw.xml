@@ -3136,7 +3136,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="CathedraSapphire" Load="Merge">
   <part Name="Render" DisplayName="{{Y|帶有藍寶石花紋的座艙(CathedraSapphire)}}" />
   <part Name="Description" Short="=pronouns.Possessive= 的手指莖在木笛上跳動滑行，而 =pronouns.subjective= 踏著步 在褶皺的 根系 上進行橫向吉格舞。=pronouns.possessive= 冠冕花的花瓣同時變換著色彩，顯得十分愉悅。" />
-  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 心智(Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在周圍區域引發一股衝擊力，將敵人擊退並使其昏迷。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法移除。" />
+  <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#xA;+50 生命值&#xA;+100 負重能力&#xA;+3 自我(Ego)&#xA;你獲得了飛行能力。&#xA;&#xA;已啟動。冷卻時間 100。&#xA;你在周圍區域引發一股衝擊力，將敵人擊退並使其昏迷。&#xA;&#xA;你無法在背部裝備裝備。&#xA;此植入物無法移除。" />
  </object>
  <object Name="CathedraRuby" Load="Merge">
   <part Name="Render" DisplayName="{{Y|紅寶石花紋座殿(CathedraRuby)}}" />

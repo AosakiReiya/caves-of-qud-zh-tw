@@ -2103,7 +2103,7 @@ alone if no match found.
  <string Context="CookingDomainArtifact_OnIdentify Description" ID="whenever =subject.thisCreature= =subject.verb:identify= an artifact,">每當 =subject.thisCreature= =subject.verb:identify= 一件神器時，</string>
  <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Description" ID="Nothing happened.">什麼也沒發生。</string>
  <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Description" ID="=bonus.signed= to all six attributes permanently">永久提升所有六項屬性 =bonus.signed=</string>
- <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Description - Unrolled" ID="25% chance to gain +1 Strength, Agility, Toughness, Intelligence, Willpower, and Ego permanently.">有 25% 的機會永久獲得 +1 力量、敏捷、韌性、智力、意志力和心智。</string>
+ <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Description - Unrolled" ID="25% chance to gain +1 Strength, Agility, Toughness, Intelligence, Willpower, and Ego permanently.">有 25% 的機會永久獲得 +1 力量、敏捷、韌性、智力、意志和自我。</string>
  <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Journal Accomplishment" ID="You rejoiced in a drop of nectar.">你因一滴花蜜而感到欣喜。</string>
  <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Journal muralText" ID="=name= the Eater supped on royal nectar and metamorphosed into Godhead.">=name= 吞噬者曾飲用皇室花蜜，並蛻變成了神格。</string>
  <string Context="CookingDomainAttributes_UnitPermanentAllStats_25Percent Journal gospelText" ID="While traveling through =terrain.t=, =name= stopped at a tavern near =landmark.nearest=. There =subject.they= wisely declined to play a game of dice and instead supped on a nourishing serving of Eaters' nectar.">在穿越 =terrain.t= 時，=name= 在靠近 =landmark.nearest= 的酒館停了下來。=subject.they= 明智地拒絕了骰子遊戲，轉而享用了一份營養豐富的食者花蜜。</string>
@@ -2181,8 +2181,8 @@ alone if no match found.
  <string Context="CookingDomainFear_OnEatLah Description" ID="whenever =subject.thisCreature= =subject.verb:eat= a dreadroot tuber or lah petal,">每當 =subject.thisCreature= =subject.verb:eat= 一個恐懼根塊莖或 lah 花瓣時，</string>
  <string Context="CookingDomainFear_UnitBonusMA Description" ID="+2 MA">+2 MA</string>
  <string Context="CookingDomainFear_UnitIntimidate Description" ID="Can use =skillName=.">可以使用 =skillName=。</string>
- <string Context="CookingDomainFear_UnitIntimidate Description - Bonus" ID="=bonus.signed= bonus on Ego roll when using Intimidate.">使用「威嚇」時，心智(Ego)檢定獲得 =bonus.signed= 加成。</string>
- <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=. If =subject.they= =subject.verb:already:have= =skillName=, gain a =bonus.signed= bonus on the Ego roll when using =skillName=.">可以使用 =skillName=。若 =subject.they= =subject.verb:already:have= =skillName=，則在使用 =skillName= 時，於心智(Ego)檢定中獲得 =bonus.signed= 加成。</string>
+ <string Context="CookingDomainFear_UnitIntimidate Description - Bonus" ID="=bonus.signed= bonus on Ego roll when using Intimidate.">使用「威嚇」時，自我(Ego)檢定獲得 =bonus.signed= 加成。</string>
+ <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=. If =subject.they= =subject.verb:already:have= =skillName=, gain a =bonus.signed= bonus on the Ego roll when using =skillName=.">可以使用 =skillName=。若 =subject.they= =subject.verb:already:have= =skillName=，則在使用 =skillName= 時，於自我(Ego)檢定中獲得 =bonus.signed= 加成。</string>
  <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=.">可以使用 =skillName=。</string>
  <string Context="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:emit= a ray of flame per Flaming Ray at rank 5-6.">=subject.it.does:emit= 在等級 5-6 時，根據「火焰射線」的數量發射火焰射線。</string>
  <string Context="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction Notification" ID="=subject.does:emit= a powerful ray of flame.">=subject.does:emit= 一道強大的火焰光束。</string>
@@ -3706,8 +3706,8 @@ alone if no match found.
  <string Context="VampiricWeapon AppendEffect w/Reduction" ID="Heal for =percent=% of damage dealt, -=reduction=">造成傷害的 =percent=% 進行治療，-=reduction=</string>
  <string Context="VampiricWeapon AppendEffect w/Maximum" ID="Heal for =percent=% of damage dealt, max =maximum=">回復造成傷害的 =percent=%，上限為 =maximum=</string>
  <string Context="VampiricWeapon AppendEffect" ID="Heal for =percent=% of damage dealt">治療量為造成傷害的 =percent=%</string>
- <string Context="MeleeWeapon Description With Ego and HitBonus, Detailed" ID="{{rules|=ego.signed= Ego}}&#xA;{{rules|=hitBonus.signed= To-Hit}}&#xA;{{rules|=detailedStats=}}" Value="{{rules|=ego.signed= 心智}}&#xA;{{rules|=hitBonus.signed= 命中率}}&#xA;{{rules|=detailedStats=}}" />
- <string Context="MeleeWeapon Description With Ego, Detailed" ID="{{rules|=ego.signed= Ego}}&#xA;{{rules|=detailedStats=}}" Value="{{rules|=ego.signed= 心智}}&#xA;{{rules|=detailedStats=}}" />
+ <string Context="MeleeWeapon Description With Ego and HitBonus, Detailed" ID="{{rules|=ego.signed= Ego}}&#xA;{{rules|=hitBonus.signed= To-Hit}}&#xA;{{rules|=detailedStats=}}" Value="{{rules|=ego.signed= 自我}}&#xA;{{rules|=hitBonus.signed= 命中率}}&#xA;{{rules|=detailedStats=}}" />
+ <string Context="MeleeWeapon Description With Ego, Detailed" ID="{{rules|=ego.signed= Ego}}&#xA;{{rules|=detailedStats=}}" Value="{{rules|=ego.signed= 自我}}&#xA;{{rules|=detailedStats=}}" />
  <string Context="MeleeWeapon Description With HitBonus, Detailed" ID="{{rules|=hitBonus.signed= To-Hit}}&#xA;{{rules|=detailedStats=}}" Value="{{rules|=hitBonus.signed= 命中率}}&#xA;{{rules|=detailedStats=}}" />
  <string Context="MeleeWeapon Description Detailed" ID="{{rules|=detailedStats=}}">{{rules|=detailedStats=}}</string>
  <string Context="MeleeWeapon DetailedStats No Limit" ID="=stat.Name= Bonus Cap: no limit">=stat.Name= 加成上限：無限制</string>
@@ -4018,7 +4018,7 @@ alone if no match found.
  <string Context="ModPsionic Display Adjective" ID="{{psionic|psionic}}" OrderAdjust="0">{{psionic|靈能}}</string>
  <string Context="ModPsionic Display Remaining" ID="(=remainingDesc=)" OrderAdjust="-40">(=remainingDesc=)</string>
  <string Context="ModPsionic Disappear Message" ID="=subject.Does:disappear=.">=subject.Does:disappear=。</string>
- <string Context="ModPsionic Description" ID="Psionic: This weapon uses the wielder's Ego modifier for penetration bonus instead of Strength mod and attacks MA instead of AV. It will dissipate from the corporeal realm after some use.">靈能：此武器使用持有者的「心智」修正值作為穿透加成，而非「力量」修正值，且攻擊目標為 MA 而非 AV。使用一段時間後，它將從物質界消散。</string>
+ <string Context="ModPsionic Description" ID="Psionic: This weapon uses the wielder's Ego modifier for penetration bonus instead of Strength mod and attacks MA instead of AV. It will dissipate from the corporeal realm after some use.">靈能：此武器使用持有者的「自我」修正值作為穿透加成，而非「力量」修正值，且攻擊目標為 MA 而非 AV。使用一段時間後，它將從物質界消散。</string>
  <string Context="ModPsionic Remaining Adjective Full" ID="substantial">大量的</string>
  <string Context="ModPsionic Remaining Adjective Near Full" ID="lambent">微光</string>
  <string Context="ModPsionic Remaining Adjective Near Empty" ID="tenuous">脆弱</string>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <mutations Lang="zh-tw" Encoding="utf-8">
   <category Name="Morphotypes" DisplayName="{{W|形態型}}">
@@ -443,7 +443,7 @@
     </mutation>
     <mutation Name="Ego Projection" DisplayName="自我投射" BearerDescription="那些將自我投射至物質領域的人" BiomeAdjective="具備心靈折射性">
       <description>憑藉純粹的意志力，你完成了不可思議的肢體動作。</description>
-      <leveltext><p>提升一項身體屬性，增加量等於你心智（Ego）加成的兩倍</p>
+      <leveltext><p>提升一項身體屬性，增加量等於你自我（Ego）加成的兩倍</p>
 <statline Name="Duration" DisplayName="Duration" />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></leveltext>
     </mutation>
