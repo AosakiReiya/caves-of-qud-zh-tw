@@ -1047,6 +1047,43 @@ def test_cs_structure():
         check(f"{cs.name} 無字典提前閉合/孤立分號", not problems, "; ".join(problems[:6]))
 
 
+def test_liquids_integrity():
+    """Liquids.zh-tw.xml 必須保留官方必要欄位（slug/class/colors/render/part），
+    否則遊戲液體藍圖遺失 → primary liquid unknown → 載入崩潰（2026-08-13 事故）。"""
+    print("== liquids_integrity：液體藍圖欄位完整性 ==")
+    import xml.etree.ElementTree as ET
+    game = _find_game_data()
+    mf = ZH / "Liquids.zh-tw.xml"
+    if game is None or not mf.exists():
+        check("Liquids 檔可定位", False); return
+    bf = game / "CoQ_Data/StreamingAssets/Base/Liquids.xml"
+    if not bf.exists():
+        check("base Liquids.xml 存在", False); return
+    try:
+        b = ET.fromstring(bf.read_text(encoding="utf-8"))
+        m = ET.fromstring(mf.read_text(encoding="utf-8-sig"))
+    except ET.ParseError as e:
+        check("Liquids 可解析", False, str(e)); return
+    bl = {li.get("Name"): li for li in b.findall("liquid")}
+    ml = {li.get("Name"): li for li in m.findall("liquid")}
+    check("liquid 數量與 base 一致", len(bl) == len(ml), f"{len(bl)} vs {len(ml)}")
+    missing = []
+    for name, li in ml.items():
+        bbody = bl.get(name)
+        if bbody is None:
+            continue
+        for req in ("slug", "class"):
+            if bbody.find(req) is not None and li.find(req) is None:
+                missing.append(f"{name} 缺 <{req}>")
+        # part 完整性：base 的 part 除 mod 同 Name 覆蓋外需保留
+        bparts = {p.get("Name") for p in bbody.findall("part")}
+        mparts = {p.get("Name") for p in li.findall("part")}
+        lost = bparts - mparts
+        if lost:
+            missing.append(f"{name} 失 part {sorted(lost)[:2]}")
+    check("liquid 必需欄位/part 齊全", not missing, "; ".join(missing[:6]))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -1077,6 +1114,7 @@ def main():
     if run_all or a.xmldata: test_xml_paren_hybrid()
     if run_all or a.xmldata: test_sultanterm_values()
     if run_all or a.data: test_interests_coverage()
+    if run_all or a.data: test_liquids_integrity()
     if run_all or a.xmldata: test_propernouns()
     if run_all or a.static: test_shorttext_coverage()
     if run_all or a.static: test_cs_structure()
