@@ -1676,7 +1676,7 @@ public static class ZhTwTextCleaner
             { "% Quickness", "% 敏捷" },
             { "% action cost", "% 行動成本" },
             { "% chance of being randomly long-range teleported when taking ", "有 % 機率在受到 時被隨機長程傳送" },
-            { "% chance that each activated ability"s cooldown is refreshed.", "每個已啟動能力的冷卻時間有 % 機率被刷新。" },
+            { "% chance that each activated ability's cooldown is refreshed.", "每個已啟動能力的冷卻時間有 % 機率被刷新。" },
             { "% chance to behead ", "有 % 機率斬首 " },
             { "% chance to dismember on hit.", "命中時有 % 機率肢解。" },
             { "% chance to dismember on penetration", "穿透時有 % 機率肢解" },

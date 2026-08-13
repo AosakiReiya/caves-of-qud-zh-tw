@@ -1258,6 +1258,7 @@ def main():
     if run_all or a.static: test_shorttext_coverage()
     if run_all or a.static: test_cs_structure()
     if run_all or a.static: test_double_quote_dict_entries()
+    if run_all or a.static: test_dict_entry_syntax()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1304,6 +1305,23 @@ def test_double_quote_dict_entries():
         for m in pat.finditer(src):
             bad.append(f"{path.name}:{src[:m.start()].count(chr(10))+1}")
     check("字典條目一律雙引號（無單引號鍵值）", not bad, "; ".join(bad[:5]))
+
+
+def test_dict_entry_syntax():
+    """紅線：字典條目行必須精確符合 { "k", "v" },——鍵值用雙引號且內部不得有
+    裸引號/內嵌引號（2026-08-13 批次腳本 replace 誤傷 ability's→ability"s 事故；
+    寬鬆解析器會錯讀破損行，本檢查從『整行語法』層面兜底）。"""
+    bad=[]
+    for path in [HOOK, REPLACERS, UIHOOK, HARMONY]:
+        for i,ln in enumerate(path.read_text(encoding="utf-8").split("\n"),1):
+            st=ln.strip()
+            if not st.startswith("{"):
+                continue
+            # 剝離合法雙引號字串後，殘留的 " 即裸/內嵌引號（破損行會留下）
+            rest=re.sub(r'"(?:[^"\\]|\\.)*"', "", st)
+            if '"' in rest or "'" in rest:
+                bad.append(f"{path.name}:{i}")
+    check("字典條目行語法嚴格合法（無內嵌引號）", not bad, "; ".join(bad[:5]))
 
 if __name__ == "__main__":
     main()
