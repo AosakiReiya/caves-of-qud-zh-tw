@@ -147,6 +147,8 @@ def count_groups(p):
 
 def strip_strings_and_comments(s):
     s = re.sub(r'/\*.*?\*/', '', s, flags=re.S)
+    # regex 字元類（同行、含 ( 者）先剝離：類內 ( 屬普通字元，不參與括號配對
+    s = re.sub(r'\[[^\[\]\n]*\([^\[\]\n]*\]', '[]', s)
     s = re.sub(r'//[^\n]*', '', s)
     out, i = [], 0
     while i < len(s):
@@ -1070,6 +1072,8 @@ def test_cs_structure():
         t = re.sub(r"'(?:\\.|[^'\\])'", "' '", t)  # char 字面量（避免 '{' '}' 被誤計）
         t = re.sub(r'//[^\n]*', '', t)
         t = re.sub(r'/\*.*?\*/', '', t, flags=re.S)
+        # regex 字元類（同行、含 ( 者）先剝離，避免類內 ( 干擾配對
+        t = re.sub(r'\[[^\[\]\n]*\([^\[\]\n]*\]', '[]', t)
         stack = []
         brace_errs = []
         for i, ch in enumerate(t):
@@ -1253,6 +1257,7 @@ def main():
     if run_all or a.xmldata: test_light_torch_covered()
     if run_all or a.static: test_shorttext_coverage()
     if run_all or a.static: test_cs_structure()
+    if run_all or a.static: test_double_quote_dict_entries()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1286,6 +1291,19 @@ def test_light_torch_covered():
     items=ZH/"Items.zh-tw.xml"
     ok = items.exists() and "Name=\"Light Torch\"" in items.read_text(encoding="utf-8-sig")
     check("Light Torch DisplayName 已覆蓋", ok, "")
+
+
+def test_double_quote_dict_entries():
+    """紅線：字典條目必須用雙引號字串。C# 單引號是 char 字面量，
+    中文鍵值直接 CS1012 編譯失敗（2026-08-13 批次腳本 repr 事故 553 條）。
+    只抓『條目行』特徵（{ 'k', 'v' },），不誤傷合法 char 字面量（如 '\u007b'）。"""
+    bad=[]
+    pat=re.compile(r"^\s*\{\s*'[^']*'[^{}]*,\s*'[^']*'\s*\},?\s*$", re.M)
+    for path in [HOOK, REPLACERS, UIHOOK, HARMONY]:
+        src=path.read_text(encoding="utf-8")
+        for m in pat.finditer(src):
+            bad.append(f"{path.name}:{src[:m.start()].count(chr(10))+1}")
+    check("字典條目一律雙引號（無單引號鍵值）", not bad, "; ".join(bad[:5]))
 
 if __name__ == "__main__":
     main()
