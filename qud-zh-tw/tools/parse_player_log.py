@@ -80,21 +80,42 @@ def main():
 
     text = log.read_text(encoding="utf-8", errors="ignore")
     covered = mod_covered()
+    # ① 優先：mod 殘英掃描器的 LEAK[..] 行（精確來源，含 <- 殘英清單）
+    leak_lines = []
+    for line in text.splitlines():
+        if "LEAK[" in line and "<-" in line:
+            leak_lines.append(line)
+    # ② 一般中英混合行兜底
     hits = []
     for line in text.splitlines():
         if len(line) > 300:
             continue
-        if not re.search(r"[\\u4e00-\\u9fff]", line):
+        if not re.search(r"[\u4e00-\u9fff]", line):
             continue
         words = [w for w in ENG.findall(line) if w.lower() not in STOP]
         words = [w for w in words if w not in covered]
         if words:
             hits.append((line.strip(), words))
-    # 去重、排序
+
+    def final_words(line_with_marker):
+        m_ = re.search(r"<- ([A-Za-z,]+)$", line_with_marker)
+        if m_:
+            return [w for w in m_.group(1).split(",") if w]
+        return []
+
     seen = {}
     for line, words in hits:
+        lw = final_words(line)
+        words = lw if lw else words
         key = " ".join(words)
         seen.setdefault(key, []).append(line)
+    # LEAK 行併入（無 ENG 詞的也收）
+    for line in leak_lines:
+        lw = final_words(line)
+        if not lw:
+            continue
+        key = " ".join(lw)
+        seen.setdefault(key, []).append(line.split("]: ")[1][:150] if "]: " in line else line[:150])
     out = [{"words": k, "count": len(v), "sample": v[0][:150]} for k, v in seen.items()]
     out.sort(key=lambda x: -x["count"])
     dest = ROOT / "log_leaks.json"

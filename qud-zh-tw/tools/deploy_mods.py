@@ -40,6 +40,12 @@ DATA_FILES = ["manifest.json", "Languages.xml", "historyspice.zh-tw.json"]
 DATA_DIRS = ["zh-tw"]
 REPL_GLOBS = ["*.cs", "manifest.json", "README.txt"]
 
+# 液體檔案注意事項：遊戲 2.0.212.29 初期曾出現「mod 液體合併 → BaseLiquid.Initialize NRE」，
+# 經實證（2026-08-13）根因為 875c7c1 的 ParenPhraseRegex 靜態 Regex（非液體檔本身）。
+# 純文本版 Liquids.zh-tw.xml（官方 localizable 格式）可正常載入，故不再封鎖。
+# 若日後再次出現液體 NRE，優先檢查 replacers 的靜態正則/掛鉤，勿直接刪液體檔。
+LIQUID_BLOCKLIST = set()
+
 CANDIDATES = [
     Path.home() / ".config/unity3d/Freehold Games/CavesOfQud/Mods",
     Path.home() / ".local/share/unity3d/Freehold Games/CavesOfQud/Mods",
@@ -100,6 +106,9 @@ def sync(src: Path, dst: Path, spec_files: list[str] | None, spec_dirs: list[str
             for sf in (src / rd).glob("*"):
                 if not sf.is_file():
                     continue
+                if sf.name in LIQUID_BLOCKLIST:
+                    details.append(f"  封鎖 {rd}/{sf.name}（液體檔會觸發 BaseLiquid.Initialize NRE，見 LIQUIDS_INCIDENT.md）")
+                    continue
                 df = dst / rd / sf.name
                 df.parent.mkdir(parents=True, exist_ok=True)
                 if not df.exists() or sf.read_bytes() != df.read_bytes():
@@ -107,6 +116,14 @@ def sync(src: Path, dst: Path, spec_files: list[str] | None, spec_dirs: list[str
                     changed += 1
                     if not dry:
                         shutil.copy2(sf, df)
+    # 清理目標端被封鎖的殘留液體檔（防之前部署留下的檔案繼續觸發崩潰）
+    if spec_dirs and not dry:
+        for rd in spec_dirs:
+            for name in LIQUID_BLOCKLIST:
+                res = dst / rd / name
+                if res.exists():
+                    res.replace(res.with_name(name + ".bak"))
+                    print(f"  [清除] 目標端殘留封鎖檔 {rd}/{name} → {name}.bak")
     if globs:
         for g in globs:
             for sf in src.glob(g):
@@ -123,7 +140,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", default=None, help="強制指定遊戲 Mods 目錄")
     ap.add_argument("--dry-run", action="store_true", help="只列差異不複製")
+    ap.add_argument("--skip-tests", action="store_true", help="跳過部署前自動測試（預設會跑 run_tests.py，FAIL 即中止）")
     a = ap.parse_args()
+
+    # 部署前自動檢驗：語料/字典/管線回歸（防 2026-08-13 型事故重演）
+    if not a.skip_tests and not a.dry_run:
+        import subprocess
+        tp = PROJ / "tools" / "run_tests.py"
+        if tp.exists():
+            r = subprocess.run([sys.executable, str(tp)], capture_output=True, text=True)
+            tail = r.stdout.strip().splitlines()[-1] if r.stdout.strip() else "?"
+            m = re.search(r"(\d+)\s*FAIL", tail)
+            failed = m is not None and int(m.group(1)) > 0
+            if failed:
+                print("run_tests 未全過，中止部署：\n" + tail)
+                sys.exit(1)
+            print(f"run_tests：{tail}")
 
     mods = find_mods_dir(a.dir)
     print(f"目標 Mods 目錄：{mods}\n")

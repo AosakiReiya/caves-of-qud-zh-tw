@@ -1,764 +1,200 @@
-<?xml version='1.0' encoding='utf-8'?>
-<liquids Lang="zh-tw" Encoding="utf-8"><liquid Name="Acid"><slug>acid</slug>
-    <class>LiquidAcid</class>
-    <combustibility>3</combustibility>
-    <thermalConductivity>45</thermalConductivity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <cleansing>30</cleansing>
-    <valuePerDram>1.5</valuePerDram>
-    <vaporObject>AcidGas</vaporObject>
-    <interruptAutowalk>true</interruptAutowalk>
-    <considerDangerousToContact>true</considerDangerousToContact>
-    <considerDangerousToDrink>true</considerDangerousToDrink>
-    <colors>Gg</colors>
-    <displayName>{{G|酸液}}</displayName>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.29
+
+-->
+<liquids Lang="zh-tw" Encoding="utf-8">
+ <liquid Name="Acid">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{G|酸液}}</displayName>
   <adjective>{{G|酸性的}}</adjective>
   <waterRitualName>酸液</waterRitualName>
   <smearedAdjective>{{G|酸性的}}</smearedAdjective>
   <smearedName>{{G|佈滿酸液的}}</smearedName>
   <stainedName>{{G|酸液}}</stainedName>
-  <preparedCookingIngredient>acidMinor</preparedCookingIngredient>
-    <render>
-      <baseColor>&amp;G^g</baseColor>
-      <secondaryColorText>&amp;G</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;G^g</color>
-      </frozen>
-      <blips>
-        <color>&amp;G^g</color>
-        <renderString>≈,~,○,~</renderString>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <soupSludgeProperties>
-      <pseudopod>Acidic Pseudopod</pseudopod>
-      <stat Name="AcidResistance">100</stat>
-    </soupSludgeProperties>
-    <part Name="AcidNavigation" />
-    <part Name="AcidEating" DamageMessage="來自 {{G|酸液}}！" />
- <part Name="MessageOnDrink" Message="{{G|好燙！}}" />
+  <part Name="MessageOnDrink" Message="{{G|好燙！}}" />
   <part Name="DamageOnDrink" Message="來自 {{G|飲用強酸}}！" />
+  <part Name="AcidEating" DamageMessage="來自 {{G|酸液}}！" />
+ </liquid>
+ <liquid Name="Asphalt">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Asphalt"><slug>asphalt</slug>
-    <class>LiquidAsphalt</class>
-    <flameTemperature>240</flameTemperature>
-    <vaporTemperature>1240</vaporTemperature>
-    <combustibility>75</combustibility>
-    <adsorbence>25</adsorbence>
-    <pureElectricalConductivity>10</pureElectricalConductivity>
-    <mixedElectricalConductivity>10</mixedElectricalConductivity>
-    <thermalConductivity>35</thermalConductivity>
-    <fluidity>1</fluidity>
-    <staining>1</staining>
-    <weight>0.5</weight>
-    <interruptAutowalk>true</interruptAutowalk>
-    <stickyWhenWet>true</stickyWhenWet>
-    <stickySaveTargetBase>4</stickySaveTargetBase>
-    <stickySaveTargetScale>0.1</stickySaveTargetScale>
-    <stickyDuration>12</stickyDuration>
-    <stickySaveVs>Asphalt Stuck Restraint</stickySaveVs>
-    <colors>Ky</colors>
-    <displayName>{{K|asphalt}}</displayName>
+  <displayName>{{K|asphalt}}</displayName>
   <adjective>{{K|瀝青狀的}}</adjective>
   <waterRitualName>焦油</waterRitualName>
   <smearedAdjective>{{K|瀝青狀的}}</smearedAdjective>
   <smearedName>{{K|瀝青狀的}}</smearedName>
   <stainedName>{{K|焦油}}</stainedName>
-  <preparedCookingIngredient>stabilityMinor</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Tarry Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <render>
-      <baseColor>&amp;k^K</baseColor>
-      <secondaryColorText>&amp;K</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Speckle/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;k^K</color>
-      </frozen>
-      <blips>
-        <color>&amp;k^K</color>
-        <renderString>≈,~,○,~</renderString>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;K</color>
-      </smear>
-    </render>
-    <part Name="MessageOnDrink" Message="{{K|好燙！}}" />
-  <part Name="TemperatureChangeOnDrink">
-      <temperature>500</temperature>
-    </part>
-    <part Name="DamageOnDrink" Message="來自 {{K|飲用瀝青}}！" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <part Name="MessageOnDrink" Message="{{K|好燙！}}" />
+  <part Name="DamageOnDrink" Message="來自 {{K|飲用瀝青}}！" />
+ </liquid>
+ <liquid Name="Algae">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Algae"><slug>algae</slug>
-    <class>LiquidAlgae</class>
-    <vaporTemperature>200</vaporTemperature>
-    <thermalConductivity>20</thermalConductivity>
-    <fluidity>35</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <stainOnlyWhenPure>true</stainOnlyWhenPure>
-    <cleansing>1</cleansing>
-    <colors>gC</colors>
-    <displayName>{{g|藻類}}</displayName>
+  <displayName>{{g|藻類}}</displayName>
   <adjective>{{g|藻類的}}</adjective>
   <waterRitualName>藻類</waterRitualName>
   <smearedAdjective>{{g|藻類的}}</smearedAdjective>
-  <part Name="AltSmearedAdjectiveWhenLessThan">
-      <otherSlugs>water</otherSlugs>
-    </part>
-    <smearedName>{{g|藻類覆蓋}}</smearedName>
+  <smearedName>{{g|藻類覆蓋}}</smearedName>
   <stainedName>{{g|藻類}}</stainedName>
-  <preparedCookingIngredient>plantMinor</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Algal Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <part Name="RenderSecondToWater">
-        <colorText>&amp;g^C</colorText>
-        <colorTile>&amp;g</colorTile>
-        <colorDetail>C</colorDetail>
-      </part>
-      <baseColor>&amp;g^C</baseColor>
-      <secondaryColorBackground>^C</secondaryColorBackground>
-      <wadingRenderChar>▒</wadingRenderChar>
-      <paint>
-        <atlas>Liquids/Paisley/</atlas>
-      </paint>
-    </render>
-    <part Name="SnackOnDrink" Message="鹽水刺痛你的口腔，讓你的呼吸充滿湖泊的空氣。" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Blood"><slug>blood</slug>
-    <class>LiquidBlood</class>
-    <flameTemperature>400</flameTemperature>
-    <vaporTemperature>1200</vaporTemperature>
-    <combustibility>2</combustibility>
-    <fluidity>5</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>2</staining>
-    <thermalConductivity>35</thermalConductivity>
-    <circulatoryLossTerm>流血中</circulatoryLossTerm>
+  <part Name="SnackOnDrink" Message="鹽水刺痛你的口腔，讓你的呼吸充滿湖泊的空氣。" />
+ </liquid>
+ <liquid Name="Blood">
+  <circulatoryLossTerm>流血中</circulatoryLossTerm>
   <circulatoryLossNoun>流血</circulatoryLossNoun>
-  <colors>rK</colors>
-    <valuePerDram>0.25</valuePerDram>
-    <smearedAdjective>{{r|血淋淋的}}</smearedAdjective>
+  <displayName>{{r|血液}}</displayName>
+  <adjective>{{r|血淋淋的}}</adjective>
+  <waterRitualName>血液</waterRitualName>
+  <smearedAdjective>{{r|血淋淋的}}</smearedAdjective>
   <smearedName>{{r|血淋淋的}}</smearedName>
   <stainedName>{{r|血液}}</stainedName>
-  <displayName>{{r|血液}}</displayName>
-  <waterRitualName>血液</waterRitualName>
-  <adjective>{{r|血淋淋的}}</adjective>
-  <stainElement Name="might" />
-    <soupSludgeProperties>
-      <pseudopod>Bloody Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <tag Name="Desecrates" />
-    <part Name="MessageOnDrink" Message="它有一股金屬味。" />
- <render>
-      <part Name="RenderSecondToAlgae">
-        <colorText>&amp;r^C</colorText>
-        <colorDetail>C</colorDetail>
-      </part>
-      <baseColor>&amp;r^k</baseColor>
-      <secondaryColorText>&amp;r</secondaryColorText>
-      <smear>
-        <color>&amp;r</color>
-      </smear>
-    </render>
-  </liquid><liquid Name="BrainBrine"><slug>brainbrine</slug>
-    <class>LiquidBrainBrine</class>
-    <colors>gW</colors>
-    <vaporTemperature>2000</vaporTemperature>
-    <vaporObject>ConfusionGas</vaporObject>
-    <combustibility>30</combustibility>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>3</staining>
-    <conversionProduct>algae</conversionProduct>
-    <displayName>{{brainbrine|腦鹽水}}</displayName>
+  <part Name="MessageOnDrink" Message="它有一股金屬味。" />
+ </liquid>
+ <liquid Name="BrainBrine">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{brainbrine|腦鹽水}}</displayName>
   <adjective>{{nervous|緊張}}</adjective>
   <waterRitualName>腦鹽水</waterRitualName>
   <smearedAdjective>{{nervous|緊張}}</smearedAdjective>
   <smearedName>{{nervous|緊張}}</smearedName>
   <stainedName>{{brainbrine|腦-鹽水}}</stainedName>
- <stainElement Name="scholarship" />
-    <valuePerDram>1233</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Nervous Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;g^W</baseColor>
-      <secondaryColorText>&amp;W</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Dot/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;g^W</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;g^W</color>
-        <rareRenderString>~</rareRenderString>
-        <rareColor>&amp;g^W</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;W</color>
-      </smear>
-    </render>
-    <part Name="BrainBrineOnDrink" />
+ </liquid>
+ <liquid Name="Cider">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Cider"><slug>cider</slug>
-    <class>LiquidCider</class>
-    <colors>wr</colors>
-    <flameTemperature>500</flameTemperature>
-    <vaporTemperature>800</vaporTemperature>
-    <combustibility>5</combustibility>
-    <thermalConductivity>40</thermalConductivity>
-    <evaporativity>5</evaporativity>
-    <displayName>{{cider|蘋果酒}}</displayName>
+  <displayName>{{cider|蘋果酒}}</displayName>
   <adjective>{{cider|辛香}}</adjective>
   <waterRitualName>蘋果酒</waterRitualName>
   <smearedAdjective>{{cider|芬芳}}</smearedAdjective>
   <smearedName>{{cider|芬芳}}</smearedName>
   <stainedName>{{cider|蘋果酒}}</stainedName>
-  <preparedCookingIngredient>quicknessMinor</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Spiced Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="GlotrotCureBaseIngredient" />
-    <tag Name="MonochromeCureIngredient" />
-    <tag Name="PlantBased" />
-    <part Name="SnackOnDrink">
-      <dehydrationFactor>0</dehydrationFactor>
-    </part>
-    <part Name="DrankWine" Message="它既辛辣又美味。" />
- <valuePerDram>3.8</valuePerDram>
-    <render>
-      <baseColor>&amp;w^r</baseColor>
-      <secondaryColorText>&amp;w</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;g^W</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;w^r</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;r^w</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;w</color>
-      </smear>
-    </render>
+  <part Name="DrankWine" Message="它既辛辣又美味。" />
+ </liquid>
+ <liquid Name="CloningDraught">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="CloningDraught"><slug>cloning</slug>
-    <class>LiquidCloning</class>
-    <colors>YM</colors>
-    <fluidity>10</fluidity>
-    <evaporativity>100</evaporativity>
-    <valuePerDram>1250</valuePerDram>
-    <displayName>{{cloning|複製藥劑}}</displayName>
+  <displayName>{{cloning|複製藥劑}}</displayName>
   <adjective>{{cloning|均質化}}</adjective>
+  <waterRitualName>穿堂風</waterRitualName>
   <smearedAdjective>{{cloning|均質化}}</smearedAdjective>
   <smearedName>{{cloning|均質化}}</smearedName>
   <stainedName>{{cloning|複製藥劑}}</stainedName>
-  <preparedCookingIngredient>cloningMinor</preparedCookingIngredient>
-    <waterRitualName>穿堂風</waterRitualName>
-  <stainElement Name="might" />
-    <stainElement Name="time" />
-    <soupSludgeProperties> 
-      <pseudopod>Homogenized Pseudopod</pseudopod>
-      <part Name="CloneOnHit" />
-    </soupSludgeProperties>
-    <render>
-      <part Name="Glows" />
-      <baseColor>&amp;M^Y</baseColor>
-      <secondaryColorText>&amp;Y</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Paisley/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;M^Y</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;M^Y</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;M^Y</rareColor>
-      </blips>
-    </render>
-    <part Name="CloningBehaviors" DrinkMessage="你感到一種令人不安的矛盾感。" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <part Name="CloningBehaviors" DrinkMessage="你感到一種令人不安的矛盾感。" />
+ </liquid>
+ <liquid Name="Convalessence">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Convalessence"><slug>convalessence</slug>
-    <class>LiquidConvalessence</class>
-    <colors>CY</colors>
-    <temperature>5</temperature>
-    <combustibility>5</combustibility>
-    <pureElectricalConductivity>10</pureElectricalConductivity>
-    <mixedElectricalConductivity>10</mixedElectricalConductivity>
-    <thermalConductivity>80</thermalConductivity>
-    <fluidity>20</fluidity>
-    <evaporativity>15</evaporativity>
-    <cleansing>5</cleansing>
-    <displayName>{{C|康復}}</displayName>
+  <displayName>{{C|康復}}</displayName>
   <adjective>{{C|發光}}</adjective>
   <waterRitualName>康復期</waterRitualName>
   <smearedAdjective>{{C|發光}}</smearedAdjective>
   <smearedName>{{C|發光}}</smearedName>
   <stainedName>{{C|康復}}</stainedName>
-  <preparedCookingIngredient>coldMinor,regenLowtierMinor</preparedCookingIngredient>
-    <stainElement Name="ice" />
-    <soupSludgeProperties>
-      <pseudopod>Luminous Pseudopod2</pseudopod>
-      <stat Name="ColdResistance" Value="100" />
-      <part Name="LightSource" Radius="6" />
-    </soupSludgeProperties>
-    <render>
-      <part Name="Glows" BrighterWithVolume="true" LightLevel="1" />
-      <baseColor>&amp;Y^C</baseColor>
-      <secondaryColorText>&amp;C</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;C^Y</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-        <color>&amp;Y^C</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;C^Y</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;C</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="HealingPool" />
-    <part Name="HealingLocation" />
-    <freezeObject Name="CryoGas">
+  <part Name="MessageOnDrink" Message="它在冒泡！" />
+  <freezeObject Name="CryoGas">
    <verb>昇華</verb>
   </freezeObject>
- <part Name="MessageOnDrink" Message="它在冒泡！" />
+ </liquid>
+ <liquid Name="Gel">
+  <slipperyMessage>{{Y|=subject.Does:slip= 在凝膠上滑倒了！}}</slipperyMessage>
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Gel"><slug>gel</slug>
-    <class>LiquidGel</class>
-    <pureElectricalConductivity>100</pureElectricalConductivity>
-    <mixedElectricalConductivity>100</mixedElectricalConductivity>
-    <thermalConductivity>70</thermalConductivity>
-    <fluidity>5</fluidity>
-    <evaporativity>1</evaporativity>
-    <cleansing>1</cleansing>
-    <slipperyWhenWet>true</slipperyWhenWet>
-    <slipperyWhenFrozen>true</slipperyWhenFrozen>
-    <slipperySaveTargetBase>5</slipperySaveTargetBase>
-    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
-    <slipperySaveVs>Gel Slip Move</slipperySaveVs>
-    <slipperyMessage>{{Y|=subject.Does:slip= 在凝膠上滑倒了！}}</slipperyMessage>
-  <slipperyParticle>&amp;Y→</slipperyParticle>
-    <colors>Yy</colors>
-    <displayName>{{Y|膠狀物}}</displayName>
+  <displayName>{{Y|膠狀物}}</displayName>
   <adjective>{{Y|油膩}}</adjective>
   <waterRitualName>凝膠</waterRitualName>
-  <soupSludgeProperties>
-      <pseudopod>Unctuous Pseudopod</pseudopod>
-      <part Name="DisarmOnHit" Chance="100" />
-    </soupSludgeProperties>
-    <part Name="MessageOnDrink" Message="這非常油膩。" />
- <smearedAdjective>{{Y|油膩}}</smearedAdjective>
+  <smearedAdjective>{{Y|油膩}}</smearedAdjective>
   <smearedName>{{Y|油膩}}</smearedName>
   <stainedName>{{Y|膠狀物}}</stainedName>
-  <valuePerDram>0.5</valuePerDram>
-    <render>
-      <baseColor>&amp;y^Y</baseColor>
-      <secondaryColorText>&amp;Y</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;y^C</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-        <color>&amp;y^Y</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;y^C</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;Y</color>
-      </smear>
-    </render>
-  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="GreenGoo"><slug>goo</slug>
-    <class>LiquidGoo</class>
-    <colors>GY</colors>
-    <flameTemperature>400</flameTemperature>
-    <vaporTemperature>110</vaporTemperature>
-    <vaporObject>PoisonGas</vaporObject>
-    <combustibility>20</combustibility>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <circulatoryLossNoun>黏液</circulatoryLossNoun>
+  <part Name="MessageOnDrink" Message="這非常油膩。" />
+ </liquid>
+ <liquid Name="GreenGoo">
   <circulatoryLossTerm>滲出</circulatoryLossTerm>
+  <circulatoryLossNoun>黏液</circulatoryLossNoun>
   <displayName>{{G|綠色黏液}}</displayName>
   <adjective>{{G|黏糊糊的}}</adjective>
   <waterRitualName>黏液</waterRitualName>
   <smearedAdjective>{{G|黏糊糊的}}</smearedAdjective>
   <smearedName>{{G|黏糊糊的}}</smearedName>
   <stainedName>{{G|黏液}}</stainedName>
-  <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Gooey Pseudopod2</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;Y^G</baseColor>
-      <secondaryColorText>&amp;G</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>☼</renderString>
-        <color>&amp;y^C</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;Y^G</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;Y^G</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;G</color>
-      </smear>
-    </render>
-    <tag Name="Waste" />
-    <part Name="MessageOnDrink" Message="太可怕了！" />
- <part Name="PoisonOnDrink" Message="你感覺到毒素正流經你的血管！" />
   <part Name="PoisonOnGoingProne" Message="有毒的黏液灼傷了你的眼睛。" />
-  <part Name="FilthNavigation" />
-  </liquid><liquid Name="Honey"><slug>honey</slug>
-    <class>LiquidHoney</class>
-    <colors>wW</colors>
-    <flameTemperature>300</flameTemperature>
-    <vaporTemperature>1300</vaporTemperature>
-    <combustibility>60</combustibility>
-    <adsorbence>25</adsorbence>
-    <pureElectricalConductivity>40</pureElectricalConductivity>
-    <mixedElectricalConductivity>40</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <weight>0.5</weight>
-    <interruptAutowalk>true</interruptAutowalk>
-    <stickyWhenWet>true</stickyWhenWet>
-    <stickySaveTargetBase>1</stickySaveTargetBase>
-    <stickySaveTargetScale>0.1</stickySaveTargetScale>
-    <stickyDuration>12</stickyDuration>
-    <stickySaveVs>Honey Stuck Restraint</stickySaveVs>
-    <displayName>{{w|蜂蜜}}</displayName>
+  <part Name="PoisonOnDrink" Message="你感覺到毒素正流經你的血管！" />
+  <part Name="MessageOnDrink" Message="太可怕了！" />
+ </liquid>
+ <liquid Name="Honey">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{w|蜂蜜}}</displayName>
   <adjective>{{w|甜美}}</adjective>
   <waterRitualName>蜂蜜</waterRitualName>
   <smearedAdjective>{{w|黏糊糊的}}</smearedAdjective>
   <smearedName>{{w|黏糊糊的}}</smearedName>
   <stainedName>{{w|蜂蜜}}</stainedName>
-  <preparedCookingIngredient>medicinalMinor</preparedCookingIngredient>
-    <valuePerDram>2</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Honeyed Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;w^W</baseColor>
-      <secondaryColorText>&amp;w</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Gunk/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;W^w</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;W^w</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;W^w</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;w</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="GlotrotCureBaseIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <part Name="SnackOnDrink" Message="真好吃！" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <part Name="SnackOnDrink" Message="真好吃！" />
+ </liquid>
+ <liquid Name="Ink">
+  <slipperyMessage>{{K|=subject.Does:slip= 在墨汁上滑倒了！}}</slipperyMessage>
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Ink"><slug>ink</slug>
-    <class>LiquidInk</class>
-    <colors>Ky</colors>
-    <flameTemperature>350</flameTemperature>
-    <vaporTemperature>1350</vaporTemperature>
-    <combustibility>30</combustibility>
-    <pureElectricalConductivity>40</pureElectricalConductivity>
-    <mixedElectricalConductivity>40</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>3</staining>
-    <slipperyWhenWet>true</slipperyWhenWet>
-    <slipperyWhenFrozen>true</slipperyWhenFrozen>
-    <slipperySaveTargetBase>5</slipperySaveTargetBase>
-    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
-    <slipperySaveVs>Ink Slip Move</slipperySaveVs>
-    <slipperyMessage>{{K|=subject.Does:slip= 在墨汁上滑倒了！}}</slipperyMessage>
-  <slipperyParticle>&amp;K→</slipperyParticle>
-    <displayName>{{K|墨水}}</displayName>
+  <displayName>{{K|墨水}}</displayName>
   <adjective>{{K|墨汁狀}}</adjective>
   <waterRitualName>墨水</waterRitualName>
   <smearedAdjective>{{K|墨汁狀}}</smearedAdjective>
   <smearedName>{{K|墨汁狀}}</smearedName>
   <stainedName>{{K|墨水}}</stainedName>
-  <valuePerDram>1.5</valuePerDram>
-    <stainElement Name="scholarship" />
-    <soupSludgeProperties>
-      <pseudopod>Inky Pseudopod</pseudopod>
-      <part Name="DisarmOnHit" Chance="100" />
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;y^k</baseColor>
-      <secondaryColorText>&amp;k</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;y^k</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-        <color>&amp;y^k</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;y^k</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;K</color>
-      </smear>
-    </render>
-    <tag Name="MonochromeCureIngredient" />
-    <part Name="MessageOnDrink" Message="它非常墨黑。" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <part Name="MessageOnDrink" Message="它非常墨黑。" />
+ </liquid>
+ <liquid Name="Lava">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Lava"><slug>lava</slug>
-    <class>LiquidLava</class>
-    <vaporTemperature>10000</vaporTemperature>
-    <temperature>1000</temperature>
-    <fluidity>15</fluidity>
-    <cleansing>20</cleansing>
-    <weight>0.50</weight>
-    <valuePerDram>50</valuePerDram>
-    <pureElectricalConductivity>90</pureElectricalConductivity>
-    <mixedElectricalConductivity>90</mixedElectricalConductivity>
-    <interruptAutowalk>true</interruptAutowalk>
-    <considerDangerousToContact>true</considerDangerousToContact>
-    <considerDangerousToDrink>true</considerDangerousToDrink>
-
-    <freezeObject Name="Shale">
-   <verb>凝固</verb>
-  </freezeObject>
- <freezeObject Name="Shale">
-   <verb>凝固</verb>
-  </freezeObject>
- <freezeObject Name="Shale">
-   <verb>凝固</verb>
-  </freezeObject>
- <displayName>{{lava|岩漿}}</displayName>
+  <displayName>{{lava|岩漿}}</displayName>
   <adjective>{{lava|岩漿般的}}</adjective>
   <waterRitualName>岩漿</waterRitualName>
   <smearedAdjective>{{lava|岩漿般的}}</smearedAdjective>
   <smearedName>{{lava|覆滿熔岩的}}</smearedName>
   <stainedName>{{lava|岩漿}}</stainedName>
-  <preparedCookingIngredient>heatMinor</preparedCookingIngredient>
-
-    <colors>RrW</colors>
-    <stainElement Name="might" />
-    <soupSludgeProperties>
-      <pseudopod>Magmatic Pseudopod</pseudopod>
-      <part Name="LavaSludge" />
-      <part Name="Physics" Temperature="1000" />
-      <stat Name="HeatResistance" Value="100" />
-    </soupSludgeProperties>
-    <render>
-      <part Name="Glows" />
-      <baseColor>&amp;W^R</baseColor>
-      <secondaryColorText>&amp;r</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;W^R</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;W^R,&amp;W^r,&amp;W^R,&amp;W^R</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;W^R</rareColor>
-      </blips>
-    </render>
-
-    <part Name="AchievementOnDrink">
-      <achievement>DRINK_LAVA</achievement>
-    </part>
-    <part Name="AccomplishmentOnDrink">
+  <part Name="MessageOnDrink" Message="{{lava|好燙！}}" />
+  <part Name="DamageOnDrink" Message="來自 {{lava|飲用岩漿}}！" />
+  <part Name="AccomplishmentOnDrink">
    <accomplishment>莫名其妙地，你喝下了岩漿。</accomplishment>
    <muralText>由於主觀經驗之斯芬克斯所守護的秘密，=name= 飲下了那禁忌之茶。</muralText>
    <gospelText>在穿越 =player.zone.name= 時，=name= 在 =landmark.nearest= 的一家酒館停了下來。那裡 =player.subjective= 輸掉了一場賭局，並羞澀地喝下了一小杯岩漿。奇蹟般地，=player.subjective= 毫髮無傷地離開了酒館。</gospelText>
   </part>
-  <part Name="MessageOnDrink" Message="{{lava|好燙！}}" />
-  <part Name="TemperatureChangeOnDrink" />
-    <part Name="DamageOnDrink" Message="來自 {{lava|飲用岩漿}}！" />
-  <part Name="UnsafeTemperature" />
-    <part Name="NoVapor" />
-    <part Name="LavaNavigation" />
-  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="NeutronFlux"><slug>neutronflux</slug>
-    <class>LiquidNeutronFlux</class>
-    <vaporTemperature>10000</vaporTemperature>
-    <freezeTemperature>-100</freezeTemperature>
-    <brittleTemperature>-250</brittleTemperature>
-    <pureElectricalConductivity>0</pureElectricalConductivity>
-    <mixedElectricalConductivity>0</mixedElectricalConductivity>
-    <thermalConductivity>0</thermalConductivity>
-    <fluidity>100</fluidity>
-    <evaporativity>100</evaporativity>
-    <cleansing>100</cleansing>
-    <weight>2.5</weight>
-    <interruptAutowalk>true</interruptAutowalk>
-    <considerDangerousToContact>true</considerDangerousToContact>
-    <considerDangerousToDrink>true</considerDangerousToDrink>
-    <circulatoryLossNoun>流變</circulatoryLossNoun>
+  <freezeObject Name="SmallBoulder">
+   <verb>凝固</verb>
+  </freezeObject>
+  <freezeObject Name="MediumBoulder">
+   <verb>凝固</verb>
+  </freezeObject>
+  <freezeObject Name="Shale">
+   <verb>凝固</verb>
+  </freezeObject>
+ </liquid>
+ <liquid Name="NeutronFlux">
   <circulatoryLossTerm>流動中</circulatoryLossTerm>
-  <colors>yY</colors>
-    <displayName>{{neutronic|中子}} {{Y|通量}}</displayName>
+  <circulatoryLossNoun>流變</circulatoryLossNoun>
+  <displayName>{{neutronic|中子}} {{Y|通量}}</displayName>
   <adjective>{{neutronic|中子}}</adjective>
   <waterRitualName>通量</waterRitualName>
   <smearedAdjective>{{neutronic|中子}}</smearedAdjective>
   <smearedName>{{neutronic|中性的}}</smearedName>
   <stainedName>{{neutronic|通量}}</stainedName>
- <valuePerDram>1000</valuePerDram>
-    <preparedCookingIngredient>density</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Neutronic Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <part Name="Glows" />
-      <baseColor>&amp;Y^y</baseColor>
-      <secondaryColorText>&amp;Y</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Paisley/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;Y^y</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;Y^y</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;Y^y</rareColor>
-      </blips>
-    </render>
-    <stainElement Name="stars" />
-    <part Name="Navigation" Weight="99" />
-    <part Name="NeutronExplosive" />
-  </liquid><liquid Name="Oil"><slug>oil</slug>
-    <class>LiquidOil</class>
-    <colors>KY</colors>
-    <flameTemperature>250</flameTemperature>
-    <vaporTemperature>2000</vaporTemperature>
-    <combustibility>90</combustibility>
-    <pureElectricalConductivity>0</pureElectricalConductivity>
-    <mixedElectricalConductivity>0</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>25</fluidity>
-    <staining>1</staining>
-    <cleansing>1</cleansing>
-    <slipperyWhenWet>true</slipperyWhenWet>
-    <slipperyWhenFrozen>true</slipperyWhenFrozen>
-    <slipperySaveTargetBase>5</slipperySaveTargetBase>
-    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
-    <slipperySaveVs>Oil Slip Move</slipperySaveVs>
-    <slipperyMessage>{{C|=subject.Does:slip= 在油脂上滑倒了！}}</slipperyMessage>
-  <slipperyParticle>&amp;C→</slipperyParticle>
-    <displayName>{{K|油脂}}</displayName>
+ </liquid>
+ <liquid Name="Oil">
+  <slipperyMessage>{{C|=subject.Does:slip= 在油脂上滑倒了！}}</slipperyMessage>
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{K|油脂}}</displayName>
   <adjective>{{K|油膩}}</adjective>
   <waterRitualName>油脂</waterRitualName>
   <smearedAdjective>{{K|油膩}}</smearedAdjective>
   <smearedName>{{K|油膩}}</smearedName>
   <stainedName>{{K|油脂}}</stainedName>
-  <valuePerDram>3</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Oily Pseudopod</pseudopod>
-      <part Name="DisarmOnHit" Chance="100" />
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;Y^k</baseColor>
-      <secondaryColorText>&amp;k</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;Y^k</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;Y^k</color>
-        <rareRenderString>☼</rareRenderString>
-        <rareColor>&amp;Y^k</rareColor>
-      </blips>
-      <smear>
-        <color>&amp;K</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <part Name="MessageOnDrink" Message="{{K|真噁心！}}" />
- <part Name="FilthNavigation" />
-  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Ooze"><slug>ooze</slug>
-    <class>LiquidOoze</class>
-    <colors>Ky</colors>
-    <flameTemperature>500</flameTemperature>
-    <vaporTemperature>150</vaporTemperature>
-    <vaporObject>Miasma</vaporObject>
-    <combustibility>15</combustibility>
-    <thermalConductivity>30</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <circulatoryLossTerm>滲出</circulatoryLossTerm>
+  <part Name="MessageOnDrink" Message="{{K|真噁心！}}" />
+ </liquid>
+ <liquid Name="Ooze">
+  <circulatoryLossTerm>滲出</circulatoryLossTerm>
   <circulatoryLossNoun>黏液</circulatoryLossNoun>
   <displayName>{{K|黑色黏液}}</displayName>
   <adjective>{{K|滲出的}}</adjective>
@@ -766,361 +202,98 @@
   <smearedAdjective>{{K|滲出的}}</smearedAdjective>
   <smearedName>{{K|滲出的}}</smearedName>
   <stainedName>{{K|黏液}}</stainedName>
-  <preparedCookingIngredient>selfGlotrot</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Oozing Pseudopod2</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;y^k</baseColor>
-      <secondaryColorText>&amp;k</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;y^k</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,≈,~</renderString>
-        <color>&amp;y^k</color>
-      </blips>
-      <smear>
-        <color>&amp;K</color>
-      </smear>
-    </render>
-    <tag Name="Waste" />
-    <part Name="MessageOnDrink" Message="這太令人反感了！" />
+  <part Name="MessageOnDrink" Message="這太令人反感了！" />
+  <part Name="DiseaseOnGoingProne" Message="腐爛的黏液濺入你的口中。你被那惡心的味道嗆到了。" />
   <part Name="DiseaseOnDrink" Message="你感到很不舒服！" />
- <part Name="DiseaseOnGoingProne" Message="腐爛的黏液濺入你的口中。你被那惡心的味道嗆到了。" />
-  </liquid><liquid Name="PrimordialSoup"><slug>proteangunk</slug>
-    <class>LiquidProteanGunk</class>
-    <colors>cC</colors>
-    <vaporTemperature>2000</vaporTemperature>
-    <combustibility>40</combustibility>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>25</fluidity>
-    <evaporativity>1</evaporativity>
-    <displayName>{{c|原始湯}}</displayName>
+ </liquid>
+ <liquid Name="PrimordialSoup">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{c|原始湯}}</displayName>
   <adjective>{{c|湯狀的}}</adjective>
   <waterRitualName>湯</waterRitualName>
   <smearedAdjective>{{c|湯狀的}}</smearedAdjective>
   <smearedName>{{c|湯狀的}}</smearedName>
   <stainedName>{{c|湯}}</stainedName>
-  <valuePerDram>4</valuePerDram>
-    <stainElement Name="chance" />
-    <render>
-      <baseColor>&amp;c^C</baseColor>
-      <secondaryColorText>&amp;c</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Gunk/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;c^C</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;c^C</color>
-        <rareColor>&amp;c^C</rareColor>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;c</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <part Name="HydrateOnDrink" Message="你感覺到湯汁在胃裡晃動。" />
- <part Name="SoupSludgeSpawner">
+  <part Name="SoupSludgeSpawner">
    <spawnMessage>反應中的液體凝固成了 =object.a.name:withTitles=。</spawnMessage>
    <stopMessage>液體停止反應。</stopMessage>
    <startMessage>原始湯 =subject.to.the.direction= 開始與 =liquid.name= 產生反應。</startMessage>
   </part>
+  <part Name="HydrateOnDrink" Message="你感覺到湯汁在胃裡晃動。" />
+ </liquid>
+ <liquid Name="Putrescence">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Putrescence"><slug>putrid</slug>
-    <class>LiquidPutrescence</class>
-    <colors>Kgw</colors>
-    <flameTemperature>600</flameTemperature>
-    <vaporTemperature>1600</vaporTemperature>
-    <combustibility>5</combustibility>
-    <thermalConductivity>25</thermalConductivity>
-    <fluidity>15</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>2</staining>
-    <displayName>{{putrid|腐敗物}}</displayName>
+  <displayName>{{putrid|腐敗物}}</displayName>
   <adjective>{{putrid|腐爛的}}</adjective>
   <waterRitualName>腐敗物</waterRitualName>
   <smearedAdjective>{{putrid|腐爛的}}</smearedAdjective>
   <smearedName>{{putrid|腐爛的}}</smearedName>
   <stainedName>{{putrid|腐敗物}}</stainedName>
-  <soupSludgeProperties>
-      <pseudopod>Putrid Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;g^K</baseColor>
-      <secondaryColorText>&amp;K</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;G^K</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-      </blips>
-      <smear>
-        <color>&amp;K</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="Desecrates" />
-    <part Name="VomitOnDrink" Message="真噁心！" />
- <part Name="FilthNavigation" SmartWeight="0" />
+  <part Name="VomitOnDrink" Message="真噁心！" />
+ </liquid>
+ <liquid Name="Salt">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Salt"><slug>salt</slug>
-    <class>LiquidSalt</class>
-    <colors>yY</colors>
-    <vaporTemperature>200</vaporTemperature>
-    <pureElectricalConductivity>0</pureElectricalConductivity>
-    <mixedElectricalConductivity>100</mixedElectricalConductivity>
-    <thermalConductivity>20</thermalConductivity>
-    <fluidity>35</fluidity>
-    <staining>1</staining>
-    <stainOnlyWhenPure>true</stainOnlyWhenPure>
-    <cleansing>1</cleansing>
-    <freezeObject Name="Halite">
-   <verb>凝固</verb>
-  </freezeObject>
- <displayName>{{Y|鹽}}</displayName>
+  <displayName>{{Y|鹽}}</displayName>
   <adjective>{{Y|鹹的}}</adjective>
-  <soupSludgeProperties>
-      <pseudopod>Salty Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;Y^y</baseColor>
-      <wadingRenderChar>▒</wadingRenderChar>
-      <paint>
-        <atlas>Liquids/Speckle/</atlas>
-      </paint>
-    </render>
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="MonochromeCureIngredient" />
-    <part Name="AltAdjectiveWhenPurityBelow" Alt="{{w|微鹹}}" />
   <waterRitualName>鹽</waterRitualName>
   <smearedAdjective>{{Y|鹹的}}</smearedAdjective>
-  <part Name="AltSmearedAdjectiveWhenLessThan" OtherSlugs="water" />
-    <smearedName>{{Y|結滿鹽垢的}}</smearedName>
+  <smearedName>{{Y|結滿鹽垢的}}</smearedName>
   <stainedName>{{Y|鹽}}</stainedName>
-  <preparedCookingIngredient>tastyMinor</preparedCookingIngredient>
-    <stainElement Name="salt" />
-    <part Name="SaltOnDrink" Message="呸，好鹹！" />
+  <part Name="SaltOnDrink" Message="呸，好鹹！" />
+  <part Name="AltAdjectiveWhenPurityBelow" Alt="{{w|微鹹}}" />
+  <freezeObject Name="Halite">
+   <verb>凝固</verb>
+  </freezeObject>
+ </liquid>
+ <liquid Name="Sap">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Sap"><slug>sap</slug>
-    <class>LiquidSap</class>
-    <colors>WY</colors>
-    <flameTemperature>250</flameTemperature>
-    <vaporTemperature>1250</vaporTemperature>
-    <combustibility>70</combustibility>
-    <adsorbence>25</adsorbence>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>3</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>2</staining>
-    <weight>0.5</weight>
-    <interruptAutowalk>true</interruptAutowalk>
-    <stickyWhenWet>true</stickyWhenWet>
-    <stickySaveTargetBase>1</stickySaveTargetBase>
-    <stickySaveTargetScale>0.1</stickySaveTargetScale>
-    <stickyDuration>12</stickyDuration>
-    <stickySaveVs>Sap Stuck Restraint</stickySaveVs>
-    <displayName>{{W|樹液}}</displayName>
+  <displayName>{{W|樹液}}</displayName>
   <adjective>{{W|甜膩的}}</adjective>
   <waterRitualName>樹液</waterRitualName>
   <smearedAdjective>{{W|多汁的}}</smearedAdjective>
   <smearedName>{{W|多汁的}}</smearedName>
   <stainedName>{{W|樹液}}</stainedName>
-  <valuePerDram>2</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Sugary Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;W^Y</baseColor>
-      <secondaryColorText>&amp;W</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;W^Y</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;W^Y</color>
-        <rareColor>&amp;W^Y</rareColor>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;W</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="GlotrotCureBaseIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <tag Name="PlantBased" />
-    <part Name="SnackOnDrink" Message="它的味道很甜。" />
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Slime"><slug>slime</slug>
-    <class>LiquidSlime</class>
-    <colors>gw</colors>
-    <flameTemperature>550</flameTemperature>
-    <vaporTemperature>1550</vaporTemperature>
-    <combustibility>8</combustibility>
-    <thermalConductivity>35</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <conversionProduct>gel</conversionProduct>
-    <slipperyWhenFrozen>true</slipperyWhenFrozen>
-    <slipperyWhenWet>true</slipperyWhenWet>
-    <slipperySaveTargetBase>5</slipperySaveTargetBase>
-    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
-    <slipperySaveVs>Slime Slip Move</slipperySaveVs>
-    <slipperyMessage>{{slimy|=subject.Does:在黏液上滑倒了!}}</slipperyMessage>
-  <slipperyParticle>&amp;g→</slipperyParticle>
-    <circulatoryLossNoun>黏液</circulatoryLossNoun>
+  <part Name="SnackOnDrink" Message="它的味道很甜。" />
+ </liquid>
+ <liquid Name="Slime">
+  <slipperyMessage>{{slimy|=subject.Does:在黏液上滑倒了!}}</slipperyMessage>
   <circulatoryLossTerm>滲出</circulatoryLossTerm>
+  <circulatoryLossNoun>黏液</circulatoryLossNoun>
   <displayName>{{slimy|黏液}}</displayName>
   <adjective>{{slimy|黏糊糊的}}</adjective>
+  <waterRitualName>液體</waterRitualName>
   <smearedAdjective>{{slimy|黏糊糊的}}</smearedAdjective>
   <smearedName>{{slimy|黏糊糊的}}</smearedName>
   <stainedName>{{g|黏液}}</stainedName>
-  <preparedCookingIngredient>slimeSpitting</preparedCookingIngredient>
-    <valuePerDram>0.1</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Slimy Pseudopod</pseudopod>
-      <part Name="DisarmOnHit" Chance="100" />
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;w^g</baseColor>
-      <secondaryColorText>&amp;g</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;g^w</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-        <color>&amp;w^g,&amp;g^w,&amp;w^g,&amp;w^g</color>
-        <rareColor>&amp;g^w</rareColor>
-        <rareRenderString>~</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;g</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <part Name="ConfuseOnDrink" Message="這黏糊得令人作嘔！" />
- <waterRitualName>液體</waterRitualName>
-  </liquid><liquid Name="Sludge"><slug>sludge</slug>
-    <class>LiquidSludge</class>
-    <flameTemperature>575</flameTemperature>
-    <vaporTemperature>1575</vaporTemperature>
-    <combustibility>7</combustibility>
-    <thermalConductivity>30</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>1</staining>
-    <circulatoryLossNoun>黏液</circulatoryLossNoun>
+  <part Name="ConfuseOnDrink" Message="這黏糊得令人作嘔！" />
+ </liquid>
+ <liquid Name="Sludge">
   <circulatoryLossTerm>滲出</circulatoryLossTerm>
+  <circulatoryLossNoun>黏液</circulatoryLossNoun>
   <displayName>{{w|棕色淤泥}}</displayName>
   <adjective>{{w|泥濘的}}</adjective>
   <waterRitualName>淤泥</waterRitualName>
   <smearedAdjective>{{w|泥濘的}}</smearedAdjective>
   <smearedName>{{w|泥濘的}}</smearedName>
   <stainedName>{{w|淤泥}}</stainedName>
-  <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
-    <soupSludgeProperties>
-      <pseudopod>Sludgy Pseudopod2</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;Y^w</baseColor>
-      <secondaryColorText>&amp;w</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;Y^w</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,≈,~</renderString>
-        <color>&amp;Y^w</color>
-        <rareColor>&amp;Y^w</rareColor>
-        <rareRenderString>~</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;w</color>
-      </smear>
-    </render>
-    <tag Name="Waste" />
-    <part Name="MessageOnDrink" Message="太恐怖了！" />
- <part Name="PoisonOnDrink" Message="你感到很不舒服！" />
   <part Name="RustOnGoingProne" Message="褐色的淤泥濺入你的口中。你因那金屬味而皺眉。" />
-  <part Name="FilthNavigation" />
-  </liquid><liquid Name="Sunslag"><slug>sunslag</slug>
-    <class>LiquidSunSlag</class>
-    <colors>YWR</colors>
-    <vaporTemperature>2000</vaporTemperature>
-    <vaporObject>Steam</vaporObject>
-    <combustibility>30</combustibility>
-    <pureElectricalConductivity>100</pureElectricalConductivity>
-    <mixedElectricalConductivity>100</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>3</staining>
-    <conversionProduct>lava</conversionProduct>
-    <displayName>{{sunslag|太陽渣}}</displayName>
+  <part Name="PoisonOnDrink" Message="你感到很不舒服！" />
+  <part Name="MessageOnDrink" Message="太恐怖了！" />
+ </liquid>
+ <liquid Name="Sunslag">
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
+  <displayName>{{sunslag|太陽渣}}</displayName>
   <adjective>{{radiant|光輝}}</adjective>
   <waterRitualName>太陽渣</waterRitualName>
   <smearedAdjective>{{radiant|光輝}}</smearedAdjective>
   <smearedName>{{radiant|光輝}}</smearedName>
   <stainedName>{{sunslag|太陽渣}}</stainedName>
-  <stainElement Name="stars" />
-    <valuePerDram>1000</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Radiant Pseudopod</pseudopod>
-      <stat Name="Speed" Value="30" /> 
-      <part Name="LightSource" Radius="6" />
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;Y^W</baseColor>
-      <secondaryColorText>&amp;W</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Paisley/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;Y^W</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~, ,~</renderString>
-        <color>&amp;Y^W</color>
-        <rareColor>&amp;Y^W</rareColor>
-        <rareRenderString>~</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;Y</color>
-      </smear>
-    </render>
-    <part Name="SunSlagOnDrink">
+  <part Name="SunSlagOnDrink">
    <tooMuchMessage>強光灼燒著你的口腔，但你無法再清醒過來了。</tooMuchMessage>
    <noStatMessage>亮度灼傷了你的口腔。</noStatMessage>
    <boostedMessage>
@@ -1131,253 +304,67 @@
    <muralText>看著 =player.name= 碎裂城邦之骨並飲下他們的骨髓！我們的 Saad，因公民的生命血脈而變得強大吧！</muralText>
    <gospelText>在穿越 =terrain.t= 時，=player.name= 在 =landmark.nearest= 的一家酒館停了下來。=player.subjective= 在賭局中獲勝，並凱旋般地喝下了一小口太陽渣（sunslag）。=player.Subjective= =player.verb:were= 變得神采奕奕，並以無法追蹤的速度離開了酒館。</gospelText>
   </part>
- <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
+ </liquid>
+ <liquid Name="Water">
+  <slipperyMessage>{{C|=subject.Does:slip= 在冰上滑倒了！}}</slipperyMessage>
+  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Water"><slug>water</slug>
-    <class>LiquidWater</class>
-    <colors>ByYb</colors>
-    <combustibility>-50</combustibility>
-    <vaporObject>SteamGas</vaporObject>
-    <fluidity>30</fluidity>
-    <evaporativity>2</evaporativity>
-    <cleansing>5</cleansing>
-    <pureElectricalConductivity>0</pureElectricalConductivity>
-    <mixedElectricalConductivity>100</mixedElectricalConductivity>
-    <enableCleaning>true</enableCleaning>
-    <slipperyWhenFrozen>true</slipperyWhenFrozen>
-    <slipperySaveTargetBase>5</slipperySaveTargetBase>
-    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
-    <slipperySaveVs>Ice Slip Move</slipperySaveVs>
-    <slipperyMessage>{{C|=subject.Does:slip= 在冰上滑倒了！}}</slipperyMessage>
-  <slipperyParticle>&amp;C→</slipperyParticle>
-    <displayName>{{B|水}}</displayName>
-  <render>
-      <baseColor>&amp;b^B</baseColor>
-      <baseColorBackground>^b</baseColorBackground>
-      <secondaryColorText>&amp;b</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;c^C</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;b^B,&amp;Y^B,&amp;b^B,&amp;y^B</color>
-        <rareRenderString>≈</rareRenderString>
-        <rareColor>&amp;Y^B</rareColor>
-      </blips>
-    </render>
-    <soupSludgeProperties>
-      <pseudopod>Watery Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <tag Name="GlotrotCureBaseIngredient" />
-    <part Name="AltNameWhenPure" Alt="{{B|淡水}}" />
- <adjective>{{Y|稀釋的}}</adjective>
+  <displayName>{{B|水}}</displayName>
+  <adjective>{{Y|稀釋的}}</adjective>
   <waterRitualName>水</waterRitualName>
   <smearedAdjective>{{B|潮濕}}</smearedAdjective>
-  <part Name="AltSmearedAdjectiveWhenLessThan" Priority="10">
-      <otherSlugs>salt,blood</otherSlugs>
-    </part>
-    <part Name="AltSmearedAdjectiveWhenSecondaryTo" Alt="{{B|潮濕}}" />
-  <part Name="AltSmearedAdjectiveWhenMixed" Alt="{{Y|稀釋的}}" />
   <smearedName>{{B|潮濕}}</smearedName>
   <stainedName>{{B|水}}</stainedName>
-  <valuePerDram>0.01</valuePerDram>
-    <pureLiquidValueMultiplier>100</pureLiquidValueMultiplier>
-    <part Name="WaterHydration">
+  <part Name="WaterHydration">
    <amphibiousMessage>=subject.Does:pour= 水在 =subject.itself= 上！</amphibiousMessage>
    <freshMessage>啊，真清爽！</freshMessage>
   </part>
+  <part Name="AltSmearedAdjectiveWhenSecondaryTo" Alt="{{B|潮濕}}" />
+  <part Name="AltSmearedAdjectiveWhenMixed" Alt="{{Y|稀釋的}}" />
+  <part Name="AltNameWhenPure" Alt="{{B|淡水}}" />
+ </liquid>
+ <liquid Name="Wax">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Wax"><slug>wax</slug>
-    <class>LiquidWax</class>
-    <colors>Yy</colors>
-    <flameTemperature>300</flameTemperature>
-    <vaporTemperature>2000</vaporTemperature>
-    <temperature>100</temperature>
-    <combustibility>65</combustibility>
-    <adsorbence>25</adsorbence>
-    <pureElectricalConductivity>0</pureElectricalConductivity>
-    <mixedElectricalConductivity>0</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>7</fluidity>
-    <cleansing>3</cleansing>
-    <weight>0.5</weight>
-    <interruptAutowalk>true</interruptAutowalk>
-    <freezeObject Name="Wax Block">
-   <verb>凝固</verb>
-  </freezeObject>
- <freezeObject Name="Wax Block">
-   <verb>凝固</verb>
-  </freezeObject>
- <stickyWhenWet>true</stickyWhenWet>
-    <stickySaveTargetBase>1</stickySaveTargetBase>
-    <stickySaveTargetScale>0.1</stickySaveTargetScale>
-    <stickyDuration>12</stickyDuration>
-    <stickySaveVs>Wax Stuck Restraint</stickySaveVs>
-    <displayName>{{Y|熔融蠟}}</displayName>
+  <displayName>{{Y|熔融蠟}}</displayName>
   <adjective>{{Y|蠟質的}}</adjective>
   <waterRitualName>蠟</waterRitualName>
   <smearedAdjective>{{Y|蠟狀}}</smearedAdjective>
   <smearedName>{{Y|蠟狀}}</smearedName>
   <stainedName>{{Y|蠟}}</stainedName>
-  <valuePerDram>0</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Waxen Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;y^Y</baseColor>
-      <secondaryColorText>&amp;y</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;Y^y</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;Y^y</color>
-        <rareColor>&amp;Y^y</rareColor>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;y</color>
-      </smear>
-    </render>
-    <part Name="TemperatureChangeOnDrink" Message="又熱又噁心。" />
+  <part Name="TemperatureChangeOnDrink" Message="又熱又噁心。" />
+  <freezeObject Name="Wax Nodule">
+   <verb>凝結</verb>
+  </freezeObject>
+  <freezeObject Name="Wax Block">
+   <verb>凝固</verb>
+  </freezeObject>
+ </liquid>
+ <liquid Name="Wine">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="Wine"><slug>wine</slug>
-    <class>LiquidWine</class>
-    <colors>mr</colors>
-    <flameTemperature>620</flameTemperature>
-    <vaporTemperature>1620</vaporTemperature>
-    <combustibility>15</combustibility>
-    <thermalConductivity>45</thermalConductivity>
-    <fluidity>30</fluidity>
-    <evaporativity>3</evaporativity>
-    <staining>2</staining>
-    <cleansing>1</cleansing>
-    <displayName>{{m|酒}}</displayName>
+  <displayName>{{m|酒}}</displayName>
   <adjective>{{m|茂盛}}</adjective>
   <waterRitualName>葡萄酒</waterRitualName>
   <smearedAdjective>{{m|茂盛}}</smearedAdjective>
   <smearedName>{{m|茂盛}}</smearedName>
   <stainedName>{{m|酒}}</stainedName>
-  <valuePerDram>4</valuePerDram>
-    <soupSludgeProperties>
-      <pseudopod>Lush Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <render>
-      <baseColor>&amp;m^r</baseColor>
-      <secondaryColorText>&amp;m</secondaryColorText>
-      <paint>
-        <atlas>Liquids/Splotchy/</atlas>
-      </paint>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;M^b</color>
-      </frozen>
-      <blips>
-        <renderString>≈,~,○,~</renderString>
-        <color>&amp;m^r</color>
-        <rareColor>&amp;r^m</rareColor>
-        <rareRenderString>☼</rareRenderString>
-      </blips>
-      <smear>
-        <color>&amp;m</color>
-      </smear>
-    </render>
-    <tag Name="FungalCureIngredient" />
-    <tag Name="GlotrotCureIngredient" />
-    <tag Name="GlotrotCureBaseIngredient" />
-    <tag Name="IronshankCureIngredient" />
-    <part Name="HydrateOnDrink" Message="你喝下溫熱的藥劑後感到全身暖和！" />
- <part Name="DrankWine" />
+  <part Name="HydrateOnDrink" Message="你喝下溫熱的藥劑後感到全身暖和！" />
+ </liquid>
+ <liquid Name="WarmStatic">
   <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
   <circulatoryLossNoun>洩漏</circulatoryLossNoun>
-  </liquid><liquid Name="WarmStatic"><class>LiquidWarmStatic</class>
-    <colors>YyK</colors>
-    <flameTemperature>620</flameTemperature>
-    <vaporTemperature>2000</vaporTemperature>
-    <vaporObject>GlitterGas</vaporObject>
-    <combustibility>30</combustibility>
-    <pureElectricalConductivity>100</pureElectricalConductivity>
-    <mixedElectricalConductivity>100</mixedElectricalConductivity>
-    <thermalConductivity>40</thermalConductivity>
-    <fluidity>10</fluidity>
-    <evaporativity>1</evaporativity>
-    <staining>3</staining>
-    <interruptAutowalk>true</interruptAutowalk>
-    <displayName>{{Y|溫暖的靜電}}</displayName>
+  <displayName>{{Y|溫暖的靜電}}</displayName>
   <adjective>{{Y|熵增}}</adjective>
   <waterRitualName>溫暖的靜電</waterRitualName>
   <smearedAdjective>{{Y|熵增}}</smearedAdjective>
   <smearedName>{{Y|熵增}}</smearedName>
   <stainedName>{{Y|溫暖的靜電}}</stainedName>
-  <valuePerDram>50</valuePerDram>
-    <pureLiquidValueMultiplier>20</pureLiquidValueMultiplier>
-    <stainElement Name="chance">5</stainElement>
-    <render>
-      <part>WarmStaticRender</part>
-      <baseColor>&amp;y^Y</baseColor>
-      <secondaryColorText>&amp;y</secondaryColorText>
-      <frozen>
-        <renderString>~</renderString>
-        <color>&amp;y^Y</color>
-      </frozen>
-      <blips Color="&amp;Y^Y" />
-    </render>
-    <conversionProducts>
-      <product Name="acid">1</product>
-      <product Name="algae">1</product>
-      <product Name="blood">1</product>
-      <product Name="brainbrine">1</product>
-      <product Name="cider">1</product>
-      <product Name="cloning">1</product>
-      <product Name="convalessence">1</product>
-      <product Name="gel">1</product>
-      <product Name="goo">1</product>
-      <product Name="honey">1</product>
-      <product Name="ink">1</product>
-      <product Name="lava">1</product>
-      <product Name="neutronflux">1</product>
-      <product Name="oil">1</product>
-      <product Name="ooze">1</product>
-      <product Name="proteangunk">1</product>
-      <product Name="putrid">1</product>
-      <product Name="salt">5</product>
-      <product Name="sap">1</product>
-      <product Name="slime">1</product>
-      <product Name="sludge">1</product>
-      <product Name="sunslag">1</product>
-      <product Name="asphalt">1</product>
-      <product Name="water">1</product>
-      <product Name="wax">1</product>
-      <product Name="wine">1</product>
-    </conversionProducts>
-    <soupSludgeProperties>
-      <pseudopod>Entropic Pseudopod</pseudopod>
-    </soupSludgeProperties>
-    <parts>
-      <part Name="FixedNavigation" Weight="95" />
-      <part Name="GlitchOnDrink" />
-      <part Name="GlitchOnMixed" />
-      <part Name="GlitchOnSmear" />
-      <part Name="GlitchOnPour">
-        <messageObject>=subject.T= =verb:glitch= into =object.an=.</messageObject>
-        <messageZone>The space around you starts to glitch.</messageZone>
-        <accomplishmentObject>You poured the raw entropy of the universe onto things and caused them to glitch into other things.</accomplishmentObject>
-        <accomplishmentZone>You poured the raw entropy of the universe on the ground and caused the space around you to glitch.</accomplishmentZone>
-      </part>
-    </parts>
-  <circulatoryLossTerm>正在漏水</circulatoryLossTerm>
-  <circulatoryLossNoun>洩漏</circulatoryLossNoun>
   <part Name="GlitchOnPour">
    <messageObject>=subject.T= 故障 進入了 =object.an=.</messageObject>
    <messageZone>你周圍的空間開始出現閃爍錯誤。</messageZone>
    <accomplishmentObject>你將宇宙原始的熵傾倒在事物之上，導致它們發生錯誤（glitch）並變成了其他東西。</accomplishmentObject>
    <accomplishmentZone>你將宇宙原始的熵傾倒在地面上，導致你周圍的空間發生了錯誤（glitch）。</accomplishmentZone>
   </part>
- </liquid></liquids>
+ </liquid>
+</liquids>
