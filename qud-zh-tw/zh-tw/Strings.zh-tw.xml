@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud code extracted string table. 2.0.212.29
 
@@ -197,21 +197,21 @@ alone if no match found.
  <string Context="GameSummary Ultimate Brightsheol" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you freed the Spindle for another's ascent and crossed into Brightsheol" Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你釋放了紡錘以供他人升騰，並跨入了布萊特希歐" />
  <string Context="GameSummary NonUltimate Brightsheol" ID="You freed the Spindle for another's ascent and crossed into Brightsheol.">你為了他人的崛起而釋放了紡錘，並跨入了布萊特希歐。</string>
  <string Context="GameSummary Ultimate Marooned" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you destroyed Resheph to save the burgeoning world but marooned yourself at the North Sheva." Value="您平息了環流的瘟疫。&#xA;&#xA;接著您摧毀了 Resheph 以拯救新生的世界，卻使自己受困於北謝瓦。" />
- <string Context="GameSummary NonUltimate Marooned" ID="You destroyed Resheph to save the burgeoning world but marooned yourself at the North Sheva.">你摧毀了 Resheph 以拯救這個新生的世界，卻將自己困在了 北謝瓦。</string>
+ <string Context="GameSummary NonUltimate Marooned" ID="You destroyed Resheph to save the burgeoning world but marooned yourself at the North Sheva.">你摧毀了 Resheph 以拯救這個新生的世界，卻將自己困在了北謝瓦。</string>
  <string Context="GameSummary Ultimate Covenant" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you entered into a covenant with Resheph to help prepare Qud for the Coven's return." Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你與 Resheph 立下盟約，協助為女巫集會（Coven）的歸來做準備，以守護卡德。" />
- <string Context="GameSummary NonUltimate Covenant" ID="You entered into a covenant with Resheph to help prepare Qud for the Coven's return.">你與 Resheph 立下了盟約，協助為女巫集會（Coven）的歸來準備 卡德(Qud)。</string>
+ <string Context="GameSummary NonUltimate Covenant" ID="You entered into a covenant with Resheph to help prepare Qud for the Coven's return.">你與 Resheph 立下了盟約，協助為女巫集會(Coven)的歸來準備卡德(Qud)。</string>
  <string Context="GameSummary Ultimate Return OpenArk" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you destroyed Resheph and returned to Qud to help garden the burgeoning world." Value="你平息了環流的瘟疫。&#xA;&#xA;接著你摧毀了 Resheph 並回到了卡德，協助耕耘這片蓬勃發展的世界。" />
  <string Context="GameSummary NonUltimate Return OpenArk" ID="You destroyed Resheph and returned to Qud to help garden the burgeoning world.">你摧毀了 Resheph，並回到卡德，協助照料這個蓬勃發展的世界。</string>
  <string Context="GameSummary Ultimate Return NotOpenArk" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you returned to Qud to help garden the burgeoning world." Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你回到了卡德，協助耕耘這片蓬勃發展的世界。" />
- <string Context="GameSummary NonUltimate Return NotOpenArk" ID="You rebuked Resheph and returned to Qud to help garden the burgeoning world.">你斥責了 Resheph，並回到卡德去幫助照料那蓬勃發展的世界。</string>
+ <string Context="GameSummary NonUltimate Return NotOpenArk" ID="You rebuked Resheph and returned to Qud to help garden the burgeoning world.">你斥責了 Resheph，並回到卡德以協助照料那蓬勃發展的世界。</string>
  <string Context="GameSummary Ultimate Accede" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you reversed course and acceded to Resheph's plan to purge the world of higher life, in preparation for the Coven's return." Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你改變了方向，並接受了 Resheph 的計畫，為了迎接女巫集會（Coven）的歸來，而清除世界上的高等生命。" />
  <string Context="GameSummary NonUltimate Accede" ID="You acceded to Resheph's plan to purge the world of higher life in preparation for the Coven's return.">你同意了雷舍夫（Resheph）的計畫，為了迎接女巫集會（Coven）的回歸，準備清除世界上的高等生命。</string>
  <string Context="GameSummary Ultimate Launch ArkOpen WithBarathrum" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you destroyed Resheph and launched yourself into the dusted cosmos to ply the stars with Barathrum." Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你摧毀了 Resheph，並投身於塵封的宇宙，與巴拉楚姆一同穿梭星際。" />
- <string Context="GameSummary NonUltimate Launch ArkOpen WithBarathrum" ID="You destroyed Resheph and launched yourself into the dusted cosmos to ply the stars with Barathrum.">你摧毀了 Resheph，並投身於塵封的宇宙，與 巴拉楚姆(Barathrum) 一同穿梭星際。</string>
+ <string Context="GameSummary NonUltimate Launch ArkOpen WithBarathrum" ID="You destroyed Resheph and launched yourself into the dusted cosmos to ply the stars with Barathrum.">你摧毀了 Resheph，並投身於塵封的宇宙，與巴拉楚姆(Barathrum) 一同穿梭星際。</string>
  <string Context="GameSummary Ultimate Launch ArkOpen WithoutBarathrum" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you destroyed Resheph and launched yourself into the dusted cosmos to ply the stars." Value="你廢除了環流的瘟疫。&#xA;&#xA;接著你摧毀了 Resheph，並投身於塵封的宇宙中，在星辰間穿梭。" />
  <string Context="GameSummary NonUltimate Launch ArkOpen WithoutBarathrum" ID="You destroyed Resheph and launched yourself into the dusted cosmos to ply the stars.">你摧毀了 Resheph，並投身於塵封的宇宙中，在星辰間遨遊。</string>
  <string Context="GameSummary Ultimate Launch ArkNotOpen WithBarathrum" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you launched yourself into the dusted cosmos to ply the stars with Barathrum." Value="你平息了環流的瘟疫。&#xA;&#xA;接著你投身於塵封的宇宙，與巴拉楚姆一同穿梭星際。" />
- <string Context="GameSummary NonUltimate Launch ArkNotOpen WithBarathrum" ID="You launched yourself into the dusted cosmos to ply the stars with Barathrum.">你投身於塵封的宇宙，在星際間以 巴拉楚姆(Barathrum) 謀生。</string>
+ <string Context="GameSummary NonUltimate Launch ArkNotOpen WithBarathrum" ID="You launched yourself into the dusted cosmos to ply the stars with Barathrum.">你投身於塵封的宇宙，在星際間以巴拉楚姆(Barathrum) 謀生。</string>
  <string Context="GameSummary Ultimate Launch ArkNotOpen WithoutBarathrum" ID="You annulled the plagues of the Gyre.&#xA;&#xA;Then you launched yourself into the dusted cosmos to ply the stars." Value="你終結了環流的瘟疫。&#xA;&#xA;接著你投身於塵封的宇宙，在星辰間穿梭。" />
  <string Context="GameSummary NonUltimate Launch ArkNotOpen WithoutBarathrum" ID="You launched yourself into the dusted cosmos to ply the stars.">你投身於塵封的宇宙，在星辰間穿梭。</string>
  <string Context="GameSummary Tombstone Save" ID="Save Tombstone File">儲存 墓碑 檔案</string>
@@ -542,7 +542,7 @@ alone if no match found.
  <string Context="PopupMessage UI Submit Button Text (kbm)" ID="{{y|Submit}}">{{y|提交}}</string>
  <string Context="PopupMessage UI Hold Button Text" ID="{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}">{{W|[=commandKey:CmdOptions=]}} {{y|按住以確認}}</string>
  <string Context="PopupMessage UI Trade Button Text" ID="[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}">[{{W|=commandKey:CmdStartTrade=}}] {{y|交易}}</string>
- <string Context="HistoricEntity Name Unknown" ID="&lt;unknown&gt;">&lt;unknown></string>
+ <string Context="HistoricEntity Name Unknown" ID="&lt;unknown&gt;">&lt;未知&gt;</string>
  <string Context="Region Discovery Popup" ID="You discover the location of =region=.">你發現了 =region= 的位置。</string>
  <string Context="Region Discovery Accomplishment" ID="You discovered the location of =region=.">你發現了 =region= 的位置。</string>
  <string Context="Region Discovery mural text" ID="=spice:commonPhrases.intrepid.!random|capitalize= =name= discovered the location of =region=, once thought lost to the sands of time.">=spice:commonPhrases.intrepid.!random|capitalize= =name= 發現了 =region= 的位置，那裡曾被認為已失落在時間的沙塵之中。</string>
@@ -560,9 +560,9 @@ alone if no match found.
  <string Context="QudHistoryHelpers NameItemNounRoot" ID="=object|randomMeaningfulWord|'s= =spice:items.blessing.!random=">=object|randomMeaningfulWord|'s= =spice:items.blessing.!random=</string>
  <string Context="QudHistoryHelpers NameItemAdjRoot" ID="=object|wordRoot==spice:items.suffixes.!random=">=object|wordRoot==spice:items.suffixes.!random=</string>
  <string Context="QudHistoryHelpers NameItemAdjRoot" ID="=coinflip.if:the ==object|randomMeaningfulWord= =spice:items.blessing.!random=">=coinflip.if:the ==object|randomMeaningfulWord= =spice:items.blessing.!random=</string>
- <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=abad">=seed|wordRoot|capitalize=abad</string>
- <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=grad">=seed|wordRoot|capitalize=grad</string>
- <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=platz">=seed|wordRoot|capitalize=platz</string>
+ <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=abad">=seed|wordRoot|capitalize=城</string>
+ <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=grad">=seed|wordRoot|capitalize=鎮</string>
+ <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|wordRoot|capitalize=platz">=seed|wordRoot|capitalize=廣場</string>
  <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|randomMeaningfulWord|capitalize= City">=seed|randomMeaningfulWord|capitalize= 之城</string>
  <string Context="QudHistoryHelpers default Cognomen" ID="the Untitled">無名氏</string>
  <string Context="QudHistoryHelpers ListAllCognomen single" ID=" =cognomen=" Value="=cognomen=" />
@@ -607,7 +607,7 @@ alone if no match found.
  <string Context="HistoricEvent BattleItem tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= the Battle of =location=, where -- =spice:elements.$element.mythicalBattleVista.!random= -- =spice.entity:name= wielded =spice.entity:possessivePronoun= =weapon= and struck down the =spice:history.gospels.EnemyHostName.entity@era.!random= in the name of =spice:instancesOf.justice.!random=. =spice:commonPhrases.remember.!random|capitalize= how =faction.formattedName= and =spice:instancesOf.dearOnes.!random= =spice:instancesOf.criedOut.!random= in =spice:commonPhrases.celebration.!random= for days and days.">=spice:commonPhrases.remember.!random|capitalize= 的 =location= 之戰，在那場 -- =spice:elements.$element.mythicalBattleVista.!random= -- 中，=spice.entity:name= 揮舞著 =spice.entity:possessivePronoun= =weapon=，以 =spice:instancesOf.justice.!random= 之名擊倒了 =spice:history.gospels.EnemyHostName.entity@era.!random=。=spice:commonPhrases.remember.!random|capitalize= =faction.formattedName= 與 =spice:instancesOf.dearOnes.!random= 如何在 =spice:commonPhrases.celebration.!random= 中 =spice:instancesOf.criedOut.!random= 了好幾天。</string>
  <string Context="HistoricEvent BattleItem tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= the Battle of =location=, where -- =spice:elements.$element.mythicalBattleVista.!random= -- =spice.entity:name= wielded =spice.entity:possessivePronoun= =weapon= and struck down the =spice:history.gospels.EnemyHostName.entity@era.!random= in the name of =spice:instancesOf.justice.!random=. =spice:commonPhrases.remember.!random|capitalize= how =faction.formattedName= and =spice:instancesOf.dearOnes.!random= =spice:instancesOf.criedOut.!random= in =spice:commonPhrases.woe.!random= for days and days.">=spice:commonPhrases.remember.!random|capitalize= =location=之戰，在那裡 -- =spice:elements.$element.mythicalBattleVista.!random= -- =spice.entity:name= 揮舞著 =spice.entity:possessivePronoun= =weapon=，以 =spice:instancesOf.justice.!random= 之名擊倒了 =spice:history.gospels.EnemyHostName.entity@era.!random=。=spice:commonPhrases.remember.!random|capitalize= =faction.formattedName= 與 =spice:instancesOf.dearOnes.!random= 在 =spice:commonPhrases.woe.!random= 中為之 =spice:instancesOf.criedOut.!random= 了好幾天。</string>
  <string Context="HistoricEvent BornAsHeir Miracle" ID="=spice:elements.$element.mythicalEvent.!random=">=spice:elements.$element.mythicalEvent.!random=</string>
- <string Context="HistoricEvent BornAsHeir cognomen" ID="the =spice:commonPhrases.eminent.!random|title= =var|title=">the =spice:commonPhrases.eminent.!random|title= =var|title=</string>
+ <string Context="HistoricEvent BornAsHeir cognomen" ID="the =spice:commonPhrases.eminent.!random|title= =var|title=">尊貴的 =spice:commonPhrases.eminent.!random|title= =var|title=</string>
  <string Context="HistoricEvent BornAsHeir cognomen" ID="=var|randomMeaningfulWord|title=born">=var|randomMeaningfulWord|title=誕生</string>
  <string Context="HistoricEvent BornAsHeir gospel" ID="=spice:commonPhrases.oneStarryNight.!random|capitalize= in =spice.entity:region=, a healthy child was born to the sultan at =spice.entity:location=. At the moment of =spice.entity:possessivePronoun= birth, =miracle=, and in celebration the people =spice:commonPhrases.celebrated.!random=. The babe was named =spice.entity:name=, but the people called =spice.entity:objectPronoun= =cognomen=.">在 =spice.entity:region=，=spice:commonPhrases.oneStarryNight.!random|capitalize= 時，蘇丹在 =spice.entity:location= 生下了一個健康的孩童。就在 =spice.entity:possessivePronoun= 出生的那一刻，=miracle= 降臨了，為了慶祝，人們 =spice:commonPhrases.celebrated.!random=. 這名嬰兒被命名為 =spice.entity:name=，但人們稱呼 =spice.entity:objectPronoun= 為 =cognomen=.</string>
  <string Context="HistoricEvent BornAsHeir tombInscription" ID="=spice:commonPhrases.onlooker.!random|capitalize=! =spice:instancesOf.observeInWonder.!random|capitalize= the life of =spice.entity:name= -- called =cognomen=! -- scion of the Fossilized Saads and who was dowered the =maskName=. Observe the twin miracles of the =yearName=: the =male.if:heir:heiress= was born, and =miracle|giveFamousPersonAName=."><p>=spice:commonPhrases.onlooker.!random|capitalize=! =spice:instancesOf.observeInWonder.!random|capitalize= 了 =spice.entity:name= 的一生 —— 被稱為 =cognomen=! —— 他是化石化薩德（Fossilized Saads）的後裔，並獲賜了 =maskName=。目睹 =yearName= 年的雙重奇蹟：=male.if:heir:heiress= 出生，以及 =miracle|giveFamousPersonAName=。</p></string>
@@ -666,7 +666,7 @@ alone if no match found.
  <string Context="HistoricEvent ChariotDrivesOffCliff Gospel" ID="=spice:commonPhrases.whileTraveling.!random|capitalize= =spice:commonPhrases.in.!random= =region=, =drivenReason=. =spice:commonPhrases.luckily.!random|capitalize=, a group of nearby =faction.name= came to =spice.entity:possessivePronoun= rescue. For the rest of =spice.entity:possessivePronoun= life, =spice.entity:name= was indebted to =faction.name=.">=spice:commonPhrases.whileTraveling.!random|capitalize= =spice:commonPhrases.in.!random= =region=，=drivenReason=。=spice:commonPhrases.luckily.!random|capitalize=，一群附近的 =faction.name= 前來 =spice.entity:possessivePronoun= 救援。在接下來的 =spice.entity:possessivePronoun= 餘生中，=spice.entity:name= 一直對 =faction.name= 心懷感激。</string>
  <string Context="HistoricEvent ChariotDrivesOffCliff tombInscription" ID="=spice:instancesOf.bless.!random|capitalize= the =spice:commonPhrases.noble.!random= =faction.name= of =region=, who came to =spice.entity:name|'s= rescue when =drivenReasonInscriptionWithPronoun=.">=spice:instancesOf.bless.!random|capitalize= =region= 的 =faction.name= =spice:commonPhrases.noble.!random=，在 =drivenReasonInscriptionWithPronoun= 時前來營救 =spice.entity:name|'s=。</string>
  <string Context="HistoricEvent ChariotDrivesOffCliff Gospel" ID="=spice:commonPhrases.whileTraveling.!random|capitalize= =spice:commonPhrases.in.!random= =region=, =drivenReason=. =spice:commonPhrases.luckily.!random|capitalize=, a group of nearby =spice:professions.$profession.plural= came to =spice.entity:possessivePronoun= rescue. Moved by their kindness, =spice.entity:name= enrolled at a local =spice:professions.$profession.guildhall= as a =professionRank=.">=spice:commonPhrases.whileTraveling.!random|capitalize= 在 =spice:commonPhrases.in.!random= =region= 時，=drivenReason=。=spice:commonPhrases.luckily.!random|capitalize=，一群附近的 =spice:professions.$profession.plural= 前來救援 =spice.entity:possessivePronoun=。受其善行感動，=spice.entity:name= 在當地的 =spice:professions.$profession.guildhall= 註冊成為一名 =professionRank=。</string>
- <string Context="HistoricEvent ChariotDrivesOffCliff tombInscription" ID="=spice:instancesOf.bless.!random|capitalize= the =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural= of =region=, who came to =spice.entity:name|'s= rescue when =drivenReasonInscriptionWithPronoun=.">=spice:instancesOf.bless.!random|capitalize= 了來自 =region= 的 =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural=，當 =drivenReasonInscriptionWithPronoun= 時，他們前來營救了 =spice.entity:name|。</string>
+ <string Context="HistoricEvent ChariotDrivesOffCliff tombInscription" ID="=spice:instancesOf.bless.!random|capitalize= the =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural= of =region=, who came to =spice.entity:name|'s= rescue when =drivenReasonInscriptionWithPronoun=.">=spice:instancesOf.bless.!random|capitalize= 了來自 =region= 的 =spice:commonPhrases.noble.!random= =spice:professions.$profession.plural=，當 =drivenReasonInscriptionWithPronoun= 時，他們前來營救了 =spice.entity:name=。</string>
  <string Context="HistoricEvent ChariotDrivesOffCliff Gospel" ID="=spice:commonPhrases.whileTraveling.!random|capitalize= =spice:commonPhrases.in.!random= =region=, =drivenReason=. =spice.entity:subjectPronoun|capitalize= was killed at =age= years old.">=spice:commonPhrases.whileTraveling.!random|capitalize= =spice:commonPhrases.in.!random= =region= 之際，因 =drivenReason= 而亡。=spice.entity:subjectPronoun|capitalize= 於 =age= 歲時喪命。</string>
  <string Context="HistoricEvent ChariotDrivesOffCliff tombInscription" ID="In =region=, =drivenReasonInscription=. =spice.entity:subjectPronoun|capitalize= was presumed dead at =age= years old.">在 =region=， =drivenReasonInscription=. =spice.entity:subjectPronoun|capitalize= 在 =age= 歲時被推定死亡。</string>
  <string Context="HistoricEvent CorruptAdministrator gospel" ID="In %=year=%, a corrupt administrator was appointed minister of =region=. =person.Subjective= outlawed the practice of =practice=, and =spice.entity:name= was forced to flee.">在 %=year=% 年，一名腐敗的行政官被任命為 =region= 的大臣。=person.Subjective= 廢除了 =practice= 的慣例，導致 =spice.entity:name= 被迫逃亡。</string>
@@ -678,7 +678,7 @@ alone if no match found.
  <string Context="HistoricEvent CorruptAdministrator gospel" ID="In %=year=%, =spice.entity:name= appointed a corrupt administrator as minister of =region=. =person.Subjective= mandated association with =faction.formattedName= in =spice.entity:name|'s= name.">%=year=% 年時，=spice.entity:name= 任命了一名腐敗的行政官為 =region= 的大臣。=person.Subjective= 在 =spice.entity:name|'s= 的名義下，強制要求與 =faction.formattedName= 結盟。</string>
  <string Context="HistoricEvent CorruptAdministrator tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= the =yearName=, when the moral =spice:commonPhrases.depravity.!random= of =spice:history.gospels.ImmoralPractice.entity@era.!random= was =spice:commonPhrases.rife.!random= in =region=. =spice:commonPhrases.remember.!random|capitalize= that =spice.entity:name=, to =spice:commonPhrases.restore.!random= =spice:commonPhrases.morality.!random=, appointed a minister who mandated the association with =faction.formattedName=.">=spice:commonPhrases.remember.!random|capitalize= =yearName= 年，當時 =spice:history.gospels.ImmoralPractice.entity@era.!random= 的道德 =spice:commonPhrases.depravity.!random= 在 =region= 極其 =spice:commonPhrases.rife.!random=。=spice:commonPhrases.remember.!random|capitalize= =spice.entity:name= 為了 =spice:commonPhrases.restore.!random= =spice:commonPhrases.morality.!random=，任命了一位強制要求與 =faction.formattedName= 結盟的部長。</string>
  <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice:elements.$element.adjectives.!random|title= =spice:commonPhrases.ghost.!random|title=">那 =spice:elements.$element.adjectives.!random|title= 的 =spice:commonPhrases.ghost.!random|title=</string>
- <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice.entity:colors[random]|title= =spice:commonPhrases.ghost.!random|title=">{{X|the}} =spice.entity:colors[random]|title= =spice:commonPhrases.ghost.!random|title=</string>
+ <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice.entity:colors[random]|title= =spice:commonPhrases.ghost.!random|title=">=spice.entity:colors[random]|title= 之 =spice:commonPhrases.ghost.!random|title=</string>
  <string Context="HistoricEvent FakedDeath cognomen suffix" ID="=cognomen= of =spice.entity:region=">=spice.entity:region= 的 =cognomen=</string>
  <string Context="HistoricEvent FakedDeath gospel" ID="In %=year=%, =spice:commonPhrases.itWasDiscovered.!random= that =spice:instancesOf.backToLife.!random=. Despite reports to the contrary, =spice.entity:name= was alive and well. =spice.entity:subjectPronoun|capitalize= was known thenceforth as =cognomen=.">在 %=year=% 年，=spice:commonPhrases.itWasDiscovered.!random= 發現了 =spice:instancesOf.backToLife.!random=。儘管有相反的報告，但 =spice.entity:name= 依然生龍活虎。從那時起，=spice.entity:subjectPronoun|capitalize= 被稱為 =cognomen=。</string>
  <string Context="HistoricEvent FakedDeath gospel search for e'ntropic'" ID="ntropic">熵增</string>
@@ -762,17 +762,17 @@ alone if no match found.
  <string Context="HistoricEvent RampageRegion tombInscription" ID="=remember|capitalize=, =spice:instancesOf.yeGodless.!random=! In the =yearName=, a =spice:commonPhrases.coalition.!random= of =faction1.formattedName= and =faction2.formattedName= =spice:instancesOf.brokeFaithWith.!random= =spice.entity:name= and =spice:history.gospels.CommittedWrongAgainstSultan.entity@era.!random=. =remember|capitalize= the =spice:commonPhrases.chastisement.!random= put upon them by =spice.entity:name=, =cognomen=!">=remember|capitalize=，=spice:instancesOf.yeGodless.!random=! 在 =yearName= 年，由 =faction1.formattedName= 與 =faction2.formattedName= 組成的 =spice:commonPhrases.coalition.!random= =spice:instancesOf.brokeFaithWith.!random= 了 =spice.entity:name= 以及 =spice:history.gospels.CommittedWrongAgainstSultan.entity@era.!random=。=remember|capitalize= 由 =spice.entity:name= 施加於他們的 =spice:commonPhrases.chastisement.!random=，=cognomen=！</string>
  <string Context="Resheph Cognomen" ID="the Above">高天之上</string>
  <string Context="Resheph cultName" ID="Cult of the Coiled Lamb">捲曲羔羊教派</string>
- <string Context="Last Sultan Name" ID="Resheph">雷舍夫 (Resheph)</string>
- <string Context="Resheph Gospel (absolves Rebekah)" ID="In %=year=%, Rebekah died of glotrot, and on her deathbed Resheph forgave her and absolved her of sin. He allowed her to be buried in the village of Ezra, outside the gate to the Tomb of the Eaters and beneath the shadow of the Spindle.">在 %=year=% 年，Rebekah 死於黏液腐爛症（glotrot），她在臨終前獲得了 Resheph 的寬恕與赦免。他允許她葬在以斯拉村，位於食者之墓大門外，並在紡錘的陰影之下。</string>
+ <string Context="Last Sultan Name" ID="Resheph">雷舍夫(Resheph)</string>
+ <string Context="Resheph Gospel (absolves Rebekah)" ID="In %=year=%, Rebekah died of glotrot, and on her deathbed Resheph forgave her and absolved her of sin. He allowed her to be buried in the village of Ezra, outside the gate to the Tomb of the Eaters and beneath the shadow of the Spindle.">在 %=year=% 年，Rebekah 死於黏液腐爛症(glotrot)，她在臨終前獲得了 Resheph 的寬恕與赦免。他允許她葬在以斯拉村，位於食者之墓大門外，並在紡錘的陰影之下。</string>
  <string Context="Resheph Gospel (appoints Rebekah)" ID="In %=year=%, Resheph appointed Rebekah administrator of =region=. She tendered alms for the sick in his name.">在 %=year=% 年，Resheph 任命 Rebekah 為 =region= 的管理員。她以他的名義向病人施捨救濟。</string>
- <string Context="Resheph Gospel (becomes sultan)" ID="Acting against a prohibition on the practice of worshipping the stars, Resheph led an army to the gates of Omonporch. There he defeated his brothers in battle and liberated its citizens, and they crowned him the sultan of Qud.">Resheph 因違反禁止崇拜星辰的禁令，率領軍隊前往歐蒙波奇之門。他在戰鬥中擊敗了他的兄弟們並解放了當地的公民，他們擁立他為卡德的蘇丹。</string>
- <string Context="Resheph Gospel (betrayed)" ID="In %=year=%, Rebekah betrayed Resheph by stealing the Mark of Death from the gate to the Tomb of the Eaters. In punishment, Resheph excommunicated her from the sultanate.">在 %=year=% 年，Rebekah 因為從吞噬者之墓的門口偷走了死亡印記而背叛了Resheph。作為懲罰，Resheph 將她從蘇丹國中逐出了教籍。</string>
- <string Context="Resheph Gospel (cleanses gyre)" ID="In %=year=%, Resheph cleansed the marshlands of the plagues of the Gyre and taught Abram to sow watervine along its fertile tracks.">在 %=year=% 年，雷舍夫（Resheph）淨化了沼澤地中的 環流(Gyre) 之瘟疫，並教導亞伯拉罕（Abram）沿著肥沃的痕跡種植 水藤。</string>
- <string Context="Resheph Gospel (closes tomb)" ID="In %=year=%, Resheph closed the gates to the Tomb of the Eaters, abdicated the throne, and dissolved the sultanate in order to lift the curse of the Gyre.">在 %=year=% 年，Resheph 關閉了食者之墓的大門，退出了 王座，並解散了蘇丹國，以解除 環流(Gyre) 的詛咒。</string>
- <string Context="Resheph Gospel (dies)" ID="In %=year=%, Resheph, the Above, Ghost-in-Cerulean, the Coiled Lamb of Baetyls, died of natural causes. He was 216 years old.">在 %=year=% 中，Resheph，至高者、青藍之魂、Baetyls 的捲曲羔羊，死於自然原因。他享年 216 歲。</string>
+ <string Context="Resheph Gospel (becomes sultan)" ID="Acting against a prohibition on the practice of worshipping the stars, Resheph led an army to the gates of Omonporch. There he defeated his brothers in battle and liberated its citizens, and they crowned him the sultan of Qud.">Resheph 因違反禁止崇拜星辰的禁令，率領軍隊前往歐蒙波奇 之門。他在戰鬥中擊敗了他的兄弟們並解放了當地的公民，他們擁立他為卡德的蘇丹。</string>
+ <string Context="Resheph Gospel (betrayed)" ID="In %=year=%, Rebekah betrayed Resheph by stealing the Mark of Death from the gate to the Tomb of the Eaters. In punishment, Resheph excommunicated her from the sultanate.">在 %=year=% 年，Rebekah 因為從吞噬者之墓的門口偷走了死亡印記而背叛了 Resheph。作為懲罰，Resheph 將她從蘇丹國中逐出了教籍。</string>
+ <string Context="Resheph Gospel (cleanses gyre)" ID="In %=year=%, Resheph cleansed the marshlands of the plagues of the Gyre and taught Abram to sow watervine along its fertile tracks.">在 %=year=% 年，雷舍夫(Resheph) 淨化了沼澤地中的環流(Gyre) 之瘟疫，並教導亞伯拉罕(Abram) 沿著肥沃的痕跡種植水藤。</string>
+ <string Context="Resheph Gospel (closes tomb)" ID="In %=year=%, Resheph closed the gates to the Tomb of the Eaters, abdicated the throne, and dissolved the sultanate in order to lift the curse of the Gyre.">在 %=year=% 年，Resheph 關閉了食者之墓的大門，退出了王座，並解散了蘇丹國，以解除環流(Gyre)的詛咒。</string>
+ <string Context="Resheph Gospel (dies)" ID="In %=year=%, Resheph, the Above, Ghost-in-Cerulean, the Coiled Lamb of Baetyls, died of natural causes. He was 216 years old.">在 %=year=% 年，Resheph，至高者、青藍之魂、Baetyls 的捲曲羔羊，死於自然原因。他享年 216 歲。</string>
  <string Context="Resheph Gospel (founds harborage)" ID="After conferring with mysterious strangers, Resheph convinced them to help him found a harborage for the purpose of receiving visitors from across the clustered cosmos. They named it Starfarer's Quay.">在與 神秘陌生人 商議後，Resheph 說服他們協助他建立一個避風港，目的是接待來自集群宇宙各處的訪客。他們將其命名為 星行者碼頭。</string>
  <string Context="Resheph Gospel (star experience)" ID="While traveling alone through the Rust Wells, Resheph came across a trove of gleaming stars in a bottle. From that day forth, he always kept some stardust on his person.">當獨自穿梭於 鏽蝕之井 時，Resheph 在一個 瓶子 中發現了一堆閃爍的星辰。從那天起，他總是隨身帶著一些星塵。</string>
- <string Context="Resheph Gospel (heals gyre 1)" ID="In %=year=%, the Gyre widened, and the first triad of plagues afflicted the land. The water was poisoned with salt, girshlings ravaged the fruit and wheat, and tongues rotted away in the mouths of kith and kin. Resheph walked below the chrome arches and healed the sick.">在 %=year=%，旋渦（環流(Gyre)）擴張了，第一波三位一體的瘟疫襲擊了大地。水源被鹽分毒害，小魚精（girshlings）蹂躪著果實與小麥，親友們的舌頭在口中腐爛。雷舍夫（Resheph）走在鉻合金拱門之下，醫治了病人。</string>
+ <string Context="Resheph Gospel (heals gyre 1)" ID="In %=year=%, the Gyre widened, and the first triad of plagues afflicted the land. The water was poisoned with salt, girshlings ravaged the fruit and wheat, and tongues rotted away in the mouths of kith and kin. Resheph walked below the chrome arches and healed the sick.">在 %=year=% 年，環流(Gyre)擴張了，第一波三位一體的瘟疫襲擊了大地。水源被鹽分毒害，小魚精(girshlings)蹂躪著果實與小麥，親友們的舌頭在口中腐爛。雷舍夫(Resheph)走在鉻合金拱門之下，醫治了病人。</string>
  <string Context="Resheph Gospel (heals gyre 2)" ID="In %=year=%, the Gyre widened, and the second triad of plagues afflicted the land. The legs of kith and kin annealed to iron, darkness bloomed from the earth, and the svardym blackened the sky. Resheph walked below the chrome arches and healed the sick.">在 %=year=% 年，環流擴張了，第二波瘟疫災難襲擊了大地。親友的肢體與血脈被鍛造成鐵，黑暗從土地中綻放，而斯瓦迪姆遮蔽了天空。Resheph 在鉻色拱門下行走，治癒了病人。</string>
  <string Context="Resheph Gospel (birth)" ID="One starry evening, a babe was found swaddled with its mouth full of circuits by a group of baetyls in Red Rock. They took him into their fold and fostered him, and he became known as Resheph, the Coiled Lamb of Baetyls.">在一個星光熠熠的夜晚，一群在紅岩的貝提爾發現了一個口中塞滿電路的嬰兒。他們將他收留並撫養長大，他後來被稱為「捲曲之羔羊」Resheph，屬於貝提爾。</string>
  <string Context="Resheph Cognomen" ID="the Coiled Lamb of Baetyls">貝提爾的捲曲羔羊</string>
@@ -780,7 +780,7 @@ alone if no match found.
  <string Context="Resheph Gospel (meets Rebekah)" ID="While traveling near Bethesda Susa, Resheph lost control of his chariot and drove it off a cliff. Luckily, a local physician named Rebekah came to his rescue. Moved by her kindness, Resheph enrolled at a nearby hospice as her apprentice.">在前往 貝賽達蘇薩(Bethesda Susa) 的途中，Resheph 失去了對戰車的控制並衝下了懸崖。幸運的是，一位名叫 Rebekah 的當地醫生前來救援。Resheph 被她的善良所感動，隨後進入附近的療養院成為她的學徒。</string>
  <string Context="Resheph Gospel (rebuffs Girsh)" ID="In %=year=%, the Gyre widened, and the final plague afflicted the land. The Girsh Nephilim rose from their cradles on the Moon Stair and slouched toward Qud to eat its young. Resheph rose to meet them in battle and cast them back.">在 %=year=% 年，環流擴張，最後一場瘟疫襲擊了這片土地。吉爾什尼菲林從他們位於月之階梯的搖籃中起身，向卡德緩步走去，企圖吞噬其幼崽。瑞舍夫挺身而出與之交戰，並將他們擊退。</string>
  <string Context="Resheph Gospel (weird sky)" ID="At twilight in the shadow of the Spindle, the people of Omonporch saw an image on the horizon that looked like a ghost bathed in cerulean. It was Resheph, and after he came and left Omonporch, the people built a monument to him, and thenceforth called him Ghost-in-Cerulean.">在紡錘的陰影下的黃昏時分，歐蒙波奇的人民在天際線看到了一個看起來像是沐浴在蔚藍中的幽靈影像。那是雷舍夫（Resheph），在他來到並離開歐蒙波奇之後，人們為他建造了一座紀念碑，從此稱他為「蔚藍之幽靈」。</string>
- <string Context="Resheph Cognomen" ID="Ghost-in-Cerulean">蔚藍幽靈 (Ghost-in-Cerulean)</string>
+ <string Context="Resheph Cognomen" ID="Ghost-in-Cerulean">蔚藍幽靈(Ghost-in-Cerulean)</string>
  <string Context="HistoricEvent SecretRitual Gospel" ID="=spice:commonPhrases.whileExploringRegion.!random|capitalize=, =spice.entity:name= stumbled upon a clan of =faction.name= performing a secret ritual. Because of =spice.entity:possessivePronoun= =spice:elements.entity@elements[random].quality.!random=, they accepted =spice.entity:objectPronoun= into their fold and taught =spice.entity:objectPronoun= their secrets.">=spice:commonPhrases.whileExploringRegion.!random|capitalize=，=spice.entity:name= 偶然發現了一群正在進行秘密儀式的 =faction.name=。因為 =spice.entity:possessivePronoun= =spice:elements.entity@elements[random].quality.!random=，他們接納了 =spice.entity:objectPronoun= 加入他們的行列，並傳授了 =spice.entity:objectPronoun= 他們的秘密。</string>
  <string Context="HistoricEvent SecretRitual tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= when, =spice:commonPhrases.whileExploringRegion.!random=, =spice.entity:name= taught a clan of =faction.name= the ritual of the =spice:history.gospels.RitualName.entity@era.!random=, which can only be performed by one with =spice.entity:possessivePronoun= =spice:elements.entity@elements[random].quality.!random=. The =faction.name= were =spice:commonPhrases.thankful.!random=, and in return they accepted =spice.entity:objectPronoun= into their fold and taught =spice.entity:objectPronoun= their secrets.">當 =spice:commonPhrases.remember.!random|capitalize=、=spice:commonPhrases.whileExploringRegion.!random= 與 =spice.entity:name= 教導了一群 =faction.name= 如何進行 =spice:history.gospels.RitualName.entity@era.!random= 儀式時，該儀式只能由擁有 =spice.entity:possessivePronoun= {{G| =spice:elements.entity@elements[random].quality.!random=}} 的人執行。那些 =faction.name= 是 =spice:commonPhrases.thankful.!random=，作為回報，他們接納了 =spice.entity:objectPronoun= 加入其行列，並將 =spice.entity:objectPronoun= 的秘密傳授給他們。</string>
  <string Context="HistoricEvent SecretRitual Gospel" ID="=spice:commonPhrases.whileExploringRegion.!random|capitalize=, =spice.entity:name= stumbled upon a clan of =faction.formattedName= performing a secret ritual. Because of =spice.entity:possessivePronoun= =spice:elements.entity@elements[random].quality.!random=, they furiously rebuked =spice.entity:objectPronoun= and declared =spice.entity:objectPronoun= a villain to their kind.">=spice:commonPhrases.whileExploringRegion.!random|capitalize=，=spice.entity:name= 偶然發現了一群 =faction.formattedName= 正在進行秘密儀式。因為 =spice.entity:possessivePronoun= 的 =spice:elements.entity@elements[random].quality.!random=，他們憤怒地斥責 =spice.entity:objectPronoun=，並宣布 =spice.entity:objectPronoun= 是其族群的惡棍。</string>
@@ -1026,8 +1026,8 @@ alone if no match found.
  <string Context="Chargen ChooseStartingLocation Breadcrumb" ID="Select Starting Location">選擇起始位置</string>
  <string Context="Chargen CustomizeCharacter Option Gender nonspecific" ID="nonspecific">非特定</string>
  <string Context="Chargen CustomizeCharacter Option PronounSet from gender" ID="&lt;from gender&gt;">&lt;性別></string>
- <string Context="Chargen CustomizeCharacter Option random" ID="&lt;random&gt;">&lt;random></string>
- <string Context="Chargen CustomizeCharacter Option none" ID="&lt;none&gt;">&lt;none></string>
+ <string Context="Chargen CustomizeCharacter Option random" ID="&lt;random&gt;">&lt;隨機&gt;</string>
+ <string Context="Chargen CustomizeCharacter Option none" ID="&lt;none&gt;">&lt;無&gt;</string>
  <string Context="Chargen CustomizeCharacter Option create new" ID="&lt;create new&gt;">&lt;建立新項目></string>
  <string Context="Chargen CustomizeCharacter PrefixMenuOption Name" ID="Name: " Value="名稱：" />
  <string Context="Chargen CustomizeCharacter PrefixMenuOption Gender" ID="Gender: " Value="性別：" />
@@ -1157,10 +1157,10 @@ alone if no match found.
  <string Context="direction.short (.)" ID="here">這裡</string>
  <string Context="direction.short (?)" ID="somewhere">某處</string>
  <string Context="Stat Debug Penetrated" ID="Penned with Roll:=roll= Final:=result=">擲骰結果 Roll:=roll= 最終結果:=result=</string>
- <string Context="Stat Debug Didn't Penetrate" ID="Didn't pen with Roll:=roll= Final:=result=">未以 Roll:=roll= 記錄 Final:=result=</string>
+ <string Context="Stat Debug Didn't Penetrate" ID="Didn't pen with Roll:=roll= Final:=result=">未以 Roll:=roll= 穿透 Final:=result=</string>
  <string Context="Stat Debug Penetration Summary" ID="Penning Bonus: =bonus= Max: =maxbonus= Used: =used= Target: =target= (Penned =pens.things:time=)">書寫加成：=bonus= 最大值：=maxbonus= 已使用：=used= 目標：=target= (已書寫 =pens.things:time=)</string>
  <string Context="Stat RollSave SavingThrowDebug" ID="=who= rolled =naturalroll= =roll|wrap:modified to = on =stat= save =vscause|wrap:vs. = =attacker|wrap:from = =attackerstat|wrap:(using :)= with difficulty =basediff= =moddiff|wrap:modified to =">=who= 投出了 =naturalroll= =roll|wrap:modified to =，對抗 =stat= 豁免 =vscause|wrap:vs. =，來自 =attacker|wrap:from = 的 =attackerstat|wrap:(using :)=，難度為 =basediff= =moddiff|wrap:modified to =</string>
- <string Context="Stat MakeSave SavingThrowDebug" ID="=who= =success.if:made:failed= =stat= save =vscause|wrap:vs. = =attacker|wrap:from = =attackerstat|wrap:(using :)= =source|wrap:via = on =reallynatural.if:natural= =naturalroll= =roll|wrap:modified to = with difficulty =basediff= =moddiff|wrap:modified to = =godmode.if:(godmode)=">=who= =success.if:made:failed= =stat= 存檔 =vscause|wrap:vs. = =attacker|wrap:from = =attackerstat|wrap:(using :)= =source|wrap:via = 在 =reallynatural.if:natural= =naturalroll= =roll|wrap:修改為 = 難度 =basediff= =moddiff|wrap:修改為 = =godmode.if:(godmode)=</string>
+ <string Context="Stat MakeSave SavingThrowDebug" ID="=who= =success.if:made:failed= =stat= save =vscause|wrap:vs. = =attacker|wrap:from = =attackerstat|wrap:(using :)= =source|wrap:via = on =reallynatural.if:natural= =naturalroll= =roll|wrap:modified to = with difficulty =basediff= =moddiff|wrap:modified to = =godmode.if:(godmode)=">=who= =success.if:made:failed= =stat= 存檔 =vscause|wrap:vs. = =attacker|wrap:from = =attackerstat|wrap:(using :)= =source|wrap:via = 在 =reallynatural.if:natural= =naturalroll= =roll|wrap:modified to = 上，難度為 =basediff= =moddiff|wrap:modified to = =godmode.if:(godmode)=。</string>
  <string Context="Rules Strings WoundLevel Scanning" ID="{{=healthColor=|=subject.hp=/=subject.baseHp=}} =glyph:AV==subject.combatAV= =glyph:DV==subject.combatDV=">{{=healthColor=|=subject.hp=/=subject.baseHp=}} =glyph:AV==subject.combatAV= =glyph:DV==subject.combatDV=</string>
  <string Context="Rules Strings WoundLevel creature" ID="{{r|Badly Wounded}}">{{r|重傷}}</string>
  <string Context="Rules Strings WoundLevel creature" ID="{{R|Wounded}}">{{R|受傷}}</string>
@@ -1206,7 +1206,7 @@ alone if no match found.
  <string Context="PsychicHunterSystem Extradimensional Cult Naming Title" ID="=title=" OrderAdjust="-40">=title=</string>
  <string Context="PsychicHunterSystem Extradimensional Cult Naming Title" ID="extradimensional =subject.creatureType=" OrderAdjust="-20">異次元 =subject.creatureType=</string>
  <string Context="PsychicHunterSystem Extradimensional Cult Naming Title" ID="esper from the =cultName=" OrderAdjust="-5">=cultName= 的逃亡者</string>
- <string Context="PsychicHunterSystem Sense Presence Message" ID="=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= foreign to this place and time.">=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= 與此地與此時空格格不入。</string>
+ <string Context="PsychicHunterSystem Sense Presence Message" ID="=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= foreign to this place and time.">=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= 與此時此地格格不入。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Your psychic glimmer represents how noticeable you are in the vast psychic aether. As your mental mutations increase in level, so does your psychic glimmer and the frequency, strength, and number of those who desire to absorb your mind.">你的靈能微光代表你在廣闊的靈能乙太中有多麼顯眼。隨著你的精神突變等級提升，你的靈能微光也會隨之增強，且渴望吸收你心智的人數、頻率與強度也會隨之增加。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by ospreys, Ptoh's servants and birds of psychic prey who pluck larval espers from their egg sacs.">目前，你正受到魚鷹、普托的僕從以及鳥類精神獵物的監視與追捕，這些獵物會從卵囊中啄食幼小的感應者。</string>
  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.">目前，你正受到騷擾者的監視與追捕，他們是普托的僕從，也是那些在淺灘中攫取初生心靈感應者的鳥類精神獵物。</string>
@@ -1221,7 +1221,7 @@ alone if no match found.
  <string Context="Reclamation Quest, failed attempt rename" ID="=questName=, attempt #=number=">=questName=，嘗試次數 #=number=</string>
  <string Context="Svardym Storm" ID="Your hear a swelling thpthp sound.">你聽到一陣強烈的 thpthp 聲。</string>
  <string Context="Svardym Storm" ID="The sky begins to darken.">天空開始變暗。</string>
- <string Context="Svardym Storm" ID="The thpthp sound wanes.">thpthp 的聲音逐漸消逝。</string>
+ <string Context="Svardym Storm" ID="The thpthp sound wanes.">thpthp 的聲音逐漸減弱。</string>
  <string Context="Svardym Storm" ID="The sky begins to brighten.">天空開始變亮。</string>
  <string Context="Scholar Custom Chargen - ChargenInfo Line (shown twice)" ID="Wilderness Lore: Random">荒野知識：隨機</string>
  <string Context="Genotype Chargen Info" ID="=glyph:ChargenBullet= =extraInfo=">=glyph:ChargenBullet= =extraInfo=</string>
@@ -1288,8 +1288,8 @@ alone if no match found.
  <string Context="XRLUITradeUI TraderIdentify Confirm Cost" ID="You may identify this for =cost= =cost.pluralize:dram= of fresh water.">你可以花費 =cost= =cost.pluralize:dram= 的淡水來鑑定此物。</string>
  <string Context="XRLUITradeUI TraderIdentify Success" ID="=trader.Does:identify= =object.the.name:long:notAsPossessed= as =object.a.name:asIfKnown=.">=trader.Does:identify= 將 =object.the.name:long:notAsPossessed= 辨識為 =object.a.name:asIfKnown=。</string>
  <string Context="XRLUITradeUI TraderIdentify Already Known" ID="You already understand this item.">你已經了解此物品。</string>
- <string Context="XRLUITradeUI Trader Cant Identify" ID="=trader.Does:don't|strip= have the skill to identify artifacts.">=trader.Does:don't|strip= 沒有鑑定神器（artifacts）的技能。</string>
- <string Context="XRLUITradeUI RepairTooComplex" ID="=multiple.if:These items are:This item is= too complex for =trader.t= to repair.">=multiple.if:這些物品對於 =trader.t= 來說太複雜而無法修理：這件物品對於 =trader.t= 來說太複雜而無法修理=。</string>
+ <string Context="XRLUITradeUI Trader Cant Identify" ID="=trader.Does:don't|strip= have the skill to identify artifacts.">=trader.Does:don't|strip= 沒有鑑定神器(artifacts)的技能。</string>
+ <string Context="XRLUITradeUI RepairTooComplex" ID="=multiple.if:These items are:This item is= too complex for =trader.t= to repair.">=multiple.if:這些物品對於 =trader.t= 來說太複雜而無法修理：這件物品對於 =trader.t= 來說太複雜而無法修理=</string>
  <string Context="XRLUITradeUI TooPoorToRepair" ID="You need {{C|=cost=}} =cost.pluralize:dram= of fresh water to repair =multiple.if:those:that=.">你需要 {{C|=cost=}} =cost.pluralize:dram= 的淡水來修理 =multiple.if:those:that=。</string>
  <string Context="XRLUITradeUI RepairCost" ID="You may repair =multiple.if:those:this= for {{C|=cost=}} =cost.pluralize:dram= of fresh water.">你可以花費 {{C|=cost=}} =cost.pluralize:dram= 的淡水來修理 =multiple.if:those:this=。</string>
  <string Context="XRLUITradeUI NotBroken" ID="=multiple.if:Those items aren't:That item isn't= broken!">=multiple.if:那些物品不:那個物品不=是損壞的！</string>
@@ -1307,7 +1307,7 @@ alone if no match found.
  <string Context="XRLUITradeUI Complete" ID="Trade complete!">交易完成！</string>
  <string Context="XRLUITradeUI Nothing" ID="Nothing to trade.">沒有可交易的物品。</string>
  <string Context="XRLUITradeUI TooPoor For Recharge" ID="You need {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water to charge =object.isplural:one of :==object.indicativeDistal=.">你需要 {{C|=cost.cardinal=}} =cost.pluralize:dram= 的清水來為 =object.isplural:one of :==object.indicativeDistal= 充電。</string>
- <string Context="XRLUITradeUI Recharge Cost" ID="You may recharge =object.isplural:one of :==object.indicativeDistal= for {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water.">你可以消耗 {{C|=cost.cardinal=}} =cost.pluralize:dram= 的清水來為 =object.isplural:one of :==object.indicativeDistal= 重新充電。</string>
+ <string Context="XRLUITradeUI Recharge Cost" ID="You may recharge =object.isplural:one of :==object.indicativeDistal= for {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water.">你可以消耗 {{C|=cost.cardinal=}} =cost.pluralize:dram= 的清水來為 =object.isplural:one of :==object.indicativeDistal= 充電。</string>
  <string Context="XRLUITradeUI Cant Be Charged" ID="That item has no cell or rechargeable capacitor in it.">該物品內沒有電池或可充電電容器。</string>
  <string Context="XRLUITradeUI Wrong Recharge" ID="That item cannot be recharged this way.">該物品無法以此方式重新充電。</string>
  <string Context="XRLUITradeUI Fully Charged" ID="=object.T= =object.verb:are= fully charged!">=object.T= 已完全充滿電！</string>
@@ -1329,12 +1329,12 @@ alone if no match found.
  <string Context="Campfire CookFromRecipe Rename Success" ID="You rename the recipe to '=newname='.">你將食譜重新命名為「=newname=」。</string>
  <string Context="Look ShowLooker LookNum" ID="Look [{{C|=num=}}/{{C|=count=}}] |">查看 [{{C|=num=}}/{{C|=count=}}] |</string>
  <string Context="Look ShowLooker Look1" ID="Look |">查看 |</string>
- <string Context="Look ShowLooker Unlock" ID="=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}nlock">=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}nlock</string>
+ <string Context="Look ShowLooker Unlock" ID="=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}解鎖">=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}解鎖</string>
  <string Context="Look ShowLooker Lock" ID="=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|L}}ock">=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|上}}鎖</string>
- <string Context="Look ShowLooker ChangeSelection" ID="| =commandKey:V Positive=/=commandKey:V Negative= Change Selection">| =commandKey:V 正向=/=commandKey:V 負向= 變更選擇</string>
+ <string Context="Look ShowLooker ChangeSelection" ID="| =commandKey:V Positive=/=commandKey:V Negative= Change Selection">| =commandKey:V Positive=/=commandKey:V Negative= 變更選擇</string>
  <string Context="Look ShowLooker Interact" ID="| =commandKey:Accept= Interact">| =commandKey:Accept= 互動</string>
  <string Context="Look ShowLooker Walk" ID="| =commandKey:CmdWalk= Walk">| =commandKey:CmdWalk= 行走</string>
- <string Context="Look ShowLooker ShowNavWeight(Debug)" ID="| {{hotkey|n}} Show NavWeight">| {{hotkey|n}} 顯示導航重量 (NavWeight)</string>
+ <string Context="Look ShowLooker ShowNavWeight(Debug)" ID="| {{hotkey|n}} Show NavWeight">| {{hotkey|n}} 顯示導航重量(NavWeight)</string>
  <string Context="Look ShowLooker ConsoleUI MoreScrollUp" ID="&lt;MORE - use {{W|PgUp}} to scroll up&gt;">&lt;更多 — 使用 {{W|PgUp}} 向上捲動></string>
  <string Context="Look ShowLooker ConsoleUI MoreScrollDown" ID="&lt;MORE - use {{W|PgDown}} to scroll down&gt;">&lt;更多 — 使用 {{W|PgDown}} 向下捲動></string>
  <string Context="LookerPointsOfInterest prompt text" ID="=commandKey:CmdLook= points of interest">=commandKey:CmdLook= 興趣點</string>
@@ -1406,7 +1406,7 @@ alone if no match found.
  <string Context="Popup ConsoleUI AskString EnterToConfirm WithFormatting" ID="[{{W|Enter}} to confirm]">[{{W|按下 Enter}} 以確認]</string>
  <string Context="Popup ConsoleUI PickOption More" ID="{{W|&lt;More...&gt;}}">{{W|&lt;更多...>}}</string>
  <string Context="Popup PickSeveral Accept" ID="{{y|[=commandKeyConsole:CmdDelete=] Accept}}">{{y|[=commandKeyConsole:CmdDelete=] 確認}}</string>
- <string Context="Popup PickSeveral DeselectAll" ID="{{y|=commandKeyConsole:Take All= Deselect All}}">{{y|=commandKeyConsole:全拿= 取消全選}}</string>
+ <string Context="Popup PickSeveral DeselectAll" ID="{{y|=commandKeyConsole:Take All= Deselect All}}">{{y|=commandKeyConsole:Take All= 取消全選}}</string>
  <string Context="Popup PickSeveral SelectAll" ID="{{y|=commandKeyConsole:Take All= Select All}}">{{y|=commandKeyConsole:Take All= 全選}}</string>
  <string Context="Popup PickSeveral - Too Many" ID="You cannot select more than =amount.cardinal= options!">你不能選擇超過 =amount.cardinal= 個選項！</string>
  <string Context="Popup PickSeveral HowMany" ID="Select how many?">選擇數量？</string>
@@ -1420,7 +1420,7 @@ alone if no match found.
  <string Context="Popup ConsoleUI ShowYesNoCancelGamepad" ID="[=commandKeyConsole:Accept=-Yes] [=commandKeyConsole:V Negative=-No] [=commandKeyConsole:Cancel=-Cancel]">[=commandKeyConsole:Accept=-是] [=commandKeyConsole:V Negative=-否] [=commandKeyConsole:Cancel=-取消]</string>
  <string Context="Popup ConsoleUI ShowYesNoCancel NoFormatting" ID="[Yes] [No] [ESC-Cancel]">[是] [否] [ESC-取消]</string>
  <string Context="Popup ConsoleUI ShowYesNoCancel WithFormatting" ID="[{{W|Y}}es] [{{W|N}}o] [{{W|ESC}}-Cancel]">[{{W|Y}}是] [{{W|N}}否] [{{W|ESC}}-取消]</string>
- <string Context="Popup DisplayLoadError OneError" ID="There =errorCount.ifPlural:were:was= =errorCount.things:error= while loading this =loadable=.">正在載入此 =loadable= 時，出現了 =errorCount.ifPlural:曾是:曾是= =errorCount.things:error=。</string>
+ <string Context="Popup DisplayLoadError OneError" ID="There =errorCount.ifPlural:were:was= =errorCount.things:error= while loading this =loadable=.">載入此 =loadable= 時，出現了 =errorCount.ifPlural:個:個= =errorCount.things:錯誤=。</string>
  <string Context="Popup DisplayLoadError MissingMods" ID="Missing mods: " Value="缺失的模組：" />
  <string Context="Popup DisplayLoadError DoYouWantToExamineErrors" ID="Do you want to examine these errors in the Player.log?">你想在 Player.log 中查看這些錯誤嗎？</string>
  <string Context="BaseScreen GetScreenName" ID="Factions">派系</string>
@@ -1543,7 +1543,7 @@ alone if no match found.
  <string Context="Tarry Biome - Creature Adjective" ID="firethumbed" OrderAdjust="0">火指 (firethumbed)</string>
  <string Context="DynamicQuestConversationHelper reward choice dialog" ID="=spice:quests.thanks.!random|capitalize=. Our village owes you a debt. For now, please choose a reward from our stockpile as payment for your service.">=spice:quests.thanks.!random|capitalize=. 我們的村莊欠你一份人情。目前，請從我們的庫存中選擇一件獎勵，作為對你服務的回報。</string>
  <string Context="DynamicQuestConversationHelper reward choice choice" ID="Live and drink.">生存與飲酒。</string>
- <string Context="DynamicQuestConversationHelper village zero main quest dialog" ID="They are disciples of Barathrum. Mostly they are Urshiib, like their mentor. Mutant albino cave bears. With quills to boot! A thousand years ago Barathrum and his kin crossed the Homs Delta into the heart of Qud. He has spent centuries fiddling with the tokens of antiquity in his underground workshops.">他們是 巴拉楚姆(Barathrum) 的門徒。大多與他們的導師一樣是 Urshiib。變異的白化洞穴 熊。而且還帶著 刺！一千年前，巴拉楚姆(Barathrum) 和他的親族跨越了 Homs Delta，進入了 卡德(Qud) 的核心。他花了幾個世紀在他的地下 工作坊 裡擺弄那些古老的代幣。</string>
+ <string Context="DynamicQuestConversationHelper village zero main quest dialog" ID="They are disciples of Barathrum. Mostly they are Urshiib, like their mentor. Mutant albino cave bears. With quills to boot! A thousand years ago Barathrum and his kin crossed the Homs Delta into the heart of Qud. He has spent centuries fiddling with the tokens of antiquity in his underground workshops.">他們是 巴拉楚姆(Barathrum) 的門徒。大多與他們的導師一樣是 Urshiib。變異的白化洞穴熊。而且還帶著刺！一千年前，巴拉楚姆(Barathrum) 和他的親族跨越了 Homs Delta，進入了卡德(Qud)的核心。他花了幾個世紀在他的地下工作坊裡擺弄那些古老的代幣。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest choice" ID="I will take the disk to Grit Gate and speak with the Barathrumites.">我會帶著圓盤前往礫門，並與巴拉楚姆信徒交談。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest choice deny" ID="I must pass on this offer, for now. Live and drink.">我現在必須拒絕這個提議。盡情生活與飲酒吧。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest restart dialog" ID="Are you seeking more work, =player.formalAddressTerm=? Recently we came into possession of a data disk bearing a peculiar stamp and encoded with a strange signal. The signal means nothing to us, but there's a sect of tinkers called the Barathrumites who might be interested in it. They are friends to our village and often trade for the scrap we tow out of the earth. Would you carry the disk to their enclave at Grit Gate, along the western rim of the jungle? In exchange for the delivery, you might seek an apprenticeship with them.&#xA;&#xA;If you are interested, take the disk now, and travel safely." Value="你在尋找更多工作嗎，=player.formalAddressTerm=？最近我們得到了一個 數據磁碟，上面印有奇特的印記並編碼著奇怪的訊號。這個訊號對我們來說毫無意義，但有一群被稱為 巴拉楚姆信徒 的 修補匠 可能會對它感興趣。他們是我們村莊的朋友，經常用我們從地底拖出的廢料與他們交易。你能把磁碟送到他們位於 礫門(Grit Gate) 的聚落嗎？那就在 叢林 西緣沿線。作為遞送的報酬，你或許可以向他們尋求學徒機會。\n\n如果你感興趣，現在就拿走磁碟，旅途平安。" />
@@ -1561,7 +1561,7 @@ alone if no match found.
  <string Context="FindASiteDynamicQuestTemplate Completion gospelText" ID="Acting against the persecution of =faction.formattedName=, =player.name= led an army to the lost gates of =sitename=. =player.They= liberated its citizens, who together in =player.their= honor =spice:history.gospels.Celebration.LateSultanate.!random=.">為了反抗對 =faction.formattedName= 的迫害，=player.name= 率領軍隊前往 =sitename= 的失落之門。=player.They= 解放了其公民，他們在 =player.their= 共同向 =spice:history.gospels.Celebration.LateSultanate.!random= 致敬。</string>
  <string Context="FindASiteDynamicQuestTemplate siteName" ID="=journalNote.the.location.of=">你記錄了 =journalNote= 的位置。</string>
  <string Context="FindASiteDynamicQuestTemplate quest intro dialog" ID="=spice:quests.FindaSite.travelers.intro.!random|capitalize= =spice:quests.FindaSite.travelers.cameToOurVillage.!random|capitalize=. =spice:quests.FindaSite.travelers.spokeOfPlace.!random|capitalize|a.to.an=. But they wouldn't reveal the location. =spice:quests.FindaSite.travelers.wouldYouFindIt.!random|capitalize= =spice:quests.FindaSite.travelers.greatBoon.!random|capitalize=. =spice:quests.FindaSite.travelers.rewardYou.!random|capitalize=.&#xA;&#xA;=spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=." Value="=spice:quests.FindaSite.travelers.intro.!random|capitalize= =spice:quests.FindaSite.travelers.cameToOurVillage.!random|capitalize=. =spice:quests.FindaSite.travelers.spokeOfPlace.!random|capitalize|a.to.an=. 但他們不願透露位置。=spice:quests.FindaSite.travelers.wouldYouFindIt.!random|capitalize= =spice:quests.FindaSite.travelers.greatBoon.!random|capitalize=. =spice:quests.FindaSite.travelers.rewardYou.!random|capitalize=.\n\n=spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=。" />
- <string Context="FindASiteDynamicQuestTemplate quest intro dialog" ID="=spice:quests.FindaSite.records.intro.!random|capitalize=. =spice:quests.FindaSite.records.whatTreasures.!random|capitalize=? =sample.fragment:ValuedOre:precious metals|capitalize=? =sample.fragment:ArableLand:arable land|capitalize=? A =spice:commonPhrases.shrine.!random= to =quest.sacredThing=? We must know. =spice:quests.FindaSite.records.ifYouFindIt.!random|capitalize=. =spice:quests.FindaSpecificItem.personal.willYouDoIt.!random|capitalize= =spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=.">=spice:quests.FindaSite.records.intro.!random|capitalize=. =spice:quests.FindaSite.records.whatTreasures.!random|capitalize=? =sample.fragment:ValuedOre:貴金屬|capitalize=? =sample.fragment:ArableLand:可耕地|capitalize=? 一個 =spice:commonPhrases.神龕.!random= 用於 =quest.sacredThing=? 我們必須查明。 =spice:quests.FindaSite.records.ifYouFindIt.!random|capitalize=. =spice:quests.FindaSpecificItem.personal.willYouDoIt.!random|capitalize= =spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=。</string>
+ <string Context="FindASiteDynamicQuestTemplate quest intro dialog" ID="=spice:quests.FindaSite.records.intro.!random|capitalize=. =spice:quests.FindaSite.records.whatTreasures.!random|capitalize=? =sample.fragment:ValuedOre:precious metals|capitalize=? =sample.fragment:ArableLand:arable land|capitalize=? A =spice:commonPhrases.shrine.!random= to =quest.sacredThing=? We must know. =spice:quests.FindaSite.records.ifYouFindIt.!random|capitalize=. =spice:quests.FindaSpecificItem.personal.willYouDoIt.!random|capitalize= =spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=.">=spice:quests.FindaSite.records.intro.!random|capitalize=. =spice:quests.FindaSite.records.whatTreasures.!random|capitalize=? =sample.fragment:ValuedOre:貴金屬|capitalize=? =sample.fragment:ArableLand:可耕地|capitalize=? 一個 =spice:commonPhrases.shrine.!random= 用於 =quest.sacredThing=? 我們必須查明。 =spice:quests.FindaSite.records.ifYouFindIt.!random|capitalize=. =spice:quests.FindaSpecificItem.personal.willYouDoIt.!random|capitalize= =spice:quests.FindaSite.typeOfDirections.$typeOfDirections.intro.!random|capitalize=。</string>
  <string Context="FindASiteDynamicQuestTemplate quest intro dialog" ID="ERROR: Failed to generate quest text, unknown story type">錯誤：無法生成任務文本，未知的劇情類型</string>
  <string Context="FindASiteDynamicQuestTemplate Accept Choice" ID="Yes. I will locate =targetLocation.text|colorSafe= as you ask.">是的。我會按照您的要求尋找 =targetLocation.text|colorSafe=。</string>
  <string Context="FindASiteDynamicQuestTemplate Reject Choice" ID="No, I will not.">不，我不會。</string>
@@ -1570,7 +1570,7 @@ alone if no match found.
  <string Context="FindASiteDynamicQuestTemplate located choice" ID="I haven't located =targetLocation.text|colorSafe= yet.">我還沒找到 =targetLocation.text|colorSafe=。</string>
  <string Context="FindASiteDynamicQuestTemplate quest name" ID="=targetLocation.text|strip|title=">=targetLocation.text|strip|title=</string>
  <string Context="FindASiteDynamicQuestTemplate quest name" ID="Find =targetLocation.text|strip|titleCaseWithArticle=">尋找 =targetLocation.text|strip|titleCaseWithArticle=</string>
- <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located within =max= parasangs of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =landmarkLocation.text|initLowerIfArticle=. 以內 =max= 帕桑格（parasangs）處的 =targetLocation.text=。</string>
+ <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located within =max= parasangs of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =landmarkLocation.text|initLowerIfArticle=. 以內 =max= 帕桑格(parasangs) 處的 =targetLocation.text=。</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located next to =landmarkLocation.text|initLowerIfArticle=.">前往 =targetLocation.text=，位於 =landmarkLocation.text|initLowerIfArticle= 旁邊。</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located =min=-=max= parasangs =direction.expandedDirection= of =landmarkLocation.text|initLowerIfArticle=.">尋找位於 =min=-=max= 帕拉桑 =direction.expandedDirection= 處的 =landmarkLocation.text|initLowerIfArticle=，即 =targetLocation.text=。</string>
  <string Context="FindASiteDynamicQuestTemplate locate step text" ID="Locate =targetLocation.text=, located =direction.expandedDirection= along the =path= that runs through =landmarkLocation.text|initLowerIfArticle=.">找到 =targetLocation.text=，它位於穿過 =landmarkLocation.text|initLowerIfArticle= 的 =path= 上，方向為 =direction.expandedDirection=。</string>
@@ -1661,7 +1661,7 @@ alone if no match found.
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Ibex">犛牛氏族</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Sol">索爾氏族 (Clan Sol)</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Whitetongue">白舌氏族</string>
- <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Yr">Yr 氏族</string>
+ <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Yr">Yr 氏族 </string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Mnim">姆尼姆氏族</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="fleet-footed">腳步輕盈的</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="learned">博學的</string>
@@ -1708,7 +1708,7 @@ alone if no match found.
  <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:dislike:dislikes= you, but docile =faction.ifPlural:ones:members= won't attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:厭惡:厭惡= 您，但溫順的 =faction.ifPlural:成員:成員= 不會攻擊您。</string>
  <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:favor:favors= you. Aggressive =faction.ifPlural:ones:members= won't attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:偏愛:偏愛= 你。好鬥的 =faction.ifPlural:成員:成員= 不會攻擊你。</string>
  <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:revere:reveres= you and =faction.ifPlural:consider:considers= you one of their own.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:revere:reveres= 你，且 =faction.ifPlural:consider:considers= 你為他們的一員。</string>
- <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:don't:doesn't= care about you, but aggressive =faction.ifPlural:ones:members= will attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:不在乎:不在乎= 在乎你，但具攻擊性的 =faction.ifPlural:成員:成員= 會攻擊你。</string>
+ <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:don't:doesn't= care about you, but aggressive =faction.ifPlural:ones:members= will attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:不在乎:不在乎= 你，但好鬥的 =faction.ifPlural:成員:成員= 會攻擊你。</string>
  <string Context="Faction Pet Text" ID="{{C|=faction.formattedName|capitalize=}} will usually let you pet them.">{{C|=faction.formattedName|capitalize=}} 通常會讓你撫摸牠們。</string>
  <string Context="Faction Pet Text" ID="{{C|=faction.formattedName|capitalize=}} won't usually let you pet them.">{{C|=faction.formattedName|capitalize=}} 通常不會讓你撫摸牠們。</string>
  <string Context="Faction Rank Text" ID="You hold the =faction.rankTerm= of =rank= among them.">你在他們之中擁有 =rank= 的 =faction.rankTerm=</string>
@@ -1716,7 +1716,7 @@ alone if no match found.
  <string Context="Faction Holy Place Text" ID="You aren't welcome in their holy places.">你不受歡迎進入他們的聖地。</string>
  <string Context="Faction Feeling Description" ID="=feelingText=&#xA;&#xA;=fragments.join: =" Value="=feelingText=&#xA;&#xA;=fragments.join: =" />
  <string Context="Faction Secret Description (fragment)" ID="the =sultanTerm= they worship">他們崇拜的 =sultanTerm=</string>
- <string Context="Faction Secret Description (fragment)" ID="=sultanTerm|plural= they admire or despise">他們崇拜或鄙視的 =sultanTerm|plural=</string>
+ <string Context="Faction Secret Description (fragment)" ID="=sultanTerm|plural= they admire or despise">他們崇拜或鄙視的 =sultanTerm=</string>
  <string Context="Faction Secret Description (fragment)" ID="gossip that's about them">關於他們的八卦</string>
  <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =interestsBlurb=.">=faction.FormattedName|rules= =interestsBlurb=。</string>
  <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =both.andList=.">=faction.FormattedName|rules= 有興趣交易 =both.andList= 的秘密。</string>
@@ -1726,20 +1726,20 @@ alone if no match found.
  <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =buy.andList=.">=faction.FormattedName|rules= 有興趣了解 =buy.andList=。</string>
  <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= =buyDescription= =buy.andList=.">=faction.FormattedName|rules= =buyDescription= =buy.andList=。</string>
  <string Context="Faction Secret Description (pre-extra)" ID="=fragments.join:&#xA;&#xA;=" Value="=fragments.join:&#xA;&#xA;=" />
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣交易 =sultanTerm|plural= 之所欽佩或鄙視之人的秘密，也愛聽關於他們的八卦。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對交易關於 =sultanTerm|plural= 的秘密感興趣，無論是崇拜還是鄙視，並且喜歡聽關於他們的八卦。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣了解他們欽佩或鄙視的 =sultanTerm|plural=，並想聽聽關於他們的八卦。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對認識所欽佩或厭惡的=sultanTerm|plural= 感興趣，並樂於聽取關於自身的流言。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣分享 =sultanTerm|plural= 之敬仰或鄙視之人的秘密，並傾聽他們的流言蜚語。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對分享關於 =sultanTerm|plural= 的秘密感興趣，無論是崇拜還是鄙視，並且喜歡聽關於他們的八卦。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣交易他們欽佩或鄙視的 =sultanTerm= 的秘密，也愛聽關於他們的八卦。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對交易關於 =sultanTerm= 的秘密感興趣，無論是崇拜還是鄙視，並且喜歡聽關於他們的八卦。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣了解他們欽佩或鄙視的 =sultanTerm=，並想聽聽關於他們的八卦。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對了解他們欽佩或厭惡的 =sultanTerm= 感興趣，並樂於聽取關於自身的流言。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣分享他們欽佩或鄙視的 =sultanTerm= 的秘密，並傾聽他們的流言蜚語。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">他們也對分享關於 =sultanTerm= 的秘密感興趣，無論是崇拜還是鄙視，並且喜歡聽關於他們的八卦。</string>
  <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in hearing gossip that's about them.">=faction.FormattedName|rules= 有興趣聽聽關於他們的八卦。</string>
  <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in hearing gossip that's about them.">他們也對聽取有關自己的八卦感興趣。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣交換他們敬佩或鄙視之 =sultanTerm|plural= 的秘密。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise.">他們也對交易關於 =sultanTerm|plural= 的秘密感興趣，無論是崇拜還是鄙視。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣了解 =sultanTerm|plural=，無論欽佩還是鄙視。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise.">他們也對了解那些令他們欽佩或鄙夷的 =sultanTerm|plural= 感興趣。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣分享他們欽佩或鄙視之 =sultanTerm|plural= 的秘密。</string>
- <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise.">他們也對分享關於 =sultanTerm|plural= 的秘密感興趣，無論是崇拜還是鄙視。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣交換他們敬佩或鄙視的 =sultanTerm= 的秘密。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise.">他們也對交易關於 =sultanTerm= 的秘密感興趣，無論是崇拜還是鄙視。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣了解 =sultanTerm=，無論欽佩還是鄙視。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise.">他們也對了解那些令他們欽佩或鄙夷的 =sultanTerm= 感興趣。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= 有興趣分享他們欽佩或鄙視的 =sultanTerm= 的秘密。</string>
+ <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise.">他們也對分享關於 =sultanTerm= 的秘密感興趣，無論是崇拜還是鄙視。</string>
  <string Context="Faction Secret Description (extras)" ID="=fragments.join: =">=fragments.join: =</string>
  <string Context="Faction Default Rank Term" ID="rank">等級</string>
  <string Context="Faction FormattedName" ID="=withArticle.if:the ==displayName=">=withArticle.if:the ==displayName=</string>
@@ -1779,7 +1779,7 @@ alone if no match found.
  <string Context="FactionInterest" ID="the locations of oddities">奇物的位置</string>
  <string Context="FactionInterest" ID="all weep locations">所有哀悼地點</string>
  <string Context="FactionInterest" ID="cooking recipes">烹飪食譜</string>
- <string Context="FactionInterest" ID="the location of Stopsvalinn">斯托普斯瓦林(Stopsvalinn) 的地點</string>
+ <string Context="FactionInterest" ID="the location of Stopsvalinn">斯托普斯瓦林(Stopsvalinn) 的位置</string>
  <string Context="FactionInterest" ID="the locations of storied items">傳奇物品的位置</string>
  <string Context="FactionInterest" ID="locations along mountain streams">沿著山間溪流的地點</string>
  <string Context="FactionInterest" ID="the darkling star">暗星</string>
@@ -1817,12 +1817,12 @@ alone if no match found.
  <string Context="FactionInterest" ID="the locations of apple farms">蘋果農場的位置</string>
  <string Context="FactionInterest" ID="the locations of humanoid settlements">類人生物定居點的位置</string>
  <string Context="FactionInterest" ID="the locations of goatfolk settlements">山羊族定居點的位置</string>
- <string Context="FactionInterest" ID="the locations of =liquid.name|strip= weeps">=liquid.name|strip= 哭泣之處</string>
+ <string Context="FactionInterest" ID="the locations of =liquid.name|strip= weeps">=liquid.name|strip= 的哭泣之處</string>
  <string Context="FactionInterest" ID="the locations of humanoid merchants">類人族商人的位置</string>
  <string Context="FactionInterest (should never be used except mods, and tagList is untranslated)" ID="the locations of =@tagList.join: |pluralize=">=@tagList.join: |pluralize= 的位置</string>
  <string Context="Factions Loading Status Bar" ID="Loading Factions.xml">正在載入 Factions.xml</string>
  <string Context="Bodies Loading Status Bar" ID="Loading Bodies.xml">正在載入 Bodies.xml</string>
- <string Context="BodyPart Cybernetics Install Message" ID="You installed =cybernetic.isPlural:some:a= cybernetic =cybernetic.basename= and came one step closer to the Grand Unification.">你安裝了 =cybernetic.isPlural:some:a= 改造後的 =cybernetic.basename=，向著大統一（Grand Unification）又邁進了一步。</string>
+ <string Context="BodyPart Cybernetics Install Message" ID="You installed =cybernetic.isPlural:some:a= cybernetic =cybernetic.basename= and came one step closer to the Grand Unification.">你安裝了 =cybernetic.isPlural:some:a= 改造後的 =cybernetic.basename=，向著大統一(Grand Unification)又邁進了一步。</string>
  <string Context="BodyPart Cybernetics Install Mural" ID="Gaze upon the sublime body of =name=! See the glistening =cybernetic.basename=!">凝視 =name= 那崇高的軀體！看那閃爍著光芒的 =cybernetic.basename=！</string>
  <string Context="BodyPart Cybernetics Install Gospel" ID="While wandering around =player.terrain.t=, =name= stumbled upon a clan of machine folk. Because of =player.name's|strip= =spice:elements.$element.quality.!random=, they accepted =player.objective= into their fold and helped =player.objective= Become by installing =cybernetic.a.name|strip=.">當在 =player.terrain.t= 徘徊時，=name= 偶然發現了一個機器族群。因為 =player.name's|strip= =spice:elements.$element.quality.!random=，他們接納了 =player.objective= 加入其中，並透過安裝 =cybernetic.a.name|strip= 幫助 =player.objective= 實現「成為」。</string>
  <string Context="BodyPart Equip Fail Too Large" ID="This item is too large for you to equip.">此物品太大，你無法裝備。</string>
@@ -1901,7 +1901,7 @@ alone if no match found.
  <string Context="DifficultyEvaluation Average" ID="Average">平均</string>
  <string Context="DifficultyEvaluation Easy" ID="Easy">簡單</string>
  <string Context="DifficultyEvaluation Trivial" ID="Trivial">微不足道</string>
- <string Context="Disarm Message Log" ID="=subject.Does:disarm= =object.the.name= of =object.its.item#weapon=!">=subject.Does:disarm= =object.the.name= of =object.its.item#weapon= 嗎？</string>
+ <string Context="Disarm Message Log" ID="=subject.Does:disarm= =object.the.name= of =object.its.item#weapon=!">=subject.Does:disarm= =object.the.name= 的 =object.its.item#weapon= 嗎？</string>
  <string Context="Firefighting On Self" ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">=subject.Does:beat= 在火焰中用 =subject.its= =hands.name= 搏鬥！</string>
  <string Context="Firefighting On Other" ID="=subject.Does:beat= at the flames on =object.the.name= with =subject.its= =hands.name=!">=subject.Does:beat= 在 =object.the.name= 的火焰上用 =subject.its= =hands.name= 拍打！</string>
  <string Context="MatterPhase" ID="solid">固體</string>
@@ -2038,7 +2038,7 @@ alone if no match found.
  <string Context="Beguiled Effect Journal Accomplishment Gospel" ID="=spice:elements.$domain.weddingConditions.!random|capitalize=, =player.name= cemented =player.possessiveAdjective= friendship with =beguiled.the.faction:base= by marrying =beguiled.a.name=.">=spice:elements.$domain.weddingConditions.!random|capitalize=，=player.name= 透過迎娶 =beguiled.a.name=，鞏固了 =player.possessiveAdjective= 與 =beguiled.the.faction:base= 的友誼。</string>
  <string Context="Beguiled Effect Remove Message Log" ID="=subject.Does:lose= interest in =object.the.name=.">=subject.Does:lose= 對 =object.the.name= 失去興趣。</string>
  <string Context="Berserk Effect DisplayName" ID="berserk">狂暴</string>
- <string Context="Berserker Effect Duration Player Message Log" ID="=duration.things:turn remains:turns remain= until your berserker rage ends.">=持續時間.things:turn remains:turns remain= 直到你的狂戰士之怒結束。</string>
+ <string Context="Berserker Effect Duration Player Message Log" ID="=duration.things:turn remains:turns remain= until your berserker rage ends.">=duration.things:turn remains:turns remain= 直到你的狂戰士之怒結束。</string>
  <string Context="Blaze_Tonic Effect GetDescription" ID="{{blaze|blaze}} tonic">{{blaze|烈焰}} 補劑</string>
  <string Context="Blaze_Tonic Effect Apply Player Popup" ID="Your stomach swells with a burning sensation.">你的胃部因灼熱感而膨脹。</string>
  <string Context="Blaze_Tonic Effect Remove Player Message Log" ID="The =tonic.description= burns out of your system.">=tonic.description= 從你的體內燃盡。</string>
@@ -2155,12 +2155,12 @@ alone if no match found.
  <string Context="CookingDomainDensity_UnitPermanentAV Accomplishment" ID="On the =day= of =month=, =name= uncorked the cosmic wine and imbibed the forbidden starjuice. O, the mass within!">在 =month= 的 =day=，=name= 拔開了宇宙之酒的塞子，飲下了禁忌的星汁。喔，那其中的質量！</string>
  <string Context="CookingDomainDensity_UnitPermanentAV Accomplishment" ID="Somewhere in =terrain.t=, =name= had a dream that =subject.subjective= imbibed a dram of starjuice. =spice:commonPhrases.fromThenOn.!random|capitalize=, =subject.subjective= always kept some stars in a bottle on =subject.possessive= person.">在 =terrain.t= 的某處，=name= 做了一個夢，夢見 =subject.subjective= 喝了一小杯星汁。=spice:commonPhrases.fromThenOn.!random|capitalize=，=subject.subjective= 總是會在 =subject.possessive= 身邊的瓶子裡留著一些星星。</string>
  <string Context="CookingDomainDissociation_UnitOtherBodyBonus Description" ID="As long as your body isn't your own, you gain =bonus.signed= Quickness.">只要你的身體不再屬於你自己，你就會獲得 =bonus.signed= 敏捷。</string>
- <string Context="CookingDomainDissociation_UnitOtherBodyBonus Description - Unknown roll" ID="As long as your body isn't your own, you gain +40-70 Quickness.">只要你的身體不屬於你自己，你就會獲得 +40-70 敏捷（Quickness）。</string>
+ <string Context="CookingDomainDissociation_UnitOtherBodyBonus Description - Unknown roll" ID="As long as your body isn't your own, you gain +40-70 Quickness.">只要你的身體不屬於你自己，你就會獲得 +40-70 敏捷(Quickness)。</string>
  <string Context="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:release= an electromagnetic pulse at rank =tier=.">=subject.it.does:release= 一個等級為 =tier= 的電磁脈衝。</string>
  <string Context="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction Description - unknown roll" ID="=subject.it.does:release= an electromagnetic pulse at rank 8-9.">=subject.it.does:release= 在等級 8-9 時釋放電磁脈衝。</string>
  <string Context="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction Notification" ID="=subject.does:release= a powerful electromagnetic pulse.">=subject.does:release= 一道強大的電磁脈衝。</string>
  <string Context="CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:release= an electrical discharge per Electrical Generation at rank =tier=.">在 =tier= 等級時，每次電力生成會產生 =subject.it.does:release= 次電擊放電。</string>
- <string Context="CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction Description - unknown rolls" ID="=subject.it.does:release= an electrical discharge per Electrical Generation at rank 5-6.">=subject.it.does:release= 每一次電力生成（Electrical Generation）會釋放一次電放電，於等級 5-6 時。</string>
+ <string Context="CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction Description - unknown rolls" ID="=subject.it.does:release= an electrical discharge per Electrical Generation at rank 5-6.">在等級 5-6 時，每一次電力生成(Electrical Generation)會 =subject.it.does:release= 一次電放電。</string>
  <string Context="CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction Notification" ID="=subject.does:release= a powerful electrical discharge.">=subject.does:release= 一股強大的電力釋放。</string>
  <string Context="CookingDomainElectric_SmallElectricResist_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:gain= 40-50 Electric Resist for 6 hours.">=subject.it.does:gain= 40-50 點電擊抗性，持續 6 小時。</string>
  <string Context="CookingDomainElectric_SmallElectricResist_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= fortified against electrical damage.">=subject.does:become= 對電擊傷害獲得強化。</string>
@@ -2178,11 +2178,11 @@ alone if no match found.
  <string Context="CookingDomainFear_FearImmunity_ProceduralCookingTriggeredAction Notification" ID="=subject.does:become= immune to fear.">=subject.does:become= 對恐懼免疫。</string>
  <string Context="CookingDomainFear_FearImmunity_ProceduralCookingTriggeredActionEffect Details" ID="Immune to fear.">免疫恐懼。</string>
  <string Context="CookingDomainFear_OnFeared Description" ID="whenever =subject.thisCreature= =subject.verb:become= afraid,">每當 =subject.thisCreature= =subject.verb:become= 恐懼時，</string>
- <string Context="CookingDomainFear_OnEatLah Description" ID="whenever =subject.thisCreature= =subject.verb:eat= a dreadroot tuber or lah petal,">每當 =subject.thisCreature= =subject.verb:eat= 一個 恐懼根 塊莖或 lah 花瓣時，</string>
+ <string Context="CookingDomainFear_OnEatLah Description" ID="whenever =subject.thisCreature= =subject.verb:eat= a dreadroot tuber or lah petal,">每當 =subject.thisCreature= =subject.verb:eat= 一個恐懼根塊莖或 lah 花瓣時，</string>
  <string Context="CookingDomainFear_UnitBonusMA Description" ID="+2 MA">+2 MA</string>
  <string Context="CookingDomainFear_UnitIntimidate Description" ID="Can use =skillName=.">可以使用 =skillName=。</string>
- <string Context="CookingDomainFear_UnitIntimidate Description - Bonus" ID="=bonus.signed= bonus on Ego roll when using Intimidate.">使用「威嚇」時，心智（Ego）檢定獲得 =bonus.signed= 加成。</string>
- <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=. If =subject.they= =subject.verb:already:have= =skillName=, gain a =bonus.signed= bonus on the Ego roll when using =skillName=.">可以使用 =skillName=。若 =subject.they= =subject.verb:already:have= =skillName=，則在使用 =skillName= 時，於心智（Ego）檢定中獲得 =bonus.signed= 加成。</string>
+ <string Context="CookingDomainFear_UnitIntimidate Description - Bonus" ID="=bonus.signed= bonus on Ego roll when using Intimidate.">使用「威嚇」時，心智(Ego)檢定獲得 =bonus.signed= 加成。</string>
+ <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=. If =subject.they= =subject.verb:already:have= =skillName=, gain a =bonus.signed= bonus on the Ego roll when using =skillName=.">可以使用 =skillName=。若 =subject.they= =subject.verb:already:have= =skillName=，則在使用 =skillName= 時，於心智(Ego)檢定中獲得 =bonus.signed= 加成。</string>
  <string Context="CookingDomainFear_UnitIntimidate Description - Roll unknown" ID="Can use =skillName=.">可以使用 =skillName=。</string>
  <string Context="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:emit= a ray of flame per Flaming Ray at rank 5-6.">=subject.it.does:emit= 在等級 5-6 時，根據「火焰射線」的數量發射火焰射線。</string>
  <string Context="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction Notification" ID="=subject.does:emit= a powerful ray of flame.">=subject.does:emit= 一道強大的火焰光束。</string>
@@ -2249,7 +2249,7 @@ alone if no match found.
  <string Context="CookingDomainPlant_BurgeoningHighTier_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:cause= plants to spontaneously grow in a random nearby area.">=subject.it.does:cause= 植物在附近的隨機區域自發性生長。</string>
  <string Context="CookingDomainPlant_BurgeoningHighTier_ProceduralCookingTriggeredAction Notification" ID="Plants burgeon around =subject.the.name=!">植物在 =subject.the.name= 周圍萌芽。</string>
  <string Context="CookingDomainPlant_OnDamageByPlant Description" ID="whenever =subject.thisCreature= =subject.verb:take= damage from a plant,">每當 =subject.thisCreature= 從植物那裡 =subject.verb:take= 傷害時，</string>
- <string Context="CookingDomainPlant_UnitPlantReputationLowTier Description" ID="+100 reputation with flowers, roots, succulents, trees, vines, and the Consortium of Phyta">與 花朵、根系、多肉植物、樹木、藤蔓 及 植物聯盟(Consortium of Phyta) 的聲望 +100</string>
+ <string Context="CookingDomainPlant_UnitPlantReputationLowTier Description" ID="+100 reputation with flowers, roots, succulents, trees, vines, and the Consortium of Phyta">與花朵、根系、多肉植物、樹木、藤蔓及植物聯盟(Consortium of Phyta)的聲望 +100</string>
  <string Context="CookingDomainPlant_UnitPlantReputationHighTier Description" ID="+200 reputation with flowers, roots, succulents, trees, vines, and the Consortium of Phyta">與 花朵、根系、多肉植物、樹木、藤蔓 及 植物聯盟(Consortium of Phyta) 的聲望 +200</string>
  <string Context="ProceduralCookingEffect DisplayName" ID="{{W|metabolizing}}">{{W|代謝中}}</string>
  <string Context="ProceduralCookingEffectUnitMutation Snapshot =mutationName=" ID="=mutation.name=">=mutation.name=</string>
@@ -2323,7 +2323,7 @@ alone if no match found.
  <string Context="CookingDomainSpecial_UnitSlogTransform Popups" ID="You gained the mutation {{w|Bilge Sphincter}}!">你獲得了突變 {{w|污垢括約肌}}！</string>
  <string Context="CookingDomainSpecial_UnitSlogTransform Accomplishment" ID="You ate the Cloaca Surprise.">您吃了「下水道驚喜」。</string>
  <string Context="CookingDomainSpecial_UnitSlogTransform muralText" ID="Slugform! Slugform! On the =day= of =month= in the year =year=, =subject.name= underwent the divine transformation and assumed the Slugform.">蛞蝓型！蛞蝓型！在 =year= 年 =month= 月的 =day= 日，=subject.name= 經歷了神聖的轉化，變成了蛞蝓型。</string>
- <string Context="CookingDomainSpecial_UnitSlogTransform gospelText" ID="Deep in the bowels of Golgotha, =subject.name= came upon a giant slug performing a secret ritual. Because of =subject.name's|strip= =spice:elements.$element.quality.!random=, the slug taught =subject.name= the secret to being a slug.">在 髑髏地(Golgotha) 的深處，=subject.name= 偶遇了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。</string>
+ <string Context="CookingDomainSpecial_UnitSlogTransform gospelText" ID="Deep in the bowels of Golgotha, =subject.name= came upon a giant slug performing a secret ritual. Because of =subject.name's|strip= =spice:elements.$element.quality.!random=, the slug taught =subject.name= the secret to being a slug.">在髑髏地(Golgotha) 的深處，=subject.name= 偶遇了一隻正在進行秘密儀式的巨型蛞蝓。因為 =subject.name's|strip= =spice:elements.$element.quality.!random=，這隻蛞蝓教會了 =subject.name= 成為蛞蝓的祕訣。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform Description" ID="=subject.they= became a crystal being permanently.">=subject.they= 永久地變成了水晶生物。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform Description - Unknow rolls" ID="?????">??????</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform Failure" ID="Your genome has already undergone this transformation.">您的基因組已經經歷了這項轉變。</string>
@@ -2333,7 +2333,7 @@ alone if no match found.
  <string Context="CookingDomainSpecial_UnitCrystalTransform Popups" ID="An abrading force cuts the surfaces of your torso until you feel polished and perfectly smooth.">一股磨損的力量切割著你的軀幹表面，直到你感到被拋光得完美光滑。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform Popups" ID="A quartet of prisms shatter out of you and grow. Each quinfurcates at the tip into five finger prisms.">四個棱鏡從你身上碎裂而出並生長。每個棱鏡的頂端都五叉分化成五根手指狀的棱鏡。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform Popups" ID="You gained the mutation {{C|Crystallinity}}!">你獲得了突變 {{C|結晶化}}！</string>
- <string Context="CookingDomainSpecial_UnitCrystalTransform Accomplishment" ID="You ate some Crystal Delight and became a crystalline being.">你吃了一些水晶喜悅（Crystal Delight），並變成了一個結晶生物。</string>
+ <string Context="CookingDomainSpecial_UnitCrystalTransform Accomplishment" ID="You ate some Crystal Delight and became a crystalline being.">你吃了一些水晶喜悅(Crystal Delight)，並變成了一個結晶生物。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform muralText" ID="Crystalform! Crystalform! On the =day= of =month=, in the year =year=, =subject.name= underwent the divine transformation and became a crystal being.">水晶形體！水晶形體！在 =year= 年 =month= 月 =day= 日，=subject.name= 經歷了神聖的轉化，成為了水晶生命體。</string>
  <string Context="CookingDomainSpecial_UnitCrystalTransform muralText" ID="=spice:instancesOf.inYear.!random|capitalize= =year=, =spice:instancesOf.afterTumultuousYears.!random=, =subject.name's|strip= counselors suggested =subject.subjective= =spice:instancesOf.abdicate.!random= as sultan. Instead, =subject.subjective= ate a meal and underwent a transformation into a crystalline being.">=spice:instancesOf.inYear.!random|capitalize= =year=, =spice:instancesOf.afterTumultuousYears.!random=，=subject.name's|strip= 顧問們曾建議由 =subject.subjective= 擔任蘇丹，以取代 =spice:instancesOf.abdicate.!random=。然而，=subject.subjective= 卻只是吃了一頓飯，隨後轉化成了結晶生命體。</string>
  <string Context="CookingDomainStrength_LargeStrengthBuff_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:gain= +8 Strength for 50 turns.">=subject.it.does:gain= 50 回合內力量 +8。</string>
@@ -2349,7 +2349,7 @@ alone if no match found.
  <string Context="CookingDomainTeleport_UnitBlink Description" ID="Whenever =subject.thisCreature= =subject.verb:take= avoidable damage, there's =tier.a.number=% chance =subject.it.does:teleport= to a random space on the map instead.">每當 =subject.thisCreature= 受到可避免的傷害時，就有 =tier.a.number=% 的機率 =subject.it.does:teleport= 地圖上的隨機位置而非原處。 =subject.verb:take=</string>
  <string Context="CookingDomainTeleport_UnitBlink Description - Unknown rolls" ID="Whenever =subject.thisCreature= =subject.verb:take= avoidable damage, there's a 20-25% chance =subject.it.does:teleport= to a random space on the map instead.">每當 =subject.thisCreature= 受到可避免的傷害時，有 20-25% 的機率 =subject.it.does:teleport= 地圖上的隨機位置而非原處。 =subject.verb:take=</string>
  <string Context="CookingDomainTeleport_UnitBlink Message - Player attacking" ID="Fate intervenes and you deal no damage to =object.the.name=.">命運介入了，你對 =object.the.name= 不造成任何傷害。</string>
- <string Context="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:shoot= out up to three sticky tongues per Sticky Tongue at rank 10.">在等級 10 時，每條黏性舌頭（Sticky Tongue）最多可噴出三條 {{green|黏性舌頭}}。 =subject.it.does:shoot=</string>
+ <string Context="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction Description" ID="=subject.it.does:shoot= out up to three sticky tongues per Sticky Tongue at rank 10.">在等級 10 時，每條黏性舌頭(Sticky Tongue)最多可噴出三條 {{green|黏性舌頭}}。 =subject.it.does:shoot=</string>
  <string Context="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction Notification" ID="=subject.does:shoot= out a trio of sticky tongues.">=subject.does:shoot= 射出三條黏性舌頭。</string>
  <string Context="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction Message" ID="A trio of tongues vegetate from =subject.the.name's= =bodypart:Face=!">=subject.the.name's= =bodypart:Face=! 處長出了三條舌頭。</string>
  <string Context="CookingDomainTongue_OnStuck Description" ID="whenever =subject.thisCreature= =subject.verb:get= stuck, there's a 50% chance">每當 =subject.thisCreature= =subject.verb:get= 卡住時，會有 50% 的機率</string>
@@ -2369,9 +2369,9 @@ alone if no match found.
  <string Context="GlotrotOnset Effect Cured Player Message" ID="You feel better.">你感覺好多了。</string>
  <string Context="Glotrot Effect Display Name" ID="glotrot">黏液腐爛</string>
  <string Context="Glotrot Effect Apply Player Popup" ID="You have contracted glotrot! Your tongue begins to bleed as the muscle rots away.">你感染了舌腐病！隨著肌肉腐爛，你的舌頭開始流血。</string>
- <string Context="Glotrot Effect Apply Accomplishment" ID="You contracted glotrot.">你感染了聲帶腐爛症 (glotrot)。</string>
+ <string Context="Glotrot Effect Apply Accomplishment" ID="You contracted glotrot.">你感染了聲帶腐爛症(glotrot)。</string>
  <string Context="Glotrot Effect Apply Accomplishment Mural" ID="Woe to the scroundrels and dastards who conspired to have =name= contract the rotting tongue!">那些陰謀讓 =name= 感染腐爛之舌的惡棍與無賴，必遭天譴！</string>
- <string Context="Glotrot Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting glotrot before escaping to =player.terrain.t=">在靠近 髑髏地(Golgotha) 的位置，=name= 被強盜俘虜了。=player.Subjective= 被囚禁了 =captivityTime= 年之久，最終在逃往 =player.terrain.t= 之前染上了 舌腐症。</string>
+ <string Context="Glotrot Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting glotrot before escaping to =player.terrain.t=">在靠近 髑髏地(Golgotha) 的位置，=name= 被強盜俘虜了。=player.Subjective= 被囚禁了 =captivityTime= 年之久，最終在逃往 =player.terrain.t= 之前染上了舌腐症。</string>
  <string Context="Glotrot Effect Description" ID="{{glotrot|舌腐症}}">{{glotrot|舌腐症}}</string>
  <string Context="Glotrot Effect Eating/Drinking Player Popup" ID="You tear open the tender muscle fibers of your tongue.">您撕裂了舌頭柔軟的肌肉纖維。</string>
  <string Context="Glotrot Effect Remove Player Popup" ID="You are cured of glotrot. Your tongue regrows.">你已痊癒，不再患有舌腐症。你的舌頭重新長出來了。</string>
@@ -2394,16 +2394,16 @@ alone if no match found.
  <string Context="IronshankOnset Effect Remission Player Message" ID="You feel a bit better.">你感覺好多了。</string>
  <string Context="IronshankOnset Effect Worsen Player Message" ID="Your legs ache at the joints.">你的腿部關節感到痠痛。</string>
  <string Context="IronshankOnset Effect Recover Player Message" ID="You feel better.">你感覺好多了。</string>
- <string Context="Ironshank Effect Display Name" ID="ironshank">鐵腳 (ironshank)</string>
- <string Context="Ironshank Effect Apply Player Popup" ID="You have contracted Ironshank! You feel the cartilage stretch as your leg bones grind together at the joints.">你感染了鐵腳病（Ironshank）！當你的腿骨在關節處磨擦時，你感覺到軟骨正在被拉伸。</string>
- <string Context="Ironshank Effect Apply Accomplishment" ID="You contracted ironshank.">你感染了鐵腳病 (ironshank)。</string>
+ <string Context="Ironshank Effect Display Name" ID="ironshank">鐵腳(ironshank)</string>
+ <string Context="Ironshank Effect Apply Player Popup" ID="You have contracted Ironshank! You feel the cartilage stretch as your leg bones grind together at the joints.">你感染了鐵腳病(Ironshank)！當你的腿骨在關節處磨擦時，你感覺到軟骨正在被拉伸。</string>
+ <string Context="Ironshank Effect Apply Accomplishment" ID="You contracted ironshank.">你感染了鐵腳病(ironshank)。</string>
  <string Context="Ironshank Effect Apply Accomplishment Mural" ID="Woe to the scroundrels and dastards who conspired to have =name= contract Stiff Leg!">哀哉！那些密謀讓 =name= 簽下「僵硬肢體」（Stiff Leg）契約的惡棍與卑鄙小人！</string>
- <string Context="Ironshank Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting ironshank before escaping to =player.terrain.t=.">在 髑髏地(Golgotha) 的位置附近，=name= 被強盜擄走了。=player.Subjective= 在囚禁中苦熬了 =captivityTime= 年，最終在逃往 =player.terrain.t= 之前染上了鐵腳病（ironshank）。</string>
+ <string Context="Ironshank Effect Apply Accomplishment Gospel" ID="Near the location of Golgotha, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting ironshank before escaping to =player.terrain.t=.">在 髑髏地(Golgotha) 的位置附近，=name= 被強盜擄走了。=player.Subjective= 在囚禁中苦熬了 =captivityTime= 年，最終在逃往 =player.terrain.t= 之前染上了鐵腳病(ironshank)。</string>
  <string Context="Ironshank Effect Description" ID="{{ironshank|ironshank}}">{{ironshank|ironshank}}</string>
  <string Context="Ironshank Effect Remission Player Popup" ID="The pain in your joints subsides.">關節的疼痛緩解了。</string>
  <string Context="Ironshank Effect Remove Player Popup" ID="You are cured of ironshank.">你已治癒鐵腳病。</string>
- <string Context="Ironshank Effect Remove Accomplishment" ID="You were cured of ironshank and your leg bones softened.">你治癒了鐵腳病（ironshank），你的腿骨變軟了。</string>
- <string Context="Ironshank Effect Remove Accomplishment Mural" ID="Blessed was the =day= of =month=, in the year of =year=, when =name= was cured of ironing leg!">在 =year= 年，=month= 月的那個 =day=，當 =name= 從熨燙腿（ironing leg）中痊癒時，真是太值得慶祝了！</string>
+ <string Context="Ironshank Effect Remove Accomplishment" ID="You were cured of ironshank and your leg bones softened.">你治癒了鐵腳病(ironshank)，你的腿骨變軟了。</string>
+ <string Context="Ironshank Effect Remove Accomplishment Mural" ID="Blessed was the =day= of =month=, in the year of =year=, when =name= was cured of ironing leg!">在 =year= 年，=month= 月的那個 =day=，當 =name= 從熨燙腿(ironing leg)中痊癒時，真是太值得慶祝了！</string>
  <string Context="Ironshank Effect Remove Accomplishment Gospel" ID="Some time in =year=, =name= came upon the bandits who had captured =player.objective= and let =player.objective= languish in captivity until =player.subjective= contracted ironshank. =name= murdered their leader =spice:elements.$domain.murdermethods.!random= and cured =player.reflexive of the disease.">在 =year= 年間的某個時刻，=name= 遇見了劫持了 =player.objective= 的強盜，並讓 =player.objective= 在囚禁中虛弱度日，直到 =player.subjective= 染上了鐵腳症。=name= 殺死了他們的領袖 =spice:elements.$domain.murdermethods.!random= 並治癒了 =player.reflexive 的疾病。</string>
  <string Context="Ironshank Effect Max Penalty Player Popup" ID="Your legs bones are nearly fused at the joints.">你的腿骨在關節處幾乎融合在一起了。</string>
  <string Context="Ironshank Effect Worsen Player Message" ID="You feel the cartilage stretch as your leg bones grind together at the joints.">你感覺到腿骨在關節處磨擦，軟骨隨之拉伸。</string>
@@ -2416,7 +2416,7 @@ alone if no match found.
  <string Context="Monochrome Effect Description" ID="monochrome">單色</string>
  <string Context="Monochrome Effect Apply Player Popup" ID="You have contracted monochrome! Color starts to seep out of the world.">你染上了單色病！色彩正從這個世界中滲出。</string>
  <string Context="Monochrome Effect Apply Accomplishment" ID="You contracted monochrome.">你感染了單色症。</string>
- <string Context="Monochrome Effect Apply Accomplishment Mural" ID="Woe to the scroundrels and dastards who conspired to have =name= contract univision!">哀哉！那些密謀讓 =name= 簽下「全視」（univision）契約的惡棍與卑鄙小人！</string>
+ <string Context="Monochrome Effect Apply Accomplishment Mural" ID="Woe to the scroundrels and dastards who conspired to have =name= contract univision!">哀哉！那些密謀讓 =name= 簽下「全視」(univision)契約的惡棍與卑鄙小人！</string>
  <string Context="Monochrome Effect Apply Accomplishment Gospel" ID="Near the location of Omonporch, =name= was captured by bandits. =player.Subjective= languished in captivity for =captivityTime= years, eventually contracting monochrome before escaping to =player.terrain.t=.">在 歐蒙波奇(Omonporch) 的附近，=name= 被強盜擄走了。=player.Subjective= 在囚禁中苦熬了 =captivityTime= 年，最終在逃往 =player.terrain.t= 之前染上了單色病。</string>
  <string Context="Monochrome Effect Remove Player Message" ID="Color starts to seep into the world.">色彩開始滲入這個世界。</string>
  <string Context="Monochrome Effect Remove Player Popup" ID="You are cured of monochrome.">你已治癒單色症。</string>
@@ -2562,7 +2562,7 @@ alone if no match found.
  <string Context="RandomAltarBaetyl Reward List" ID="=points= cybernetics license =points.pluralize:point=">=points= 點控制學執照 =points.pluralize:point=</string>
  <string Context="RandomAltarBaetyl Reward List" ID="=points= reputation with =faction.factionName=">=faction.factionName= 的聲望 + =points=</string>
  <string Context="RandomAltarBaetyl Reward List" ID="=list.andList=">=list.andList=</string>
- <string Context="RandomAltarBaetyl Journal Entry" ID="A &quot;SATED&quot; baetyl">一個「飽足」的貝提爾 (baetyl)</string>
+ <string Context="RandomAltarBaetyl Journal Entry" ID="A &quot;SATED&quot; baetyl">一個「飽足」的貝提爾(baetyl)</string>
  <string Context="RandomAltarBaetyl Journal Entry" ID="A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">一個要求「=demand=」並承諾「=reward=」的貝提爾（baetyl）。</string>
  <string Context="Body Lost Use Of Part" ID="You have lost the use of your =part.ordinalName=.">你失去了使用 =part.ordinalName= 的能力。</string>
  <string Context="Body Recover Use Of Part" ID="You have recovered the use of your =part.ordinalName=.">您已恢復了 =part.ordinalName= 的使用能力。</string>
@@ -2685,7 +2685,7 @@ alone if no match found.
  <string Context="ConversationScript Fail Nothing To Say" ID="=subject.Does:have= nothing to say.">=subject.Does:have= 沒什麼好說的。</string>
  <string Context="ConversationScript PronounExchange" ID="You and =subject.the.name= exchange pronouns; =subject.its= are =subject.pronouns=.">你與 =subject.the.name= 交換代名詞；=subject.its= 即為 =subject.pronouns=。</string>
  <string Context="ConversationScript PronounExchange (theirs only)" ID="=subject.The.name= =subject.verb:give= you =subject.its= pronouns, which are =subject.pronouns=.">=subject.The.name= =subject.verb:give= 你 =subject.its= 代名詞，即 =subject.pronouns=。</string>
- <string Context="ConversationScript PronounExchange (yours only)" ID="You give =subject.the.name= your =isNew.if:new :=pronouns.">你將 =subject.the.name= 的 =isNew.if:new :=代名詞= 給了它。</string>
+ <string Context="ConversationScript PronounExchange (yours only)" ID="You give =subject.the.name= your =isNew.if:new :=pronouns.">你將 =subject.the.name= 的 =isNew.if:new :=pronouns.= 給了它。</string>
  <string Context="activated ability classes" ID="Abilities">能力</string>
  <string Context="activated ability classes" ID="Cybernetics">控制論</string>
  <string Context="activated ability classes" ID="Items">物品</string>
@@ -2707,14 +2707,14 @@ alone if no match found.
  <string Context="BlinkOnDamage Message Log" ID="=subject.Does:blink= away from the danger.">=subject.Does:blink= 閃避了危險。</string>
  <string Context="BurnOffGas Message Log" ID="=subject.Does:burn= off =object.a.name=.">=subject.Does:burn= 燒掉了 =object.a.name=。</string>
  <string Context="Combat Player Miss Message (terse)" ID="You miss!">你沒擊中！</string>
- <string Context="Combat Player Miss Message (with weapon)" ID="{{r|=subject.Does:miss= with =subject.its.item#weapon=!}} [=hitResult= vs. =dv=]">{{r|=subject.Does:miss= 與 =subject.its.item#weapon=!}} [=hitResult= 對決 =dv=]</string>
+ <string Context="Combat Player Miss Message (with weapon)" ID="{{r|=subject.Does:miss= with =subject.its.item#weapon=!}} [=hitResult= vs. =dv=]">{{r|=subject.Does:miss= 用 =subject.its.item#weapon=!}} [=hitResult= 對決 =dv=]</string>
  <string Context="Combat Player Miss Message (no weapon)" ID="{{r|You miss!}} [=hitResult= vs. =dv=]">{{r|你沒打中！}} [=hitResult= 對比 =dv=]</string>
  <string Context="Combat Attacker Miss Message (terse)" ID="=subject.Does:miss= you!">=subject.Does:miss= 你！</string>
  <string Context="Combat Attacker Miss Message (with weapon)" ID="=subject.Does:miss= you with =subject.its.item#weapon=! [=hitResult= vs. =dv=]">=subject.Does:miss= 你，使用 =subject.its.item#weapon=! [=hitResult= 對比 =dv=]</string>
  <string Context="Combat Attacker Miss Message (no weapon)" ID="=subject.Does:miss= you! [=hitResult= vs. =dv=]">=subject.Does:miss= 沒中你！[=hitResult= 對比 =dv=]</string>
  <string Context="CrypticParticleText" ID="{{c|'=CRYPTICWORD='}}">{{c|'=CRYPTICWORD='}}</string>
- <string Context="約帕(Joppa) Zealot Yells" ID="Who ventures into the Great Salt Desert, and nearer the Six Day Stilt?">誰會冒險進入大鹽沙漠，並靠近 六日高蹺(Six Day Stilt)？</string>
- <string Context="約帕(Joppa) Zealot Yells" ID="Hmm, what of your artifacts? Make an offering of them to Shekhinah at the Sacred Well.">嗯，你的神器呢？將它們獻祭給位於 神聖之井 的 Shekhinah。</string>
+ <string Context="約帕(Joppa) Zealot Yells" ID="Who ventures into the Great Salt Desert, and nearer the Six Day Stilt?">誰會冒險進入大鹽沙漠，並靠近六日高蹺(Six Day Stilt)？</string>
+ <string Context="約帕(Joppa) Zealot Yells" ID="Hmm, what of your artifacts? Make an offering of them to Shekhinah at the Sacred Well.">嗯，你的神器呢？將它們獻祭給位於神聖之井的 Shekhinah。</string>
  <string Context="約帕(Joppa) Zealot Yells" ID="The beauty! My stomach is in stirs.">多麼美啊！我的胃部翻騰不已。</string>
  <string Context="約帕(Joppa) Zealot Yells" ID="Is it a dybbuk that possesses the robot? It should be sacred and still.">那是附身在機器人身上的迪布克（dybbuk）嗎？它應該是神聖且靜止的。</string>
  <string Context="約帕(Joppa) Zealot Yell" ID="=subject.Does:yell=, {{W|'=message='}}">=subject.Does:yell=, {{W|'=message='}}</string>
@@ -2726,7 +2726,7 @@ alone if no match found.
  <string Context="FabricateFromSelf Default FabricateSource (short)" ID="=subject.their= body">=subject.their= 身體</string>
  <string Context="FabricateFromSelf Ability DisplayName" ID="Fabricate =sample.name:asIfKnown:short|pluralize=">製造 =sample.name:asIfKnown:short|pluralize=</string>
  <string Context="FabricateFromSelf Failure Popup (player only, health too low)" ID="Your health is too weak to do that.">你的生命值太低，無法執行該動作。</string>
- <string Context="FabricateFromSelf MessageLog" ID="=subject.Does#fabricateVerb= =number.a.or.cardinal.names#sample= from =source=.">=subject.Does#fabricateVerb= 從 =source= {{g|製作}} 了 =number.a.or.cardinal.names#個樣本%。</string>
+ <string Context="FabricateFromSelf MessageLog" ID="=subject.Does#fabricateVerb= =number.a.or.cardinal.names#sample= from =source=.">=subject.Does#fabricateVerb= 從 =source= {{g|製作}} 了 =number.a.or.cardinal.names= 個樣本。</string>
  <string Context="FabricateFromSelf TakeDamage Message (TODO:TakeDamage rewrite)" ID="from using =sourceShort= as raw materials.">防止將 =sourceShort= 當作原材料使用。</string>
  <string Context="GivesRep Water-sib Description Postfix" ID="You are water-bonded with =object.objective=.">你與 =object.objective= 有著水的連結。</string>
  <string Context="GivesRep Death Curse (fragment, appends PlayerReputation Modify Fragments)" ID="You violated the covenant of the water ritual and killed your bonded kith. You are cursed.&#xA;&#xA;" Value="你違反了 水之儀式 的盟約並殺害了你的契合親族。你受到了詛咒。&#xA;&#xA;" />
@@ -2883,7 +2883,7 @@ alone if no match found.
  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=subject.T= 無法在 =object.t= 擋路的情況下關閉。</string>
  <string ID="=subject.T= cannot be closed with =object.t= in the way =subject.to.its.direction#object=.">=subject.T= 無法以 =object.t= 的方式朝向 =subject.to.its.direction#object= 關閉。</string>
  <string Context="door open reason" ID=" because you cannot figure out how" Value="因為你搞不清楚該怎麼做" />
- <string Context="EaterUrn engraving" ID="=spice:tombstones.urnIntroByFaction.$faction=&#xA;&#xA;&#xA;=name=&#xA;&#xA;&#xA;&quot;=shortMarkov=&quot;&#xA;" Value="=spice:墓碑.urnIntroByFaction.$faction=&#xA;&#xA;&#xA;=name=&#xA;&#xA;&#xA;&quot;=shortMarkov=&quot;&#xA;" />
+ <string Context="EaterUrn engraving" ID="=spice:tombstones.urnIntroByFaction.$faction=&#xA;&#xA;&#xA;=name=&#xA;&#xA;&#xA;&quot;=shortMarkov=&quot;&#xA;" Value="=spice:tombstones.urnIntroByFaction.$faction=&#xA;&#xA;&#xA;=name=&#xA;&#xA;&#xA;&quot;=shortMarkov=&quot;&#xA;" />
  <string Context="EaterUrn inscription finalize" ID="=engraving|urn=">=engraving|urn=</string>
  <string Context="Rebekahs tombstone name" ID="Rebekah">瑞貝卡</string>
  <string Context="Rebekahs tombstone engraving" ID="=spice:tombstones.intro.!random=&#xA;&#xA;=name=&#xA;&#xA;Succumbed to glotrot.&#xA;&#xA;=stringgamestate:MarkOfDeath=" Value="=spice:tombstones.intro.!random=&#xA;&#xA;=name=&#xA;&#xA;死於食腐病。&#xA;&#xA;=stringgamestate:MarkOfDeath=" />
@@ -2922,7 +2922,7 @@ alone if no match found.
  <string Context="Tombstone (part2)" ID="=name=">=name=</string>
  <string Context="Tombstone (part3)" ID="=inscription|colorSafe=">=inscription|colorSafe=</string>
  <string Context="Tombstone Engraving" ID="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" Value="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" />
- <string Context="Tombstone Box" ID="=engraving|tombstone=">=engraving|墓碑=</string>
+ <string Context="Tombstone Box" ID="=engraving|tombstone=">=engraving|tombstone=</string>
  <string Context="GasDisease Infected Player Popup" ID="You feel sick.">你感到很不舒服。</string>
  <string Context="GaseFungalSpores Your skin itches" ID="Your skin itches.">你的皮膚很癢。</string>
  <string Context="DeploymentGrenade Activation Verb" ID="detonate">引爆</string>
@@ -2948,10 +2948,10 @@ alone if no match found.
  <string Context="ActivePartStatus" ID="RealityStabilized">現實穩定化</string>
  <string Context="ActivePartStatus" ID="LimbIncompatible">肢體不相容</string>
  <string Context="ActivePartStatus" ID="PrimarySystemOffline">主要系統離線</string>
- <string Context="ActivePartStatus" ID="ProcessInputMissing">ProcessInputMissing</string>
- <string Context="ActivePartStatus" ID="ProcessInputInvalid">ProcessInputInvalid</string>
+ <string Context="ActivePartStatus" ID="ProcessInputMissing">遺失輸入處理 (ProcessInputMissing)</string>
+ <string Context="ActivePartStatus" ID="ProcessInputInvalid">無效輸入處理 (ProcessInputInvalid)</string>
  <string Context="ActivePartStatus" ID="Unpowered">無動力</string>
- <string Context="ActivePartStatus" ID="LocallyDefinedFailure">LocallyDefinedFailure</string>
+ <string Context="ActivePartStatus" ID="LocallyDefinedFailure">本地定義失敗 (LocallyDefinedFailure)</string>
  <string Context="ActivePartStatus (should not be used)" ID="Invalid">無效</string>
  <string Context="ActivePartStatus StatusSummary" ID="{{W|EMP}}">{{W|電磁脈衝}}</string>
  <string Context="ActivePartStatus StatusSummary" ID="{{K|unpowered}}">{{K|無能量}}</string>
@@ -2989,7 +2989,7 @@ alone if no match found.
  <string ID="You cannot budge =object.the.name=.">你無法移動 =object.the.name=。</string>
  <string Context="Inventory Unowned Container Confirm" ID="You don't own =container.the.name:withIndicativeProximal=. Are you sure you want to take =object.the.name=?">你不擁有 =container.the.name:withIndicativeProximal=。你確定要拿走 =object.the.name=? </string>
  <string Context="Inventory Drop Count" ID="How many do you want to drop?">你想丟棄多少個？</string>
- <string Context="AccelerativeTeleporter Techscan Failure" ID="NoGroundContact">NoGroundContact</string>
+ <string Context="AccelerativeTeleporter Techscan Failure" ID="NoGroundContact">無地面接觸 (NoGroundContact)</string>
  <string Context="ActiveLightSource Condition Equipped" ID="equipped">已裝備</string>
  <string Context="ActiveLightSource Condition Power" ID="powered">動力驅動</string>
  <string Context="ActiveLightSource Condition Use" ID="in use">使用中</string>
@@ -3086,7 +3086,7 @@ alone if no match found.
  <string Context="CyberneticsCreditWedge RulesPostfix" ID="Credits remaining: {{C|=credits==glyph:Credits=}}">剩餘點數：{{C|=credits==glyph:Credits=}}</string>
  <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 15 BaseState" ID="{{K|amaranthine}} prism">{{K|深紅}}棱鏡</string>
  <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 19 State1" ID="{{K|amara{{y|n}}thine}} prism">{{K|amara{{y|n}}thine}} 稜鏡</string>
- <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 23 State2" ID="{{K|amar{{y|a{{Y|n}}t}}hine}} prism">{{K|琥{{y|珀{{Y|色}}hine}} 棱鏡</string>
+ <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 23 State2" ID="{{K|amar{{y|a{{Y|n}}t}}hine}} prism">{{K|amar{{y|a{{Y|n}}t}}hine}} 稜鏡</string>
  <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 27 State3" ID="{{K|am{{y|ar{{Y|a{{R|n}}t}}hi}}ne}} prism">{{K|am{{y|ar{{Y|a{{R|n}}t}}hi}}ne}} 稜鏡</string>
  <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal 31 State4" ID="{{y|am{{Y|a{{y|r{{r|a{{R|n}}t}}h}}i}}ne}} prism">{{y|am{{Y|a{{y|r{{r|a{{R|n}}t}}h}}i}}ne}} 稜鏡</string>
  <string Context="CyclopeanPrism AmaranthinePrism DisplayName Ego lessequal State5" ID="{{r|a{{R|m{{Y|a{{y|r{{r|a{{R|n}}t}}h}}i}}n}}e}} prism">{{r|a{{R|m{{Y|a{{y|r{{r|a{{R|n}}t}}h}}i}}n}}e}} 稜鏡</string>
@@ -3203,7 +3203,7 @@ alone if no match found.
  <string Context="GeomagneticDisc SignalLowPowerFailure" ID="A loud buzz is emitted. The failure glyph flashes on the side of =object.the.name=.">發出了一聲巨大的嗡鳴聲。失敗符文在 =object.the.name= 的側面閃爍著。</string>
  <string Context="GeomagneticDisc ExamineFailure FliesAround" ID="=subject.Does:suddenly:start= flying around!">=subject.Does:suddenly:start= 在四周飛舞！</string>
  <string Context="GlimmerAlteration Increases" ID="Increases psychic glimmer in the =amount.ordinal= degree.">增加 =amount.ordinal= 等級的靈能微光。</string>
- <string Context="GlimmerAlteration Decreases" ID="Reduces psychic glimmer in the =amount.ordinal= degree.">將精神微光（psychic glimmer）降低 =amount.ordinal= 等級。</string>
+ <string Context="GlimmerAlteration Decreases" ID="Reduces psychic glimmer in the =amount.ordinal= degree.">將精神微光(psychic glimmer)降低 =amount.ordinal= 等級。</string>
  <string Context="Graffitied DisplayName AddAdjective" ID="{{graffitied|graffitied}}" OrderAdjust="0">{{graffitied|塗鴉}}</string>
  <string Context="Graffiti Text" ID="=markovShort:18|obfuscate=">=markovShort:18|obfuscate=</string>
  <string Context="Graffitied AddGraffiti Infix" ID="Graffiti is scrawled across the surface. It reads: &#xA;&#xA;&quot;=text|color#foreground=&quot;&#xA;" Value="表面上塗鴉著文字。內容如下： &#xA;&#xA;&quot;=text|color#foreground=&quot;&#xA;" />
@@ -3248,7 +3248,7 @@ alone if no match found.
  <string Context="MoteProperties GetLitDescription Faint" ID="{{K|faint}}">{{K|微弱}}</string>
  <string Context="MoveCostMultiplier RulesPostfix" ID="=amount.signed= =statistics[MoveSpeed].name=">=amount.signed= =statistics[MoveSpeed].name=</string>
  <string Context="MovespeedInLiquid RulesPostfix" ID="=amount.signed= =statistics[MoveSpeed].name= while moving through at least =minamount= =minamount.pluralize:dram= of =liquid=">在穿過至少 =minamount= =minamount.pluralize:dram= 的 =liquid= 時，獲得 =amount.signed= =statistics[MoveSpeed].name=</string>
- <string Context="MovespeedInLiquid RulesPostfix" ID="=amount.signed= =statistics[MoveSpeed].name= while moving through at least =minamount= =minamount.pluralize:dram= of liquid">在移動經過至少 =minamount= =minamount.pluralize:dram= 的液體時，=amount.signed= =statistics[MoveSpeed].name=</string>
+ <string Context="MovespeedInLiquid RulesPostfix" ID="=amount.signed= =statistics[MoveSpeed].name= while moving through at least =minamount= =minamount.pluralize:dram= of liquid">在移動經過至少 =minamount= =minamount.pluralize:dram= 的液體時，獲得 =amount.signed= =statistics[MoveSpeed].name=</string>
  <string Context="MultiIntPropertyChanger NameForStatus TechScanning" ID="ActiveSystems">主動系統</string>
  <string Context="MultiNavigationBonus LostReduced AllTerrain" ID="Chance of becoming lost reduced by =min.range#max=%. =part.statusSummary|addParens=">迷路的機率降低了 =min.range#max=%。 =part.statusSummary|addParens=</string>
  <string Context="MultiNavigationBonus LostReduced OtherTerrain" ID="Chance of becoming lost in other terrain reduced by =min.range#max=%. =part.statusSummary|addParens=">在其他地形中迷路的機率降低了 =min.range#max=%。 =part.statusSummary|addParens=</string>
@@ -3258,10 +3258,10 @@ alone if no match found.
  <string Context="MultiNavigationBonus LostIncreased OtherTerrain" ID="Chance of becoming lost in other terrain increased by =min.range#max=%. =part.statusSummary|addParens=">在其他地形中迷路的機率增加了 =min.range#max=%。 =part.statusSummary|addParens=</string>
  <string Context="MultiNavigationBonus LostIncreased CertainTerrain" ID="Chance of becoming lost in certain terrain increased by =min.range#max=%. =part.statusSummary|addParens=">在特定地形中迷路的機率增加了 =min.range#max=%。 =part.statusSummary|addParens=</string>
  <string Context="MultiNavigationBonus LostIncreased SpecificTerrain" ID="Chance of becoming lost in =skill.terrain= increased by =min.range#max=%. =part.statusSummary|addParens=">在 =skill.terrain= 中迷路的機率增加了 =min.range#max=%。 =part.statusSummary|addParens=</string>
- <string Context="MultiNavigationBonus LostRandom AllTerrain" ID="Chance of becoming lost adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">迷路的機率調整為 =min.range: 至 #max=%。=part.statusSummary|addParens=</string>
- <string Context="MultiNavigationBonus LostRandom OtherTerrain" ID="Chance of becoming lost in other terrain adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">在其他地形中迷路的機率已調整為 =min.range: 至 #max=%。 =part.statusSummary|addParens=</string>
- <string Context="MultiNavigationBonus LostRandom CertainTerrain" ID="Chance of becoming lost in certain terrain adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">在特定地形中迷路的機率經由 =min.range: 調整至 #max=%。 =part.statusSummary|addParens=</string>
- <string Context="MultiNavigationBonus LostRandom SpecificTerrain" ID="Chance of becoming lost in =skill.terrain= adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">=skill.terrain= 的迷路機率經由 =min.range: 調整至 #max=%。 =part.statusSummary|addParens=</string>
+ <string Context="MultiNavigationBonus LostRandom AllTerrain" ID="Chance of becoming lost adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">迷路的機率調整為 =min.range= 至 =max=%。=part.statusSummary|addParens=</string>
+ <string Context="MultiNavigationBonus LostRandom OtherTerrain" ID="Chance of becoming lost in other terrain adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">在其他地形中迷路的機率調整為 =min.range= 至 =max=%。=part.statusSummary|addParens=</string>
+ <string Context="MultiNavigationBonus LostRandom CertainTerrain" ID="Chance of becoming lost in certain terrain adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">在特定地形中迷路的機率經由 =min.range= 調整至 =max=%。 =part.statusSummary|addParens=</string>
+ <string Context="MultiNavigationBonus LostRandom SpecificTerrain" ID="Chance of becoming lost in =skill.terrain= adjusted by =min.range: to #max=%. =part.statusSummary|addParens=">=skill.terrain= 的迷路機率經由 =min.range= 調整至 =max=%。 =part.statusSummary|addParens=</string>
  <string Context="MutationOnEquip RulesPostfix CanLevel" ID="Grants you =mutation.name= at level =level=.">在等級 =level=. 時賦予你 =mutation.name=。</string>
  <string Context="MutationOnEquip RulesPostfix NoLevel" ID="Grants you =mutation.name=.">賦予你 =mutation.name=。</string>
  <string Context="NaturalWeapon Unequip failure message" ID="You can't remove =object.the.name=.">你無法移除 =object.the.name=。</string>
@@ -3319,34 +3319,34 @@ alone if no match found.
  <string Context="ReduceCooldowns RulesPostfix PercentageReduction Inclusive" ID="Provides =min.range#max=% reduction in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">提供 =min.range#max=% 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip= 冷卻時間減少。</string>
  <string Context="ReduceCooldowns RulesPostfix PercentageReduction Exclusive" ID="Provides =min.range#max=% reduction in the cooldowns of activated abilities other than =abilities.andList|strip=.">提供 =min.range#max=% 的冷卻時間減少，對象為除了 =abilities.andList|strip= 以外的啟動技能。</string>
  <string Context="ReduceCooldowns RulesPostfix PercentageReduction All" ID="Provides =min.range#max=% reduction in the cooldowns of activated abilities.">提供 =min.range#max=% 的主動技能冷卻時間減少。</string>
- <string Context="ReduceCooldowns RulesPostfix Powered PercentagePenalty Inclusive" ID="When powered, causes =min.range: to #max=% increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，會使 =min.range: 的 =abilities.andList|strip= 的 =count.isplural:冷卻時間= 增加 #max=%。</string>
- <string Context="ReduceCooldowns RulesPostfix Powered PercentagePenalty Exclusive" ID="When powered, causes =min.range: to #max=% increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">通電時，會使除 =abilities.andList|strip= 以外的已啟動技能冷卻時間增加 #max=% =min.range:。</string>
+ <string Context="ReduceCooldowns RulesPostfix Powered PercentagePenalty Inclusive" ID="When powered, causes =min.range: to #max=% increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，會使 =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip= 的冷卻時間增加 =min.range= 至 =max=%。</string>
+ <string Context="ReduceCooldowns RulesPostfix Powered PercentagePenalty Exclusive" ID="When powered, causes =min.range: to #max=% increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">通電時，會使除 =abilities.andList|strip= 以外的已啟動技能冷卻時間增加 =min.range= 至 =max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered PercentagePenalty All" ID="When powered, causes =min.range#max=% increase in the cooldowns of activated abilities.">啟動時，會導致主動技能的冷卻時間增加 =min.range#max=%。</string>
- <string Context="ReduceCooldowns RulesPostfix PercentagePenalty Inclusive" ID="Causes =min.range#max=% increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">導致 =min.range#max=% 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip= 冷卻時間增加。</string>
+ <string Context="ReduceCooldowns RulesPostfix PercentagePenalty Inclusive" ID="Causes =min.range#max=% increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">導致 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 冷卻時間增加 =min.range#max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix PercentagePenalty Exclusive" ID="Causes =min.range#max=% increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">導致除了 =abilities.andList|strip= 以外的已啟動能力冷卻時間增加 =min.range#max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix PercentagePenalty All" ID="Causes =min.range#max=% increase in the cooldowns of activated abilities.">導致已啟動能力的冷卻時間增加 =min.range#max=%。</string>
- <string Context="ReduceCooldowns RulesPostfix Powered PercentageRandom Inclusive" ID="When powered, confers =min.range#max=% reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動後，會使以下能力的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 獲得 =min.range#max=% 的減少/增加：=abilities.andList|strip=。</string>
+ <string Context="ReduceCooldowns RulesPostfix Powered PercentageRandom Inclusive" ID="When powered, confers =min.range#max=% reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動後，使 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少/增加 =min.range#max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered PercentageRandom Exclusive" ID="When powered, confers =min.range#max=% reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">啟動時，會使除了 =abilities.andList|strip= 以外的啟動式能力冷卻時間減少/增加 =min.range#max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered PercentageRandom All" ID="When powered, confers =min.range#max=% reduction/increase in the cooldowns of activated abilities.">通電時，會使已啟用的技能冷卻時間 {{G|減少/增加}} =min.range#max=%。</string>
- <string Context="ReduceCooldowns RulesPostfix PercentageRandom Inclusive" ID="Confers =min.range#max=% reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">賦予 =min.range#max=% 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少/增加，對象為 =abilities.andList|strip=.</string>
- <string Context="ReduceCooldowns RulesPostfix PercentageRandom Exclusive" ID="Confers =min.range#max=% reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">賦予除了 =abilities.andList|strip= 以外的啟動技能冷卻時間減少/增加 =min.range#max%。</string>
+ <string Context="ReduceCooldowns RulesPostfix PercentageRandom Inclusive" ID="Confers =min.range#max=% reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">賦予 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= =min.range#max=% 減少/增加。</string>
+ <string Context="ReduceCooldowns RulesPostfix PercentageRandom Exclusive" ID="Confers =min.range#max=% reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">賦予除了 =abilities.andList|strip= 以外的啟動技能冷卻時間減少/增加 =min.range#max=%。</string>
  <string Context="ReduceCooldowns RulesPostfix PercentageRandom All" ID="Confers =min.range#max=% reduction/increase in the cooldowns of activated abilities.">賦予主動技能冷卻時間 {{X|%}} 的減少/增加，範圍為 =min.range#max=。</string>
- <string Context="ReduceCooldowns RulesPostfix Powered LinearReduction Inclusive" ID="When powered, provides =min.range#max= =number.isplural:points:point= of reduction in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，提供 =min.range#max= =number.isplural:points:point= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少量：=abilities.andList|strip=。</string>
+ <string Context="ReduceCooldowns RulesPostfix Powered LinearReduction Inclusive" ID="When powered, provides =min.range#max= =number.isplural:points:point= of reduction in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，提供 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少量 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearReduction Exclusive" ID="When powered, provides =min.range#max= =number.isplural:points:point= of reduction in the cooldowns of activated abilities other than =abilities.andList|strip=.">啟動時，可提供 =min.range#max= =number.isplural:points:point= 的冷卻時間縮減，作用於除 =abilities.andList|strip= 以外的啟動技能。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearReduction All" ID="When powered, provides =min.range#max= =number.isplural:points:point= of reduction in the cooldowns of activated abilities.">通電時，可提供 =min.range#max= =number.isplural:points:point= 的冷卻時間縮減，用於已啟動的能力。</string>
- <string Context="ReduceCooldowns RulesPostfix LinearReduction Inclusive" ID="Provides =min.range#max= =number.isplural:points:point= of reduction in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">提供 =min.range#max= =number.isplural:points:point= 的 =abilities.andList|strip= =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少量。</string>
+ <string Context="ReduceCooldowns RulesPostfix LinearReduction Inclusive" ID="Provides =min.range#max= =number.isplural:points:point= of reduction in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">提供 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少量 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearReduction Exclusive" ID="Provides =min.range#max= =number.isplural:points:point= of reduction in the cooldowns of activated abilities other than =abilities.andList|strip=.">提供 =min.range#max= =number.isplural:points:point= 的冷卻時間縮減，對象為除了 =abilities.andList|strip= 以外的已啟動能力。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearReduction All" ID="Provides =min.range#max= =number.isplural:points:point= of reduction in the cooldowns of activated abilities.">提供 =min.range#max= =number.isplural:points:point= 的主動技能冷卻時間縮減。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearPenalty Inclusive" ID="When powered, causes =min.range#max= =number.isplural:points:point= of increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，會使 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 增加 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearPenalty Exclusive" ID="When powered, causes =min.range#max= =number.isplural:points:point= of increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">通電時，會導致除了 =abilities.andList|strip= 以外的啟動技能冷卻時間增加 {{red|=min.range#max=}} {{red|=number.isplural:points:point=}}。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearPenalty All" ID="When powered, causes =min.range#max= =number.isplural:points:point= of increase in the cooldowns of activated abilities.">啟動時，會導致主動技能的冷卻時間增加 =min.range#max= =number.isplural:points:point=。</string>
- <string Context="ReduceCooldowns RulesPostfix LinearPenalty Inclusive" ID="Causes =min.range#max= =number.isplural:points:point= of increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">=min.range#max= =number.isplural:points:point= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=. 增加量。</string>
+ <string Context="ReduceCooldowns RulesPostfix LinearPenalty Inclusive" ID="Causes =min.range#max= =number.isplural:points:point= of increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">=abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 增加量為 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearPenalty Exclusive" ID="Causes =min.range#max= =number.isplural:points:point= of increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">導致除了 =abilities.andList|strip= 以外的已啟動能力冷卻時間增加 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearPenalty All" ID="Causes =min.range#max= =number.isplural:points:point= of increase in the cooldowns of activated abilities.">會導致 =min.range#max= =number.isplural:points:point= 的主動技能冷卻時間增加。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearRandom Inclusive" ID="When powered, confers =min.range#max= =number.isplural:points:point= of reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">啟動時，會使 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= 減少或增加 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearRandom Exclusive" ID="When powered, confers =min.range#max= =number.isplural:points:point= of reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">啟動時，會使除了 =abilities.andList|strip= 以外的啟動技能冷卻時間減少/增加 =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix Powered LinearRandom All" ID="When powered, confers =min.range#max= =number.isplural:points:point= of reduction/increase in the cooldowns of activated abilities.">啟動時，賦予主動技能冷卻時間 =min.range#max= =number.isplural:points:point= 的減少/增加。</string>
- <string Context="ReduceCooldowns RulesPostfix LinearRandom Inclusive" ID="Confers =min.range#max= =number.isplural:points:point= of reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">賦予 =min.range#max= =number.isplural:points:point= 的減少/增加，影響 =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=。</string>
+ <string Context="ReduceCooldowns RulesPostfix LinearRandom Inclusive" ID="Confers =min.range#max= =number.isplural:points:point= of reduction/increase in the =count.isplural:cooldowns of the abilities:cooldown of the ability= =abilities.andList|strip=.">賦予 =abilities.andList|strip= 的 =count.isplural:cooldowns of the abilities:cooldown of the ability= =min.range#max= =number.isplural:points:point= 減少/增加。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearRandom Exclusive" ID="Confers =min.range#max= =number.isplural:points:point= of reduction/increase in the cooldowns of activated abilities other than =abilities.andList|strip=.">賦予除了 =abilities.andList|strip= 以外的啟動技能冷卻時間 {{X|減少/增加}} =min.range#max= =number.isplural:points:point=。</string>
  <string Context="ReduceCooldowns RulesPostfix LinearRandom All" ID="Confers =min.range#max= =number.isplural:points:point= of reduction/increase in the cooldowns of activated abilities.">賦予主動技能冷卻時間 =min.range#max= =number.isplural:points:point= 的減少/增加。</string>
  <string Context="ReduceEnergyCosts RulesPostfix Powered PercentageReduction ExplicitScope" ID="When powered, provides =min.range#max=% reduction =scopedescription=.">通電時，提供 =min.range#max=% 的 =scopedescription= 效果。</string>
@@ -3376,7 +3376,7 @@ alone if no match found.
  <string Context="ReduceEnergyCosts RulesPostfix Powered PercentageRandom All" ID="When powered, confers =min.range#max=% reduction/increase in action costs.">通電時，賦予 =min.range#max=% 的動作消耗減少/增加。</string>
  <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom ExplicitScope" ID="Confers =min.range#max=% reduction/increase =scopedescription=.">賦予 =min.range#max=% 的 =scopedescription= 減少/增加。</string>
  <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom IncludedAndExcluded" ID="Confers =min.range#max=% reduction/increase in the action costs of =included.andList= actions, except for =excluded.andList= ones.">賦予 =min.range#max=% 的 =included.andList= 動作成本降低/增加，但 =excluded.andList= 除外。</string>
- <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom Included" ID="Confers =min.range#max=% reduction/increase in the action costs of =included.andList= actions.">使 =included.andList= 動作的消耗降低/增加 =min.range#max%。</string>
+ <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom Included" ID="Confers =min.range#max=% reduction/increase in the action costs of =included.andList= actions.">使 =included.andList= 動作的消耗降低/增加 =min.range#max=%。</string>
  <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom Excluded" ID="Confers =min.range#max=% reduction/increase in the action costs of actions other than =excluded.andList=.">賦予除了 =excluded.andList= 以外的其他動作，其動作成本降低/增加 =min.range#max=%。</string>
  <string Context="ReduceEnergyCosts RulesPostfix PercentageRandom All" ID="Confers =min.range#max=% reduction/increase in action costs.">賦予動作消耗 =min.range#max=% 的減少/增加。</string>
  <string Context="ReduceEnergyCosts RulesPostfix Powered LinearReduction ExplicitScope" ID="When powered, provides =min.range#max= =number.ifPlural:points:point= of reduction =scopedescription=.">通電時，提供 =min.range#max= =number.ifPlural:points:point= 的 =scopedescription= 減幅。</string>
@@ -3554,7 +3554,7 @@ alone if no match found.
  <string Context="Wire DisplayName Clause" ID="(=count=')" OrderAdjust="-60">('=count=')</string>
  <string Context="Yurtmat RulesPostfix" ID="=bonus.signed= DV while occupying the same tile as foliage">佔據與植被相同的地圖格時，獲得 =bonus.signed= DV</string>
  <string Context="Yurtmat StatShifter DisplayName" ID="camouflage">偽裝</string>
- <string Context="LeaksFluid TellLeakAmount" ID="=subject.Does#verb= =liquid.drams.of.liquid#volume=.">=subject.Does#verb= =liquid.德蘭.of.liquid#體積。</string>
+ <string Context="LeaksFluid TellLeakAmount" ID="=subject.Does#verb= =liquid.drams.of.liquid#volume=.">=subject.Does#verb= =liquid.drams.of.liquid#volume=。</string>
  <string Context="Liquid Volume - Smear of unknown liquid" ID="liquid-covered">覆蓋著液體的</string>
  <string Context="Liquid Volume - Smeared liquid" ID="=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=">=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=</string>
  <string Context="Liquid Volume - Stain of unknown liquid" ID="stained">染色</string>
@@ -3614,7 +3614,7 @@ alone if no match found.
  <string Context="Liquid Volume - pour error" ID="You can't pour from a container into =object.itself=.">你無法將容器中的內容物倒入 =object.itself=。</string>
  <string Context="Liquid Volume - pour error (temporary)" ID="It's fizzy.">這很有氣泡感。</string>
  <string Context="Liquid Volume - ask empty target container" ID="Do you want to empty =object.the.name= first?">你要先清空 =object.the.name= 嗎？</string>
- <string Context="Liquid Volume - pour popup dialog title" ID="How many drams? (max=equals==pourableVolume=)">要倒多少令（drams）？（最大值=equals==pourableVolume=）</string>
+ <string Context="Liquid Volume - pour popup dialog title" ID="How many drams? (max=equals==pourableVolume=)">要倒多少德蘭(drams)？（最大值=equals==pourableVolume=）</string>
  <string Context="Liquid Volume - Collect error" ID="You have nowhere available to collect that.">你沒有任何可以收集該物品的地方。</string>
  <string Context="Liquid Volume - Warn collect unowned" ID="=subject.IndicativeDistal= =subject.is= not owned by you. Are you sure you want to collect from =subject.them=?">=subject.IndicativeDistal= =subject.is= 不屬於你。你確定要從 =subject.them= 這裡收集嗎？</string>
  <string Context="Liquid Volume - Warn collect a lot" ID="You are able to collect =transfer.things:dram= of =volume.liquid.name=. Are you sure you want to?">你能夠收集 =transfer.things:dram= 的 =volume.liquid.name=。你確定要這麼做嗎？</string>
@@ -3687,7 +3687,7 @@ alone if no match found.
  <string Context="LatchesOn SomeoneReleasesItWhenLatchedOnToYou NotProperName" ID="Since =subject.does:are= still latched onto you, =object.their= releasing =subject.them= leaves =subject.them= in your possession!">由於 =subject.does:are= 仍附著在妳身上，=object.their= 放開 =subject.them= 會使 =subject.them= 留在妳手中！</string>
  <string Context="LatchesOn Unequipped ThirdParty" ID="Since =subject.does:are= still latched onto =object.the.name=, =actor.the.name= releasing =subject.them= leaves =subject.them= in =object.the.name's:withTitles= possession!">既然 =subject.does:are= 仍緊抓著 =object.the.name= 不放，=actor.the.name= 放開 =subject.them= 會使 =subject.them= 落入 =object.the.name's:withTitles= 的手中！</string>
  <string Context="LatchesOn Movement Failure" ID="=subject.Does:stand= =subject.its= ground!">=subject.Does:stand= =subject.its= 地面！</string>
- <string Context="LatchesOn WeaponHit Grab" ID="=subject.Does:latch= onto =object.the.name=!">=subject.Does:latch= onto =object.the.name=！</string>
+ <string Context="LatchesOn WeaponHit Grab" ID="=subject.Does:latch= onto =object.the.name=!">=subject.Does:latch= 鉤住 =object.the.name=!</string>
  <string Context="MonochromePoisonOnDamage Your vision blurs" ID="Your vision blurs.">你的視線變得模糊。</string>
  <string Context="NoteImprovedBonusCap RulesPostfix" ID="=subject.IndicativeProximal= =subject.descriptiveCategory|matchPlurality= =subject.verb:have= =amount.signed= to =subject.its= =stat.title= bonus.">=subject.IndicativeProximal= =subject.descriptiveCategory|matchPlurality= =subject.verb:have= =amount.signed= 的 =subject.its= =stat.title= 加成。</string>
  <string Context="NoteImprovedDamageDieSize RulesPostfix" ID="=subject.IndicativeProximal= =subject.descriptiveCategory|matchPlurality= =subject.verb:have= =amount.signed= to =subject.its= damage die size.">=subject.IndicativeProximal= =subject.descriptiveCategory|matchPlurality= =subject.verb:have= =amount.signed= =subject.its= 傷害骰大小。</string>
@@ -3734,7 +3734,7 @@ alone if no match found.
  <string Context="BioAmmoLoader SupplyHostWithLiquid NoLiquid" ID="You have no =liquid.name|strip= to supply =object.the.name= with.">你沒有任何 =liquid.name|strip= 可以提供給 =object.the.name=。</string>
  <string Context="BioAmmoLoader SupplyHostWithLiquid NoRoom" ID="=subject.Does:have= no room for more =liquid.name|strip=.">=subject.Does:have= 沒有更多 =liquid.name|strip=. 的空間。</string>
  <string Context="BioAmmoLoader SupplyHostWithLiquid Success" ID="=subject.Does:transfer= =liquid.cardinal.drams.of.liquid#amount|strip= to =object.aForNPCSubject.name=.">=subject.Does:transfer= =liquid.cardinal.drams.of.liquid#amount|strip= 至 =object.aForNPCSubject.name=.</string>
- <string Context="CooldownAmmoLoader GetCoolingdownMessage WithReadout" ID="=subject.Does:need= =left.things:more round:more rounds= before =subject.they= can be fired again.">=subject.Does:need= =left.things:more round:more rounds= 之後，=subject.they= 才能再次發射。</string>
+ <string Context="CooldownAmmoLoader GetCoolingdownMessage WithReadout" ID="=subject.Does:need= =left.things:more round:more rounds= before =subject.they= can be fired again.">=subject.Does:need= =left.things:more round:more rounds=，=subject.they= 才能再次發射。</string>
  <string Context="CooldownAmmoLoader GetCoolingdownMessage NoReadout" ID="=subject.Does:are= unresponsive as =subject.does:cool= down.">=subject.Does:are= 在 =subject.does:cool= 下時沒有反應。</string>
  <string Context="CooldownAmmoLoader CooldownDisplay WithReadout" ID="[=left= sec]">[=left= 秒]</string>
  <string Context="CooldownAmmoLoader CooldownDisplay NoReadout" ID="[cooldown]">[冷卻時間]</string>
@@ -3823,7 +3823,7 @@ alone if no match found.
  <string Context="NoteImprovedRateOfFire RulesPostfix" ID="=subject.IndicativeProximal= =subject.descriptiveCategory:matchPlurality= =subject.verb:have= =items.andList=.">=subject.IndicativeProximal= =subject.descriptiveCategory:matchPlurality= =subject.verb:have= =items.andList=。</string>
  <string Context="PoweredMissilePerformance Techscanning NameForStatus" ID="PerformanceEnhancementSystems">性能增強系統</string>
  <string Context="Projectile Default PassByVerb" ID="whiz">咻</string>
- <string Context="Smartgun Local Failure Status" ID="DataProviderNotFound">找不到資料提供者 (DataProviderNotFound)</string>
+ <string Context="Smartgun Local Failure Status" ID="DataProviderNotFound">找不到資料提供者(DataProviderNotFound)</string>
  <string Context="IModification Wish No Modification" ID="No modification specified.">未指定修改項目。</string>
  <string Context="IModification Wish Modification Unfound" ID="No modification by the name '=modName=' could be found.">找不到名為「=modName=」的修改。</string>
  <string Context="IModification Wish Blueprint Unfound" ID="No blueprint by the name '=objectName=' could be found.">找不到名為「=objectName=」的藍圖。</string>
@@ -3849,17 +3849,17 @@ alone if no match found.
  <string Context="ModCoProcessor Description Tier Zero" ID="Co-Processor: When powered, this item grants bonus =stat.Name= and provides compute power to the local lattice.">協處理器：通電時，此物品會賦予額外的 =stat.Name= 並為本地晶格提供運算能力。</string>
  <string Context="ModCoProcessor Description Tier Not Zero" ID="Co-Processor: When powered, this item grants =bonus.signed= =stat.Name= and provides =compute.things:unit= of compute power to the local lattice.">協處理器：通電時，此物品會賦予 =bonus.signed= =stat.Name=，並為本地晶格提供 =compute.things:unit= 的運算能力。</string>
  <string Context="ModCoProcessor Instance Description" ID="Co-processor: When powered, this item grants =attributeBonus.signed= =stat.Name= and provides =computePower= units of compute power to the local lattice.">協處理器：啟動時，此物品會賦予 =attributeBonus.signed= =stat.Name=，並為本地晶格提供 =computePower= 單位的運算能力。</string>
- <string Context="ModCounterweighted Techscanning NameForStatus" ID="BalanceSystems">BalanceSystems</string>
+ <string Context="ModCounterweighted Techscanning NameForStatus" ID="BalanceSystems">平衡系統(BalanceSystems)</string>
  <string Context="ModCounterWeighted DisplayName Adjective Level&gt;1" ID="counterweighted(=level=)" OrderAdjust="0">配重式(=level=)</string>
  <string Context="ModCounterWeighted DisplayName Adjective Level&lt;=1" ID="counterweighted" OrderAdjust="0">配重平衡的</string>
  <string Context="ModCounterweighted Description" ID="Counterweighted: Adds =bonus.signed= to hit.">配重：增加 =bonus.signed= 命中率。</string>
  <string Context="ModCounterweighted Description" ID="Counterweighted: Adds a bonus to hit.">配重式：增加命中加成。</string>
- <string Context="ModCybrid Techscanning NameForStatus" ID="BiomechanicalAdapter">生物力學適配器 (BiomechanicalAdapter)</string>
+ <string Context="ModCybrid Techscanning NameForStatus" ID="BiomechanicalAdapter">生物力學適配器(BiomechanicalAdapter)</string>
  <string Context="ModCybrid Adjective" ID="{{biomech|cybrid}}" OrderAdjust="0">{{biomech|賽博格}}</string>
  <string Context="ModCybrid Description" ID="Cybrid: Can draw power from biomechanical power transmission systems in addition to an electrical power grid.">賽博靈（Cybrid）：除了電網之外，還能從生物機械動力傳輸系統中汲取能量。</string>
  <string Context="ModDesecrated Adjective" ID="{{K|desecrated}}" OrderAdjust="0">{{K|被褻瀆的}}</string>
  <string Context="ModDesecrated Short Description" ID="Desecrated: This object has been desecrated by vandals.">遭到褻瀆：此物品已被破壞者褻瀆。</string>
- <string Context="ModDisguise Mod DisplayName" ID="a disguise=appearance.if: of :==appearance=">一種偽裝=外觀。如果：of :==appearance=</string>
+ <string Context="ModDisguise Mod DisplayName" ID="a disguise=appearance.if: of :==appearance=">一種偽裝=appearance.if: of :==appearance=</string>
  <string Context="ModDisguise Not Familiar" ID="You aren't familiar enough with any creatures to make a disguise.">你對任何生物都不夠熟悉，無法製作偽裝。</string>
  <string Context="ModDisguise Popup Title" ID="Choose a disguise to make.">選擇要製作的偽裝。</string>
  <string Context="ModDisguise DisplayName Clause" ID="and =blueprint.part:Render:DisplayName:creature= disguise" OrderAdjust="-20">並偽裝成 =blueprint.part:Render:DisplayName:creature=</string>
@@ -3952,7 +3952,7 @@ alone if no match found.
  <string Context="ModLiquidCooled No Necessary Liquid" ID="You have no =liquid.name|strip= for =object.the.name=.">你沒有用於 =object.the.name=. 的 =liquid.name|strip=。</string>
  <string Context="ModLiquidCooled Liquid Dump Message" ID="You dump the =volume.liquid.name= out of =object.the.name=.">你將 =object.the.name= 中的 =volume.liquid.name= 倒了出來。</string>
  <string Context="ModLiquidCooled Liquid Fill =snapshotName= Before Loading" ID="=subject.the.name=">=subject.the.name=</string>
- <string Context="ModLiquidCooled Liquid Fill Message" ID="You=partial.if: partially:= fill =snapshotName= with =volume.liquid.name=.">You=partial.if: partially:= 將 =snapshotName= 用 =volume.liquid.name= 填滿。</string>
+ <string Context="ModLiquidCooled Liquid Fill Message" ID="You=partial.if: partially:= fill =snapshotName= with =volume.liquid.name=.">=partial.if: partially:= 將 =snapshotName= 用 =volume.liquid.name= 填滿。</string>
  <string Context="ModLiquidCooled Display Adjective" ID="{{=liquid.color=|liquid-cooled}}" OrderAdjust="0">{{=liquid.color=|液體冷卻}}</string>
  <string Context="ModLiquidCooled Ask Amount Popup" ID="Supply =host.the.name= with how many drams of your =liquid.name|strip=? (max=equals==amount=)">提供 =host.the.name= 多少 德蘭 的你的 =liquid.name|strip=? (最大值為 =equals==amount=)</string>
  <string Context="ModLiquidCooled No Liquid For Host" ID="You have no =liquid.name|strip= to supply =host.the.name= with.">你沒有 =liquid.name|strip= 可以提供給 =host.the.name=。</string>
@@ -3979,11 +3979,11 @@ alone if no match found.
  <string Context="ModMetered Description" ID="Metered: This item has a readout displaying its charge percentage.">計量型：此物品具有顯示其電量百分比的讀數。</string>
  <string Context="ModMorphogenetic Techscanning NameForStatus" ID="MorphogeneticResonator">形態發生共振器</string>
  <string Context="ModMorphogenetic Display Adjective" ID="{{m|morphogenetic}}" OrderAdjust="0">{{m|形態發生}}</string>
- <string Context="ModMorphogenetic Description" ID="Morphogenetic: When powered and used to perform a successful, damaging hit, this weapon attempts to daze all other creatures of the same species as your target on the local map. Compute power on the local lattice increases the strength of this effect.">形態發生學（Morphogenetic）：當充能並成功造成傷害時，此武器會嘗試使在地圖上與你的目標同種的所有其他生物陷入暈眩。計算在地格上的能量將增加此效果的強度。</string>
+ <string Context="ModMorphogenetic Description" ID="Morphogenetic: When powered and used to perform a successful, damaging hit, this weapon attempts to daze all other creatures of the same species as your target on the local map. Compute power on the local lattice increases the strength of this effect.">形態發生學（Morphogenetic）：當充能並成功造成傷害時，此武器會嘗試使在地圖上與你的目標同種的所有其他生物陷入暈眩。</string>
  <string Context="ModMorphogenetic Shock Message" ID="A weird=analgesic.if::, painful= shock reverberates through you.">一種奇怪的=analgesic.if::，痛苦的= 震擊 迴盪著你的全身。</string>
  <string Context="ModNanon Techscanning NameForStatus" ID="Nanon">納農</string>
  <string Context="ModNanon Display Adjective" ID="{{K|nanon}}" OrderAdjust="0">{{K|納農}}</string>
- <string Context="ModNanon Description" ID="Nanon: This weapon has a chance to dismember on penetration.">納諾 (Nanon)：此武器在穿透時有機會造成肢解。</string>
+ <string Context="ModNanon Description" ID="Nanon: This weapon has a chance to dismember on penetration.">納諾(Nanon)：此武器在穿透時有機會造成肢解。</string>
  <string Context="ModNanon Description Non Zero Tier Single" ID="Nanon: =high=% chance to dismember on penetration">奈米：穿透時有 =high=% 的機率造成肢解</string>
  <string Context="ModNanon Description Non Zero Tier Single" ID="Nanon: =low=-=high=% chance to dismember on penetration">奈米級：穿透時有 =low=-=high=% 的機率造成肢解</string>
  <string Context="ModNanon Instance Description" ID="Nanon: =chance=% chance to dismember upon penetration">奈諾：=chance=% 的機率在穿透時造成肢解</string>
@@ -4002,7 +4002,7 @@ alone if no match found.
  <string Context="ModPadded Stun Resist Particle Text" ID="Resisted stun!">抵抗了暈眩！</string>
  <string Context="ModPadded Daze Resist Particle Text" ID="Resisted daze!">抵抗了恍惚！</string>
  <string Context="ModPadded Soften Message" ID="=subject.The.name's= padding softened the blow.">=subject.The.name's= 緩衝墊減輕了衝擊。</string>
- <string Context="ModPadded Description" ID="Padded: This item grants =protectionChance.a.number=% chance to prevent daze or stun effects, and it doubles the chance for the wearer to shake off daze and stun effects with the Shake It Off skill power.">緩衝：此物品提供 =protectionChance.a.number=% 的機率防止眩暈或暈眩效果，並能使穿戴者透過「抖掉（Shake It Off）」技能能力雙倍提升擺脫眩暈與暈眩效果的機率。</string>
+ <string Context="ModPadded Description" ID="Padded: This item grants =protectionChance.a.number=% chance to prevent daze or stun effects, and it doubles the chance for the wearer to shake off daze and stun effects with the Shake It Off skill power.">緩衝：此物品提供 =protectionChance.a.number=% 的機率防止眩暈或暈眩效果，並能使穿戴者透過「抖掉(Shake It Off)」技能雙倍提升擺脫眩暈與暈眩效果的機率。</string>
  <string Context="ModPainted Description Adjective" ID="{{painted|painted}}" OrderAdjust="0">{{painted|彩繪}}</string>
  <string Context="Painted Postfix" ID="Painted: This item is painted with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=painting=" Value="繪製：此物品描繪了古代 =sultanTerm= {{magenta|=sultan=}} 的生活場景：&#xA;&#xA;=painting=" />
  <string Context="ModPainted Story Marred" ID="&lt;marred and unreadable&gt;">&lt;受損且無法辨識></string>
@@ -4209,7 +4209,7 @@ alone if no match found.
  <string Context="Psychometry Ability Placeholder Text" ID="To use Psychometry, interact with an artifact and then choose 'read history with Psychometry.">要使用靈媒感應（Psychometry），請與神器互動，然後選擇「使用靈媒感應讀取歷史」。</string>
  <string Context="Psychometry Activated Ability Name" ID="Psychometry">靈媒感應</string>
  <string Context="Psychometry Activate Fail Confused" ID="You strain to part the veil of time in order to use psychometry on =object.the.name:single=, but you are too confused.">你竭力撥開時間的面紗，試圖對 =object.the.name:single= 使用靈媒感應，但你的思緒太過混亂。</string>
- <string Context="Psychometry Activate Fail Cooldown" ID="You strain to part the veil of time in order to use psychometry on =object.the.name:single=, but your psyche is too exhausted.">你竭力試圖撥開時間的面紗，想對 =object.the.name:single= 使用靈媒感應（psychometry），但你的精神力已過於疲憊。</string>
+ <string Context="Psychometry Activate Fail Cooldown" ID="You strain to part the veil of time in order to use psychometry on =object.the.name:single=, but your psyche is too exhausted.">你竭力試圖撥開時間的面紗，想對 =object.the.name:single= 使用靈媒感應(psychometry)，但你的精神力已過於疲憊。</string>
  <string Context="Psychometry InitiateRealityDistortionTransit Purpose" ID="use psychometry on =object.the.name:single=">對 =object.the.name:single= 使用靈媒感應</string>
  <string Context="Pyrokinesis TargetPicker Label" ID="Toast">烤焦</string>
  <string Context="Pyrokinesis ActivatedAbility Name" ID="Toast">烤焦</string>
@@ -4363,7 +4363,7 @@ alone if no match found.
  <string Context="Photosynthetic Skin DV Bonus Description" ID="camouflage">偽裝</string>
  <string Context="Photosynthetic Skin ActivatedAbility Name" ID="Bask">沐浴</string>
  <string Context="Quills ActivatedAbility Name" ID="=abilityName= [=quillsAmount.things#quillsSingular#quillsName= left]">=abilityName= [剩餘 =quillsAmount.things#quillsSingular#quillsName=]</string>
- <string Context="Quills AbilityName" ID="=blueprint.tag:AbilityName:Quill Fling=">=blueprint.tag:AbilityName:羽毛投擲=</string>
+ <string Context="Quills AbilityName" ID="=blueprint.tag:AbilityName:Quill Fling=">=blueprint.tag:AbilityName:Quill Fling=</string>
  <string Context="Quills ObjectName" ID="=blueprint.name=">=blueprint.name=</string>
  <string Context="Quills ObjectNameSingular" ID="=blueprint.tag:DisplayNameSingular:quill=">=blueprint.tag:DisplayNameSingular:quill=</string>
  <string Context="Quill Reflected Damage - impaled" ID="=subject.Does:impale= =subject.itself= on =object.the.name's= =quillsName= and =subject.verb:take= =damage= damage!">=subject.Does:impale= =subject.itself= 在 =object.the.name's= =quillsName= 上並 =subject.verb:take= =damage= 傷害！</string>
@@ -4433,7 +4433,7 @@ alone if no match found.
  <string Context="Physics (Inventory) Category" ID="Meds">醫療品</string>
  <string Context="Physics (Inventory) Category" ID="Melee Weapons">近戰武器</string>
  <string Context="Physics (Inventory) Category" ID="Miscellaneous">雜項</string>
- <string Context="Physics (Inventory) Category" ID="Missile Weapons">飛彈 Weapons</string>
+ <string Context="Physics (Inventory) Category" ID="Missile Weapons">飛彈武器</string>
  <string Context="Physics (Inventory) Category" ID="Natural Armor">天然護甲</string>
  <string Context="Physics (Inventory) Category" ID="Natural Missile Weapon">天然飛彈武器</string>
  <string Context="Physics (Inventory) Category" ID="Natural Weapons">天然武器 Natural Weapons</string>
@@ -4770,7 +4770,7 @@ alone if no match found.
  <string Context="Survival Skill Terrain Name" ID="salt desert">鹽之沙漠</string>
  <string Context="Survival Skill Terrain Name" ID="ruins">遺跡</string>
  <string Context="Survival Skill Terrain Name" ID="plains">平原</string>
- <string Context="Survival Skill Terrain Name" ID="hills and mountains">丘陵 and 山脈</string>
+ <string Context="Survival Skill Terrain Name" ID="hills and mountains">丘陵與山脈</string>
  <string Context="Survival Skill Terrain Name" ID="desert canyons">沙漠峽谷</string>
  <string Context="Survival Skill Terrain Name" ID="salt marsh">鹽沼</string>
  <string Context="Survival Skill Terrain Name" ID="jungle">叢林</string>
@@ -4810,10 +4810,10 @@ alone if no match found.
  <string Context="DoubleContainer BeforeDeath" ID="You broke apart.">你破碎了。</string>
  <string Context="EaterCryptPlaque EmptyText" ID="&lt;The plaque has no inscription.&gt;">&lt;牌匾上沒有任何銘文.></string>
  <string Context="EaterCryptPlaque finalize (empty)" ID="=emptyText|caste.eaterPlaque=">=emptyText|caste.eaterPlaque=</string>
- <string Context="EaterCryptPlaque familyCognomen" ID="=spice:tombstones.cryptPlaque.$caste.familyCognomen.!random=">=spice:墓碑.cryptPlaque.$caste.familyCognomen.!random=</string>
- <string Context="EaterCryptPlaque part1" ID="=spice:tombstones.$cryptIntro.!random|title=">=spice:墓碑.$cryptIntro.!random|title=</string>
- <string Context="EaterCryptPlaque part2" ID="=spice:tombstones.cryptPlaque.$familyTitle.!random|title=">=spice:墓碑.cryptPlaque.$familyTitle.!random|title=</string>
- <string Context="EaterCryptPlaque part3" ID="&quot;=spice:tombstones.cryptPlaque.$caste.familyWords.!random|initUpper=&quot;">"=spice:墓碑.cryptPlaque.$caste.familyWords.!random|initUpper="</string>
+ <string Context="EaterCryptPlaque familyCognomen" ID="=spice:tombstones.cryptPlaque.$caste.familyCognomen.!random=">=spice:tombstones.cryptPlaque.$caste.familyCognomen.!random=</string>
+ <string Context="EaterCryptPlaque part1" ID="=spice:tombstones.$cryptIntro.!random|title=">=spice:tombstones.$cryptIntro.!random|title=</string>
+ <string Context="EaterCryptPlaque part2" ID="=spice:tombstones.cryptPlaque.$familyTitle.!random|title=">=spice:tombstones.cryptPlaque.$familyTitle.!random|title=</string>
+ <string Context="EaterCryptPlaque part3" ID="&quot;=spice:tombstones.cryptPlaque.$caste.familyWords.!random|initUpper=&quot;">"=spice:tombstones.cryptPlaque.$caste.familyWords.!random|initUpper="</string>
  <string Context="EaterCryptPlaque engraving" ID="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" Value="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" />
  <string Context="EaterCryptPlaque finalize" ID="=engraving|caste.eaterPlaque=">=engraving|caste.eaterPlaque=</string>
  <string Context="IPlaquePart Inscription" ID="=baseInscription|varyPlaque#wordWrap#cornerColor#edgeColor#darkColor=">=baseInscription|varyPlaque#wordWrap#cornerColor#edgeColor#darkColor=</string>
@@ -4932,7 +4932,7 @@ alone if no match found.
  <string Context="Settlements pig farm name 15%" ID="=spice:commonPhrases.secluded.!random|Article= pig farm">=spice:commonPhrases.secluded.!random|Article= 豬場</string>
  <string Context="Settlements starapple farm name 15%" ID="=spice:commonPhrases.secluded.!random|Article= starapple farm">=spice:commonPhrases.secluded.!random|Article= 星蘋果農場</string>
  <string Context="Settlements farm name random article prefix" ID="the " Value="這" />
- <string Context="Settlements farm name random prefix" ID="=name|'s=">=name|的</string>
+ <string Context="Settlements farm name random prefix" ID="=name|'s=">=name= 的</string>
  <string Context="Settlements Generate Farm Name TitleFinal chance" ID="=prefixPlusSuffix|title=">=prefixPlusSuffix|title=</string>
  <string Context="Settlements Generate Farm Name TitleFinal chance" ID="=article|spaceAfter==prefix|title= =suffix|title=">=article|spaceAfter==prefix|title= =suffix|title=</string>
  <string Context="Settlements Generate Farm Name TitleFinal chance" ID="the =suffix|title= of =article|spaceAfter==prefix=">=article|spaceAfter==prefix= =suffix|title=</string>
@@ -5085,10 +5085,10 @@ alone if no match found.
  <string Context="KithAndKinGameState ItemClueReveal 10" ID="Someone has left a small hammer on the path. " Value="有人在路上留下了一把小錘子。" />
  <string Context="KithAndKinGameState RumorClue 0" ID="One villager was frightened by sounds of fighting at night, indicating recent violence.">一名村民被夜晚的戰鬥聲嚇到了，顯示近期發生過暴力事件。</string>
  <string Context="KithAndKinGameState RumorClueConvo 0" ID="I heard the sounds of fighting the other night! I stayed in the next day, so afeared was I.">前幾天晚上我聽到了戰鬥聲！我隔天都待在室內不敢出來，真是嚇壞了。</string>
- <string Context="KithAndKinGameState RumorClue 1" ID="One of Bey Lah's scouts heard a fight in the watervine paddies, indicating recent violence.">一名 貝拉(Bey Lah) 的偵查兵在 水藤 田地中聽到了戰鬥聲，顯示近期發生過暴力事件。</string>
+ <string Context="KithAndKinGameState RumorClue 1" ID="One of Bey Lah's scouts heard a fight in the watervine paddies, indicating recent violence.">一名 貝拉(Bey Lah) 的偵查兵在水藤田地中聽到了戰鬥聲，顯示近期發生過暴力事件。</string>
  <string Context="KithAndKinGameState RumorClueConvo 1" ID="I thought I heard splashing from a fight in the marsh grids, but I couldn't find anyone.">我以為我聽到沼澤格點的戰鬥傳來濺水聲，但我找不到任何人。</string>
  <string Context="KithAndKinGameState RumorClue 2" ID="Faundren saw a merchant from outside the village sneaking around, indicating recent trade.">Faundren 看見一名來自村外的商人正在鬼鬼祟祟地徘徊，顯示近期有貿易往來。</string>
- <string Context="KithAndKinGameState RumorClueConvo 2" ID="I saw a kendren merchant the other day! They were being very sneaky, so I think they were meeting someone in secret! Isn't that interesting?">我前幾天看到一個肯德倫（kendren）商人！他們表現得很鬼鬼祟祟，所以我認為他們正在秘密會見某人！這不是很有趣嗎？</string>
+ <string Context="KithAndKinGameState RumorClueConvo 2" ID="I saw a kendren merchant the other day! They were being very sneaky, so I think they were meeting someone in secret! Isn't that interesting?">我前幾天看到一個肯德倫(kendren)商人！他們表現得很鬼鬼祟祟，所以我認為他們正在秘密會見某人！這不是很有趣嗎？</string>
  <string Context="KithAndKinGameState RumorClue 3" ID="The faundren heard the voice of a hindren and a kendren discussing goods late at night, indicating recent trade.">這位 faundren 在深夜聽見了一位 hindren 與一位 kendren 在討論貨物，顯示近期有貿易往來。</string>
  <string Context="KithAndKinGameState RumorClueConvo 3" ID="I heard a hindren talking about buying and selling to a kendren late at night! I thought that all kendren had to report to Grand-Doe?">我聽到一群 hindren 在深夜裡討論要向 kendren 買賣東西！我以為所有的 kendren 都必須向 Grand-Doe 報告？</string>
  <string Context="KithAndKinGameState RumorClue 4" ID="The villagers are on edge due to rumors of sore throats in the village, indicating recent illness.">由於村內傳出喉嚨痛的謠言，村民們感到惶惶不安，這顯示近期有疾病流行。</string>
@@ -5104,19 +5104,19 @@ alone if no match found.
  <string Context="KithAndKinGameState MotiveEvidence Keh ItemClue 1" ID="I found a bloody arrow on the paths of Bey Lah. Its fletching resembles the ones in Hindriarch Keh's quiver.">我在 貝拉(Bey Lah) 的路徑上發現了一支帶血的箭。它的羽毛看起來很像 希德里亞克·凱 的箭袋裡的箭。</string>
  <string Context="KithAndKinGameState MotiveEvidence Keh ItemClueReveal 1" ID="Why, this arrow is covered with blood! " Value="天啊，這支箭沾滿了血！" />
  <string Context="KithAndKinGameState MotiveEvidence Keh RumorClue 0" ID="Apparently, the Hindriarch isolated herself to work on a mystery project, possibly to hide Kindrish.">顯然，欣德里亞克為了進行一項神秘計畫而自我隔離，可能是為了隱藏 Kindrish。</string>
- <string Context="KithAndKinGameState MotiveEvidence Keh RumorClueConvo 0" ID="You know, Grand-Doe spent some late nights working on something she wouldn't talk about. I wonder what that was.">你知道嗎，大鹿（Grand-Doe）曾熬夜在做一些她不願提及的事情。我很好奇那究竟是什麼。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Keh RumorClueConvo 0" ID="You know, Grand-Doe spent some late nights working on something she wouldn't talk about. I wonder what that was.">你知道嗎，大鹿(Grand-Doe)曾熬夜在做一些她不願提及的事情。我很好奇那究竟是什麼。</string>
  <string Context="KithAndKinGameState MotiveEvidence Keh RumorClue 1" ID="Rumor has it that the village is flush with water, perhaps because Keh made a big trade.">傳聞說村子裡水資源充足，或許是因為 Keh 進行了一筆大交易。</string>
  <string Context="KithAndKinGameState MotiveEvidence Keh RumorClueConvo 1" ID="By the Eaters, how prosperous we've been. I've never seen the village so flush with fresh water.">以噬者之名，我們是多麼繁榮。我從未見過村莊有如此充足的淡水。</string>
- <string Context="KithAndKinGameState MotiveEvidence Esk RumorClue 0" ID="The faundren claim that Eskhind left the village sporting a poorly-made leather bracer, possibly to conceal Kindrish.">faundren 聲稱 艾斯金德 離開村莊時戴著一個做工粗糙的 皮革護腕，可能是為了隱藏 Kindrish。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Esk RumorClue 0" ID="The faundren claim that Eskhind left the village sporting a poorly-made leather bracer, possibly to conceal Kindrish.">faundren 聲稱 艾斯金德離開村莊時戴著一個做工粗糙的皮革護腕，可能是為了隱藏 Kindrish。</string>
  <string Context="KithAndKinGameState MotiveEvidence Esk RumorClueConvo 0" ID="Just before auntie Eskhind left the village, I saw her wearing a new bracer. It looked terrible!">就在艾斯金德阿姨離開村莊前，我看到她戴著一個新的護腕。看起來糟透了！</string>
  <string Context="KithAndKinGameState MotiveEvidence Esk RumorClue 1" ID="The faundren tell me that Eskhind's sister had a period of complete silence; she may have been ill.">faundren 告訴我，艾斯金德的姊姊曾有一段完全沉默的時期；她當時可能生病了。</string>
  <string Context="KithAndKinGameState MotiveEvidence Esk RumorClueConvo 1" ID="You know auntie Eskhind's little sister, Liihart? She's always been quiet, but she didn't talk at all for, uh, two whole weeks before they left!">妳知道艾斯金德阿姨的小妹妹利哈特嗎？她一直都很安靜，但在她們離開前的，呃，整整兩週內，她完全沒有說過話！</string>
- <string Context="KithAndKinGameState MotiveEvidence Esk ItemClue 0" ID="I found the village stores of Bey Lah untouched; Eskhind must have traded something for her basics.">我發現 貝拉(Bey Lah) 的 村莊商店 未受損壞；艾斯金德 一定是用某樣東西換取了她的生活必需品。</string>
- <string Context="KithAndKinGameState MotiveEvidence Esk ItemClueReveal 0" ID="Whoever stole Kindrish didn't steal from the village stores. These chests are simply packed with dried lah, vinewafers, and waterskins.">偷走 Kindrish 的人並沒有偷取 村莊商店 的東西。這些箱子裡裝滿了乾燥的 lah、藤蔓薄餅 和 水囊。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Esk ItemClue 0" ID="I found the village stores of Bey Lah untouched; Eskhind must have traded something for her basics.">我發現貝拉(Bey Lah)的村莊商店未受損壞；艾斯金德一定是用某樣東西換取了她的生活必需品。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Esk ItemClueReveal 0" ID="Whoever stole Kindrish didn't steal from the village stores. These chests are simply packed with dried lah, vinewafers, and waterskins.">偷走 Kindrish 的人並沒有偷取村莊商店的東西。這些箱子裡裝滿了乾燥的 lah、藤蔓薄餅和水囊。</string>
  <string Context="KithAndKinGameState MotiveEvidence Esk ItemClue 1" ID="Eskhind is showing signs of a leg injury. Perhaps she was in a fight. " Value="艾斯金德 有腿部受傷的跡象。或許她剛經歷了一場戰鬥。" />
  <string Context="KithAndKinGameState MotiveEvidence Esk ItemClueReveal 1" ID="Eskhind appears to be favoring a leg, though she has concealed any injury. " Value="艾斯金德 似乎在偏袒一條腿，儘管她隱藏了任何傷勢。" />
  <string Context="KithAndKinGameState MotiveEvidence Esk LookText 1" ID="Eskhind is favoring a leg.">艾斯金德正在偏愛一條腿。</string>
- <string Context="KithAndKinGameState MotiveEvidence Kese RumorClue 0" ID="The faundren tell me that Kesehind went quiet for a few weeks, only to become louder than ever again.">faundren 告訴我，凱塞欣德 曾沉寂了幾週，接著卻變得比以往更加喧囂。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Kese RumorClue 0" ID="The faundren tell me that Kesehind went quiet for a few weeks, only to become louder than ever again.">faundren 告訴我，凱塞欣德曾沉寂了幾週，接著卻變得比以往更加喧囂。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kese RumorClueConvo 0" ID="For weeks and weeks, Kesehind was so quiet, but now he's talking more than ever! He's so loud!">好幾個禮拜以來，凱塞欣德 都非常安靜，但現在他講話比以往任何時候都還要多！他聲音真大！</string>
  <string Context="KithAndKinGameState MotiveEvidence Kese RumorClue 1" ID="Rumor has it that Kesehind has always worn hand-me-down armor, but he was recently seen with a brand new set.">傳聞說 凱塞欣德 一直都穿著別人穿剩的舊盔甲，但最近有人看到他換上了一套全新的裝備。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kese RumorClueConvo 1" ID="Did you see Kesehind's armor? He always used to wear hand-me-downs from the scouts, but what he's wearing now looks brand new!">你有看到凱塞欣德的護甲嗎？他以前總是穿著偵察兵傳下來的舊衣物，但他現在穿的看起來跟新的一樣！</string>
@@ -5126,11 +5126,11 @@ alone if no match found.
  <string Context="KithAndKinGameState MotiveEvidence Kese ItemClueReveal 1" ID="Carmine streaks on Kesehind's armor suggest that he tried and failed to wipe away spilled blood. " Value="凱塞欣德的護甲上有著緋紅色的條紋，顯示他曾試圖擦拭濺出的血跡但失敗了。" />
  <string Context="KithAndKinGameState MotiveEvidence Kese LookText 1" ID="Kesehind's armor has bloodstains that he failed to remove. " Value="凱塞欣德的 armor 上有他未能清除的血跡。" />
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 0" ID="The Bey Lah scouts have had trouble with violent kendren. What if one slipped by?">貝拉偵察兵一直受到暴力肯德倫的困擾。如果其中一個溜過去了怎麼辦？</string>
- <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 0" ID="The kendren are becoming more brazen in their hostility. I've had to misdirect and fight them off several times this month alone.">肯德倫人（kendren）的敵意變得愈發囂張。光是這個月，我就不得不好幾次誤導並擊退他們。</string>
- <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 1" ID="The scouts have seen kendren treasure hunters about. That type will take anything not nailed down.">偵察兵看到附近有肯德倫（kendren）寶藏獵人出沒。那種傢伙只要不是釘死的，什麼都會偷走。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 0" ID="The kendren are becoming more brazen in their hostility. I've had to misdirect and fight them off several times this month alone.">肯德倫(kendren)的敵意變得愈發囂張。光是這個月，我就不得不好幾次誤導並擊退他們。</string>
+ <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 1" ID="The scouts have seen kendren treasure hunters about. That type will take anything not nailed down.">偵察兵看到附近有肯德倫(kendren)寶藏獵人出沒。那種傢伙只要不是釘死的，什麼都會偷走。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 1" ID="I came across some kendren who claimed to be treasure hunters. They said that they would pay good water for unique artifacts or treasures.">我遇到了一些自稱是尋寶者的肯德倫人。他們說只要是獨特的文物或寶藏，他們願意支付優渥的水資源作為報酬。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClue 2" ID="Theft by kendren is very common during an outbreak of disease like the one the villagers describe.">在村民所描述的這種疾病爆發期間，肯德倫的盜竊行為非常普遍。</string>
- <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 2" ID="I've heard that there is an outbreak of glotrot in the kendren villages outside of Bey Lah. Now I want to leave here even less!">我聽說在 貝拉(Bey Lah) 外面的 肯德倫村落發生了黏液腐爛症的爆發。現在我更不想離開這裡了！</string>
+ <string Context="KithAndKinGameState MotiveEvidence Kendren RumorClueConvo 2" ID="I've heard that there is an outbreak of glotrot in the kendren villages outside of Bey Lah. Now I want to leave here even less!">我聽說在貝拉(Bey Lah)外面的肯德倫村落發生了黏液腐爛症的爆發。現在我更不想離開這裡了！</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren ItemClue 0" ID="I found a set of foreign leatherworking tools on the village paths. A kendren crafter has been here.">我在村莊小徑上發現了一套外國的皮革加工工具。有個肯德倫工匠曾在此停留。</string>
  <string Context="KithAndKinGameState MotiveEvidence Kendren ItemClueReveal 0" ID="This set of leatherworking tools is shockingly well-made. " Value="這套 皮革加工工具 做工精良得令人震驚。" />
  <string Context="PopTableZoneBuilder - Apply Zone Faction - DisplayName Adjective for faction swap" ID="domesticated" OrderAdjust="0">馴化的</string>
@@ -5266,7 +5266,7 @@ alone if no match found.
  <string Context="RingGateBuilder GateName PrefixRoot 1" ID="Bet-">賭—</string>
  <string Context="RingGateBuilder GateName PrefixRoot 2" ID="Gimel-">Gimel-</string>
  <string Context="RingGateBuilder GateName PrefixRoot 3" ID="Daled-">Daled-</string>
- <string Context="RingGateBuilder GateName PrefixRoot 4+" ID="He-">希- (He-)</string>
+ <string Context="RingGateBuilder GateName PrefixRoot 4+" ID="He-">希-(He-)</string>
  <string Context="RingGateBuilder GateName OrderWord 0" ID="moon">月</string>
  <string Context="RingGateBuilder GateName OrderWord 1" ID="sun">太陽</string>
  <string Context="RingGateBuilder GateName OrderWord 2" ID="fool">愚者</string>

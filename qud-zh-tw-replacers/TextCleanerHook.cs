@@ -50,6 +50,46 @@ public static class ZhTwTextCleaner
         });
     }
 
+    // ===== ProperNoun 括號英文保護 =====
+    // 「中文(English)」的括號英文是規範格式（農民公會(Farmers' Guild)），
+    // 逐詞替換（Words/ProperNounZh）若套用到括號內會污染成
+    // 「農民公會(Farmers' 公會)」「瑪門之子(Children 的 馬蒙(Mamon))」。
+    // 只在「括號前的非空白字元是中文」時保護（其餘 (…) 仍走逐詞替換）。
+    private static readonly Regex ParenGuard = new Regex(
+        @"\([^()]*?(?:[A-Za-z][^()]*?)*?\)|（[^（）]*?(?:[A-Za-z][^（）]*?)*?）", RegexOptions.Compiled);
+
+    private static string ProtectParens(string text, List<string> box)
+    {
+        return ParenGuard.Replace(text, delegate(Match m)
+        {
+            string content = m.Value;
+            int start = m.Index;
+            // 括號前的非空白字元是否為中文（緊鄰即「中文(English)」規範）
+            int p = start - 1;
+            while (p >= 0 && (text[p] == ' ' || text[p] == '\t')) p--;
+            if (p < 0 || text[p] < '\u4e00' || text[p] > '\u9fff') return content;
+            box.Add(content);
+            return "\x01" + (box.Count - 1) + "\x01";
+        });
+    }
+
+    private static string RestoreParens(string text, List<string> box)
+    {
+        if (box.Count == 0) return text;
+        return Regex.Replace(text, @"\x01(\d+)\x01", delegate(Match m)
+        {
+            int idx;
+            if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < box.Count)
+                return box[idx];
+            return m.Value;
+        });
+    }
+
+    // ===== 所有格 's（後接中文時中文化：哈爾's 丈夫 → 哈爾的丈夫）=====
+    // 括號英文（Farmers' Guild）因 ProtectParens 已保護，不會被此規則誤傷。
+    private static readonly Regex PossessiveZh = new Regex(
+        @"\b([A-Za-z]+)'s\s+(?=[\u4e00-\u9fff])", RegexOptions.Compiled);
+
     // 常見英文殘留詞 → 中文（只留明確縮寫/代名詞，避免把英文模板的好詞單獨翻譯）
     private static readonly Dictionary<string, string> Artifacts =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
@@ -178,7 +218,7 @@ public static class ZhTwTextCleaner
             { "without", "之外" },
             // 2026-08-09 補：戰鬥/狀態訊息常見詞（安全詞，避免中英混雜殘留）
             { "his", "他的" }, { "toggle", "切換" }, { "knocked", "擊倒" },
-            { "stops", "停下" }, { "moving", "移動中" }, { "looks", "查看" }, { "out", "出" },
+            { "stops", "停下" }, { "moving", "移動" }, { "looks", "查看" }, { "out", "出" },
             { "it", "它" }, { "this", "這" }, { "that", "那" },
             // 方向/距離（LoreGenerator 硬編碼 parasangs）
             { "parasang", "帕拉桑" }, { "parasangs", "帕拉桑" },
@@ -259,6 +299,12 @@ public static class ZhTwTextCleaner
             { "beak", "喙" }, { "stinger", "尾刺" }, { "horns", "角" },
             { "fist", "拳頭" }, { "fists", "拳頭" }, { "scratch", "抓傷" }, { "scratches", "抓傷" },
             { "bronze", "青銅" }, { "steel", "鋼" }, { "dagger", "匕首" },
+            // 2026-08-13 補：Faction Interest/Secret 系統漏網兜底（sultanTerm 複數、動詞片語等）
+            { "sultans", "蘇丹" }, { "interested", "感興趣" }, { "resources", "資源" },
+            { "necessary", "必需的" }, { "building", "建造" }, { "societies", "社會" },
+            { "worship", "崇拜" }, { "worships", "崇拜" }, { "trading", "交易" },
+            { "sharing", "分享" }, { "learning", "了解" }, { "breeding", "繁殖" },
+            { "husband", "丈夫" }, { "gossip", "八卦" },
         };
 
     // spice/歷史生成整句漏翻 → 執行期整句替換（優先於逐詞）
@@ -567,6 +613,9 @@ public static class ZhTwTextCleaner
         // 保護 =...= token（避免 Words/Verbs/Artifacts 誤傷 token 內關鍵字）
         var tokenBox = new List<string>();
         string work = ProtectTokens(text, tokenBox);
+        // 保護「中文(English)」括號（避免逐詞替換/ProperNoun 污染括號英文側）
+        var parenBox = new List<string>();
+        work = ProtectParens(work, parenBox);
 
         string result = LeadingArticle.Replace(work, "");
         // 逐詞替換常見殘留（整詞邊界、大小寫不敏感）
@@ -583,10 +632,14 @@ public static class ZhTwTextCleaner
         result = VerbRegex.Replace(result, new MatchEvaluator(VerbMatch));
         // 介詞/單位/動詞原形
         result = WordsRegex.Replace(result, new MatchEvaluator(WordsMatch));
+        // 所有格 's 後接中文 → 哈爾's 丈夫 改 哈爾的丈夫
+        result = PossessiveZh.Replace(result, "$1的");
         // 程序化專名音譯（STEP 4 防漏：漏網英文專名 → 繁中音譯）
         result = CleanNames(result);
         // 還原 token
         result = RestoreTokens(result, tokenBox);
+        // 還原 ProperNoun 括號英文
+        result = RestoreParens(result, parenBox);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();

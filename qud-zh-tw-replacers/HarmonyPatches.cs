@@ -85,6 +85,14 @@ public static class ZhTwHarmonyPatches
         Tuple.Create(new Regex(@"^(.+?) is in (your|the|my|its) way[.!]?$", RegexOptions.IgnoreCase), "$1 擋在你面前"),
         Tuple.Create(new Regex(@"^You can't move there[.!]?$", RegexOptions.IgnoreCase), "你無法移動到那裡"),
         Tuple.Create(new Regex(@"^You cannot move there[.!]?$", RegexOptions.IgnoreCase), "你無法移動到那裡"),
+        // ==== 中英混合移動受阻（=subject.T= 已輸出「由於」/「The」/「」等，in your way 逐詞拆碎）====
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 是 (.+?) 在 你的 way,? 你停止了 移動(?:中)?[。.!]?$", RegexOptions.IgnoreCase), "$2 擋住了你的路，你停止了移動。"),
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 是 (.+?) 在 你的 way[。.!]?$", RegexOptions.IgnoreCase), "$2 擋住了你的路。"),
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 是 在 你的 way,? 你停止了 移動(?:中)?[。.!]?$", RegexOptions.IgnoreCase), "$1 擋住了你的路，你停止了移動。"),
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 是 在 你的 way[。.!]?$", RegexOptions.IgnoreCase), "$1 擋住了你的路。"),
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 在 你的 way,? 你停止了 移動(?:中)?[。.!]?$", RegexOptions.IgnoreCase), "$1 擋住了你的路，你停止了移動。"),
+        Tuple.Create(new Regex(@"^(?:由於|The|) ?(.+?) 在 你的 way[。.!]?$", RegexOptions.IgnoreCase), "$1 擋住了你的路。"),
+        Tuple.Create(new Regex(@"^You are stopped short by (.+?)[.!]?$", RegexOptions.IgnoreCase), "你被 $1 擋住了去路。"),
         // ==== 日誌筆記（硬編碼：You note this piece of information in the {{W|類別}} section of your journal.）====
         Tuple.Create(new Regex(@"^You note this piece of information in the \{\{W\|(.+?)\}\} section of your journal\.?$", RegexOptions.IgnoreCase), "你在日誌的 {{W|$1}} 區段中記下這項資訊。"),
         // ==== 站起/起身（Prone.cs / Sitting.cs 的 DidX）====

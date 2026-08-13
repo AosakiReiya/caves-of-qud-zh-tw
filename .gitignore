@@ -40,3 +40,13 @@ qud-zh-tw/release/
 build_log.txt
 
 tmp
+# 部署/環境（含本機路徑，不入庫）
+.env
+
+# 發布產物
+/release/
+
+# 工具生成的語料/審核輸出（可重新生成）
+/qud-zh-tw/tools/*.json
+/qud-zh-tw/tools/__pycache__/
+/qud-zh-tw/tools/*.txt

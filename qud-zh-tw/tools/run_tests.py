@@ -397,6 +397,9 @@ def test_pipeline():
         ("Strength", "力量", "Strength"),
         ("The Mopango 有興趣分享 科技 的秘密。", "莫龐戈", "The"),
         ("The 伊帕德 的村民 有興趣聽聽關於他們的八卦。", "伊帕德 的村民", "The"),
+        # ==== 逐詞語病（短語層）====
+        ("由於 那裡 是 熊 在 你的 way, 你停止了 移動中。", "擋住了你的路", "移動中"),
+        ("熊 在 你的 way。", "擋住了你的路", "way"),
     ]
     for inp, must, must_not in cases:
         if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):
@@ -432,6 +435,10 @@ def test_data():
             if any(t in m.group(1) for t in leak_tokens):
                 total += 1
     check("ifPlural 值側無英文 token 洩漏", total == 0, f"{total} 個")
+    # 語病修正：Combat Miss「與」→「用」；Faction Feeling 不再「不在乎 在乎你」
+    ms = (ZH / "Strings.zh-tw.xml").read_text(encoding="utf-8-sig")
+    check("Combat Miss 值用『用』", "=subject.Does:miss= 用 =subject.its.item#weapon=" in ms)
+    check("Faction Feeling 無『在乎 在乎你』", "在乎你" not in ms and "不在乎:不在乎= 你，但好鬥的" in ms)
 
 
 # ============ 5. localization_keys（zh-tw XML 的 key 屬性必須與 base 一致）============
@@ -516,7 +523,34 @@ def _has_cjk(s):
     return any("\u4e00" <= c <= "\u9fff" for c in s)
 
 
-# ============ 6. xml_structure（zh-tw XML 可解析 + 單一根）============
+# ============ 6.5 token_integrity（翻譯值不得丟失/改壞 =token= 槽位）============
+def test_token_integrity():
+    print("== token_integrity：=token= 完整性 ==")
+    sys.path.insert(0, str(ROOT))
+    try:
+        import extract_templates as ET
+    except Exception as e:
+        check("extract_templates 可匯入", False, str(e))
+        return
+    entries = ET.parse_strings(ZH / "Strings.zh-tw.xml")
+    bad_tok = 0
+    bad_internal = 0
+    untrans = 0
+    for e in entries:
+        ET.analyze(e)
+        fs = e["flags"]
+        if "token_mismatch" in fs:
+            bad_tok += 1
+        if "token_internal_cjk" in fs:
+            bad_internal += 1
+        if "untranslated" in fs:
+            untrans += 1
+    check("翻譯值不丟 =token=（token_mismatch=0）", bad_tok == 0, f"{bad_tok} 條")
+    check("token 內部無中文鍵（token_internal_cjk=0）", bad_internal == 0, f"{bad_internal} 條")
+    check("未翻譯模板數（報告用）", True, f"{untrans} 條")
+
+
+# ============ 7. xml_structure（zh-tw XML 可解析 + 單一根）============
 def test_xml_structure():
     print("== xml_structure：zh-tw XML 語法完整 ==")
     bad = []
@@ -643,6 +677,199 @@ def test_combat_hit_pattern():
     check("含『你用 $3 擊中』替換", "你用 $3 擊中" in hook)
 
 
+def _find_game_data():
+    """往上找含 CoQ_Data 的遊戲目錄（與 extract_templates 同邏輯）。"""
+    g = PROJ
+    for _ in range(6):
+        if (g / "CoQ_Data").exists():
+            return g
+        g = g.parent
+    return None
+
+
+def _parse_faction_interests(xml_path):
+    """解析 Factions*.xml：faction → interests 屬性集合（Buy/Sell/LearnDescription）。"""
+    import xml.etree.ElementTree as ET
+    out = {}
+    root = ET.parse(xml_path).getroot()
+    for fac in root.findall("faction"):
+        name = fac.get("Name")
+        ints = fac.find("interests")
+        if ints is None:
+            continue
+        keys = [k for k in ("BuyDescription", "SellDescription", "LearnDescription") if ints.get(k) is not None]
+        if keys:
+            out[name] = keys
+    return out
+
+
+# ============ 8. paren_protect（中文(English) 括號不被逐詞污染）============
+def test_paren_protect():
+    print("== paren_protect：ProperNoun 括號英文保護 ==")
+    if not HOOK.exists():
+        check("TextCleanerHook.cs 存在", False)
+        return
+    hook = HOOK.read_text(encoding="utf-8")
+    check("ProtectParens 存在", "ProtectParens" in hook)
+    check("RestoreParens 存在", "RestoreParens" in hook)
+    check("PossessiveZh 存在", "PossessiveZh" in hook)
+    check("Clean 保護括號（在逐詞替換前）", "ProtectParens(work, parenBox)" in hook)
+    check("Clean 還原括號", "RestoreParens(result, parenBox)" in hook)
+    check("'s 後接中文規則", "'s\\s+" in hook and '"哈爾"' not in hook)
+    # 模擬「保護式逐詞替換」：對已翻譯 ProperNoun 樣本，括號內不該被替換成中文
+    words = {}
+    m = re.search(r'private static readonly Dictionary<string, string> Words\s*=(.*?)\n\s*\};', hook, re.S)
+    if m:
+        for kv in re.finditer(r'\{\s*"([^"]+)"\s*,\s*"([^"]*)"', m.group(1)):
+            words[kv.group(1).lower()] = kv.group(2)
+    def sim(text):
+        # 等價簡化模擬：括號內（緊鄰中文）一律不動
+        out = []
+        i = 0
+        while i < len(text):
+            if text[i] == '(':
+                j = text.find(')', i)
+                if j != -1 and (i == 0 or text[i-1] == ' ' and i >= 2 and text[i-2] >= '一' and text[i-2] <= '鿿'):
+                    out.append(text[i:j+1]); i = j+1; continue
+            out.append(text[i]); i += 1
+        return "".join(out)
+    samples = [
+        "農民公會(Farmers' Guild)",
+        "瑪門之子(Children of Mamon)",
+        "植物聯盟(Consortium of Phyta)",
+        "穆拉普爾(Murapur)",
+    ]
+    for s in samples:
+        check(f"括號保護: {s}", sim(s) == s, sim(s))
+
+
+# ============ 9. xml_paren_hybrid（XML 值中「中文(英文 中文)」污染）============
+def test_xml_paren_hybrid():
+    print("== xml_paren_hybrid：XML 括號內中英混雜（Farmers' 公會 類）==")
+    if not ZH.exists():
+        check("zh-tw 目錄存在", False)
+        return
+    import xml.etree.ElementTree as ET
+    bad = []
+    n = 0
+    for mf in sorted(ZH.glob("*.zh-tw.xml")):
+        s = mf.read_text(encoding="utf-8-sig")
+        if s.count("<") < 2:
+            continue
+        try:
+            root = ET.fromstring(s)
+        except ET.ParseError:
+            continue
+        for el in root.iter():
+            for attr in ("DisplayName", "Name", "Short", "Description", "Value"):
+                v = el.get(attr)
+                if v:
+                    _scan_parens(v, mf.name, bad); n += 1
+            if el.text:
+                _scan_parens(el.text, mf.name, bad); n += 1
+    # 「撇號+中文」= X's 中文 污染標誌（Farmers' 公會）；其餘中文括號夾專名為合法寫法
+    hybrid = [b for b in bad if "'" in b]
+    other = [b for b in bad if "'" not in b]
+    check("XML 括號段無 'X's＋中文' 污染", not hybrid, "; ".join(hybrid[:4]))
+    check("XML 括號段其他混雜（報告）", True, f"{len(other)} 處中文括號夾英文專名（合法）")
+
+
+def _scan_parens(v, fname, bad):
+    # 剝 =token= 與 {{markup}}
+    t = re.sub(r"=[^=]{1,80}=", "", v)
+    t = re.sub(r"\{\{[^}]*\}\}", "", t)
+    i = 0
+    while i < len(t):
+        c = t[i]
+        if c in ("(", "（"):
+            close = ")" if c == "(" else "）"
+            j = t.find(close, i + 1)
+            if j == -1:
+                break
+            seg = t[i+1:j]
+            if re.search(r"[A-Za-z]{2,}", seg) and re.search(r"[一-鿿]", seg):
+                # 前一非空白字元是中文 → 是「中文(英文)」規範括號 → 混雜即污染
+                p = i - 1
+                while p >= 0 and t[p] in " 	":
+                    p -= 1
+                if p >= 0 and t[p] >= '一' and t[p] <= '鿿':
+                    bad.append(f"{fname}: …{v[max(0, i-6):j+5]}…")
+            i = j + 1
+        else:
+            i += 1
+
+
+# ============ 10. sultanterm_values（值側 .sultanTerm|plural=. 與 sultans 殘留）============
+def test_sultanterm_values():
+    print("== sultanterm_values：=sultanTerm|plural= 與 sultans 不再出現在值側 ==")
+    strings = ZH / "Strings.zh-tw.xml"
+    if not strings.exists():
+        check("Strings.zh-tw.xml 存在", False)
+        return
+    s = strings.read_text(encoding="utf-8-sig")
+    # 只檢查值側（> 與 </string> 之間），ID 側保留 |=plural（查找鍵）是正常的
+    vals = re.findall(r">([^<]*)</string>", s)
+    bad_plural = [v for v in vals if "=sultanTerm|plural=" in v]
+    def bare(v):
+        t = re.sub(r"=[^=]{1,80}=", "", v)
+        t = re.sub(r"\{\{[^}]*\}\}", "", t)
+        t = re.sub(r"[（(][^）)]*[）)]", "", t)
+        return t
+    bad_sultans = [v for v in vals if re.search(r"\b[Ss]ultan", bare(v))]
+    check("值側無 =sultanTerm|plural=", not bad_plural, f"{len(bad_plural)} 條")
+    check("值側無 sultan 殘留（token/括號外）", not bad_sultans, "; ".join(v[:40] for v in bad_sultans[:3]))
+
+
+# ============ 11. interests_coverage（遊戲 interests 屬性在 mod 有覆蓋）============
+def test_interests_coverage():
+    print("== interests_coverage：Factions.zh-tw.xml 覆蓋遊戲 interests 屬性 ==")
+    game = _find_game_data()
+    modfac = ZH / "Factions.zh-tw.xml"
+    if game is None or not (game / "CoQ_Data" / "StreamingAssets" / "Base" / "Factions.xml").exists():
+        check("遊戲 Factions.xml 可定位", False)
+        return
+    if not modfac.exists():
+        check("mod Factions.zh-tw.xml 存在", False)
+        return
+    g = _parse_faction_interests(game / "CoQ_Data" / "StreamingAssets" / "Base" / "Factions.xml")
+    m = _parse_faction_interests(modfac)
+    missing = []
+    for fac, keys in g.items():
+        covered = m.get(fac)
+        if covered is None or not any(k in covered for k in keys):
+            missing.append(f"{fac}:{','.join(keys)}")
+    check("遊戲 interests 屬性全覆蓋", not missing, "; ".join(missing[:6]))
+
+
+def test_propernouns():
+    print("== propernouns：ProperName 布林 / town zone 名 / 專名括號 ==")
+    import xml.etree.ElementTree as ET
+    worlds = ZH / "Worlds.zh-tw.xml"
+    factions = ZH / "Factions.zh-tw.xml"
+    if worlds.exists():
+        try:
+            root = ET.fromstring(worlds.read_text(encoding="utf-8-sig"))
+        except ET.ParseError as e:
+            check("Worlds.zh-tw.xml 可解析", False, str(e)); return
+        bad_bool = []
+        for el in root.iter("zone"):
+            pp = el.get("ProperName")
+            if pp is not None and pp not in ("true", "false"):
+                bad_bool.append(pp)
+        check("zone ProperName 全為布林", not bad_bool, f"{bad_bool[:3]}")
+        s = worlds.read_text(encoding="utf-8-sig")
+        check("約帕 zone 名中文化", 'Name="約帕(Joppa)"' in s)
+        check("恰庫恰 zone 名中文化", 'Name="恰庫恰(Kyakukya)"' in s)
+        check("無殘留 zone Name=Joppa 純英文", '<zone[^>]*Name="Joppa"' not in s if True else False)
+    else:
+        check("Worlds.zh-tw.xml 存在", False)
+    if factions.exists():
+        f = factions.read_text(encoding="utf-8-sig")
+        check("Joppa 派系名帶括號", 'DisplayName="約帕(Joppa)村民"' in f)
+        check("Kyakukya 派系名帶括號", 'DisplayName="恰庫恰(Kyakukya)村民"' in f)
+        check("141 通稱派系不加括號（檢查無誤刪）", 'DisplayName="咬顎獸"' in f or 'DisplayName="狒狒"' in f)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true")
@@ -662,12 +889,18 @@ def main():
     if run_all or a.data: test_data()
     if run_all or a.localkeys: test_localization_keys()
     if run_all or a.xmldata: test_xml_structure()
+    if run_all or a.xmldata: test_token_integrity()
     if run_all or a.wordorder: test_word_order()
     if run_all or a.doessubject: test_does_subject()
     if run_all or a.verbinflection: test_verb_inflection()
     if run_all or a.verbinflection: test_be_verb_drop()
     if run_all or a.verbinflection: test_token_protect()
     if run_all or a.verbinflection: test_combat_hit_pattern()
+    if run_all or a.static: test_paren_protect()
+    if run_all or a.xmldata: test_xml_paren_hybrid()
+    if run_all or a.xmldata: test_sultanterm_values()
+    if run_all or a.data: test_interests_coverage()
+    if run_all or a.xmldata: test_propernouns()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 

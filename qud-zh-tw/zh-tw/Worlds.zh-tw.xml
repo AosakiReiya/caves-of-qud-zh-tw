@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud - Generated Localizable XML 2.0.212.29
 
@@ -28,10 +28,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="10" x="1" y="1" Load="Merge" Name="中庭" NameContext="移動者" />
     </cell>
     <cell Name="ShevaStarship" Load="Merge">
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="出埃及記" NameContext="星行者碼頭" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="出埃及記" NameContext="星行者碼頭" />
     </cell>
     <cell Name="ShevaStarCarousel" Load="Merge">
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="vqvtl 3" NameContext="星行者碼頭" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="vqvtl 3" NameContext="星行者碼頭" />
     </cell>
     <cell Name="Coda" Load="Merge">
       <zone Level="10" x="1" y="1" Load="Merge" Name="科達" />
@@ -63,9 +63,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <cell Name="YdFreeholdCell" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="伊德自由領上方的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="伊德自由領" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="伊德自由領" IndefiniteArticle="這" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="伊德自由領" IndefiniteArticle="這" />
       <zone Level="11-15" x="0-2" y="0-2" Load="Merge" Name="地下礁岩" />
-      <zone Level="11" x="1" y="1" Load="Merge" ProperName="真實" Name="伊德自由領" />
+      <zone Level="11" x="1" y="1" Load="Merge" ProperName="true" Name="伊德自由領" />
     </cell>
     <cell Name="MoonStairCell" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="月之階梯上方的天空" IndefiniteArticle="這" />
@@ -74,11 +74,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </cell>
     <cell Name="EynRojCell" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="恩羅傑上方的天空" IndefiniteArticle="這" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="恩羅傑" />
-      <zone Level="11-15" x="1" y="1" Load="Merge" ProperName="錯誤" Name="結晶根" />
-      <zone Level="16-40" x="1" y="1" Load="Merge" ProperName="錯誤" Name="結晶根" />
-      <zone Level="41-48" x="1" y="1" Load="Merge" ProperName="錯誤" Name="結晶根" />
-      <zone Level="49" x="1" y="1" Load="Merge" ProperName="錯誤" Name="結晶根" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="恩羅傑" />
+      <zone Level="11-15" x="1" y="1" Load="Merge" ProperName="false" Name="結晶根" />
+      <zone Level="16-40" x="1" y="1" Load="Merge" ProperName="false" Name="結晶根" />
+      <zone Level="41-48" x="1" y="1" Load="Merge" ProperName="false" Name="結晶根" />
+      <zone Level="49" x="1" y="1" Load="Merge" ProperName="false" Name="結晶根" />
     </cell>
     <cell Name="FlowerfieldCell" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="天空在花田之上" IndefiniteArticle="這" />
@@ -106,12 +106,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </cell>
     <cell Name="Fungal" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="彩虹之林上方的天空" IndefiniteArticle="這" />
-      <zone Level="10" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="彩虹之林" IndefiniteArticle="這" />
+      <zone Level="10" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="彩虹之林" IndefiniteArticle="這" />
       <zone Level="11-15" x="0-2" y="0-2" Load="Merge" Name="" NameContext="the 彩虹之林" />
     </cell>
     <cell Name="Fungal Outskirts" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="彩虹之林上方的天空" IndefiniteArticle="這" />
-      <zone Level="10" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="彩虹之林" IndefiniteArticle="這" />
+      <zone Level="10" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="彩虹之林" IndefiniteArticle="這" />
       <zone Level="11-15" x="0-2" y="0-2" Load="Merge" Name="" NameContext="the 彩虹之林" />
     </cell>
     <cell Name="DesertCanyon" Load="Merge">
@@ -137,17 +137,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <cell Name="SixDayStilt" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="高架地上的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="" NameContext="高架地" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="六日高蹺(Six Day Stilt)" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="六日高蹺(Six Day Stilt)" />
     </cell>
     <cell Name="Kyakukya" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="恰庫恰上方的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="恰庫恰(Kyakukya)" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="Kyakukya" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="恰庫恰(Kyakukya)" />
     </cell>
     <cell Name="Joppa" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="約帕之上的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="約帕(Joppa)" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="Joppa" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="約帕(Joppa)" />
       <zone Level="11" x="1" y="1" Load="Merge" Name="浸水的隧道" />
       <zone Level="12" x="1" y="1" Load="Merge" Name="浸水的隧道" />
       <zone Level="13" x="1" y="1" Load="Merge" Name="浸水的隧道" />
@@ -157,7 +157,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <cell Name="JoppaRuins" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="約帕之上的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="約帕(Joppa)" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="Joppa" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="約帕(Joppa)" />
       <zone Level="11" x="1" y="1" Load="Merge" Name="浸水的隧道" />
       <zone Level="12" x="1" y="1" Load="Merge" Name="浸水的隧道" />
       <zone Level="13" x="1" y="1" Load="Merge" Name="浸水的隧道" />
@@ -179,9 +179,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="12" x="1" y="0" Load="Merge" Name="下層隧道" NameContext="礫門(Grit Gate)" />
       <zone Level="12" x="1" y="1" Load="Merge" Name="下層隧道" NameContext="礫門(Grit Gate)" />
       <zone Level="13" x="1" y="1" Load="Merge" Name="入口層" NameContext="礫門(Grit Gate)" />
-      <zone Level="13" x="2" y="0" Load="Merge" ProperName="真實" Name="礫門(Grit Gate)" />
-      <zone Level="13" x="1" y="0" Load="Merge" ProperName="真實" Name="礫門(Grit Gate)" />
-      <zone Level="14" x="1" y="0" Load="Merge" ProperName="真實" Name="巴拉楚姆的 Study" NameContext="礫門(Grit Gate)" />
+      <zone Level="13" x="2" y="0" Load="Merge" ProperName="true" Name="礫門(Grit Gate)" />
+      <zone Level="13" x="1" y="0" Load="Merge" ProperName="true" Name="礫門(Grit Gate)" />
+      <zone Level="14" x="1" y="0" Load="Merge" ProperName="true" Name="巴拉楚姆的書房(Barathrum's Study)" NameContext="礫門(Grit Gate)" />
       <zone Level="15" x="1" y="0" Load="Merge" Name="下層隧道" NameContext="礫門(Grit Gate)" />
     </cell>
     <cell Name="Golgotha" Load="Merge">
@@ -189,7 +189,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="10" x="0-2" y="0-2" Load="Merge" NameContext="髑髏地(Golgotha)" />
       <zone Level="10" x="1" y="1" Load="Merge" NameContext="髑髏地(Golgotha)" />
       <zone Level="11-14" x="1" y="1" Load="Merge" Name="垃圾槽" NameContext="髑髏地(Golgotha)" />
-      <zone Level="15" x="1" y="1" Load="Merge" ProperName="真實" Name="泄殖腔" NameContext="髑髏地(Golgotha)" />
+      <zone Level="15" x="1" y="1" Load="Merge" ProperName="true" Name="泄殖腔" NameContext="髑髏地(Golgotha)" />
       <zone Level="16-20" x="1" y="1" Load="Merge" Name="地下洞窟" />
       <zone Level="21-30" x="1" y="1" Load="Merge" Name="地下洞窟" />
       <zone Level="31-40" x="1" y="1" Load="Merge" Name="地下洞窟" />
@@ -209,17 +209,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="15" x="0-2" y="0-2" Load="Merge" Name="中層豎井" NameContext="瀝青礦坑" />
       <zone Level="16-18" x="0-2" y="0-2" Load="Merge" Name="中層豎井" NameContext="瀝青礦坑" />
       <zone Level="19-22" x="0-2" y="0-2" Load="Merge" Name="深井" NameContext="瀝青礦坑" />
-      <zone Level="23-27" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="暗底 (Darkunder)" NameContext="瀝青礦坑" />
-      <zone Level="28" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="骸骨之城" NameContext="瀝青礦坑" />
-      <zone Level="29" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="大海 (Great Sea)" NameContext="瀝青礦坑" />
-      <zone Level="30-35" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="烏爾隧道" NameContext="瀝青礦坑" />
-      <zone Level="36-40" x="0-2" y="0-2" Load="Merge" ProperName="真實" Name="吞噬廣野" NameContext="瀝青礦坑" />
-      <zone Level="40" x="1" y="1" Load="Merge" ProperName="真實" Name="吞噬廣野" NameContext="瀝青礦坑" />
+      <zone Level="23-27" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="暗底(Darkunder)" NameContext="瀝青礦坑" />
+      <zone Level="28" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="骸骨之城" NameContext="瀝青礦坑" />
+      <zone Level="29" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="大海(Great Sea)" NameContext="瀝青礦坑" />
+      <zone Level="30-35" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="烏爾隧道" NameContext="瀝青礦坑" />
+      <zone Level="36-40" x="0-2" y="0-2" Load="Merge" ProperName="true" Name="吞噬廣野" NameContext="瀝青礦坑" />
+      <zone Level="40" x="1" y="1" Load="Merge" ProperName="true" Name="吞噬廣野" NameContext="瀝青礦坑" />
     </cell>
     <cell Name="Bethesda Susa" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="天空位於 貝賽達蘇薩(Bethesda Susa) 之上" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="貝賽達蘇薩(Bethesda Susa)" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="Bethesda Susa" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="11-26" x="1" y="1" Load="Merge" Name="隧道" NameContext="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="11" x="1" y="0" Load="Merge" Name="河流通道" NameContext="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="11" x="1" y="1" Load="Merge" Name="廢墟碼頭" NameContext="貝賽達蘇薩(Bethesda Susa)" />
@@ -234,9 +234,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="21" x="1" y="1" Load="Merge" Name="廢棄病房" NameContext="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="22" x="1" y="1" Load="Merge" Name="廢棄病房" NameContext="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="23" x="1" y="1" Load="Merge" Name="控制論病房" NameContext="貝賽達蘇薩(Bethesda Susa)" />
-      <zone Level="24" x="1" y="1" Load="Merge" ProperName="真實" Name="克萊巴里歐" NameContext="貝賽達蘇薩(Bethesda Susa)" />
-      <zone Level="25" x="1" y="1" Load="Merge" ProperName="真實" Name="克萊巴里歐" NameContext="貝賽達蘇薩(Bethesda Susa)" />
-      <zone Level="26" x="1" y="1" Load="Merge" ProperName="真實" Name="岩石神廟" NameContext="貝賽達蘇薩(Bethesda Susa)" />
+      <zone Level="24" x="1" y="1" Load="Merge" ProperName="true" Name="克萊巴里歐" NameContext="貝賽達蘇薩(Bethesda Susa)" />
+      <zone Level="25" x="1" y="1" Load="Merge" ProperName="true" Name="克萊巴里歐" NameContext="貝賽達蘇薩(Bethesda Susa)" />
+      <zone Level="26" x="1" y="1" Load="Merge" ProperName="true" Name="岩石神廟" NameContext="貝賽達蘇薩(Bethesda Susa)" />
       <zone Level="27-30" x="1" y="1" Load="Merge" Name="地下洞窟" />
       <zone Level="31-40" x="1" y="1" Load="Merge" Name="地下洞窟" />
       <zone Level="41-49" x="1" y="1" Load="Merge" Name="地下洞窟" />
@@ -320,12 +320,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="11-15" x="0-2" y="0-2" Load="Merge" Name="地底下的香蕉林" />
       <zone Level="10" x="1" y="0" Load="Merge" Name="前往雙門的遊戲廳" NameContext="歐蒙波奇(Omonporch)" />
       <zone Level="10" x="1" y="1" Load="Merge" Name="蘇丹朝廷" NameContext="歐蒙波奇(Omonporch)" />
-      <zone Level="10" x="0" y="0" Load="Merge" ProperName="真實" Name="以斯拉(Ezra)" />
+      <zone Level="10" x="0" y="0" Load="Merge" ProperName="true" Name="以斯拉(Ezra)" />
     </cell>
     <cell Name="Redrock" Load="Merge">
       <zone Level="5-9" x="0-2" y="0-2" Load="Merge" Name="紅岩上方的天空" IndefiniteArticle="這" />
       <zone Level="10" x="0-2" y="0-2" Load="Merge" Name="郊區" NameContext="紅岩" IndefiniteArticle="一些" />
-      <zone Level="10" x="1" y="1" Load="Merge" ProperName="真實" Name="紅岩" />
+      <zone Level="10" x="1" y="1" Load="Merge" ProperName="true" Name="紅岩" />
       <zone Level="11" x="1" y="1" Load="Merge" Name="" NameContext="紅岩" />
       <zone Level="12" x="1" y="1" Load="Merge" Name="" NameContext="紅岩" />
       <zone Level="13" x="1" y="1" Load="Merge" Name="" NameContext="紅岩" />

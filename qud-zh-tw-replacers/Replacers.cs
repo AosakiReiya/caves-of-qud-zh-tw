@@ -312,6 +312,13 @@ public static class ZhTwReplacers
         return r;
     }
 
+    // 「蘇丹」指稱詞（=sultanTerm= / =sultanTerm|plural=）：遊戲未實作本地化，默認輸出英文 sultan/sultans
+    [VariableReplacer(new string[] { "sultanTerm", "sultanterm" }, Default = "蘇丹", Capitalization = true, Override = true)]
+    public static string SultanTerm(VariableContext context, GenderedNoun noun)
+    {
+        return "蘇丹";
+    }
+
     // ============ 代名詞（GameObject 上下文，處理 his/its/their 等） ============
 
     [VariableReplacer(new string[] { "possessive", "their", "its", "possessiveAdjective" }, Default = "它的", Capitalization = true, Override = true)]

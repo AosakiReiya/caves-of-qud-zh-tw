@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud - Generated Localizable XML 2.0.212.29
 
@@ -21,9 +21,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 -->
 <factions Lang="zh-tw" Encoding="utf-8">
   <faction Name="Prey" DisplayName="放牧享樂主義者" />
-  <faction Name="Joppa" DisplayName="約帕村民" FormatWithArticle="true" />
-  <faction Name="Kyakukya" DisplayName="恰庫恰村民" FormatWithArticle="true" />
-  <faction Name="Ezra" DisplayName="艾茲拉村民" FormatWithArticle="true" />
+  <faction Name="Joppa" DisplayName="約帕(Joppa)村民" FormatWithArticle="true" />
+  <faction Name="Kyakukya" DisplayName="恰庫恰(Kyakukya)村民" FormatWithArticle="true" />
+  <faction Name="Ezra" DisplayName="艾茲拉(Ezra)村民" FormatWithArticle="true" />
   <faction Name="Snapjaws" DisplayName="咬顎獸" />
   <faction Name="Baboons" DisplayName="狒狒" />
   <faction Name="Apes" DisplayName="猿猴" />
@@ -60,20 +60,28 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Goatfolk" DisplayName="山羊族" />
   <faction Name="Hermits" DisplayName="隱士" />
   <faction Name="Frogs" DisplayName="青蛙" />
-  <faction Name="Svardym" DisplayName="斯瓦迪姆">
+  <faction Name="Svardym" DisplayName="斯瓦迪姆(Svardym)">
     <interests>
       <interest Tags="gyreplagues" WillBuy="false" WillSell="true" Description="環流的瘟疫" />
     </interests>
   </faction>
-  <faction Name="Naphtaali" DisplayName="納夫塔利部落" FormatWithArticle="true" Plural="false" />
+  <faction Name="Naphtaali" DisplayName="納夫塔利(Naphtaali)部落" FormatWithArticle="true" Plural="false" />
   <faction Name="Trolls" DisplayName="巨魔" />
-  <faction Name="Issachari" DisplayName="伊薩查部落" FormatWithArticle="true" Plural="false" />
+  <faction Name="Issachari" DisplayName="伊薩查(Issachari)部落" FormatWithArticle="true" Plural="false" />
   <faction Name="Strangers" DisplayName="神秘陌生人" />
-  <faction Name="Pariahs" DisplayName="賤民" />
-  <faction Name="Hindren" DisplayName="貝拉的希德倫人" FormatWithArticle="true" />
+  <faction Name="Pariahs" DisplayName="賤民">
+    <interests BuyDescription=" 對建造新社會所需的資源感興趣：">
+      <interest Tags="water,weep" WillBuy="true" WillSell="false" />
+      <interest Tags="recipe" WillBuy="true" WillSell="false" />
+      <interest Tags="tech" WillBuy="true" WillSell="false" />
+      <interest Tags="settlement" WillBuy="false" WillSell="true" />
+      <interest Tags="gossip" WillBuy="false" WillSell="true" />
+    </interests>
+  </faction>
+  <faction Name="Hindren" DisplayName="貝拉的希德倫人(Bey Lah hindren)" FormatWithArticle="true" />
   <faction Name="Mopango" DisplayName="莫龐戈(Mopango)" FormatWithArticle="true" />
-  <faction Name="Girsh" DisplayName="吉爾什" FormatWithArticle="true" />
-  <faction Name="Barathrumites" DisplayName="巴拉楚姆信徒" FormatWithArticle="true">
+  <faction Name="Girsh" DisplayName="吉爾什(Girsh)" FormatWithArticle="true" />
+  <faction Name="Barathrumites" DisplayName="巴拉楚姆信徒(Barathrumites)" FormatWithArticle="true">
     <ranks>
       <rank Name="apprentice" DisplayName="學徒" />
       <rank Name="journeyfriend" DisplayName="旅伴" />
@@ -82,17 +90,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </ranks>
   </faction>
   <faction Name="Consortium" DisplayName="植物聯盟(Consortium of Phyta)" FormatWithArticle="true" Plural="false" />
-  <faction Name="Templar" DisplayName="普圖斯聖騎士" FormatWithArticle="true">
+  <faction Name="Templar" DisplayName="普圖斯聖騎士(Putus Templar)" FormatWithArticle="true">
     <interests>
       <interest Tags="ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="現代世界" />
     </interests>
   </faction>
-  <faction Name="Mechanimists" DisplayName="機械主義者" FormatWithArticle="true" />
-  <faction Name="Gyre Wights" DisplayName="渦流亡靈" FormatWithArticle="true" />
+  <faction Name="Mechanimists" DisplayName="機械主義者(Mechanimists)" FormatWithArticle="true" />
+  <faction Name="Gyre Wights" DisplayName="渦流亡靈(Gyre Wights)" FormatWithArticle="true" />
   <faction Name="Mamon" DisplayName="瑪門之子(Children of Mamon)" FormatWithArticle="true" />
-  <faction Name="Seekers" DisplayName="盲道尋求者" FormatWithArticle="true" />
-  <faction Name="Wardens" DisplayName="守護者同盟" FormatWithArticle="true" Plural="false" />
-  <faction Name="Water" DisplayName="水霸" />
+  <faction Name="Seekers" DisplayName="盲道尋求者(Seekers of the Sightless Way)" FormatWithArticle="true" />
+  <faction Name="Wardens" DisplayName="守護者同盟(Fellowship of Wardens)" FormatWithArticle="true" Plural="false" />
+  <faction Name="Water" DisplayName="水霸(water barons)" />
   <faction Name="Flowers" DisplayName="花朵" />
   <faction Name="Roots" DisplayName="根系" />
   <faction Name="Fungi" DisplayName="真菌" />
@@ -102,8 +110,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <faction Name="Trees" DisplayName="樹木" />
   <faction Name="Merchants" DisplayName="商人公會(Merchants' Guild)" FormatWithArticle="true" Plural="false" />
   <faction Name="Farmers" DisplayName="農民公會(Farmers' Guild)" FormatWithArticle="true" Plural="false" />
-  <faction Name="Resheph" DisplayName="捲曲羔羊教派" FormatWithArticle="true" Plural="false" />
-  <faction Name="Daughters" DisplayName="流亡之女" FormatWithArticle="true" Plural="true" />
-  <faction Name="YdFreehold" DisplayName="伊德自由領居民" FormatWithArticle="true" />
+  <faction Name="Resheph" DisplayName="捲曲羔羊教派(Cult of the Coiled Lamb)" FormatWithArticle="true" Plural="false" />
+  <faction Name="Daughters" DisplayName="流亡之女(Daughters of Exile)" FormatWithArticle="true" Plural="true" />
+  <faction Name="YdFreehold" DisplayName="伊德自由領居民(denizens of the Yd Freehold)" FormatWithArticle="true" />
   <faction Name="Chavvah" DisplayName="夏瓦(Chavvah)，生命之樹" FormatWithArticle="false" Plural="false" />
 </factions>

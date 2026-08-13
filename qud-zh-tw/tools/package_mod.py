@@ -23,6 +23,8 @@ from pathlib import Path
 PROJECT = Path(__file__).resolve().parents[1]
 SRC = PROJECT / "zh-tw"
 OUT = PROJECT / "release" / "qud-zh-tw"
+REPL_SRC = PROJECT.parent / "qud-zh-tw-replacers"   # 兄弟的 replacers mod
+OUT_REPL = PROJECT / "release" / "qud-zh-tw-replacers"
 
 
 def validate() -> list[str]:
@@ -72,12 +74,28 @@ def main() -> None:
         print(f"  複製 spice 覆寫檔: {Path(f).name}")
     print(f"已打包至 {OUT}")
 
+    # ---- replacers mod（動態文字 C#）----
+    if REPL_SRC.exists():
+        if OUT_REPL.exists():
+            shutil.rmtree(OUT_REPL)
+        OUT_REPL.mkdir(parents=True)
+        n = 0
+        for glob2 in ("*.cs", "manifest.json", "README.txt"):
+            for f in sorted(glob.glob(str(REPL_SRC / glob2))):
+                shutil.copy(f, OUT_REPL / Path(f).name)
+                n += 1
+        print(f"已打包 replacers mod 至 {OUT_REPL}（{n} 檔）—— 發布時必須一起安裝！")
+    else:
+        print("[警告] 找不到 replacers mod 目錄，只打包 data mod。")
+
     if args.zip:
         zip_path = PROJECT / "release" / "qud-zh-tw.zip"
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
             for f in OUT.rglob("*"):
                 z.write(f, f.relative_to(PROJECT / "release"))
-        print(f"已產生 {zip_path}")
+            for f in OUT_REPL.rglob("*"):
+                z.write(f, f.relative_to(PROJECT / "release"))
+        print(f"已產生 {zip_path}（含 qud-zh-tw/ 與 qud-zh-tw-replacers/ 兩個 mod）")
 
 
 if __name__ == "__main__":
