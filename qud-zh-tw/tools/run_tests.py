@@ -468,6 +468,10 @@ def test_pipeline():
         ("你 擊中 (x2) for 3 damage with your 青銅匕首 [16]", "用 青銅匕首", "你的"),
         # ==== TMP 顯示層（技能頁面/聲望句）====
         ("10 Agility", "10 敏捷", "Agility"),
+        ("Worn on Hands", "穿戴在手", None),
+        ("Left Missile Weapon", "左側遠程武器欄", None),
+        ("Forefeet", "前足", "Forefeet"),
+        ("Floating nearby", "漂浮物", "Floating"),
         ("19 Strength", "19 力量", "Strength"),
         ("{{C|10}} {{|Agility}}", "{{|敏捷}}", "Agility"),
         ("Dismember", "肢解", "Dismember"),
@@ -526,7 +530,7 @@ def test_pipeline():
         ("你必須等待 99 rounds 回合。", "99 回合", "rounds"),
     ]
     for inp, must, must_not in cases:
-        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>"):
+        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>", "穿戴在手", "左側遠程武器欄", "前足", "漂浮物"):
             out = _tmp_process(inp, words, phrases)
         else:
             out = _to_string_process(inp, words, phrases)
