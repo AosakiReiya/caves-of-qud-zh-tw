@@ -225,15 +225,25 @@ def _sim_protect_parens(text):
 def _clean(text, words, phrases):
     hasEng, hasCjk = _scan_lang(text)
     if not (hasEng and hasCjk): return text
+    # 括號短語（(Full) 類，表 key 以 （/( 開頭）先替換（不受輸入括號保護影響）
+    for k in sorted(phrases, key=len, reverse=True):
+        if k.startswith('(') or k.startswith('（'):
+            text = re.sub(r'(?i)' + re.escape(k), phrases[k], text)
+    # 輸入「中文(English)」括號先保護（防 Phrase/TmpWords 把括號內英文再包層）
+    text, box1 = _sim_protect_parens(text)
     # PhraseRegex 先（整句/詞組；與 C# Clean 順序一致）
     for k in sorted(phrases, key=len, reverse=True):
+        if k.startswith('(') or k.startswith('（'):
+            continue
         text = re.sub(r'(?i)' + re.escape(k), phrases[k], text)
     # Phrase 產生的「中文(English)」括號保護（避免 Words 逐詞污染括號英文）
-    text, paren_box = _sim_protect_parens(text)
+    text, box2 = _sim_protect_parens(text)
     # WordsRegex 後（整詞）；Python 要求 (?i) 在開頭（C# 可 `\b(?i)`）
     for k in sorted(words, key=len, reverse=True):
         text = re.sub(r'(?i)\b' + re.escape(k) + r'\b', words[k], text)
-    for idx, seg in enumerate(paren_box):
+    for idx, seg in enumerate(box2):
+        text = text.replace('\x02' + str(idx) + '\x02', seg)
+    for idx, seg in enumerate(box1):
         text = text.replace('\x02' + str(idx) + '\x02', seg)
     return text
 
@@ -441,6 +451,10 @@ def test_pipeline():
         ("[200sp] 25 敏捷, Draw a Bead, Wounding Fire", "繪製珠飾", "Draw"),
         ("[150sp] 19 敏捷, Sure Fire", "萬無一失(Sure Fire)", "Sure 火焰"),
         ("[200sp] 25 敏捷, Disorienting Fire", "令人迷失方向的火焰(Disorienting Fire)", "Disorienting 火焰"),
+        # ==== 括號嵌套防回歸（管道值自帶「中文(English)」不得再包層）====
+        ("收穫術(Harvestry)", "收穫術(Harvestry)", "收穫術(收穫術"),
+        ("反作用力(Kickback) [50sp] 19 力量", "反作用力(Kickback)", "反作用力(反作用力"),
+        ("閃躲(Juke) [200sp] 21 敏捷", "閃躲(Juke)", "閃躲(閃躲"),
     ]
     for inp, must, must_not in cases:
         if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈"):

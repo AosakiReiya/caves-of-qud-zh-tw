@@ -571,6 +571,20 @@ public static class ZhTwTextCleaner
         return PhraseLeaks.TryGetValue(m.Value, out v) ? v : m.Value;
     }
 
+    private static readonly Regex ParenPhraseRegex = BuildParenPhraseRegex();
+    private static Regex BuildParenPhraseRegex()
+    {
+        var keys = new List<string>();
+        foreach (var k in PhraseLeaks.Keys)
+            if (k.StartsWith("(") || k.StartsWith("（"))
+                keys.Add(k);
+        keys.Sort((a, b) => b.Length.CompareTo(a.Length));
+        var parts = new List<string>();
+        foreach (var k in keys)
+            parts.Add("(?i)" + Regex.Escape(k));
+        return new Regex("(?i)(?:" + string.Join("|", parts) + ")", RegexOptions.Compiled);
+    }
+
     private static readonly Regex WordsRegex = BuildWordsRegex();
 
     private static Regex BuildWordsRegex()
@@ -781,14 +795,21 @@ public static class ZhTwTextCleaner
         var tokenBox = new List<string>();
         string work = ProtectTokens(text, tokenBox);
 
+        // 括號短語（(Full)/(Empty) 等表值：key 以括號開頭）先替換——不受輸入括號保護影響
+        work = ParenPhraseRegex.Replace(work, new MatchEvaluator(PhraseMatch));
+
+        // 第一次括號保護：輸入本身若是「中文(English)」（如技能顯示名反作用力(Kickback)），
+        // 括號英文立即保護，避免 PhraseRegex 把括號內的 Kickback 再包裹成雙層括號
+        var parenBox = new List<string>();
+        work = ProtectParens(work, parenBox);
+
         // spice/歷史生成整句漏翻（執行期補翻）
         // 先處理整句，避免逐詞替換（Words/Verbs）先把句子拆碎而匹配不到完整句
         string result = PhraseRegex.Replace(work, new MatchEvaluator(PhraseMatch));
         // 「to 動詞原形」→ 中文（先處理，避免 to 被單獨處理）
         result = ToVerb.Replace(result, new MatchEvaluator(ToVerbMatch));
-        // 保護「中文(English)」括號（在整句/詞組替換「產生」括號之後、逐詞之前再保護，
-        // 避免 PhraseLeaks 輸出「中文(English)」的括號英文被 Words 逐詞污染）
-        var parenBox = new List<string>();
+        // 第二次括號保護：PhraseLeaks 輸出「中文(English)」的括號英文再保護，
+        // 避免被 Words 逐詞污染（萬無一失(Sure Fire) → Sure 火焰 那類）
         result = ProtectParens(result, parenBox);
 
         result = LeadingArticle.Replace(result, "");
@@ -956,17 +977,21 @@ public static class ZhTwTextCleaner
         string zh;
         string trimmed = text.Trim();
         if (TmpWords.TryGetValue(trimmed, out zh)) return zh;
+        // 保護「中文(English)」括號：表值可能自帶括號（收穫術(Harvestry)），
+        // 若不保護，括號內英文會被下一輪查表再包一層（雙重括號）
+        var parenBox = new List<string>();
+        text = ProtectParens(text, parenBox);
         string r = text;
         // 多詞技能名優先（整詞邊界，避免被單詞拆散）
         foreach (var kv in TmpWords)
         {
             if (kv.Key.IndexOf(' ') > 0)
             {
-                r = Regex.Replace(r, "\b" + Regex.Escape(kv.Key) + "\b", kv.Value);
+                r = Regex.Replace(r, @"\b" + Regex.Escape(kv.Key) + @"\b", kv.Value);
             }
         }
         // 單詞級：只替換白名單/常規字典中的英文單詞（整詞邊界），保留數字/markup/已譯中文
-        r = Regex.Replace(r, "\b[A-Za-z][A-Za-z]*\b", delegate(Match m)
+        r = Regex.Replace(r, @"\b[A-Za-z][A-Za-z]*\b", delegate(Match m)
         {
             string w = m.Value;
             string t;
@@ -974,6 +999,7 @@ public static class ZhTwTextCleaner
             t = TranslateWord(w);
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
+        r = RestoreParens(r, parenBox);
         return r;
     }
 
