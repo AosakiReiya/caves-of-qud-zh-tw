@@ -1944,6 +1944,17 @@ public static class ZhTwTextCleaner
         @"(?<![\u4e00-\u9fff(\uFF08])(雷舍夫|雷斯嘿芙|雷谢夫|穆拉普爾|塔徹萬|馬佐皮爾)(?![\u4e00-\u9fff(\uFF08\s]*[\u0028\uFF08])",
         RegexOptions.Compiled);
 
+
+    // 剝除孤獨尾括號（2026-08-14）：若「(」之後到文末不含任何英文字母/數字
+    // （如「兩棲的(」「You need to reload! (」）→ 刪除該「(」；
+    // 「(Hands)」「(2)」「( 內容」等有內容括號一律保留，避免誤刪。
+    private static readonly Regex LoneParen = new Regex(
+        @"\(?=\s*$)", RegexOptions.Compiled);
+    private static string StripLoneParen(string text)
+    {
+        if (text == null || text.IndexOf('(') < 0) return text;
+        return LoneParen.Replace(text, "");
+    }
     private static string CleanNames(string text)
     {
         // 只在「中英混雜」時處理；純英文句與純中文句不做
@@ -2019,14 +2030,8 @@ public static class ZhTwTextCleaner
         result = RestoreTokens(result, tokenBox);
         // 還原 ProperNoun 括號英文
         result = RestoreParens(result, parenBox);
-        // 尾部殘「(」（dll 官方字串以 ( 結尾＋後綴拼接）→ 中文/空白前不留裸「(」
-        int tailParen = result.Length - 1;
-        while (tailParen >= 0 && result[tailParen] == ' ') tailParen--;
-        if (tailParen >= 0 && result[tailParen] == '(' &&
-            (tailParen == 0 || !((result[tailParen - 1] >= 'a' && result[tailParen - 1] <= 'z') ||
-                                  (result[tailParen - 1] >= 'A' && result[tailParen - 1] <= 'Z') ||
-                                  (result[tailParen - 1] >= '0' && result[tailParen - 1] <= '9'))))
-            result = result.Substring(0, tailParen).TrimEnd() + (result.Length > tailParen ? "" : "");
+        // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
+        result = StripLoneParen(result);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -2080,6 +2085,14 @@ public static class ZhTwTextCleaner
             { "Menacing Stare", "威嚇凝視" }, { "Steady Hands", "穩手" },
             { "Make Camp", "紮營" }, { "Mind's Compass", "心靈羅盤" },
             // 2026-08-13 補：全技能/技能樹名（遊戲短文本 TMP 路徑漏詞）
+            { "Amphibious", "兩棲的" },
+            { "Flight", "飛行" },
+            { "reload", "重新裝填" },
+            { "need to ", "需要 " },
+            { "out of range", "超出範圍" },
+            { "That is out of range! ", "那超出範圍！" },
+            { "You need to reload! ", "你需要重新裝填！" },
+            { "reload! ", "重新裝填！" },
             { "spend a turn ", "花費一回合 " },
             { "Move Speed", "移動速度" },
             { "lying on ", "躺在" },
@@ -2208,6 +2221,7 @@ public static class ZhTwTextCleaner
             t = TranslateWord(w);
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
+        r = StripLoneParen(r);
         return r;
     }
 

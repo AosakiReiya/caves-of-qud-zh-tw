@@ -407,6 +407,7 @@ def _to_string_process(text, words, phrases):
             if t2 != out:
                 out = t2
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
+        out = re.sub(r"[(](?=\s*$)", "", out)
         return _restore_markup(out, box)
     out = _clean(_status_fragments(masked), words, phrases)
     return _restore_markup(out, box)
@@ -424,6 +425,7 @@ def _tmp_process(text, words, phrases):
         out = _clean(t, words, phrases)
     if _has_cjk_scan(out):
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
+    out = re.sub(r"[(](?=\s*$)", "", out)
     return out
 
 
@@ -1357,6 +1359,12 @@ def test_template_end_to_end():
         ("I'm looking for work.","找工作"),
         ("Read's trade","瑞德"),
         ("Read's trade","的"),
+        ("Amphibious(","兩棲的"),
+        ("You need to reload! (","重新裝填"),
+        ("That is out of range! (","範圍"),
+        ("Freezing Ray (Hands)","手部"),
+        ("Ice Frog (2)","(2)"),
+        ("Amphibious (Flight)","(飛行)"),
     ]
     bad=[]
     for src_t,key in samples:
@@ -1365,6 +1373,9 @@ def test_template_end_to_end():
             bad.append(f"缺關鍵詞[{key}]:{src_t[:30]}->{outs[0][:44]}")
         if key=="的" and any("'s" in o for o in outs):
             bad.append(f"'s未轉:{src_t[:30]}->{outs[0][:44]}")
+        import re as _re2
+        if any(_re2.search(r"[(](?=\s*$)", o) for o in outs):
+            bad.append(f"孤獨尾括殘:{src_t[:30]}->{outs[0][:44]}")
     check("端到端模板樣例（'s/R|/語序殘為0）", not bad, "; ".join(bad[:4]))
 
 def test_blueprint_paren_style():
@@ -1372,6 +1383,8 @@ def test_blueprint_paren_style():
     items=(ZH/"Items.zh-tw.xml").read_text(encoding="utf-8-sig")
     gapf=ROOT/"qud_items_p2_3.txt"
     targets=set(gapf.read_text(encoding="utf-8").split()) if gapf.exists() else None
+    commonf=ROOT/"common_blueprint_names.txt"
+    common=set(commonf.read_text(encoding="utf-8").split()) if commonf.exists() else set()
     bad=[]
     for m in re.finditer(r'<object Name="([^"]+)" Load="Merge">\s*<part Name="Render" DisplayName="([^"]+)"', items):
         name,zh=m.group(1),m.group(2)
@@ -1379,7 +1392,8 @@ def test_blueprint_paren_style():
             continue
         if name.startswith("Tutorial") and "教學" in zh:
             bad.append("教學前綴:"+name)
-        if len(zh)>3 and "(" not in zh and name not in ("Light Torch","Projectile","Mace2","Steel War Hammer","Steel War Hammerth","Steel Hammer","Iron","Rubber","Titanium","Chromium","Ceramic","Electro","Addle","Hooks","Fist","Grenade","Shell","Cinder","Cyclopean","Editor","Core","Cable","Plug","Vent","Grate","Pipe","Valve","Leather","Cloth","Cotton","Wool","Linen","Burlap","Sack","Waterskin","Backpack","Vest","Gloves","Boots","Helmet","Cloak","Amulet","Ring","Bracelet"):
+        base = re.sub(r"^(Large|Medium|Small|Big|Little|Giant|Tiny|Half|Full|Over|Under)", "", name.lower())
+        if base not in common and name.lower() not in common and "(" not in zh and zh != name:
             bad.append("缺括註:"+name)
     check("藍圖名風格（非常見名含(英文)、無教學前綴）", not bad, "; ".join(bad[:5]))
 
