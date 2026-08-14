@@ -3565,9 +3565,9 @@ alone if no match found.
  <string Context="Liquid Volume - Water container sorting placeholder" ID="Water Containers">盛水容器</string>
  <string Context="Liquid Volume - Pool swimming depth adjective" ID="deep" OrderAdjust="0">深處</string>
  <string Context="Liquid Volume - Base name replace, less than wading depth" ID="puddle">水窪</string>
- <string Context="Liquid Volume - Description Tag (empty, sealed, nocolor)" ID="[empty, sealed]" OrderAdjust="-5">[空白，已密封]</string>
+ <string Context="Liquid Volume - Description Tag (empty, sealed, nocolor)" ID="[empty, sealed]" OrderAdjust="-5">[空，已密封]</string>
  <string Context="Liquid Volume - Description Tag (empty, sealed)" ID="{{y|[{{K|empty, {{c|sealed}}}}]}}" OrderAdjust="-5">{{y|[{{K|空，{{c|密封}}}}]}}</string>
- <string Context="Liquid Volume - Description Tag (empty, nocolor)" ID="[empty]" OrderAdjust="-5">[空白]</string>
+ <string Context="Liquid Volume - Description Tag (empty, nocolor)" ID="[empty]" OrderAdjust="-5">[空]</string>
  <string Context="Liquid Volume - Description Tag (empty)" ID="{{y|[{{K|empty}}]}}" OrderAdjust="-5">{{y|[{{K|空白}}]}}</string>
  <string Context="Liquid Volume - Description Tag (sealed, nocolor)" ID="[sealed]" OrderAdjust="-5">[已封印]</string>
  <string Context="Liquid Volume - Description Tag (sealed)" ID="{{y|[{{c|sealed}}]}}" OrderAdjust="-5">{{y|[{{c|已封印}}]}}</string>
@@ -3759,7 +3759,7 @@ alone if no match found.
  <string Context="EnergyAmmoLoader SupplyWithCell CannotTake" ID="=subject.the.name= cannot take =cell.the.name=.">=subject.the.name= 無法取得 =cell.the.name=。</string>
  <string Context="LiquidAmmoLoader NameForStatus TechScanning" ID="LiquidProjector">液體投影儀</string>
  <string Context="LiquidAmmoLoader OutOfLiquid Color" ID="[{{=color=|empty}}]">[{{=color=|空白}}]</string>
- <string Context="LiquidAmmoLoader OutOfLiquid NoColor" ID="[empty]">[空白]</string>
+ <string Context="LiquidAmmoLoader OutOfLiquid NoColor" ID="[empty]">[空]</string>
  <string Context="LiquidAmmoLoader PureLiquid" ID="[=amount|color#amountColor=]">[=amount|color#amountColor=]</string>
  <string Context="LiquidAmmoLoader ImpureLiquid Color" ID="[{{=color=|?}}]">[{{=color=|?}}]</string>
  <string Context="LiquidAmmoLoader ImpureLiquid NoColor" ID="[?]">[?]</string>
@@ -3943,7 +3943,7 @@ alone if no match found.
  <string Context="ModLanterned Description" ID="Lanterned: This item provides light.">提燈：此物品提供光源。</string>
  <string Context="ModLiquidCooled Techscanning NameForStatus" ID="CoolantSystem">冷卻系統</string>
  <string Context="ModLiquidCooled Empty Colorful Volume" ID=" [{{=color=|empty}}]" Value="[{{=color=|空}}]" />
- <string Context="ModLiquidCooled Empty Colorless Volume" ID=" [empty]" Value="[空白]" />
+ <string Context="ModLiquidCooled Empty Colorless Volume" ID=" [empty]" Value="[空]" />
  <string Context="ModLiquidCooled Colorful Volume" ID=" [{{=color=|=amount=}}]" Value=" [{{=color=|=amount=}}]" />
  <string Context="ModLiquidCooled Colorless Volume" ID=" [=amount=]" Value="[=amount=]" />
  <string Context="ModLiquidCooled NonPure Colorful Volume" ID=" [{{=color=|?}}]" Value="[{{=color=|?}}]" />

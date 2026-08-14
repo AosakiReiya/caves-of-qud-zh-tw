@@ -20,7 +20,7 @@ run_tests.py — 繁中漢化防回歸測試套件。
   python3 tools/run_tests.py --data     # 只跑 data
 """
 import argparse
-import re, glob
+import re, glob, json
 import sys
 from pathlib import Path
 import os
@@ -1385,6 +1385,8 @@ def test_blueprint_paren_style():
     targets=set(gapf.read_text(encoding="utf-8").split()) if gapf.exists() else None
     commonf=ROOT/"common_blueprint_names.txt"
     common=set(commonf.read_text(encoding="utf-8").split()) if commonf.exists() else set()
+    realf=ROOT/"blueprint_realnames.json"
+    real=json.loads(realf.read_text(encoding="utf-8")) if realf.exists() else {}
     bad=[]
     for m in re.finditer(r'<object Name="([^"]+)" Load="Merge">\s*<part Name="Render" DisplayName="([^"]+)"', items):
         name,zh=m.group(1),m.group(2)
@@ -1392,8 +1394,14 @@ def test_blueprint_paren_style():
             continue
         if name.startswith("Tutorial") and "教學" in zh:
             bad.append("教學前綴:"+name)
-        if name.startswith("Tutorial") and ("("+name in zh or name+")" in zh):
-            bad.append("藍圖ID殘:"+name)
+        # 藍圖 ID 殘：括註內容 = 藍圖 Name（Camel 原樣）且 != 真名對照表
+        m2=re.search(r"\(([^\)]+)\)\s*$", zh)
+        if m2:
+            pc=m2.group(1)
+            if pc.replace(" ","").lower()==name.replace(" ","").lower():
+                realn=real.get(name,"")
+                if realn and pc.lower()!=realn.lower():
+                    bad.append(f"藍圖ID殘:{name}->({pc})真名({realn})")
         base = re.sub(r"^(Large|Medium|Small|Big|Little|Giant|Tiny|Half|Full|Over|Under)", "", name.lower())
         if base not in common and name.lower() not in common and "(" not in zh and zh != name:
             bad.append("缺括註:"+name)
