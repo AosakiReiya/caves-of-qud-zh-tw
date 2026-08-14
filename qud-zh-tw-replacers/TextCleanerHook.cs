@@ -55,7 +55,17 @@ public static class ZhTwTextCleaner
         {
             int idx;
             if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < box.Count)
-                return box[idx];
+            {
+                string seg = box[idx];
+                string zh;
+                string inner = seg.Trim();
+                if (inner.Length >= 2 && inner[0] == '(' && inner[inner.Length - 1] == ')')
+                {
+                    string core = inner.Substring(1, inner.Length - 2).Trim();
+                    if (TmpWords.TryGetValue(core, out zh)) return "(" + zh + ")";
+                }
+                return seg;
+            }
             return m.Value;
         });
     }
@@ -108,12 +118,15 @@ public static class ZhTwTextCleaner
             { "doesn't", "不" }, { "isn't", "不是" }, { "aren't", "不是" },
             { "ones", "那些" }, { "its", "它的" }, { "their", "他們的" },
         };
+    // 專名括號尾 's（如 (Read)'s 交易 → (Read)的）後接中文轉「的」
+    private static readonly Regex PossessiveZh2 = new Regex(
+        @"'s(?=\s*[\u4e00-\u9fff])", RegexOptions.Compiled);
 
     // 常見生成句動詞（3 人稱單數形）→ 中文。多義詞以「動詞義」優先（如 pets）
     private static readonly Dictionary<string, string> Verbs =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
-            { "pets", "撫摸" }, { "petted", "撫摸" }, { "glows", "發光" }, { "glowed", "發光" },
+            { "pets", "撫摸" }, { "penetrate", "穿透" }, { "penetrates", "穿透" }, { "penetrated", "穿透了" }, { "petted", "撫摸" }, { "glows", "發光" }, { "glowed", "發光" },
             { "starts", "開始" }, { "started", "開始" }, { "roars", "怒吼" }, { "roared", "怒吼" },
             { "bites", "咬" }, { "bit", "咬了" }, { "attacks", "攻擊" }, { "attacked", "攻擊了" },
             { "hits", "擊中" }, { "hit", "擊中" }, { "kills", "擊殺" }, { "killed", "擊殺了" },
@@ -262,7 +275,7 @@ public static class ZhTwTextCleaner
             { "gained", "已獲得" }, { "gather", "收集" }, { "gold", "黃金" }, { "grain", "穀物" },
             { "guard", "守衛" }, { "guild", "公會" }, { "hammer", "錘子" }, { "heal", "治療" },
             { "healer", "治療者" }, { "health", "生命值" }, { "heart", "心臟" }, { "herb", "草藥" },
-            { "honey", "蜂蜜" }, { "horn", "角" }, { "house", "房屋" }, { "hunt", "狩獵" },
+            { "frozen", "凍結" }, { "honey", "蜂蜜" }, { "horn", "角" }, { "house", "房屋" }, { "hunt", "狩獵" },
             { "hunter", "獵人" }, { "increased", "已提升" }, { "iron", "鐵" }, { "journey", "旅程" },
             { "key", "鑰匙" }, { "kill", "擊殺" }, { "king", "國王" }, { "knight", "騎士" },
             { "lady", "女士" }, { "leaf", "葉子" }, { "learn", "學習" }, { "learned", "已習得" },
@@ -1726,6 +1739,21 @@ public static class ZhTwTextCleaner
             { "from %t tiny spines!", "死於 %t 的細小棘刺！" },
             { "from being slammed into a wall by %t charge!", "死於被 %t 撞擊拋向牆壁！" },
             { "from the cumulative trauma of %t mental assault!", "死於 %t 心靈攻擊的累積創傷！" },
+            { "lying on ", "躺在" },
+            { "lying on the ", "躺在" },
+            { "spend a turn ", "花費一回合 " },
+            { "spend a turn", "花費一回合" },
+            { "a turn.", "一回合。" },
+            { "to stand up", "起身" },
+            { "Move Speed", "移動速度" },
+            { "looking for ", "尋找" },
+            { "looking for work", "找工作" },
+            { "Mind the crocs.", "小心鱷魚。" },
+            { "Going out?", "要外出嗎？" },
+            { "You were killed by ", "你被 " },
+            { "You have been killed by ", "你被 " },
+            { "killed by ", "被 " },
+            { "is killed by ", "被 " },
             { "Light Torch", "點燃的火把" },              
         };
 
@@ -1803,7 +1831,7 @@ public static class ZhTwTextCleaner
     private static readonly Dictionary<string, string> ProperNounZh =
         new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
-            { "Murapur", "穆拉普爾(Murapur)" }, { "Tarchewan", "塔徹萬(Tarchewan)" },
+            { "Murapur", "穆拉普爾(Murapur)" }, { "Read", "瑞德(Read)" }, { "Tarchewan", "塔徹萬(Tarchewan)" },
             { "Maazoppir", "馬佐皮爾(Maazoppir)" }, { "Reshep", "雷舍夫(Reshep)" },
             { "Resheph", "雷舍夫(Resheph)" }, { "Mamon", "馬蒙(Mamon)" },
             { "Sheba", "示巴(Sheba)" },
@@ -1939,6 +1967,12 @@ public static class ZhTwTextCleaner
 
     public static string Clean(string text)
     {
+        // 書本正文防碎翻（2026-08-14）：超長且多段落（書本/手稿正文）跳過詞級，
+        // 僅保留語料層翻譯（組3/問題M）
+        int nl = 0;
+        for (int ci = 0; ci < text.Length && ci < 6000; ci++) if (text[ci] == '\n') nl++;
+        if (text.Length > 600 && nl >= 3) return text;
+
         if (string.IsNullOrEmpty(text)) return text;
         // 單趟掃描：判斷是否「中英混雜」（只有混雜才需清理）
         bool hasEng = false, hasCjk = false;
@@ -1978,12 +2012,21 @@ public static class ZhTwTextCleaner
         result = WordsRegex.Replace(result, new MatchEvaluator(WordsMatch));
         // 所有格 's 後接中文 → 哈爾's 丈夫 改 哈爾的丈夫
         result = PossessiveZh.Replace(result, "$1的");
+        result = PossessiveZh2.Replace(result, "$1的");
         // 程序化專名音譯（STEP 4 防漏：漏網英文專名 → 繁中音譯）
         result = CleanNames(result);
         // 還原 token
         result = RestoreTokens(result, tokenBox);
         // 還原 ProperNoun 括號英文
         result = RestoreParens(result, parenBox);
+        // 尾部殘「(」（dll 官方字串以 ( 結尾＋後綴拼接）→ 中文/空白前不留裸「(」
+        int tailParen = result.Length - 1;
+        while (tailParen >= 0 && result[tailParen] == ' ') tailParen--;
+        if (tailParen >= 0 && result[tailParen] == '(' &&
+            (tailParen == 0 || !((result[tailParen - 1] >= 'a' && result[tailParen - 1] <= 'z') ||
+                                  (result[tailParen - 1] >= 'A' && result[tailParen - 1] <= 'Z') ||
+                                  (result[tailParen - 1] >= '0' && result[tailParen - 1] <= '9'))))
+            result = result.Substring(0, tailParen).TrimEnd() + (result.Length > tailParen ? "" : "");
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -2037,6 +2080,19 @@ public static class ZhTwTextCleaner
             { "Menacing Stare", "威嚇凝視" }, { "Steady Hands", "穩手" },
             { "Make Camp", "紮營" }, { "Mind's Compass", "心靈羅盤" },
             // 2026-08-13 補：全技能/技能樹名（遊戲短文本 TMP 路徑漏詞）
+            { "spend a turn ", "花費一回合 " },
+            { "Move Speed", "移動速度" },
+            { "lying on ", "躺在" },
+            { "looking for work", "找工作" },
+            { "looking for ", "尋找" },
+            { "Mind the crocs.", "小心鱷魚。" },
+            { "Going out?", "要外出嗎？" },
+            { "You were killed by ", "你被 " },
+            { "You have been killed by ", "你被 " },
+            { "killed by ", "被 " },
+            { "freezing effect", "凍結效果" },
+            { "standing up", "站起" },
+            { "a turn", "一回合" },
             { "Worn on Hands", "穿戴在手" },
             { "Worn in Hands", "穿戴在手" },
             { "Worn on Back", "穿戴在背" },
@@ -3059,6 +3115,13 @@ public static class ZhTwTextCleaner
             text, @"^[^\u4e00-\u9fffA-Za-z0-9]*You\s+toggle\s+(.+?)\s+(on|off)[.!]?$",
             "你將 $1 切換為$2", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         text = text.Replace("切換為on", "切換為開啟").Replace("切換為off", "切換為關閉");
+        // ===== 被擊殺（You were killed by X → 你被 X 擊殺）=====
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(?:You|你)\s+(?:were|曾是|was)\s+(?:killed|擊殺|frozen|凍結)(?:ed)?(?:\s+to\s+death)?\s+(?:by|由)\s+(.+?)[.!]?$",
+            "你被 $1 擊殺。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, @"^[^\u4e00-\u9fffA-Za-z0-9]*(?:The\s+)?(.+?)\s+(?:kills?|擊殺(?:了|的)?)\s+(?:You|你|you)[.!]?$",
+            "$1 擊殺了你。", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         // ===== 死亡整句（The X dies → X 死亡；容許 :: 等訊息前綴）=====
         text = System.Text.RegularExpressions.Regex.Replace(
             text, @"^[^\u4e00-\u9fffA-Za-z0-9{]*(?:The\s+)?(.+?)\s+dies[.!]?$",

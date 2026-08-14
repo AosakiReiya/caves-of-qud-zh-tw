@@ -53,10 +53,10 @@ alone if no match found.
  <string Context="Tutorial ExploreJoppa odd event" ID="Oh! it looks like Warden Yrame killed Mehmet. Why, you ask?&#xA;&#xA;Well, named creatures who you can perform the water ritual with, like Mehmet, generate with dynamic faction relationships. In your game, Mehmet must have been hated by the Fellowship of Wardens for some reason." Value="喔！看起來 Warden 伊萊姆 殺死了 梅赫梅特。你問為什麼？&#xA;&#xA;嗯，像 梅赫梅特 這樣可以進行 水之儀式 的命名生物，在生成時會帶有動態的派系關係。在你的遊戲中，梅赫梅特 可能是因為某些原因而被 守護者同盟 所憎恨。" />
  <string Context="Tutorial ExploreJoppa odd event" ID="And so Warden Yrame took her revenge. In Qud, sometimes even our best efforts at providing a safe starter village are foiled by the simulation!&#xA;&#xA;What a charmed run! It's quite rare for this to happen, but now you get to see this hidden section of the tutorial. Good job." Value="於是 Warden 伊萊姆 完成了她的復仇。在 卡德(Qud)，有時即使我們竭盡全力提供安全的初始村莊，也會被模擬系統所挫敗！&#xA;&#xA;多麼幸運的一場遊戲！這種情況非常罕見，但現在你可以看到教學課程中這段隱藏內容。做得好。" />
  <string Context="Tutorial ExploreJoppa odd event" ID="You have a few options now. You can roll with it and continue in this world where Mehmet's been revenge-slain. The early game will be a bit harder, but the main quest is not impacted.&#xA;&#xA;You can start over and play the tutorial again, for the &quot;normal&quot; ending, which you were about to reach.&#xA;&#xA;Or, since you were near the end anyway, you can start a new game and begin your journey proper!" Value="你現在有幾個選擇。你可以順應現狀，在這個梅赫梅特已被復仇殺死的世界上繼續下去。遊戲前期會稍微困難一些，但主線任務不會受到影響。&#xA;&#xA;你可以重新開始並再次進行教學課程，以達成你原本即將達成的「正常」結局。&#xA;&#xA;或者，既然你本來就快結束了，你可以開啟新遊戲，正式展開你的旅程！" />
- <string Context="Tutorial ExploreJoppa end" ID="Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." Value="無論你做出什麼選擇，祝你好運，歡迎隨時回來重新整理狀態。&#xA;&#xA;生存並飲酒。" />
+ <string Context="Tutorial ExploreJoppa end" ID="Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." Value="無論你做出什麼選擇，祝你好運，歡迎隨時回來重新整理狀態。&#xA;&#xA;且活且飲。" />
  <string Context="Tutorial ExploreJoppa info" ID="Quetzal! That's all for the tutorial, friend.&#xA;&#xA;We just scratched the very tip of the surface. Quests, secrets, leveling up, physics, reputation, limbs... we leave that for you to discover." Value="Quetzal！教學到此結束，朋友。&#xA;&#xA;我們才剛觸及皮毛而已。任務、秘密、升級、物理機制、聲望、肢體……這些都留給你去發現。" />
  <string Context="Tutorial ExploreJoppa info" ID="You're ready to continue the journey on your own, but don't hesitate to play the tutorial again if you need a refresher.">你已準備好獨自繼續旅程，但如果需要複習，請隨時重新進行教學模式。</string>
- <string Context="Tutorial ExploreJoppa end" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="Tutorial ExploreJoppa end" ID="Live and drink.">且活且飲。</string>
  <string Context="Tutorial ExploreJoppa info" ID="Joppa is a village. Everything you learned in the cave applies here too. Villages are like caves with very high roofs.">約帕是一個村莊。你在洞窟中所學到的一切也同樣適用於此。村莊就像是擁有極高屋頂的洞窟。</string>
  <string Context="Tutorial ExploreJoppa instruction (gamepad)" ID="You can see a list of points of interest by pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="按下 =commandKey:CmdMoveToPointOfInterest= 可查看興趣點列表。&#xA;&#xA;隨著你探索更多地圖，該列表會不斷增長。" />
  <string Context="Tutorial ExploreJoppa instruction (kbm)" ID="You can see a list of points of interest by clicking this button or pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="點擊此按鈕或按下 =commandKey:CmdMoveToPointOfInterest= 可以查看興趣點列表。&#xA;&#xA;隨著你探索更多地圖，該列表會不斷增加。" />
@@ -870,7 +870,7 @@ alone if no match found.
  <string Context="HistoricEntity SharedMutation gospel" ID="=snippet|capitalize= are welcome in =spice.entity:name=. By the grace of =sacredThing=, =spice:instancesOf.letItAlwaysBeSo.!random=.|=id=">歡迎來到 =spice.entity:name= 的 =snippet|capitalize=。承蒙 =sacredThing= 的恩典，=spice:instancesOf.letItAlwaysBeSo.!random=。|=id=</string>
  <string Context="HistoricEntity SharedMutation gospel" ID="=spice:commonPhrases.hark.!random|capitalize=! =snippet|capitalize= =spice:commonPhrases.gather.!random= here. Be =spice:commonPhrases.kind.!random= to them, or may the =spice:adjectives.!random= =spice:personNouns.!random= take you.|=id=">=snippet|capitalize= =spice:commonPhrases.hark.!random|capitalize=! =spice:commonPhrases.gather.!random= 在這裡。對他們 =spice:commonPhrases.kind.!random= 一點，否則願 =spice:adjectives.!random= 的 =spice:personNouns.!random= 將你帶走。|=id=</string>
  <string Context="HistoricEvent VillageProverb proverb" ID="=spice:$element.!random|scanForAn|capitalize=.">=spice:$element.!random|scanForAn|capitalize=。</string>
- <string Context="HistoricEvent VillageProverb proverb" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="HistoricEvent VillageProverb proverb" ID="Live and drink.">且活且飲。</string>
  <string Context="History Worships profaneThings" ID="=spice:commonPhrases.profanity.!random= toward =sultanName=">=spice:commonPhrases.profanity.!random= 對著 =sultanName=</string>
  <string Context="History Worships Gospel" ID="The =spice:instancesOf.divineFeeling.!random= of =sultanName= was revealed to the people of =spice.entity:name= through =sacredThing=.|=id=">=sultanName= 的 =spice:instancesOf.divineFeeling.!random= 已透過 =sacredThing=.|=id= 向 =spice.entity:name= 的人民揭示。</string>
  <string Context="History Worship sacredThings" ID="=faction.the.name=">=faction.the.name=</string>
@@ -1542,7 +1542,7 @@ alone if no match found.
  <string Context="Tarry Biome - Creature Adjective" ID="kindlethumbed" OrderAdjust="0">燃指 (kindlethumbed)</string>
  <string Context="Tarry Biome - Creature Adjective" ID="firethumbed" OrderAdjust="0">火指 (firethumbed)</string>
  <string Context="DynamicQuestConversationHelper reward choice dialog" ID="=spice:quests.thanks.!random|capitalize=. Our village owes you a debt. For now, please choose a reward from our stockpile as payment for your service.">=spice:quests.thanks.!random|capitalize=. 我們的村莊欠你一份人情。目前，請從我們的庫存中選擇一件獎勵，作為對你服務的回報。</string>
- <string Context="DynamicQuestConversationHelper reward choice choice" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="DynamicQuestConversationHelper reward choice choice" ID="Live and drink.">且活且飲。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest dialog" ID="They are disciples of Barathrum. Mostly they are Urshiib, like their mentor. Mutant albino cave bears. With quills to boot! A thousand years ago Barathrum and his kin crossed the Homs Delta into the heart of Qud. He has spent centuries fiddling with the tokens of antiquity in his underground workshops.">他們是 巴拉楚姆(Barathrum) 的門徒。大多與他們的導師一樣是 Urshiib。變異的白化洞穴熊。而且還帶著刺！一千年前，巴拉楚姆(Barathrum) 和他的親族跨越了 Homs Delta，進入了卡德(Qud)的核心。他花了幾個世紀在他的地下工作坊裡擺弄那些古老的代幣。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest choice" ID="I will take the disk to Grit Gate and speak with the Barathrumites.">我會帶著圓盤前往礫門，並與巴拉楚姆信徒交談。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest choice deny" ID="I must pass on this offer, for now. Live and drink.">我現在必須拒絕這個提議。盡情生活與飲酒吧。</string>
@@ -1554,7 +1554,7 @@ alone if no match found.
  <string Context="DynamicQuestSignpostConversation" ID="=spice:quests.intro.!random=">=spice:quests.intro.!random=</string>
  <string Context="DynamicQuestSignpostConversation Dialog" ID="=spice:instancesOf.speakTo.!random|capitalize= =subject.listDirectionsTo#questGivers=.">=spice:instancesOf.speakTo.!random|capitalize= 向 =subject.listDirectionsTo#questGivers= 說話。</string>
  <string Context="DynamicQuestSignpostConversation choice" ID="Thank you. I have more to ask.">謝謝。我還有其他問題想問。</string>
- <string Context="DynamicQuestSignpostConversation choice" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="DynamicQuestSignpostConversation choice" ID="Live and drink.">且活且飲。</string>
  <string Context="FindASiteDynamicQuestTemplate site name default" ID="a site">一處地點</string>
  <string Context="FindASiteDynamicQuestTemplate Completion Accomplishment" ID="You located =sitename=.">你抵達了 =sitename=。</string>
  <string Context="FindASiteDynamicQuestTemplate Completion muralText" ID="Through the use of =player.their= divinely =spice:elements.$element.adjectives.!random= eyes, =player.name= discovered the lost location of =sitename=.">藉由使用 =player.their= 神聖且 =spice:elements.$element.adjectives.!random= 的雙眼，=player.name= 發現了 =sitename= 失落的地點。</string>
@@ -5147,28 +5147,28 @@ alone if no match found.
  <string Context="Putrid Template, DisplayName Adjective" ID="putrid" OrderAdjust="0">腐爛的</string>
  <string Context="Village Warden friend reason" ID="defending their village">守衛他們的村莊</string>
  <string Context="Village Warden Conversation dialog" ID="=spice:villages.warden.introDialog.!random=">=spice:villages.warden.introDialog.!random=</string>
- <string Context="Village Warden Conversation response" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="Village Warden Conversation response" ID="Live and drink.">且活且飲。</string>
  <string Context="Village mayor teaches dish conversation prompt" ID="What a savory smell! Teach me to cook the favorite dish of =villageName=.&#xA;" Value="好香的味道！教我如何烹飪 =villageName= 最喜歡的料理。&#xA;" />
  <string Context="Village mayor conversation welcome message" ID="=spice:villages.mayor.introDialog.!random=">=spice:villages.mayor.introDialog.!random=</string>
- <string Context="Village Mayor conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">生存並飲酒吧，=pronouns.formalAddressTerm=。</string>
+ <string Context="Village Mayor conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">且活且飲吧，=pronouns.formalAddressTerm=。</string>
  <string Context="Village merchant conversation intro" ID="Welcome, =player.species=. What do you desire?">歡迎，=player.species=。你渴望什麼？</string>
  <string Context="Village merchant conversation intro" ID="Come. Browse my wares, =player.formalAddressTerm=.">來吧。看看我的貨物，=player.formalAddressTerm=。</string>
- <string Context="Village merchant conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">生存並飲酒吧，=pronouns.formalAddressTerm=。</string>
+ <string Context="Village merchant conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">且活且飲吧，=pronouns.formalAddressTerm=。</string>
  <string Context="Village apothecary conversation intro low tier" ID="I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~&quot;Ease the pain, addle the brain.&quot; Be careful when you chew witchwood bark.">我有治癒你病痛的方法.~你看起來不太妙。你的飲食中需要攝取更多惡臭麥和蜂蜜.~如果你感到不適，請用惡臭麥烹飪食物。及早發現疾病，你就能消滅它.~「緩解痛苦，混淆大腦。」咀嚼女巫木皮時要小心。</string>
- <string Context="Village apothecary conversation prompt" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="Village apothecary conversation prompt" ID="Live and drink.">且活且飲。</string>
  <string Context="Village apothecary conversation intro" ID="I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~&quot;Ease the pain, addle the brain.&quot; Be careful when you chew witchwood bark.~In the market for a tonic, =player.formalAddressTerm=? Spend water now or blood later, your choice.~Prickly-boons and yuckwheat for trade.~If you came for the humble pie, you had best not have led any mind-hunters here.~Have you got enough tonics?">我有能治好你病痛的藥方.~你看起來不太妙。你的飲食中需要攝取更多惡臭麥和蜂蜜.~如果你感到不適，請用惡臭麥烹飪食物。只要在疾病初期發現，就能將其消滅.~「緩解痛苦，混淆大腦。」咀嚼女巫木皮時要小心.~正在尋找補藥嗎，=player.formalAddressTerm=? 現在花錢，以後就得流血，由你選擇.~用刺果與惡臭麥來交易.~如果你是為了謙卑派而來，最好別帶任何心靈獵人到這裡.~你的補藥夠嗎？</string>
  <string Context="Village tinker conversation intro" ID="Need a gadget repaired or identified, =player.formalAddressTerm=? Or if you're a tinker =player.reflexive=, perhaps you'd like to peruse my schematics?">需要修理或鑑定小玩意嗎，=player.formalAddressTerm=? 或者如果你是一位修補匠 =player.reflexive=，或許你會想研讀一下我的設計圖？</string>
  <string Context="Village tinker conversation prompt" ID="Live and drink, tinker.">活下去並盡情暢飲吧，修補匠。</string>
  <string Context="Village immigrant conversation intro" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">月與日。智慧與意志。~願大地於本季為我們產出。~平安，=player.formalAddressTerm=。</string>
  <string Context="Village pet conversation intro" ID="*does not react*">*沒有反應*</string>
- <string Context="Village pet conversation prompt" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="Village pet conversation prompt" ID="Live and drink.">且活且飲。</string>
  <string Context="Village colonist conversation intro texts" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">月與日。智慧與意志。~願大地於本季為我們產出。~平安，=player.formalAddressTerm=。</string>
  <string Context="Village pet question answer for single pet" ID="=spice:villages.pet.originStorySingle.!random=">=spice:villages.pet.originStorySingle.!random=</string>
  <string Context="Village pet question answer for single pet" ID="=spice:villages.pet.originStoryMultiple.!random=">=spice:villages.pet.originStoryMultiple.!random=</string>
  <string Context="Village villager conversation intro" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">月與日。智慧與意志。~願大地於本季為我們產出。~平安，=player.formalAddressTerm=。</string>
  <string Context="Village reveal string" ID="You discover the abandoned village of =villageName=.">你發現了被遺棄的村莊 =villageName=。</string>
  <string Context="Village reveal string" ID="You discover the village of =villageName=.">你發現了 =villageName= 村。</string>
- <string Context="VillageBase AddVillagerConversation default response" ID="Live and drink.">生存與飲酒。</string>
+ <string Context="VillageBase AddVillagerConversation default response" ID="Live and drink.">且活且飲。</string>
  <string Context="VillageBase generateVillager default SimpleConversation Prompts" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">月與日。智慧與意志。~願大地於本季為我們產出。~平安，=player.formalAddressTerm=。</string>
  <string Context="VillageBase placeStories tattoo" ID="a scene from the history of the village {{M|=villageName=}}{{C|: =story=}}">來自 {{M|=villageName=}} 歷史的一幕 {{C|: =story=}}</string>
  <string Context="VillageBase placeStories crier conversation default" ID="I know a lot about the town!">我對這座城鎮瞭若指掌！</string>

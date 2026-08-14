@@ -398,10 +398,15 @@ def _to_string_process(text, words, phrases):
     masked, box = _protect_markup(text)
     if not hasCjk:
         out = _status_fragments(masked)
+        _m = re.match(r"^(?:the\s+)?(you|你)\s+(?:were|was|曾是)\s+(?:killed|frozen)(?:ed)?(?:\s+to\s+death)?\s+(?:by|由)\s+(.+?)[.!]?$", out, re.I)
+        if _m: out = f"你被 {_m.group(2)} 擊殺。"
+        _m2 = re.match(r"^(?:the\s+)?(.+?)\s+kills?\s+(?:you|你)[.!]?$", out, re.I)
+        if _m2: out = f"{_m2.group(1)} 擊殺了你。"
         if len(out) <= 40 and not re.search(r"[:/.]", out):
             t2 = _translate_tmp_words(out, words)
             if t2 != out:
                 out = t2
+        out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
         return _restore_markup(out, box)
     out = _clean(_status_fragments(masked), words, phrases)
     return _restore_markup(out, box)
@@ -414,8 +419,12 @@ def _tmp_process(text, words, phrases):
     if not text: return text
     t = text.strip()
     if len(t) <= 600 and not _has_cjk_scan(t):
-        return _clean(_translate_tmp_words(t, words), words, phrases)
-    return _clean(t, words, phrases)
+        out = _clean(_translate_tmp_words(t, words), words, phrases)
+    else:
+        out = _clean(t, words, phrases)
+    if _has_cjk_scan(out):
+        out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
+    return out
 
 
 def _has_cjk_scan(s):
@@ -1259,6 +1268,8 @@ def main():
     if run_all or a.xmldata: test_template_vs_uniform()
     if run_all or a.xmldata: test_no_paren_stub()
     if run_all or a.xmldata: test_light_torch_covered()
+    if run_all or a.static: test_template_end_to_end()
+    if run_all or a.xmldata: test_blueprint_paren_style()
     if run_all or a.static: test_shorttext_coverage()
     if run_all or a.static: test_cs_structure()
     if run_all or a.static: test_double_quote_dict_entries()
@@ -1326,6 +1337,51 @@ def test_dict_entry_syntax():
             if '"' in rest or "'" in rest:
                 bad.append(f"{path.name}:{i}")
     check("字典條目行語法嚴格合法（無內嵌引號）", not bad, "; ".join(bad[:5]))
+
+
+def test_template_end_to_end():
+    """端到端：combat/狀態模板值含 's 破損、{{r| 破損、語序殘——直接對樣例跑執行層模擬。
+    （2026-08-14 K 項：此前測試缺『語料模板值→執行層』樣本，'s/{{r| 全漏網）"""
+    d=load_dicts(); words={}; phrases={}
+    for f,dd in d.items():
+        if f in ("hook.Words","hook.ProperNounZh","hook.TmpWords"):
+            for k,v in dd.items(): words.setdefault(k.lower(),v)
+        if f=="hook.PhraseLeaks":
+            for k,v in dd.items(): phrases.setdefault(k.lower(),v)
+    samples=[
+        ("You were killed by a watervine farmer.","擊殺"),
+        ("you were frozen to death by Warden Yrame.","凍結"),
+        ("Must spend a turn standing up.","一回合"),
+        ("-80 Move Speed","移動速度"),
+        ("lying on a bedroll","躺在"),
+        ("I'm looking for work.","找工作"),
+        ("Read's trade","瑞德"),
+        ("Read's trade","的"),
+    ]
+    bad=[]
+    for src_t,key in samples:
+        outs=[_to_string_process(src_t, words, phrases), _tmp_process(src_t, words, phrases)]
+        if not any(key in o for o in outs):
+            bad.append(f"缺關鍵詞[{key}]:{src_t[:30]}->{outs[0][:44]}")
+        if key=="的" and any("'s" in o for o in outs):
+            bad.append(f"'s未轉:{src_t[:30]}->{outs[0][:44]}")
+    check("端到端模板樣例（'s/R|/語序殘為0）", not bad, "; ".join(bad[:4]))
+
+def test_blueprint_paren_style():
+    """風格：P2.3 藍圖名非常見名須含 (英文) 括註；Tutorial* 不得含『教學』。"""
+    items=(ZH/"Items.zh-tw.xml").read_text(encoding="utf-8-sig")
+    gapf=ROOT/"qud_items_p2_3.txt"
+    targets=set(gapf.read_text(encoding="utf-8").split()) if gapf.exists() else None
+    bad=[]
+    for m in re.finditer(r'<object Name="([^"]+)" Load="Merge">\s*<part Name="Render" DisplayName="([^"]+)"', items):
+        name,zh=m.group(1),m.group(2)
+        if targets is not None and name not in targets:
+            continue
+        if name.startswith("Tutorial") and "教學" in zh:
+            bad.append("教學前綴:"+name)
+        if len(zh)>3 and "(" not in zh and name not in ("Light Torch","Projectile","Mace2","Steel War Hammer","Steel War Hammerth","Steel Hammer","Iron","Rubber","Titanium","Chromium","Ceramic","Electro","Addle","Hooks","Fist","Grenade","Shell","Cinder","Cyclopean","Editor","Core","Cable","Plug","Vent","Grate","Pipe","Valve","Leather","Cloth","Cotton","Wool","Linen","Burlap","Sack","Waterskin","Backpack","Vest","Gloves","Boots","Helmet","Cloak","Amulet","Ring","Bracelet"):
+            bad.append("缺括註:"+name)
+    check("藍圖名風格（非常見名含(英文)、無教學前綴）", not bad, "; ".join(bad[:5]))
 
 if __name__ == "__main__":
     main()
