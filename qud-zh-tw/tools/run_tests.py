@@ -1392,6 +1392,8 @@ def test_blueprint_paren_style():
             continue
         if name.startswith("Tutorial") and "教學" in zh:
             bad.append("教學前綴:"+name)
+        if name.startswith("Tutorial") and ("("+name in zh or name+")" in zh):
+            bad.append("藍圖ID殘:"+name)
         base = re.sub(r"^(Large|Medium|Small|Big|Little|Giant|Tiny|Half|Full|Over|Under)", "", name.lower())
         if base not in common and name.lower() not in common and "(" not in zh and zh != name:
             bad.append("缺括註:"+name)

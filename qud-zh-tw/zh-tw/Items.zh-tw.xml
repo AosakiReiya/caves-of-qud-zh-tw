@@ -10622,40 +10622,40 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="砲塔修理匠(Turret Tinker)" />
   </object>
   <object Name="TutorialAphorisms" Load="Merge">
-    <part Name="Render" DisplayName="格言(TutorialAphorisms)" />
+    <part Name="Render" DisplayName="格言(Aphorisms)" />
   </object>
   <object Name="TutorialBattleAxe" Load="Merge">
-    <part Name="Render" DisplayName="戰斧(TutorialBattleAxe)" />
+    <part Name="Render" DisplayName="戰斧(Battle Axe)" />
   </object>
   <object Name="TutorialBear" Load="Merge">
-    <part Name="Render" DisplayName="熊(TutorialBear)" />
+    <part Name="Render" DisplayName="熊(Bear)" />
   </object>
   <object Name="TutorialChemCell" Load="Merge">
-    <part Name="Render" DisplayName="化學電池(TutorialChemCell)" />
+    <part Name="Render" DisplayName="化學電池(Chem Cell)" />
   </object>
   <object Name="TutorialClockworkBeetlePariah" Load="Merge">
-    <part Name="Render" DisplayName="發條甲蟲流亡者(TutorialClockworkBeetlePariah)" />
+    <part Name="Render" DisplayName="發條甲蟲流亡者(Clockwork Beetle Pariah)" />
   </object>
   <object Name="TutorialDagger" Load="Merge">
-    <part Name="Render" DisplayName="匕首(TutorialDagger)" />
+    <part Name="Render" DisplayName="匕首(Dagger)" />
   </object>
   <object Name="TutorialFusionPumpingStation" Load="Merge">
-    <part Name="Render" DisplayName="融合泵站(TutorialFusionPumpingStation)" />
+    <part Name="Render" DisplayName="融合泵站(Fusion Pumping Station)" />
   </object>
   <object Name="TutorialHalfFullWaterskin" Load="Merge">
-    <part Name="Render" DisplayName="半滿水袋(TutorialHalfFullWaterskin)" />
+    <part Name="Render" DisplayName="半滿水袋(Half-full Waterskin)" />
   </object>
   <object Name="TutorialLeatherArmor" Load="Merge">
-    <part Name="Render" DisplayName="皮甲(TutorialLeatherArmor)" />
+    <part Name="Render" DisplayName="皮甲(Leather Armor)" />
   </object>
   <object Name="TutorialMarkovBook" Load="Merge">
-    <part Name="Render" DisplayName="馬可夫書(TutorialMarkovBook)" />
+    <part Name="Render" DisplayName="馬可夫書(Markov Book)" />
   </object>
   <object Name="TutorialSnapjaw" Load="Merge">
-    <part Name="Render" DisplayName="顎骨獸(TutorialSnapjaw)" />
+    <part Name="Render" DisplayName="顎骨獸(Snapjaw)" />
   </object>
   <object Name="TutorialTorch" Load="Merge">
-    <part Name="Render" DisplayName="火把(TutorialTorch)" />
+    <part Name="Render" DisplayName="火把(Torch)" />
   </object>
   <object Name="Twinning Lamprey" Load="Merge">
     <part Name="Render" DisplayName="雙生七鰓鰻(Twinning Lamprey)" />
