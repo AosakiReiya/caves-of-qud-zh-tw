@@ -2479,7 +2479,7 @@ alone if no match found.
  <string Context="Run Reduced Hit" ID="-10 to hit in melee combat.">近戰命中率 -10。</string>
  <string Context="Run Melee Hit Stop" ID="Is ended by attacking in melee, by effects that interfere with movement, and by most other actions that have action costs, other than using physical mutations.">會因近戰攻擊、干擾移動的效果，以及除了使用身體突變之外的大多數具有動作消耗的行為而結束。</string>
  <string Context="Run Indefinite Duration" ID="Indefinite duration.">不定持續時間。</string>
- <string Context="Run Duration Left" ID="=duration= =duration.pluralize:round= left.">=duration= =duration.pluralize:round= 左側。</string>
+ <string Context="Run Duration Left" ID="=duration= =duration.pluralize:round= left.">剩餘 =duration= 回合。</string>
  <string Context="Start Running" ID="=subject.Does:begin= =message=!">=subject.Does:begin= =message=!</string>
  <string Context="Stop Running" ID="=subject.Does:stop= =message=.">=subject.Does:stop= =message=。</string>
  <string Context="Waking Dream state description" ID="in a waking dream">在清醒夢中</string>
