@@ -3531,7 +3531,7 @@ alone if no match found.
  <string Context="Toolbox WarnTinkeringBonus BootingBonusNotAvailable" ID="=subject.The.name= =subject.is= still starting up. Do you want to continue without =subject.its= benefits?">=subject.The.name= =subject.is= 仍在啟動中。您要在沒有 =subject.its= 增益的情況下繼續嗎？</string>
  <string Context="Toolbox WarnTinkeringBonus InoperativeBonusAvailable" ID="=subject.The.name= =subject.is= inoperative. Do you want to continue without =subject.its= full benefits?">=subject.The.name= =subject.is= 無法運作。您是否要在失去 =subject.its= 全部效益的情況下繼續？</string>
  <string Context="Toolbox WarnTinkeringBonus InoperativeBonusNotAvailable" ID="=subject.The.name= =subject.is= inoperative. Do you want to continue without =subject.its= benefits?">=subject.The.name= =subject.is= 無法運作。您是否要在失去 =subject.its= 增益的情況下繼續？</string>
- <string Context="Torch Display Name - Adjective" ID="lit" OrderAdjust="-40">光線</string>
+ <string Context="Torch Display Name - Adjective" ID="lit" OrderAdjust="-40">點燃的</string>
  <string Context="Torch Burnout MessageLog" ID="Your torch burns out!">你的火把熄滅了！</string>
  <string Context="Torch Light Fail (covered)" ID="You cannot light =object.the.name= because of the liquid =object.it.is= covered in.">由於覆蓋著液態的 =object.it.is=，你無法點燃 =object.the.name=。</string>
  <string Context="Torch Light Fail (submerged)" ID="You cannot light =object.the.name= because of the liquid =object.it.is= submerged in.">你無法點燃 =object.the.name=，因為 =object.it.is= 浸泡在液體中。</string>
