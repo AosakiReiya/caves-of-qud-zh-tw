@@ -269,7 +269,7 @@ public static class ZhTwHarmonyPatches
         }
         catch (Exception e)
         {
-            ZhTwReplacers.LogAlways("Harmony Init error: " + e.GetType().Name + " " + e.Message + "\n" + e.StackTrace);
+            ZhTwReplacers.LogAlways("Harmony Init error(FULL): " + (e.InnerException != null ? e.InnerException.ToString() : e.ToString()));
         }
     }
 

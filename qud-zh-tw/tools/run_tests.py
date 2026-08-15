@@ -1276,6 +1276,7 @@ def main():
     if run_all or a.static: test_cs_structure()
     if run_all or a.static: test_double_quote_dict_entries()
     if run_all or a.static: test_dict_entry_syntax()
+    if run_all or a.static: test_regex_sanity()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1406,6 +1407,50 @@ def test_blueprint_paren_style():
         if base not in common and name.lower() not in common and "(" not in zh and zh != name:
             bad.append("缺括註:"+name)
     check("藍圖名風格（非常見名含(英文)、無教學前綴）", not bad, "; ".join(bad[:5]))
+
+
+def test_regex_sanity():
+    """紅線：全部正則 pattern（static new Regex + Regex.Replace 字面量）可編譯。
+    LoneParen 少一括致 TypeInitializationException 事故（2026-08-15）——之後任何
+    regex 崩必先死於此。感知轉義字元與字元類的括號配對掃描＋殘型 \(? 偵測。"""
+    def _scan(p):
+        extra=0; resid=0; i=0; depth=0
+        while i < len(p):
+            c=p[i]
+            if c == "\\":
+                if i+1 < len(p) and p[i+1]=="(" and i+2 < len(p) and p[i+2]=="?":
+                    resid+=1
+                i+=2; continue
+            if c == "[":
+                j=i+1
+                while j < len(p) and p[j]!="]":
+                    if p[j]=="\\": j+=1
+                    j+=1
+                i=j+1; continue
+            if c=="(": depth+=1
+            elif c==")":
+                depth-=1
+                if depth<0: extra+=1; depth=0
+            i+=1
+        return extra, resid
+    bad=[]
+    for path in [HOOK, REPLACERS, UIHOOK, HARMONY]:
+        src=path.read_text(encoding="utf-8")
+        pats=[]
+        for m in re.finditer(r'new Regex\s*\(\s*("(?:[^"\\]|\\.)*"|@"(?:""|[^"])*")', src):
+            raw=m.group(1)
+            content=raw[2:-2].replace('""','"') if raw.startswith("@") else raw[1:-1]
+            pats.append(("newRegex", content))
+        for m in re.finditer(r'Regex\.Replace\s*\(\s*(?:text|result|input),\s*("(?:[^"\\]|\\.)*"|@"(?:""|[^"])*")', src):
+            raw=m.group(1)
+            content=raw[2:-2].replace('""','"') if raw.startswith("@") else raw[1:-1]
+            pats.append(("Replace", content))
+        for kind,content in pats:
+            if not content: continue
+            er,res=_scan(content)
+            if er: bad.append(f"{path.name}[{kind}] 多右括x{er}:{content[:40]}")
+            if res: bad.append(f"{path.name}[{kind}] 殘型:...{content[max(0,content.find('(')-2):content.find('(')+6]}")
+    check("全部 regex pattern 語法健康（多右括/殘型=0）", not bad, "; ".join(bad[:5]))
 
 if __name__ == "__main__":
     main()

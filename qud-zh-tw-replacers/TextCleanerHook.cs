@@ -2012,7 +2012,7 @@ public static class ZhTwTextCleaner
     // （如「兩棲的(」「You need to reload! (」）→ 刪除該「(」；
     // 「(Hands)」「(2)」「( 內容」等有內容括號一律保留，避免誤刪。
     private static readonly Regex LoneParen = new Regex(
-        @"\(?=\s*$)", RegexOptions.Compiled);
+        @"\((?=\s*$)", RegexOptions.Compiled);
     private static string StripLoneParen(string text)
     {
         if (text == null || text.IndexOf('(') < 0) return text;
@@ -2641,7 +2641,6 @@ public static class ZhTwTextCleaner
         { "Fall in love with a sign.", "愛上一個標誌。" },
         { "Fall in love with yourself.", "愛上你自己。" },
         { "FlamingRay Emit", "火焰射線 (FlamingRay) 發射" },
-        { "FlamingRay emit", "火焰射線(FlamingRay)發射" },
         { "FlamingRay emit no part", "火焰射線 (FlamingRay) 未發射任何部分" },
         { "Force Emitter", "力場發射器 (Force Emitter)" },
         { "ForceEmitter AbilityName Activate Fallback", "力場發射器 {AbilityName} 啟動備援方案" },
