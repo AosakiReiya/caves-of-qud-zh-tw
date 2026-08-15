@@ -407,7 +407,7 @@ def _to_string_process(text, words, phrases):
             if t2 != out:
                 out = t2
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
-        out = re.sub(r"[(](?=\s*$)", "", out)
+        out = out
         return _restore_markup(out, box)
     out = _clean(_status_fragments(masked), words, phrases)
     return _restore_markup(out, box)
@@ -425,7 +425,7 @@ def _tmp_process(text, words, phrases):
         out = _clean(t, words, phrases)
     if _has_cjk_scan(out):
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
-    out = re.sub(r"[(](?=\s*$)", "", out)
+    out = out
     return out
 
 
@@ -483,6 +483,10 @@ def test_pipeline():
         ("Left Missile Weapon", "左側遠程武器欄", None),
         ("Forefeet", "前足", "Forefeet"),
         ("Floating nearby", "漂浮物", "Floating"),
+        ("LeftMissile Weapon", "左側遠程武器欄", None),
+        ("RightMissile Weapon", "右側遠程武器欄", None),
+        ("Amphibious(D)", "兩棲的(D)", None),
+        ("Amphibious(", "兩棲的(", None),
         ("19 Strength", "19 力量", "Strength"),
         ("{{C|10}} {{|Agility}}", "{{|敏捷}}", "Agility"),
         ("Dismember", "肢解", "Dismember"),
@@ -541,7 +545,7 @@ def test_pipeline():
         ("你必須等待 99 rounds 回合。", "99 回合", "rounds"),
     ]
     for inp, must, must_not in cases:
-        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>", "穿戴在手", "左側遠程武器欄", "前足", "漂浮物"):
+        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>", "穿戴在手", "左側遠程武器欄", "左側遠程武器欄", "前足", "漂浮物"):
             out = _tmp_process(inp, words, phrases)
         else:
             out = _to_string_process(inp, words, phrases)
@@ -1374,9 +1378,7 @@ def test_template_end_to_end():
             bad.append(f"缺關鍵詞[{key}]:{src_t[:30]}->{outs[0][:44]}")
         if key=="的" and any("'s" in o for o in outs):
             bad.append(f"'s未轉:{src_t[:30]}->{outs[0][:44]}")
-        import re as _re2
-        if any(_re2.search(r"[(](?=\s*$)", o) for o in outs):
-            bad.append(f"孤獨尾括殘:{src_t[:30]}->{outs[0][:44]}")
+        # 原則（2026-08-15）：不刪除遊戲原生顯示——「(」一律透傳（LoneParen 已移除）
     check("端到端模板樣例（'s/R|/語序殘為0）", not bad, "; ".join(bad[:4]))
 
 def test_blueprint_paren_style():

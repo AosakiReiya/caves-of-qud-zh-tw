@@ -2008,16 +2008,6 @@ public static class ZhTwTextCleaner
         RegexOptions.Compiled);
 
 
-    // 剝除孤獨尾括號（2026-08-14）：若「(」之後到文末不含任何英文字母/數字
-    // （如「兩棲的(」「You need to reload! (」）→ 刪除該「(」；
-    // 「(Hands)」「(2)」「( 內容」等有內容括號一律保留，避免誤刪。
-    private static readonly Regex LoneParen = new Regex(
-        @"\((?=\s*$)", RegexOptions.Compiled);
-    private static string StripLoneParen(string text)
-    {
-        if (text == null || text.IndexOf('(') < 0) return text;
-        return LoneParen.Replace(text, "");
-    }
     private static string CleanNames(string text)
     {
         // 只在「中英混雜」時處理；純英文句與純中文句不做
@@ -2094,7 +2084,6 @@ public static class ZhTwTextCleaner
         // 還原 ProperNoun 括號英文
         result = RestoreParens(result, parenBox);
         // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
-        result = StripLoneParen(result);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -2187,6 +2176,8 @@ public static class ZhTwTextCleaner
             { "Worn on Back", "穿戴在背" },
             { "Worn in Back", "穿戴在背" },
             { "Left Missile Weapon", "左側遠程武器欄" },
+            { "LeftMissile Weapon", "左側遠程武器欄" },
+            { "RightMissile Weapon", "右側遠程武器欄" },
             { "Right Missile Weapon", "右側遠程武器欄" },
             { "Floating Near", "漂浮物" },
             { "Floating Nearby", "漂浮物" },
@@ -2297,7 +2288,6 @@ public static class ZhTwTextCleaner
             t = TranslateWord(w);
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
-        r = StripLoneParen(r);
         return r;
     }
 
