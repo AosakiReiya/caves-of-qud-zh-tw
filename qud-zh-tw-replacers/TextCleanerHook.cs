@@ -2008,6 +2008,16 @@ public static class ZhTwTextCleaner
         RegexOptions.Compiled);
 
 
+    // 孤獨「(」尾清理（2026-08-15 恢復）：「(」後僅空白/文末＝資訊斷裂殘骸
+    // （如「兩棲的(」「You need to reload! (」）→ 剝除；「(D)」「(Hands)」「(2)」「( 內容」全部保留。
+    private static readonly Regex LoneParen = new Regex(
+        @"\((?=\s*$)", RegexOptions.Compiled);
+    private static string StripLoneParen(string text)
+    {
+        if (text == null || text.IndexOf('(') < 0) return text;
+        return LoneParen.Replace(text, "");
+    }
+
     private static string CleanNames(string text)
     {
         // 只在「中英混雜」時處理；純英文句與純中文句不做
@@ -2083,6 +2093,8 @@ public static class ZhTwTextCleaner
         result = RestoreTokens(result, tokenBox);
         // 還原 ProperNoun 括號英文
         result = RestoreParens(result, parenBox);
+        // 孤獨「(」尾殘清理（資訊斷裂殘骸；有內容括號保留）
+        result = StripLoneParen(result);
         // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
         if (result != text)
         {
@@ -2178,6 +2190,8 @@ public static class ZhTwTextCleaner
             { "Left Missile Weapon", "左側遠程武器欄" },
             { "LeftMissile Weapon", "左側遠程武器欄" },
             { "RightMissile Weapon", "右側遠程武器欄" },
+            { "LeftMissile 武器", "左側遠程武器欄" },
+            { "RightMissile 武器", "右側遠程武器欄" },
             { "Right Missile Weapon", "右側遠程武器欄" },
             { "Floating Near", "漂浮物" },
             { "Floating Nearby", "漂浮物" },
@@ -2288,6 +2302,7 @@ public static class ZhTwTextCleaner
             t = TranslateWord(w);
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
+        r = StripLoneParen(r);
         return r;
     }
 
