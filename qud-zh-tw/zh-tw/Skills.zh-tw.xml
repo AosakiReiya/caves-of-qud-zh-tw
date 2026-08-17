@@ -126,11 +126,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   </skill>
   <skill Name="Shield" DisplayName="盾牌" Description="你擅長使用 盾牌。" Snippet="盾牌">
     <power Name="Block" DisplayName="格擋" Description="只要你手持 盾牌，就有 50% 的機率在每輪阻擋一次近戰攻擊。當你阻擋攻擊時，你會將 盾牌的 AV bonus 加入該次攻擊的 AV 中。如果你裝備了多個 盾牌，每輪一次的阻擋限制是按每個 盾牌計算的，且你只能嘗試使用你最強大的可用 盾牌來阻擋給定的攻擊一次。" Snippet="阻擋" />
-    <power Name="Shield Slam" DisplayName="盾牌 撞擊" Description="已啟動；冷卻時間 40。你試圖擊倒對手並造成 (力量修正值)d2 + 你的 盾牌的 AV 加成 之傷害。你的對手有機會抵抗（力量判定；難度 20 + 你的力量修正值）。每當你裝備著 盾牌 向對手衝鋒時，你會獲得一次免費的 盾牌 猛擊攻擊。" Snippet="盾牌重擊" />
+    <power Name="Shield Slam" DisplayName="盾牌撞擊" Description="已啟動；冷卻時間 40。你試圖擊倒對手並造成 (力量修正值)d2 + 你的 盾牌的 AV 加成 之傷害。你的對手有機會抵抗（力量判定；難度 20 + 你的力量修正值）。每當你裝備著 盾牌 向對手衝鋒時，你會獲得一次免費的 盾牌 猛擊攻擊。" Snippet="盾牌重擊" />
     <power Name="Deft Blocking" DisplayName="靈巧格擋" Description="你使用 盾牌 格擋的機率提升至 75%。" Snippet="靈巧地格擋" />
     <power Name="Swift Blocking" DisplayName="迅捷格擋" Description="每回合每面 盾牌 可額外格擋一次攻擊。" Snippet="快速格擋" />
     <power Name="Staggering Block" DisplayName="踉蹌格擋" Description="每當您格擋對手的攻擊時，有(Strength*2)-35% 的機率使對手陷入 1d2 回合的暈眩狀態。" Snippet="踉蹌格擋" />
-    <power Name="Shield Wall" DisplayName="盾牌 牆壁(Shield Wall)" Description="在接下來的三輪內，你會自動格擋所有近戰攻擊（不可與圓盾同時使用）。" Snippet="用你的 盾牌 築起一道牆" />
+    <power Name="Shield Wall" DisplayName="盾牌牆壁(Shield Wall)" Description="在接下來的三輪內，你會自動格擋所有近戰攻擊（不可與圓盾同時使用）。" Snippet="用你的 盾牌 築起一道牆" />
   </skill>
   <skill Name="Short Blade" DisplayName="短劍" Description="你擅長使用小型單手刀具與刃器。" Snippet="短刃">
     <power Name="Short Blade Expertise" DisplayName="短刃專精" Description="你使用短刃時的命中率 +1。此外，使用主手的短刃進行攻擊所需的動作消耗降低 25%。" Snippet="短刃" />

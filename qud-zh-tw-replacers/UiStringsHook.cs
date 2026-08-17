@@ -2,7 +2,7 @@
 //
 // 遊戲 UI 文字來源分兩種，需兩層 Harmony 攔截：
 //   1. 走官方本地化查詢 `XRL.Language.Strings._S(Context, ID)`：
-//      語料內的字串官方系統已翻譯；此處補「語料外但走 _S」的 (Context,ID) 字典。
+//      語料內的字串官方系統已翻譯；此處補「語料外但走 _S」的(Context,ID) 字典。
 //   2. 原始英文字面值直接塞給 Popup（如暫停選單 "Save and Quit"、確認彈窗）：
 //      此處以 UIPhrases 字典在 Popup 顯示層翻譯。
 //

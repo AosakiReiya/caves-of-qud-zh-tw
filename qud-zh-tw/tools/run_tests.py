@@ -1146,7 +1146,7 @@ def test_shorttext_coverage():
         softcheck("commanding 無『指揮中的』", "指揮中的" not in h)
     hook2 = HOOK.read_text(encoding="utf-8")
     check("Ego 有譯名（自我/心智任一種）", '"Ego", "自我"' in hook2 or '"Ego", "心智"' in hook2)
-    check("Willpower 譯名為意志", '"Willpower", "意志"' in hook2)
+    check("Willpower 譯名為意志力（與語料層 Statistics 一致）", '"Willpower", "意志力"' in hook2)
 
 
 def test_cs_structure():

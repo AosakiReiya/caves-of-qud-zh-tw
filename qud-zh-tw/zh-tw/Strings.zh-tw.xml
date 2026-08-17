@@ -1916,7 +1916,7 @@ alone if no match found.
  <string Context="Saving Throw Vs Bleeding" ID="bleeding">流血中</string>
  <string Context="Saving Throw Vs Contact" ID="contact agents">接觸代理人</string>
  <string Context="Saving Throw Vs Cudgel" ID="Cudgel skills">棍棒技能</string>
- <string Context="Saving Throw Vs Decarbonizer" ID="Decarbonizer attacks">脫碳器 攻擊</string>
+ <string Context="Saving Throw Vs Decarbonizer" ID="Decarbonizer attacks">除碳器 攻擊</string>
  <string Context="Saving Throw Vs Disarm" ID="disarmament">解除武裝</string>
  <string Context="Saving Throw Vs Disease Onset" ID="disease onset">疾病發作</string>
  <string Context="Saving Throw Vs Drag" ID="being dragged">被拖行</string>
@@ -1932,7 +1932,7 @@ alone if no match found.
  <string Context="Saving Throw Vs Injected" ID="injected toxins">注入毒素</string>
  <string Context="Saving Throw Vs Knockdown" ID="knockdown">擊倒</string>
  <string Context="Saving Throw Vs LatchOn" ID="being latched onto">正被附著</string>
- <string Context="Saving Throw Vs Lithofex" ID="Lithofex attacks">石靈攻擊</string>
+ <string Context="Saving Throw Vs Lithofex" ID="Lithofex attacks">石蝶攻擊</string>
  <string Context="Saving Throw Vs LongBlades" ID="Long Blades skills">長刃技能</string>
  <string Context="Saving Throw Vs Move" ID="forced movement">強制位移</string>
  <string Context="Saving Throw Vs Onset" ID="the initial onset of disease">疾病的最初發作</string>
@@ -4747,7 +4747,7 @@ alone if no match found.
  <string Context="Meditate Fail" ID="You are already meditating.">你正在冥想中。</string>
  <string Context="Meditate Ability Name" ID="Meditate">冥想</string>
  <string Context="ShieldWall Fail - No Shield" ID="You have no shield to raise.">你沒有任何 盾牌 可以舉起。</string>
- <string Context="ShieldWall Ability Name" ID="Shield Wall">盾牌 牆壁</string>
+ <string Context="ShieldWall Ability Name" ID="Shield Wall">盾牌牆壁</string>
  <string Context="Single Weapon Fighting Ability Name" ID="Single Weapon Fighting">單手武器戰鬥</string>
  <string ID="=subject.Does:take= advantage of =subject.their= opponent's reaction to =subject.their= attack! =skills.andList|capitalize= =skills.pluralize:is:are= refreshed.">=subject.Does:take= 利用了 =subject.their= 對手對 =subject.their= 攻擊的反應！=skills.andList|capitalize= =skills.pluralize:is:are= 已重置。</string>
  <string Context="Skill Weapon Class Name" ID="short-blade">短刃</string>

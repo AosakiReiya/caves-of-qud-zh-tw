@@ -66,9 +66,10 @@ def load_corpus():
 def load_replacer_dicts():
     """回傳 {dict名: {key: value}}。只處理 Dictionary<string,string> 靜態字典。"""
     out = {}
+    dups = []
     cs = os.path.join(REPLACER, "TextCleanerHook.cs")
     if not os.path.exists(cs):
-        return out
+        return out, dups
     txt = open(cs, encoding="utf-8", errors="replace").read()
     for m in re.finditer(
         r"Dictionary<string, string>\s+(\w+)\s*=\s*new Dictionary<string, string>"
@@ -77,9 +78,12 @@ def load_replacer_dicts():
         name, cmp, body = m.group(1), m.group(2), m.group(3)
         d = {}
         for e in re.finditer(r'\{\s*"((?:[^"\\]|\\.)*)"\s*,\s*"((?:[^"\\]|\\.)*)"\s*\}', body):
-            d[e.group(1)] = e.group(2)
+            k, v = e.group(1), e.group(2)
+            if k in d and d[k] != v:
+                dups.append((name, k, d[k], v))
+            d.setdefault(k, v)
         out[name] = d
-    return out
+    return out, dups
 
 
 # --------------------------------------------------------------------------
@@ -262,6 +266,44 @@ def c8_short_labels(rows):
     return out
 
 
+def c9_duplicate_keys(dups):
+    """字典鍵衝突：同一 key 在（同字典或跨字典）存在且值不同 → 譯名衝突殘留。
+
+    同字典重複由 load 層收集；跨字典重複（如 PhraseLeaks 與 SentenceDict 同 key
+    不同譯文）runtime 兩路都會套用、後者覆蓋，造成一詞多譯時有時無。
+    """
+    return dups
+
+
+def c10_replacer_paren_spacing(replacer):
+    """replacer 字典值中的「中文 (英文)」帶空格 → 統一無空格。"""
+    out = []
+    for dname, d in replacer.items():
+        for k, v in d.items():
+            if has_zh(v) and re.search(r"[\u4e00-\u9fff]\s+\([A-Za-z]{2,}", v):
+                out.append((dname, k, v))
+    return out
+
+
+def c11_missing_propernoun(rows, replacer):
+    """語料層「中文(原文)」樣式中的專名，若 ProperNounZh 缺條目 → 注入點漏翻風險
+    （Kindrish 型：全句已翻、字典缺、其他注入點漏）。"""
+    proper = set(k.lower() for k in replacer.get("ProperNounZh", {}))
+    proper |= set(k.lower() for k in replacer.get("TmpWords", {}))
+    missing = []
+    for r in rows:
+        for m in re.finditer(r"[（(]([A-Z][A-Za-z' -]{3,})[）)]", r["value"]):
+            name = m.group(1).strip()
+            if has_zh(name):
+                continue
+            core = re.split(r"[\s']", name)[0]
+            if len(core) >= 4 and core.lower() not in proper and core not in proper:
+                freq = sum(1 for rr in rows if core.lower() in rr["value"].lower())
+                if freq <= 2:  # 高頻名=語料自我覆蓋，非注入點風險
+                    missing.append((r["file"], r["line"], r["id"][:40], name))
+    return missing
+
+
 # --------------------------------------------------------------------------
 # 修復（機械類）
 # --------------------------------------------------------------------------
@@ -333,7 +375,7 @@ def main():
         mode = "check"
 
     rows = load_corpus()
-    replacer = load_replacer_dicts()
+    replacer, dup_keys = load_replacer_dicts()
 
     c1 = c1_paren_spacing(rows)
     c2 = c2_months(rows)
@@ -343,6 +385,21 @@ def main():
     c6 = c6_residue(rows)
     c7 = c7_common_residue(rows)
     c8 = c8_short_labels(rows)
+    _all = {}
+    def _is_protection_marker(_v, _k):
+        return _v == "" or (f"({_k})" in _v or f"({_k.lower().capitalize()})" in _v) or _v == _k
+    for _dn, _d in replacer.items():
+        for _k, _v in _d.items():
+            if _k in _all and _all[_k][1] != _v:
+                _pa, _pb = _all[_k][1], _v
+                if (_k.count(" ") >= 2):
+                    continue  # 長句 key 分屬不同字典路徑，非核心衝
+                if not (_is_protection_marker(_pa, _k) or _is_protection_marker(_pb, _k)):
+                    dup_keys.append((f"{_all[_k][0]}+{_dn}", _k, _pa, _pb))
+            _all.setdefault(_k, (_dn, _v))
+    c9 = c9_duplicate_keys(dup_keys)
+    c10 = c10_replacer_paren_spacing(replacer)
+    c11 = c11_missing_propernoun(rows, replacer)
 
     L = []
     L.append("# 翻譯審計報告\n")
@@ -384,6 +441,15 @@ def main():
         L.append("- 全 0 ✓\n")
 
     sec("C8 短英文標籤疑似未翻", c8, lambda r: f"{r['file']}:{r['line']} [{r.get('context','')}] {r['id'][:44]} → {r['value']!r}")
+
+    sec("C9 replacer 同字典重複 key 且值不一（後者生效）", c9,
+        lambda t: f"{t[0]} [{t[1][:50]}] 值A={t[2][:36]!r} 值B={t[3][:36]!r}")
+
+    sec("C10 replacer 字典值帶空格括號 中文 (英文)", c10,
+        lambda t: f"{t[0]} [{t[1][:40]}] → {t[2][:60]!r}")
+
+    sec("C11 語料『中文(原文)』專名未入 ProperNounZh（注入點漏翻風險）", c11,
+        lambda t: f"{t[0]}:{t[1]} [{t[2]}] → 缺:「{t[3]}」")
 
     rep = "\n".join(L) + "\n"
     open(REPORT, "w", encoding="utf-8").write(rep)
