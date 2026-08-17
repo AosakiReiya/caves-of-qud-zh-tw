@@ -237,6 +237,8 @@ def _sim_protect_parens(text):
 
 
 def _clean(text, words, phrases):
+    if _has_unbalanced_markup(text):
+        return text
     hasEng, hasCjk = _scan_lang(text)
     if not (hasEng and hasCjk): return text
     # 括號短語（(Full) 類，表 key 以 （/( 開頭）先替換（不受輸入括號保護影響）
@@ -259,6 +261,20 @@ def _clean(text, words, phrases):
         text = text.replace('\x02' + str(idx) + '\x02', seg)
     for idx, seg in enumerate(box1):
         text = text.replace('\x02' + str(idx) + '\x02', seg)
+    # G6（2026-08-17）：與 C# RestoreAll 一致，交替還原直到無佔位符殘留
+    for _ in range(32):
+        changed = False
+        def rep(m):
+            nonlocal changed
+            i = int(m.group(1))
+            if i < len(box1):
+                changed = True
+                return box1[i]
+            return m.group(0)
+        nxt = re.sub(r"\x02(\d+)\x02", rep, text)
+        if not changed:
+            break
+        text = nxt
     return text
 
 
@@ -387,14 +403,40 @@ def _restore_markup(text, box):
     def back(m):
         i = int(m.group(1))
         return box[i] if i < len(box) else m.group(0)
-    return re.sub(r"\x00(\d+)\x00", back, text)
+    r = text
+    for _ in range(32):
+        changed = False
+        def rep(m):
+            nonlocal changed
+            i = int(m.group(1))
+            if i < len(box):
+                changed = True
+                return box[i]
+            return m.group(0)
+        nxt = re.sub(r"\x00(\d+)\x00", rep, r)
+        if not changed:
+            break
+        r = nxt
+    return r
+
+def _has_unbalanced_markup(text):
+    """模擬 C# HasUnbalancedMarkup：{{ 與 }} 個數不等 = 分段組裝中或殘骸。"""
+    return text.count("{{") != text.count("}}")
+
+
+def _defuse_unbalanced_markup(text):
+    """模擬 C# DefuseUnbalancedMarkup（2026-08-16 修正）：零刪除原則——
+    未閉合 markup / 分段組裝片段原樣直傳，不翻譯、不刪除任何字元。"""
+    return text
+
 
 def _to_string_process(text, words, phrases):
     translated = _add_msg_prefix(text, words, phrases)
     if translated is not None:
         return translated
     hasEng, hasCjk = _scan_lang(text)
-    if not hasEng: return text
+    if not hasEng:
+        return text
     masked, box = _protect_markup(text)
     if not hasCjk:
         out = _status_fragments(masked)
@@ -407,7 +449,6 @@ def _to_string_process(text, words, phrases):
             if t2 != out:
                 out = t2
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
-        out = re.sub(r"[(](?=\s*$)", "", out)
         return _restore_markup(out, box)
     out = _clean(_status_fragments(masked), words, phrases)
     return _restore_markup(out, box)
@@ -425,7 +466,6 @@ def _tmp_process(text, words, phrases):
         out = _clean(t, words, phrases)
     if _has_cjk_scan(out):
         out = re.sub(r"'s(?=\s*[\u4e00-\u9fff])", "的", out)
-    out = re.sub(r"[(](?=\s*$)", "", out)
     return out
 
 
@@ -435,6 +475,8 @@ def _has_cjk_scan(s):
 
 def _translate_tmp_words(text, words):
     """模擬 TranslateTmpText：白名單（TmpWords/Words 字典）整詞替換。"""
+    if _has_unbalanced_markup(text):
+        return text
     r = text
     for k in sorted(words, key=len, reverse=True):
         if not k or re.search(r"[^A-Za-z ]", k):
@@ -485,8 +527,18 @@ def test_pipeline():
         ("Floating nearby", "漂浮物", "Floating"),
         ("LeftMissile Weapon", "左側遠程武器欄", None),
         ("RightMissile Weapon", "右側遠程武器欄", None),
+        ("Face", "臉部", None),
+        ("Head", "頭部", None),
+        ("Body", "身體", None),
+        ("RightHand", "右手", None),
+        ("LeftHand", "左手", None),
+        ("LeftArm", "左臂", None),
+        ("RightArm", "右臂", None),
         ("Amphibious(D)", "兩棲的(D)", None),
-        ("Amphibious(", "兩棲的", "("),
+        # 零刪除原則（2026-08-16）：尾「(」是遊戲原生資訊，不剝除；
+        # 「」不刪除 → 保留閉合的「(D)」與孤獨「(」皆原樣
+        ("Amphibious(", "兩棲的(", "Amphibious"),
+        ("Amphibious( )", "兩棲的( )", "Amphibious"),
         ("19 Strength", "19 力量", "Strength"),
         ("{{C|10}} {{|Agility}}", "{{|敏捷}}", "Agility"),
         ("Dismember", "肢解", "Dismember"),
@@ -545,7 +597,7 @@ def test_pipeline():
         ("你必須等待 99 rounds 回合。", "99 回合", "rounds"),
     ]
     for inp, must, must_not in cases:
-        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>", "穿戴在手", "左側遠程武器欄", "左側遠程武器欄", "前足", "漂浮物"):
+        if must in ("10 敏捷", "19 力量", "{{|敏捷}}", "肢解", "力量", "莫龐戈", "{{Y|劈砍}}", "<color=#fff>衝鋒</color>", "穿戴在手", "左側遠程武器欄", "左側遠程武器欄", "前足", "漂浮物", "臉部", "頭部", "身體", "右手", "左手", "左臂", "右臂"):
             out = _tmp_process(inp, words, phrases)
         else:
             out = _to_string_process(inp, words, phrases)
@@ -802,13 +854,15 @@ def test_token_protect():
     check("ProtectTokens 存在", "ProtectTokens" in hook)
     check("RestoreTokens 存在", "RestoreTokens" in hook)
     check("Clean 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
-    check("Clean 還原 token", "RestoreTokens(result, tokenBox)" in hook)
+    check("Clean 還原 token", "RestoreAll(result, tokenBox, parenBox)" in hook)
     check("KeyLeaks 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
     # spice 不該在 Words 中（避免 =spice:...= token 被翻成「香料」→ No variable replacer）
     import re as _re
     m = _re.search(r'private static readonly Dictionary<string, string> Words\s*=(.*?)\n\s*\};', hook, _re.S)
     if m:
         check("Words 不含 spice→香料", '"spice", "香料"' not in m.group(1))
+        for _w in ("Face", "Head", "Body", "RightHand", "LeftHand", "LeftArm", "RightArm"):
+            check(f"Words 不含槽名 {_w}（僅存 TmpWords）", (f'"{_w}",' not in m.group(1)))
     else:
         check("Words 字典可解析", False)
 
@@ -864,7 +918,7 @@ def test_paren_protect():
     if hook_pos == -1:
         hook_pos = hook.find("ProtectParens(work, parenBox)")
     check("括號保護先於逐詞替換（WordsRegex 之前）", hook_pos != -1 and "WordsRegex" in hook[hook_pos:hook_pos+1200])
-    check("Clean 還原括號", "RestoreParens(result, parenBox)" in hook)
+    check("Clean 還原括號", "RestoreAll(result, tokenBox, parenBox)" in hook)
     check("'s 後接中文規則", "'s\\s+" in hook and '"哈爾"' not in hook)
     # 模擬「保護式逐詞替換」：對已翻譯 ProperNoun 樣本，括號內不該被替換成中文
     words = {}
@@ -1364,25 +1418,45 @@ def test_template_end_to_end():
         ("I'm looking for work.","找工作"),
         ("Read's trade","瑞德"),
         ("Read's trade","的"),
-        ("Amphibious(","兩棲的"),
+        ("Amphibious(","兩棲的("),
         ("You need to reload! (","重新裝填"),
         ("That is out of range! (","範圍"),
         ("Freezing Ray (Hands)","手部"),
         ("Ice Frog (2)","(2)"),
         ("Amphibious (Flight)","(飛行)"),
+        # G4 零刪除原則（2026-08-16）：閉合結構照常翻譯、保留 (D) 標記
+        ("Amphibious(D)","兩棲的(D)"),
+        ("兩棲的(","兩棲的"),
+        ("土({{r|D}}","土"),
+        # G5 嵌套保護回歸（2026-08-17：=token= 包在 {{X|...}} 內時舊版單趟還原
+        # 殘留 \x00 佔位符 → 輸出截斷/畫面吞字；log 實錘「滑倒」4 條）
+        ("{{Y|=subject.Does:slip= 在凝膠上滑倒了！}}","在凝膠上滑倒了"),
+        ("{{K|=subject.Does:slip= 在墨水上滑倒了！}}","在墨水上滑倒了"),
+        ("{{C|=subject.Does:slip= 在油脂上滑倒了！}}","在油脂上滑倒了"),
+        ("{{C|=subject.Does:slip= 在冰上滑倒了！}}","在冰上滑倒了"),
+        ("=mutationName= ({{r|D}})","=mutationName= ({{r|D}})"),
+    ]
+    # 未閉合 markup = 遊戲分段組裝片段 → 任何路徑都必須原樣直傳（不翻譯、不刪除）
+    passthrough=[
+        "{{y|兩棲的(",
+        "{{y|Amphibious(",
+        "{{y|You need to reload! (",
     ]
     bad=[]
+    for src_t in passthrough:
+        outs=[_to_string_process(src_t, words, phrases), _tmp_process(src_t, words, phrases)]
+        for nm,o in (("to_str",outs[0]),("tmp",outs[1])):
+            if o != src_t:
+                bad.append(f"分段片段被改:{src_t[:30]}->{o[:44]}")
     for src_t,key in samples:
         outs=[_to_string_process(src_t, words, phrases), _tmp_process(src_t, words, phrases)]
         if not any(key in o for o in outs):
             bad.append(f"缺關鍵詞[{key}]:{src_t[:30]}->{outs[0][:44]}")
         if key=="的" and any("'s" in o for o in outs):
             bad.append(f"'s未轉:{src_t[:30]}->{outs[0][:44]}")
-        # 孤獨「(」尾（資訊斷裂殘骸）清理檢查（LoneParen 恢復 2026-08-15）
-        import re as _re2
-        if any(_re2.search(r"[(](?=\s*$)", o) for o in outs):
-            bad.append(f"孤獨尾括殘:{src_t[:30]}->{outs[0][:44]}")
-    check("端到端模板樣例（'s/R|/語序殘為0）", not bad, "; ".join(bad[:4]))
+        if any("\x00" in o for o in outs):
+            bad.append(f"佔位符殘留:{src_t[:30]}->{outs[0][:44]}")
+    check("端到端模板樣例（'s/語序/零刪除直傳/無佔位符殘留）", not bad, "; ".join(bad[:4]))
 
 def test_blueprint_paren_style():
     """風格：P2.3 藍圖名非常見名須含 (英文) 括註；Tutorial* 不得含『教學』。"""

@@ -48,26 +48,43 @@ public static class ZhTwTextCleaner
         });
     }
 
+    private static readonly Regex TokenPlaceholder = new Regex(
+        @"\x00(\d+)\x00", RegexOptions.Compiled);
+
+    // 還原 token（2026-08-17 修復嵌套保護缺陷）：
+    // MarkupToken 保護的「{{Y|=subject.Does:slip= ...}}」內部可能還含 TokenGuard 的佔位符
+    // （=token=），兩層保護產生的佔位符互相嵌套；單趟 Replace 只解一層，內層 \x00 殘留
+    // 導致輸出截斷/渲染吞字（log 實錘 17:29「滑倒」4 條 OUT 停在 {{Y|）。
+    // 解法：循環還原直到佔位符全解（有界，避免異常死迴圈）。
     private static string RestoreTokens(string text, List<string> box)
     {
         if (box.Count == 0) return text;
-        return Regex.Replace(text, @"\x00(\d+)\x00", delegate(Match m)
+        string r = text;
+        for (int pass = 0; pass < 32; pass++)
         {
-            int idx;
-            if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < box.Count)
+            bool changed = false;
+            string next = TokenPlaceholder.Replace(r, delegate(Match m)
             {
-                string seg = box[idx];
-                string zh;
-                string inner = seg.Trim();
-                if (inner.Length >= 2 && inner[0] == '(' && inner[inner.Length - 1] == ')')
+                int idx;
+                if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < box.Count)
                 {
-                    string core = inner.Substring(1, inner.Length - 2).Trim();
-                    if (TmpWords.TryGetValue(core, out zh)) return "(" + zh + ")";
+                    string seg = box[idx];
+                    string zh;
+                    string inner = seg.Trim();
+                    if (inner.Length >= 2 && inner[0] == '(' && inner[inner.Length - 1] == ')')
+                    {
+                        string core = inner.Substring(1, inner.Length - 2).Trim();
+                        if (TmpWords.TryGetValue(core, out zh)) return "(" + zh + ")";
+                    }
+                    changed = true;
+                    return seg;
                 }
-                return seg;
-            }
-            return m.Value;
-        });
+                return m.Value;
+            });
+            if (!changed) break;
+            r = next;
+        }
+        return r;
     }
 
     // ===== ProperNoun 括號英文保護 =====
@@ -103,6 +120,59 @@ public static class ZhTwTextCleaner
                 return box[idx];
             return m.Value;
         });
+    }
+
+    private static readonly Regex ParenPlaceholder = new Regex(
+        @"\x01(\d+)\x01", RegexOptions.Compiled);
+
+    // 統一回還原器（2026-08-17 最終修復）：
+    // Clean 有兩套佔位符——\x00（token）與 \x01（括號）。保護可互相嵌套：
+    //   • 「兩棲的 ({{r|D}})」：MarkupToken 包住 {{r|D}} → \x000\x00，接著 ParenGuard
+    //     又包住「(\x000\x00)」 → \x010\x01。「先 token 後括號」各還原一輪時，
+    //     \x01 還原出的 pbox 內容含 \x00，但 token 步驟已跑完 → 內層 \x00 永久殘留
+    //     （NUL 進渲染層 =「(」後全空白，本次主案實錘）。
+    //   • 「{{Y|=subject.Does:slip= ...}}」：MarkupToken 包住含 TokenGuard 佔位符的整段
+    //     → \x00 嵌套 \x00（上一輪已修單套循環）。
+    // 解法：\x00 與 \x01 交替循環還原，直到兩者皆無殘留（有界 64 趟），一次涵蓋
+    // \x00∈\x00、\x01∈\x01、\x00∈\x01、\x01∈\x00 全部四種嵌套組合。
+    private static string RestoreAll(string text, List<string> tokenBox, List<string> parenBox)
+    {
+        if (tokenBox.Count == 0 && parenBox.Count == 0) return text;
+        string r = text;
+        for (int pass = 0; pass < 64; pass++)
+        {
+            bool changed = false;
+            r = TokenPlaceholder.Replace(r, delegate(Match m)
+            {
+                int idx;
+                if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < tokenBox.Count)
+                {
+                    string seg = tokenBox[idx];
+                    string zh;
+                    string inner = seg.Trim();
+                    if (inner.Length >= 2 && inner[0] == '(' && inner[inner.Length - 1] == ')')
+                    {
+                        string core = inner.Substring(1, inner.Length - 2).Trim();
+                        if (TmpWords.TryGetValue(core, out zh)) return "(" + zh + ")";
+                    }
+                    changed = true;
+                    return seg;
+                }
+                return m.Value;
+            });
+            r = ParenPlaceholder.Replace(r, delegate(Match m)
+            {
+                int idx;
+                if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < parenBox.Count)
+                {
+                    changed = true;
+                    return parenBox[idx];
+                }
+                return m.Value;
+            });
+            if (!changed) break;
+        }
+        return r;
     }
 
     // ===== 所有格 's（後接中文時中文化：哈爾's 丈夫 → 哈爾的丈夫）=====
@@ -1886,6 +1956,7 @@ public static class ZhTwTextCleaner
         string cached;
         if (PostfixCache.TryGetValue(input, out cached)) return cached;
         string result = fn(input);
+        DiagOutLog("Postfix", input, result);
         if (PostfixCache.Count >= PostfixCacheMax) PostfixCache.Clear();
         PostfixCache[input] = result;
         return result;
@@ -2008,14 +2079,75 @@ public static class ZhTwTextCleaner
         RegexOptions.Compiled);
 
 
-    // 孤獨「(」尾清理（2026-08-15 恢復）：「(」後僅空白/文末＝資訊斷裂殘骸
-    // （如「兩棲的(」「You need to reload! (」）→ 剝除；「(D)」「(Hands)」「(2)」「( 內容」全部保留。
+    // ===== G3 通用結構完整性（2026-08-15）=====
+    // 目標：任何翻譯後輸出都不允許留下「斷裂殘骸」——
+    //   1. 孤獨「(」：後無閉合「)」（如「兩棲的(」「You need to reload! (」）→ 剝除該「(」；
+    //      正常結構「(Hands)」「(2)」「(D)」「( 內容 」全部保留。
+    //   2. 孤獨「)」：前無開「(」（多排殘骸）→ 剝除該「)」。
+    //   3. 半截 markup：「{{」與「}}」不平衡（如「{{y|兩棲的(」無「}}」）→ 拔掉孤單的「{」，
+    //      使 TMP 渲染不再吞掉「{{y|」之後的全部後續文字（呈現「直接斷了、什麼都沒有」）。
+    //   4. 殘留「}}」或「{{」（配不到另一半時）→ 剝除，避免上色區污染整段。
+    // 通用性：不認字、只認對稱——任何「( )」「{{ }}」不成對都是殘骸，一律清除，
+    // 保證「修 A 時 B 同樣受保護」，不再逐字串逐條補 key。
+    private static int DiagTmpCount = 0;
+
+    // markup 對稱偵測：{{ 與 }} 的個數若不相等，字串可能「正組裝到一半」
+    // （遊戲分段 Write 的片段—例如「Amphibious({{r|D}}」的閉合「)」在下一段才寫入），
+    // 或本身已是殘骸。對稱檢查避免把「{{y|Amphibious(」這種半截 markup 逐詞譯成
+    // 「{{y|兩棲的(」，前者 TMP 渲染只是當片段,後者會吞掉後續整段文字(顯示直接斷掉)。
+    private static bool HasUnbalancedMarkup(string text)
+    {
+        int open = 0;
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = text[i];
+            if (c == '{') { if (i + 1 < text.Length && text[i + 1] == '{') { open++; i++; } }
+            else if (c == '}') { if (i + 1 < text.Length && text[i + 1] == '}') { open--; i++; } }
+        }
+        return open != 0;
+    }
+
+    // 未閉合 markup 的守衛（2026-08-16 修正）：遊戲分段組裝片段或帶色碼的字串，
+    // 一律「原樣直傳」——不翻譯、不刪除任何字元。
+    // 用戶原則：漢化要嘛翻譯成中文，要嘛原文保留，絕不刪除遊戲資訊
+    //（此前「剝除 ( / {{X| 骨架」方向錯誤，正是「兩棲的(」後完全空白的原因）。
+    private static string DefuseUnbalancedMarkup(string text)
+    {
+        return text;
+    }
+
+    // 括號對稱偵測：有「(」卻無「)」的殘骸（「兩棲的(」），或反之。
+    // 不處理巢狀深度（文本層沒有巢狀括號語意），只查成對存在性。
+    private static bool HasUnbalancedParen(string text)
+    {
+        int open = 0;
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = text[i];
+            if (c == '(') open++;
+            else if (c == ')')
+            {
+                if (open <= 0) return true; // 孤獨「)」
+                open--;
+            }
+        }
+        return open != 0;
+    }
+
+    // 結構完整性清潔（2026-08-16 修正）：不再刪除任何字元（零刪除原則）。
+    // 保留此介面避免改動其它呼叫點；行為 = 原樣返回。
+    private static string CleanStructureWreckage(string text)
+    {
+        return text;
+    }
+
     private static readonly Regex LoneParen = new Regex(
         @"\((?=\s*$)", RegexOptions.Compiled);
     private static string StripLoneParen(string text)
     {
-        if (text == null || text.IndexOf('(') < 0) return text;
-        return LoneParen.Replace(text, "");
+        // 2026-08-16：不再剝除孤獨「(」——那是遊戲原生資訊（如「(D)」缺陷標記），
+        // 刪除會造成「兩棲的(」後完全空白。原樣返回。
+        return text;
     }
 
     private static string CleanNames(string text)
@@ -2039,8 +2171,30 @@ public static class ZhTwTextCleaner
         return CjkProperNoun.TryGetValue(m.Value, out v) ? v : m.Value;
     }
 
+    // OUT log 診斷（2026-08-16）：含 兩棲/Amphibious 或 markup 的字串，
+    // 逐階段記錄輸出，找出「兩棲的(`後空白」的破壞點（輸入完整、輸出殘缺 or 反之）
+    private static void DiagOutLog(string tag, string before, string after)
+    {
+        if (before == null || after == null) return;
+        if (before.IndexOf("Amphibious", System.StringComparison.Ordinal) < 0 &&
+            before.IndexOf("兩棲", System.StringComparison.Ordinal) < 0 &&
+            before.IndexOf("{{", System.StringComparison.Ordinal) < 0) return;
+        string b = before.Length > 160 ? before.Substring(0, 160) : before;
+        string a = after.Length > 160 ? after.Substring(0, 160) : after;
+        ZhTwReplacers.LogAlways("[DIAG4-OUT] " + tag + " IN=[" + b + "] OUT=[" + a + "]");
+    }
+
+    private static int DiagAmphClean = 0;
     public static string Clean(string text)
     {
+        if (text != null && (text.IndexOf("Amphibious", System.StringComparison.Ordinal) >= 0 || text.IndexOf("兩棲", System.StringComparison.Ordinal) >= 0))
+        {
+            if (System.Threading.Interlocked.Increment(ref DiagAmphClean) <= 8)
+            {
+                string seg = text.Length > 200 ? text.Substring(0, 200) : text;
+                ZhTwReplacers.LogAlways("[DIAG3-CLEAN] IN=[" + seg + "]");
+            }
+        }
         // 書本正文防碎翻（2026-08-14）：超長且多段落（書本/手稿正文）跳過詞級，
         // 僅保留語料層翻譯（組3/問題M）
         int nl = 0;
@@ -2048,6 +2202,9 @@ public static class ZhTwTextCleaner
         if (text.Length > 600 && nl >= 3) return text;
 
         if (string.IsNullOrEmpty(text)) return text;
+        // G1（2026-08-16 修正）：未閉合 markup = 遊戲分段組裝片段 → 原樣直傳，
+        // 不翻譯、不刪除。用戶原則：要嘛翻中文，要嘛原文不動。
+        if (HasUnbalancedMarkup(text)) return text;
         // 單趟掃描：判斷是否「中英混雜」（只有混雜才需清理）
         bool hasEng = false, hasCjk = false;
         for (int i = 0; i < text.Length; i++)
@@ -2089,13 +2246,12 @@ public static class ZhTwTextCleaner
         result = PossessiveZh2.Replace(result, "$1的");
         // 程序化專名音譯（STEP 4 防漏：漏網英文專名 → 繁中音譯）
         result = CleanNames(result);
-        // 還原 token
-        result = RestoreTokens(result, tokenBox);
-        // 還原 ProperNoun 括號英文
-        result = RestoreParens(result, parenBox);
+        // 統一回還原（token \x00 與括號 \x01 交替循環，解嵌套；2026-08-17）
+        result = RestoreAll(result, tokenBox, parenBox);
         // 孤獨「(」尾殘清理（資訊斷裂殘骸；有內容括號保留）
         result = StripLoneParen(result);
         // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
+        DiagOutLog("Clean", text, result);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -2196,6 +2352,13 @@ public static class ZhTwTextCleaner
             { "Floating Near", "漂浮物" },
             { "Floating Nearby", "漂浮物" },
             { "Worn", "穿戴中" },
+            { "Face", "臉部" },
+            { "Head", "頭部" },
+            { "Body", "身體" },
+            { "RightHand", "右手" },
+            { "LeftHand", "左手" },
+            { "LeftArm", "左臂" },
+            { "RightArm", "右臂" },
             { "Hands", "手部" },
             { "Forefeet", "前足" },
             { "Hindfeet", "後足" },
@@ -2269,12 +2432,32 @@ public static class ZhTwTextCleaner
 
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再詞級（只替換白名單詞）
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再三詞/雙詞/單詞級（只替換白名單詞）
+    private static int DiagAmphCount = 0;
     public static string TranslateTmpText(string text)
     {
         if (string.IsNullOrEmpty(text)) return text;
+        // G1（2026-08-16 修正）：未閉合 markup = 遊戲分段組裝片段 → 原樣直傳，
+        // 不翻譯、不刪除。用戶原則：要嘛翻中文，要嘛原文不動。
+        if (HasUnbalancedMarkup(text)) return text;
         string zh;
         string trimmed = text.Trim();
         if (TmpWords.TryGetValue(trimmed, out zh)) return zh;
+        // 診斷3（2026-08-15 臨時）：Amphibious / 兩棲的( 來源捕獲
+        if (text.IndexOf("Amphibious", System.StringComparison.Ordinal) >= 0 || text.IndexOf("兩棲的(", System.StringComparison.Ordinal) >= 0)
+        {
+            if (System.Threading.Interlocked.Increment(ref DiagAmphCount) <= 8)
+            {
+                string seg = text.Length > 200 ? text.Substring(0, 200) : text;
+                ZhTwReplacers.LogAlways("[DIAG3-TMP] IN=[" + seg + "]");
+            }
+        }
+        // 診斷（2026-08-15 臨時）：未命中且含 ( 或 Weapon 的輸入記錄原文（限 3 次）
+        if ((text.IndexOf('(') >= 0 || text.IndexOf("Weapon", System.StringComparison.OrdinalIgnoreCase) >= 0)
+            && System.Threading.Interlocked.Increment(ref DiagTmpCount) <= 3)
+        {
+            string seg = text.Length > 160 ? text.Substring(0, 160) : text;
+            ZhTwReplacers.LogAlways("[DIAG] TMP unhandled: [" + seg + "]");
+        }
         // 詞級拆譯安全範圍（2026-08-13 事故教訓）：只對「含空格或 markup 特徵」的
         // 短文本執行（技能需求串「Cleave [50sp]」/「Requires Cleave」/「{{Y|Cleave}}」等）；
         // 純字母數位單詞（無空格且無 markup，如液體名 Water/Oil）不進詞級——液體初始化期
@@ -2303,6 +2486,7 @@ public static class ZhTwTextCleaner
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
         r = StripLoneParen(r);
+        DiagOutLog("TmpText", text, r);
         return r;
     }
 
@@ -2339,7 +2523,7 @@ public static class ZhTwTextCleaner
         string work = ProtectTokens(text, tokenBox);
         work = PhraseRegex.Replace(work, new MatchEvaluator(PhraseMatch));
         work = WordsRegex.Replace(work, new MatchEvaluator(WordsMatch));
-        return RestoreTokens(work, tokenBox);
+        return RestoreAll(work, tokenBox, null);
     }
 
     // TextBuilder.ToString() 後綴：清理組裝後的動態生成文本（每生成字串一次，非每幀）

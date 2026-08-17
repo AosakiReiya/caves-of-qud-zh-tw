@@ -222,11 +222,13 @@ public static class ZhTwHarmonyPatches
                     if (wps[0].ParameterType == typeof(string))
                     {
                         harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderWritePrefix)));
+                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.WriteDiagPrefix)));
                         writePatched++;
                     }
                     else if (wps[0].ParameterType == typeof(System.Text.StringBuilder))
                     {
                         harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderSBufWritePrefix)));
+                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.WriteDiagPrefix)));
                         writePatched++;
                     }
                 }
@@ -264,6 +266,38 @@ public static class ZhTwHarmonyPatches
                 ZhTwReplacers.LogAlways("TMP patch skip: " + tmpEx.Message);
             }
             ZhTwReplacers.LogAlways("Harmony all patches done, total=" + patched);
+            // 診斷2（2026-08-15 臨時）：突變/角色狀態面板控件類型（UGUI Text vs TMP）
+            try
+            {
+                System.Type cssType = null;
+                foreach (var ca in System.AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    try
+                    {
+                        foreach (var ct in ca.GetTypes())
+                        {
+                            if (ct.FullName != null && ct.FullName.Contains("CharacterStatusScreen")) { cssType = ct; break; }
+                        }
+                    }
+                    catch { }
+                    if (cssType != null) break;
+                }
+                if (cssType == null) { ZhTwReplacers.LogAlways("[DIAG2] CharacterStatusScreen type not found"); }
+                else
+                {
+                int uguiCnt = 0, tmpCnt = 0;
+                var names = new System.Collections.Generic.List<string>();
+                foreach (var f in cssType.GetFields(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public))
+                {
+                    var ft = f.FieldType;
+                    string fn = ft.FullName ?? "";
+                    if (fn.StartsWith("UnityEngine.UI.Text")) { uguiCnt++; if (names.Count < 8) names.Add(f.Name); }
+                    else if (fn.Contains("TMPro.TMP_Text")) { tmpCnt++; }
+                }
+                ZhTwReplacers.LogAlways("[DIAG2] CharacterStatusScreen UGUI.Text=" + uguiCnt + " TMP_Text=" + tmpCnt + " uguiSample=" + string.Join(",", names));
+                }
+            }
+            catch (Exception dex2) { ZhTwReplacers.LogAlways("[DIAG2] css scan fail: " + dex2.Message); }
             // ===== 全域文本後處理（TextMeshProUGUI.text）=====
             ZhTwTextCleaner.Init();
         }

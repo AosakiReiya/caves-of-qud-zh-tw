@@ -954,4 +954,34 @@ System.Tuple.Create(new System.Text.RegularExpressions.Regex(@"^\{\{r\|You\ cann
         }
         catch { }
     }
+
+    // ===== ScreenBuffer.Write 旁路診斷（2026-08-17 臨時）=====
+    // 角色創建頁不會進 Clean/TMP，直接在 console Write 輸出「兩棲的(`斷裂；
+    // 這裡攔截所有 Write 的第一參數，捕獲遊戲真正送出的字串長相（只 log 不改動）。
+    private static int WriteDiagCount = 0;
+    public static void WriteDiagPrefix(object __0, object __1)
+    {
+        try
+        {
+            // 角色創建頁走 Write(Tile, RenderString, ...)：名稱在第二參數 __1（RenderString），
+            // Tile(__0) 是圖片檔名不含文字 → 必須同時檢查 __1。
+            string[] cands = new string[] { __0 as string, __1 as string };
+            var sb1 = __0 as System.Text.StringBuilder;
+            var sb2 = __1 as System.Text.StringBuilder;
+            if (sb1 != null) cands[0] = sb1.ToString();
+            if (sb2 != null) cands[1] = sb2.ToString();
+            foreach (string str in cands)
+            {
+                if (str == null) continue;
+                if (str.IndexOf("Amphibious", System.StringComparison.Ordinal) < 0 &&
+                    str.IndexOf("兩棲", System.StringComparison.Ordinal) < 0 &&
+                    str.IndexOf("{{r|", System.StringComparison.Ordinal) < 0) continue;
+                if (System.Threading.Interlocked.Increment(ref WriteDiagCount) > 20) return;
+                string seg = str.Length > 200 ? str.Substring(0, 200) : str;
+                ZhTwReplacers.LogAlways("[DIAG5-WRITE] [" + seg + "]");
+                break;
+            }
+        }
+        catch { }
+    }
 }
