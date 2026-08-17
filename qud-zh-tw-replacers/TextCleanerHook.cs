@@ -135,9 +135,9 @@ public static class ZhTwTextCleaner
     //     → \x00 嵌套 \x00（上一輪已修單套循環）。
     // 解法：\x00 與 \x01 交替循環還原，直到兩者皆無殘留（有界 64 趟），一次涵蓋
     // \x00∈\x00、\x01∈\x01、\x00∈\x01、\x01∈\x00 全部四種嵌套組合。
-    private static string RestoreAll(string text, List<string> tokenBox, List<string> parenBox)
+    private static string RestoreAll(string text, List<string> tokenBox, List<string> parenBox, List<string> dynBox)
     {
-        if (tokenBox.Count == 0 && parenBox.Count == 0) return text;
+        if (tokenBox.Count == 0 && parenBox.Count == 0 && (dynBox == null || dynBox.Count == 0)) return text;
         string r = text;
         for (int pass = 0; pass < 64; pass++)
         {
@@ -170,8 +170,43 @@ public static class ZhTwTextCleaner
                 }
                 return m.Value;
             });
+            if (dynBox != null)
+            {
+                r = DynPlaceholder.Replace(r, delegate(Match m)
+                {
+                    int idx;
+                    if (int.TryParse(m.Groups[1].Value, out idx) && idx >= 0 && idx < dynBox.Count)
+                    {
+                        changed = true;
+                        return dynBox[idx];
+                    }
+                    return m.Value;
+                });
+            }
             if (!changed) break;
         }
+        return r;
+    }
+
+    // 動態生成專名整段保護（2026-08-17）：引擎生成的 faction/地名由普通英文詞
+    // 以連字號組成（activate-in-ivory / Ivory-in-Motion），逐詞會拆成破碎中文；
+    // 整段保護保留原文（中文(英文) 精神：原文保全）。佔位符 \x02。
+    private static readonly Regex DynamicName = new Regex(
+        @"\b(?:[A-Z][a-z]{2,}(?:-[A-Za-z][a-z]{1,})+|[a-z]{3,}(?:-[a-z]{1,}){2,})\b",
+        RegexOptions.Compiled);
+    private static readonly Regex DynPlaceholder = new Regex(
+        "\x02(\\d+)\x02", RegexOptions.Compiled);
+
+    private static string ProtectDynamicNames(string text, List<string> dynBox)
+    {
+        if (dynBox == null) return text;
+        string r = text;
+        // 佔位符換成 \x01 里唯一的錯誤風險：整串已含 \x02 → 用 專用索引
+        r = DynamicName.Replace(r, delegate(Match m)
+        {
+            dynBox.Add(m.Value);
+            return "\x02" + (dynBox.Count - 1) + "\x02";
+        });
         return r;
     }
 
@@ -2244,6 +2279,9 @@ public static class ZhTwTextCleaner
         // 保護「中文(English)」括號（避免逐詞替換/ProperNoun 污染括號英文側）
         var parenBox = new List<string>();
         work = ProtectParens(work, parenBox);
+        // 動態生成專名整段保護（activate-in-ivory 等，防逐詞拆碎）
+        var dynBox = new List<string>();
+        work = ProtectDynamicNames(work, dynBox);
 
         string result = LeadingArticle.Replace(work, "");
         // 逐詞替換常見殘留（整詞邊界、大小寫不敏感）
@@ -2266,7 +2304,7 @@ public static class ZhTwTextCleaner
         // 程序化專名音譯（STEP 4 防漏：漏網英文專名 → 繁中音譯）
         result = CleanNames(result);
         // 統一回還原（token \x00 與括號 \x01 交替循環，解嵌套；2026-08-17）
-        result = RestoreAll(result, tokenBox, parenBox);
+        result = RestoreAll(result, tokenBox, parenBox, dynBox);
         // 孤獨「(」尾殘清理（資訊斷裂殘骸；有內容括號保留）
         result = StripLoneParen(result);
         // G6：引擎注入殘留清洗（「14th」→「14 日」、「1 stratum」→「1 層」）
@@ -2545,7 +2583,7 @@ public static class ZhTwTextCleaner
         string work = ProtectTokens(text, tokenBox);
         work = PhraseRegex.Replace(work, new MatchEvaluator(PhraseMatch));
         work = WordsRegex.Replace(work, new MatchEvaluator(WordsMatch));
-        return RestoreAll(work, tokenBox, null);
+        return RestoreAll(work, tokenBox, null, null);
     }
 
     // TextBuilder.ToString() 後綴：清理組裝後的動態生成文本（每生成字串一次，非每幀）

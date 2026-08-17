@@ -255,6 +255,13 @@ def _clean(text, words, phrases):
     # Phrase 產生的「中文(English)」括號保護（避免 Words 逐詞污染括號英文）
     text, box2 = _sim_protect_parens(text)
     # WordsRegex 後（整詞）；Python 要求 (?i) 在開頭（C# 可 `\b(?i)`）
+    # 動態生成專名整段保護（activate-in-ivory / Ivory-in-Motion 防逐詞拆碎；C# DynamicName）
+    _dyn = re.compile(r'(?:[A-Z][a-z]{2,}(?:-[A-Za-z][a-z]{1,})+|[a-z]{3,}(?:-[a-z]{1,}){2,})')
+    _text_holder = []
+    def _dyn_repl(m):
+        _text_holder.append(m.group(0))
+        return '\x03' + str(len(_text_holder)-1) + '\x03'
+    text = _dyn.sub(_dyn_repl, text)
     for k in sorted(words, key=len, reverse=True):
         text = re.sub(r'(?i)\b' + re.escape(k) + r'\b', words[k], text)
     for idx, seg in enumerate(box2):
@@ -275,6 +282,9 @@ def _clean(text, words, phrases):
         if not changed:
             break
         text = nxt
+    if _text_holder:
+        for i, seg in enumerate(_text_holder):
+            text = text.replace('\x03' + str(i) + '\x03', seg)
     # G6b（2026-08-17）：與 C# OrdinalDay/StrataUnit 一致
     text = re.sub(r'(?<![/\d])(\d{1,2})(?:st|nd|rd|th)(?![\w/])', r'\1 日', text)
     text = re.sub(r'\b(?:stratum|strata)\b', '層', text, flags=re.I)
@@ -528,6 +538,8 @@ def test_pipeline():
         ("Left Missile Weapon", "左側遠程武器欄", None),
         ("Forefeet", "前足", "Forefeet"),
         ("Diluted Asphalt People", "稀釋的 瀝青", "People"),
+        ("activate-in-ivory 的 繁殖 厭惡 您", "activate-in-ivory", "激活"),
+        ("Ivory-in-Motion 有興趣交易 蘇丹 的秘密", "Ivory-in-Motion", "啟動"),
         ("Floating nearby", "漂浮物", "Floating"),
         ("LeftMissile Weapon", "左側遠程武器欄", None),
         ("RightMissile Weapon", "右側遠程武器欄", None),
@@ -858,7 +870,7 @@ def test_token_protect():
     check("ProtectTokens 存在", "ProtectTokens" in hook)
     check("RestoreTokens 存在", "RestoreTokens" in hook)
     check("Clean 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
-    check("Clean 還原 token", "RestoreAll(result, tokenBox, parenBox)" in hook)
+    check("Clean 還原 token", "RestoreAll(result, tokenBox, parenBox, dynBox)" in hook)
     check("KeyLeaks 使用 ProtectTokens", "ProtectTokens(text, tokenBox)" in hook)
     # spice 不該在 Words 中（避免 =spice:...= token 被翻成「香料」→ No variable replacer）
     import re as _re
@@ -922,7 +934,7 @@ def test_paren_protect():
     if hook_pos == -1:
         hook_pos = hook.find("ProtectParens(work, parenBox)")
     check("括號保護先於逐詞替換（WordsRegex 之前）", hook_pos != -1 and "WordsRegex" in hook[hook_pos:hook_pos+1200])
-    check("Clean 還原括號", "RestoreAll(result, tokenBox, parenBox)" in hook)
+    check("Clean 還原括號", "RestoreAll(result, tokenBox, parenBox, dynBox)" in hook)
     check("'s 後接中文規則", "'s\\s+" in hook and '"哈爾"' not in hook)
     # 模擬「保護式逐詞替換」：對已翻譯 ProperNoun 樣本，括號內不該被替換成中文
     words = {}
