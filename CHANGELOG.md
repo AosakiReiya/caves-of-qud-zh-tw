@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.5.0 — 2026-08-17（大更新）
+
+- **角色創建頁「兩棲的(」斷裂根治**：RestoreAll 交替循環還原嵌套佔位符（`\x00`/`\x01`
+  四種組合），「=mutationName= ({{r|D}})」缺陷標記完整顯示
+- **翻譯審計管道**（`tools/audit_translation.py`，接入 run_tests 全量鎖死）：
+  - C1 括號空格統一（語料 109 處 + replacer 115 處）
+  - C2 月名 13 條全「中文(原文)」無空格（含補譯 Ut yara Ux）
+  - C3 種族級「中文(原文)」：山羊族(Goatfolk)、咬顎獸(Snapjaw)、岩民(Cragmensch)、
+    巨魔(Troll)、食人族(Cannibal)
+  - C5 語料層 vs replacer 譯名衝突：火炬→火把、樹木→樹、牆壁→牆、尾刺→刺針
+  - C7 中文條目殘留英文巡檢（emote/聖地句等 7 處補譯）
+  - C9 跨字典重複 key 衝突：29 個技能名雙軌統一（以語料層為準）
+  - C10 replacer 括號空格 84 處；C11 專名缺 ProperNounZh 風險清單
+- **動態生成專名整段保護**：activate-in-ivory / Ivory-in-Motion 類引擎生成名不再
+  被逐詞拆成「啟動-在-象牙」（RestoreAll 第三路 `\x02` 交替還原）
+- **殘留英文清洗**：「14th」→「14 日」（排除 1/10th、3rd dimension 誤傷）、
+  「stratum/strata」→「層」、「Eq」→「裝備」
+- **術語統一**：顎骨獸→咬顎獸（17 處）、史托普斯瓦林/快顎/快咬者系列→止濤者/
+  咬顎獸(Snapjaw)、心臟停搏→驟停、frozen→凍結、Baetyls→貝提爾
+- **ProperNounZh 補專名**：Kindrish、Bey Lah、Eskhind、Baetyl、Lithofex、
+  Decarbonizer、Timereaver、Golgotha、Stopsvaalinn
+- **裝備欄 7 槽位名補中**：臉部/頭部/身體/右手/左手/左臂/右臂（僅入 TmpWords 白名單）
+- run_tests 220 PASS / 0 FAIL
+
 ## v0.2.3 — 2026-08-12
 
 - 還原被改壞的 string ID：
