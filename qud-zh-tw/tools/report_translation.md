@@ -1,6 +1,6 @@
 # 翻譯審計報告
 
-- 語料 <string> 條目：9632　|　replacer 字典：2965
+- 語料 <string> 條目：9632　|　replacer 字典：2967
 
 - 模式：check
 

@@ -540,6 +540,7 @@ def test_pipeline():
         ("Diluted Asphalt People", "稀釋的 瀝青", "People"),
         ("activate-in-ivory 的 繁殖 厭惡 您", "activate-in-ivory", "激活"),
         ("Ivory-in-Motion 有興趣交易 蘇丹 的秘密", "Ivory-in-Motion", "啟動"),
+        ("祖傳手鍊 Kindrish 的位置", "金德里什(Kindrish)", "Kindrish 的位置"),
         ("Floating nearby", "漂浮物", "Floating"),
         ("LeftMissile Weapon", "左側遠程武器欄", None),
         ("RightMissile Weapon", "右側遠程武器欄", None),

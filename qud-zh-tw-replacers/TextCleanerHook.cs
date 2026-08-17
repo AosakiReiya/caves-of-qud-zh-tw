@@ -2006,7 +2006,8 @@ public static class ZhTwTextCleaner
             { "Resheph", "雷舍夫(Resheph)" }, { "Mamon", "馬蒙(Mamon)" },
             { "Sheba", "示巴(Sheba)" },
             // 執行期 faction 名（=faction.FormattedName= 槽位，GetFormattedName 若用英文名則靠此兜底）
-            { "Mopango", "莫龐戈(Mopango)" }, 
+            { "Mopango", "莫龐戈(Mopango)" },
+            { "Kindrish", "金德里什(Kindrish)" }, { "Bey Lah", "貝拉(Bey Lah)" }, 
             { "Gyre Wights", "渦流亡靈(Gyre Wights)" }, { "Kyakukya", "恰庫恰(Kyakukya)" },
             { "YdFreehold", "伊德自由領(YdFreehold)" }, { "Issachari", "伊薩查部落(Issachari)" },
             { "Chavvah", "夏瓦(Chavvah)" }, { "villagers of Joppa", "約帕村民" },
