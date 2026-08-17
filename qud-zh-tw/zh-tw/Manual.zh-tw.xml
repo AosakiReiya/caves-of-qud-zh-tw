@@ -79,18 +79,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 [[{{C|自我}}]]
 你的自我值決定了你精神突變的強度、與商人討價還價的能力，以及支配其他生物意志的能力。
 
-[[{{C|護甲值與閃避值 (AV / DV)}}]]
-你的護甲值 (AV) 是衡量你抵禦擊中你的物理攻擊保護程度的指標。分數越高，對手攻擊造成嚴重傷害的可能性就越低。大多數角色初始的基礎 AV 分數為 0。
+[[{{C|護甲值與閃避值(AV / DV)}}]]
+你的護甲值(AV) 是衡量你抵禦擊中你的物理攻擊保護程度的指標。分數越高，對手攻擊造成嚴重傷害的可能性就越低。大多數角色初始的基礎 AV 分數為 0。
 
-你的閃避值 (DV) 是衡量你被物理攻擊擊中的可能性之指標。分數越高，對手攻擊擊中你的可能性就越低。你的 DV 會受到敏捷修正值的影響。大多數角色初始的基礎 DV 為 6。
+你的閃避值(DV) 是衡量你被物理攻擊擊中的可能性之指標。分數越高，對手攻擊擊中你的可能性就越低。你的 DV 會受到敏捷修正值的影響。大多數角色初始的基礎 DV 為 6。
 
-[[{{C|精神護甲 (MA)}}]]
-你的精神護甲 (MA) 是衡量你抵禦精神攻擊保護程度的指標，就像護甲值是衡量你抵禦物理攻擊的保護程度一樣。分數越高，對手精神攻擊對你造成嚴重影響的可能性就越低。你的 MA 會受到意志修正值的影響。大多數角色初始的基礎 MA 為 4。
+[[{{C|精神護甲(MA)}}]]
+你的精神護甲(MA) 是衡量你抵禦精神攻擊保護程度的指標，就像護甲值是衡量你抵禦物理攻擊的保護程度一樣。分數越高，對手精神攻擊對你造成嚴重影響的可能性就越低。你的 MA 會受到意志修正值的影響。大多數角色初始的基礎 MA 為 4。
 
-[[{{C|快速度 (QN)}}]]
+[[{{C|快速度(QN)}}]]
 你的快速度分數是衡量你執行每一項動作的速度之指標。你的基礎快速度分數為 100。請注意，增強此分數的方法非常有限。
 
-[[{{C|移動速度 (MS)}}]]
+[[{{C|移動速度(MS)}}]]
 你的移動速度是衡量你行走或飛行的快慢之指標。你的基礎移動速度為 100。
 
 [[{{C|溫度 (T)}}]]
@@ -141,13 +141,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
 當您對目標進行近戰攻擊時，會發生以下事件序列：
 
 [[{{c|1. 判定是否擊中目標。}}]]
-您的命中檢定為 1d20 加上您的敏捷修正值，以及任何來自武器或技能能力的加成。如果此擲骰結果超過對手的閃避值 (DV)，則表示您擊中了。目標上方出現空心圓圈圖示，表示您的攻擊未命中。
+您的命中檢定為 1d20 加上您的敏捷修正值，以及任何來自武器或技能能力的加成。如果此擲骰結果超過對手的閃避值(DV)，則表示您擊中了。目標上方出現空心圓圈圖示，表示您的攻擊未命中。
 
 [[{{c|2. 判定是否發生盾牌格擋。}}]]
 若目標裝備了 盾牌，他們有基礎 25% 的機率使用它進行格擋，此機率會隨技能提升。成功的格擋會將 盾牌的 armor value (AV) 加入該次攻擊目標的 AV 中。
 
 [[{{c|3. 判定您的攻擊穿透目標護甲的程度。}}]]
-每種武器都有一個穿透值（例如 {{C|→}}4）。此數值代表您的武器通常能輕易穿透的護甲值 (AV)。如果您的武器穿透值遠高於目標的 AV，您的武器可能會多次穿透。每當您的武器穿透目標的護甲時，目標就會受到等於您武器傷害值的傷害（例如 {{R|♥}}1d4）。目標上方出現實心圓圈圖示，表示您的攻擊擊中了但未能穿透目標的護甲。愛心圖示則表示您的攻擊擊中並穿透了目標的護甲。
+每種武器都有一個穿透值（例如 {{C|→}}4）。此數值代表您的武器通常能輕易穿透的護甲值(AV)。如果您的武器穿透值遠高於目標的 AV，您的武器可能會多次穿透。每當您的武器穿透目標的護甲時，目標就會受到等於您武器傷害值的傷害（例如 {{R|♥}}1d4）。目標上方出現實心圓圈圖示，表示您的攻擊擊中了但未能穿透目標的護甲。愛心圖示則表示您的攻擊擊中並穿透了目標的護甲。
 
 [[{{c|4. 判定是否進行多次攻擊。}}]]
 有 15% 的機率您會使用副手進行額外的攻擊。擁有複數肢體的角色可能會進行超出此範圍的額外攻擊。
@@ -367,28 +367,27 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
                                 Gavin Conover
 
   ]]</topic>
-  <topic name="Open Source Licenses" DisplayName="開源授權條款">[[{{c|Harmony 授權 (https://github.com/pardeike/Harmony)}}
+  <topic name="Open Source Licenses" DisplayName="開源授權條款">[[{{c|Harmony 授權(https://github.com/pardeike/Harmony)}}
   {{W|MIT 授權}}
 
   Copyright (c) 2017 Andreas Pardeike
 
-{{c|FuzzySharp 授權 (https://github.com/JakeBayer/FuzzySharp)}}
+{{c|FuzzySharp 授權(https://github.com/JakeBayer/FuzzySharp)}}
   {{W|MIT 授權}}
 
   Copyright (c) 2018 
   
-{{c|UnityStandaloneFileBrowser 授權
- (https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
+{{c|UnityStandaloneFileBrowser 授權(https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
   {{W|MIT 授權}}
 
   Copyright (c) 2017 Gökhan Gökçe
 
-{{c|ZString 授權 (https://github.com/Cysharp/ZString)}}
+{{c|ZString 授權(https://github.com/Cysharp/ZString)}}
   {{W|MIT 授權}}
 
   Copyright (c) 2020 Yoshifumi Kawai / Cysharp, Inc.
 
-{{c|UniTask 授權 (https://github.com/Cysharp/UniTask)}}
+{{c|UniTask 授權(https://github.com/Cysharp/UniTask)}}
   {{W|MIT 授權}}
 
   Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.

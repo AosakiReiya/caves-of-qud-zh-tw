@@ -156,7 +156,7 @@
     </mutation>
     <mutation Name="Photosynthetic Skin" DisplayName="光合作用皮膚" BearerDescription="綠皮膚的">
       <description><p>你透過強健的綠色皮膚吸收陽光來補充能量。</p></description>
-      <leveltext><p>你可以透過沐浴陽光而非進食來獲得特殊的代謝效果，持續 <stat Name="DurationDay" Unit="天" />：自然療傷速率 +<stat Name="BonusRegen" /> 以及敏捷 (Quickness) +<stat Name="BonusQuickness" /></p>
+      <leveltext><p>你可以透過沐浴陽光而非進食來獲得特殊的代謝效果，持續 <stat Name="DurationDay" Unit="天" />：自然療傷速率 +<stat Name="BonusRegen" /> 以及敏捷(Quickness) +<stat Name="BonusQuickness" /></p>
 <p>在陽光照射下，你會累積澱粉與木質素，可用於烹飪食物（每種最多 <stat Name="StarchServings" Unit="服務中的" /> 份）。</p>
 <p>當位於植被相同的格位時，DV +<stat Name="BonusCamoflage" /></p>
 <p>與 {{w|根系}}, {{w|樹木}}, {{w|藤蔓}} 以及 {{w|the 植物聯盟(Consortium of Phyta)}} 的聲望 +200</p></leveltext>
@@ -223,7 +223,7 @@
 <p>你免疫被困住。</p>
 <p>與 {{w|蛛形綱動物}} 的聲望 +300</p></leveltext>
     </mutation>
-    <mutation Name="Stinger (Confusing Venom)" DisplayName="螫刺 (Confusing Venom)" BearerDescription="那些擁有帶有混亂毒素之螫刺的人">
+    <mutation Name="Stinger (Confusing Venom)" DisplayName="螫刺(Confusing Venom)" BearerDescription="那些擁有帶有混亂毒素之螫刺的人">
       <description><p>你擁有一條帶有螫刺的尾巴，能向敵人注入 <stat Name="VenomType" /> 毒素。</p></description>
       <leveltext><p>近戰攻擊時有 20% 機率螫刺你的對手 (<gametext>=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
 <p>螫刺是長刃，且只能穿透一次。</p>
@@ -234,7 +234,7 @@
 <p>毒素會使對手混亂 <stat Name="Duration" /></p>
 <p>+200 蛛形綱動物聲望</p></leveltext>
     </mutation>
-    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="螫刺 (Paralyzing Venom)" BearerDescription="那些帶有附著麻痺毒液之螫刺的人">
+    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="螫刺(Paralyzing Venom)" BearerDescription="那些帶有附著麻痺毒液之螫刺的人">
       <description><p>你擁有一條帶有螫刺的尾巴，能向敵人注入 <stat Name="VenomType" /> 毒素。</p></description>
       <leveltext><p>近戰攻擊時有 20% 機率螫刺你的對手 (<gametext>=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
 <p>螫刺是長刃，且只能穿透一次。</p>
@@ -245,7 +245,7 @@
 <p>毒素會使對手麻痺 <stat Name="Duration" /></p>
 <p>+200 蛛形綱動物聲望</p></leveltext>
     </mutation>
-    <mutation Name="Stinger (Poisoning Venom)" DisplayName="螫刺 (Poisoning Venom)" BearerDescription="那些擁有帶有中毒毒素之螫刺的人">
+    <mutation Name="Stinger (Poisoning Venom)" DisplayName="螫刺(Poisoning Venom)" BearerDescription="那些擁有帶有中毒毒素之螫刺的人">
       <description><p>你擁有一條帶有螫刺的尾巴，能向敵人注入 <stat Name="VenomType" /> 毒素。</p></description>
       <leveltext><p>近戰攻擊時有 20% 的機率螫刺對手 <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
 <p>螫刺是一柄長刃，且只能穿透一次。</p>
@@ -436,7 +436,7 @@
     <mutation Name="Domination" DisplayName="支配" BearerDescription="那些支配他人意志的人" BiomeEpithet="意志劇場">
       <description><p>你勒住鄰近生物的精神並控制其行動，而你自己的身體則處於休眠狀態。</p></description>
       <leveltext><p>對具有心智的生物進行精神攻擊</p>
-<p>成功判定：{{rules|mutation rank}} 或 心智 (Ego) 修正值（取較高者）+ 角色等級 + 1d8 對抗 防禦者的 MA + 角色等級</p>
+<p>成功判定：{{rules|mutation rank}} 或 心智(Ego) 修正值（取較高者）+ 角色等級 + 1d8 對抗 防禦者的 MA + 角色等級</p>
 <p>射程：1</p>
 <statline Name="Duration" DisplayName="Duration" />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></leveltext>
@@ -491,7 +491,7 @@
     </mutation>
     <mutation Name="Mental Mirror" DisplayName="心靈之鏡" BearerDescription="精神反思者" BiomeEpithet="鏡面原野">
       <description><p>你將精神攻擊反射回攻擊者身上。</p></description>
-      <leveltext><p>當「精神鏡像」冷卻結束時，若你遭受精神攻擊，你會獲得 +<stat Name="BonusMA" /> 精神護甲 (MA)。</p>
+      <leveltext><p>當「精神鏡像」冷卻結束時，若你遭受精神攻擊，你會獲得 +<stat Name="BonusMA" /> 精神護甲(MA)。</p>
 <p>如果該攻擊未能穿透你的 MA，則會反射回攻擊者身上。</p>
 <statline Name="Cooldown" DisplayName="冷卻時間" /></leveltext>
     </mutation>
@@ -551,7 +551,7 @@
       <description><p>你粉碎敵人的心智，使其在痛苦中踉蹌不前。</p></description>
       <leveltext><p>在最多 10 回合內，你與對手進行心靈戰鬥，每回合造成傷害。</p>
 <p>採取除「跳過回合」以外的任何行動都會中斷連結。</p>
-<p>每一回合你都會對精神護甲 (MA) 發動一次精神攻擊。</p>
+<p>每一回合你都會對精神護甲(MA) 發動一次精神攻擊。</p>
 <statline Name="DamageIncrement" DisplayName="傷害增量" />
 <p>在第十回合後，你會造成等同於目前為止所造成的總傷害量的額外傷害。</p>
 <statline Name="Range" DisplayName="距離" />
@@ -612,7 +612,7 @@
 <p>在戰鬥中的每一輪都有小機率會隨機傳送到附近的某個位置。</p></description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Dystechnia" DisplayName="迪斯泰克尼亞 (Dystechnia)" BearerDescription="那些被技術複雜性所困惑的人" BiomeAdjective="退化的">
+    <mutation Name="Dystechnia" DisplayName="迪斯泰克尼亞(Dystechnia)" BearerDescription="那些被技術複雜性所困惑的人" BiomeAdjective="退化的">
       <description><p>你被技術的複雜性搞得暈頭轉向。</p>
 <br />
 <p>你在檢查神器方面的能力大幅下降。</p>
@@ -644,7 +644,7 @@
 <p>每當你使用主動能力時，都有小機率導致注意力渙散並在局部區域造成時空凹陷，使 1-2 個時空渦流出現。若越久沒有使用主動能力，此機率就會越高。</p></description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Socially Repugnant" DisplayName="社交厭惡" BearerDescription="社交厭惡者" BiomeEpithet="哀求集會 (wretchmoot)">
+    <mutation Name="Socially Repugnant" DisplayName="社交厭惡" BearerDescription="社交厭惡者" BiomeEpithet="哀求集會(wretchmoot)">
       <description><p>他人很難在社交場合忍受你。</p>
 <br />
 <p>與所有派系的聲望 -50</p></description>

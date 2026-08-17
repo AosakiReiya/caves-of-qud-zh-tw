@@ -77,7 +77,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <option ID="OptionOverlayNearbyObjectsPools" DisplayText="附近物品列表：顯示液體池" Category="UI" />
   <option ID="OptionOverlayNearbyObjectsPlants" DisplayText="附近物品列表：顯示植物" Category="UI" />
   <option ID="OptionOverlayNearbyObjectsTakeable" DisplayText="附近物品列表：僅顯示可拾取的物品" Category="UI" />
-  <option ID="OptionMessageLineLogScale" DisplayText="訊息日誌字體大小 (pt)" Category="UI" />
+  <option ID="OptionMessageLineLogScale" DisplayText="訊息日誌字體大小(pt)" Category="UI" />
   <option ID="OptionDockMovable" DisplayText="停靠訊息日誌 &amp;&amp;&amp; 迷你地圖" Category="UI" Values="Unset|未設定,Right|右,Left|左,Flip|翻轉" />
   <option ID="OptionDockOpacity" DisplayText="停靠背景透明度" Category="UI" />
   <option ID="OptionMouseCursor" DisplayText="滑鼠游標外觀" Category="UI" Values="System|系統,Default|預設,Alternate|交替" />
@@ -85,7 +85,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <option ID="OptionControllerFont" DisplayText="手把按鈕外觀" Category="UI" Values="Auto|自動,KBM|KBM,XBox|XBox,PS|PS,XBox Filled|XBox 已填滿,PS Filled|PS 已填滿,Switch|開關" />
   <option ID="OptionFloatingKeyboard" DisplayText="在支援的裝置上顯示輸入用的覆蓋鍵盤" Category="UI" />
   <option ID="OptionZoomSensitivity" DisplayText="縮放靈敏度" Category="UI" />
-  <option ID="OptionTooltipDelay" DisplayText="工具提示延遲 (ms)" Category="UI" />
+  <option ID="OptionTooltipDelay" DisplayText="工具提示延遲(ms)" Category="UI" />
   <option ID="Option@HPColor" DisplayText="根據健康狀態更改角色的符號顏色" Category="UI" />
   <option ID="Option@AlwaysHPColor" DisplayText="忽略所有會改變角色符號顏色的效果（健康狀態除外）" Category="UI" />
   <option ID="Option@MutationColor" DisplayText="允許突變改變角色符號的顏色" Category="UI" />

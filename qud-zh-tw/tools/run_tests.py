@@ -275,6 +275,9 @@ def _clean(text, words, phrases):
         if not changed:
             break
         text = nxt
+    # G6b（2026-08-17）：與 C# OrdinalDay/StrataUnit 一致
+    text = re.sub(r'(?<![/\d])(\d{1,2})(?:st|nd|rd|th)(?![\w/])', r'\1 日', text)
+    text = re.sub(r'\b(?:stratum|strata)\b', '層', text, flags=re.I)
     return text
 
 
@@ -524,6 +527,7 @@ def test_pipeline():
         ("Worn on Hands", "穿戴在手", None),
         ("Left Missile Weapon", "左側遠程武器欄", None),
         ("Forefeet", "前足", "Forefeet"),
+        ("Diluted Asphalt People", "稀釋的 瀝青", "People"),
         ("Floating nearby", "漂浮物", "Floating"),
         ("LeftMissile Weapon", "左側遠程武器欄", None),
         ("RightMissile Weapon", "右側遠程武器欄", None),
@@ -1335,6 +1339,7 @@ def main():
     if run_all or a.static: test_double_quote_dict_entries()
     if run_all or a.static: test_dict_entry_syntax()
     if run_all or a.static: test_regex_sanity()
+    if run_all or a.xmldata: test_audit_translation()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1436,6 +1441,17 @@ def test_template_end_to_end():
         ("{{C|=subject.Does:slip= 在冰上滑倒了！}}","在冰上滑倒了"),
         ("=mutationName= ({{r|D}})","=mutationName= ({{r|D}})"),
     ]
+    # G6c（2026-08-17）：引擎注入殘留清洗（序數日/深度單位）
+    residue=[
+        ("在 烏魯·烏特(Uulu Ut) 的 14th, 你抵達了 鹽沼.", "14 日"),
+        ("位於 1 stratum 深處", "1 層"),
+        ("The picture stretches into the 3rd dimension.", "3rd dimension"),
+        ("只 受到 1/10th the usual 傷害", "1/10th"),
+    ]
+    for src_t, key in residue:
+        outs=[_to_string_process(src_t, words, phrases), _tmp_process(src_t, words, phrases)]
+        if not any(key in o for o in outs):
+            bad.append(f"殘留清洗失敗[{key}]:{src_t[:30]}->{outs[0][:44]}")
     # 未閉合 markup = 遊戲分段組裝片段 → 任何路徑都必須原樣直傳（不翻譯、不刪除）
     passthrough=[
         "{{y|兩棲的(",
@@ -1530,6 +1546,17 @@ def test_regex_sanity():
             if er: bad.append(f"{path.name}[{kind}] 多右括x{er}:{content[:40]}")
             if res: bad.append(f"{path.name}[{kind}] 殘型:...{content[max(0,content.find('(')-2):content.find('(')+6]}")
     check("全部 regex pattern 語法健康（多右括/殘型=0）", not bad, "; ".join(bad[:5]))
+
+
+def test_audit_translation():
+    import subprocess, sys as _sys
+    _tools = os.path.dirname(os.path.abspath(__file__))
+    r = subprocess.run([_sys.executable, os.path.join(_tools, "audit_translation.py"), "--check"],
+                       capture_output=True, text=True)
+    check("audit：C1/C2/C3(種族)/C7 違例為 0", r.returncode == 0, r.stdout[-300:])
+    if r.returncode != 0:
+        print(r.stdout[-800:])
+
 
 if __name__ == "__main__":
     main()

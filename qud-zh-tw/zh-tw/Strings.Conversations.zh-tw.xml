@@ -2245,7 +2245,7 @@ A 吉什林？這是一個 吉什林。</string>
  <string Context="Conversation Irudad.GyreWight.Text" ID="-mm, oh? In dyed robes, flashing gestures of hand? And ranting about pipe milk? A gyre wight, must be. They about worship the Girsh nephilim as gods.">
 -嗯，喔？穿著染色的長袍，手勢誇張？還在喋喋不休地談論管奶？一定是個 旋渦亡靈。他們大概把 吉爾什 nephilim 當作神來崇拜吧。</string>
  <string Context="Conversation Irudad.GyreWight.NephilimChoice.Text" ID="Girsh nephilim?">
-吉爾什 (Gilsch) 是尼菲林 (nephilim) 嗎？</string>
+吉爾什(Gilsch) 是尼菲林(nephilim) 嗎？</string>
  <string Context="Conversation Irudad.Nephilim.Text" ID="{{emote|*Elder Irudad pauses.*}}&#10;&#10;-mm, nephilim. Seventh plague. Girsh titans born on the Moon Stair, and quickened to life to eat our young. Sultan Resheph drove them back a chiliad ago, away to slumber. mm, do they rouse?">
 {{emote|*長者 伊魯達德 停頓了一下。*}}
 
@@ -2253,7 +2253,7 @@ A 吉什林？這是一個 吉什林。</string>
  <string Context="Conversation Irudad.Defanged.Text" ID="-mm, oh? A gyre wight, must be. They bind the teeth right up to their own gums, to make a show for the Girsh nephilim.">
 -嗯，喔？一定是個 旋渦亡靈。他們把牙齒一直鑲嵌到牙齦上，好向 吉爾什 nephilim 展示。</string>
  <string Context="Conversation Irudad.Defanged.NephilimChoice.Text" ID="Girsh nephilim?">
-吉爾什 (Gilsch) 是尼菲林 (nephilim) 嗎？</string>
+吉爾什(Gilsch) 是尼菲林(nephilim) 嗎？</string>
  <string Context="Conversation Irudad.Apology.Text" ID="-mm? No, =player.formalAddressTerm=! Your finding is rich in value to us. We are poor farmers, and sharpen our vinereapers is all we can do. But others? Perhaps more.&#10;&#10;Take these prickly-boons as thanks. mm, I will not soon forget this, =name=. Leave me now to muse, kindly...">
 -mm？不，=player.formalAddressTerm=! 您的發現對我們來說價值連城。我們只是貧苦的農民，能做的只有磨利我們的藤蔓收割者。但其他人呢？或許能做得更多。
 
@@ -2870,7 +2870,7 @@ dohohohohoho。</string>
  <string Context="Conversation MechanimistLibrarian.SlynthAbout.Text" ID="=name=, bless you. Have you brought tidings of the slynth?">
 =name=，祝您平安。您帶來了關於斯林斯的的消息嗎？</string>
  <string Context="Conversation MechanimistLibrarian.SlynthArrived.Text" ID="Praise be to Shekhinah, =name=, your slynth friends are hard workers and quick learners!&#10;&#10;I can't help but feel a bit concerned at their ethic, and who in the church might take advantage of it. I hope to foster an interest in reading in them if I can, before they are taught incuriosity. Perhaps a book club?">
-讚美 謝基納 (Shekhinah)，=name=，妳的 斯林斯友人 是勤奮且學習迅速的人！
+讚美 謝基納(Shekhinah)，=name=，妳的 斯林斯友人 是勤奮且學習迅速的人！
 
 我不禁對他們的職業道德感到有些擔憂，以及教會中誰可能會利用這一點。如果可以的話，我希望在他們被教導變得缺乏好奇心之前，培養他們對閱讀的興趣。或許辦個讀書會？</string>
  <string Context="Conversation MechanimistLibrarian.SlynthArrived.StartChoice.Text" ID="My thanks, chronicler.">
@@ -2909,7 +2909,7 @@ dohohohohoho。</string>
  <string Context="Conversation Tszappur.Start.SecretTszappur.Text" ID="I am.">
 我存在。</string>
  <string Context="Conversation Tszappur.Start.ReshephTszappur.Text" ID="Who is Resheph?">
-雷舍夫 (Resheph) 是誰？</string>
+雷舍夫(Resheph) 是誰？</string>
  <string Context="Conversation Tszappur.Start.InsideTszappur.Text" ID="What's inside the tent?">
 帳篷的內部是什麼？</string>
  <string Context="Conversation Tszappur.Start.EndChoice.Text" ID="Live and drink, priest.">
@@ -3282,7 +3282,7 @@ dohohohohoho。</string>
  <string Context="Conversation grenadier.Start.Text.Text3" ID="=player.FormalAddressTerm=, there is little you can't solve with a well-thrown grenade... as long as you don't stand too close.">
 =player.FormalAddressTerm=，只要不站得太近，幾乎沒有什麼問題是扔一顆手榴彈解決不了的……</string>
  <string Context="Conversation grenadier.Start.Text.Text4" ID="Defoliant and fungicide are perfectly safe, but you may wish to avoid breathing too deeply all the same.">
-除葉劑 and 殺真菌劑 are perfectly safe, but you may wish to avoid breathing too deeply all the same.</string>
+除葉劑和殺真菌劑非常安全，不過建議還是別吸得太深。</string>
  <string Context="Conversation grenadier.Start.Text.Text5" ID="Can I serve you something explosive, =player.formalAddressTerm=?">
 我可以為您提供一些具爆炸性的東西嗎，=player.formalAddressTerm=？</string>
  <string Context="Conversation grenadier.Start.Text.Text6" ID="You'll be back, =player.formalAddressTerm=, provided you don't blow =player.reflexive= up.">
@@ -3431,11 +3431,11 @@ dohohohohoho。</string>
  <string Context="Conversation Argyve.CanticleAccept3.EndChoice.Text" ID="Farewell, Argyve.">
 再見，阿吉夫。</string>
  <string Context="Conversation Argyve.StartFinishedCanticle.Text" ID="{{emote|*Argyve gives a curt nod and extended cock of an eyebrow.*}}&#10;&#10;Apprentice.&#10;&#10;{{emote|*Argyve returns to his tasks.*}}">
-{{emote|*阿吉夫 gives a curt nod and extended cock of an eyebrow.*}}
+{{emote|*阿吉夫簡短地點頭，並揚起眉毛。*}}
 
 學徒。
 
-{{emote|*阿吉夫 returns to his tasks.*}}</string>
+{{emote|*阿吉夫回頭繼續做事。*}}</string>
  <string Context="Conversation Argyve.StartFinishedCanticle.GolgothaChoice.Text" ID="The Barathrumites say I must plumb a cave called Golgotha before joining them.">
 巴拉楚姆信徒說在加入他們之前，我必須探索一個叫做髑髏地的洞穴。</string>
  <string Context="Conversation Argyve.StartFinishedCanticle.RankUpChoice.Text" ID="Argyve, I am no apprentice. The Barathrumites call me =factionaddress:Barathrumites= now.">
@@ -4773,7 +4773,7 @@ Q 女孩.</string>
  <string Context="Conversation Shem.Start3.Text.Text6" ID="Would you like to eat vapor?">
 你想吃蒸氣嗎？</string>
  <string Context="Conversation Shem.Start3.Text.Text7" ID="Quetzal, I say.">
-我說，是奎札爾 (Quetzal)。</string>
+我說，是奎札爾(Quetzal)。</string>
  <string Context="Conversation Shem.Start3.Text.Text8" ID="{{emote|*Shem nods.*}}">
 {{emote|*Shem點了點頭。*}}</string>
  <string Context="Conversation Shem.Start3.Text.Text9" ID="The gaseous butterfly flits out of the dense worm.">
@@ -6501,7 +6501,7 @@ Kendren，你有……關於 艾斯金德 和 Kindrish 的消息嗎？</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_LeatherGoneMissing" ID="Why wouldn't an outsider bring their own leather? It would better disguise Kindrish. It seems a lot of work to find and raid our leather stores.">
 為什麼外人不帶自己的皮革呢？那樣更能掩蓋 Kindrish 的身份。要尋找並劫掠我們的皮革儲藏室似乎非常費事。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_WornBracer" ID="Bracers are a Bey Lah craft! It would make no sense for a kendren to have one, then throw it away in the village.">
-護腕是 貝拉(Bey Lah) 的工藝！一個 肯德倫 (kendren) 擁有它，然後在村莊裡把它扔掉，這根本不合邏輯。</string>
+護腕是 貝拉(Bey Lah) 的工藝！一個 肯德倫(kendren) 擁有它，然後在村莊裡把它扔掉，這根本不合邏輯。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_SplinteredWeaponHaft" ID="Kesehind wields Ari, a battleaxe handed down through generations. It cannot break, and if it broke a weapon there would be scorch marks on it. This evidence does not hold up.">
 凱塞欣德 揮舞著 艾瑞(Ari)，一把代代相傳的戰斧。它不會折斷，而且如果有一件武器折斷了，上面應該會有燒焦的痕跡。這項證據站不住腳。</string>
  <string Context="Conversation 妮拉欣德(Neelahind).KithAndKinExclusion.Clue_TalkingLateAtNight" ID="There are few voices as low as Kesehind's in our village. Witnesses report a higher-pitched voice, don't they? They would know if Kesehind were speaking.">
@@ -7340,7 +7340,7 @@ Keh 告訴我 艾斯金德 有個兄弟。</string>
  <string Context="Conversation Meyehind.Correct.EndChoice.Text" ID="That's all for now. Live and drink.">
 目前就先這樣。活著，盡情飲酒吧。</string>
  <string Context="Conversation Meyehind.Demand.Text" ID="{{emote|*Meyehind's glare turns withering for the few seconds it takes before she turns her face and body away from you.*}}">
-{{emote|*梅耶欣德的 glare turns withering for the few seconds it takes before she turns her face and body away from you.*}}</string>
+{{emote|*梅耶欣德的眼神轉冷，幾秒內她便別過臉和身體。*}}</string>
  <string Context="Conversation Meyehind.Demand.EndChoice.Text" ID="...?">
 ...?</string>
  <string Context="Conversation Meyehind.Family.Text" ID="What's to tell? We are outcasts, pushed to the margins by our people for the crime of harmless deviance.&#10;&#10;It's beyond perverse to call us back just so Grand-Doe can punish us further.">
@@ -8363,7 +8363,7 @@ Credo？</string>
  <string Context="Conversation Vivira.Start.ViviWelcomeChoice.Text" ID="What is this place?">
 這是什麼地方？</string>
  <string Context="Conversation Vivira.Start.EndChoice.Text" ID="Farewell, Lightspitter.">
-永別了，噴光者 (Lightspitter)。</string>
+永別了，噴光者(Lightspitter)。</string>
  <string Context="Conversation Vivira.ViviQuest.Text" ID="{{emote|*crackle, crackle*}}-othom? My sympathies.&#10;&#10;=ifplayerplural:Ye are:Thou art= of course welcome here, wayfarer. Speak to Agyra an =ifplayerplural:ye need:thou needest= aught, as ey delighteth in hospitality.">
 {{emote|*劈啪，劈啪*}}-othom？深表同情。
 
@@ -9530,7 +9530,7 @@ Saad，nou-然後 跨越進入 布萊特希歐。</string>
  <string Context="Conversation ImperialBiographer.DoThatResheph.Text" ID="As you wish, Moloch!&#10;&#10;{{emote|Herododicus shines a cone of blue light at you.}}&#10;&#10;Starting ptychoscan............">
 如你所願，摩洛赫！
 
-{{emote|赫羅多迪庫斯 shines a cone of blue light at you.}} 
+{{emote|赫羅多迪庫斯朝你射出一道藍色光錐。}} 
 
 正在啟動 心靈掃描............</string>
  <string Context="Conversation ImperialBiographer.DoThatResheph2.Text" ID="...................................">
@@ -10490,7 +10490,7 @@ BY TRETE GALGALLIM SERVEN, BUT NON NOU.</string>
  <string Context="Conversation ChavvahPrime.Ascent.Text" ID="oh. This. Was this felt in gyredream? Your coming to keter? I ask, do not answer.">
 喔。這。這是在旋轉夢境中感受到的嗎？你來到了 keter？我問，但請不要回答。</string>
  <string Context="Conversation ChavvahPrime.Ascent.GyredreamChoice.Text" ID="What is gyredream?">
-什麼是旋夢 (gyredream)？</string>
+什麼是旋夢(gyredream)？</string>
  <string Context="Conversation ChavvahPrime.Gyredream.Text" ID="A future shock. My chimeling _ is vision-gifted, a lichen who clings to shorerock on the straits of Tomorrow. Just a short time ago a sea wave crested and broke beneath her, and she saw in its recession all the bright and violent channel paths.&#10;&#10;We all felt it. A recoming, and the gyre in final tension. I felt...">
 一個未來的震撼。我的奇美林（chimeling） _ 擁有天賦視覺，她是附著在「明日」海峽岸邊岩石上的地衣。就在不久前，一道海浪在她身下翻騰破碎，她在退潮中看見了所有明亮而狂暴的河道路徑。
 

@@ -474,9 +474,9 @@
     <description><p>你扭曲身周的時間以減慢敵人的速度。</p>
 <br />
 <p><stat Name="Range" /> 格範圍內的生物會根據其與你的距離而被減速。</p>
-<p>距離 1：生物獲得 <stat Name="QuicknessPenalty1" />% 的敏捷 (Quickness) 懲罰</p>
-<p>距離 4：生物獲得 <stat Name="QuicknessPenalty4" />% 的敏捷 (Quickness) 懲罰</p>
-<p>距離 7：生物獲得 <stat Name="QuicknessPenalty7" />% 的敏捷 (Quickness) 懲罰</p>
+<p>距離 1：生物獲得 <stat Name="QuicknessPenalty1" />% 的敏捷(Quickness) 懲罰</p>
+<p>距離 4：生物獲得 <stat Name="QuicknessPenalty4" />% 的敏捷(Quickness) 懲罰</p>
+<p>距離 7：生物獲得 <stat Name="QuicknessPenalty7" />% 的敏捷(Quickness) 懲罰</p>
 <statline Name="Duration" DisplayName="Duration" />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
@@ -492,7 +492,7 @@
   <ability Command="CommandWillForceAgility">
     <description><p>憑藉純粹的意志力，你展現出超凡的身手。</p>
 <br />
-<p>提升你的敏捷 (Agility) 屬性，增加量等於心智 (Ego) 加成的兩倍。</p>
+<p>提升你的敏捷(Agility) 屬性，增加量等於心智(Ego) 加成的兩倍。</p>
 <br />
 <statline Name="Bonus" DisplayName="敏捷加成" />
 <statline Name="Duration" DisplayName="Duration" />
@@ -824,7 +824,7 @@
 <p>你將獲得特殊的代謝效果，持續 <stat Name="DurationDay" Unit="天" />。</p>
 <br />
 <statline Name="BonusRegen" DisplayName="自然療傷速率加成" />
-<statline Name="BonusQuickness" DisplayName="敏捷度 (Quickness) 加成" /></description>
+<statline Name="BonusQuickness" DisplayName="敏捷度(Quickness) 加成" /></description>
   </ability>
   <ability Command="CommandQuillFling">
     <description><p>你向周圍爆發性地噴射出 10% 的 <stat Name="Quills" />。</p>
@@ -1044,7 +1044,7 @@
 <br />
 <p>{{W|決鬥架勢}}: 攻擊一名對手並嘗試解除其武裝（力量豁免；難度 25 + 敏捷修正值）。該次攻擊保證命中且至少穿透一次。</p>
 <br />
-<p>必須在主手中持有長刃才能使用揮擊 (Swipe)。</p>
+<p>必須在主手中持有長刃才能使用揮擊(Swipe)。</p>
 <br />
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
@@ -1073,7 +1073,7 @@
   <ability Command="CommandProselytize">
     <description><p>你說服一個智慧生物加入你的行列。</p>
 <br />
-<p>心智 (Ego) + 角色等級 對抗 MA + 角色等級</p>
+<p>心智(Ego) + 角色等級 對抗 MA + 角色等級</p>
 <statline Name="Cooldown" DisplayName="冷卻時間" /></description>
   </ability>
   <ability Command="CommandRebukeRobot">

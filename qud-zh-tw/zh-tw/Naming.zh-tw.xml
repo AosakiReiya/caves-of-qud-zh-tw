@@ -1012,7 +1012,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         </templatevar>
       <!--♪ Update Strings.xml "Baboon Hero Naming.xml Context" -->
         <templatevar Name="position">
-          <value Name="好色之徒 (Philanderer)" />
+          <value Name="好色之徒(Philanderer)" />
           <value Name="謎語人" />
           <value Name="隱士" />
           <value Name="精明者" />
@@ -1119,18 +1119,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
         <templatevar Name="adjective">
           <value Name="迴盪著的" />
           <value Name="狂亂的" />
-          <value Name="多足的 (many-legged)" />
+          <value Name="多足的(many-legged)" />
           <value Name="巨大的" />
           <value Name="單爪的" />
-          <value Name="殼裂 (shell-cracked)" />
+          <value Name="殼裂(shell-cracked)" />
         </templatevar>
         <templatevar Name="position">
           <value Name="古老的" />
-          <value Name="深淵爬行者 (Deepcrawler)" />
+          <value Name="深淵爬行者(Deepcrawler)" />
           <value Name="歌利亞" />
           <value Name="領主" />
           <value Name="族長" />
-          <value Name="斯庫特勒 (Skuttler)" />
+          <value Name="斯庫特勒(Skuttler)" />
         </templatevar>
       </templatevars>
     </namestyle>
@@ -1231,7 +1231,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
           <value Name="白色" />
         </templatevar>
         <templatevar Name="sultan">
-          <value Name="雷舍夫 (Resheph)" />
+          <value Name="雷舍夫(Resheph)" />
         </templatevar>
         <templatevar Name="suffix">
           <value Name="baa" Weight="2" />
@@ -1327,7 +1327,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
           <value Name="空值" />
         </templatevar>
         <templatevar Name="sultan">
-          <value Name="雷舍夫 (Resheph)" />
+          <value Name="雷舍夫(Resheph)" />
         </templatevar>
         <templatevar Name="suffix">
           <value Name="baa" Weight="2" />
@@ -1585,7 +1585,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
           <value Name="怒火糾纏者" />
           <value Name="破腸者" />
           <value Name="國王" />
-          <value Name="碎顱者 (Skullsplitter)" />
+          <value Name="碎顱者(Skullsplitter)" />
           <value Name="食幼者" />
         </templatevar>
       </templatevars>
@@ -1800,7 +1800,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
           <value Name="食心者" />
           <value Name="獵主" />
           <value Name="食人者" />
-          <value Name="洞穴之王 (Caveking)" />
+          <value Name="洞穴之王(Caveking)" />
         </templatevar>
       </templatevars>
     </namestyle>

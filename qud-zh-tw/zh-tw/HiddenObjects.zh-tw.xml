@@ -1321,10 +1321,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="石墨烯帶" />
   </object>
   <object Name="Earth Gate W" Load="Merge">
-    <part Name="Render" DisplayName="大地之門 (Earth Gate)" />
+    <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   </object>
   <object Name="Earth Gate E" Load="Merge">
-    <part Name="Render" DisplayName="大地之門 (Earth Gate)" />
+    <part Name="Render" DisplayName="大地之門(Earth Gate)" />
   </object>
   <object Name="BaseHologramProjector Barathrum" Load="Merge">
     <part Name="Render" DisplayName="全息投影儀" />
@@ -1342,7 +1342,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="礫門的斯林斯扳手僧" />
   </object>
   <object Name="Chiliad Slynth Bey Lah" Load="Merge">
-    <part Name="Render" DisplayName="斯林斯偵察兵 (slynth scout)" />
+    <part Name="Render" DisplayName="斯林斯偵察兵(slynth scout)" />
   </object>
   <object Name="Chiliad Slynth Kyakukya" Load="Merge">
     <part Name="Render" DisplayName="恰庫恰的斯林斯蘋果酒口" />

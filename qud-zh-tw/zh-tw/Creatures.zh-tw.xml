@@ -217,7 +217,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Description" Short="風將一件曬乾的長袍與頸飾緊貼在類人生物的身軀上。布料上的刺繡紋樣與鹽分的圖案交相輝映。" />
  </object>
  <object Name="BaseMopango" Load="Merge">
-  <xtagTextFragments YounglingNoise="*吱吱聲*" Activity="發現 奇異神器" VillageActivity="與物品交流" SacredThing="卡薩菲森斯 (Kasaphescence)" />
+  <xtagTextFragments YounglingNoise="*吱吱聲*" Activity="發現 奇異神器" VillageActivity="與物品交流" SacredThing="卡薩菲森斯(Kasaphescence)" />
  </object>
  <object Name="莫龐戈(Mopango) Corpse" Load="Merge">
   <part Name="Render" DisplayName="莫潘戈屍體" />
@@ -377,7 +377,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Food" Message="肉質很硬，但這頓飯吃得很飽。" />
  </object>
  <object Name="Cannibal" Load="Merge">
-  <part Name="Render" DisplayName="食人族" />
+  <part Name="Render" DisplayName="食人族(Cannibal)" />
   <part Name="Description" Short="陽光羞愧（Sunshame）使 =pronouns.possessive= 皮膚變得軟爛且呈現蜘蛛般的慘白，且 =pronouns.possessive= 毛細血管中流動的血液顏色深了兩個色調。" />
  </object>
  <object Name="Cave Spider" Load="Merge">
@@ -567,7 +567,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <stag Name="Plank" Value="手杖" />
  </object>
  <object Name="Snapjaw" Load="Merge">
-  <part Name="Render" DisplayName="咬顎獸" />
+  <part Name="Render" DisplayName="咬顎獸(Snapjaw)" />
   <part Name="Description" Short="毛皮簇裝飾著緊繃肌肉上的皮膚。=pronouns.subjective= 雖然 站著 直立著，但看起來隨時準備伏地四肢爬行。=pronouns.Possessive= 鼻子在咆哮，=pronouns.possessive= 耳朵在抽動。=pronouns.Subjective= 發出叫聲，而 =pronouns.possessive= 鬣狗同族隨之回應。" />
   <xtagTextFragments YounglingNoise="*嘿*,*嘿嘿*,*嘿嘿嘿*" Activity="狩獵與採集，襲擊村莊，對著甲蟲月嚎叫，從骨頭上撕下肉塊" VillageActivity="睡在我們的 睡袋 裡，坐在我們的椅子上，閒逛、讀書、剝皮並食用 musa、對著月亮嚎叫、從丟棄的骨頭上剔肉" NeedsItemFor="為了我個人的收藏，為了滿足我的貪婪，因為其貿易價值，為了啟發我的藝術，為了啟發我的詩歌，為了毫無意義地咆哮，作為嚎叫的對象，作為我的繆思，為了協助農務，為了我們在甲蟲月下進行的遊戲" SacredThing="繁衍行為、哲學、他人的耕地、對甲蟲之月的嚎叫、咆哮、從骨頭上剔肉、酒精、大地的穀物、核果、藝術性、詩歌、溫暖的膳食、麵包與酒、陶藝、繪畫" ArableLand="毫無防備的村莊、不幸的農民、定居生物的家園" ValuedOre="肉與骨頭、新鮮肉塊、足跡" />
  </object>
@@ -1071,7 +1071,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  </object>
  <object Name="Disciple of the Sightless Way" Load="Merge">
   <part Name="Render" DisplayName="無光之道弟子" />
-  <part Name="Description" Short="=pronouns.possessive= 脊椎上的肌肉已萎縮到幾近消失，由於肌肉不在，=pronouns.possessive= 裝飾性 كيت爾 (kittel) 的褶皺也隨之垂落。=pronouns.Subjective= 正隨著另一個時空的頻率震動。" />
+  <part Name="Description" Short="=pronouns.possessive= 脊椎上的肌肉已萎縮到幾近消失，由於肌肉不在，=pronouns.possessive= 裝飾性 كيت爾(kittel) 的褶皺也隨之垂落。=pronouns.Subjective= 正隨著另一個時空的頻率震動。" />
  </object>
  <object Name="Drillbot" Load="Merge">
   <part Name="Render" DisplayName="{{c|鑽孔機器人}}" />
@@ -1242,7 +1242,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <stag Name="Plank" Value="茅草" />
  </object>
  <object Name="Goatfolk" Load="Merge">
-  <part Name="Render" DisplayName="山羊族" />
+  <part Name="Render" DisplayName="山羊族(Goatfolk)" />
   <part Name="Description" Short="一束烤過的蛙皮緊緊地繃在 =pronouns.possessive= 腫脹的胸肌上，並將一個小包固定在 =pronouns.possessive= 髖部。=pronouns.Possessive= 蹄子上沾滿了不明成分的血跡與唾液，從 =pronouns.possessive= 咩咩叫的嘴裡噴出，落在稀疏的下巴鬍鬚上。" />
   <xtagTextFragments YounglingNoise="*rrrraaah*,*rrraah*,*rrah*" Activity="在星光下狼吞虎嚥著野獸的肉" VillageActivity="用 @their@ 角 撞擊物體" />
  </object>
@@ -1348,7 +1348,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="手術刀" />
  </object>
  <object Name="Cragmensch" Load="Merge">
-  <part Name="Render" DisplayName="岩民" />
+  <part Name="Render" DisplayName="岩民(Cragmensch)" />
   <part Name="Description" Short="像碳與矽的四價性這類的觀念，在 叢林 村落 厚重的谷地空氣中窒息了。人類採集者登上根鬚編織的小丘，驚奇地望向地平線，看見花崗岩在山坡上蠕動，並帶著祖先般的恐懼思考著岩石本身被賦予生命是為了收取什麼樣的代價；他無法理解那些智者在「很久以前」刻在 數據磁碟 中的化學奇蹟。對他而言，那些奇蹟是神靈之物的密碼。" />
  </object>
  <object Name="Cragmensch Fist" Load="Merge">
@@ -1575,7 +1575,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="迷宮鬍鬚屍體" />
  </object>
  <object Name="Troll" Load="Merge">
-  <part Name="Render" DisplayName="巨魔" />
+  <part Name="Render" DisplayName="巨魔(Troll)" />
  </object>
  <object Name="Troll Corpse" Load="Merge">
   <part Name="Render" DisplayName="巨魔屍體" />

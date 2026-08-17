@@ -72,7 +72,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>AV</shortName>
     <shortTitle>AV</shortTitle>
     <narrationName>AV</narrationName>
-    <helpText>你的 {{W|護甲值 (AV)}} 衡量你抵禦物理攻擊的能力。分數越高，對手的攻擊就越不容易穿透你的護甲並對你造成傷害。</helpText>
+    <helpText>你的 {{W|護甲值(AV)}} 衡量你抵禦物理攻擊的能力。分數越高，對手的攻擊就越不容易穿透你的護甲並對你造成傷害。</helpText>
   </statistic>
   <statistic Name="DV">
     <displayName>DV</displayName>
@@ -82,7 +82,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>DV</shortName>
     <shortTitle>DV</shortTitle>
     <narrationName>DV</narrationName>
-    <helpText>你的 {{W|閃避值 (DV)}} 衡量你被物理攻擊擊中的機率。分數越高，對手的攻擊就越不容易擊中你。你的 DV 會受到敏捷修正值的影響。</helpText>
+    <helpText>你的 {{W|閃避值(DV)}} 衡量你被物理攻擊擊中的機率。分數越高，對手的攻擊就越不容易擊中你。你的 DV 會受到敏捷修正值的影響。</helpText>
   </statistic>
   <statistic Name="MA">
     <displayName>MA</displayName>
@@ -92,7 +92,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <shortName>MA</shortName>
     <shortTitle>MA</shortTitle>
     <narrationName>MA</narrationName>
-    <helpText>你的 {{W|精神護甲 (MA)}} 衡量你抵禦精神攻擊的能力。分數越高，對手的精神攻擊就越不容易穿透你的防禦並傷害你。你的 MA 會受到意志力修正值的影響。</helpText>
+    <helpText>你的 {{W|精神護甲(MA)}} 衡量你抵禦精神攻擊的能力。分數越高，對手的精神攻擊就越不容易穿透你的防禦並傷害你。你的 MA 會受到意志力修正值的影響。</helpText>
   </statistic>
   <statistic Name="Speed">
     <displayName>速度</displayName>

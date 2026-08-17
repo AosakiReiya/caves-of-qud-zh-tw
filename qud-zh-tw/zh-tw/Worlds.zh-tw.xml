@@ -257,8 +257,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
       <zone Level="10" x="2" y="0" Load="Merge" Name="通道" NameContext="食者之墓" />
       <zone Level="10" x="2" y="2" Load="Merge" Name="通道" NameContext="食者之墓" />
       <zone Level="9" x="0" y="0-2" Load="Merge" Name="Columbarium：地主與變革者" NameContext="食者之墓" />
-      <zone Level="9" x="1-2" y="0" Load="Merge" Name="火葬場 (Crematory)" NameContext="食者之墓" />
-      <zone Level="9" x="1-2" y="2" Load="Merge" Name="火葬場 (Crematory)" NameContext="食者之墓" />
+      <zone Level="9" x="1-2" y="0" Load="Merge" Name="火葬場(Crematory)" NameContext="食者之墓" />
+      <zone Level="9" x="1-2" y="2" Load="Merge" Name="火葬場(Crematory)" NameContext="食者之墓" />
       <zone Level="9" x="2" y="1" Load="Merge" Name="焚屍機房" NameContext="食者之墓" />
       <zone Level="8" x="0-2" y="0-2" Load="Merge" Name="下層地窖：戰士與導師" NameContext="食者之墓" />
       <zone Level="8" x="1" y="1" Load="Merge" Name="紡錘河道" IndefiniteArticle="這" />

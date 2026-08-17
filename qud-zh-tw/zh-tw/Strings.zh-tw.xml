@@ -24,7 +24,7 @@ alone if no match found.
  <string Context="Tutorial BattleRemains inventory nudge" ID="You should view the tooltip before equipping the axe.">在裝備這把斧頭之前，你應該先查看工具提示。</string>
  <string Context="Tutorial BattleRemains odd event" ID="Huh, you somehow destroyed the battle axe. Let's move on.">哼，你竟然毀掉了戰斧。我們繼續吧。</string>
  <string Context="Tutorial BattleRemains info" ID="The battle axe has better penetration and deals more damage than your dagger.">戰斧比你的匕首擁有更好的穿透力，且造成的傷害更高。</string>
- <string Context="Tutorial BattleRemains info" ID="Let's take another look at weapon stats. Next to the {{c|→}} is 5. That means you'll usually penetrate the armor of a creature with AV equal to 5.&#xA;&#xA;You can penetrate armor multiple times, though, and each time you penetrate, you deal the weapon's damage.&#xA;&#xA;Let's equip it." Value="讓我們再看一下武器屬性。{{c|→}} 旁邊的數字是 5。這代表你通常可以穿透護甲值 (AV) 等於 5 的生物護甲。&#xA;&#xA;不過，你可以多次穿透護甲，每次穿透時都會造成該武器的傷害。&#xA;&#xA;讓我們裝備它。" />
+ <string Context="Tutorial BattleRemains info" ID="Let's take another look at weapon stats. Next to the {{c|→}} is 5. That means you'll usually penetrate the armor of a creature with AV equal to 5.&#xA;&#xA;You can penetrate armor multiple times, though, and each time you penetrate, you deal the weapon's damage.&#xA;&#xA;Let's equip it." Value="讓我們再看一下武器屬性。{{c|→}} 旁邊的數字是 5。這代表你通常可以穿透護甲值(AV) 等於 5 的生物護甲。&#xA;&#xA;不過，你可以多次穿透護甲，每次穿透時都會造成該武器的傷害。&#xA;&#xA;讓我們裝備它。" />
  <string Context="Tutorial BattleRemains instruction (gamepad)" ID="A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdUse=" Value="一把戰斧。拿走它。&#xA;&#xA;按下 =commandKey:CmdUse=" />
  <string Context="Tutorial BattleRemains instruction (kbm)" ID="A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdGet=" Value="一把戰斧。拿走它。&#xA;&#xA;擊中 =commandKey:CmdGet=" />
  <string Context="Tutorial BattleRemains instruction" ID="Looks like there was some sort of battle to the north. Let's grab the gear that was left behind.">北邊似乎發生過某種戰鬥。我們把留下的裝備撿起來吧。</string>
@@ -130,7 +130,7 @@ alone if no match found.
  <string Context="Tutorial GetBooks nudge" ID="Get the books.">拿走那些書。</string>
  <string Context="Tutorial GetBooks nudge" ID="This water is valuable too. Take it all.">這水也很珍貴。全部拿走吧。</string>
  <string Context="IntroTutorial info" ID="Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.&#xA;&#xA;In Caves of Qud, you play as a mutated human or true kin.&#xA;&#xA;For the tutorial, we're picking mutated human." Value="歡迎來到 卡德洞窟 教學。我們這裡只會略作介紹，學習足夠的基本知識來幫助你站穩腳跟。&#xA;&#xA;在 卡德洞窟 中，你扮演的是 突變人類 或 真人類。&#xA;&#xA;在本次教學中，我們選擇 突變人類。" />
- <string Context="IntroTutorial info" ID="Character creation is a deep and sometimes long process. We included some preset builds to help you get started. After the tutorial, you can try another build, or make a character from scratch. (The recommended way! Once you get your footing.) &#xA;&#xA;For now, pick the marsh taur." Value="角色創建是一個深入且有時漫長的過程。我們包含了一些預設配置以幫助你入門。在教學結束後，你可以嘗試其他配置，或從頭開始創建角色。（推薦做法！一旦你站穩腳跟後。） &#xA;&#xA;目前，請選擇沼澤牛頭人 (marsh taur)。" />
+ <string Context="IntroTutorial info" ID="Character creation is a deep and sometimes long process. We included some preset builds to help you get started. After the tutorial, you can try another build, or make a character from scratch. (The recommended way! Once you get your footing.) &#xA;&#xA;For now, pick the marsh taur." Value="角色創建是一個深入且有時漫長的過程。我們包含了一些預設配置以幫助你入門。在教學結束後，你可以嘗試其他配置，或從頭開始創建角色。（推薦做法！一旦你站穩腳跟後。） &#xA;&#xA;目前，請選擇沼澤牛頭人(marsh taur)。" />
  <string Context="IntroTutorial info" ID="Here is a summary of your attributes and mutations, which grant your character unique abilities.">這是您的屬性與突變摘要，它們賦予您的角色獨特的能力。</string>
  <string Context="IntroTutorial info" ID="You can name your character or choose Next for a random name.">您可以為角色命名，或選擇「下一步」以獲得隨機名稱。</string>
  <string Context="IntroTutorial embarkIntroText" ID="On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.">在 Kisu Ux 月的 30 日，你沿著沉沒貿易路邊緣的一個黑暗豎井爬行而下，抵達了一處商隊驛站。那裡佈滿了來自時間絲帶各處的鹽粉與塵埃。</string>
@@ -315,7 +315,7 @@ alone if no match found.
  <string Context="CharacterStatusScreen MutationType Mental" ID="{{c|[Mental =subject.MutationTerm=]}}">{{c|[精神 =subject.MutationTerm=]}}</string>
  <string Context="CharacterStatusScreen MutationDetailsShort" ID="=mutation.details:short=">=mutation.details:short=</string>
  <string Context="CharacterStatusScreen MutationDetails" ID="=mutation.details=">=mutation.details=</string>
- <string Context="CharacterStatusScreen highlight cp" ID="Your {{W|Compute Power (CP)}} scales the bonuses of certain compute-enabled items and cybernetic implants. Your base compute power is 0.">你的 {{W|運算能力 (CP)}} 會根據特定具備運算功能的物品與控制植入物來增加加成。你的基礎運算能力為 0。</string>
+ <string Context="CharacterStatusScreen highlight cp" ID="Your {{W|Compute Power (CP)}} scales the bonuses of certain compute-enabled items and cybernetic implants. Your base compute power is 0.">你的 {{W|運算能力(CP)}} 會根據特定具備運算功能的物品與控制植入物來增加加成。你的基礎運算能力為 0。</string>
  <string Context="CharacterStatusScreen Statistic HelpText BaseValue" ID="Your base =statName= is =statValue=.">您的 =statName= 為 =statValue=。</string>
  <string Context="CharacterStatusScreen Show Effects description" ID="Show Effects">顯示效果</string>
  <string Context="CharacterStatusScreen Buy Mutation description" ID="Buy =subject.MutationTerm=">購買 =subject.MutationTerm=</string>
@@ -332,7 +332,7 @@ alone if no match found.
  <string Context="FactionStatusScreen sort mode name lowrep" ID="Lowest Reputation">聲望最低</string>
  <string Context="FactionStatusScreen sort mode name alphabetical" ID="Alphabetical">字母順序</string>
  <string Context="EquipmentLine primary hand glyph" ID="{{G|*}}">{{G|*}}</string>
- <string Context="Character Status Screen Tab Name (Short)" ID="Eq">Eq</string>
+ <string Context="Character Status Screen Tab Name (Short)" ID="Eq">裝備</string>
  <string Context="Character Status Screen Tab Name (Long)" ID="Equipment">裝備</string>
  <string Context="InventoryAndEquipmentScreen weighttext summary" ID="{{C|=carried={{K|/=max=}} lbs. }}">{{C|=carried={{K|/=max=}} 磅}}</string>
  <string Context="InventoryAndEquipmentStatusScreen show equipment" ID="=commandKey:Toggle= show equipment">=commandKey:Toggle= 顯示裝備</string>
@@ -423,7 +423,7 @@ alone if no match found.
  <string Context="Skill UI Exclusion Met" ID="Ex: {{g|[=exclusion.name=]}}">範例：{{g|[=exclusion.name=]}}</string>
  <string Context="Skill UI Exclusion Not Met" ID="Ex: {{R|[=exclusion.name=]}}">範例：{{R|[=exclusion.name=]}}</string>
  <string Context="Skill UI Stat Header" ID="{{K|{{g|=str=}}: {{g|=go.str=}} ■ {{g|=agi=}}: {{g|=go.agi=}} ■ {{g|=tou=}}: {{g|=go.tou=}} ■ {{g|=int=}}: {{g|=go.int=}} ■ {{g|=wil=}}: {{g|=go.wil=}} ■ {{g|=ego=}}: {{g|=go.ego=}}}}">{{K|{{g|=str=}}: {{g|=go.str=}} ■ {{g|=agi=}}: {{g|=go.agi=}} ■ {{g|=tou=}}: {{g|=go.tou=}} ■ {{g|=int=}}: {{g|=go.int=}} ■ {{g|=wil=}}: {{g|=go.wil=}} ■ {{g|=ego=}}: {{g|=go.ego=}}}}</string>
- <string Context="Skill UI SP Available" ID="Skill Points (SP): {{C|=go.sp=}}">技能點數 (SP)：{{C|=go.sp=}}</string>
+ <string Context="Skill UI SP Available" ID="Skill Points (SP): {{C|=go.sp=}}">技能點數(SP)：{{C|=go.sp=}}</string>
  <string Context="Skill UI Required Skills Label" ID="[REQUIRED SKILLS]">[必備技能]</string>
  <string Context="StatusScreens - Base Accept button" ID="Accept">接受</string>
  <string Context="TinkeringDetailsLine Cost" ID="=tinkerable.cost=">=tinkerable.cost=</string>
@@ -598,7 +598,7 @@ alone if no match found.
  <string Context="HistoricEvent Abdicate var expansion" ID="=spice.entity:name|'s=">=spice.entity:name|'s=</string>
  <string Context="HistoricEvent Abdicate tombInscription" ID="=spice:commonPhrases.celebrate.!random|capitalize= the =spice:commonPhrases.sacred.!random= =yearName=, when =spice.entity:name= was dowered with the =maskName= and named sultan of Qud! =spice.entity:possessivePronoun|capitalize= ancestors the Fossilized Saads looked on in approval, since -- just like them -- =spice.entity:subjectPronoun= was known by =spice.entity:possessivePronoun= =sultanKnownFor=.">=spice:commonPhrases.celebrate.!random|capitalize= =yearName= 那個 =spice:commonPhrases.sacred.!random= 的年份，當時 =spice.entity:name= 被賜予了 =maskName= 並被封為卡德的蘇丹！=spice.entity:possessivePronoun|capitalize= 祖先們——化石化的薩德家族（Fossilized Saads）——都欣慰地注視著，因為——就像他們一樣——=spice.entity:subjectPronoun= 也以 =spice.entity:possessivePronoun= =sultanKnownFor= 而聞名。</string>
  <string Context="HistoricEvent Abdicate gospel" ID="=spice:instancesOf.inYear.!random|capitalize= %=year=%, =afterTumultousYears=, =spice.entity:name|'s= counselors suggested =spice.entity:subjectPronoun= =spice:instancesOf.abdicate.!random=. Instead, =spice.entity:subjectPronoun= =countered=.">=spice:instancesOf.inYear.!random|capitalize= %=year=%, =afterTumultousYears=, =spice.entity:name|'s= 顧問建議 =spice.entity:subjectPronoun= =spice:instancesOf.abdicate.!random=. 相反地，=spice.entity:subjectPronoun= =countered=。</string>
- <string Context="HistoricEvent Abdicate tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= the lesson that =spice.entity:name= taught =spice.entity:possessivePronoun= advisors when they suggested =spice.entity:subjectPronoun= abdicate the throne =afterTumultuousYears=. Did =spice.entity:subjectPronoun= do any such thing? No! Instead, =spice.entity:subjectPronoun= =countered=.">=spice:commonPhrases.remember.!random|capitalize= =spice.entity:name= 在建議 =spice.entity:subjectPronoun= 讓 =spice.entity:subjectPronoun= abdicate the 王座 =afterTumultuousYears= 時，教給 =spice.entity:possessivePronoun= 顧問們的教訓。=spice.entity:subjectPronoun= 有做過那樣的事嗎？沒有！相反地，=spice.entity:subjectPronoun= =countered=。</string>
+ <string Context="HistoricEvent Abdicate tombInscription" ID="=spice:commonPhrases.remember.!random|capitalize= the lesson that =spice.entity:name= taught =spice.entity:possessivePronoun= advisors when they suggested =spice.entity:subjectPronoun= abdicate the throne =afterTumultuousYears=. Did =spice.entity:subjectPronoun= do any such thing? No! Instead, =spice.entity:subjectPronoun= =countered=.">=spice:commonPhrases.remember.!random|capitalize= =spice.entity:name= 在建議 =spice.entity:subjectPronoun= 讓 =spice.entity:subjectPronoun= 讓出王座 =afterTumultuousYears= 時，教給 =spice.entity:possessivePronoun= 顧問們的教訓。=spice.entity:subjectPronoun= 有做過那樣的事嗎？沒有！相反地，=spice.entity:subjectPronoun= =countered=。</string>
  <string Context="HistoricEvent BattleItem itemAdjective" ID="=spice:elements.$element.adjectives.!random=">=spice:elements.$element.adjectives.!random=</string>
  <string Context="HistoricEvent BattleItem itemName" ID="=spice.nameItemAdjectiveRoot#itemAdjective|title= =faction.formattedName|randomMeaningfulWord|title==liberate.if:boon:bane=">=spice.nameItemAdjectiveRoot#itemAdjective|title= =faction.formattedName|randomMeaningfulWord|title==liberate.if:boon:bane=</string>
  <string Context="HistoricEvent BattleItem itemName" ID="=spice.nameItemAdjectiveRoot#itemAdjective|title=, the =liberate.if:Boon:Bane= of =faction.formattedName|randomMeaningfulWord|title=">=spice.nameItemAdjectiveRoot#itemAdjective|title=，是 =faction.formattedName|randomMeaningfulWord|title= 的 =liberate.if:Boon:Bane=。</string>
@@ -1539,8 +1539,8 @@ alone if no match found.
  <string Context="Slimy Biome - Creature Adjective (has feet)" ID="web-toed" OrderAdjust="0">蹼足</string>
  <string Context="Slimy Biome - Creature Adjective (no feet)" ID="slimy-finned" OrderAdjust="0">黏鰭的</string>
  <string Context="Slimy Biome - Creature Adjective" ID="slime-spitting" OrderAdjust="0">吐黏液的</string>
- <string Context="Tarry Biome - Creature Adjective" ID="kindlethumbed" OrderAdjust="0">燃指 (kindlethumbed)</string>
- <string Context="Tarry Biome - Creature Adjective" ID="firethumbed" OrderAdjust="0">火指 (firethumbed)</string>
+ <string Context="Tarry Biome - Creature Adjective" ID="kindlethumbed" OrderAdjust="0">燃指(kindlethumbed)</string>
+ <string Context="Tarry Biome - Creature Adjective" ID="firethumbed" OrderAdjust="0">火指(firethumbed)</string>
  <string Context="DynamicQuestConversationHelper reward choice dialog" ID="=spice:quests.thanks.!random|capitalize=. Our village owes you a debt. For now, please choose a reward from our stockpile as payment for your service.">=spice:quests.thanks.!random|capitalize=. 我們的村莊欠你一份人情。目前，請從我們的庫存中選擇一件獎勵，作為對你服務的回報。</string>
  <string Context="DynamicQuestConversationHelper reward choice choice" ID="Live and drink.">且活且飲。</string>
  <string Context="DynamicQuestConversationHelper village zero main quest dialog" ID="They are disciples of Barathrum. Mostly they are Urshiib, like their mentor. Mutant albino cave bears. With quills to boot! A thousand years ago Barathrum and his kin crossed the Homs Delta into the heart of Qud. He has spent centuries fiddling with the tokens of antiquity in his underground workshops.">他們是 巴拉楚姆(Barathrum) 的門徒。大多與他們的導師一樣是 Urshiib。變異的白化洞穴熊。而且還帶著刺！一千年前，巴拉楚姆(Barathrum) 和他的親族跨越了 Homs Delta，進入了卡德(Qud)的核心。他花了幾個世紀在他的地下工作坊裡擺弄那些古老的代幣。</string>
@@ -1635,19 +1635,19 @@ alone if no match found.
  <string Context="Baboon Hero Naming.xml Context" ID="=rings.toString=-ringed">=rings.toString=-環繞著戒指</string>
  <string Context="Baboon Hero Naming.xml Context" ID="King">國王</string>
  <string Context="Baboon Hero Naming.xml Context" ID="Queen">女王</string>
- <string Context="Baboon Hero Naming.xml Context" ID="Philanderer">好色之徒 (Philanderer)</string>
+ <string Context="Baboon Hero Naming.xml Context" ID="Philanderer">好色之徒(Philanderer)</string>
  <string Context="Baboon Hero Naming.xml Context" ID="Riddler">謎語人</string>
  <string Context="Baboon Hero Naming.xml Context" ID="Hermit">隱士</string>
  <string Context="Baboon Hero Naming.xml Context" ID="Sophisticate">精明者</string>
- <string Context="Eyeless King Crab Naming.xml Context" ID="many-legged">多足的 (many-legged)</string>
+ <string Context="Eyeless King Crab Naming.xml Context" ID="many-legged">多足的(many-legged)</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="one-clawed">單爪的</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="massive">巨大的</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="echoing">迴盪著的</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="frenetic">狂亂的</string>
- <string Context="Eyeless King Crab Naming.xml Context" ID="shell-cracked">殼裂 (shell-cracked)</string>
- <string Context="Eyeless King Crab Naming.xml Context" ID="Skuttler">斯庫特勒 (Skuttler)</string>
+ <string Context="Eyeless King Crab Naming.xml Context" ID="shell-cracked">殼裂(shell-cracked)</string>
+ <string Context="Eyeless King Crab Naming.xml Context" ID="Skuttler">斯庫特勒(Skuttler)</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="Ancient">古老的</string>
- <string Context="Eyeless King Crab Naming.xml Context" ID="Deepcrawler">深淵爬行者 (Deepcrawler)</string>
+ <string Context="Eyeless King Crab Naming.xml Context" ID="Deepcrawler">深淵爬行者(Deepcrawler)</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="Goliath">歌利亞</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="Lord">領主</string>
  <string Context="Eyeless King Crab Naming.xml Context" ID="Patriarch">族長</string>
@@ -1659,7 +1659,7 @@ alone if no match found.
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clovenhorn">分角者</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Hotur">霍圖爾氏族</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Ibex">犛牛氏族</string>
- <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Sol">索爾氏族 (Clan Sol)</string>
+ <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Sol">索爾氏族(Clan Sol)</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Whitetongue">白舌氏族</string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Yr">Yr 氏族 </string>
  <string Context="Goatfolk Hero Naming.xml Context" ID="Clan Mnim">姆尼姆氏族</string>
@@ -1670,7 +1670,7 @@ alone if no match found.
  <string Context="Snapjaw Hero Naming.xml Context" ID="nimble">靈活的</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="hulking">魁梧的</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="calloused">繭結的</string>
- <string Context="Snapjaw Hero Naming.xml Context" ID="Skullsplitter">碎顱者 (Skullsplitter)</string>
+ <string Context="Snapjaw Hero Naming.xml Context" ID="Skullsplitter">碎顱者(Skullsplitter)</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="Firesnarler">怒火糾纏者</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="Bear-baiter">誘熊者</string>
  <string Context="Snapjaw Hero Naming.xml Context" ID="Tot-eater">食幼者</string>
@@ -1688,7 +1688,7 @@ alone if no match found.
  <string Context="Troll Hero Naming.xml Context" ID="Hunt-master">獵主</string>
  <string Context="Troll Hero Naming.xml Context" ID="Man-eater">食人者</string>
  <string Context="Troll Hero Naming.xml Context" ID="two-headed">雙頭</string>
- <string Context="Troll Hero Naming.xml Context" ID="Caveking">洞穴之王 (Caveking)</string>
+ <string Context="Troll Hero Naming.xml Context" ID="Caveking">洞穴之王(Caveking)</string>
  <string Context="BeginBeingUnequippedEvent - Append FailureMessage" ID="=failureMessage= =message=">=failureMessage= =message=</string>
  <string Context="DescriptionBuilder Epithets Join" ID="=epithets.join:, =">=epithets.join:, =</string>
  <string Context="DescriptionBuilder Multiple Titles Clause" ID=", =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
@@ -1713,7 +1713,7 @@ alone if no match found.
  <string Context="Faction Pet Text" ID="{{C|=faction.formattedName|capitalize=}} won't usually let you pet them.">{{C|=faction.formattedName|capitalize=}} 通常不會讓你撫摸牠們。</string>
  <string Context="Faction Rank Text" ID="You hold the =faction.rankTerm= of =rank= among them.">你在他們之中擁有 =rank= 的 =faction.rankTerm=</string>
  <string Context="Faction Holy Place Text" ID="You are welcome in their holy places.">你在他們的聖地受到歡迎。</string>
- <string Context="Faction Holy Place Text" ID="You aren't welcome in their holy places.">你不受歡迎進入他們的聖地。</string>
+ <string Context="Faction Holy Place Text" ID="You aren't welcome in their holy places.">你在他們的聖地不受歡迎。</string>
  <string Context="Faction Feeling Description" ID="=feelingText=&#xA;&#xA;=fragments.join: =" Value="=feelingText=&#xA;&#xA;=fragments.join: =" />
  <string Context="Faction Secret Description (fragment)" ID="the =sultanTerm= they worship">他們崇拜的 =sultanTerm=</string>
  <string Context="Faction Secret Description (fragment)" ID="=sultanTerm|plural= they admire or despise">他們崇拜或鄙視的 =sultanTerm=</string>
@@ -1839,19 +1839,19 @@ alone if no match found.
  <string Context="Roboticized ObjectBuilder - Prefix Name default" ID="{{c|mechanical}}">{{c|機械}}</string>
  <string Context="Roboticized ObjectBuilder - Postfix Description default" ID="There is a low, persistent hum emanating outward.">有一股低沉且持續的嗡鳴聲向外擴散。</string>
  <string Context="Tattooed Apply Text" ID="=markovTattoo|initLower=">=markovTattoo|initLower=</string>
- <string Context="Calendar Month" ID="Nivvun Ut">尼夫恩·烏特</string>
- <string Context="Calendar Month" ID="Iyur Ut">伊尤爾·烏特 (Iyur Ut)</string>
- <string Context="Calendar Month" ID="Simmun Ut">希蒙·烏特</string>
- <string Context="Calendar Month" ID="Tuum Ut">圖姆·烏特 (Tuum Ut)</string>
- <string Context="Calendar Month" ID="Ubu Ut">烏布·烏特</string>
- <string Context="Calendar Month" ID="Uulu Ut">烏魯·烏特 (Uulu Ut)</string>
- <string Context="Calendar Month" ID="Ut yara Ux">Ut yara Ux</string>
- <string Context="Calendar Month" ID="Tishru i Ux">提舒魯·伊·烏克斯 (Tishru i Ux)</string>
- <string Context="Calendar Month" ID="Tishru ii Ux">提許魯二世·烏克斯</string>
- <string Context="Calendar Month" ID="Kisu Ux">基蘇·烏克斯 (Kisu Ux)</string>
- <string Context="Calendar Month" ID="Tebet Ux">特貝特·烏克斯 (Tebet Ux)</string>
- <string Context="Calendar Month" ID="Shwut Ux">修武特·烏克斯 (Shwut Ux)</string>
- <string Context="Calendar Month" ID="Uru Ux">烏魯·烏克斯</string>
+ <string Context="Calendar Month" ID="Nivvun Ut">尼夫恩·烏特(Nivvun Ut)</string>
+ <string Context="Calendar Month" ID="Iyur Ut">伊尤爾·烏特(Iyur Ut)</string>
+ <string Context="Calendar Month" ID="Simmun Ut">希蒙·烏特(Simmun Ut)</string>
+ <string Context="Calendar Month" ID="Tuum Ut">圖姆·烏特(Tuum Ut)</string>
+ <string Context="Calendar Month" ID="Ubu Ut">烏布·烏特(Ubu Ut)</string>
+ <string Context="Calendar Month" ID="Uulu Ut">烏魯·烏特(Uulu Ut)</string>
+ <string Context="Calendar Month" ID="Ut yara Ux">烏特·雅拉·烏克斯(Ut yara Ux)</string>
+ <string Context="Calendar Month" ID="Tishru i Ux">提舒魯·伊·烏克斯(Tishru i Ux)</string>
+ <string Context="Calendar Month" ID="Tishru ii Ux">提許魯二世·烏克斯(Tishru ii Ux)</string>
+ <string Context="Calendar Month" ID="Kisu Ux">基蘇·烏克斯(Kisu Ux)</string>
+ <string Context="Calendar Month" ID="Tebet Ux">特貝特·烏克斯(Tebet Ux)</string>
+ <string Context="Calendar Month" ID="Shwut Ux">修武特·烏克斯(Shwut Ux)</string>
+ <string Context="Calendar Month" ID="Uru Ux">烏魯·烏克斯(Uru Ux)</string>
  <string Context="Calendar MarginaliaTime" ID="On the =time.day= of =time.month=">在 =time.month= 的 =time.day=</string>
  <string Context="Calendar Day" ID="=time.day=">=time.day=</string>
  <string Context="Calendar TimeOfDay" ID="Beetle Moon Zenith">甲蟲月之巔</string>
@@ -1859,9 +1859,9 @@ alone if no match found.
  <string Context="Calendar TimeOfDay" ID="The Shallows">淺灘</string>
  <string Context="Calendar TimeOfDay" ID="Harvest Dawn">收穫黎明</string>
  <string Context="Calendar TimeOfDay" ID="Waxing Salt Sun">盈滿鹽日</string>
- <string Context="Calendar TimeOfDay" ID="High Salt Sun">高鹽之陽 (High Salt Sun)</string>
+ <string Context="Calendar TimeOfDay" ID="High Salt Sun">高鹽之陽(High Salt Sun)</string>
  <string Context="Calendar TimeOfDay" ID="Waning Salt Sun">虧缺鹽日</string>
- <string Context="Calendar TimeOfDay" ID="Hindsun">欣德森 (Hindsun)</string>
+ <string Context="Calendar TimeOfDay" ID="Hindsun">欣德森(Hindsun)</string>
  <string Context="Calendar TimeOfDay" ID="Jeweled Dusk">珠寶黃昏</string>
  <string Context="Calendar TimeOfDay" ID="Waxing Beetle Moon">盈月甲蟲月</string>
  <string Context="Calendar TimeOfDay default" ID="Zero Hour">零時</string>
@@ -2510,7 +2510,7 @@ alone if no match found.
  <string Context="spotmessage" ID="=subject.Does#verb= =object.an:withTitles:notvisible==subject.generalDirection:noHere#object|spaceBefore= and stop =autoActDescription=.">=subject.Does#verb= =object.an:withTitles:notvisible==subject.generalDirection:noHere#object|spaceBefore= 並停止 =autoActDescription=。</string>
  <string Context="GameObject adjunct noun default" ID="set">設定</string>
  <string Context="Tutorial Death" ID="Oh, you died. That's okay. It's a very common occurance in the world of Qud.&#xA;&#xA;Because the tutorial drops you off in Classic mode with permadeath, your character is wiped when you die.&#xA;&#xA;The good news is: you get to make a whole new character! Now with a little more knowledge than you had before." Value="喔，你死了。沒關係，這在卡德的世界中是非常常見的事情。&#xA;&#xA;因為教學關卡是在具有永久死亡機制的經典模式下進行，所以當你死亡時，你的角色會被抹除。&#xA;&#xA;好消息是：你可以創造一個全新的角色！而且這次你會比之前擁有更多的知識。" />
- <string Context="Tutorial Death" ID="Next time, if you want a more forgiving mode of play, try Roleplay, which lets you checkpoint at settlements.&#xA;&#xA;Or try Wander mode, where most creatures are neutral to you and you gain experience via discovery instead of killing.&#xA;&#xA;Or keep playing Classic if the challenge appeals to you and you'd like to explore a breadth of character types." Value="下次如果你想要更寬容的遊戲模式，可以嘗試「角色扮演 (Roleplay)」模式，這讓你在定居點可以存檔。&#xA;&#xA;或者嘗試「漫遊 (Wander)」模式，在那裡大多數生物對你都是中立的，且你可以透過探索而非殺戮來獲得經驗值。&#xA;&#xA;如果你喜歡挑戰並想探索多樣的角色類型，那就繼續玩「經典 (Classic)」模式吧。" />
+ <string Context="Tutorial Death" ID="Next time, if you want a more forgiving mode of play, try Roleplay, which lets you checkpoint at settlements.&#xA;&#xA;Or try Wander mode, where most creatures are neutral to you and you gain experience via discovery instead of killing.&#xA;&#xA;Or keep playing Classic if the challenge appeals to you and you'd like to explore a breadth of character types." Value="下次如果你想要更寬容的遊戲模式，可以嘗試「角色扮演(Roleplay)」模式，這讓你在定居點可以存檔。&#xA;&#xA;或者嘗試「漫遊(Wander)」模式，在那裡大多數生物對你都是中立的，且你可以透過探索而非殺戮來獲得經驗值。&#xA;&#xA;如果你喜歡挑戰並想探索多樣的角色類型，那就繼續玩「經典(Classic)」模式吧。" />
  <string Context="Tutorial Death" ID="Whatever you choose next, feel free to return to the tutorial if you need a refresher.&#xA;&#xA;Live and drink, friend!" Value="無論你接下來選擇什麼，若需要複習，隨時可以回到教學模式。&#xA;&#xA;盡情生活與飲酒吧，朋友！" />
  <string Context="ConfirmMoveInto LiquidPool Up or Down" ID="There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.toward= and start swimming?">那邊有一個看起來很危險的 =pool.short=。你想往 =direction.toward= 方向去游泳嗎？</string>
  <string Context="ConfirmMoveInto LiquidPool Up or Down" ID="There =pool.is= =pool.a.name= that way. Do you want to go =direction.toward= and start swimming?">那邊有 =pool.is= =pool.a.name=。你想往 =direction.toward= 前進並開始游泳嗎？</string>
@@ -2948,10 +2948,10 @@ alone if no match found.
  <string Context="ActivePartStatus" ID="RealityStabilized">現實穩定化</string>
  <string Context="ActivePartStatus" ID="LimbIncompatible">肢體不相容</string>
  <string Context="ActivePartStatus" ID="PrimarySystemOffline">主要系統離線</string>
- <string Context="ActivePartStatus" ID="ProcessInputMissing">遺失輸入處理 (ProcessInputMissing)</string>
- <string Context="ActivePartStatus" ID="ProcessInputInvalid">無效輸入處理 (ProcessInputInvalid)</string>
+ <string Context="ActivePartStatus" ID="ProcessInputMissing">遺失輸入處理(ProcessInputMissing)</string>
+ <string Context="ActivePartStatus" ID="ProcessInputInvalid">無效輸入處理(ProcessInputInvalid)</string>
  <string Context="ActivePartStatus" ID="Unpowered">無動力</string>
- <string Context="ActivePartStatus" ID="LocallyDefinedFailure">本地定義失敗 (LocallyDefinedFailure)</string>
+ <string Context="ActivePartStatus" ID="LocallyDefinedFailure">本地定義失敗(LocallyDefinedFailure)</string>
  <string Context="ActivePartStatus (should not be used)" ID="Invalid">無效</string>
  <string Context="ActivePartStatus StatusSummary" ID="{{W|EMP}}">{{W|電磁脈衝}}</string>
  <string Context="ActivePartStatus StatusSummary" ID="{{K|unpowered}}">{{K|無能量}}</string>
@@ -2989,7 +2989,7 @@ alone if no match found.
  <string ID="You cannot budge =object.the.name=.">你無法移動 =object.the.name=。</string>
  <string Context="Inventory Unowned Container Confirm" ID="You don't own =container.the.name:withIndicativeProximal=. Are you sure you want to take =object.the.name=?">你不擁有 =container.the.name:withIndicativeProximal=。你確定要拿走 =object.the.name=? </string>
  <string Context="Inventory Drop Count" ID="How many do you want to drop?">你想丟棄多少個？</string>
- <string Context="AccelerativeTeleporter Techscan Failure" ID="NoGroundContact">無地面接觸 (NoGroundContact)</string>
+ <string Context="AccelerativeTeleporter Techscan Failure" ID="NoGroundContact">無地面接觸(NoGroundContact)</string>
  <string Context="ActiveLightSource Condition Equipped" ID="equipped">已裝備</string>
  <string Context="ActiveLightSource Condition Power" ID="powered">動力驅動</string>
  <string Context="ActiveLightSource Condition Use" ID="in use">使用中</string>
@@ -3448,7 +3448,7 @@ alone if no match found.
  <string Context="SkybearShroud Command" ID="Activate Flume-Flier">啟動 Flume-Flier</string>
  <string Context="SkybearShroud Activate Message" ID="=subject.Does:start= dashing in a plume of flame and smoke!">=subject.Does:start= 伴隨著一陣火焰與煙霧衝了出來！</string>
  <string Context="Stopsvaalinn Techscanning NameForStatus" ID="ForceEmitter">力場發射器</string>
- <string Context="Stopsvaalinn Command Label" ID="Activate Stopsvaalinn">啟動 Stopsvaalinn</string>
+ <string Context="Stopsvaalinn Command Label" ID="Activate Stopsvaalinn">啟動止濤者</string>
  <string Context="Stopsvaalinn Command Label" ID="Activate Stopsvalinn">啟動 斯托普斯瓦林(Stopsvalinn)</string>
  <string Context="Stopsvaalinn Suspended Message" ID="=subject.Does:vibrate= slightly.">=subject.Does:vibrate= 輕微地顫動。</string>
  <string Context="Stopsvaalinn Snapoff Message" ID="The {{R|force bubble}} snaps off.">{{R|力場泡}} 消失了。</string>
@@ -4925,7 +4925,7 @@ alone if no match found.
  <string Context="Golem Quest Mound Hostiles" ID="You can't do that with hostile creatures nearby.">附近有敵對生物時，你無法執行此動作。</string>
  <string Context="Golem Quest Mound Build Button" ID="Build">建造</string>
  <string Context="Golem Quest Mount Build Key" ID="Backspace">退格鍵</string>
- <string ID="With the help of Pax Klanq and the Barathrumites, you constructed =golem.a.name= to climb the Spindle.">在 Pax 克蘭克(Klanq) 與 Barathrumites 的幫助下，你建造了 =golem.a.name= 以攀登紡錘 (Spindle)。</string>
+ <string ID="With the help of Pax Klanq and the Barathrumites, you constructed =golem.a.name= to climb the Spindle.">在 Pax 克蘭克(Klanq) 與 Barathrumites 的幫助下，你建造了 =golem.a.name= 以攀登紡錘(Spindle)。</string>
  <string Context="Golem Quest Selection Title" ID="Choose =selection|article=">選擇 =selection|article=</string>
  <string Context="Golem Quest Selection Empty" ID="&lt;make a selection&gt;">&lt;進行選擇></string>
  <string Context="Settlements Generate Farm Name fallback nameRoot" ID="Urist">尤里斯特</string>
@@ -5231,10 +5231,10 @@ alone if no match found.
  <string ID="the lair of {{M|Oboroqoru, Ape God}}">{{M|奧博羅科魯, Ape God}} 的巢穴</string>
  <string ID="You discover a lair. Would you like to investigate?">你發現了一個巢穴。要進行調查嗎？</string>
  <string ID="the lair of Oboroqoru, Ape God">奧博羅科魯，猿神之巢</string>
- <string ID="the mouth of {{M|Shug'ruith the Burrower}}">{{M|舒古瑞斯 the Burrower}} 的口</string>
+ <string ID="the mouth of {{M|Shug'ruith the Burrower}}">{{M|舒古瑞斯·挖掘者}} 的口</string>
  <string ID="You come upon a yawning pit. Would you like to investigate?">你來到一個深不見底的坑洞前。你想調查看看嗎？</string>
- <string ID="the cradle of {{M|Shug'ruith the Burrower}}">{{M|舒古瑞斯 the Burrower}} 的搖籃</string>
- <string ID="the chuppah of {{M|Girsh Qas and Girsh Qon}}">{{M|吉爾什 卡斯 and 吉爾什 昆}} 的婚棚</string>
+ <string ID="the cradle of {{M|Shug'ruith the Burrower}}">{{M|舒古瑞斯·挖掘者}} 的搖籃</string>
+ <string ID="the chuppah of {{M|Girsh Qas and Girsh Qon}}">{{M|吉爾什·卡斯 與 吉爾什·昆}} 的婚棚</string>
  <string ID="the cradle of {{M|Girsh Rermadon}}">{{M|吉爾什 雷馬東}} 的搖籃</string>
  <string ID="the cradle of {{M|Girsh Agolgot}}">{{M|吉爾什 阿格爾戈特}} 的搖籃</string>
  <string ID="the cradle of {{M|Girsh Bethsaida}}">{{M|吉爾什 貝賽達}} 的搖籃</string>
@@ -5249,7 +5249,7 @@ alone if no match found.
  <string ID="some flattened remains">一些扁平的殘骸</string>
  <string ID="a secluded merchant from the Consortium of Phyta">一位來自 植物聯盟(Consortium of Phyta) 的隱居商人</string>
  <string ID="the Ruin of House Isner">伊斯納家族廢墟</string>
- <string ID="Gyl">吉爾 (Gyl)</string>
+ <string ID="Gyl">吉爾(Gyl)</string>
  <string ID="Recoming nook at Gyl">在 Gyl 重新發現角落</string>
  <string ID="a {{w|dromad}} caravan">一支 {{w|駝獸}} 商隊</string>
  <string ID="Kindrish, the ancestral bracelet of the hindren">Kindrish，後裔族的祖傳手鍊</string>

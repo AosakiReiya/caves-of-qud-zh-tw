@@ -1348,7 +1348,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
  <object Name="statue of scholar" Load="Merge">
   <part Name="Render" DisplayName="雷舍夫雕像" />
   <part Name="Description" Short="被稱為「至高者」的 Resheph 舉起一根神祕的手指，療癒病患的傷口。" />
-  <tag Name="WorshippedAs" Value="雷舍夫 (Resheph)" />
+  <tag Name="WorshippedAs" Value="雷舍夫(Resheph)" />
  </object>
  <object Name="SultanShrine" Load="Merge">
   <part Name="Render" DisplayName="神龕" />
@@ -1417,7 +1417,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <part Name="Render" DisplayName="雷舍夫神龕" />
   <part Name="Epithets" Primary=", 最後的蘇丹" />
   <part Name="ZoneLandmarkObject" Preposition="由" />
-  <tag Name="WorshippedAs" Value="雷舍夫 (Resheph)" />
+  <tag Name="WorshippedAs" Value="雷舍夫(Resheph)" />
  </object>
  <object Name="Eater Hologram" Load="Merge">
   <part Name="Render" DisplayName="噬者全息圖" />
@@ -1897,7 +1897,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="生命之門" />
   </object>
   <object Name="Life Gate E" Load="Merge">
-    <part Name="Render" DisplayName="生命之門 (Life Gate)" />
+    <part Name="Render" DisplayName="生命之門(Life Gate)" />
   </object>
   <object Name="Combustion Turbine" Load="Merge">
     <part Name="Render" DisplayName="{{K|燃燒}} {{c|渦輪機}}" />

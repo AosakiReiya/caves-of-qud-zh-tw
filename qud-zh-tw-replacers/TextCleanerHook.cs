@@ -271,6 +271,7 @@ public static class ZhTwTextCleaner
             // 高頻對話/敘述常用詞（export_leak_words.py 導出；多義詞 like/well 保留待人工）
             { "time", "時間" }, { "know", "知道" }, { "now", "現在" }, { "cannot", "不能" },
             { "want", "想要" }, { "need", "需要" }, { "world", "世界" }, { "people", "人們" },
+            { "asphalt", "瀝青" }, { "brine", "鹵水" }, { "dune", "沙丘" }, { "mesa", "台地" }, { "diluted", "稀釋的" },
             { "something", "某事" }, { "tell", "告訴" }, { "see", "看到" }, { "come", "來" },
             { "let", "讓" }, { "welcome", "歡迎" }, { "thank", "感謝" }, { "speak", "說" },
             { "nothing", "沒什麼" }, { "feel", "感覺" }, { "place", "地方" }, { "new", "新的" },
@@ -349,7 +350,7 @@ public static class ZhTwTextCleaner
             { "hunter", "獵人" }, { "increased", "已提升" }, { "iron", "鐵" }, { "journey", "旅程" },
             { "key", "鑰匙" }, { "kill", "擊殺" }, { "king", "國王" }, { "knight", "騎士" },
             { "lady", "女士" }, { "leaf", "葉子" }, { "learn", "學習" }, { "learned", "已習得" },
-            { "leave", "離開" }, { "level", "等級" }, { "light", "光" }, { "lock", "鎖定" }, { "torch", "火炬" },
+            { "leave", "離開" }, { "level", "等級" }, { "light", "光" }, { "lock", "鎖定" }, { "torch", "火把" },
             { "lord", "領主" }, { "lost", "遺失" }, { "mace", "晨星錘" }, { "mage", "法師" },
             { "mana", "魔力" }, { "market", "市場" }, { "meal", "膳食" }, { "meat", "肉" },
             { "merchant", "商人" }, { "metal", "金屬" }, { "milk", "牛奶" }, { "mind", "精神" },
@@ -370,9 +371,9 @@ public static class ZhTwTextCleaner
             { "success", "成功" }, { "sun", "太陽" }, { "sword", "劍" }, { "tail", "尾巴" },
             { "target", "目標" }, { "temple", "寺廟" }, { "thief", "盜賊" }, { "thunder", "雷電" },
             { "tide", "潮汐" }, { "tonic", "補劑" }, { "tool", "工具" }, { "total", "總計" },
-            { "town", "城鎮" }, { "trade", "交易" }, { "travel", "旅行" }, { "tree", "樹木" },
+            { "town", "城鎮" }, { "trade", "交易" }, { "travel", "旅行" }, { "tree", "樹" },
             { "tribe", "部落" }, { "unequip", "卸下" }, { "upgrade", "升級" }, { "village", "村莊" },
-            { "visit", "造訪" }, { "wait", "等待" }, { "wall", "牆壁" }, { "wand", "魔杖" },
+            { "visit", "造訪" }, { "wait", "等待" }, { "wall", "牆" }, { "wand", "魔杖" },
             { "warrior", "戰士" }, { "wave", "波浪" }, { "weapon", "武器" }, { "wind", "風" },
             { "window", "視窗" }, { "wine", "葡萄酒" }, { "wing", "翅膀" }, { "witch", "女巫" },
             { "wizard", "巫師" }, { "wood", "木材" }, { "xp", "經驗值" },
@@ -393,7 +394,7 @@ public static class ZhTwTextCleaner
             { "bite", "咬" }, { "bites", "咬" }, { "claws", "爪" },
             { "paw", "爪掌" }, { "paws", "爪掌" }, { "hoof", "蹄" }, { "hooves", "蹄" },
             { "tusk", "獠牙" }, { "tusks", "獠牙" }, { "fangs", "獠牙" },
-            { "beak", "喙" }, { "stinger", "尾刺" }, { "horns", "角" },
+            { "beak", "喙" }, { "stinger", "刺針" }, { "horns", "角" },
             { "fist", "拳頭" }, { "fists", "拳頭" }, { "scratch", "抓傷" }, { "scratches", "抓傷" },
             { "bronze", "青銅" }, { "steel", "鋼" }, { "dagger", "匕首" },
             // 2026-08-13 補：Faction Interest/Secret 系統漏網兜底（sultanTerm 複數、動詞片語等）
@@ -797,7 +798,7 @@ public static class ZhTwTextCleaner
             { "Examiner damage contents risk warning", "審查者(Examiner)傷害內容風險警告" },
             { "Examiner damage risk warning", "審查者(Examiner)傷害風險警告" },
             { "Inspect the bear.", "檢查熊。" },
-            { "Inspect the snapjaw.", "檢查快顎(Snapjaw)。" },
+            { "Inspect the snapjaw.", "檢查咬顎獸(Snapjaw)。" },
             { "Load :", "載入：" },
             { "Load File Test", "載入檔案測試" },
             { "Load Map", "載入地圖" },
@@ -937,7 +938,7 @@ public static class ZhTwTextCleaner
             { "Startup time:", "啟動時間：" },
             { "Stop Burrowing", "停止挖掘" },
             { "Stop Running", "停止奔跑" },
-            { "Take a step toward the snapjaw.", "向快咬者(Snapjaw)邁出一步。" },
+            { "Take a step toward the snapjaw.", "向咬顎獸(Snapjaw)邁出一步。" },
             { "Toggle All", "全部切換" },
             { "Toggle Cybernetics", "切換義體化" },
             { "Toggle Favorite", "切換收藏" },
@@ -950,7 +951,7 @@ public static class ZhTwTextCleaner
             { "Use =commandKey:CmdMoveD= to descend.", "使用 =commandKey:CmdMoveD= 下樓。" },
             { "Use =commandKey:CmdMoveU= to ascend.", "使用 =commandKey:CmdMoveU= 來上升。" },
             { "Use =commandKey:LookDirection= to look at the bear.", "使用 =commandKey:LookDirection= 來注視熊。" },
-            { "Use =commandKey:LookDirection= to look at the snapjaw.", "使用 =commandKey:LookDirection= 來注視快咬獸(Snapjaw)。" },
+            { "Use =commandKey:LookDirection= to look at the snapjaw.", "使用 =commandKey:LookDirection= 來注視咬顎獸(Snapjaw)。" },
             { "Use Bare Indicative:", "使用裸露指示(Bare Indicative)：" },
             { "Use the campfire.", "使用營火。" },
             { "View final messages", "查看最終訊息" },
@@ -1978,7 +1979,7 @@ public static class ZhTwTextCleaner
             // 執行期固定專名（Factions 等），跑 translate_propernouns（本地 LLM）音譯
             { "Cherubim", "切魯比姆(Cherubim)" }, { "Girsh", "吉爾什(Girsh)" },
             { "Mechanimists", "梅卡尼主義者(Mechanimists)" },
-            { "cragmensch", "克拉格曼(Cragmensch)" }, { "Baetyls", "貝提爾(Baetyls)" },
+            { "cragmensch", "岩民(Cragmensch)" }, { "Baetyls", "貝提爾(Baetyls)" },
             { "dromad merchants", "德羅馬德商人(dromad merchants)" },
             // 固定地點（DLL/藍圖硬編碼，非生成）
             { "Agolgot", "阿戈爾戈特(Agolgot)" },
@@ -2141,6 +2142,15 @@ public static class ZhTwTextCleaner
         return text;
     }
 
+    // 序數日殘留（引擎注入 =day= 值如「14th」「30th」；G6：統一「N 日」）
+    // 排除分母（1/10th）與連續數字（143rd），僅剩日期/序號語境
+    private static readonly Regex OrdinalDay = new Regex(
+        @"(?<![/\d])(\d{1,2})(?:st|nd|rd|th)(?!\s*[A-Za-z0-9/])", RegexOptions.Compiled);
+
+    // 深度單位殘留（引擎注入 =level.things:stratum= 值「1 stratum」；G6：→「層」）
+    private static readonly Regex StrataUnit = new Regex(
+        @"\b(?:stratum|strata)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
     private static readonly Regex LoneParen = new Regex(
         @"\((?=\s*$)", RegexOptions.Compiled);
     private static string StripLoneParen(string text)
@@ -2185,8 +2195,17 @@ public static class ZhTwTextCleaner
     }
 
     private static int DiagAmphClean = 0;
+    private static int DiagFactionClean = 0;
     public static string Clean(string text)
     {
+        if (text != null && (text.IndexOf("interested", System.StringComparison.OrdinalIgnoreCase) >= 0
+            || text.IndexOf("Asphalt", System.StringComparison.OrdinalIgnoreCase) >= 0
+            || text.IndexOf("Kindred", System.StringComparison.OrdinalIgnoreCase) >= 0)
+            && System.Threading.Interlocked.Increment(ref DiagFactionClean) <= 8)
+        {
+            string seg = text.Length > 240 ? text.Substring(0, 240) : text;
+            ZhTwReplacers.LogAlways("[DIAG-FAC] IN=[" + seg + "]");
+        }
         if (text != null && (text.IndexOf("Amphibious", System.StringComparison.Ordinal) >= 0 || text.IndexOf("兩棲", System.StringComparison.Ordinal) >= 0))
         {
             if (System.Threading.Interlocked.Increment(ref DiagAmphClean) <= 8)
@@ -2250,6 +2269,9 @@ public static class ZhTwTextCleaner
         result = RestoreAll(result, tokenBox, parenBox);
         // 孤獨「(」尾殘清理（資訊斷裂殘骸；有內容括號保留）
         result = StripLoneParen(result);
+        // G6：引擎注入殘留清洗（「14th」→「14 日」、「1 stratum」→「1 層」）
+        result = OrdinalDay.Replace(result, "$1 日");
+        result = StrataUnit.Replace(result, "層");
         // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
         DiagOutLog("Clean", text, result);
         if (result != text)
@@ -2742,7 +2764,7 @@ public static class ZhTwTextCleaner
         { "=usesCharge.if:When powered, ==pen.signed= penetration vs. walls.", "=usesCharge.if:當通電時，==pen.signed= 對牆壁的穿透力。" },
         { "=usesCharge.if:When powered, destroys:Destroys= walls after =hitCount.things:penetrating hit=.", "=usesCharge.if:當通電時，會摧毀：摧毀= 牆壁，穿透性打擊後可摧毀 =hitCount.things:次。=" },
         { "Activate Force Emitter", "啟動力場發射器(Force Emitter)" },
-        { "Activate Stopsvaalinn", "啟動 Stopsvaalinn (Stopsvaalinn)" },
+        { "Activate Stopsvaalinn", "啟動止濤者(Stopsvaalinn)" },
         { "Activate Stopsvalinn", "啟動 Stopsvalinn(Stopsvalinn)" },
         { "ActivatedAbilities - Gained new ability", "已啟動的能力 — 獲得新能力" },
         { "ActivatedAbilities - Gained new ability - Hasn't used ability menu much appendix", "已啟動的能力 — 獲得新能力 — 尚未頻繁使用能力選單附錄" },
@@ -2968,14 +2990,14 @@ public static class ZhTwTextCleaner
         { "Saving Throw Vs Web", "對抗蛛網的豁免檢定" },
         { "Settlements Generate Farm Name fallback nameRoot", "定居點生成農場名稱備用名稱Root" },
         { "Skills attribute obsolete, should use <skill> nodes instead.", "技能屬性已過時，應改用 <skill> 節點。" },
-        { "Snapjaw Hero Stopsvaalinn", "快咬者(Snapjaw)英雄 斯托普斯瓦林(Stopsvaalinn)" },
+        { "Snapjaw Hero Stopsvaalinn", "咬顎獸英雄·止濤者(Snapjaw Hero Stopsvaalinn)" },
         { "StairsDown FallDown", "下樓梯 FallDown" },
         { "StairsDown FallDown v2", "樓梯向下 FallDown v2" },
         { "StairsDown You fall downward", "向下樓梯 (StairsDown) 你向下墜落" },
         { "Stomach died of thirst", "胃部因口渴而死亡" },
-        { "Stopsvaalinn Command Label", "史托普斯瓦林(Stopsvaalinn)指令標籤" },
-        { "Stopsvaalinn Not Enough Charge", "史托普斯瓦林(Stopsvaalinn)能量不足" },
-        { "Stopsvaalinn Silent Fail", "史托普斯瓦林(Stopsvaalinn) 無聲失敗" },
+        { "Stopsvaalinn Command Label", "止濤者(Stopsvaalinn)指令標籤" },
+        { "Stopsvaalinn Not Enough Charge", "止濤者(Stopsvaalinn)能量不足" },
+        { "Stopsvaalinn Silent Fail", "止濤者(Stopsvaalinn) 無聲失敗" },
         { "Stopsvaalinn Snapoff Message", "Stopsvaalinn (史托普斯瓦林) Snapoff 訊息" },
         { "Stopsvaalinn Snapoff Message Other", "Stopsvaalinn (Stopsvaalinn) 脫落訊息 其他" },
         { "Stopsvaalinn Success", "史托普斯瓦林(Stopsvaalinn)成功" },

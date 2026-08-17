@@ -119,8 +119,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <skill Name="Self-discipline" DisplayName="自律" Description="你擅長保持自律。" Snippet="自律">
     <power Name="Meditate" DisplayName="冥想" Description="一顆由金屬與電路玻璃構成、表面凹凸不平的蛋從鉻瀑布中被撈起，準備進行焊接，作為一群木蛙人的精神中心質量。=pronouns.Possessive= 感官面板在接合點處與 =pronouns.possessive= 創造者/僕從 的面具熔合在一起，並用苔蘚生長物與電線纏繞著。" Snippet="冥想" />
     <power Name="Fasting Way" DisplayName="禁食之道(Fasting Way)" Description="你的飢渴速度為正常速度的一半。&#xA;食物帶來的代謝效果持續時間加倍。" Snippet="禁食" />
-    <power Name="Iron Mind" DisplayName="鋼鐵意志(Iron Mind)" Description="每一輪你感到困惑時，都有 (Willpower-10)% 的機率擺脫該效果。" Snippet="鐵之意志" />
-    <power Name="Lionheart" DisplayName="獅心(Lionheart)" Description="每一輪你感到恐懼時，都有 (Willpower-10)% 的機率擺脫該效果。" Snippet="獅心" />
+    <power Name="Iron Mind" DisplayName="鋼鐵意志(Iron Mind)" Description="每一輪你感到困惑時，都有(Willpower-10)% 的機率擺脫該效果。" Snippet="鐵之意志" />
+    <power Name="Lionheart" DisplayName="獅心(Lionheart)" Description="每一輪你感到恐懼時，都有(Willpower-10)% 的機率擺脫該效果。" Snippet="獅心" />
     <power Name="Conatus" DisplayName="內驅力(Conatus)" Description="你可以額外衝刺 10 回合。" Snippet="內驅力(Conatus)" />
     <power Name="Mind over Body" DisplayName="心勝於身(Mind over Body)" Description="您的飢渴速度降低為六分之一。&#xA;食物帶來的代謝效果持續時間增加六倍。&#xA;您不會因為陷入飢餓狀態而受到懲罰。" Snippet="以心馭身" />
   </skill>
@@ -129,7 +129,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <power Name="Shield Slam" DisplayName="盾牌 撞擊" Description="已啟動；冷卻時間 40。你試圖擊倒對手並造成 (力量修正值)d2 + 你的 盾牌的 AV 加成 之傷害。你的對手有機會抵抗（力量判定；難度 20 + 你的力量修正值）。每當你裝備著 盾牌 向對手衝鋒時，你會獲得一次免費的 盾牌 猛擊攻擊。" Snippet="盾牌重擊" />
     <power Name="Deft Blocking" DisplayName="靈巧格擋" Description="你使用 盾牌 格擋的機率提升至 75%。" Snippet="靈巧地格擋" />
     <power Name="Swift Blocking" DisplayName="迅捷格擋" Description="每回合每面 盾牌 可額外格擋一次攻擊。" Snippet="快速格擋" />
-    <power Name="Staggering Block" DisplayName="踉蹌格擋" Description="每當您格擋對手的攻擊時，有 (Strength*2)-35% 的機率使對手陷入 1d2 回合的暈眩狀態。" Snippet="踉蹌格擋" />
+    <power Name="Staggering Block" DisplayName="踉蹌格擋" Description="每當您格擋對手的攻擊時，有(Strength*2)-35% 的機率使對手陷入 1d2 回合的暈眩狀態。" Snippet="踉蹌格擋" />
     <power Name="Shield Wall" DisplayName="盾牌 牆壁(Shield Wall)" Description="在接下來的三輪內，你會自動格擋所有近戰攻擊（不可與圓盾同時使用）。" Snippet="用你的 盾牌 築起一道牆" />
   </skill>
   <skill Name="Short Blade" DisplayName="短劍" Description="你擅長使用小型單手刀具與刃器。" Snippet="短刃">
