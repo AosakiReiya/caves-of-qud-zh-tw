@@ -36,9 +36,11 @@ PROJ = ROOT.parent                       # qud-zh-tw 專案根
 DATA_MOD = PROJ                          # data mod（zh-tw/ 等直接在專案根）
 REPL_MOD = PROJ.parent / "qud-zh-tw-replacers"   # replacers mod
 
-DATA_FILES = ["manifest.json", "Languages.xml", "historyspice.zh-tw.json"]
+DATA_FILES = ["manifest.json", "Languages.xml", "historyspice.zh-tw.json", "workshop.json", "preview.png"]
 DATA_DIRS = ["zh-tw"]
-REPL_GLOBS = ["*.cs", "manifest.json", "README.txt"]
+# Steam Workshop 身份檔（workshop.json/preview.png 缺失→上傳器 FileNotFound 崩潰、被當新 mod；
+# 2026-08-17 事故根源，已納入同步清單永久防護）
+REPL_GLOBS = ["*.cs", "manifest.json", "README.txt", "workshop.json", "preview.png"]
 
 # 液體檔案注意事項：遊戲 2.0.212.29 初期曾出現「mod 液體合併 → BaseLiquid.Initialize NRE」，
 # 經實證（2026-08-13）根因為 875c7c1 的 ParenPhraseRegex 靜態 Regex（非液體檔本身）。

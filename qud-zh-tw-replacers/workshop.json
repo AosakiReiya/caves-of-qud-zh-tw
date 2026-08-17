@@ -1,0 +1,7 @@
+{
+  "Title": "Qud 繁中動態文字 Replacers（Caves of Qud 繁體中文化 | Dynamic Text Fix）",
+  "Description": "[h1]Qud 繁中動態文字 Replacers[/h1]\n\n「卡德洞窟繁中化（Caves of Qud 正體中文）」的動態文字修補層，兩個 mod 請一起安裝。\n\n[b]功能：[/b]\n- 修復角色創建頁「兩棲的(」缺陷標記顯示斷裂\n- 引擎注入殘留清洗（14th→14 日、stratum→層）\n- 動態生成專名整段保護（不拆碎成破碎譯文）\n- 裝備欄槽位名補中\n- 譯名校正（以語料層為準）\n\n[b]安裝方式：[/b]\n1. Steam 切換至 lang-experimental 分支\n2. 啟用本 mod 與「卡德洞窟繁中化」語料 mod\n3. 主選單語言選擇「正體中文」",
+  "Tags": "Translation",
+  "Visibility": "0",
+  "ImagePath": "Preview.png"
+}

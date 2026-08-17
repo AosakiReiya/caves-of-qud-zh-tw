@@ -80,7 +80,7 @@ def main() -> None:
             shutil.rmtree(OUT_REPL)
         OUT_REPL.mkdir(parents=True)
         n = 0
-        for glob2 in ("*.cs", "manifest.json", "README.txt"):
+        for glob2 in ("*.cs", "manifest.json", "README.txt", "workshop.json", "preview.png"):
             for f in sorted(glob.glob(str(REPL_SRC / glob2))):
                 shutil.copy(f, OUT_REPL / Path(f).name)
                 n += 1
