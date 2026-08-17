@@ -50,3 +50,6 @@ tmp
 /qud-zh-tw/tools/*.json
 /qud-zh-tw/tools/__pycache__/
 /qud-zh-tw/tools/*.txt
+
+# Steam 發佈用 patch note（不入庫，確保每次發佈內容新鮮）
+/release-notes/
