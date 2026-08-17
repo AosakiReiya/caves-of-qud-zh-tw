@@ -1,7 +1,7 @@
 {
     "ID": "qud_zh-tw-replacers",
     "Version": "0.2.0",
-    "Title": "Qud 繁中動態文字 Replacers（測試）",
+    "Title": "Caves of Qud 繁體中文化 | Dynamic Text Fix",
     "Author": "AosakiReiya",
-    "Description": "測試：為正體中文提供代名詞/動詞 replacer，解決動態文字中英混雜。"
+    "Description": "「Caves of Qud 繁體中文化」的動態文字修補層。修正動態戰鬥訊息、代名詞、動作描述、裝備與互動文字等硬編碼英文殘留。"
 }
