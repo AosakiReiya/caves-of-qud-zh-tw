@@ -1,6 +1,6 @@
 {
     "ID": "qud_zh-tw-replacers",
-    "Version": "0.1.0",
+    "Version": "0.2.0",
     "Title": "Qud 繁中動態文字 Replacers（測試）",
     "Author": "AosakiReiya",
     "Description": "測試：為正體中文提供代名詞/動詞 replacer，解決動態文字中英混雜。"
