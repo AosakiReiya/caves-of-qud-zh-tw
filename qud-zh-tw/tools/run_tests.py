@@ -1627,6 +1627,12 @@ def test_deploy_workshop_merge():
         _json.dumps({"WorkshopId": 123, "Title": "T"}).encode("utf-8"),
         _json.dumps({"WorkshopId": 0, "Title": "X"}).encode("utf-8")).decode("utf-8"))
     check("安裝版 id=0 則用 repo id", m2.get("WorkshopId") == 123)
+    # 安裝版尾端有殘留垃圾(多一個 }) 仍能救回 WorkshopId
+    import importlib as _il; _il.reload(_dm)
+    m3 = _json.loads(_dm._merge_workshop(
+        _json.dumps({"WorkshopId": 123, "Title": "T"}).encode("utf-8"),
+        ('{\r\n  "WorkshopId": 555, "Visibility": "2"\r\n}\n}\n').encode("utf-8")).decode("utf-8"))
+    check("尾端垃圾仍能救回安裝版 WorkshopId", m3.get("WorkshopId") == 555 and m3.get("Visibility") == "2")
     # About/PublishedFileId.txt 已從同步清單移除
     d = (Path(_tools) / "deploy_mods.py").read_text(encoding="utf-8")
     check("deploy 不再同步 About/PublishedFileId.txt", "PublishedFileId" not in d)

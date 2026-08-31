@@ -47,17 +47,27 @@ REPL_GLOBS = ["*.cs", "manifest.json", "README.txt", "workshop.json", "preview.p
 
 def _merge_workshop(src_bytes: bytes, dst_bytes: bytes) -> bytes:
     """同步 workshop.json：Title/Description/ImagePath 取 repo（src），
-    但安裝版既有的非零 WorkshopId 與 Visibility 一律保留（遊戲上傳後寫回的真值）。"""
-    try:
-        s = json.loads(src_bytes.decode("utf-8-sig"))
-        d = json.loads(dst_bytes.decode("utf-8-sig"))
-    except Exception:
+    但安裝版既有的非零 WorkshopId 與 Visibility 一律保留（遊戲上傳後寫回的真值）。
+    用 raw_decode 容忍遊戲寫檔在尾端殘留的多餘 } / 垃圾（2026-08-31：install 檔尾 `}\\n}\\n`
+    致 json.loads 失敗），仍能救回已存的 WorkshopId。"""
+    dec = json.JSONDecoder()
+
+    def load(b: bytes):
+        try:
+            obj, _ = dec.raw_decode(b.decode("utf-8-sig").lstrip())
+            return obj
+        except Exception:
+            return None
+    s = load(src_bytes)
+    d = load(dst_bytes)
+    if s is None:
         return src_bytes
-    wid = d.get("WorkshopId", 0)
-    if isinstance(wid, int) and wid > 0:
-        s["WorkshopId"] = wid          # 保留安裝版真實 item id
-    if "Visibility" in d:
-        s["Visibility"] = d["Visibility"]  # 保留玩家設定的可見度
+    if isinstance(d, dict):
+        wid = d.get("WorkshopId", 0)
+        if isinstance(wid, int) and wid > 0:
+            s["WorkshopId"] = wid          # 保留安裝版真實 item id
+        if "Visibility" in d:
+            s["Visibility"] = d["Visibility"]  # 保留玩家設定的可見度
     return (json.dumps(s, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
 
