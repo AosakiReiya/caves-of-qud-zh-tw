@@ -1359,6 +1359,7 @@ def main():
     if run_all or a.xmldata: test_audit_translation()
     if run_all or a.xmldata: test_corpus_token_integrity()
     if run_all or a.static: test_deploy_workshop_merge()
+    if run_all or a.static: test_no_privacy_trigger_apis()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1636,6 +1637,27 @@ def test_deploy_workshop_merge():
     # About/PublishedFileId.txt 已從同步清單移除
     d = (Path(_tools) / "deploy_mods.py").read_text(encoding="utf-8")
     check("deploy 不再同步 About/PublishedFileId.txt", "PublishedFileId" not in d)
+
+
+def test_no_privacy_trigger_apis():
+    print("== no_privacy_trigger_apis：上傳 .cs 不得含『讀環境變數/寫用戶目錄/診斷殘留』（Steam 自動掃描訊號）==")
+    files = ["Replacers.cs", "TextCleanerHook.cs", "HarmonyPatches.cs", "UiStringsHook.cs"]
+    forbidden = [r"GetEnvironmentVariable", r"GetFolderPath", r"SpecialFolder",
+                 r"File\.AppendAllText", r"File\.WriteAllText", r"File\.Delete",
+                 r"File\.Create", r"replacer_log", r"\[DIAG", r"ToStringProfileTick",
+                 r"WriteDiagPrefix", r"AppDomain\.CurrentDomain"]
+    # 允許出現在「聲明註解」中（// 開頭）；只查非註解代碼行
+    bad = []
+    for fn in files:
+        p = REPL / fn
+        if not p.exists():
+            continue
+        for i, line in enumerate(p.read_text(encoding="utf-8").split("\n"), 1):
+            code = line.split("//", 1)[0]  # 去除行內註解
+            for pat in forbidden:
+                if re.search(pat, code):
+                    bad.append(f"{fn}:{i} {pat}")
+    check("上傳 .cs 無隱私/檔案寫入類掃描訊號", not bad, "; ".join(bad[:6]))
 
 
 def test_audit_translation():

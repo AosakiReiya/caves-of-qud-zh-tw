@@ -1,3 +1,9 @@
+// ─────────────────────────────────────────────────────────────────────────
+// 本 mod 僅做「正體中文文字本地化」：翻譯/替換遊戲顯示字串。
+// 不進行網路連線、不讀取帳號/SteamID/存檔/設定、不讀環境變數、
+// 不寫入或刪除任何檔案（除錯僅經 UnityEngine.Debug.Log 進 Player.log）。
+// 僅使用 Harmony 對遊戲文字管線掛本地化後置(postfix)。
+// ─────────────────────────────────────────────────────────────────────────
 // Replacers.cs — Qud 繁中動態文字 replacer（測試 v3）
 // 機制（已由 DLL 反編譯確認）：
 //   1. 類別需帶 [HasVariableReplacer] 才會被 VariableReplacers.LoadReplacers 掃描
@@ -7,12 +13,10 @@
 //      代名詞：possessive / their / its / possessiveAdjective / subjective / they / objective / reflexive / itself
 //      動詞：verb（遊戲的 Verb 方法用無參建構子，key 取自方法名）
 //      冠詞/名稱：a.name / an / the.name / the / a
-// 診斷：所有動作寫入 replacer_log.txt
+// 診斷：僅 Debug.Log（進 Player.log），不寫檔案、不讀環境變數。
 
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
 using XRL;
 using XRL.World;
 using XRL.World.Anatomy;
@@ -24,116 +28,29 @@ using XRL.World.Text.Delegates;
 [HasModSensitiveStaticCache]
 public static class ZhTwReplacers
 {
-    // ============ 診斷記錄（預設關閉，設環境變數 ZH_TW_REPLACER_LOG=1 才開啟）============
-
+    // ============ 診斷輸出：僅 UnityEngine.Debug.Log（進 Player.log）============
+    // 不寫任何檔案、不讀環境變數、不碰使用者目錄；僅供本地化除錯可見性。
     private static readonly object LogLock = new object();
     private static int LogCount;
     private const int LogMax = 600;
-    private const int LogFlushEvery = 50;
-    private static readonly System.Text.StringBuilder LogBuffer = new System.Text.StringBuilder(4096);
-
-    // 預設關閉：生產環境零開銷（不建字串、不寫檔、不呼叫 Debug.Log）
-    private static readonly bool LoggingEnabled = !string.IsNullOrEmpty(
-        Environment.GetEnvironmentVariable("ZH_TW_REPLACER_LOG"));
-
-    private static string LogPath
-    {
-        get
-        {
-            string local = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            return Path.Combine(local, "LocalLow", "Freehold Games", "CavesOfQud", "replacer_log.txt");
-        }
-    }
-
-    private static void FlushLog()
-    {
-        if (LogBuffer.Length == 0) return;
-        try
-        {
-            File.AppendAllText(LogPath, LogBuffer.ToString());
-            LogBuffer.Clear();
-        }
-        catch
-        {
-        }
-    }
 
     public static void Log(string msg)
     {
-        if (!LoggingEnabled) return;   // 預設關閉：直接早退，零開銷
         lock (LogLock)
         {
-            if (LogCount >= LogMax) return;   // 超過上限：不再處理
+            if (LogCount >= LogMax) return;
             LogCount++;
-            string line = DateTime.Now.ToString("HH:mm:ss.fff") + " " + msg + Environment.NewLine;
-            LogBuffer.Append(line);
-            if (LogCount % LogFlushEvery == 0 || LogCount >= LogMax) FlushLog();
-            try
-            {
-                UnityEngine.Debug.Log("[ZhTw] " + line.TrimEnd());
-            }
-            catch
-            {
-            }
         }
+        try { UnityEngine.Debug.Log("[ZhTw] " + msg); } catch { }
     }
 
-    // 供外部（如遊戲回呼）在結束時呼叫，確保緩衝區寫出
-    public static void FlushDiagnostics()
-    {
-        if (!LoggingEnabled) return;
-        lock (LogLock)
-        {
-            FlushLog();
-        }
-    }
-
-    // ============ 無條件診斷（生命週期/例外用，不依賴 ZH_TW_REPLACER_LOG）============
-    // 用於 Init、Harmony patch 結果、例外堆疊——這些必須隨時可見，
-    // 否則 catch{} 吞例外會讓「修A壞B」完全看不到原因。
-    private static readonly object AlwaysLock = new object();
-    private static int AlwaysCount;
-    private const int AlwaysMax = 400;
-
+    // 生命週期/例外用：一律進 Debug.Log，方便「修A壞B」時在 Player.log 看到原因。
     public static void LogAlways(string msg)
     {
-        lock (AlwaysLock)
-        {
-            if (AlwaysCount >= AlwaysMax) return;
-            AlwaysCount++;
-            string line = DateTime.Now.ToString("HH:mm:ss.fff") + " [ZH] " + msg;
-            try
-            {
-                UnityEngine.Debug.Log("[ZhTw] " + line);
-            }
-            catch { }
-            try
-            {
-                File.AppendAllText(Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "LocalLow", "Freehold Games", "CavesOfQud", "replacer_log.txt"),
-                    line + Environment.NewLine);
-            }
-            catch { }
-        }
+        try { UnityEngine.Debug.Log("[ZhTw] " + msg); } catch { }
     }
 
-    static ZhTwReplacers()
-    {
-        try
-        {
-            LogAlways("=== ZhTwReplacers static ctor ===");
-            if (LoggingEnabled)
-            {
-                try { File.Delete(LogPath); } catch { }
-                Log("=== ZhTwReplacers static ctor OK ===");
-            }
-        }
-        catch
-        {
-        }
-    }
-
+    
     // ============ mod 初始化鉤子（mod 載入時呼叫） ============
 
     [ModSensitiveCacheInit]
@@ -142,28 +59,7 @@ public static class ZhTwReplacers
         LogAlways("=== Init called ===");
         try
         {
-            // 1. 列出所有 AddReplacer 多載（下一輪手動註冊用）
-            foreach (MethodInfo mi in typeof(VariableReplacers).GetMethods())
-            {
-                if (mi.Name == "AddReplacer")
-                {
-                    string ps = string.Join(", ", Array.ConvertAll(mi.GetParameters(), p => p.ParameterType.FullName));
-                    Log("AddReplacer(" + ps + ")");
-                }
-            }
-            // 2. 列出 VariableReplacers 的靜態欄位（Map/PostMap 是否可存取）
-            foreach (FieldInfo fi in typeof(VariableReplacers).GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static))
-            {
-                Log("VariableReplacers field " + fi.Name + " : " + fi.FieldType.FullName + " public=" + fi.IsPublic);
-            }
-        }
-        catch (Exception e)
-        {
-            LogAlways("introspection error: " + e.GetType().Name + " " + e.Message);
-        }
-        try
-        {
-            // 3. 強制重掃 replacer（模組載入後）
+            // 強制重掃 replacer（模組載入後）
             VariableReplacers.Reset();
             LogAlways("VariableReplacers.Reset() OK");
         }

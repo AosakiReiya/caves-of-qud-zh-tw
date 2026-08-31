@@ -1,3 +1,9 @@
+// ─────────────────────────────────────────────────────────────────────────
+// 本 mod 僅做「正體中文文字本地化」：翻譯/替換遊戲顯示字串。
+// 不進行網路連線、不讀取帳號/SteamID/存檔/設定、不讀環境變數、
+// 不寫入或刪除任何檔案（除錯僅經 UnityEngine.Debug.Log 進 Player.log）。
+// 僅使用 Harmony 對遊戲文字管線掛本地化後置(postfix)。
+// ─────────────────────────────────────────────────────────────────────────
 // HarmonyPatches.cs — Qud 繁中：硬編碼戰鬥訊息補丁
 // 遊戲的 melee hit / death / damage / penetration / equip 等訊息由 C# 硬編碼
 // 建構（不在本地化系統內），透過 Harmony 前置補丁在訊息加入佇列前翻譯骨架。
@@ -222,13 +228,11 @@ public static class ZhTwHarmonyPatches
                     if (wps[0].ParameterType == typeof(string))
                     {
                         harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderWritePrefix)));
-                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.WriteDiagPrefix)));
                         writePatched++;
                     }
                     else if (wps[0].ParameterType == typeof(System.Text.StringBuilder))
                     {
                         harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.SectionHeaderSBufWritePrefix)));
-                        harmony.Patch(wmi, prefix: new HarmonyMethod(typeof(ZhTwUiStrings), nameof(ZhTwUiStrings.WriteDiagPrefix)));
                         writePatched++;
                     }
                 }
@@ -266,38 +270,6 @@ public static class ZhTwHarmonyPatches
                 ZhTwReplacers.LogAlways("TMP patch skip: " + tmpEx.Message);
             }
             ZhTwReplacers.LogAlways("Harmony all patches done, total=" + patched);
-            // 診斷2（2026-08-15 臨時）：突變/角色狀態面板控件類型（UGUI Text vs TMP）
-            try
-            {
-                System.Type cssType = null;
-                foreach (var ca in System.AppDomain.CurrentDomain.GetAssemblies())
-                {
-                    try
-                    {
-                        foreach (var ct in ca.GetTypes())
-                        {
-                            if (ct.FullName != null && ct.FullName.Contains("CharacterStatusScreen")) { cssType = ct; break; }
-                        }
-                    }
-                    catch { }
-                    if (cssType != null) break;
-                }
-                if (cssType == null) { ZhTwReplacers.LogAlways("[DIAG2] CharacterStatusScreen type not found"); }
-                else
-                {
-                int uguiCnt = 0, tmpCnt = 0;
-                var names = new System.Collections.Generic.List<string>();
-                foreach (var f in cssType.GetFields(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public))
-                {
-                    var ft = f.FieldType;
-                    string fn = ft.FullName ?? "";
-                    if (fn.StartsWith("UnityEngine.UI.Text")) { uguiCnt++; if (names.Count < 8) names.Add(f.Name); }
-                    else if (fn.Contains("TMPro.TMP_Text")) { tmpCnt++; }
-                }
-                ZhTwReplacers.LogAlways("[DIAG2] CharacterStatusScreen UGUI.Text=" + uguiCnt + " TMP_Text=" + tmpCnt + " uguiSample=" + string.Join(",", names));
-                }
-            }
-            catch (Exception dex2) { ZhTwReplacers.LogAlways("[DIAG2] css scan fail: " + dex2.Message); }
             // ===== 全域文本後處理（TextMeshProUGUI.text）=====
             ZhTwTextCleaner.Init();
         }
@@ -320,7 +292,7 @@ public static class ZhTwHarmonyPatches
             }
             else
             {
-                // 未命中任何模式、原樣通過 → 未替換的英文訊息（供 scan_replacer_log.py 搜尋）
+                // 未命中任何模式、原樣通過 → 未替換的英文訊息（供 STRING_MISS 除錯比對）
                 ZhTwReplacers.Log("UNTRANSLATED: '" + __0 + "'");
             }
         }

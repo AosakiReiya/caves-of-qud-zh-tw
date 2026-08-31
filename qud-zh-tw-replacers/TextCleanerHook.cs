@@ -1,3 +1,9 @@
+// ─────────────────────────────────────────────────────────────────────────
+// 本 mod 僅做「正體中文文字本地化」：翻譯/替換遊戲顯示字串。
+// 不進行網路連線、不讀取帳號/SteamID/存檔/設定、不讀環境變數、
+// 不寫入或刪除任何檔案（除錯僅經 UnityEngine.Debug.Log 進 Player.log）。
+// 僅使用 Harmony 對遊戲文字管線掛本地化後置(postfix)。
+// ─────────────────────────────────────────────────────────────────────────
 // TextCleanerHook.cs — Qud 繁中：文本生成層後處理（TextBuilder.ToString）
 //
 // 攔截遊戲「動態生成文本」組裝完成的字串，清理殘留英文：
@@ -1998,7 +2004,6 @@ public static class ZhTwTextCleaner
         string cached;
         if (PostfixCache.TryGetValue(input, out cached)) return cached;
         string result = fn(input);
-        DiagOutLog("Postfix", input, result);
         if (PostfixCache.Count >= PostfixCacheMax) PostfixCache.Clear();
         PostfixCache[input] = result;
         return result;
@@ -2135,7 +2140,6 @@ public static class ZhTwTextCleaner
     //   4. 殘留「}}」或「{{」（配不到另一半時）→ 剝除，避免上色區污染整段。
     // 通用性：不認字、只認對稱——任何「( )」「{{ }}」不成對都是殘骸，一律清除，
     // 保證「修 A 時 B 同樣受保護」，不再逐字串逐條補 key。
-    private static int DiagTmpCount = 0;
 
     // markup 對稱偵測：{{ 與 }} 的個數若不相等，字串可能「正組裝到一半」
     // （遊戲分段 Write 的片段—例如「Amphibious({{r|D}}」的閉合「)」在下一段才寫入），
@@ -2226,39 +2230,8 @@ public static class ZhTwTextCleaner
         return CjkProperNoun.TryGetValue(m.Value, out v) ? v : m.Value;
     }
 
-    // OUT log 診斷（2026-08-16）：含 兩棲/Amphibious 或 markup 的字串，
-    // 逐階段記錄輸出，找出「兩棲的(`後空白」的破壞點（輸入完整、輸出殘缺 or 反之）
-    private static void DiagOutLog(string tag, string before, string after)
-    {
-        if (before == null || after == null) return;
-        if (before.IndexOf("Amphibious", System.StringComparison.Ordinal) < 0 &&
-            before.IndexOf("兩棲", System.StringComparison.Ordinal) < 0 &&
-            before.IndexOf("{{", System.StringComparison.Ordinal) < 0) return;
-        string b = before.Length > 160 ? before.Substring(0, 160) : before;
-        string a = after.Length > 160 ? after.Substring(0, 160) : after;
-        ZhTwReplacers.LogAlways("[DIAG4-OUT] " + tag + " IN=[" + b + "] OUT=[" + a + "]");
-    }
-
-    private static int DiagAmphClean = 0;
-    private static int DiagFactionClean = 0;
     public static string Clean(string text)
     {
-        if (text != null && (text.IndexOf("interested", System.StringComparison.OrdinalIgnoreCase) >= 0
-            || text.IndexOf("Asphalt", System.StringComparison.OrdinalIgnoreCase) >= 0
-            || text.IndexOf("Kindred", System.StringComparison.OrdinalIgnoreCase) >= 0)
-            && System.Threading.Interlocked.Increment(ref DiagFactionClean) <= 8)
-        {
-            string seg = text.Length > 240 ? text.Substring(0, 240) : text;
-            ZhTwReplacers.LogAlways("[DIAG-FAC] IN=[" + seg + "]");
-        }
-        if (text != null && (text.IndexOf("Amphibious", System.StringComparison.Ordinal) >= 0 || text.IndexOf("兩棲", System.StringComparison.Ordinal) >= 0))
-        {
-            if (System.Threading.Interlocked.Increment(ref DiagAmphClean) <= 8)
-            {
-                string seg = text.Length > 200 ? text.Substring(0, 200) : text;
-                ZhTwReplacers.LogAlways("[DIAG3-CLEAN] IN=[" + seg + "]");
-            }
-        }
         // 書本正文防碎翻（2026-08-14）：超長且多段落（書本/手稿正文）跳過詞級，
         // 僅保留語料層翻譯（組3/問題M）
         int nl = 0;
@@ -2321,7 +2294,6 @@ public static class ZhTwTextCleaner
         result = OrdinalDay.Replace(result, "$1 日");
         result = StrataUnit.Replace(result, "層");
         // 孤獨「(」清潔（兩棲的( → 兩棲的；(Hands)/(2)/( 內容 保留）
-        DiagOutLog("Clean", text, result);
         if (result != text)
         {
             if (Cache.Count >= CacheMax) Cache.Clear();
@@ -2502,7 +2474,6 @@ public static class ZhTwTextCleaner
 
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再詞級（只替換白名單詞）
     // 短文本翻譯（TMP/console 屬性/技能需求行等）：先整詞，再三詞/雙詞/單詞級（只替換白名單詞）
-    private static int DiagAmphCount = 0;
     public static string TranslateTmpText(string text)
     {
         if (string.IsNullOrEmpty(text)) return text;
@@ -2512,22 +2483,6 @@ public static class ZhTwTextCleaner
         string zh;
         string trimmed = text.Trim();
         if (TmpWords.TryGetValue(trimmed, out zh)) return zh;
-        // 診斷3（2026-08-15 臨時）：Amphibious / 兩棲的( 來源捕獲
-        if (text.IndexOf("Amphibious", System.StringComparison.Ordinal) >= 0 || text.IndexOf("兩棲的(", System.StringComparison.Ordinal) >= 0)
-        {
-            if (System.Threading.Interlocked.Increment(ref DiagAmphCount) <= 8)
-            {
-                string seg = text.Length > 200 ? text.Substring(0, 200) : text;
-                ZhTwReplacers.LogAlways("[DIAG3-TMP] IN=[" + seg + "]");
-            }
-        }
-        // 診斷（2026-08-15 臨時）：未命中且含 ( 或 Weapon 的輸入記錄原文（限 3 次）
-        if ((text.IndexOf('(') >= 0 || text.IndexOf("Weapon", System.StringComparison.OrdinalIgnoreCase) >= 0)
-            && System.Threading.Interlocked.Increment(ref DiagTmpCount) <= 3)
-        {
-            string seg = text.Length > 160 ? text.Substring(0, 160) : text;
-            ZhTwReplacers.LogAlways("[DIAG] TMP unhandled: [" + seg + "]");
-        }
         // 詞級拆譯安全範圍（2026-08-13 事故教訓）：只對「含空格或 markup 特徵」的
         // 短文本執行（技能需求串「Cleave [50sp]」/「Requires Cleave」/「{{Y|Cleave}}」等）；
         // 純字母數位單詞（無空格且無 markup，如液體名 Water/Oil）不進詞級——液體初始化期
@@ -2556,7 +2511,6 @@ public static class ZhTwTextCleaner
             return string.IsNullOrEmpty(t) || t == w ? m.Value : t;
         });
         r = StripLoneParen(r);
-        DiagOutLog("TmpText", text, r);
         return r;
     }
 
@@ -2628,28 +2582,11 @@ public static class ZhTwTextCleaner
         }
     }
 
-    // 載入優化 profile（2026-08-13，每 32768 次輸出一次）
-    private static long ProfileCalls;
-    private static long ProfileChanged;
-    private static int ProfileBase;
-
-    private static void ToStringProfileTick(string cur)
-    {
-        ProfileCalls++;
-        if ((ProfileCalls & 0x7FFF) == 0)
-        {
-            if (ProfileBase == 0) ProfileBase = Environment.TickCount;
-            ZhTwReplacers.LogAlways("ToStringProfile calls=" + ProfileCalls +
-                " ms=" + (Environment.TickCount - ProfileBase) + " last=" + (cur.Length > 60 ? cur.Substring(0, 60) : cur));
-        }
-    }
-
     public static void ToStringPostfix(ref string __result)
     {
         if (string.IsNullOrEmpty(__result)) return;
         try
         {
-            ToStringProfileTick(__result);
             // 零分配快篩（載入優化）：長「結構 ID / path 類」純 ASCII 字串（如 conversation
             // 組裝 ID）完全沒有可譯特徵（無 {{、無 =token=、無 [N]、無結構標點、無空格），
             // 直接跳過整條管線——避免數萬次呼叫的熱點成本（2026-08-13 載入調查）。
