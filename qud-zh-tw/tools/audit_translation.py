@@ -285,6 +285,60 @@ def c10_replacer_paren_spacing(replacer):
     return out
 
 
+def _example_ids():
+    """定位遊戲 ExampleLanguage 字串 key 全集（權威）；找不到回傳 None。"""
+    cands = [
+        os.environ.get("COQ_EXAMPLE_LANG"),
+        "/mnt/g/SteamLibrary/steamapps/common/Caves of Qud/CoQ_Data/StreamingAssets/Base/ExampleLanguage/Strings.example.xml",
+        "C:/Program Files (x86)/Steam/steamapps/common/Caves of Qud/CoQ_Data/StreamingAssets/Base/ExampleLanguage/Strings.example.xml",
+    ]
+    for c in cands:
+        if c and os.path.exists(c):
+            try:
+                txt = open(c, encoding="utf-8", errors="ignore").read()
+            except Exception:
+                continue
+            byctx = defaultdict(set)
+            allids = set()
+            for m in re.finditer(r'<string\b([^>]*)>', txt):
+                a = m.group(1)
+                idv = re.search(r'\bID="((?:[^"\\]|\\.)*)"', a)
+                ctx = re.search(r'Context="((?:[^"\\]|\\.)*)"', a)
+                if idv:
+                    allids.add(idv.group(1))
+                    if ctx:
+                        byctx[ctx.group(1)].add(idv.group(1))
+            return allids, byctx
+    return None
+
+
+def c12_token_mismatch(rows):
+    """我們 <string> 的 ID 用了官方不存在的 token（如 X.join 而官方為 commaList、
+    缺 :w 色碼、.color 誤用點號）→ 本地化查不到 → 英文泄漏。依 Context 對照 ExampleLanguage。
+    找不到官方檔則回傳空（優雅跳過）。"""
+    ex = _example_ids()
+    if not ex:
+        return None
+    allids, byctx = ex
+    def pref(x):
+        j = x.find("=")
+        return x if j < 0 else x[:j]
+    out = []
+    for r in rows:
+        i = r["id"]; c = r.get("context") or ""
+        if i in allids:
+            continue
+        if "=" not in i:
+            continue
+        # 同 Context 且有同字面前綴的官方 id → token 打錯嫌疑
+        cand = [ei for ei in byctx.get(c, ()) if pref(ei) == pref(i) and ei != i]
+        # 排除官方偽影（Doesly 等模板錯字）
+        cand = [ei for ei in cand if "Doesly" not in ei]
+        if cand:
+            out.append((r, sorted(cand, key=len)[0]))
+    return out
+
+
 def c11_missing_propernoun(rows, replacer):
     """語料層「中文(原文)」樣式中的專名，若 ProperNounZh 缺條目 → 注入點漏翻風險
     （Kindrish 型：全句已翻、字典缺、其他注入點漏）。"""
@@ -400,6 +454,7 @@ def main():
     c9 = c9_duplicate_keys(dup_keys)
     c10 = c10_replacer_paren_spacing(replacer)
     c11 = c11_missing_propernoun(rows, replacer)
+    c12 = c12_token_mismatch(rows)
 
     L = []
     L.append("# 翻譯審計報告\n")
@@ -450,6 +505,14 @@ def main():
 
     sec("C11 語料『中文(原文)』專名未入 ProperNounZh（注入點漏翻風險）", c11,
         lambda t: f"{t[0]}:{t[1]} [{t[2]}] → 缺:「{t[3]}」")
+
+    L.append(f"\n## C12 語料 key/token 與官方 ExampleLanguage 不符（本地化失效→英文洩漏）\n")
+    if c12 is None:
+        L.append("- 跳過（找不到 ExampleLanguage；設 COQ_EXAMPLE_LANG 環境變數指定）")
+    else:
+        L.append(f"- 違例 {len(c12)} 條（已排除官方 Doesly 偽影）")
+        for r, ei in c12[:40]:
+            L.append(f"- {r['file']}:{r['line']} [{r.get('context','')[:34]}]\n    ours={r['id'][:60]!r}\n    官方={ei[:60]!r}")
 
     rep = "\n".join(L) + "\n"
     open(REPORT, "w", encoding="utf-8").write(rep)

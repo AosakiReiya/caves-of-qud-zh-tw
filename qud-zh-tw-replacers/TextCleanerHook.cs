@@ -1934,7 +1934,13 @@ public static class ZhTwTextCleaner
         keys.Sort((a, b) => b.Length.CompareTo(a.Length));
         var parts = new List<string>();
         foreach (var k in keys)
-            parts.Add("(?i)" + Regex.Escape(k));
+        {
+            // 純單詞 key 加 \b 邊界：避免子串誤傷（Physic→醫學 曾把 Physical 打成「醫學al」）；
+            // 多詞短語維持無邊界（部分短語以「.」「」」結尾，\b 加在非字元後永不匹配）
+            bool singleWord = Regex.IsMatch(k, @"^[A-Za-z]+$");
+            string core = singleWord ? @"\b" + Regex.Escape(k) + @"\b" : Regex.Escape(k);
+            parts.Add("(?i)" + core);
+        }
         // 結尾不放 \b：部分短語以「.」「」」結尾，\b 加在非字元後會永不匹配
         return new Regex("(?i)(?:" + string.Join("|", parts) + ")", RegexOptions.Compiled);
     }

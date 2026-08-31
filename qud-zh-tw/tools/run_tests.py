@@ -236,6 +236,10 @@ def _sim_protect_parens(text):
     return ''.join(out), box
 
 
+def _phrase_pat(k):
+    # 鏡像 C# BuildPhraseRegex：純單詞加 \b 邊界（防子串誤傷），片語無邊界
+    return r"\b" + re.escape(k) + r"\b" if re.fullmatch(r"[A-Za-z]+", k) else re.escape(k)
+
 def _clean(text, words, phrases):
     if _has_unbalanced_markup(text):
         return text
@@ -244,14 +248,14 @@ def _clean(text, words, phrases):
     # 括號短語（(Full) 類，表 key 以 （/( 開頭）先替換（不受輸入括號保護影響）
     for k in sorted(phrases, key=len, reverse=True):
         if k.startswith('(') or k.startswith('（'):
-            text = re.sub(r'(?i)' + re.escape(k), phrases[k], text)
+            text = re.sub(r'(?i)' + _phrase_pat(k), phrases[k], text)
     # 輸入「中文(English)」括號先保護（防 Phrase/TmpWords 把括號內英文再包層）
     text, box1 = _sim_protect_parens(text)
     # PhraseRegex 先（整句/詞組；與 C# Clean 順序一致）
     for k in sorted(phrases, key=len, reverse=True):
         if k.startswith('(') or k.startswith('（'):
             continue
-        text = re.sub(r'(?i)' + re.escape(k), phrases[k], text)
+        text = re.sub(r'(?i)' + _phrase_pat(k), phrases[k], text)
     # Phrase 產生的「中文(English)」括號保護（避免 Words 逐詞污染括號英文）
     text, box2 = _sim_protect_parens(text)
     # WordsRegex 後（整詞）；Python 要求 (?i) 在開頭（C# 可 `\b(?i)`）
@@ -1353,6 +1357,7 @@ def main():
     if run_all or a.static: test_dict_entry_syntax()
     if run_all or a.static: test_regex_sanity()
     if run_all or a.xmldata: test_audit_translation()
+    if run_all or a.xmldata: test_corpus_token_integrity()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1559,6 +1564,43 @@ def test_regex_sanity():
             if er: bad.append(f"{path.name}[{kind}] 多右括x{er}:{content[:40]}")
             if res: bad.append(f"{path.name}[{kind}] 殘型:...{content[max(0,content.find('(')-2):content.find('(')+6]}")
     check("全部 regex pattern 語法健康（多右括/殘型=0）", not bad, "; ".join(bad[:5]))
+
+
+def test_corpus_token_integrity():
+    print("== corpus_token_integrity：語料 token 對齊官方 + PhraseLeaks 單詞 \\b 邊界 ==")
+    strings = (ZH / "Strings.zh-tw.xml").read_text(encoding="utf-8-sig")
+    # 1) 集合類 token 必須用官方 commaList（曾誤用 join:, → 查不到 key → 英文泄漏）
+    for tok in ("features.commaList", "equipItems.commaList", "effects.commaList",
+                "slots.commaList", "status.commaList", "epithets.commaList"):
+        check(f"語料 {tok} 存在", tok in strings)
+    for bad in ("features.join", "equipItems.join", "effects.join", "slots.join"):
+        check(f"語料不再用 {bad}", bad not in strings)
+    # 2) 語法錯修正（點號→線、缺 .name、缺 .signed、#parentObject、textSelector 色碼）
+    check("searchtext 用 |color 非 .color", "searchtext|color:w=" in strings and "searchtext.color" not in strings)
+    check("AbilityBar 用 ability.name", "{|=ability.name=}" in strings or "|=ability.name=}" in strings)
+    check("disguise 用 #parentObject", "disguise.name#parentObject=" in strings)
+    check("textSelector 帶 :w/:W 色碼", "modes.textSelector:" in strings)
+    # 3) C# BuildPhraseRegex 對純單詞加 \b（防 Physic⊂Physical 子串誤傷）
+    src = HOOK.read_text(encoding="utf-8")
+    check("BuildPhraseRegex 單詞 \\b 邏輯存在", "singleWord" in src and r'^[A-Za-z]+$' in src)
+    # 4) 用同一規則建 pattern，驗證單詞 key 不再子串命中更長英文詞
+    dicts = load_dicts()
+    phrases = {}
+    for field, d in dicts.items():
+        if field == "hook.PhraseLeaks":
+            phrases = {k.lower(): v for k, v in d.items()}
+    parts = []
+    for k in sorted(phrases, key=len, reverse=True):
+        core = (r"\b" + re.escape(k) + r"\b") if re.fullmatch(r"[A-Za-z]+", k) else re.escape(k)
+        parts.append(core)
+    pat = re.compile("(?i)(?:" + "|".join(parts) + ")") if parts else None
+    # \b 邊界下，長英文詞不應被其中包含的單詞 key 命中（Physic 不得命中 Physical）
+    for long_word in ("Physical", "physics", "blocked", "repaired", "pistols",
+                      "dismembered", "decapitated", "hurdles"):
+        m = pat.search(long_word) if pat else None
+        check(f"單詞 \\b 不誤傷: {long_word}",
+              m is None or m.group(0).lower() == long_word.lower(),
+              f"被 {m.group(0)!r} 命中" if m else "")
 
 
 def test_audit_translation():

@@ -205,3 +205,88 @@
 - Strings.zh-tw.xml:3857 [BiomechanicalAdapter] → 缺:「BiomechanicalAdapter」
 - Strings.zh-tw.xml:3859 [Cybrid: Can draw power from biomechanica] → 缺:「Cybrid」
 - …（共 83 條，略）
+
+## C12 語料 key/token 與官方 ExampleLanguage 不符（本地化失效→英文洩漏）
+
+- 違例 27 條（已排除官方 Doesly 偽影）
+- Strings.zh-tw.xml:467 [AbilityBar cooldownrounds tag]
+    ours='{{C|[=number.toString=]}}'
+    官方='{{C|[=ability.cooldown=]}}'
+- Strings.zh-tw.xml:1070 [Chargen Mutations SummaryBlockData]
+    ours='=mutation==count.x.multiple|spaceBefore='
+    官方='=mutation= =count.x.multiple='
+- Strings.zh-tw.xml:1332 [Look ShowLooker Unlock]
+    ours='=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}解鎖'
+    官方='=commandKey:Cancel= | (=commandKey:CmdLockUnlock=) {{W|U}}nl'
+- Strings.zh-tw.xml:1440 [Tinkering ConsoleUI ListOfCommands]
+    ours='=commandKeyConsole:Accept= Mod Item =commandKeyConsole:CmdIn'
+    官方='=commandKeyConsole:Accept= Mod Item  =commandKeyConsole:CmdI'
+- Strings.zh-tw.xml:1442 [Tinkering ConsoleUI Keybinds &amp;]
+    ours='=commandKeyConsole:Accept= Build =commandKeyConsole:V Positi'
+    官方='=commandKeyConsole:Accept= Build  =commandKeyConsole:V Posit'
+- Strings.zh-tw.xml:1838 [CreatureRegionSpice builder - desc]
+    ours='Time in =locale= has altered =pronouns.possessive= features '
+    官方='Time in =locale= has altered =pronouns.possessive= features '
+- Strings.zh-tw.xml:2374 [Glotrot Effect Apply Accomplishmen]
+    ours='Near the location of Golgotha, =name= was captured by bandit'
+    官方='Near the location of Golgotha, =name= was captured by bandit'
+- Strings.zh-tw.xml:2383 [Glotrot Effect Regrow Tongue Accom]
+    ours='Remember the =day= of =month=, in the year of =year=, when t'
+    官方='Remember the =day= of =month=, in the year of =year=, when t'
+- Strings.zh-tw.xml:2388 [Glotrot Effect Tongue Rotted Accom]
+    ours='On =day= of =month=, in the year of =year=, =name= took a vo'
+    官方='On =day= of =month=, in the year of =year=, =name= took a vo'
+- Strings.zh-tw.xml:2963 [ActivePart AddStatusSummary (compo]
+    ours='=existing= (=statusSummary=)'
+    官方='=existing= =statusSummary|addParens='
+- Strings.zh-tw.xml:3692 [NoteImprovedBonusCap RulesPostfix]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory|ma'
+    官方='=subject.This.category= =subject.verb:have= =amount.signed= '
+- Strings.zh-tw.xml:3693 [NoteImprovedDamageDieSize RulesPos]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory|ma'
+    官方='=subject.This.category= =subject.verb:have= =amount.signed= '
+- Strings.zh-tw.xml:3694 [NoteImprovedDamageRoll RulesPostfi]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory|ma'
+    官方='=subject.This.category= =subject.verb:have= =amount.signed= '
+- Strings.zh-tw.xml:3695 [NoteImprovedPenetrationBonus Rules]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory|ma'
+    官方='=subject.This.category= =subject.verb:have= =amount.signed= '
+- Strings.zh-tw.xml:3738 [CooldownAmmoLoader GetCoolingdownM]
+    ours='=subject.Does:are= unresponsive as =subject.does:cool= down.'
+    官方='=subject.Does:are= unresponsive as =subject.it.does:cool= do'
+- Strings.zh-tw.xml:3759 [EnergyAmmoLoader SupplyWithCell Ca]
+    ours='=subject.the.name= cannot take =cell.the.name=.'
+    官方='=subject.The.name= cannot take =cell.the.name=.'
+- Strings.zh-tw.xml:3819 [NoteImprovedAccuracy RulesPostfix]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory:ma'
+    官方='=subject.This.category= =subject.verb:have= improved accurac'
+- Strings.zh-tw.xml:3823 [NoteImprovedRateOfFire RulesPostfi]
+    ours='=subject.IndicativeProximal= =subject.descriptiveCategory:ma'
+    官方='=subject.This.category= =subject.verb:have= =bonusList.andLi'
+- Strings.zh-tw.xml:4043 [ModRelicFreezing Description Tier ]
+    ours='Freezing: When powered, this weapon deals an additional =dam'
+    官方='Freezing: When powered, this weapon deals an additional =dam'
+- Strings.zh-tw.xml:4550 [Campfire CookFromIngredients ingre]
+    ours='=selected.checkbox.color= =name= {{K|x=count=}}'
+    官方='=selected.checkbox.color=  =name= {{K|x=count=}}'
+- Strings.zh-tw.xml:4658 [CookingRecipe GetAnnotatedDisplayN]
+    ours='{{K|=displayName|strip=}} [=components.join:, =]'
+    官方='{{K|=displayName|strip=}} [=components.commaList=]'
+- Strings.zh-tw.xml:4659 [CookingRecipe GetAnnotatedDisplayN]
+    ours='=glyph:Favorite= {{W|{{K|=displayName|strip=}}}} [=component'
+    官方='=glyph:Favorite= {{W|{{K|=displayName|strip=}}}} [=component'
+- Strings.zh-tw.xml:4662 [CookingRecipe GetAnnotatedDisplayN]
+    ours='=displayName= [=components.join:, =]'
+    官方='=displayName= [=components.commaList=]'
+- Strings.zh-tw.xml:4663 [CookingRecipe GetAnnotatedDisplayN]
+    ours='=glyph:Favorite= {{W|=displayName=}} [=components.join:, =]'
+    官方='=glyph:Favorite= {{W|=displayName=}} [=components.commaList='
+- Strings.zh-tw.xml:4676 [PreparedCookingIngredient DisplayN]
+    ours='[=charges|color:C=] cooking =charges.pluralize:serving:servi'
+    官方='[=charges|color:C= cooking =charges.pluralize:serving=]'
+- Strings.zh-tw.xml:4892 [Disassembly Item Stack (fragment)]
+    ours='=item= x=done='
+    官方='=item= =done.x.multiple='
+- Strings.zh-tw.xml:5256 [JoppaWorldBuilder Weep Secret]
+    ours='=subject.a.name:short='
+    官方='=subject.a.name:long='

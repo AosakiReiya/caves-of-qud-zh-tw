@@ -168,7 +168,7 @@ alone if no match found.
  <string Context="TutorialStep nudge" ID="We're not quite ready to leave yet.">我們還沒準備好離開。</string>
  <string Context="GenericCheckbox UI element box" ID="=checked.checkbox.basic=">=checked.checkbox.basic=</string>
  <string Context="MouseBlocker - Clicking when mouse disabled popup" ID="Mouse input is disabled but you clicked on the screen several times. Would you like to enable mouse input?">滑鼠輸入已停用，但您多次點擊了螢幕。您要啟用滑鼠輸入嗎？</string>
- <string Context="AbilityManagerScreen sort mode setting" ID="Sort: =modes.textSelector#selected=">排序：=modes.textSelector#selected=</string>
+ <string Context="AbilityManagerScreen sort mode setting" ID="Sort: =modes.textSelector:w#selected=">排序：=modes.textSelector:w#selected=</string>
  <string Context="AbilityManagerScreen MenuOption Search" ID="Search">搜尋</string>
  <string Context="AbilityManagerScreen MenuOption ActivateSelectedAbility" ID="Activate Selected Ability">啟用所選能力</string>
  <string Context="AbilityManagerScreen sort name Custom" ID="Custom">自訂</string>
@@ -177,10 +177,10 @@ alone if no match found.
  <string Context="AbilityManagerScreen choose sort mode" ID="Choose Sort Mode">選擇排序模式</string>
  <string Context="AbilityManagerScreen SearchText Prompt" ID="Search text:">搜尋文字：</string>
  <string Context="AbilityManagerScreen NoAbilitiesMatchSeach" ID="No activated abilities found for '=searchtext='.">找不到與 '=searchtext=' 相關的已啟動能力。</string>
- <string Context="AbilityManagerScreen MenuOption Search w/ Text" ID="Search: =searchtext.color:w=">搜尋：=searchtext.color:w=</string>
+ <string Context="AbilityManagerScreen MenuOption Search w/ Text" ID="Search: =searchtext|color:w=">搜尋：=searchtext|color:w=</string>
  <string Context="AbilityManagerScreen Type: ClassDisplayName" ID="{{y|Type: }}=class=">{{y|類型: }}=class=</string>
  <string Context="AbilityManagerScreen Cooldown Remaining Turns" ID="{{C|Cooldown Remaining Turns: }}=turns=">{{C|冷卻剩餘回合數： }}=turns=</string>
- <string Context="AbilityManagerScreen HandleRebind PressTheKeyToBind" ID="Press the keyboard key to bind to =ability|color:w=">按下要綁定至 =ability|color:w= 的鍵盤按鍵</string>
+ <string Context="AbilityManagerScreen HandleRebind PressTheKeyToBind" ID="Press the keyboard key to bind to =ability.name|color:w=">按下要綁定至 =ability.name|color:w= 的鍵盤按鍵</string>
  <string Context="AbilityManagerScreen HandleRebind AlreadySystemMenu" ID="=bindingKey= is already bound to the system menu.">=bindingKey= 已經綁定到系統選單了。</string>
  <string Context="AbilityManagerScreen HandleRebind AlreadyAbilityPicker" ID="=bindingKey= is already bound to the ability picker.">=bindingKey= 已綁定至能力選擇器。</string>
  <string Context="AbilityManagerScreen HandleRemoveBindAsync AreYouSure" ID="Are you sure you wish to remove the binding for =ability.name=?">你確定要移除 =ability.name=? 的束縛嗎？</string>
@@ -282,7 +282,7 @@ alone if no match found.
  <string Context="OptionsSliderControl Cancel Value" ID="Cancel">取消</string>
  <string Context="PickGameObjectLine CategoryExpanderAndName" ID="=expand.expanded= =category|color:K=">=expand.expanded= =category|color:K=</string>
  <string Context="PickGameObjectLine OwnedByYou" ID="{{G|[owned by you]}}">{{G|[由您擁有]}}</string>
- <string Context="PickGameObjectScreen sort mode setting" ID="Sort Mode: =modes.textSelector#selected=">排序模式：=modes.textSelector#selected=</string>
+ <string Context="PickGameObjectScreen sort mode setting" ID="Sort Mode: =modes.textSelector:W#selected=">排序模式：=modes.textSelector:W#selected=</string>
  <string Context="PickGameObjectScreen SortMode az" ID="A-Z">A-Z</string>
  <string Context="PickGameObjectScreen SortMode category" ID="By Class">依職業</string>
  <string Context="PickGameObjectScreen TakeAll Desc" ID="Take All">全部拿走</string>
@@ -337,9 +337,9 @@ alone if no match found.
  <string Context="InventoryAndEquipmentScreen weighttext summary" ID="{{C|=carried={{K|/=max=}} lbs. }}">{{C|=carried={{K|/=max=}} 磅}}</string>
  <string Context="InventoryAndEquipmentStatusScreen show equipment" ID="=commandKey:Toggle= show equipment">=commandKey:Toggle= 顯示裝備</string>
  <string Context="InventoryAndEquipmentStatusScreen show cybernetics" ID="=commandKey:Toggle= show cybernetics">=commandKey:Toggle= 顯示義體</string>
- <string Context="InventoryAndEquipmentStatusScreen equipment view setting" ID="Equipment View: =modes.textSelector#selected=">裝備檢視：=modes.textSelector#selected=</string>
- <string Context="InventoryAndEquipmentStatusScreen search mode setting" ID="Search Mode: =modes.textSelector#selected=">搜尋模式：=modes.textSelector#selected=</string>
- <string Context="InventoryAndEquipmentStatusScreen sort mode setting" ID="Sort Mode: =modes.textSelector#selected=">排序模式：=modes.textSelector#selected=</string>
+ <string Context="InventoryAndEquipmentStatusScreen equipment view setting" ID="Equipment View: =modes.textSelector:W#selected=">裝備檢視：=modes.textSelector:W#selected=</string>
+ <string Context="InventoryAndEquipmentStatusScreen search mode setting" ID="Search Mode: =modes.textSelector:W#selected=">搜尋模式：=modes.textSelector:W#selected=</string>
+ <string Context="InventoryAndEquipmentStatusScreen sort mode setting" ID="Sort Mode: =modes.textSelector:W#selected=">排序模式：=modes.textSelector:W#selected=</string>
  <string Context="InventoryAndEquipmentStatusScreen choose sort mode" ID="Choose Inventory Sort Mode">選擇物品欄排序模式</string>
  <string Context="InventoryAndEquipmentStatusScreen A-Z sort mode name" ID="A-Z">A-Z</string>
  <string Context="InventoryAndEquipmentStatusScreen Category sort mode name" ID="Category">類別</string>
@@ -441,7 +441,7 @@ alone if no match found.
  <string Context="TradeWindow right column weight" ID="[{{K|=weight= lbs.}}]">[{{K|=weight= 磅.}}]</string>
  <string Context="TradeWindow right column value" ID="[=value:0.00|tradeColor#item=]">[=value:0.00|tradeColor#item=]</string>
  <string Context="" ID="Add how many =subject.name= to trade.">新增要交易的 =subject.name= 數量。</string>
- <string Context="TradeScreen sort mode setting" ID="Sort Mode: =modes.textSelector#selected=">排序模式：=modes.textSelector#selected=</string>
+ <string Context="TradeScreen sort mode setting" ID="Sort Mode: =modes.textSelector:w#selected=">排序模式：=modes.textSelector:w#selected=</string>
  <string Context="TradeScreen sort name a-z" ID="A-Z">A-Z</string>
  <string Context="TradeScreen sort name by class" ID="By Class">依職業</string>
  <string Context="TradeScreen offer command desc" ID="Offer">提供</string>
@@ -462,7 +462,7 @@ alone if no match found.
  <string Context="Ability Bar target details" ID="{{C|{{{{B|TARGET:}} =target.name=}}">{{C|{{{{B|目標：}} =target.name=}}</string>
  <string Context="Ability Bar target descriptors" ID="=descriptors.commaList=">=descriptors.commaList=</string>
  <string Context="Ability Bar no target message" ID="{{K|TARGET: [none]}}">{{K|目標：[無]}}</string>
- <string Context="AbilityBar AbilityName" ID="{{=color=|=ability=}}">{{=color=|=ability=}}</string>
+ <string Context="AbilityBar AbilityName" ID="{{=color=|=ability.name=}}">{{=color=|=ability.name=}}</string>
  <string Context="AbilityBar disabled tag" ID="{{K|[disabled]}}">{{K|[已停用]}}</string>
  <string Context="AbilityBar cooldownrounds tag" ID="{{C|[=number.toString=]}}">{{C|[=number.toString=]}}</string>
  <string Context="AbilityBar ToggleState tag on" ID="{{K|[{{g|on}}]}}">{{K|[{{g|開啟}}]}}</string>
@@ -566,7 +566,7 @@ alone if no match found.
  <string Context="QudHistoryHelpers GenerateLocationName" ID="=seed|randomMeaningfulWord|capitalize= City">=seed|randomMeaningfulWord|capitalize= 之城</string>
  <string Context="QudHistoryHelpers default Cognomen" ID="the Untitled">無名氏</string>
  <string Context="QudHistoryHelpers ListAllCognomen single" ID=" =cognomen=" Value="=cognomen=" />
- <string Context="QudHistoryHelpers ListAllCognomen" ID=", =cognomen.join:, =,">, =cognomen.join:, =, </string>
+ <string Context="QudHistoryHelpers ListAllCognomen" ID=", =cognomen.commaList=,">, =cognomen.commaList=, </string>
  <string Context="QudHistoryHelpers GetMaskName" ID="Kesil Face">凱希爾之臉</string>
  <string Context="QudHistoryHelpers GetMaskName" ID="Shemesh Face">謝梅什之面</string>
  <string Context="QudHistoryHelpers GetMaskName" ID="Earth Face">大地之臉</string>
@@ -1690,13 +1690,13 @@ alone if no match found.
  <string Context="Troll Hero Naming.xml Context" ID="two-headed">雙頭</string>
  <string Context="Troll Hero Naming.xml Context" ID="Caveking">洞穴之王(Caveking)</string>
  <string Context="BeginBeingUnequippedEvent - Append FailureMessage" ID="=failureMessage= =message=">=failureMessage= =message=</string>
- <string Context="DescriptionBuilder Epithets Join" ID="=epithets.join:, =">=epithets.join:, =</string>
+ <string Context="DescriptionBuilder Epithets Join" ID="=epithets.commaList=">=epithets.commaList=</string>
  <string Context="DescriptionBuilder Multiple Titles Clause" ID=", =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
  <string Context="DescriptionBuilder Single Title Clause With Epithets" ID=", =title.toString=">, =title.toString=</string>
  <string Context="DescriptionBuilder Single Title Clause" ID="and =title.toString=">以及 =title.toString=</string>
  <string Context="DescriptionBuilder Multiple With Clause" ID="with =withClauses.andList=">以及 =withClauses.andList=</string>
  <string Context="hostile perception verb" ID="perceive">感知</string>
- <string Context="GetCompanionStatusEvent - Join multiple status" ID="=status.join:, =">=status.join:, =</string>
+ <string Context="GetCompanionStatusEvent - Join multiple status" ID="=status.commaList=">=status.commaList=</string>
  <string Context="GetCooldownEvent Willpower Adjustment Reason" ID="=isHigh.if:high:low= =willpower.Name=">=isHigh.if:high:low= =willpower.Name=</string>
  <string Context="GetJumpingBehaviorEvent - Default AbilityName" ID="Jump">跳躍</string>
  <string Context="GetJumpingBehaviorEvent - Default Verb" ID="jump">跳躍</string>
@@ -2425,7 +2425,7 @@ alone if no match found.
  <string Context="Monochrome Effect Remove Accomplishment Gospel" ID="Some time in =year=, =name= came upon the bandits who had captured =player.objective= and let =player.objective= languish in captivity until =player.subjective= contracted monochrome. =name= murdered their leader =spice:elements.$domain.murdermethods.!random= and cured =player.reflexive= of the disease.">在 =year= 的某個時候，=name= 遇見了那些劫持了 =player.objective= 的強盜，並讓 =player.objective= 在囚禁中虛弱不堪，直到 =player.subjective= 染上了單色症。=name= 殺死了他們的領袖 =spice:elements.$domain.murdermethods.!random= 並治癒了 =player.reflexive= 的疾病。</string>
  <string Context="Disguise Blueprint Default Display" ID="creature of some kind">某種生物</string>
  <string Context="Disguised Effect DisplayName" ID="{{K|disguised}}">{{K|偽裝}}</string>
- <string Context="ModDisguise Disguise Appearance Description" ID="=blueprint.disguise.name#object=">=blueprint.disguise.name#object=</string>
+ <string Context="ModDisguise Disguise Appearance Description" ID="=blueprint.disguise.name#parentObject=">=blueprint.disguise.name#parentObject=</string>
  <string ID="=subject.Does:begin= =effect.name|strip= from another wound!">=subject.Does:begin= 從另一個傷口開始 =effect.name|strip=！</string>
  <string ID="=subject.Does:begin= =effect.name|strip=!">=subject.Does:begin= =effect.name|strip=!</string>
  <string ID="=subject.Does:begin= acting like =subject.it.is= =effect.name|strip= from another wound.">=subject.Does:begin= 開始像從另一個傷口 =subject.it.is= =effect.name|strip= 般作用。</string>
@@ -2531,7 +2531,7 @@ alone if no match found.
  <string Context="Customize pronouns popup 'what'" ID="pronoun set">代名詞集</string>
  <string Context="Liquid Glitching - Glitch Skills" ID="=subject.The.name's= mind starts to fluctuate in and out of coherence.">=subject.The.name's= 意識開始在清醒與混沌之間波動。</string>
  <string Context="Mods factory - Loading Status Bar" ID="Loading Mods.xml">正在載入 Mods.xml</string>
- <string Context="AttackerElementalDamage Amplification of DamageDealt" ID="=percent=% =elementaltype|lower= damage dealt">=percent=% =elementaltype|lower= 傷害</string>
+ <string Context="AttackerElementalDamage Amplification of DamageDealt" ID="=percent.signed=% =elementaltype|lower= damage dealt">=percent.signed=% =elementaltype|lower= 傷害</string>
  <string Context="AutogetBlacklist StopAutogettingItem Announcement" ID="You will no longer autoget any type of =object.name=.">你將不再自動獲得任何類型的 =object.name=。</string>
  <string Context="AutogetBlacklist ResumeAutogettingItem Announcement" ID="You will now autoget =object.pluralName= again.">你現在會再次自動獲得 =object.pluralName=。</string>
  <string Context="Baetyl Leaving - Explode" ID="=subject.The.name= =subject.directionIfAny= =subject.verb:explode=.">=subject.The.name= 在 =subject.directionIfAny= =subject.verb:explode=。</string>
@@ -2814,7 +2814,7 @@ alone if no match found.
  <string Context="Cybernetics AnomalyFumigator Activated Ability Name" ID="Anomaly Fumigator">異常煙燻器</string>
  <string Context="Cybernetics Base Item - DisplayName Adjective" ID="[{{W|Implant}}] -" OrderAdjust="40">[{{W|植入物}}] -</string>
  <string Context="Cybernetics Base Item - Short Description Rules" ID="Destroyed when uninstalled.">卸載時將被刪除。</string>
- <string Context="Cybernetics Base Item - Short Description Rules" ID="Target body parts: =slots.join:, =">目標身體部位：=slots.join:, =</string>
+ <string Context="Cybernetics Base Item - Short Description Rules" ID="Target body parts: =slots.commaList=">目標身體部位：=slots.commaList=</string>
  <string Context="Cybernetics Base Item - Short Description Rules" ID="License points: =cost=">授權點數：=cost=</string>
  <string Context="Cybernetics Base Item - Short Description Rules" ID="Only compatible with True Kin genotypes">僅與真人類基因型相容</string>
  <string Context="hostile perception verb" ID="detect">偵測</string>
@@ -2826,10 +2826,10 @@ alone if no match found.
  <string Context="Description Physical Feature" ID="=object.name=">=object.name=</string>
  <string Context="Description Equipped Item" ID="=object.name:withTitles=">=object.name:withTitles=</string>
  <string Context="Description LongDescription Gender" ID="Gender: =gender.name=">性別：=gender.name=</string>
- <string Context="Description LongDescription Physical Features" ID="Physical Features: =features.join:, =">身體特徵：=features.join:, =</string>
- <string Context="Description LongDescription Equipped Items" ID="Equipped: =equipItems.join:, =">已裝備：=equipItems.join:, =</string>
+ <string Context="Description LongDescription Physical Features" ID="Physical Features: =features.commaList=">身體特徵：=features.commaList=</string>
+ <string Context="Description LongDescription Equipped Items" ID="Equipped: =equipItems.commaList=">已裝備：=equipItems.commaList=</string>
  <string Context="Description LongDescription Effect" ID="=effect.description=">=effect.description=</string>
- <string Context="Description LongDescription Effects List" ID="=effects.join:, =">=effects.join:, =</string>
+ <string Context="Description LongDescription Effects List" ID="=effects.commaList=">=effects.commaList=</string>
  <string Context="Description Feeling Friend" ID="{{G|Friendly}}">{{G|友善}}</string>
  <string Context="Description Feeling Hostile" ID="{{R|Hostile}}">{{R|敵對}}</string>
  <string Context="Description Feeling Neutral" ID="Neutral">中立</string>
