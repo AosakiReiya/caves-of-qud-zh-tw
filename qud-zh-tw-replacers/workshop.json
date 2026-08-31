@@ -1,4 +1,5 @@
 {
+  "WorkshopId": 3777949908,
   "Title": "Caves of Qud 繁體中文化 | Dynamic Text Fix",
   "Description": "[h1]Caves of Qud 繁體中文化 | Dynamic Text Fix[/h1]\n\n《Caves of Qud》繁體中文化附加 Mod。\n\n本 Mod 用於補充主翻譯 Mod 無法處理的動態生成文字，修正遊戲中部分由程式即時產生的英文殘留。\n\n[b]⚠ 需要先安裝：[/b]\n\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3777400827]\nCaves of Qud 繁體中文化\n[/url]\n\n[h2]功能[/h2]\n\n修正包含：\n\n[list]\n[*]動態戰鬥訊息\n[*]角色代名詞（he / his / its）\n[*]動作描述（stand / equip / miss 等）\n[*]裝備與互動文字\n[*]身體部位名稱\n[*]部分硬編碼文字\n[/list]\n\n[h2]範例[/h2]\n\n修正前：\n[code]\nThe creature hits you for 4 damage.\nYou equip the 火把.\nhis arm is injured.\n[/code]\n\n修正後：\n[code]\n該生物擊中你，造成 4 點傷害。\n你裝備了火把。\n他的手臂受傷了。\n[/code]\n\n[h2]安裝[/h2]\n\n需要：\n\n[list]\n[*]Caves of Qud lang-experimental 測試版本\n[*]Enable Mods\n[*]Allow scripting mods\n[/list]\n\n建議與主翻譯 Mod 一起使用。\n\n[h2]參與改善[/h2]\n\n如果發現英文殘留、翻譯錯誤或有更好的中文表達方式，歡迎提供建議：\n\nhttps://github.com/AosakiReiya/caves-of-qud-zh-tw",
   "Tags": "Translation",

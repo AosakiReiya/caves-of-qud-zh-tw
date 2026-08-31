@@ -62,12 +62,6 @@ def main() -> None:
     if (PROJECT / "workshop.json").exists():
         shutil.copy(PROJECT / "workshop.json", OUT / "workshop.json")
     (OUT / "zh-tw").mkdir()
-    for rel in ("About/PublishedFileId.txt",):
-        sf = PROJECT / rel
-        if sf.exists():
-            df = OUT / rel
-            df.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy(sf, df)
     for f in sorted(glob.glob(str(SRC / "*.xml"))):
         shutil.copy(f, OUT / "zh-tw" / Path(f).name)
     # 語言子目錄中的資料覆寫檔（如 historyspice.zh-tw.jsonc）一併打包
@@ -90,12 +84,6 @@ def main() -> None:
             for f in sorted(glob.glob(str(REPL_SRC / glob2))):
                 shutil.copy(f, OUT_REPL / Path(f).name)
                 n += 1
-        sf = REPL_SRC / "About" / "PublishedFileId.txt"
-        if sf.exists():
-            df = OUT_REPL / "About" / "PublishedFileId.txt"
-            df.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy(sf, df)
-            n += 1
         print(f"已打包 replacers mod 至 {OUT_REPL}（{n} 檔）—— 發布時必須一起安裝！")
     else:
         print("[警告] 找不到 replacers mod 目錄，只打包 data mod。")

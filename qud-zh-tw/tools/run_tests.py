@@ -1358,6 +1358,7 @@ def main():
     if run_all or a.static: test_regex_sanity()
     if run_all or a.xmldata: test_audit_translation()
     if run_all or a.xmldata: test_corpus_token_integrity()
+    if run_all or a.static: test_deploy_workshop_merge()
     print(f"\n===== 結果: {PASS} PASS / {FAIL} FAIL =====")
     sys.exit(1 if FAIL else 0)
 
@@ -1601,6 +1602,34 @@ def test_corpus_token_integrity():
         check(f"單詞 \\b 不誤傷: {long_word}",
               m is None or m.group(0).lower() == long_word.lower(),
               f"被 {m.group(0)!r} 命中" if m else "")
+
+
+def test_deploy_workshop_merge():
+    print("== deploy_workshop_merge：同步 workshop.json 保留安裝版 WorkshopId/Visibility ==")
+    import json as _json
+    _tools = os.path.dirname(os.path.abspath(__file__))
+    if _tools not in sys.path:
+        sys.path.insert(0, _tools)
+    try:
+        import deploy_mods as _dm
+    except Exception as e:
+        check("deploy_mods 可匯入", False, str(e)); return
+    src = _json.dumps({"WorkshopId": 0, "Title": "T", "Description": "D",
+                       "Visibility": "0", "ImagePath": "Preview.png"}, ensure_ascii=False).encode("utf-8")
+    dst = _json.dumps({"WorkshopId": 3777400827, "Title": "舊", "Description": "舊",
+                       "Visibility": "2", "ImagePath": "Preview.png"}, ensure_ascii=False).encode("utf-8")
+    merged = _json.loads(_dm._merge_workshop(src, dst).decode("utf-8"))
+    check("保留安裝版非零 WorkshopId", merged.get("WorkshopId") == 3777400827)
+    check("保留安裝版 Visibility", merged.get("Visibility") == "2")
+    check("Title/Description 用 repo 版", merged.get("Title") == "T" and merged.get("Description") == "D")
+    # dst WorkshopId=0 時用 repo 版（不寫 0 蓋掉 repo 帶的正 id）
+    m2 = _json.loads(_dm._merge_workshop(
+        _json.dumps({"WorkshopId": 123, "Title": "T"}).encode("utf-8"),
+        _json.dumps({"WorkshopId": 0, "Title": "X"}).encode("utf-8")).decode("utf-8"))
+    check("安裝版 id=0 則用 repo id", m2.get("WorkshopId") == 123)
+    # About/PublishedFileId.txt 已從同步清單移除
+    d = (Path(_tools) / "deploy_mods.py").read_text(encoding="utf-8")
+    check("deploy 不再同步 About/PublishedFileId.txt", "PublishedFileId" not in d)
 
 
 def test_audit_translation():

@@ -25,6 +25,7 @@ deploy_mods.py — 把開發目錄的兩個 mod 同步到遊戲的 Mods 目錄�
   python3 tools/deploy_mods.py --dir /path/to/Mods
 """
 import argparse
+import json
 import os
 import re
 import shutil
@@ -36,12 +37,36 @@ PROJ = ROOT.parent                       # qud-zh-tw 專案根
 DATA_MOD = PROJ                          # data mod（zh-tw/ 等直接在專案根）
 REPL_MOD = PROJ.parent / "qud-zh-tw-replacers"   # replacers mod
 
-DATA_FILES = ["manifest.json", "Languages.xml", "historyspice.zh-tw.json", "workshop.json", "preview.png", "About/PublishedFileId.txt"]
+DATA_FILES = ["manifest.json", "Languages.xml", "historyspice.zh-tw.json", "workshop.json", "preview.png"]
 DATA_DIRS = ["zh-tw"]
-# Steam Workshop 身份檔（workshop.json/preview.png 缺失→上傳器 FileNotFound 崩潰、被當新 mod；
-# 2026-08-17 事故根源，已納入同步清單永久防護）
+# Steam Workshop 身份檔：workshop.json/preview.png 納入同步（缺失→上傳器 FileNotFound 崩潰、被當新 mod）。
+# 但 workshop.json 的 WorkshopId/Visibility 由遊戲上傳後管理，sync() 對其做「保留安裝版」合併，
+# 不再盲覆蓋（2026-08-31 事故：每次 deploy 把遊戲寫回的 WorkshopId 洗成 0 → 上傳器 item invalid）。
 REPL_GLOBS = ["*.cs", "manifest.json", "README.txt", "workshop.json", "preview.png"]
-REPL_SPEC = ["About/PublishedFileId.txt"]
+
+
+def _merge_workshop(src_bytes: bytes, dst_bytes: bytes) -> bytes:
+    """同步 workshop.json：Title/Description/ImagePath 取 repo（src），
+    但安裝版既有的非零 WorkshopId 與 Visibility 一律保留（遊戲上傳後寫回的真值）。"""
+    try:
+        s = json.loads(src_bytes.decode("utf-8-sig"))
+        d = json.loads(dst_bytes.decode("utf-8-sig"))
+    except Exception:
+        return src_bytes
+    wid = d.get("WorkshopId", 0)
+    if isinstance(wid, int) and wid > 0:
+        s["WorkshopId"] = wid          # 保留安裝版真實 item id
+    if "Visibility" in d:
+        s["Visibility"] = d["Visibility"]  # 保留玩家設定的可見度
+    return (json.dumps(s, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+
+
+def _sync_payload(sf: Path, df: Path) -> bytes:
+    """要寫入目標的內容：workshop.json 走合併（保留安裝版 WorkshopId/Visibility），其餘原樣。"""
+    data = sf.read_bytes()
+    if sf.name == "workshop.json" and df.exists():
+        data = _merge_workshop(data, df.read_bytes())
+    return data
 
 # 液體檔案注意事項：遊戲 2.0.212.29 初期曾出現「mod 液體合併 → BaseLiquid.Initialize NRE」，
 # 經實證（2026-08-13）根因為 875c7c1 的 ParenPhraseRegex 靜態 Regex（非液體檔本身）。
@@ -100,11 +125,12 @@ def sync(src: Path, dst: Path, spec_files: list[str] | None, spec_dirs: list[str
                 continue
             df = dst / rel
             df.parent.mkdir(parents=True, exist_ok=True)
-            if not df.exists() or sf.read_bytes() != df.read_bytes():
+            payload = _sync_payload(sf, df)
+            if not df.exists() or df.read_bytes() != payload:
                 details.append(f"  更新 {rel}")
                 changed += 1
                 if not dry:
-                    shutil.copy2(sf, df)
+                    df.write_bytes(payload)
     if spec_dirs:
         for rd in spec_dirs:
             for sf in (src / rd).glob("*"):
@@ -132,11 +158,12 @@ def sync(src: Path, dst: Path, spec_files: list[str] | None, spec_dirs: list[str
         for g in globs:
             for sf in src.glob(g):
                 df = dst / sf.name
-                if not df.exists() or sf.read_bytes() != df.read_bytes():
+                payload = _sync_payload(sf, df)
+                if not df.exists() or df.read_bytes() != payload:
                     details.append(f"  更新 {sf.name}")
                     changed += 1
                     if not dry:
-                        shutil.copy2(sf, df)
+                        df.write_bytes(payload)
     return changed, details
 
 
@@ -177,7 +204,7 @@ def main():
     total += c1
     # replacers mod
     dst2 = mods / "qud-zh-tw-replacers"
-    c2, d2 = sync(REPL_MOD, dst2, REPL_SPEC, None, REPL_GLOBS, a.dry_run)
+    c2, d2 = sync(REPL_MOD, dst2, None, None, REPL_GLOBS, a.dry_run)
     for i, _ in enumerate(d2):
         d2[i] = f"  [replacers] {d2[i]}"
     print(f"\n== replacers mod（qud-zh-tw-replacers）：{c2} 個變更 ==")

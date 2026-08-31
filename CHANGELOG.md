@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.5.1 — 2026-08-31
+
+- **Steam Workshop 上傳修復（item invalid）**：遊戲上傳後會把真實 `WorkshopId` 寫回
+  `workshop.json`；`deploy_mods.py` 曾把該檔盲覆蓋致 `WorkshopId` 重置為 0 → 上傳器判「item
+  invalid」。現 repo `workshop.json` 直接帶正 id（data 3777400827 / replacers 3777949908），
+  且 `sync()` 對 `workshop.json` 改走「保留安裝版非零 WorkshopId/Visibility」合併
+- 移除失效的 `About/PublishedFileId.txt`（CoQ 2.0.212.29 實際身份為 workshop.json.WorkshopId，
+  非該檔）；deploy/package 同步清單一併清理
+- **灰熊「醫學al Features」雙根因根治**：
+  - 語料 token 對齊官方 `ExampleLanguage`——`features/equipItems/effects/slots/status/epithets/
+    cognomen` 的 `.join:, `→`.commaList=`、`searchtext.color`→`|color`、`ability`→`ability.name`、
+    `#parentObject`、`percent.signed`、`textSelector` 色碼 `:w/:W`（key 對不上→本地化失效→英文泄漏）
+  - `BuildPhraseRegex` 對純單詞 key 加 `\b` 邊界（`Physic`→醫學 不再把 `Physical` 打成「醫學al」）
+- **新增翻譯審計 C12**：比對所有 `<string>` key 與官方 ExampleLanguage，揪出 token 打錯、
+  永不生效的本地化項（自動排除官方 `Doesly` 偽影），report-only；並鎖入 `corpus_token_integrity`
+  紅線測試
+- replacers v0.2.1
+
 ## v0.5.0 — 2026-08-17（大更新）
 
 - **角色創建頁「兩棲的(」斷裂根治**：RestoreAll 交替循環還原嵌套佔位符（`\x00`/`\x01`
